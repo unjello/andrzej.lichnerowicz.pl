@@ -1,0 +1,11 @@
+a { color: hsl(208, 100%, 30%); }
+.footnote-ref a { color: hsl(208, 100%, 30%); }
+a.footnote-return { color: black; }
+.footnotes ol { font-size: 0.8em; }
+@media only screen and (min-width: 768px) {
+  .intro-header .page-heading h1 { font-size: 60px; }
+}
+.post-read-more { text-transform: lowercase; font-size: 0.9em; }
+footer { padding: 20px 0; }
+footer .copyright { margin-top: 10px; font-size: 14px; text-transform: lowercase; }
+footer .theme-by { margin: 0; font-size: 12px; }
