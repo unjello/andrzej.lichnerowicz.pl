@@ -1,0 +1,55 @@
+==================================================================
+https://keybase.io/unjello
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://andrzej.lichnerowicz.pl
+  * I am unjello (https://keybase.io/unjello) on keybase.
+  * I have a public key ASCtGhVRgl9dDsfOgqx2o9IVtpZNVAYVL8emdMqn1To58Qo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101789ca9b0a1ad7dac40ca4cccda8a5dd2d04a9ff676bbe36315dc292d9857da0f0a",
+      "host": "keybase.io",
+      "kid": "0120ad1a1551825f5d0ec7ce82ac76a3d215b6964d5406152fc7a674caa7d53a39f10a",
+      "uid": "7994e026f71cf69ba9cea4caacff8f19",
+      "username": "unjello"
+    },
+    "merkle_root": {
+      "ctime": 1516880007,
+      "hash": "6ee94c96cfadf33df44f17557d1e8bf196837c7a236095c4e7f233b9e03a71b115d1c0d129b4221c8174e9498ef5e4a718c5cc0aff7dbc4c205c946910aa0efc",
+      "hash_meta": "d1d3daeab12f2302d43447cb0f5cb89395b641e5b29f3d136a1868ab64debf42",
+      "seqno": 1979221
+    },
+    "service": {
+      "hostname": "andrzej.lichnerowicz.pl",
+      "protocol": "http:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.39"
+  },
+  "ctime": 1516880074,
+  "expire_in": 504576000,
+  "prev": "24d556bfaf9a743bf5c04a35034d811e14bf4d58ab26e88b1e00491e6d5387dd",
+  "seqno": 10,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgrRoVUYJfXQ7HzoKsdqPSFbaWTVQGFS/HpnTKp9U6OfEKp3BheWxvYWTFA057ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTAxNzg5Y2E5YjBhMWFkN2RhYzQwY2E0Y2NjZGE4YTVkZDJkMDRhOWZmNjc2YmJlMzYzMTVkYzI5MmQ5ODU3ZGEwZjBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwYWQxYTE1NTE4MjVmNWQwZWM3Y2U4MmFjNzZhM2QyMTViNjk2NGQ1NDA2MTUyZmM3YTY3NGNhYTdkNTNhMzlmMTBhIiwidWlkIjoiNzk5NGUwMjZmNzFjZjY5YmE5Y2VhNGNhYWNmZjhmMTkiLCJ1c2VybmFtZSI6InVuamVsbG8ifSwibWVya2xlX3Jvb3QiOnsiY3RpbWUiOjE1MTY4ODAwMDcsImhhc2giOiI2ZWU5NGM5NmNmYWRmMzNkZjQ0ZjE3NTU3ZDFlOGJmMTk2ODM3YzdhMjM2MDk1YzRlN2YyMzNiOWUwM2E3MWIxMTVkMWMwZDEyOWI0MjIxYzgxNzRlOTQ5OGVmNWU0YTcxOGM1Y2MwYWZmN2RiYzRjMjA1Yzk0NjkxMGFhMGVmYyIsImhhc2hfbWV0YSI6ImQxZDNkYWVhYjEyZjIzMDJkNDM0NDdjYjBmNWNiODkzOTViNjQxZTViMjlmM2QxMzZhMTg2OGFiNjRkZWJmNDIiLCJzZXFubyI6MTk3OTIyMX0sInNlcnZpY2UiOnsiaG9zdG5hbWUiOiJhbmRyemVqLmxpY2huZXJvd2ljei5wbCIsInByb3RvY29sIjoiaHR0cDoifSwidHlwZSI6IndlYl9zZXJ2aWNlX2JpbmRpbmciLCJ2ZXJzaW9uIjoxfSwiY2xpZW50Ijp7Im5hbWUiOiJrZXliYXNlLmlvIGdvIGNsaWVudCIsInZlcnNpb24iOiIxLjAuMzkifSwiY3RpbWUiOjE1MTY4ODAwNzQsImV4cGlyZV9pbiI6NTA0NTc2MDAwLCJwcmV2IjoiMjRkNTU2YmZhZjlhNzQzYmY1YzA0YTM1MDM0ZDgxMWUxNGJmNGQ1OGFiMjZlODhiMWUwMDQ5MWU2ZDUzODdkZCIsInNlcW5vIjoxMCwidGFnIjoic2lnbmF0dXJlIn2jc2lnxEBvUR+e5q9yy0jYd/iP/3Rt4efSKUfRqS0rBXLCsnUFyhv1+pgyDiBPAgxziYibdqgES2mHrEphDWf/VqrliXICqHNpZ190eXBlIKRoYXNogqR0eXBlCKV2YWx1ZcQg0Vn6U8wcHDEi+cw5/xkJiX/V+BOq8/L6C+5IjwnHnmyjdGFnzQICp3ZlcnNpb24B
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/unjello
+
+==================================================================
