@@ -1,37 +1,100 @@
 baseurl = "http://andrzej.lichnerowicz.pl"
-DefaultContentLanguage = "en"
 title = "andrzej lichnerowicz"
-theme = "beautifulhugo"
-metaDataFormat = "yaml"
+copyright = "Copyright &copy; 2020 - Andrzej Lichnerowicz"
+canonifyurls = true
+theme = "hugo-kiera"
+languageCode = "en-us"
+
+paginate = 3
+
+summaryLength = 30
+enableEmoji = true
+pygmentsCodeFences = true
 pygmentsUseClasses = true
-pygmentCodeFences = true
-disqusShortname = "yet-another-home-page"
-googleAnalytics = "UA-19850879-1"
-contentDir = "content"
-defaultLayout = "post"
+
 enableRobotsTXT = "true"
 publishDir = "docs"
 
-[Params]
-  subtitle = "yet another home page"
-  logo = "img/avatar.jpg"
-  favicon = "img/favicon.ico"
-  commit = false
-  rss = true
-  comments = true
+#disqusShortname = "myShortName"
+
+# Note: to disable a social network icon delete or comment out the corresponding line
+[author]
+    name = "Andrzej Lichnerowicz"
+    github = "unjello"
+    gitlab = "unjello"
+    linkedin = "andrzejlichnerowicz"
+    facebook = "andrzej.lichnerowicz"
+    twitter = "unjello"
+    instagram = "unje11o"
+    stackoverflow = "andrzej-lichnerowicz"
+    youtube = "user/unjello" # or channel/channelname
+    #devto = "username"
+
+[params]
+    tagline = "Yet another home page."
+    description = "My personal bragging space."
+    #images = [""] #This is used for opengraph/twitter cards.
+    customCSS = []  #Optional Customised CSS
+    favicon = "img/favicon.ico"
+    #utterancesRepo = "username/repository"
+    #utterancesIssueTerm = "pathname"
+    #homepageLength = 10
+    #commentAutoload = true  #This mean reader don't need click, disqus comment autoload
+    mathjax = true #Enable display of mathematics using mathjax (LaTeX syntax)
+    #katex = true #Enable display of mathematics using katex (Faster LaTeX rendering)
+    #google_fonts = ["Staatliches"] # Adds additional google fonts
+    #disableDarkModeCSS = false # disables css style for users using dark-mode
+
+# uncomment to enable the Tags link on the main toolbar
+#  [[menu.main]]
+#    identifier = "tags"
+#    name = "Tags"
+#    url = "/tags"
+#    weight = 1
+
+# uncomment to enable the Categories link on the main toolbar
+#  [[menu.main]]
+#    identifier = "categories"
+#    name = "Categories"
+#    url = "/categories"
+#    weight = 1
 
 
-[Author]
-  name = "Andrzej Lichnerowicz"
-  website = "http://andrzej.lichnerowicz.pl"
+#DefaultContentLanguage = "en"
+#title = "andrzej lichnerowicz"
+#theme = "hugo-kiera"
+#canonifyurls = true
+
+#paginate = 3
+
+#summaryLength = 30
+#enableEmoji = true
+#pygmentCodeFences = true
+
+#disqusShortname = "yet-another-home-page"
+#googleAnalytics = "UA-19850879-1"
+#contentDir = "content"
+#defaultLayout = "post"
+
+#[params]
+#  subtitle = "yet another home page"
+#  logo = "img/avatar.jpg"
+#  commit = false
+#  rss = true
+#  comments = true
+#
+#
+#[Author]
+#  name = "Andrzej Lichnerowicz"
+#  website = "http://andrzej.lichnerowicz.pl"
   #email = "user@host.com"
   #facebook = "username"
   #googleplus = "107600132340306253060" # or xxxxxxxxxxxxxxxxxxxxx
-  github = "unjello"
+#  github = "unjello"
   #gitlab = "unjello"
-  twitter = "unjello"
+#  twitter = "unjello"
   #reddit = "unjello"
-  linkedin = "andrzejlichnerowicz"
+#  linkedin = "andrzejlichnerowicz"
   #xing = "username"
   #stackoverflow = "users/526604/andrzej-lichnerowicz"
   #snapchat = "username"
@@ -45,12 +108,12 @@ publishDir = "docs"
   #paypal = "username"
   #telegram = "username"
 
-[[menu.main]]
-    name = "Blog"
-    url = ""
-    weight = 1
+#[[menu.main]]
+#    name = "Blog"
+#    url = ""
+#    weight = 1
 
-[[menu.main]]
-    name = "Tags"
-    url = "tags"
-    weight = 3
+#[[menu.main]]
+#    name = "Tags"
+#    url = "tags"
+#    weight = 3

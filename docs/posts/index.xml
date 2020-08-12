@@ -1,14 +1,15 @@
 
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
  <channel>
-   <title>Tags on andrzej lichnerowicz</title>
-   <link>http://andrzej.lichnerowicz.pl/tags/</link>
-   <description>Recent content in Tags on andrzej lichnerowicz</description>
+   <title>Posts on andrzej lichnerowicz</title>
+   <link>http://andrzej.lichnerowicz.pl/posts/</link>
+   <description>Recent content in Posts on andrzej lichnerowicz</description>
    <generator>Hugo -- gohugo.io</generator>
    <language>en-us</language>
    <copyright>Copyright &amp;copy; 2020 - Andrzej Lichnerowicz</copyright>
+   <lastBuildDate>Sun, 05 Nov 2017 10:44:44 +0100</lastBuildDate>
    
-       <atom:link href="http://andrzej.lichnerowicz.pl/tags/index.xml" rel="self" type="application/rss+xml" />
+       <atom:link href="http://andrzej.lichnerowicz.pl/posts/index.xml" rel="self" type="application/rss+xml" />
    
    
      <item>

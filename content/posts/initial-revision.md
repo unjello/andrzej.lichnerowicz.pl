@@ -3,7 +3,7 @@ title: "Initial Revision"
 date: 2017-11-05T10:44:44+01:00
 ---
 
-{{< highlight sh >}}
+```shell
 % letter
 letter: Command not found.
 % mail
@@ -13,7 +13,7 @@ help: Command not found.
 % damn!
 !: Event unrecognized
 % logout
-{{< /highlight >}}
+```
 
 <!--more-->
 
