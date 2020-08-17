@@ -1,4 +1,4 @@
-baseurl = "http://andrzej.lichnerowicz.pl"
+baseurl = "andrzej.lichnerowicz.pl"
 title = "andrzej lichnerowicz"
 copyright = "Copyright &copy; 2020 - Andrzej Lichnerowicz"
 canonifyurls = true
