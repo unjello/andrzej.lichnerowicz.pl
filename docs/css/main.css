@@ -257,3 +257,18 @@ header.name {
     height: 2px;
 }
 
+figure { margin-inline-start: 0;margin-inline-end: 0; margin-block-end: 0; margin-block-start: 0;}
+
+
+@media screen and (max-width: 479px) {
+    header {
+        font-size: 2.3em;
+        letter-spacing: -0.08em;
+        line-height: 0.78em;
+    }
+    header.name {
+        text-align: right;
+        margin-bottom: 0.4em;
+    }
+}
+
