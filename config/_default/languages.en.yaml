@@ -43,6 +43,9 @@ params:
         desc: amr-nb decoder for foobar2000
       - name: msctexen
         url:  https://github.com/unjello/msctexen
+        desc: Mscgen in LaTeX
+      - name: calkulator
+        url:  https://github.com/unjello/calkulator
         desc: dos-navigator like, lightweight calculator for windows
       - name: pino-pretty-min
         url:  https://github.com/unjello/pino-pretty-min
