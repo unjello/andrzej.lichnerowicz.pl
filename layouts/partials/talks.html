@@ -1,0 +1,13 @@
+{{ with .Site.Params.talks }}
+  <div class="container">
+    <header>{{ .header }}</header>
+    <p>{{ .desc }}</p>
+    <div class="talks">
+      <ul>
+        {{ range .list }}
+        <li>{{ with .url }}<a href="{{ . }}">{{ end }}{{ .name }}{{ with .url }}</a>{{ end }} — {{ .where }} ({{ .year }})</li>
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+{{ end }}

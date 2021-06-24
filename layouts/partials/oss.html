@@ -1,0 +1,13 @@
+{{ with .Site.Params.oss }}
+<div class="container">
+    <header>{{ .header }}</header>
+    <p>{{ .desc }}</p>
+    <div class="open-source">
+      <ul>
+        {{ range .list }}
+          <li><a href="{{ .url }}">{{ .name }}</a> – {{ .desc | lower }}</li>
+        {{ end }}
+      </ul>
+    </div>
+</div>
+{{ end }}
