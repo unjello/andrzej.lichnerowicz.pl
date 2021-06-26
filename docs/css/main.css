@@ -103,14 +103,18 @@ header.name {
     letter-spacing: -0.08em;
 }
 
-.container a:not(.image) {
+.container a.name {
+    text-decoration: none;
+    color: var(--color-4);
+}
+.container a:not(.image):not(.name) {
     font-weight: 500;
     color: var(--color-3);
     position: relative;
     font-style: italic;
     text-decoration: none;
 }
-.container a:not(.image):after {
+.container a:not(.image):not(.name):after {
     content: ' ';
     background: var(--color-3);;
     position: absolute;
@@ -122,7 +126,7 @@ header.name {
     transition-delay: 0s;
 }
 
-.container a:not(.image):hover:after {
+.container a:not(.image):not(.name):hover:after {
     content: ' ';
     background: var(--color-3);
     position: absolute;
@@ -248,11 +252,11 @@ header.name {
     color: var(--color-1);
 }
 
-.footer a:not(.image), .footer a:not(.image):hover {
+.footer a:not(.image):not(.name), .footer a:not(.image):not(.name):hover {
     color: var(--color-1-dark);
 }
 
-.footer a:not(.image):after, .footer a:not(.image):hover:after {
+.footer a:not(.image):not(.name):after, .footer a:not(.image):not(.name):hover:after {
     background: var(--color-1-dark);
     height: 2px;
 }
@@ -262,20 +266,20 @@ figure { margin-inline-start: 0;margin-inline-end: 0; margin-block-end: 0; margi
 .container article.list-item h1 {
     margin-bottom: 0.1em;
 }
-.container article.list-item h1 a:not(.image) {
+.container article.list-item h1 a:not(.image):not(.name) {
     font-weight: 900;
     letter-spacing: -0.06em;
     text-transform: lowercase;
     color: var(--color-4-dark);
 }
-.container article.list-item h1 a:not(.image), .container article.list-item h1 a:not(.image):hover {
+.container article.list-item h1 a:not(.image):not(.name), .container article.list-item h1 a:not(.image):not(.name):hover {
     color: var(--color-4-dark);
 }
 
-.container article.list-item h1 a:not(.image):after, .container article.list-item h1 a:not(.image):hover:after {
+.container article.list-item h1 a:not(.image):not(.name):after, .container article.list-item h1 a:not(.image):not(.name):hover:after {
     background: var(--color-4-dark);
 }
-.container article.list-item a:not(.image):after, .container article.list-item a:not(.image):hover:after {
+.container article.list-item a:not(.image):not(.name):after, .container article.list-item a:not(.image):not(.name):hover:after {
     height: 2px;
 }
 .container article.list-item time {
