@@ -1,0 +1,86 @@
+languageName: Polish
+wieght: 1
+contentDir: /content/pl
+description: "Andrzej @unjello Lichnerowicz"
+
+params:
+  tagline: lider? / adept / operator bitowy / demoscenowiec / aktywista / miłośnik drzew i zieleni
+  social:
+    - name: fundacja
+      url: https://oneworld-oneheart.pl
+    - name: komitet
+      url: https://kskpd.pl/en
+    - name: twitter
+      url: https://twitter.com/unjello
+    - name: instagram
+      url: http://instagram.com/unje11o
+    - name: polywork
+      url: http://poly.work/unjello
+    - name: blog
+      url: /posts/
+    - name: github
+      url: https://github.com/unjello
+    - name: shadertoy
+      url: https://www.shadertoy.com/user/unjello
+    - name: linkedin
+      url: https://www.linkedin.com/in/andrzejlichnerowicz/
+    - name: facebook
+      url: https://www.facebook.com/andrzej.lichnerowicz
+    - name: tiktok
+      url: https://tiktok.com/@unjello
+    - name: email
+      url: mailto:andrzej@lichnerowicz.pl
+
+  oss:
+    header: oss
+    desc: "Napisałem sam, albo wsparłem, mnóstwo projektów Otwartego Oprogramowania, m.in.:"
+    list:
+      - name: org-mode
+        url:  https://github.com/bzg/org-mode
+        desc: Główny tryb GNU Emacs do wygodnej pracy z tekstem — i wiele więcej.
+      - name: foo_input_amr
+        url:  https://github.com/unjello/foo_input_amr
+        desc: Dekoder AMR-NB dla foobar2000
+      - name: msctexen
+        url:  https://github.com/unjello/msctexen
+        desc: Integracja Mscgen i LaTeX
+      - name: calkulator
+        url:  https://github.com/unjello/calkulator
+        desc: Lekki kalkulator pod Windows inspirowany klasykiem z DOS-Navigatora.
+      - name: pino-pretty-min
+        url:  https://github.com/unjello/pino-pretty-min
+        desc: Minimalistyczny logger w formacie NDJSON dla pino
+
+  talks:
+    header: wykłady & warsztaty
+    desc: "Często prowadzę wykłady i warsztaty z inżynierii oprogramowania i demosceny:"
+    list:
+      - name: Twoja własna wirtualna kamera — czyli sieci neuronowe dla każdego
+        url: https://www.facebook.com/events/265684168587664/?post_id=274603347695746&view=permalink
+        where: mAIówka z WRSS, Kraków
+        year: 2021
+        type: Workshop
+      - name: Przyszłość podróży - jak sztuczna inteligencja zmienia branżę turystyczną
+        url: https://www.youtube.com/watch?v=6IdPNdw9fIo
+        where: CEREBRO, Kraków
+        year: 2021
+        type: Talk
+      - name: Demoscene for UNESCO intangible cultural heritage
+        url: https://www.youtube.com/watch?v=UDLfaFZYoJ4&t=1s
+        where: Revision
+        year: 2021
+        type: Panel
+      - name: "Podcast Episode #107 — Demoscene: The Art of Coding"
+        url: https://sceneworld.org/blog/2021/02/16/podcast-episode-107-demoscene-the-art-of-coding/
+        where: Scene World
+        year: 2021
+        type: Panel
+      - name: Test-Driven Development Dojo
+        where: KNII Politechnika Krakowska
+        year: 2019
+      - name: Test Driven Development
+        where: Case Week, Politechnika Śląska
+        year: 2019
+  works:
+    header: prace
+    desc: "Poniżej znajdziesz kilka hobbistycznych projektów:"

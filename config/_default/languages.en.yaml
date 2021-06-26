@@ -1,5 +1,5 @@
 languageName: English
-wieght: 1
+wieght: 2
 contentDir: /content/en
 description: "Andrzej @unjello Lichnerowicz"
 
@@ -81,3 +81,6 @@ params:
       - name: Test Driven Development
         where: Case Week, Silesian University of Technology
         year: 2019
+  works:
+    header: work
+    desc: "Below are a few passion projects:"

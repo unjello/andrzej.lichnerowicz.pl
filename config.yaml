@@ -1,5 +1,5 @@
 baseURL: https://andrzej.lichnerowicz.pl/
-languageCode: en-US
+languageCode: en_US
 defaultContentLanguage: en
 theme: hugo-andrzej-theme
 title: "@unjello"

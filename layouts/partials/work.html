@@ -1,35 +1,37 @@
-{{ $works := $.Site.AllPages }}
-{{ $works := where $works "Language.Lang" "==" $.Site.Language.Lang }}
-{{ $works := where $works "Type" "==" "work" }}
-{{ $works := (sort $works ".Params.year" "desc") }}
-<div class="container">
-    <header>work</header>
-    <p>Below are a few passion projects:</p>
-    <div class="work-container"><div class="work">
-      {{ range $works }}
-        {{ $covers := .Resources.Match "00.jpg" }}
-        {{ $cover_len := len $covers }}
-        {{ if eq $cover_len 1 }}
-          {{ $cover := index $covers 0 }}
-          <figure class="grid-item" style="left: 0px; top: 0px; width: 500px; height: 329px; background-image: url({{ $cover.Permalink }}); background-size: cover; background-position: center center;">
-            <a href="{{ .Params.href }}" target="_blank" class="image">
-              <div class="grid-item-overlay">
-                <div class="text">
-                  <div class="title">{{ .Title }}</div>
-                  <div class="info">{{ .Content }}</div>
+{{ with .Site.Params.works }}
+  {{ $works := $.Site.AllPages }}
+  {{ $works := where $works "Language.Lang" "==" $.Site.Language.Lang }}
+  {{ $works := where $works "Type" "==" "work" }}
+  {{ $works := (sort $works ".Params.year" "desc") }}
+  <div class="container">
+      <header>{{ .header }}</header>
+      <p>{{ .desc }}</p>
+      <div class="work-container"><div class="work">
+        {{ range $works }}
+          {{ $covers := .Resources.Match "00.jpg" }}
+          {{ $cover_len := len $covers }}
+          {{ if eq $cover_len 1 }}
+            {{ $cover := index $covers 0 }}
+            <figure class="grid-item" style="left: 0px; top: 0px; width: 500px; height: 329px; background-image: url({{ $cover.Permalink }}); background-size: cover; background-position: center center;">
+              <a href="{{ .Params.href }}" target="_blank" class="image">
+                <div class="grid-item-overlay">
+                  <div class="text">
+                    <div class="title">{{ .Title }}</div>
+                    <div class="info">{{ .Content }}</div>
+                  </div>
                 </div>
-              </div>
-            </a>
-          </figure>
+              </a>
+            </figure>
+          {{ end }}
         {{ end }}
-      {{ end }}
-    </div></div>
-</div>
-<script src="js/minimasonry.min.js"></script>
-<script type="text/javascript">
-  var masonry = new MiniMasonry({
-    container: '.work',
-    surroundingGutter: false,
-    gutter: 5,
-}); 
-</script>
+      </div></div>
+  </div>
+  <script src="/js/minimasonry.min.js"></script>
+  <script type="text/javascript">
+    var masonry = new MiniMasonry({
+      container: '.work',
+      surroundingGutter: false,
+      gutter: 5,
+  }); 
+  </script>
+{{ end }}

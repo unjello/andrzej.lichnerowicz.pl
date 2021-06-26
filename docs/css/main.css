@@ -42,7 +42,7 @@ body {
 p {
     margin: 0;
     padding: 0;
-    padding-bottom: 10px
+    padding-bottom: 10px;
 }
 
 a, a:hover, a:active, a:focus {
@@ -74,13 +74,13 @@ ul {
     padding-left: 10px
 }
 
-ul:not(.social) li {
+.container ul:not(.social):not(.language-chooser) li {
     padding-left: 20px;
     padding-bottom: .2em;
     text-indent: -0.75em
 }
 
-ul:not(.social) li:before {
+.container ul:not(.social):not(.language-chooser) li:before {
     content: '\2022';
     padding-right: 5px
 }
@@ -96,6 +96,7 @@ header {
     text-transform: lowercase;
     color: var(--color-4);
     margin-bottom: 0.2em;
+    margin-left: -0.1em;
 }
 
 
@@ -298,6 +299,17 @@ figure { margin-inline-start: 0;margin-inline-end: 0; margin-block-end: 0; margi
     font-size: 2em;
 }
 
+ul.language-chooser  {
+    display: inline;
+}
+ul.language-chooser li {
+    display: inline;
+    list-style: none;
+}
+
+ul.language-chooser li img {
+    width: 20px;
+}
 @media screen and (max-width: 479px) {
     header {
         font-size: 2.3em;

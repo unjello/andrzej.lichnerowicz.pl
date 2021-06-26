@@ -1,37 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <url>
-    <loc>https://andrzej.lichnerowicz.pl/</loc>
-    <lastmod>2021-06-26T10:35:00+02:00</lastmod>
-  </url><url>
-    <loc>https://andrzej.lichnerowicz.pl/posts/reboot/</loc>
-    <lastmod>2021-06-26T10:35:00+02:00</lastmod>
-  </url><url>
-    <loc>https://andrzej.lichnerowicz.pl/posts/</loc>
-    <lastmod>2021-06-26T10:35:00+02:00</lastmod>
-  </url><url>
-    <loc>https://andrzej.lichnerowicz.pl/posts/initial-revision/</loc>
-    <lastmod>2017-11-05T10:44:44+01:00</lastmod>
-  </url><url>
-    <loc>https://andrzej.lichnerowicz.pl/works/acid-kids/</loc>
-  </url><url>
-    <loc>https://andrzej.lichnerowicz.pl/categories/</loc>
-  </url><url>
-    <loc>https://andrzej.lichnerowicz.pl/works/ciche-dni/</loc>
-  </url><url>
-    <loc>https://andrzej.lichnerowicz.pl/works/dolne-miasto-ost/</loc>
-  </url><url>
-    <loc>https://andrzej.lichnerowicz.pl/works/exodus/</loc>
-  </url><url>
-    <loc>https://andrzej.lichnerowicz.pl/works/memory-remains/</loc>
-  </url><url>
-    <loc>https://andrzej.lichnerowicz.pl/works/simulacrum/</loc>
-  </url><url>
-    <loc>https://andrzej.lichnerowicz.pl/tags/</loc>
-  </url><url>
-    <loc>https://andrzej.lichnerowicz.pl/works/trzecie-uderzenie/</loc>
-  </url><url>
-    <loc>https://andrzej.lichnerowicz.pl/works/</loc>
-  </url>
-</urlset>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <sitemap>
+    <loc>https://andrzej.lichnerowicz.pl/en/sitemap.xml</loc>
+    
+      <lastmod>2021-06-26T10:35:00+02:00</lastmod>
+    
+  </sitemap>
+  
+  <sitemap>
+    <loc>https://andrzej.lichnerowicz.pl/pl/sitemap.xml</loc>
+    
+      <lastmod>2021-06-26T10:35:00+02:00</lastmod>
+    
+  </sitemap>
+  
+</sitemapindex>
