@@ -18,3 +18,4 @@ help: Command not found.
 It's been sort of a tradition, to begin each incarnation of my blog, with a quote from this old joke[^1]. If one can trust *the, uh, Internets*, this blog was esentially down since 2007. A decade! Enough is enough. Time to get back.
 
 [^1]: https://gist.github.com/D3MZ/3915286
+<!--more-->

@@ -16,8 +16,8 @@ params:
       url: http://instagram.com/unje11o
     - name: polywork
       url: http://poly.work/unjello
-#    - name: blog
-#      url: http://andrzej.lichnerowicz.pl/posts/
+    - name: blog
+      url: /posts/
     - name: github
       url: https://github.com/unjello
     - name: shadertoy
