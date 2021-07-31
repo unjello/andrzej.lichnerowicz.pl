@@ -4,7 +4,7 @@ contentDir: /content/en
 description: "Andrzej @unjello Lichnerowicz"
 
 params:
-  tagline: leader? / follower / bitwise operator / demoscener / activist / trees and greenery lover
+  tagline: he / him / demoscener / activist / trees and greenery lover
   social:
     - name: foundation
       url: https://oneworld-oneheart.pl
@@ -55,6 +55,21 @@ params:
     header: talks & workshops
     desc: "I often lead talks, workshops and classes around software engineering and demoscene:"
     list:
+      - name: "Q&A: Workshop: Limitations Driven Creativity Through Demoscene Lenses (Session Chair)"
+        url: https://s2021.siggraph.org/session/?sess=sess242
+        where: SIGGRAPH
+        year: 2021
+        type: Live Session
+      - name: "Workshop: Limitations Driven Creativity Through Demoscene Lenses (Organizer)"
+        url: https://s2021.siggraph.org/presentation/?id=fwkp_103&sess=sess242
+        where: SIGGRAPH
+        year: 2021
+        type: Workshop
+      - name: "Demoscene in UNESCO - interview with Unjello (Polish)"
+        url: https://www.youtube.com/watch?v=mYfE5odcwk8
+        where: Lata 90 Podcast Retro
+        year: 2021
+        type: Inteview
       - name: Your own virtual camera — or neural networks for everyone (Polish)
         url: https://www.facebook.com/events/265684168587664/?post_id=274603347695746&view=permalink
         where: mAIówka z WRSS, Kraków
