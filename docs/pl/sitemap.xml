@@ -173,5 +173,17 @@
                 hreflang="pl"
                 href="https://andrzej.lichnerowicz.pl/pl/works/"
                 />
+  </url><url>
+    <loc>https://andrzej.lichnerowicz.pl/pl/works/czrni-poklon/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://andrzej.lichnerowicz.pl/works/czrni-poklon/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pl"
+                href="https://andrzej.lichnerowicz.pl/pl/works/czrni-poklon/"
+                />
   </url>
 </urlset>
