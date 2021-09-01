@@ -57,6 +57,16 @@ params:
     header: talks & workshops
     desc: "I often lead talks, workshops and classes around software engineering and demoscene:"
     list:
+      - name: "Art of limits and randomness"
+        url: https://digitaldragons.pl/programme/speakers/andrzej-lichnerowicz/
+        where: Digital Dragons, Kraków
+        year: 2021
+        type: Lecture
+      - name: "DEMOSCENA ⨉ UNESCO. Quo Vadis?"
+        url: https://xenium.rocks/en/events
+        where: Xenium Festival, Katowice
+        year: 2021
+        type: Lecture
       - name: "Q&A: Workshop: Limitations Driven Creativity Through Demoscene Lenses (Session Chair)"
         url: https://s2021.siggraph.org/session/?sess=sess242
         where: SIGGRAPH
@@ -77,6 +87,10 @@ params:
         where: mAIówka z WRSS, Kraków
         year: 2021
         type: Workshop
+      - name: Do different age groups have different needs? Oxford debate.
+        where: Sabre Polska, Kraków
+        year: 2021
+        type: Oxford Debate
       - name: Future of travel — how AI is changing travel industry (Polish)
         url: https://www.youtube.com/watch?v=6IdPNdw9fIo
         where: CEREBRO, Kraków

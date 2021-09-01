@@ -57,6 +57,16 @@ params:
     header: wykłady & warsztaty
     desc: "Często prowadzę wykłady i warsztaty z inżynierii oprogramowania i demosceny:"
     list:
+      - name: "Art of limits and randomness"
+        url: https://digitaldragons.pl/programme/speakers/andrzej-lichnerowicz/
+        where: Digital Dragons, Kraków
+        year: 2021
+        type: Lecture
+      - name: "DEMOSCENA ⨉ UNESCO. Quo Vadis?"
+        url: https://xenium.rocks/en/events
+        where: Xenium Festival, Katowice
+        year: 2021
+        type: Lecture
       - name: "Q&A: Workshop: Limitations Driven Creativity Through Demoscene Lenses (Przewodniczący)"
         url: https://s2021.siggraph.org/session/?sess=sess242
         where: SIGGRAPH
@@ -77,6 +87,10 @@ params:
         where: mAIówka z WRSS, Kraków
         year: 2021
         type: Workshop
+      - name: Czy różne grupy wiekowe mają różne potrzeby. Debata Oxfordzka
+        where: Sabre Polska, Kraków
+        year: 2021
+        type: Debata Oxfordzka
       - name: Przyszłość podróży - jak sztuczna inteligencja zmienia branżę turystyczną
         url: https://www.youtube.com/watch?v=6IdPNdw9fIo
         where: CEREBRO, Kraków
