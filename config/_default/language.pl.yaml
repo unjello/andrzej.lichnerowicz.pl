@@ -26,6 +26,8 @@ params:
       url: https://www.linkedin.com/in/andrzejlichnerowicz/
     - name: facebook
       url: https://www.facebook.com/andrzej.lichnerowicz
+    - name: stackoverflow
+      url: https://stackoverflow.com/users/526604/andrzej-lichnerowicz
     - name: tiktok
       url: https://tiktok.com/@unjello
     - name: email
