@@ -6,7 +6,7 @@
   <div class="container">
       <header>{{ .header }}</header>
       <p>{{ .desc }}</p>
-      <div class="work-container"><div class="work">
+      <div class="work-container"><div class="masonry work">
         {{ range $works }}
           {{ $covers := .Resources.Match "00.jpg" }}
           {{ $cover_len := len $covers }}
@@ -26,7 +26,6 @@
         {{ end }}
       </div></div>
   </div>
-  <script src="/js/minimasonry.min.js"></script>
   <script type="text/javascript">
     var masonry = new MiniMasonry({
       container: '.work',

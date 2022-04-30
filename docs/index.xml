@@ -13,8 +13,8 @@
       <pubDate>Sat, 26 Jun 2021 10:35:00 +0200</pubDate>
       
       <guid>https://andrzej.lichnerowicz.pl/posts/reboot/</guid>
-      <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;% /sbin/shutdown -r now
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;It begins to strike me, that I may not be good at blogging. Let&amp;rsquo;s see if I can make it this time.&lt;/p&gt;</description>
+      <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;% /sbin/shutdown -r now
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;It begins to strike me, that I may not be good at blogging. Let&amp;rsquo;s see if I can make it this time.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -23,16 +23,16 @@
       <pubDate>Sun, 05 Nov 2017 10:44:44 +0100</pubDate>
       
       <guid>https://andrzej.lichnerowicz.pl/posts/initial-revision/</guid>
-      <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;% letter
-letter: Command not found.
-% mail
-To: ^X ^F ^C
-% help mail
-help: Command not found.
-% damn!
-!: Event unrecognized
-% logout
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;It&amp;rsquo;s been sort of a tradition, to begin each incarnation of my blog, with a quote from this old joke&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. If one can trust &lt;em&gt;the, uh, Internets&lt;/em&gt;, this blog was esentially down since 2007. A decade! Enough is enough. Time to get back.&lt;/p&gt;</description>
+      <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;% letter
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;letter: Command not found.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;% mail
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;To: ^X ^F ^C
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;% help mail
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;help: Command not found.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;% damn!
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;!: Event unrecognized
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;% logout
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;It&amp;rsquo;s been sort of a tradition, to begin each incarnation of my blog, with a quote from this old joke&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. If one can trust &lt;em&gt;the, uh, Internets&lt;/em&gt;, this blog was esentially down since 2007. A decade! Enough is enough. Time to get back.&lt;/p&gt;</description>
     </item>
     
   </channel>
