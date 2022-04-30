@@ -5,7 +5,7 @@
     <div class="work-container"><div class="masonry projects">
         {{ range .list }}
             <figure class="grid-item" style="left: 0px; top: 0px; width: 500px; height: 329px; background-image: url(/img/{{ .img }}); background-size: cover; background-position: center center;">
-              <a href="{{ .tag }}" target="_blank" class="image">
+              <a href="{{ .url }}" target="_blank" class="image">
                 <div class="grid-item-overlay">
                   <div class="text">
                     <div class="title">{{ .name }}</div>
