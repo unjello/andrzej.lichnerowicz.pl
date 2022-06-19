@@ -60,6 +60,11 @@ params:
     header: wykłady & warsztaty
     desc: "Często prowadzę wykłady i warsztaty z inżynierii oprogramowania i demosceny:"
     list:
+      - name: "Polska Demoscena: Niematerialne Dziedzictwo Kulturowe UNESCO"
+        url: https://www.pixelheavenfest.com/program/
+        where: Pixel Heaven Games Festival, Warszawa
+        year: 2022
+        type: Panel
       - name: "Keynote"
         url: https://gdg.community.dev/events/details/google-gdg-cloud-krakow-presents-devfest-polska-2021/
         where: DevFest Polska, Kraków

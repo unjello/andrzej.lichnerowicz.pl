@@ -3,7 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://andrzej.lichnerowicz.pl/</loc>
-    <lastmod>2021-06-26T10:35:00+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pl"
@@ -13,57 +12,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://andrzej.lichnerowicz.pl/"
-                />
-  </url><url>
-    <loc>https://andrzej.lichnerowicz.pl/posts/reboot/</loc>
-    <lastmod>2021-06-26T10:35:00+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="pl"
-                href="https://andrzej.lichnerowicz.pl/pl/posts/reboot/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://andrzej.lichnerowicz.pl/posts/reboot/"
-                />
-  </url><url>
-    <loc>https://andrzej.lichnerowicz.pl/posts/</loc>
-    <lastmod>2021-06-26T10:35:00+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="pl"
-                href="https://andrzej.lichnerowicz.pl/pl/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://andrzej.lichnerowicz.pl/posts/"
-                />
-  </url><url>
-    <loc>https://andrzej.lichnerowicz.pl/posts/initial-revision/</loc>
-    <lastmod>2017-11-05T10:44:44+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="pl"
-                href="https://andrzej.lichnerowicz.pl/pl/posts/initial-revision/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://andrzej.lichnerowicz.pl/posts/initial-revision/"
-                />
-  </url><url>
-    <loc>https://andrzej.lichnerowicz.pl/works/acid-kids/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="pl"
-                href="https://andrzej.lichnerowicz.pl/pl/works/acid-kids/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://andrzej.lichnerowicz.pl/works/acid-kids/"
                 />
   </url><url>
     <loc>https://andrzej.lichnerowicz.pl/categories/</loc>
@@ -78,66 +26,6 @@
                 href="https://andrzej.lichnerowicz.pl/categories/"
                 />
   </url><url>
-    <loc>https://andrzej.lichnerowicz.pl/works/ciche-dni/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="pl"
-                href="https://andrzej.lichnerowicz.pl/pl/works/ciche-dni/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://andrzej.lichnerowicz.pl/works/ciche-dni/"
-                />
-  </url><url>
-    <loc>https://andrzej.lichnerowicz.pl/works/dolne-miasto-ost/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="pl"
-                href="https://andrzej.lichnerowicz.pl/pl/works/dolne-miasto-ost/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://andrzej.lichnerowicz.pl/works/dolne-miasto-ost/"
-                />
-  </url><url>
-    <loc>https://andrzej.lichnerowicz.pl/works/exodus/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="pl"
-                href="https://andrzej.lichnerowicz.pl/pl/works/exodus/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://andrzej.lichnerowicz.pl/works/exodus/"
-                />
-  </url><url>
-    <loc>https://andrzej.lichnerowicz.pl/works/memory-remains/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="pl"
-                href="https://andrzej.lichnerowicz.pl/pl/works/memory-remains/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://andrzej.lichnerowicz.pl/works/memory-remains/"
-                />
-  </url><url>
-    <loc>https://andrzej.lichnerowicz.pl/works/simulacrum/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="pl"
-                href="https://andrzej.lichnerowicz.pl/pl/works/simulacrum/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://andrzej.lichnerowicz.pl/works/simulacrum/"
-                />
-  </url><url>
     <loc>https://andrzej.lichnerowicz.pl/tags/</loc>
     <xhtml:link
                 rel="alternate"
@@ -148,42 +36,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://andrzej.lichnerowicz.pl/tags/"
-                />
-  </url><url>
-    <loc>https://andrzej.lichnerowicz.pl/works/trzecie-uderzenie/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="pl"
-                href="https://andrzej.lichnerowicz.pl/pl/works/trzecie-uderzenie/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://andrzej.lichnerowicz.pl/works/trzecie-uderzenie/"
-                />
-  </url><url>
-    <loc>https://andrzej.lichnerowicz.pl/works/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="pl"
-                href="https://andrzej.lichnerowicz.pl/pl/works/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://andrzej.lichnerowicz.pl/works/"
-                />
-  </url><url>
-    <loc>https://andrzej.lichnerowicz.pl/works/czrni-poklon/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="pl"
-                href="https://andrzej.lichnerowicz.pl/pl/works/czrni-poklon/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://andrzej.lichnerowicz.pl/works/czrni-poklon/"
                 />
   </url>
 </urlset>
