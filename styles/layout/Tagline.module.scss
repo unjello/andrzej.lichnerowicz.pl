@@ -1,0 +1,17 @@
+@import "styles/_settings";
+
+.container {
+  font-weight: 300;
+  font-size: 1.4rem;
+  margin-top: 0.65rem;
+
+  li {
+    &:after {
+      content: ' / '
+    }
+
+    &:last-child:after {
+      content: ''
+    }
+  }
+}

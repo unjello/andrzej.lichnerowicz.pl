@@ -1,0 +1,54 @@
+@import "styles/_settings";
+
+
+.container {
+  img {
+    border: none;
+    margin: auto;
+    vertical-align: middle;
+    height: 1.9rem;
+  }
+
+  p {
+    display: inline;
+    margin-left: 1rem;
+  }
+
+  ul {
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    border: 0;
+
+    li {
+      border: 0;
+      line-height: 1.3rem;
+      text-align: justify;
+      text-justify: newspaper;
+      margin: 0;
+      padding: 0.1rem 0;
+
+      a {
+        font-size: 1.5rem;
+      }
+
+      div {
+        display: inline;
+
+        &:before {
+          content: ' — '
+        }
+
+        p {
+          margin-left: 0;
+        }
+      }
+    }
+
+  }
+}
+
+.tag {
+  margin-top: 1.1rem;
+}

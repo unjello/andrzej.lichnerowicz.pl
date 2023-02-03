@@ -1,2 +1,7 @@
-.idea
-.vs
+.idea/
+.vs/
+.vscode/
+
+build/
+out/
+node_modules/

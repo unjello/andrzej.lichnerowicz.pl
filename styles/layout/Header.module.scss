@@ -1,0 +1,24 @@
+@import "styles/_settings";
+
+.container {
+  h1 {
+    font: normal 800 4.5rem/3rem $font-family-header;
+    letter-spacing: -0.09em;
+    text-align: left;
+    text-transform: lowercase;
+    margin: 2rem 0 0.5rem -0.5rem;
+    a {
+      font: normal 800 4.5rem/3rem $font-family-header;
+      letter-spacing: -0.09em;
+      text-align: left;
+      text-transform: lowercase;
+      margin: 2rem 0 0.5rem -0.5rem;
+      color: black;
+      text-decoration: none;
+      &:hover {
+        text-decoration-line: underline;
+        text-decoration-thickness: 0.1rem;
+      }
+    }
+  }
+}

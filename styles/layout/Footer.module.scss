@@ -1,0 +1,18 @@
+.container {
+  margin: 0 auto;
+  width: 36rem;
+  p {
+    font-size: 0.8rem;
+    color: #ccc;
+    a {
+      font-size: 1.2rem;
+      margin: 0 0.05rem;
+      text-decoration: none;
+      color: #bbb;
+      &:hover {
+        text-decoration: underline;
+        color: #555;
+      }
+    }
+  }
+}
