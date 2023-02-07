@@ -1,6 +1,7 @@
 ---
 title: "To wciaz ta sama, stara, historia"
 date: 2023-02-07T17:28:00+02:00
+mastodonId: "109825295757896454"
 ---
 
 ![Dooley Wilson, Ingrid Bergman i Humphrey Bogart w kadrze z klasycznego filmu pt. Cassablanca](/casablanca.jpg)

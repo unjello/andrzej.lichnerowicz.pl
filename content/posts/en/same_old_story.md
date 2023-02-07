@@ -1,6 +1,7 @@
 ---
 title: "It's still the same old story"
 date: 2023-02-07T17:28:00+02:00
+mastodonId: "109825295757896454"
 ---
 
 ![Dooley Wilson, Ingrid Bergman and Humphrey Bogart in a frame from Hollywood's classic: Cassablanca](/casablanca.jpg)
