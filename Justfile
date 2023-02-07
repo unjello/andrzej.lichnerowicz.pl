@@ -1,7 +1,7 @@
 all: clean install build
 
 clean:
-	find ./docs ! -name CNAME ! -name keybase.txt -delete
+	find ./docs ! -name CNAME ! -name keybase.txt ! -name .nojekyll -delete
 
 install:
 	pnpm install

@@ -57,5 +57,6 @@ export const getMarkdownDocument = (fileName: string): RenderedDocument => {
         type: data.frontmatter.type as string ?? '',
         where: data.frontmatter.where as string ?? '',
         rank: data.frontmatter.rank as string ?? '',
+        mastodonId: data.frontmatter.mastodonId as string ?? ''
     };
 }

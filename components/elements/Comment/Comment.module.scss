@@ -1,0 +1,46 @@
+@import "styles/_settings";
+.container {
+  margin-top: 2rem;
+  padding: 1rem 1rem;
+
+  .author {
+    a {
+      font-family: $font-family-sans-serif;
+      font-weight: bold;
+      color: $color-primary;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  .date {
+    margin-top: -0.5rem;
+    margin-bottom: 0;
+    font-size: 0.9rem;
+    color: #888;
+    font-weight: bold;
+    svg {
+      vertical-align: baseline;
+      margin-left: 0.4rem;
+      margin-right: 0.1rem;
+    }
+    span {
+      vertical-align: text-bottom;
+    }
+  }
+
+  .comment {
+    font-size: 1.05rem;
+
+    a {
+      font-family: $font-family-sans-serif;
+      font-weight: bold;
+      color: $color-primary;
+    }
+  }
+}
+
+.dark {
+  color: #888;
+}

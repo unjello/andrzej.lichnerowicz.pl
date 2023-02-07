@@ -4,5 +4,6 @@ $font-family-script: 'Cookie', serif;
 
 $color-primary: #0d1a29;
 $color-secondary: #e5007d;
+$color-light: adjust-color($color-secondary, $lightness: +50%, $saturation: -20%);
 
 @import 'include-media/dist/_include-media.scss';

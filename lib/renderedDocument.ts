@@ -7,5 +7,6 @@ export type RenderedDocument = {
     url?: string,
     type?: string,
     where?: string,
-    rank?: string
+    rank?: string,
+    mastodonId?: string,
 }

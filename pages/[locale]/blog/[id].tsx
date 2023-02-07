@@ -4,12 +4,14 @@ import {useTranslation} from "next-i18next";
 import {makeStaticPathsFromContent, makeStaticProps} from '../../../lib/static'
 import {ContentType, Section} from "../../../lib/content";
 import {useRouter} from "next/router";
+import Comments from "../../../components/elements/Comments/Comments";
 
 
 type Props = {
     _nextI18NNext: any,
     posts?: Section,
 }
+
 
 
 const Post = ({posts}: Props) => {
@@ -28,6 +30,7 @@ const Post = ({posts}: Props) => {
                 <h1>{postData?.title}</h1>
                 <div className={styles.date}>{postData?.date}</div>
                 <div dangerouslySetInnerHTML={{ __html: postData?.content! }} />
+                {postData?.mastodonId && <Comments postId={postData?.mastodonId}/>}
             </section>
         </Layout>
     )
@@ -37,33 +40,8 @@ const Post = ({posts}: Props) => {
 export default Post
 
 const getStaticProps = makeStaticProps(
-    ['common', 'blog', 'header', 'footer'],
+    ['common', 'blog', 'comments', 'header', 'footer'],
     [ContentType.Blog])
 const getStaticPaths = makeStaticPathsFromContent(ContentType.Blog)
 
 export { getStaticPaths, getStaticProps }
-
-/*
-export const getStaticPaths: GetStaticPaths = async ({locales}) => {
-    let paths = []
-    for (const locale of locales!) {
-        for (const p of getContentIds(ContentType.Blog, locale)) {
-            paths.push(p)
-        }
-    }
-    return {
-        paths,
-        fallback: false,
-    };}
-
-
-export const getStaticProps: GetStaticProps = async ({locale, params}) => {
-    const messages = (await import(`../../lang/${locale!}.json`)).default
-    const postData = getPostData(ContentType.Blog, params!.id as string, locale!);
-    return {
-        props: {
-            postData,
-            messages
-        },
-    };
-}*/

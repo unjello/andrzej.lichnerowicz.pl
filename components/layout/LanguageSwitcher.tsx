@@ -2,7 +2,7 @@ import React from "react";
 import {useRouter} from "next/router";
 import styles from "../../styles/layout/LanguageSwitcher.module.scss"
 import i18nextConfig from '../../next-i18next.config';
-import LanguageSwitchLink from "../elements/LanguageSwitchLink";
+import LanguageSwitchLink from "../elements/LanguageSwitchLink/LanguageSwitchLink";
 
 const getLocaleNativeName = (code: string): string => {
     const languageNames = new Intl.DisplayNames([code!], {

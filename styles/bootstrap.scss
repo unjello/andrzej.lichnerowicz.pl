@@ -12,7 +12,8 @@
 
 $theme-colors: (
         "primary": $color-primary,
-        "secondary": $color-secondary
+        "secondary": $color-secondary,
+        "light": $color-light
 );
 
 @import "bootstrap/scss/bootstrap";

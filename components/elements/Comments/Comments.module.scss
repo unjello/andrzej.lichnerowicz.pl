@@ -1,0 +1,13 @@
+@import "styles/_settings";
+
+.container {
+  a {
+    font-family: $font-family-sans-serif;
+    font-weight: bold;
+    color: $color-primary;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
