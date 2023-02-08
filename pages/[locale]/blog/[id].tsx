@@ -22,7 +22,7 @@ const Post = ({posts}: Props) => {
 
     const postData = items.find(c => c.id == id)
 
-    const tt = t('title')
+    const tt = t('blog:title')
     const title = `${postData?.title} | ${tt}`
     return (
         <Layout title={title}>
