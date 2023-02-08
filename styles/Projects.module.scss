@@ -28,7 +28,10 @@
       text-justify: newspaper;
       margin: 0;
       padding: 0.1rem 0;
-
+      @include media("<=tablet") {
+        text-justify: none;
+        text-align: left;
+      }
       a {
         font-size: 1.5rem;
       }

@@ -1,6 +1,12 @@
+@import "styles/_settings";
+
 .container {
   margin: 0 auto;
   width: 36rem;
+  @include media("<=tablet") {
+    width: 100%;
+  }
+
   p {
     font-size: 0.8rem;
     color: #ccc;
