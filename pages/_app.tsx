@@ -3,7 +3,7 @@ import '../styles/_settings.scss'
 import '../styles/bootstrap.scss';
 
 import '../styles/globals.scss';
-import 'highlight.js/styles/stackoverflow-dark.css'
+import 'highlight.js/scss/base16/eighties.scss'
 
 import { appWithTranslation } from 'next-i18next'
 import {Props} from "../components/layout/Layout";

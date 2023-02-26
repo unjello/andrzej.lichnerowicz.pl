@@ -2,6 +2,7 @@ import path from "path";
 import {RenderedDocument} from "./renderedDocument";
 import fs from "fs";
 import {getMarkdownDocument} from "./markdown";
+import { getAsciiDocDocument } from "./asciidoc";
 
 export const enum ContentType {
     Project = 'projects',
@@ -67,7 +68,11 @@ const walkDirectory = (dir: string): string[] => {
  * @param fileName
  */
 function getDocument(fileName: string): RenderedDocument {
-    return getMarkdownDocument(fileName)
+    if (fileName.endsWith('.md')) {
+        return getMarkdownDocument(fileName)
+    } else {
+        return getAsciiDocDocument(fileName)
+    }
 }
 
 

@@ -1,20 +1,16 @@
 import Layout from "../../../components/layout/Layout";
-import styles from "../../../styles/Post.module.scss";
 import {useTranslation} from "next-i18next";
 import {makeStaticPathsFromContent, makeStaticProps} from '../../../lib/static'
 import {ContentType, Section} from "../../../lib/content";
 import {useRouter} from "next/router";
-import Comments from "../../../components/elements/Comments/Comments";
-
+import Post from "../../../lib/components/Post/Post";
 
 type Props = {
     _nextI18NNext: any,
     posts?: Section,
 }
 
-
-
-const Post = ({posts}: Props) => {
+const PostPage = ({posts}: Props) => {
     const { t } = useTranslation(['common', 'blog'])
     const items = posts?.items!
     const router = useRouter()
@@ -26,18 +22,13 @@ const Post = ({posts}: Props) => {
     const title = `${postData?.title} | ${tt}`
     return (
         <Layout title={title}>
-            <section className={styles.container}>
-                <h1>{postData?.title}</h1>
-                <div className={styles.date}>{postData?.date}</div>
-                <div dangerouslySetInnerHTML={{ __html: postData?.content! }} />
-                {postData?.mastodonId && <Comments postId={postData?.mastodonId}/>}
-            </section>
+            <Post postData={postData}/>
         </Layout>
     )
 }
 
 
-export default Post
+export default PostPage
 
 const getStaticProps = makeStaticProps(
     ['common', 'blog', 'comments', 'header', 'footer'],

@@ -15,7 +15,7 @@ const Blog = ({items, index} : Props) => {
     const blogCards = items.map((blogPost: RenderedDocument) => {
         const date = new Date(blogPost.date)
         return <ListGroupItem className={styles.blogpost} key={blogPost.id}>
-            <Link href={`/blog/${blogPost.id}`}>{blogPost.title}</Link><div className={styles.date}>/*{date.toISOString().split('T')[0]}*/</div>
+            <Link href={`/blog/${blogPost.id}`}>{blogPost.title}</Link><div className={styles.date}>/*{date instanceof Date && !isNaN(date.getTime())?date.toISOString().split('T')[0]:''}*/</div>
         </ListGroupItem>
     })
     return (
