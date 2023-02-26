@@ -1,6 +1,6 @@
 ---
-date: 2023-02-11T12:58:00+02:00
-mastodonId: "120321"
+date: 2023-02-26T19:58:00+02:00
+mastodonId: "109932889945794508"
 ---
 = Rocking Rust, Git, and GitHub in 2023 Like a Pro
 
