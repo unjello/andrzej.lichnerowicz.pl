@@ -1,8 +1,8 @@
 import { useTranslation } from 'next-i18next'
-import { getStaticPaths, makeStaticProps } from '../../lib/static'
+import { makeStaticPage } from '../../lib/njcms/static'
 
-import Layout from "../../components/layout/Layout";
-import React, {Suspense} from "react";
+import Layout from "../../lib/njcms/components/Layout/Layout";
+import React from "react";
 import {Canvas} from "@react-three/fiber";
 import {Scene404} from "../../components/partials/Scene404";
 import styles from "../../styles/Page404.module.scss"
@@ -24,5 +24,5 @@ const Page404 = ({}: Props) => {
 
 export default Page404
 
-const getStaticProps = makeStaticProps(['404', 'header', 'common', 'footer'])
+const { getStaticPaths, getStaticProps } = makeStaticPage(['404', 'header', 'common', 'footer'])
 export { getStaticPaths, getStaticProps }

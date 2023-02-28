@@ -1,9 +1,10 @@
-import Layout from "../../../components/layout/Layout";
+import Layout from "../../../lib/njcms/components/Layout/Layout";
 import {useTranslation} from "next-i18next";
-import {makeStaticPathsFromContent, makeStaticProps} from '../../../lib/static'
-import {ContentType, Section} from "../../../lib/content";
+import {makeStaticPathsFromContent, makeStaticProps} from '../../../lib/njcms/static'
+import {Section} from "../../../lib/njcms/content";
 import {useRouter} from "next/router";
-import Post from "../../../lib/components/Post/Post";
+import Post from "../../../lib/njcms/components/Post/Post";
+import { Content, Translation } from "../../../lib/types";
 
 type Props = {
     _nextI18NNext: any,
@@ -31,8 +32,8 @@ const PostPage = ({posts}: Props) => {
 export default PostPage
 
 const getStaticProps = makeStaticProps(
-    ['common', 'blog', 'comments', 'header', 'footer'],
-    [ContentType.Blog])
-const getStaticPaths = makeStaticPathsFromContent(ContentType.Blog)
+    [Translation.Common, Translation.Blog, Translation.Comments, Translation.Header, Translation.Footer],
+    [Content.Blog])
+const getStaticPaths = makeStaticPathsFromContent(Content.Blog)
 
 export { getStaticPaths, getStaticProps }

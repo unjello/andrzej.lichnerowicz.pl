@@ -1,0 +1,44 @@
+@import "styles/_settings";
+
+
+.BlogTile {
+  &__Summary {
+    margin-top: 1rem;
+  }
+  
+  &__List {
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    border: 0;
+  }
+
+  &__Item {
+    border: 0;
+    margin: 0;
+    padding: 0.1rem 0;
+    text-align: justify;
+    text-justify: newspaper;
+
+    &:before {
+      content: '📝️';
+      margin-right: $icon-margin;
+      font-size: $icon-font-size;
+      vertical-align:  $icon-align;
+    }
+  }
+
+  &__Title {
+    font-size: 1.5rem;
+  }
+
+  &__Date {
+    font-size: 0.85rem;
+    color: #555555;
+    margin-left: 0.5rem;
+    display: inline;
+  }
+}
+
+

@@ -1,0 +1,43 @@
+@import "styles/_settings";
+
+@import "styles/_settings";
+
+
+.OpenSourceTile {
+  &__Summary {
+    margin-top: -0.25rem;
+  }
+  
+  &__List {
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    border: 0;
+  }
+
+  &__Item {
+      border: 0;
+      line-height: 1.3rem;
+      text-align: justify;
+      text-justify: newspaper;
+      margin: 0;
+      padding: 0.1rem 0;
+
+      @include media("<=tablet") {
+        text-justify: none;
+        text-align: left;
+      }
+  }
+
+  &__Title {
+    font-size: 1.5rem;
+  }
+
+  &__Description {
+    display: inline;
+    &:before {
+      content: ' — '
+    }
+}
+}

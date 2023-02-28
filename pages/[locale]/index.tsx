@@ -1,13 +1,14 @@
 import {useTranslation} from 'next-i18next'
-import { getStaticPaths, makeStaticProps } from '../../lib/static'
+import { makeStaticPage } from '../../lib/njcms/static'
 import React from "react";
-import Layout from "../../components/layout/Layout";
-import {ContentType, Section} from "../../lib/content";
-import Blog from "../../components/partials/Blog";
-import Projects from "../../components/partials/Projects";
-import Talks from "../../components/partials/Talks";
-import OpenSource from "../../components/partials/OpenSource";
-import Art from "../../components/partials/Art";
+import Layout from "../../lib/njcms/components/Layout/Layout";
+import {Section} from "../../lib/njcms/content";
+import Projects from "../../components/tiles/Projects/ProjectsTile";
+import Talks from "../../components/tiles/Talks/TalksTile";
+import OpenSource from "../../components/tiles/OpenSource/OpenSource";
+import Art from "../../components/tiles/Art/ArtTile";
+import { Content, Translation } from '../../lib/types';
+import Blog from '../../components/tiles/Blog/BlogTile';
 
 type Props = {
     _nextI18NNext: any,
@@ -32,7 +33,7 @@ const Homepage = ({posts, art, talks, projects, oss}:Props) => {
 
 export default Homepage
 
-const getStaticProps = makeStaticProps(
-    ['common', 'home', 'header', 'footer'],
-    [ContentType.Blog, ContentType.Project, ContentType.Art, ContentType.Talks, ContentType.OpenSource])
+const Translations = [Translation.Common, Translation.Home, Translation.Header, Translation.Footer]
+const Contents = [Content.Blog, Content.Project, Content.Art, Content.Talks, Content.OpenSource]
+const { getStaticPaths, getStaticProps } = makeStaticPage(Translations, Contents)
 export { getStaticPaths, getStaticProps }

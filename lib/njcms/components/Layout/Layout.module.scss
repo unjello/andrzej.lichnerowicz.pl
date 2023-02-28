@@ -1,0 +1,12 @@
+@import "styles/_settings.scss";
+
+.Layout {
+  margin: 0 auto;
+  width: 58%;
+  @include media(">phone", "<=tablet") {
+    width: 90%;
+  }
+  @include media("<=phone") {
+    width: 100%;
+  }
+}

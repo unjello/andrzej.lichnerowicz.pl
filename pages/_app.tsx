@@ -6,7 +6,7 @@ import '../styles/globals.scss';
 import 'highlight.js/scss/base16/eighties.scss'
 
 import { appWithTranslation } from 'next-i18next'
-import {Props} from "../components/layout/Layout";
+import {Props} from "../lib/njcms/components/Layout/Layout";
 import {AppProps} from "next/app";
 
 const MyApp = ({ Component, pageProps }:AppProps<Props>)  => {
