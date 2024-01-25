@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    
+      <link rel="stylesheet" href="/css/style.min.91fb977b95500073e80680d2a2c5f4a62999bd782ff057e3f4ea981d02f32220.css" integrity="sha256-kfuXe5VQAHPoBoDSosX0pimZvXgv8Ffj9OqYHQLzIiA=" crossorigin="anonymous">
+    
+    <title>Deploying a Go Microservice in Kubernetes | Blog @unjello</title>
+  </head>
+  <body>
+    <div class="layout container-fluid">
+        <header>
+            <h1>
+                <a href="/">Andrzej unjello Lichnerowicz</a>
+            </h1>
+            <ul class="list-inline tagline">
+                
+                    <li class="list-inline-item">he</li>
+                
+                    <li class="list-inline-item">him</li>
+                
+                    <li class="list-inline-item">activist</li>
+                
+                    <li class="list-inline-item">trees and greenery lover</li>
+                
+            </ul>
+            <ul class="list-inline socialmedia">
+                
+                    <li class="list-inline-item">
+                        <a href="https://mastodon.gamedev.place/@unjello">mastodon</a>
+                    </li>                            
+                
+                    <li class="list-inline-item">
+                        <a href="https://codeberg.org/unjello">codeberg</a>
+                    </li>                            
+                
+                    <li class="list-inline-item">
+                        <a href="mailto:andrzej@lichnerowicz.pl">email</a>
+                    </li>                            
+                
+            </ul>
+        </header>
+
+        <section class="blog_single">
+            <h1>Deploying a Go Microservice in Kubernetes</h1>
+            <div class="date">2024-01-23T20:19:11&#43;02:00</div>
+            <div class="content"><h1 id="disclaimer">Disclaimer</h1>
+<p>Disclaimer: This post will showcase some macOS-specific tools, primarily brew. This isn&rsquo;t to make a platform statement; it&rsquo;s simply to avoid the complexities of multi-platform discussion for brevity&rsquo;s sake.</p>
+<h1 id="over-the-hill-and-under-the-hill">Over the Hill and Under the Hill</h1>
+<p>So, this is going to be a bit of a shameless plug, though all the praise towards my current employer, <a href="https://splunk.com/">Splunk</a>, is purely accidental :)</p>
+<p>My journey here has been nothing short of remarkable, largely thanks to the incredible people I&rsquo;ve had the chance to work with. One of them was <a href="https://github.com/gotwarlost">Krishnan Anantheswaran</a>, known for his work on <a href="https://istanbul.js.org">Istanbul</a> - a javascript coverage framework I used back in my front-end days. Krishnan interviewed me for the company, and for a few months, I soaked up as much knowledge as I could from him until his departure. Suddenly, I was in at the deep end, tasked with understanding a vast ecosystem. The component I was to take over wasn&rsquo;t particularly challenging, but the surrounding environment was immense. As you can imagine, one of my key challenges was learning how to deploy our software effectively. This post is a reflection on the lessons I learned from this journey.</p>
+<p>When the Kubernetes team was formed at Splunk, I was told that some teams were already using <a href="https://https://ksonnet.io/">ksonnet</a>, a tool for managing Kubernetes configurations similar to <a href="https://helm.sh/">Helm</a>. However, they quickly found out that ksonnet wasn&rsquo;t the most user-friendly tool and was rather complex. Moreover, it was abandoned by its creators around the same time kubernetes team was coming together. Helm had its issues too, primarily because it uses Golang templates, which, while powerful, were primarily designed for HTML, XML, and text generation. These templates can control whitespaces, but they&rsquo;re tricky to get right. A single mistake in YAML whitespace, and you&rsquo;re in for a world of pain&hellip;</p>
+<p><img src="/images/world-of-pain.jpg" alt="John Goodman as Walter Sobchak in a frame from Coehn sisters&rsquo; classic: Big Lebowski"></p>
+<p>In contrast, ksonnet utilizes <a href="https://jsonnet.org/">Jsonnet</a> for templating, offering more complex and reusable configurations. Jsonnet enables capabilities like imports, functions, and variables, fostering modular and maintainable configurations. <em>If only there was a tool that combined all the pros and eliminated the cons&hellip;</em> Enter <a href="https://qbec.io/">qbec</a> (pronounced like the Canadian province) written by Krishnan, now a staple tool around here.</p>
+<p>Later I will share some of the tools and conventions I find beneficial, such as folder structures and Makefiles, but let&rsquo;s set the stage for the application we&rsquo;ll be discussing.</p>
+<h1 id="the-application-choosing-the-right-example">The Application: Choosing the Right Example</h1>
+<p>I was grappling with the choice of a demonstration application. Initially, I considered a classic ToDo application, but it required incorporating storage elements like Redis or a database, which might dilute the focus of this post. Instead, I decided on a slightly contrived, yet very useful example - an RPN (Reverse Polish Notation) calculator.</p>
+<h1 id="intermission-a-fun-fact-about-rpn">Intermission: A Fun Fact About RPN</h1>
+<p>While there were uses of <a href="https://en.wikipedia.org/wiki/Reverse_Polish_notation">Reverse Polish Notation</a> even in the 40s it was an australian philosopher <a href="https://en.wikipedia.org/wiki/Charles_Leonard_Hamblin">Charles Hamblin</a> who made final version of alogrithm and the notation, that adopted <a href="https://en.wikipedia.org/wiki/Jan_%C5%81ukasiewicz">Jan Łukasiewicz&rsquo;s</a> <a href="https://en.wikipedia.org/wiki/Polish_notation">Polish Notation</a> for computers. It&rsquo;s a suffix notation that aligns well with stack operations.</p>
+
+<div class="admonition idea">
+    <p class="admonition-title">Fun fact</p>
+    <p>
+Hamblin initially suggested naming it “Azciweisakul notation” as a spelled backwards tribute to Jan Łukasiewicz's last name. Glad it didn't stick.
+</p>
+</div>
+
+<p>The RPN sequence is straightforward: first, the operands are entered, followed by the operation.</p>
+<p>For example, the RPN for <code>2 + 2 * 5</code> would be: <code>2 2 + 5 *</code>.</p>
+<h1 id="application-folder-structure">Application Folder Structure</h1>
+<p>This brings us to our first convention. Although our example involves just one microservice, our setup is designed to accommodate multiple services per functional area.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fish" data-lang="fish"><span style="display:flex;"><span>❯ ls <span style="color:#a6e22e">-R1</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">Makefile</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">README</span>.md
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">go</span>.mod
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">go</span>.sum
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">src</span>/
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>./src:
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">calculator</span>/
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>./src/calculator:
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">main</span>.go
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">rpn</span>.go
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">rpn_test</span>.go
+</span></span></code></pre></div><p>Each service is placed in a separate folder under <code>./src/.</code> This folder may also include supporting microservices and tools, such as those for synthetic transactions or automated service operations. Sometimes, as tools grow or their use extends beyond the team, it becomes practical to move them to a separate repository.</p>
+<h1 id="embracing-makefiles">Embracing Makefiles</h1>
+<p>We extensively use Makefiles here as well. Coming from a Makefile-heavy background in early C/C++ development on DOS and Unix platforms, I thought I was well-prepared. However, during my initial days, I found myself looking up numerous commands, which was a humbling experience. Initially, I wondered if they should be replaced with simpler tools like Ansible or custom Python scripts. But over time, I grew to appreciate their power and versatility, and now I use them in almost all of my projects.</p>
+<p>There are at least two Makefile tricks worth mentioning. Here&rsquo;s the first one:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fish" data-lang="fish"><span style="display:flex;"><span>❯ make help
+</span></span><span style="display:flex;"><span>help         Show this help, automatically generated from comments in the Makefile
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">get</span>          Download packages and <span style="color:#a6e22e">their</span> dependencies from import paths
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">run</span>          Runs the service
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">test</span>         Runs unit-tests
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">fmt</span>          Format source file and <span style="color:#a6e22e">basic</span> housekeeping on imports
+</span></span></code></pre></div><p>This self-documenting feature is quite handy. For every target, we add a quick comment, and then we can grep the Makefile itself:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-makefile" data-lang="makefile"><span style="display:flex;"><span><span style="color:#a6e22e">.PHONY</span><span style="color:#f92672">:</span> help
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">help</span><span style="color:#f92672">:</span>   <span style="color:#75715e">## Show this help, automatically generated from comments in the Makefile
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        @fgrep -h <span style="color:#e6db74">&#34;##&#34;</span> <span style="color:#66d9ef">$(</span>MAKEFILE_LIST<span style="color:#66d9ef">)</span> | fgrep -v fgrep | sed -e <span style="color:#e6db74">&#39;s/\\$$//&#39;</span> | sed -e <span style="color:#e6db74">&#39;s/:.*##/        /&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">.PHONY</span><span style="color:#f92672">:</span> get
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">get</span><span style="color:#f92672">:</span>    <span style="color:#75715e">## Download packages and their dependencies from import paths
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        @echo <span style="color:#e6db74">&#34;+ </span>$@<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>        @go get ./...
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">.PHONY</span><span style="color:#f92672">:</span> run
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">run</span><span style="color:#f92672">:</span>    <span style="color:#75715e">## Runs the service
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        @echo <span style="color:#e6db74">&#34;+ </span>$@<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>        go run ./src/calculator
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">.PHONY</span><span style="color:#f92672">:</span> test
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">test</span><span style="color:#f92672">:</span>   <span style="color:#75715e">## Runs unit-tests
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        go test -count<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span> -v ./...
+</span></span></code></pre></div><p>The <code>MAKEFILE_LIST</code> includes all files read by GNU Make, not just the Makefile in the current folder.</p>
+<p>The second one allows us to generate multiple targets with a template. Let&rsquo;s say we have 10 services in our folder, and wa want to create a <code>ci_calculator_image</code> target but for each of them. Instead defining them by hand, we can do:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-makefile" data-lang="makefile"><span style="display:flex;"><span>IMAGES <span style="color:#f92672">:=</span> calculator otherservice yetanother
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">.PHONY</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">$(</span>IMAGES:%=ci_%_image<span style="color:#66d9ef">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">$(IMAGES</span><span style="color:#f92672">:</span>%=ci_%_image): ci_%_image: cicd/docker/Dockerfile.%
+</span></span><span style="display:flex;"><span>        docker buildx build --tag $* -f $&lt; .
+</span></span></code></pre></div><p>and make will generate 3 targets called <code>ci_calculator_image</code>, <code>ci_otherservice_image</code> and <code>ci_yetanother_image</code> for us. In the makefile above <code>$*</code> expands to the original image name i.e. <code>calculator</code>, and <code>$&lt;</code> to the dependent file i.e. <code>cicd/docker/Dockerfile.calculator</code>.</p>
+<h1 id="microservice-framework-selection">Microservice Framework Selection</h1>
+<p>There are several excellent frameworks for routing HTTP traffic, such as Mux (gorilla/mux) and Gin (gin-gonic/gin). I chose to use Chi because it is 100% compatible with net/http and is built around the context package introduced in Go 1.7, which I frequently use. It&rsquo;s a simple service that accepts a POST on / with application/json encoded content. This example, while a bit contrived, demonstrates how to decode JSON in a handler, which might be useful for those looking to build upon this foundation. With that said, I believe we&rsquo;re ready to start the deployment process.</p>
+<h1 id="the-environment">The Environment</h1>
+<p>Before diving in, let me give you a quick overview of our setup. I&rsquo;ll be using minikube with a Docker container inside Minikube’s VM. For the container runtime, I&rsquo;ll use Docker, and Qemu as the VM driver, coupled with a socket_vmnet network, enabling full networking capabilities for minikube under Qemu. I won&rsquo;t delve into the details here, but you can find ample resources online, or feel free to reach out to me on the fediverse.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fish" data-lang="fish"><span style="display:flex;"><span>❯ brew install socket_vmnet qemu minikube docker docker-buildx
+</span></span><span style="display:flex;"><span>❯ brew services start socket_vmnet
+</span></span><span style="display:flex;"><span>❯ minikube start <span style="color:#a6e22e">--driver</span><span style="color:#f92672">=</span>qemu <span style="color:#a6e22e">--container-runtime</span><span style="color:#f92672">=</span>docker <span style="color:#a6e22e">--network</span><span style="color:#f92672">=</span>socket_vmnet
+</span></span><span style="display:flex;"><span>❯ minikube <span style="color:#a6e22e">-p</span> minikube docker-env <span style="color:#f92672">|</span> source
+</span></span></code></pre></div><h1 id="building-docker-image">Building docker image</h1>
+<p>A while back <code>docker build</code> command got deprecated, and now we need to use <code>buildx</code>. It works pretty much the same, and we will levarage stage builds to get rid off all the build and distro clutter. We will leave only our application and its runtime dependencies by using <a href="https://github.com/GoogleContainerTools/distroless">distroless Debian 11</a> container as a base for our final image.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Dockerfile" data-lang="Dockerfile"><span style="display:flex;"><span><span style="color:#75715e"># syntax=docker/dockerfile:1</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">FROM</span><span style="color:#e6db74"> golang:1.21 AS build-stage</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">WORKDIR</span><span style="color:#e6db74"> /app</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">COPY</span> go.mod go.sum ./<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">RUN</span> go mod download<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">COPY</span> services/calculator/*.go ./<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">RUN</span> CGO_ENABLED<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span> GOOS<span style="color:#f92672">=</span>linux go build -o /calculator<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">FROM</span><span style="color:#e6db74"> build-stage AS run-test-stage</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">RUN</span> go test -v ./...<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">FROM</span><span style="color:#e6db74"> gcr.io/distroless/base-debian11 AS build-release-stage</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">WORKDIR</span><span style="color:#e6db74"> /</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">COPY</span> --from<span style="color:#f92672">=</span>build-stage /calculator /calculator<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">EXPOSE</span><span style="color:#e6db74"> 8080</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">USER</span><span style="color:#e6db74"> nonroot:nonroot</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">ENTRYPOINT</span> [<span style="color:#e6db74">&#34;/calculator&#34;</span>]<span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><p>or from within our example application with just:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fish" data-lang="fish"><span style="display:flex;"><span>❯ make ci_calculator_image
+</span></span></code></pre></div><h1 id="deploying-with-quebec">Deploying with Quebec</h1>
+<p>With the environment set, and docker image built, let&rsquo;s focus on deployment. One practice I favor is creating a <code>cicd/</code> subfolder for all non-local tasks, including advanced testing and Docker image building. This folder typically contains a Makefile for these tasks, which I include in the main Makefile, as well as folders for Docker images and qbec configurations.</p>
+<p>So, what is qbec all about? It&rsquo;s a tool that simplifies the creation and management of Kubernetes objects across multiple clusters and/or namespaces. Let&rsquo;s install it and explore its capabilities.</p>
+<p>Installation commands:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fish" data-lang="fish"><span style="display:flex;"><span>❯ brew tap splunk/tap
+</span></span><span style="display:flex;"><span>❯ brew install qbec
+</span></span></code></pre></div><p>One of the biggest challenges for my team, given the scale of our operations, is managing about 20+ different Kubernetes clusters. We have three types of environments: dev, stage, and live, each with varying levels of traffic and activity. Internally, we also aim to optimize resource utilization – we don&rsquo;t want to set resources too low to avoid frequent scaling, but also not too high to avoid wastage.</p>
+<p>The question then is: How do we avoid configuration duplication while maintaining a high degree of flexibility? Let&rsquo;s see how qbec can help us in this endeavor.</p>
+<h1 id="20-clusters">20+ Clusters</h1>
+<p>First of all, we define all our environments in <code>qbec.yaml</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">qbec.io/v1alpha1</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">kind</span>: <span style="color:#ae81ff">App</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">metadata</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">name</span>: <span style="color:#ae81ff">meetup-example</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">spec</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">environments</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">local</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">context</span>: <span style="color:#ae81ff">minikube</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">defaultNamespace</span>: <span style="color:#ae81ff">default</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">cluster001</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">defaultNamespace</span>: <span style="color:#ae81ff">default</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">server</span>: <span style="color:#ae81ff">https://192.168.1.1:8443</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">cluster002</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">defaultNamespace</span>: <span style="color:#ae81ff">default</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">server</span>: <span style="color:#ae81ff">https://10.0.0.1:8443</span>
+</span></span></code></pre></div><p>now we can quickly apply changes to each environment with:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fish" data-lang="fish"><span style="display:flex;"><span>❯ qbec apply cluster001
+</span></span></code></pre></div><p>There are many ways to customize settings for each cluster. The one qbec suggests out-of-the-box is to have an <code>environments</code> folder with number of files. First we have <code>base.libsonnet</code> for <em>base</em> environment, or <code>_</code> for short. Other files would be named same as keys of entries in <code>spec.environments</code>, so in our case <code>local.libsonnet</code>, <code>cluster001.libsonnet</code>, etc.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fish" data-lang="fish"><span style="display:flex;"><span>❯ ls -1R cicd/qbec/environments/
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">base</span>.libsonnet
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">local</span>.libsonnet
+</span></span></code></pre></div><p>Our microservice&rsquo;s kubernetes objects are defined in <code>components/</code>, but we&rsquo;ll get back to this. First, for base environment let&rsquo;s define all the default parameters that we will later use while constructing our kubernetes resources. Something along the lines of:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  components: {
+</span></span><span style="display:flex;"><span>    calculator: {
+</span></span><span style="display:flex;"><span>      name: <span style="color:#e6db74">&#34;calculator&#34;</span>,
+</span></span><span style="display:flex;"><span>      serviceName: <span style="color:#e6db74">&#34;calculator&#34;</span>,
+</span></span><span style="display:flex;"><span>      replicaCount: <span style="color:#ae81ff">3</span>,
+</span></span><span style="display:flex;"><span>      port: <span style="color:#ae81ff">8080</span>,
+</span></span><span style="display:flex;"><span>      externalServicePort: <span style="color:#ae81ff">8989</span>,
+</span></span><span style="display:flex;"><span>      serviceType: <span style="color:#e6db74">&#34;NodePort&#34;</span>,
+</span></span><span style="display:flex;"><span>      enabled: true,
+</span></span><span style="display:flex;"><span>      resources: {
+</span></span><span style="display:flex;"><span>        requests: {
+</span></span><span style="display:flex;"><span>          cpu: <span style="color:#e6db74">&#34;200m&#34;</span>,
+</span></span><span style="display:flex;"><span>          memory: <span style="color:#e6db74">&#34;200Mi&#34;</span>,
+</span></span><span style="display:flex;"><span>        },
+</span></span><span style="display:flex;"><span>        limits: {
+</span></span><span style="display:flex;"><span>          cpu: <span style="color:#e6db74">&#34;300m&#34;</span>,
+</span></span><span style="display:flex;"><span>          memory: <span style="color:#e6db74">&#34;500Mi&#34;</span>
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>then per environment we can use jsonnet&rsquo;s object mergin notation <code>+:</code>, which do the nested update of one object with another. Let&rsquo;s say for <code>local</code> environment we just want to have one replica of our service, because why would we need more?</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span>local base <span style="color:#f92672">=</span> import <span style="color:#960050;background-color:#1e0010">&#39;</span>.<span style="color:#f92672">/</span>base.libsonnet<span style="color:#960050;background-color:#1e0010">&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>base {
+</span></span><span style="display:flex;"><span>  components <span style="color:#f92672">+:</span> {
+</span></span><span style="display:flex;"><span>    calculator <span style="color:#f92672">+:</span> {
+</span></span><span style="display:flex;"><span>      replicaCount: <span style="color:#ae81ff">1</span>,
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>you can now compare the result looking at generated spec for both environments:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fish" data-lang="fish"><span style="display:flex;"><span>❯ diff <span style="color:#f92672">(</span><span style="color:#a6e22e">qbec</span> <span style="color:#a6e22e">--root</span> cicd/qbec/ show local <span style="color:#f92672">|</span> psub<span style="color:#f92672">)</span> <span style="color:#f92672">(</span><span style="color:#a6e22e">qbec</span> <span style="color:#a6e22e">--root</span> cicd/qbec/ show _ <span style="color:#f92672">|</span> psub<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">12c12</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;</span>     qbec.io/environment: local
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">---</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span>     qbec.io/environment: _
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">15c15</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;</span>   replicas: <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">---</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span>   replicas: <span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">53c53</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;</span>     qbec.io/environment: local
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">---</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span>     qbec.io/environment: _
+</span></span></code></pre></div><h1 id="adjusting-properties-per-tier">Adjusting Properties Per Tier</h1>
+<p>There&rsquo;s many default settings in <code>qbec.yaml</code>, but we can also add our own <code>properties</code> too. Here, for each environment we are going to add indication if it is a <em>local</em>, <em>development</em>, <em>staging</em> or <em>production</em> environment:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">spec</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">environments</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">local</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">context</span>: <span style="color:#ae81ff">minikube</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">properties</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">envType</span>: <span style="color:#ae81ff">local</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">cluster001</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">server</span>: <span style="color:#ae81ff">https://192.168.1.1:8443</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">properties</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">envType</span>: <span style="color:#ae81ff">staging</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">cluster002</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">server</span>: <span style="color:#ae81ff">https://10.0.0.1:8443</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">properties</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">envType</span>: <span style="color:#ae81ff">production</span>
+</span></span></code></pre></div><p>With that in place, let&rsquo;s see our object definition:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span>local paramMap <span style="color:#f92672">=</span> import <span style="color:#e6db74">&#34;params.libsonnet&#34;</span>;
+</span></span><span style="display:flex;"><span>local params <span style="color:#f92672">=</span> paramMap.components.calculator;
+</span></span><span style="display:flex;"><span>local imagePullPolicy <span style="color:#f92672">=</span> std.extVar(<span style="color:#e6db74">&#34;pull_policy&#34;</span>);
+</span></span><span style="display:flex;"><span>local imageVersion <span style="color:#f92672">=</span> std.extVar(<span style="color:#e6db74">&#34;version&#34;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>local name <span style="color:#f92672">=</span> params.name;
+</span></span><span style="display:flex;"><span>local podLabels <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  app: name
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>local serviceLabels <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  service: params.serviceName
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex; background-color:#3c3d38"><span>local target <span style="color:#f92672">=</span> std.extVar(<span style="color:#e6db74">&#34;qbec.io/env&#34;</span>);
+</span></span><span style="display:flex; background-color:#3c3d38"><span>local targetProps <span style="color:#f92672">=</span> std.extVar(<span style="color:#e6db74">&#34;qbec.io/envProperties&#34;</span>);
+</span></span><span style="display:flex; background-color:#3c3d38"><span>
+</span></span><span style="display:flex; background-color:#3c3d38"><span>local <span style="color:#a6e22e">getResources</span>(props) <span style="color:#f92672">=</span>
+</span></span><span style="display:flex; background-color:#3c3d38"><span>  <span style="color:#66d9ef">if</span> std.objectHas(props, <span style="color:#e6db74">&#34;envType&#34;</span>) <span style="color:#f92672">&amp;&amp;</span> props.envType <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;staging&#34;</span> then
+</span></span><span style="display:flex; background-color:#3c3d38"><span>{
+</span></span><span style="display:flex; background-color:#3c3d38"><span>  limits <span style="color:#f92672">+:</span> {
+</span></span><span style="display:flex; background-color:#3c3d38"><span>    cpu: <span style="color:#e6db74">&#34;100m&#34;</span>,
+</span></span><span style="display:flex; background-color:#3c3d38"><span>    memory: <span style="color:#e6db74">&#34;100Mi&#34;</span>
+</span></span><span style="display:flex; background-color:#3c3d38"><span>  }
+</span></span><span style="display:flex; background-color:#3c3d38"><span>} <span style="color:#66d9ef">else</span> {};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  apiVersion: <span style="color:#e6db74">&#34;apps/v1&#34;</span>,
+</span></span><span style="display:flex;"><span>  kind: <span style="color:#e6db74">&#34;Deployment&#34;</span>,
+</span></span><span style="display:flex;"><span>  metadata: {
+</span></span><span style="display:flex;"><span>    name: name,
+</span></span><span style="display:flex;"><span>    labels: podLabels,
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  spec: {
+</span></span><span style="display:flex;"><span>    replicas: params.replicaCount,
+</span></span><span style="display:flex;"><span>    selector: {
+</span></span><span style="display:flex;"><span>      matchLabels: podLabels
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    strategy: {
+</span></span><span style="display:flex;"><span>      type: <span style="color:#e6db74">&#34;RollingUpdate&#34;</span>
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">template</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>      metadata: {
+</span></span><span style="display:flex;"><span>        labels: podLabels
+</span></span><span style="display:flex;"><span>      },
+</span></span><span style="display:flex;"><span>      spec: {
+</span></span><span style="display:flex;"><span>        containers: [
+</span></span><span style="display:flex;"><span>          {
+</span></span><span style="display:flex;"><span>            name: name,
+</span></span><span style="display:flex;"><span>            image: <span style="color:#e6db74">&#34;calculator:&#34;</span> <span style="color:#f92672">+</span> imageVersion,
+</span></span><span style="display:flex;"><span>            imagePullPolicy: imagePullPolicy,
+</span></span><span style="display:flex;"><span>            ports: [{
+</span></span><span style="display:flex;"><span>              containerPort: params.port,
+</span></span><span style="display:flex;"><span>              name: <span style="color:#e6db74">&#34;http&#34;</span>,
+</span></span><span style="display:flex;"><span>              protocol: <span style="color:#e6db74">&#34;TCP&#34;</span>
+</span></span><span style="display:flex;"><span>            }],
+</span></span><span style="display:flex; background-color:#3c3d38"><span>            resources: params.resources <span style="color:#f92672">+</span> getResources(targetProps)
+</span></span><span style="display:flex;"><span>          },
+</span></span><span style="display:flex;"><span>        ],
+</span></span><span style="display:flex;"><span>      },
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>};</span></span></code></pre></div>
+<p>In the code snippet above, the params object is derived from settings we have statically configured for our environments. During each evaluation, params reflects the values computed specifically for the evaluated environment. It&rsquo;s important to note that Jsonnet files always return an object. In our example, we&rsquo;re returning the Deployment resource definition directly.</p>
+<p>The highlighted lines play a crucial role in the dynamic calculation of properties. Essentially, we&rsquo;re crafting a function that takes the environment type from qbec.yaml. Based on the environment type, this function generates an object with properties tailored to that specific environment. A few lines down, we will manually merge our base properties from props with this dynamically generated object. This process effectively replaces the original values with the new, environment-specific ones.</p>
+<h1 id="postprocessor">Postprocessor</h1>
+<p>In cloud environments, an essential aspect of management is cost tracking, which often involves adding specific labels to each application for team-based cost analysis. To streamline this process and avoid the repetitive task of manually labeling each object, we can implement a post-processor. Once configured in <code>qbec.yaml</code>, this post-processor automatically appends the necessary per-team labels to every object we create. By doing so, we not only ensure consistent labeling across our application resources&rsquo; but also significantly simplify the management and tracking of cloud costs.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span>function (object) object {
+</span></span><span style="display:flex;"><span>    metadata <span style="color:#f92672">+:</span> {
+</span></span><span style="display:flex;"><span>        annotations <span style="color:#f92672">+:</span> {
+</span></span><span style="display:flex;"><span>            <span style="color:#960050;background-color:#1e0010">&#39;</span>meetup.com<span style="color:#f92672">/</span>type<span style="color:#960050;background-color:#1e0010">&#39;</span><span style="color:#f92672">:</span> <span style="color:#960050;background-color:#1e0010">&#39;</span>meetup<span style="color:#960050;background-color:#1e0010">&#39;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#960050;background-color:#1e0010">&#39;</span>meetup.com<span style="color:#f92672">/</span>technology<span style="color:#960050;background-color:#1e0010">&#39;</span><span style="color:#f92672">:</span> <span style="color:#960050;background-color:#1e0010">&#39;</span>golang<span style="color:#960050;background-color:#1e0010">&#39;</span>,
+</span></span><span style="display:flex;"><span>        },
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h1 id="adjusting-resources-per-tier">Adjusting Resources Per Tier</h1>
+<p>A common challenge we encounter involves tailoring the resources we deploy to suit the specific needs of different environments. For instance, in our development environment, there might be no need for HorizontalPodAutoscaler or PodDisruptionBudget. Similarly, we might want to completely disable our service in <code>cluster002</code> if it’s not required there. To address these variations, we can modify our component file slightly. Instead of directly returning a JSON object, we will define each resource individually and then combine them at the end. This approach allows us to have finer control over what gets deployed in each environment, ensuring that resources are allocated efficiently and appropriately.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span>local deployment <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>        apiVersion: <span style="color:#960050;background-color:#1e0010">&#39;</span>apps<span style="color:#f92672">/</span>v1<span style="color:#960050;background-color:#1e0010">&#39;</span>,
+</span></span><span style="display:flex;"><span>        kind: <span style="color:#960050;background-color:#1e0010">&#39;</span>Deployment<span style="color:#960050;background-color:#1e0010">&#39;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// ...
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>};
+</span></span><span style="display:flex;"><span>local service <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>        apiVersion: <span style="color:#960050;background-color:#1e0010">&#39;</span>v1<span style="color:#960050;background-color:#1e0010">&#39;</span>,
+</span></span><span style="display:flex;"><span>        kind: <span style="color:#960050;background-color:#1e0010">&#39;</span>Service<span style="color:#960050;background-color:#1e0010">&#39;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// ...
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>};
+</span></span><span style="display:flex;"><span>local hpa <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// definition for HorizontalPodAutoscaler
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>};
+</span></span><span style="display:flex;"><span>local pdb <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// definition for PodDisruptionBudget
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex; background-color:#3c3d38"><span>local dev_resources <span style="color:#f92672">=</span> [deployment, service];
+</span></span><span style="display:flex; background-color:#3c3d38"><span>local all_resources <span style="color:#f92672">=</span> [deployment, service, hpa, pdb];
+</span></span><span style="display:flex; background-color:#3c3d38"><span>local <span style="color:#a6e22e">isDevelopment</span>(props) <span style="color:#f92672">=</span> 
+</span></span><span style="display:flex; background-color:#3c3d38"><span>        <span style="color:#66d9ef">if</span> std.objectHas(props, <span style="color:#e6db74">&#34;envType&#34;</span>) <span style="color:#f92672">&amp;&amp;</span> (props.envType <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;development&#34;</span> <span style="color:#f92672">||</span> props.envType <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;local&#34;</span>) then true <span style="color:#66d9ef">else</span> false;
+</span></span><span style="display:flex; background-color:#3c3d38"><span>local resources <span style="color:#f92672">=</span> isDevelopment(targetProps) then dev_resources <span style="color:#66d9ef">else</span> all_resources;
+</span></span><span style="display:flex; background-color:#3c3d38"><span>
+</span></span><span style="display:flex; background-color:#3c3d38"><span><span style="color:#66d9ef">if</span> params.enabled then resources <span style="color:#66d9ef">else</span> []</span></span></code></pre></div>
+<h1 id="final-words">Final words</h1>
+<p>There&rsquo;s certainly much more to explore beyond what we&rsquo;ve covered here, but this should provide you with a solid foundation to get started. This article stems from a talk I delivered at the 11th <a href="https://www.meetup.com/pl-PL/gocracow/">Go Cracow</a> meetup. For those interested in diving deeper, all the code discussed can be found on <a href="https://codeberg.org/unjello/meetup-gocracow11-example">Codeberg</a>. I encourage you to experiment and have fun with it! And if you wanna reach out, feel free to poke me on <a href="">Fediverse</a>.</p>
+<p>Happy coding!</p>
+</div>
+        </section>
+
+        <footer class="fs-6 text-muted mt-5">
+            <p>
+                CC0. Powered by <a href="https://gohugo.io">Hugo</a>. Theme inspired by <a href="https://www.mattdesl.com/">@mattdesl</a> and <a href="https://ozafoto.com/digital/">Oza</a>.
+            </p>
+        </footer>
+    </div>
+    
+  </body>
+</html>

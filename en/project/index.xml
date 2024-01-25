@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on @unjello</title>
+    <link>http://andrzej.lichnerowicz.pl/en/project/</link>
+    <description>Recent content in Projects on @unjello</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <atom:link href="http://andrzej.lichnerowicz.pl/en/project/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Chronicles of Polish Demoscene</title>
+      <link>http://andrzej.lichnerowicz.pl/en/project/kskpd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://andrzej.lichnerowicz.pl/en/project/kskpd/</guid>
+      <description>A collective working towards preserving the digital heritage of demoscene in Poland. Successfuly enlisted demoscene as UNESCO Intangible Cultural Heritage of Poland.</description>
+    </item>
+    <item>
+      <title>Google Developers Group Cloud Kraków</title>
+      <link>http://andrzej.lichnerowicz.pl/en/project/gdgc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://andrzej.lichnerowicz.pl/en/project/gdgc/</guid>
+      <description>Community of professionals working with Google Cloud technologies.</description>
+    </item>
+    <item>
+      <title>One World-One Heart Foundation</title>
+      <link>http://andrzej.lichnerowicz.pl/en/project/owoh/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://andrzej.lichnerowicz.pl/en/project/owoh/</guid>
+      <description>Focused on the mission of building a society sensitive to diversity, committed to creating a welcoming, tolerant environment, open to building relationships with migrants in Krakow</description>
+    </item>
+  </channel>
+</rss>
