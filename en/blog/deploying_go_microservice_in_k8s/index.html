@@ -327,21 +327,21 @@ Hamblin initially suggested naming it “Azciweisakul notation” as a spelled b
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span>function (object) object {
 </span></span><span style="display:flex;"><span>    metadata <span style="color:#f92672">+:</span> {
 </span></span><span style="display:flex;"><span>        annotations <span style="color:#f92672">+:</span> {
-</span></span><span style="display:flex;"><span>            <span style="color:#960050;background-color:#1e0010">&#39;</span>meetup.com<span style="color:#f92672">/</span>type<span style="color:#960050;background-color:#1e0010">&#39;</span><span style="color:#f92672">:</span> <span style="color:#960050;background-color:#1e0010">&#39;</span>meetup<span style="color:#960050;background-color:#1e0010">&#39;</span>,
-</span></span><span style="display:flex;"><span>            <span style="color:#960050;background-color:#1e0010">&#39;</span>meetup.com<span style="color:#f92672">/</span>technology<span style="color:#960050;background-color:#1e0010">&#39;</span><span style="color:#f92672">:</span> <span style="color:#960050;background-color:#1e0010">&#39;</span>golang<span style="color:#960050;background-color:#1e0010">&#39;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;meetup.com/type&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;meetup&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;meetup.com/technology&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;golang&#34;</span>,
 </span></span><span style="display:flex;"><span>        },
 </span></span><span style="display:flex;"><span>    },
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><h1 id="adjusting-resources-per-tier">Adjusting Resources Per Tier</h1>
 <p>A common challenge we encounter involves tailoring the resources we deploy to suit the specific needs of different environments. For instance, in our development environment, there might be no need for HorizontalPodAutoscaler or PodDisruptionBudget. Similarly, we might want to completely disable our service in <code>cluster002</code> if it’s not required there. To address these variations, we can modify our component file slightly. Instead of directly returning a JSON object, we will define each resource individually and then combine them at the end. This approach allows us to have finer control over what gets deployed in each environment, ensuring that resources are allocated efficiently and appropriately.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span>local deployment <span style="color:#f92672">=</span> {
-</span></span><span style="display:flex;"><span>        apiVersion: <span style="color:#960050;background-color:#1e0010">&#39;</span>apps<span style="color:#f92672">/</span>v1<span style="color:#960050;background-color:#1e0010">&#39;</span>,
-</span></span><span style="display:flex;"><span>        kind: <span style="color:#960050;background-color:#1e0010">&#39;</span>Deployment<span style="color:#960050;background-color:#1e0010">&#39;</span>,
+</span></span><span style="display:flex;"><span>        apiVersion: <span style="color:#e6db74">&#34;apps/v1&#34;</span>,
+</span></span><span style="display:flex;"><span>        kind: <span style="color:#e6db74">&#34;Deployment&#34;</span>,
 </span></span><span style="display:flex;"><span>        <span style="color:#75715e">// ...
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>};
 </span></span><span style="display:flex;"><span>local service <span style="color:#f92672">=</span> {
-</span></span><span style="display:flex;"><span>        apiVersion: <span style="color:#960050;background-color:#1e0010">&#39;</span>v1<span style="color:#960050;background-color:#1e0010">&#39;</span>,
-</span></span><span style="display:flex;"><span>        kind: <span style="color:#960050;background-color:#1e0010">&#39;</span>Service<span style="color:#960050;background-color:#1e0010">&#39;</span>,
+</span></span><span style="display:flex;"><span>        apiVersion: <span style="color:#e6db74">&#34;v1&#34;</span>,
+</span></span><span style="display:flex;"><span>        kind: <span style="color:#e6db74">&#34;Service&#34;</span>,
 </span></span><span style="display:flex;"><span>        <span style="color:#75715e">// ...
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>};
 </span></span><span style="display:flex;"><span>local hpa <span style="color:#f92672">=</span> {
