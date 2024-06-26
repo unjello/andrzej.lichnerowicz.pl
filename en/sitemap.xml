@@ -6,19 +6,15 @@
   </url><url>
     <loc>http://andrzej.lichnerowicz.pl/en/art/acid-kids/</loc>
   </url><url>
-    <loc>http://andrzej.lichnerowicz.pl/en/art/</loc>
-  </url><url>
     <loc>http://andrzej.lichnerowicz.pl/en/talks/digitaldragons_2021/</loc>
-  </url><url>
-    <loc>http://andrzej.lichnerowicz.pl/en/blog/</loc>
   </url><url>
     <loc>http://andrzej.lichnerowicz.pl/en/oss/calkulator/</loc>
   </url><url>
     <loc>http://andrzej.lichnerowicz.pl/en/categories/</loc>
   </url><url>
-    <loc>http://andrzej.lichnerowicz.pl/en/project/kskpd/</loc>
-  </url><url>
     <loc>http://andrzej.lichnerowicz.pl/en/art/ciche-dni/</loc>
+  </url><url>
+    <loc>http://andrzej.lichnerowicz.pl/en/talks/gocracow_05_2024/</loc>
   </url><url>
     <loc>http://andrzej.lichnerowicz.pl/en/talks/xenium_2021/</loc>
   </url><url>
@@ -28,9 +24,9 @@
   </url><url>
     <loc>http://andrzej.lichnerowicz.pl/en/talks/back_to_the_oldschool/</loc>
   </url><url>
-    <loc>http://andrzej.lichnerowicz.pl/en/blog/deploying_go_microservice_in_k8s/</loc>
+    <loc>http://andrzej.lichnerowicz.pl/en/blog/deploying-a-go-microservice-in-kubernetes/</loc>
   </url><url>
-    <loc>http://andrzej.lichnerowicz.pl/en/talks/gocracow_11_2024/</loc>
+    <loc>http://andrzej.lichnerowicz.pl/en/talks/gocracow_01_2024/</loc>
   </url><url>
     <loc>http://andrzej.lichnerowicz.pl/en/talks/sabre_oxford_debate/</loc>
   </url><url>
@@ -40,11 +36,9 @@
   </url><url>
     <loc>http://andrzej.lichnerowicz.pl/en/oss/fooinput_amr/</loc>
   </url><url>
-    <loc>http://andrzej.lichnerowicz.pl/en/project/gdgc/</loc>
-  </url><url>
     <loc>http://andrzej.lichnerowicz.pl/en/blog/initial-revision/</loc>
   </url><url>
-    <loc>http://andrzej.lichnerowicz.pl/en/blog/same_old_story/</loc>
+    <loc>http://andrzej.lichnerowicz.pl/en/blog/its-still-the-same-old-story/</loc>
   </url><url>
     <loc>http://andrzej.lichnerowicz.pl/en/talks/devfest_2021/</loc>
   </url><url>
@@ -52,13 +46,9 @@
   </url><url>
     <loc>http://andrzej.lichnerowicz.pl/en/oss/msctexen/</loc>
   </url><url>
-    <loc>http://andrzej.lichnerowicz.pl/en/blog/reboot/</loc>
-  </url><url>
-    <loc>http://andrzej.lichnerowicz.pl/en/project/owoh/</loc>
+    <loc>http://andrzej.lichnerowicz.pl/en/blog/one-more-time/</loc>
   </url><url>
     <loc>http://andrzej.lichnerowicz.pl/en/oss/orgmode/</loc>
-  </url><url>
-    <loc>http://andrzej.lichnerowicz.pl/en/oss/</loc>
   </url><url>
     <loc>http://andrzej.lichnerowicz.pl/en/oss/pino_pretty_min/</loc>
   </url><url>
@@ -70,21 +60,15 @@
   </url><url>
     <loc>http://andrzej.lichnerowicz.pl/en/publications/2023_kskpd_polska_demoscena/</loc>
   </url><url>
-    <loc>http://andrzej.lichnerowicz.pl/en/project/</loc>
-  </url><url>
-    <loc>http://andrzej.lichnerowicz.pl/en/publications/</loc>
-  </url><url>
     <loc>http://andrzej.lichnerowicz.pl/en/talks/siggraph_2021_qa/</loc>
   </url><url>
-    <loc>http://andrzej.lichnerowicz.pl/en/blog/rust_github_2023/</loc>
+    <loc>http://andrzej.lichnerowicz.pl/en/blog/rocking-rust-git-and-github-in-2023-like-a-pro/</loc>
   </url><url>
     <loc>http://andrzej.lichnerowicz.pl/en/oss/safeshelter/</loc>
   </url><url>
     <loc>http://andrzej.lichnerowicz.pl/en/art/simulacrum/</loc>
   </url><url>
     <loc>http://andrzej.lichnerowicz.pl/en/tags/</loc>
-  </url><url>
-    <loc>http://andrzej.lichnerowicz.pl/en/talks/</loc>
   </url><url>
     <loc>http://andrzej.lichnerowicz.pl/en/talks/test-driven-development/</loc>
   </url><url>
@@ -95,6 +79,8 @@
     <loc>http://andrzej.lichnerowicz.pl/en/art/trzecie-uderzenie/</loc>
   </url><url>
     <loc>http://andrzej.lichnerowicz.pl/en/talks/siggraph_2021_workshop/</loc>
+  </url><url>
+    <loc>http://andrzej.lichnerowicz.pl/en/talks/code_europe_06_2024/</loc>
   </url><url>
     <loc>http://andrzej.lichnerowicz.pl/en/talks/wrss_2021/</loc>
   </url><url>

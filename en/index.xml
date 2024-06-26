@@ -4,7 +4,7 @@
     <title>@unjello</title>
     <link>http://andrzej.lichnerowicz.pl/en/</link>
     <description>Recent content on @unjello</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-US</language>
     <atom:link href="http://andrzej.lichnerowicz.pl/en/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -29,18 +29,18 @@
       <description>dos-navigator like, lightweight calculator for windows.</description>
     </item>
     <item>
-      <title>Chronicles of Polish Demoscene</title>
-      <link>http://andrzej.lichnerowicz.pl/en/project/kskpd/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://andrzej.lichnerowicz.pl/en/project/kskpd/</guid>
-      <description>A collective working towards preserving the digital heritage of demoscene in Poland. Successfuly enlisted demoscene as UNESCO Intangible Cultural Heritage of Poland.</description>
-    </item>
-    <item>
       <title>Ciche Dni</title>
       <link>http://andrzej.lichnerowicz.pl/en/art/ciche-dni/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://andrzej.lichnerowicz.pl/en/art/ciche-dni/</guid>
       <description>Music disc accompanying the album &amp;ldquo;Ciche Dni&amp;rdquo; by &amp;ldquo;Towary Zastępcze&amp;rdquo; band</description>
+    </item>
+    <item>
+      <title>Custom Kubernetes Controllers</title>
+      <link>http://andrzej.lichnerowicz.pl/en/talks/gocracow_05_2024/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://andrzej.lichnerowicz.pl/en/talks/gocracow_05_2024/</guid>
+      <description></description>
     </item>
     <item>
       <title>DEMOSCENA ⨉ UNESCO. Quo Vadis?</title>
@@ -72,16 +72,16 @@
     </item>
     <item>
       <title>Deploying a Go Microservice in Kubernetes</title>
-      <link>http://andrzej.lichnerowicz.pl/en/blog/deploying_go_microservice_in_k8s/</link>
+      <link>http://andrzej.lichnerowicz.pl/en/blog/deploying-a-go-microservice-in-kubernetes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://andrzej.lichnerowicz.pl/en/blog/deploying_go_microservice_in_k8s/</guid>
+      <guid>http://andrzej.lichnerowicz.pl/en/blog/deploying-a-go-microservice-in-kubernetes/</guid>
       <description>Disclaimer Disclaimer: This post will showcase some macOS-specific tools, primarily brew. This isn&amp;rsquo;t to make a platform statement; it&amp;rsquo;s simply to avoid the complexities of multi-platform discussion for brevity&amp;rsquo;s sake.&#xA;Over the Hill and Under the Hill So, this is going to be a bit of a shameless plug, though all the praise towards my current employer, Splunk, is purely accidental :)&#xA;My journey here has been nothing short of remarkable, largely thanks to the incredible people I&amp;rsquo;ve had the chance to work with.</description>
     </item>
     <item>
       <title>Deploying a Go Microservice in Kubernetes</title>
-      <link>http://andrzej.lichnerowicz.pl/en/talks/gocracow_11_2024/</link>
+      <link>http://andrzej.lichnerowicz.pl/en/talks/gocracow_01_2024/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://andrzej.lichnerowicz.pl/en/talks/gocracow_11_2024/</guid>
+      <guid>http://andrzej.lichnerowicz.pl/en/talks/gocracow_01_2024/</guid>
       <description></description>
     </item>
     <item>
@@ -113,13 +113,6 @@
       <description>amr-nb decoder for foobar2000.</description>
     </item>
     <item>
-      <title>Google Developers Group Cloud Kraków</title>
-      <link>http://andrzej.lichnerowicz.pl/en/project/gdgc/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://andrzej.lichnerowicz.pl/en/project/gdgc/</guid>
-      <description>Community of professionals working with Google Cloud technologies.</description>
-    </item>
-    <item>
       <title>Initial Revision</title>
       <link>http://andrzej.lichnerowicz.pl/en/blog/initial-revision/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -128,9 +121,9 @@
     </item>
     <item>
       <title>It&#39;s still the same old story</title>
-      <link>http://andrzej.lichnerowicz.pl/en/blog/same_old_story/</link>
+      <link>http://andrzej.lichnerowicz.pl/en/blog/its-still-the-same-old-story/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://andrzej.lichnerowicz.pl/en/blog/same_old_story/</guid>
+      <guid>http://andrzej.lichnerowicz.pl/en/blog/its-still-the-same-old-story/</guid>
       <description>I don&amp;rsquo;t think I even remember anymore, how many times I have restarted the blog. Last time I wrote something useful, was probably around 2008.&#xA;I still have the old sites backed up somewhere. At least few of them. Unfortunately they&amp;rsquo;re not very useful, mostly because they have been using blogging engines &amp;ndash; either Wordpress-like, or my own &amp;ndash; and while I backed up the code, I did not export anything from the database, leaving myself with just the looks, and no content.</description>
     </item>
     <item>
@@ -156,17 +149,10 @@
     </item>
     <item>
       <title>One more time?</title>
-      <link>http://andrzej.lichnerowicz.pl/en/blog/reboot/</link>
+      <link>http://andrzej.lichnerowicz.pl/en/blog/one-more-time/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://andrzej.lichnerowicz.pl/en/blog/reboot/</guid>
+      <guid>http://andrzej.lichnerowicz.pl/en/blog/one-more-time/</guid>
       <description>% /sbin/shutdown -r now It begins to strike me, that I may not be good at blogging. Let&amp;rsquo;s see if I can make it this time.</description>
-    </item>
-    <item>
-      <title>One World-One Heart Foundation</title>
-      <link>http://andrzej.lichnerowicz.pl/en/project/owoh/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://andrzej.lichnerowicz.pl/en/project/owoh/</guid>
-      <description>Focused on the mission of building a society sensitive to diversity, committed to creating a welcoming, tolerant environment, open to building relationships with migrants in Krakow</description>
     </item>
     <item>
       <title>org-mode</title>
@@ -219,9 +205,9 @@
     </item>
     <item>
       <title>Rocking Rust, Git, and GitHub in 2023 Like a Pro</title>
-      <link>http://andrzej.lichnerowicz.pl/en/blog/rust_github_2023/</link>
+      <link>http://andrzej.lichnerowicz.pl/en/blog/rocking-rust-git-and-github-in-2023-like-a-pro/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://andrzej.lichnerowicz.pl/en/blog/rust_github_2023/</guid>
+      <guid>http://andrzej.lichnerowicz.pl/en/blog/rocking-rust-git-and-github-in-2023-like-a-pro/</guid>
       <description>Falling in Love with SourceHut, But Still Tempted by GitHub Actions SourceHut has recently won my heart with its simplicity and 90&amp;rsquo;s UI vibe, but I can&amp;rsquo;t resist the appeal of GitHub&amp;rsquo;s free workflow automation platform. I&amp;rsquo;ve been working on a few small projects in Python, TypeScript, and Rust, and have set up CI for all of them. Now that I&amp;rsquo;ve revived my blog, I thought I&amp;rsquo;d write about my experience using GitHub Actions for deployment.</description>
     </item>
     <item>
@@ -271,6 +257,13 @@
       <link>http://andrzej.lichnerowicz.pl/en/talks/siggraph_2021_workshop/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://andrzej.lichnerowicz.pl/en/talks/siggraph_2021_workshop/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Write Less Configs — Harnessing the Power of JSonnet for Resource Management</title>
+      <link>http://andrzej.lichnerowicz.pl/en/talks/code_europe_06_2024/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://andrzej.lichnerowicz.pl/en/talks/code_europe_06_2024/</guid>
       <description></description>
     </item>
     <item>
