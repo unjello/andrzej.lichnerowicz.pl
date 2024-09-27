@@ -12,7 +12,7 @@
       <link>http://andrzej.lichnerowicz.pl/en/art/acid-kids/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://andrzej.lichnerowicz.pl/en/art/acid-kids/</guid>
-      <description>Music disk of Łukasz &amp;lsquo;cro&amp;rsquo; Milewczyk</description>
+      <description>&lt;p&gt;Music disk of Łukasz &amp;lsquo;cro&amp;rsquo; Milewczyk&lt;/p&gt;</description>
     </item>
     <item>
       <title>Art of limits and randomness</title>
@@ -26,14 +26,14 @@
       <link>http://andrzej.lichnerowicz.pl/en/oss/calkulator/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://andrzej.lichnerowicz.pl/en/oss/calkulator/</guid>
-      <description>dos-navigator like, lightweight calculator for windows.</description>
+      <description>&lt;p&gt;dos-navigator like, lightweight calculator for windows.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Ciche Dni</title>
       <link>http://andrzej.lichnerowicz.pl/en/art/ciche-dni/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://andrzej.lichnerowicz.pl/en/art/ciche-dni/</guid>
-      <description>Music disc accompanying the album &amp;ldquo;Ciche Dni&amp;rdquo; by &amp;ldquo;Towary Zastępcze&amp;rdquo; band</description>
+      <description>&lt;p&gt;Music disc accompanying the album &amp;ldquo;Ciche Dni&amp;rdquo; by &amp;ldquo;Towary Zastępcze&amp;rdquo; band&lt;/p&gt;</description>
     </item>
     <item>
       <title>Custom Kubernetes Controllers</title>
@@ -75,7 +75,7 @@
       <link>http://andrzej.lichnerowicz.pl/en/blog/deploying-a-go-microservice-in-kubernetes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://andrzej.lichnerowicz.pl/en/blog/deploying-a-go-microservice-in-kubernetes/</guid>
-      <description>Disclaimer Disclaimer: This post will showcase some macOS-specific tools, primarily brew. This isn&amp;rsquo;t to make a platform statement; it&amp;rsquo;s simply to avoid the complexities of multi-platform discussion for brevity&amp;rsquo;s sake.&#xA;Over the Hill and Under the Hill So, this is going to be a bit of a shameless plug, though all the praise towards my current employer, Splunk, is purely accidental :)&#xA;My journey here has been nothing short of remarkable, largely thanks to the incredible people I&amp;rsquo;ve had the chance to work with.</description>
+      <description>&lt;h1 id=&#34;disclaimer&#34;&gt;Disclaimer&lt;/h1&gt;&#xA;&lt;p&gt;Disclaimer: This post will showcase some macOS-specific tools, primarily brew. This isn&amp;rsquo;t to make a platform statement; it&amp;rsquo;s simply to avoid the complexities of multi-platform discussion for brevity&amp;rsquo;s sake.&lt;/p&gt;&#xA;&lt;h1 id=&#34;over-the-hill-and-under-the-hill&#34;&gt;Over the Hill and Under the Hill&lt;/h1&gt;&#xA;&lt;p&gt;So, this is going to be a bit of a shameless plug, though all the praise towards my current employer, &lt;a href=&#34;https://splunk.com/&#34;&gt;Splunk&lt;/a&gt;, is purely accidental :)&lt;/p&gt;&#xA;&lt;p&gt;My journey here has been nothing short of remarkable, largely thanks to the incredible people I&amp;rsquo;ve had the chance to work with. One of them was &lt;a href=&#34;https://github.com/gotwarlost&#34;&gt;Krishnan Anantheswaran&lt;/a&gt;, known for his work on &lt;a href=&#34;https://istanbul.js.org&#34;&gt;Istanbul&lt;/a&gt; - a javascript coverage framework I used back in my front-end days. Krishnan interviewed me for the company, and for a few months, I soaked up as much knowledge as I could from him until his departure. Suddenly, I was in at the deep end, tasked with understanding a vast ecosystem. The component I was to take over wasn&amp;rsquo;t particularly challenging, but the surrounding environment was immense. As you can imagine, one of my key challenges was learning how to deploy our software effectively. This post is a reflection on the lessons I learned from this journey.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Deploying a Go Microservice in Kubernetes</title>
@@ -96,35 +96,35 @@
       <link>http://andrzej.lichnerowicz.pl/en/art/dolne-miasto/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://andrzej.lichnerowicz.pl/en/art/dolne-miasto/</guid>
-      <description>Hypervideo system accompanying the premiere of the album &amp;ldquo;Dolne Miasto OST&amp;rdquo; by &amp;ldquo;Towary Zastępcze&amp;rdquo; band</description>
+      <description>&lt;p&gt;Hypervideo system accompanying the premiere of the album &amp;ldquo;Dolne Miasto OST&amp;rdquo; by &amp;ldquo;Towary Zastępcze&amp;rdquo; band&lt;/p&gt;</description>
     </item>
     <item>
       <title>Exodus</title>
       <link>http://andrzej.lichnerowicz.pl/en/art/exodus/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://andrzej.lichnerowicz.pl/en/art/exodus/</guid>
-      <description>4KiB intro, 3rd place at MAGFest 2019, USA.</description>
+      <description>&lt;p&gt;4KiB intro, 3rd place at MAGFest 2019, USA.&lt;/p&gt;</description>
     </item>
     <item>
       <title>foo_input_amr</title>
       <link>http://andrzej.lichnerowicz.pl/en/oss/fooinput_amr/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://andrzej.lichnerowicz.pl/en/oss/fooinput_amr/</guid>
-      <description>amr-nb decoder for foobar2000.</description>
+      <description>&lt;p&gt;amr-nb decoder for foobar2000.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Initial Revision</title>
       <link>http://andrzej.lichnerowicz.pl/en/blog/initial-revision/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://andrzej.lichnerowicz.pl/en/blog/initial-revision/</guid>
-      <description>% letter letter: Command not found. % mail To: ^X ^F ^C % help mail help: Command not found. % damn! !: Event unrecognized % logout It&amp;rsquo;s been sort of a tradition, to begin each incarnation of my blog, with a quote from this old joke1. If one can trust the, uh, Internets, this blog was esentially down since 2007. A decade! Enough is enough. Time to get back.&#xA;https://gist.github.com/D3MZ/3915286&amp;#160;&amp;#x21a9;&amp;#xfe0e;</description>
+      <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;% letter&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;letter: Command not found.&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;% mail&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;To: ^X ^F ^C&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;% help mail&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;help: Command not found.&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;% damn!&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;!: Event unrecognized&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;% logout&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;It&amp;rsquo;s been sort of a tradition, to begin each incarnation of my blog, with a quote from this old joke&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. If one can trust &lt;em&gt;the, uh, Internets&lt;/em&gt;, this blog was esentially down since 2007. A decade! Enough is enough. Time to get back.&lt;/p&gt;&#xA;&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;&#xA;&lt;hr&gt;&#xA;&lt;ol&gt;&#xA;&lt;li id=&#34;fn:1&#34;&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://gist.github.com/D3MZ/3915286&#34;&gt;https://gist.github.com/D3MZ/3915286&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>It&#39;s still the same old story</title>
       <link>http://andrzej.lichnerowicz.pl/en/blog/its-still-the-same-old-story/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://andrzej.lichnerowicz.pl/en/blog/its-still-the-same-old-story/</guid>
-      <description>I don&amp;rsquo;t think I even remember anymore, how many times I have restarted the blog. Last time I wrote something useful, was probably around 2008.&#xA;I still have the old sites backed up somewhere. At least few of them. Unfortunately they&amp;rsquo;re not very useful, mostly because they have been using blogging engines &amp;ndash; either Wordpress-like, or my own &amp;ndash; and while I backed up the code, I did not export anything from the database, leaving myself with just the looks, and no content.</description>
+      <description>&lt;p&gt;&lt;img alt=&#34;Dooley Wilson, Ingrid Bergman and Humphrey Bogart in a frame from Hollywood&amp;rsquo;s classic: Cassablanca&#34; src=&#34;http://andrzej.lichnerowicz.pl/images/casablanca.jpg&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;I don&amp;rsquo;t think I even remember anymore, how many times I have restarted the blog. Last time I wrote something useful, was probably around 2008.&lt;/p&gt;&#xA;&lt;p&gt;I still have the old sites backed up somewhere. At least few of them. Unfortunately they&amp;rsquo;re not very useful, mostly because they have been using blogging engines &amp;ndash; either Wordpress-like, or my own &amp;ndash; and while I backed up the code, I did not export anything from the database, leaving myself with just the looks, and no content.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Keynote</title>
@@ -138,35 +138,35 @@
       <link>http://andrzej.lichnerowicz.pl/en/art/memory-remains/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://andrzej.lichnerowicz.pl/en/art/memory-remains/</guid>
-      <description>Demo, 4th place at Riverwash 2018, PL.</description>
+      <description>&lt;p&gt;Demo, 4th place at Riverwash 2018, PL.&lt;/p&gt;</description>
     </item>
     <item>
       <title>msctexen</title>
       <link>http://andrzej.lichnerowicz.pl/en/oss/msctexen/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://andrzej.lichnerowicz.pl/en/oss/msctexen/</guid>
-      <description>mscgen in latex.</description>
+      <description>&lt;p&gt;mscgen in latex.&lt;/p&gt;</description>
     </item>
     <item>
       <title>One more time?</title>
       <link>http://andrzej.lichnerowicz.pl/en/blog/one-more-time/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://andrzej.lichnerowicz.pl/en/blog/one-more-time/</guid>
-      <description>% /sbin/shutdown -r now It begins to strike me, that I may not be good at blogging. Let&amp;rsquo;s see if I can make it this time.</description>
+      <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;% /sbin/shutdown -r now&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;It begins to strike me, that I may not be good at blogging. Let&amp;rsquo;s see if I can make it this time.&lt;/p&gt;</description>
     </item>
     <item>
       <title>org-mode</title>
       <link>http://andrzej.lichnerowicz.pl/en/oss/orgmode/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://andrzej.lichnerowicz.pl/en/oss/orgmode/</guid>
-      <description>a scala and io minor modes for gnu emacs&amp;rsquo; org-mode.</description>
+      <description>&lt;p&gt;a scala and io minor modes for gnu emacs&amp;rsquo; org-mode.&lt;/p&gt;</description>
     </item>
     <item>
       <title>pino-pretty-min</title>
       <link>http://andrzej.lichnerowicz.pl/en/oss/pino_pretty_min/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://andrzej.lichnerowicz.pl/en/oss/pino_pretty_min/</guid>
-      <description>minimalistic ndjson logger for pino.</description>
+      <description>&lt;p&gt;minimalistic ndjson logger for pino.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Podcast Episode #107 — Demoscene: The Art of Coding</title>
@@ -180,7 +180,7 @@
       <link>http://andrzej.lichnerowicz.pl/en/publications/2023_kskpd_polish_demoscene/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://andrzej.lichnerowicz.pl/en/publications/2023_kskpd_polish_demoscene/</guid>
-      <description>Wasiak P., Szałankiewicz Ł., Lichnerowicz A., Kraków 2023, ISBN: 978-83-969945-1-6</description>
+      <description>&lt;p&gt;Wasiak P., Szałankiewicz Ł., Lichnerowicz A., Kraków 2023, ISBN: 978-83-969945-1-6&lt;/p&gt;</description>
     </item>
     <item>
       <title>Polish Demoscene: UNESCO Intangible Cultural Heritage</title>
@@ -190,11 +190,18 @@
       <description></description>
     </item>
     <item>
+      <title>Polish Flag Size Coding Compo</title>
+      <link>http://andrzej.lichnerowicz.pl/en/blog/polish-flag-size-coding-compo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://andrzej.lichnerowicz.pl/en/blog/polish-flag-size-coding-compo/</guid>
+      <description>&lt;div class=&#34;admonition note&#34;&gt;&#xA;    &lt;p class=&#34;title&#34;&gt;Throwback&lt;/p&gt;&#xA;    &lt;p class=&#34;content&#34;&gt;I wrote this post back in February this year, but wanted to have nice disassembly syntax highlighting, so I made an &lt;a href=&#34;https://github.com/alecthomas/chroma/pull/933&#34;&gt;MR&lt;/a&gt; first against &lt;a href=&#34;https://github.com/alecthomas/chroma&#34;&gt;Chroma&lt;/a&gt; that &lt;a href=&#34;https://gohugo.io/content-management/syntax-highlighting/&#34;&gt;Hugo&lt;/a&gt; uses for syntax highlighting, and waited for Hugo to pick up Chroma with my changes, and in the meantime I have sort of forgot about the whole thing.. I haven&amp;rsquo;t written anything since then, so no biggie but wanted to clarify, just in case anyone actually reads this blog and wonders how come the post suddenly appeared in September with date in the past :)&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Polska demoscena jako wspólnota. Nieformalne praktyki kontaktów polskiej demosceny.</title>
       <link>http://andrzej.lichnerowicz.pl/en/publications/2023_kskpd_polska_demoscena/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://andrzej.lichnerowicz.pl/en/publications/2023_kskpd_polska_demoscena/</guid>
-      <description>Wasiak P., Szałankiewicz Ł., Lichnerowicz A., Kraków 2023, ISBN: 978-83-969945-0-9</description>
+      <description>&lt;p&gt;Wasiak P., Szałankiewicz Ł., Lichnerowicz A., Kraków 2023, ISBN: 978-83-969945-0-9&lt;/p&gt;</description>
     </item>
     <item>
       <title>Q&amp;A: Workshop: Limitations Driven Creativity Through Demoscene Lenses (Chair)</title>
@@ -208,21 +215,21 @@
       <link>http://andrzej.lichnerowicz.pl/en/blog/rocking-rust-git-and-github-in-2023-like-a-pro/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://andrzej.lichnerowicz.pl/en/blog/rocking-rust-git-and-github-in-2023-like-a-pro/</guid>
-      <description>Falling in Love with SourceHut, But Still Tempted by GitHub Actions SourceHut has recently won my heart with its simplicity and 90&amp;rsquo;s UI vibe, but I can&amp;rsquo;t resist the appeal of GitHub&amp;rsquo;s free workflow automation platform. I&amp;rsquo;ve been working on a few small projects in Python, TypeScript, and Rust, and have set up CI for all of them. Now that I&amp;rsquo;ve revived my blog, I thought I&amp;rsquo;d write about my experience using GitHub Actions for deployment.</description>
+      <description>&lt;h1 id=&#34;falling-in-love-with-sourcehut-but-still-tempted-by-github-actions&#34;&gt;Falling in Love with SourceHut, But Still Tempted by GitHub Actions&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://git.sr.ht/&#34;&gt;SourceHut&lt;/a&gt; has recently won my heart with its simplicity and 90&amp;rsquo;s UI vibe, but I can&amp;rsquo;t resist the appeal of GitHub&amp;rsquo;s free workflow automation platform. I&amp;rsquo;ve been working on a few small projects in Python, TypeScript, and Rust, and have set up CI for all of them. Now that I&amp;rsquo;ve revived my blog, I thought I&amp;rsquo;d write about my experience using GitHub Actions for deployment.&lt;/p&gt;</description>
     </item>
     <item>
       <title>safeshelter</title>
       <link>http://andrzej.lichnerowicz.pl/en/oss/safeshelter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://andrzej.lichnerowicz.pl/en/oss/safeshelter/</guid>
-      <description>a backoffice system for radziwiłłowska 3 crisis point.</description>
+      <description>&lt;p&gt;a backoffice system for radziwiłłowska 3 crisis point.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Simulacrum</title>
       <link>http://andrzej.lichnerowicz.pl/en/art/simulacrum/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://andrzej.lichnerowicz.pl/en/art/simulacrum/</guid>
-      <description>Demo, 1st place at Xenium 2019, PL.</description>
+      <description>&lt;p&gt;Demo, 1st place at Xenium 2019, PL.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Test Driven Development</title>
@@ -250,7 +257,7 @@
       <link>http://andrzej.lichnerowicz.pl/en/art/trzecie-uderzenie/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://andrzej.lichnerowicz.pl/en/art/trzecie-uderzenie/</guid>
-      <description>Poetry pack.</description>
+      <description>&lt;p&gt;Poetry pack.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Workshop: Limitations Driven Creativity Through Demoscene Lenses (Organizer)</title>
@@ -278,7 +285,7 @@
       <link>http://andrzej.lichnerowicz.pl/en/art/czrni-poklon/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://andrzej.lichnerowicz.pl/en/art/czrni-poklon/</guid>
-      <description>Executable graphics, 3752 bytes, 5th place at Xenium 2021, PL.</description>
+      <description>&lt;p&gt;Executable graphics, 3752 bytes, 5th place at Xenium 2021, PL.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

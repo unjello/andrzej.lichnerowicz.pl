@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    
+      <link rel="stylesheet" href="/css/style.min.31ebb2c84bccb34c730edbced4c89714e10ac6cbebd1aa5ef84308ae5743fd8b.css" integrity="sha256-MeuyyEvMs0xzDtvO1MiXFOEKxsvr0ape&#43;EMIrldD/Ys=" crossorigin="anonymous">
+    
+    <title>Polish Flag Size Coding Compo | Blog @unjello</title>
+  </head>
+  <body>
+    <div class="layout container-fluid">
+        <header>
+            <h1>
+                <a href="/">Andrzej unjello Lichnerowicz</a>
+            </h1>
+            <ul class="list-inline tagline">
+                
+                    <li class="list-inline-item">he</li>
+                
+                    <li class="list-inline-item">him</li>
+                
+                    <li class="list-inline-item">activist</li>
+                
+                    <li class="list-inline-item">trees and greenery lover</li>
+                
+            </ul>
+            <ul class="list-inline socialmedia">
+                
+                    <li class="list-inline-item">
+                        <a href="https://mastodon.gamedev.place/@unjello">mastodon</a>
+                    </li>                            
+                
+                    <li class="list-inline-item">
+                        <a href="https://codeberg.org/unjello">codeberg</a>
+                    </li>                            
+                
+                    <li class="list-inline-item">
+                        <a href="mailto:andrzej@lichnerowicz.pl">email</a>
+                    </li>                            
+                
+            </ul>
+        </header>
+
+        <section class="blog_single">
+            <h1>Polish Flag Size Coding Compo</h1>
+            <div class="date">2024-02-27T19:11:03&#43;02:00</div>
+            <div class="content">
+<div class="admonition note">
+    <p class="title">Throwback</p>
+    <p class="content">I wrote this post back in February this year, but wanted to have nice disassembly syntax highlighting, so I made an <a href="https://github.com/alecthomas/chroma/pull/933">MR</a> first against <a href="https://github.com/alecthomas/chroma">Chroma</a> that <a href="https://gohugo.io/content-management/syntax-highlighting/">Hugo</a> uses for syntax highlighting, and waited for Hugo to pick up Chroma with my changes, and in the meantime I have sort of forgot about the whole thing.. I haven&rsquo;t written anything since then, so no biggie but wanted to clarify, just in case anyone actually reads this blog and wonders how come the post suddenly appeared in September with date in the past :)</p>
+</div>
+
+<p>A trip down memory lane. It&rsquo;s 2002. I&rsquo;m sitting in the dimly lit Heidmarkhalle in Fallingbostel, Germany. It feels great to be back at the <a href="https://demozoo.org/parties/238/">Mekka &amp; Symposium</a> demoscene party.</p>
+<p><img alt="Heidmarkhalle during Mekka &amp; Symposium demoparty. Glowing CRT monitors in the dark" src="/en/blog/polish-flag-size-coding-compo/images/mekka.jpg"></p>
+<p>The room is shrouded in darkness, except for the glow of the computer screen illuminating my face. Ah, the good old days, when lugging a PC tower and a CRT monitor to parties was the norm! That year marked a record in the party&rsquo;s history, boasting the highest number of PC demo submissions ever. Over 50 entries!</p>
+<p>At some point, a organizers announced a bonus competition &ndash; the Polish flag compo! Organized by <a href="https://demozoo.org/sceners/5832/">mados</a> and <a href="https://demozoo.org/sceners/6833/">tomaes</a> of TAP, a small German demoscene group, this challenge sparked my interest. Even though the official Demozoo records don&rsquo;t list the results, I managed to unearth them <a href="http://tap.wildmag.de/releases/polish_flag_compo.zip">buried deep</a> within the interwebs on the  <a href="http://tap.wildmag.de">TAP webpage</a>.</p>
+<p>I accepted the challenge, with a bit of help from <a href="https://demozoo.org/sceners/11711/">payda/Procreation</a> and a couple others whose names, unfortunately, escape me after all these years. Here&rsquo;s what I came up with</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-nasm" data-lang="nasm"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">00000000</span>  <span style="color:#a6e22e">B013</span>              mov al,<span style="color:#ae81ff">0x13</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">00000002</span>  <span style="color:#a6e22e">CD10</span>              int <span style="color:#ae81ff">0x10</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">00000004</span>  <span style="color:#a6e22e">B9027D</span>            mov cx,<span style="color:#ae81ff">0x7d02</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">00000007</span>  <span style="color:#960050;background-color:#1e0010">51</span>                <span style="color:#a6e22e">push</span> cx
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">00000008</span>  <span style="color:#960050;background-color:#1e0010">6800</span><span style="color:#a6e22e">A0</span>            push <span style="color:#66d9ef">word</span> <span style="color:#ae81ff">0xa000</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">0000000</span><span style="color:#a6e22e">B</span>  <span style="color:#ae81ff">07</span>                pop es
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">0000000</span><span style="color:#a6e22e">C</span>  B00F              mov al,<span style="color:#ae81ff">0xf</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">0000000</span><span style="color:#a6e22e">E</span>  F3AA              rep stosb
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">00000010</span>  <span style="color:#960050;background-color:#1e0010">59</span>                <span style="color:#a6e22e">pop</span> cx
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">00000011</span>  <span style="color:#a6e22e">B004</span>              mov al,<span style="color:#ae81ff">0x4</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">00000013</span>  <span style="color:#a6e22e">F3AA</span>              rep stosb
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">00000015</span>  <span style="color:#a6e22e">CD16</span>              int <span style="color:#ae81ff">0x16</span>
+</span></span></code></pre></div><p>and boy, did it look good:</p>
+<p><img alt="A screenshot of my entry to the Polish flag bonus compo" src="/en/blog/polish-flag-size-coding-compo/images/unj_000.png"></p>
+<p>A mere 23 bytes. Impressive, right? Curious if I could optimize it further, I consulted ChatGPT, which suggested this was as compact as it could get. However, the competition results suggested otherwise:</p>
+
+<pre class="topaz">
+    
+ #.. | handle..           | size.. | time. | additional remarks..
+ 1.  | bup / fuzzion      |     18 | 18:22 | scratches the rules a little bit, but yeah, 18 bytes finally
+ 2.  | Avoozl/ECFh        |     19 | 17:54 | text mode again
+ 3.  | PigPen^oCCult      |     19 | 18:28 | you made it
+ 4.  | muhmac^freestyle   |     19 | 19:12 | it's possible in mode 13h too, and 17 byte using dark gray
+ 5.  | lsd/MeltDown       |     19 | 19:19 | your 18 byte crashs
+ 6.  | Plex / BionFX      |     19 | 19:50 | goes
+ 7.  | MadMan/TAP         |     21 | 18:14 | good trick
+ 8.  | Seven /            |     22 | 15:46 | accepted
+ 9.  | baNa               |     22 | 17:31 | ok
+ 10. | angelo/exodus      |     23 | 16:41 | very good
+ 11. | Ctulhu/Headcrash   |     23 | 18:03 | your 22 byte is gray :(
+ 12. | RufUsul            |     23 | 19:33 | yo
+ 13. | cydo               |     23 | 19:37 | your 17 byte crashs, a ret would be nice
+ 14. | salt / kolabore    |     25 | 19:40 | clean flag
+ 15. | DaGrilling/#Define |     26 | 18:42 | still clear
+ 16. | rawhed/moojuice    |     27 | 16:58 | odd flag but ok
+ 17. | bastiw             |     27 | 19:16 | good flag
+ 18. | MiZC /CMOV         |     34 | 19:24 | clean flag
+ 19. | Topy44             |    512 | 16:24 | it needs ansi.sys
+ 20. | Gunhed             |   9216 | 16:51 | visual basic
+ 21. | mellon             |  14336 | 16:13 | directx and upx ;-)
+ 22. | puzzler/kekse      |  20772 | 14:16 | a puzzle game %-)
+ 23. | jack c./faque      | 238592 | 15:48 | huh, it's waving
+ -   | vax|centric        |      - | 16:28 | shows a black screen
+ -   | odi^hicknhack      |      - | 19:49 | working 23 byte version was to late
+
+ 
+</pre>
+
+<p>9 entries better than me! (of course I already worked through that dissapointment, it was 22 years ago after all:). The first place entry was by <a href="https://demozoo.org/sceners/5484/">bup/fuzzion</a>. His submission bent the rules more than just a bit:</p>
+<p><img alt="Screen of bup&rsquo;s entry. A screen should be half white, half red. It is 99% white." src="/en/blog/polish-flag-size-coding-compo/images/bup_000.png"></p>
+<p>Without prior knowledge of the theme, one might never guess it represented the Polish flag. But, moving past this cheeky observation, I&rsquo;ve set my sights on matching the 19-byte record.</p>
+<h2 id="public-service-announcement">Public Service Announcement</h2>
+<p>Before diving deeper, I must confess something I overlooked until writing this post &ndash; my program lacked a <code>ret</code> instruction, and its functioning was purely coincidental. Since all com files load at the same memory location and some participants included a <code>ret</code> in their larger solutions, my program inadvertently stumbled upon this missing instruction, courtesy of these unsung heroes. Not all heroes wear capes, indeed :)</p>
+<h2 id="so-can-i-do-better-in-2024">So can I do better in 2024?</h2>
+<p>I wished I new how to do it myself by now, but improving my entry will require a bit of reverse engineering of the other submissions. Looking at those that managed 19 bytes, only <a href="https://demozoo.org/sceners/6154/">mumac</a> and <a href="https://demozoo.org/sceners/11774/">PigPen</a> achieved this feat in graphics mode. The rest relied on text mode. Eager to understand their advantage, I discovered a clever trick both used to eliminate the need for a second loop. Instead of directly setting colors with values <code>15</code> (white) and <code>4</code> (red) and implementing two distinct loops, one can subtract 11 from white and use <code>jns</code> to control the loop. This approach works because the subtraction will trigger the sign flag on the second iteration (<code>4 - 15 = -11</code>):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-nasm" data-lang="nasm"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">00000000</span>  <span style="color:#a6e22e">B013</span>              mov al,<span style="color:#ae81ff">0x13</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">00000002</span>  <span style="color:#a6e22e">CD10</span>              int <span style="color:#ae81ff">0x10</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">00000004</span>  <span style="color:#a6e22e">B9027D</span>            mov cx,<span style="color:#ae81ff">0x7d02</span>
+</span></span><span style="display:flex; background-color:#3c3d38"><span><span style="color:#960050;background-color:#1e0010">00000007</span>  <span style="color:#960050;background-color:#1e0010">51</span>                <span style="color:#a6e22e">push</span> cx
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">00000008</span>  <span style="color:#960050;background-color:#1e0010">6800</span><span style="color:#a6e22e">A0</span>            push <span style="color:#66d9ef">word</span> <span style="color:#ae81ff">0xa000</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">0000000</span><span style="color:#a6e22e">B</span>  <span style="color:#ae81ff">07</span>                pop es
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">0000000</span><span style="color:#a6e22e">C</span>  B00F              mov al,<span style="color:#ae81ff">0xf</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">0000000</span><span style="color:#a6e22e">E</span>  F3AA              rep stosb
+</span></span><span style="display:flex; background-color:#3c3d38"><span><span style="color:#960050;background-color:#1e0010">00000010</span>  <span style="color:#960050;background-color:#1e0010">59</span>                <span style="color:#a6e22e">pop</span> cx
+</span></span><span style="display:flex; background-color:#3c3d38"><span><span style="color:#960050;background-color:#1e0010">00000011</span>  <span style="color:#a6e22e">B004</span>              mov al,<span style="color:#ae81ff">0x4</span>
+</span></span><span style="display:flex; background-color:#3c3d38"><span><span style="color:#960050;background-color:#1e0010">00000013</span>  <span style="color:#a6e22e">F3AA</span>              rep stosb
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">00000015</span>  <span style="color:#a6e22e">CD16</span>              int <span style="color:#ae81ff">0x16</span></span></span></code></pre></div>
+<p>there&rsquo;s a nice trick they both used to eliminate the second loop. Instead of using directly values <code>15</code> for white and <code>4</code> for red and having two explicit loops, we can substract <code>11</code> from white, and use <code>jns</code> for loop. For the first time we will still be zero, for second time we will break out because substraction will set the sign flag:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-nasm" data-lang="nasm"><span style="display:flex;"><span><span style="color:#66d9ef">bits</span> <span style="color:#ae81ff">16</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">section</span> .text
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">org</span> <span style="color:#ae81ff">100h</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">mov</span> al,<span style="color:#ae81ff">0x13</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">int</span> <span style="color:#ae81ff">0x10</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">mov</span> al,<span style="color:#ae81ff">0xf</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">push</span> <span style="color:#66d9ef">word</span> <span style="color:#ae81ff">0xa000</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">pop</span> es
+</span></span><span style="display:flex;"><span>loop:
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">mov</span> cx,<span style="color:#ae81ff">0x7d02</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">rep</span> stosb
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">sub</span> al,<span style="color:#ae81ff">0xb</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">jns</span> loop
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">int</span> <span style="color:#ae81ff">0x16</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">ret</span>
+</span></span></code></pre></div><p>By replacing the need for <code>push cx</code> and <code>pop cx</code> with <code>sub</code> and <code>jns</code>, we save 2 bytes, though adding <code>ret</code> brings us to 22 bytes. The next byte we can shave off is here:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-nasm" data-lang="nasm"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">00000000</span>  <span style="color:#a6e22e">B013</span>              mov al,<span style="color:#ae81ff">0x13</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">00000002</span>  <span style="color:#a6e22e">CD10</span>              int <span style="color:#ae81ff">0x10</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">00000004</span>  <span style="color:#a6e22e">B00F</span>              mov al,<span style="color:#ae81ff">0xf</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">00000006</span>  <span style="color:#960050;background-color:#1e0010">6800</span><span style="color:#a6e22e">A0</span>            push <span style="color:#66d9ef">word</span> <span style="color:#ae81ff">0xa000</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">00000009</span>  <span style="color:#960050;background-color:#1e0010">07</span>                <span style="color:#a6e22e">pop</span> es
+</span></span><span style="display:flex; background-color:#3c3d38"><span><span style="color:#960050;background-color:#1e0010">0000000</span><span style="color:#a6e22e">A</span>  B9027D            mov cx,<span style="color:#ae81ff">0x7d02</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">0000000</span><span style="color:#a6e22e">D</span>  F3AA              rep stosb
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">0000000</span><span style="color:#a6e22e">F</span>  <span style="color:#ae81ff">2</span>C0B              sub al,<span style="color:#ae81ff">0xb</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">00000011</span>  <span style="color:#960050;background-color:#1e0010">79</span><span style="color:#a6e22e">F7</span>              jns <span style="color:#ae81ff">0xa</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">00000013</span>  <span style="color:#a6e22e">CD16</span>              int <span style="color:#ae81ff">0x16</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">00000015</span>  <span style="color:#a6e22e">C3</span>                ret</span></span></code></pre></div>
+<p>And we can achieve it with a small compromise. Why strive for perfection? We can adjust the half-byte count from <code>0x7D02</code> to <code>0x7D00</code>, allowing us to use <code>mov ch</code>, which is one byte shorter than <code>mov cx</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-asm" data-lang="asm"><span style="display:flex;"><span><span style="color:#a6e22e">bits</span> <span style="color:#ae81ff">16</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">section</span> <span style="color:#66d9ef">.text</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">org</span> <span style="color:#ae81ff">100</span><span style="color:#66d9ef">h</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">mov</span> <span style="color:#66d9ef">al</span>,<span style="color:#ae81ff">0x13</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">int</span> <span style="color:#ae81ff">0x10</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">mov</span> <span style="color:#66d9ef">al</span>,<span style="color:#ae81ff">0xf</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">push</span> <span style="color:#66d9ef">word</span> <span style="color:#ae81ff">0xa000</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">pop</span> <span style="color:#66d9ef">es</span>
+</span></span><span style="display:flex;"><span>loop:
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">mov</span> <span style="color:#66d9ef">ch</span>,<span style="color:#ae81ff">0x7d</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">rep</span> <span style="color:#a6e22e">stosb</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">sub</span> <span style="color:#66d9ef">al</span>,<span style="color:#ae81ff">0xb</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">jns</span> <span style="color:#66d9ef">loop</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">int</span> <span style="color:#ae81ff">0x16</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">ret</span>
+</span></span></code></pre></div><p>The final bytes require some more background. Here&rsquo;s what we are going to tackle:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-nasm" data-lang="nasm"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">00000000</span>  <span style="color:#a6e22e">B013</span>              mov al,<span style="color:#ae81ff">0x13</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">00000002</span>  <span style="color:#a6e22e">CD10</span>              int <span style="color:#ae81ff">0x10</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">00000004</span>  <span style="color:#a6e22e">B00F</span>              mov al,<span style="color:#ae81ff">0xf</span>
+</span></span><span style="display:flex; background-color:#3c3d38"><span><span style="color:#960050;background-color:#1e0010">00000006</span>  <span style="color:#960050;background-color:#1e0010">6800</span><span style="color:#a6e22e">A0</span>            push <span style="color:#66d9ef">word</span> <span style="color:#ae81ff">0xa000</span>
+</span></span><span style="display:flex; background-color:#3c3d38"><span><span style="color:#960050;background-color:#1e0010">00000009</span>  <span style="color:#960050;background-color:#1e0010">07</span>                <span style="color:#a6e22e">pop</span> es
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">0000000</span><span style="color:#a6e22e">A</span>  B57D              mov ch,<span style="color:#ae81ff">0x7d</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">0000000</span><span style="color:#a6e22e">C</span>  F3AA              rep stosb
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">0000000</span><span style="color:#a6e22e">E</span>  <span style="color:#ae81ff">2</span>C0B              sub al,<span style="color:#ae81ff">0xb</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">00000010</span>  <span style="color:#960050;background-color:#1e0010">79</span><span style="color:#a6e22e">F8</span>              jns <span style="color:#ae81ff">0xa</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">00000012</span>  <span style="color:#a6e22e">CD16</span>              int <span style="color:#ae81ff">0x16</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">00000014</span>  <span style="color:#a6e22e">C3</span>                ret</span></span></code></pre></div>
+<p>I was staring at how the 19 byte versions got rid of pushing <code>0xA000</code> to <code>es</code> to write to video memory, not really understanding what&rsquo;s going on. And then I did reach out to the only person I knew who might have had a slightes idea on this level of assembly optimization that I still had <em>any</em> contact with: <a href="https://fgiesen.wordpress.com/about/">ryg</a>/farbraush. Not only he replied after all the years, but he did provide entire historical context!</p>
+<p>So, I&rsquo;ve already touched on how all <code>.com</code> files start at the same memory location, which is why we use the <code>org 100h</code> directive, right? But, for some reason, it never dawned on me to question what resides in those initial 256 bytes. Had I pondered this sooner, I would&rsquo;ve stumbled upon something known as the <a href="https://en.wikipedia.org/wiki/Program_Segment_Prefix">Program Segment Prefix</a> (PSP).</p>
+<p>Here&rsquo;s a brief overview of what the PSP contains at the start:</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Offset</th>
+          <th style="text-align: left">Size</th>
+          <th style="text-align: left">Contents</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">00h-01h</td>
+          <td style="text-align: left">2 bytes</td>
+          <td style="text-align: left">CP/M-80-like exit</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">02h-03h</td>
+          <td style="text-align: left">2 bytes</td>
+          <td style="text-align: left">Segment of the first byte beyond the memory allocated to the program</td>
+      </tr>
+  </tbody>
+</table>
+<p>Let&rsquo;s unwrap this a little.</p>
+<ol>
+<li>CP/M-80-like exit, is a regular <code>int 20h</code> instruction, binary coded as <code>0xCD 0x20</code>. It is a thing from the old days of automated software translation from CP/M, explained nicely by one-and-only <a href="https://devblogs.microsoft.com/oldnewthing/20200309-00/?p=103547">Raymond Chen</a>.</li>
+<li>This segment is usually upper memory segment limit, so <code>0x99 0xFF</code> or close to it. Which is very close to our <code>0xA000</code>!</li>
+</ol>
+<p>This idea was apparently devleoped first by <code>pascal</code>/CubicTeam, first used in his parallax starfield 20-byte intro &ndash; an optimized version of <a href="https://www.pouet.net/prod.php?which=50649">23 byte parallax starfield</a>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-nasm" data-lang="nasm"><span style="display:flex;"><span><span style="color:#a6e22e">.model</span> tiny
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">.code</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">org</span> <span style="color:#ae81ff">100h</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>start:
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">mov</span> al,<span style="color:#ae81ff">13h</span>    <span style="color:#75715e">;//ah assumed to be 0. ok.</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">int</span> <span style="color:#ae81ff">10h</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">pop</span> sp        <span style="color:#75715e">;//com loader pushes 0, =&gt; sp == 0</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">pop</span> cx        <span style="color:#75715e">;//2 instruction bytes for int 20h =&gt; cx = 20CDh</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#75715e">;//pop something else for less stars</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">pop</span> ds        <span style="color:#75715e">;//we need the video segment 0A000h, here we</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#75715e">;//find 9FFFh (upper memory segment limit) on most machines.</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#75715e">;//this is not clean, but who cares...</span>
+</span></span></code></pre></div><p>it also turnes out, I couldn&rsquo;t have reached out to a better person, because it was most likely <code>ryg</code> himself who found a way make it even more efficient. Instead of doing 3 <code>pop</code> introductions that take 3 bytes, we can do <code>lea</code> and have same effect in just 2 bytes&quot;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-nasm" data-lang="nasm"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">00000000</span>  <span style="color:#a6e22e">B013</span>              mov al,<span style="color:#ae81ff">0x13</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">00000002</span>  <span style="color:#a6e22e">CD10</span>              int <span style="color:#ae81ff">0x10</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">00000004</span>  <span style="color:#a6e22e">B00F</span>              mov al,<span style="color:#ae81ff">0xf</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">00000006</span>  <span style="color:#a6e22e">C417</span>              les dx,[bx]
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">00000008</span>  <span style="color:#a6e22e">B57D</span>              mov ch,<span style="color:#ae81ff">0x7d</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">0000000</span><span style="color:#a6e22e">A</span>  F3AA              rep stosb
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">0000000</span><span style="color:#a6e22e">C</span>  <span style="color:#ae81ff">2</span>C0B              sub al,<span style="color:#ae81ff">0xb</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">0000000</span><span style="color:#a6e22e">E</span>  <span style="color:#ae81ff">79</span>F8              jns <span style="color:#ae81ff">0x8</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">00000010</span>  <span style="color:#a6e22e">CD16</span>              int <span style="color:#ae81ff">0x16</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">00000012</span>  <span style="color:#a6e22e">C3</span>                ret
+</span></span></code></pre></div><p><img alt="Screenshot of 19 bytes version. You can see a small shift between white and red, because of LDA ES,[BX] trick" src="/en/blog/polish-flag-size-coding-compo/images/unj_001.png"></p>
+<p>This subtle yet effective modification not only honors the original challenge but also showcases the beauty of size coding. If it looks good, it is good. Even in a field as precise as assembly, there&rsquo;s room for creativity and improvement.</p>
+</div>
+        </section>
+
+        <footer class="fs-6 text-muted mt-5">
+            <p>
+                CC0. Powered by <a href="https://gohugo.io">Hugo</a>. Theme inspired by <a href="https://www.mattdesl.com/">@mattdesl</a> and <a href="https://ozafoto.com/digital/">Oza</a>.
+            </p>
+        </footer>
+    </div>
+    
+  </body>
+</html>
