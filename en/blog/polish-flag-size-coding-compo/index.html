@@ -214,7 +214,7 @@
 <li>CP/M-80-like exit, is a regular <code>int 20h</code> instruction, binary coded as <code>0xCD 0x20</code>. It is a thing from the old days of automated software translation from CP/M, explained nicely by one-and-only <a href="https://devblogs.microsoft.com/oldnewthing/20200309-00/?p=103547">Raymond Chen</a>.</li>
 <li>This segment is usually upper memory segment limit, so <code>0x99 0xFF</code> or close to it. Which is very close to our <code>0xA000</code>!</li>
 </ol>
-<p>This idea was apparently devleoped first by <code>pascal</code>/CubicTeam, first used in his parallax starfield 20-byte intro &ndash; an optimized version of <a href="https://www.pouet.net/prod.php?which=50649">23 byte parallax starfield</a>:</p>
+<p>This idea was apparently devleoped first by <a href="https://demozoo.org/sceners/8559/">pascal</a>/CubicTeam, first used in his parallax starfield 20-byte intro &ndash; an optimized version of <a href="https://www.pouet.net/prod.php?which=50649">23 byte parallax starfield</a>:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-nasm" data-lang="nasm"><span style="display:flex;"><span><span style="color:#a6e22e">.model</span> tiny
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">.code</span>
@@ -231,7 +231,7 @@
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">pop</span> ds        <span style="color:#75715e">;//we need the video segment 0A000h, here we</span>
 </span></span><span style="display:flex;"><span>                <span style="color:#75715e">;//find 9FFFh (upper memory segment limit) on most machines.</span>
 </span></span><span style="display:flex;"><span>                <span style="color:#75715e">;//this is not clean, but who cares...</span>
-</span></span></code></pre></div><p>it also turnes out, I couldn&rsquo;t have reached out to a better person, because it was most likely <code>ryg</code> himself who found a way make it even more efficient. Instead of doing 3 <code>pop</code> introductions that take 3 bytes, we can do <code>lea</code> and have same effect in just 2 bytes&quot;</p>
+</span></span></code></pre></div><p>it also turnes out, I couldn&rsquo;t have reached out to a better person, because it was most likely <code>ryg</code> himself who found a way make it even more efficient. Instead of doing 3 <code>pop</code> introductions that take 3 bytes, we can do <code>lea</code> and have same effect in just 2 bytes:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-nasm" data-lang="nasm"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">00000000</span>  <span style="color:#a6e22e">B013</span>              mov al,<span style="color:#ae81ff">0x13</span>
 </span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">00000002</span>  <span style="color:#a6e22e">CD10</span>              int <span style="color:#ae81ff">0x10</span>
 </span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">00000004</span>  <span style="color:#a6e22e">B00F</span>              mov al,<span style="color:#ae81ff">0xf</span>
