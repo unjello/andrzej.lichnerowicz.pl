@@ -6,9 +6,11 @@
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="apple-touch-icon" href="/favicon.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.1.7/purify.min.js" integrity="sha512-BdRNuI8/lsyxkKQVxK1lVtfZshggfXPAwEP+JAOJEKx6Y8SLfcBSRdaWyXQmMxo+wG180uFqXYGjGRL0mh4/Jw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     
     
-      <link rel="stylesheet" href="/css/style.min.781674604b461506a6c88738cb5f18bdf2d5858bbaaa9f9143f774531de8aa1f.css" integrity="sha256-eBZ0YEtGFQamyIc4y18YvfLVhYu6qp&#43;RQ/d0Ux3oqh8=" crossorigin="anonymous">
+      <link rel="stylesheet" href="/css/style.min.247cb2b1893b3353394cd89addd74a0da2e04aa056128f80279b02df92270258.css" integrity="sha256-JHyysYk7M1M5TNia3ddKDaLgSqBWEo&#43;AJ5sC35InAlg=" crossorigin="anonymous">
     
     <title>Polish Flag Size Coding Compo | Blog @unjello</title>
   </head>
@@ -50,6 +52,7 @@
             <h1>Polish Flag Size Coding Compo</h1>
             <div class="date">2024-02-27T19:11:03&#43;02:00</div>
             <div class="content">
+                
 <div class="admonition note">
     <p class="title">Throwback</p>
     <p class="content">I wrote this post back in February this year, but wanted to have nice disassembly syntax highlighting, so I made an <a href="https://github.com/alecthomas/chroma/pull/933">MR</a> first against <a href="https://github.com/alecthomas/chroma">Chroma</a> that <a href="https://gohugo.io/content-management/syntax-highlighting/">Hugo</a> uses for syntax highlighting, and waited for Hugo to pick up Chroma with my changes, and in the meantime I have sort of forgot about the whole thing.. I haven&rsquo;t written anything since then, so no biggie but wanted to clarify, just in case anyone actually reads this blog and wonders how come the post suddenly appeared in September with date in the past :)</p>
@@ -244,7 +247,86 @@
 </span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">00000012</span>  <span style="color:#a6e22e">C3</span>                ret
 </span></span></code></pre></div><p><img alt="Screenshot of 19 bytes version. You can see a small shift between white and red, because of LDA ES,[BX] trick" src="/en/blog/polish-flag-size-coding-compo/images/unj_001.png"></p>
 <p>This subtle yet effective modification not only honors the original challenge but also showcases the beauty of size coding. If it looks good, it is good. Even in a field as precise as assembly, there&rsquo;s room for creativity and improvement.</p>
-</div>
+
+
+                
+                <div class="comments">
+                    <h2>Comments</h2>
+                    <p>Discussion powered by <i class="fa-brands fa-mastodon"></i>, <a href="https://mastodon.gamedev.place/@unjello/113282933258874432">hop in.</a> if you want.</p>
+                    <div id="comments"></div>
+                </div>
+            <script>
+    (async function() {
+        const commentsDiv = document.getElementById('comments');
+        const statusId = '113282933258874432';
+        const mastodonInstance = 'mastodon.gamedev.place';
+        const contextUrl = `https://${mastodonInstance}/api/v1/statuses/${statusId}/context`;
+
+        try {
+            const response = await fetch(contextUrl);
+
+            if (!response.ok) {
+                throw new Error('Network response was not ok ' + response.statusText);
+            }
+
+            const context = await response.json();
+            const comments = context.descendants;
+            comments.forEach(comment => {
+                const commentElement = document.createElement('div');
+                commentElement.classList.add('comment');
+
+                const authorName = DOMPurify.sanitize(comment.account.display_name || comment.account.username);
+                const authorUrl = DOMPurify.sanitize(comment.account.url);
+                const content = DOMPurify.sanitize(comment.content);
+                const avatarUrl = DOMPurify.sanitize(comment.account.avatar_static || comment.account.avatar);
+                const createdAt = new Date(comment.created_at);
+                const timestamp = createdAt.toLocaleString();
+
+                const avatarImg = document.createElement('img');
+                avatarImg.src = avatarUrl;
+                avatarImg.alt = `${authorName}'s avatar`;
+                avatarImg.classList.add('avatar');
+
+                const contentDiv = document.createElement('div');
+                contentDiv.classList.add('comment-content');
+
+                const headerDiv = document.createElement('div');
+                headerDiv.classList.add('comment-header');
+
+                const authorLink = document.createElement('a');
+                authorLink.href = authorUrl;
+                authorLink.target = '_blank';
+                authorLink.textContent = authorName;
+
+                const timeSpan = document.createElement('span');
+                timeSpan.classList.add('timestamp');
+                timeSpan.textContent = `• ${timestamp}`;
+
+                headerDiv.appendChild(authorLink);
+                headerDiv.appendChild(timeSpan);
+
+                const bodyDiv = document.createElement('div');
+                bodyDiv.classList.add('comment-body');
+                bodyDiv.innerHTML = content;
+
+                contentDiv.appendChild(headerDiv);
+                contentDiv.appendChild(bodyDiv);
+
+                commentElement.appendChild(avatarImg);
+                commentElement.appendChild(contentDiv);
+
+                commentsDiv.appendChild(commentElement);            });
+
+
+        } catch (error) {
+            console.error('Error fetching comments:', error);
+            commentsDiv.innerHTML = '<p>Error loading comments.</p>';
+        }
+    })();
+
+            </script>
+                
+            </div>
         </section>
 
         <footer class="fs-6 text-muted mt-5">
@@ -253,6 +335,5 @@
             </p>
         </footer>
     </div>
-    
   </body>
 </html>
