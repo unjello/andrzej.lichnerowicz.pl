@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="twitter:card" content="summary_large_image">
     <meta property="og:title" content="It&#39;s still the same old story | @unjello" />
+    <meta property="twitter:title" content="It&#39;s still the same old story | @unjello">
     <meta property="og:url" content="http://andrzej.lichnerowicz.pl/en/blog/its-still-the-same-old-story/" />
     <meta property="og:type" content="blog" />
     
@@ -16,7 +18,8 @@
 
     
     
-      <link rel="stylesheet" href="/css/style.min.1466d5a422623eecd84772d0b34ed543888a0f4ed4ec9333083326f5c926f55c.css" integrity="sha256-FGbVpCJiPuzYR3LQs07VQ4iKD07U7JMzCDMm9ckm9Vw=" crossorigin="anonymous">
+      <link rel="stylesheet" href="/css/style.min.2e859e4992bcd5ecfc1a48111216f98958cd0696c0278c0e2513e50ee64ead0d.css" integrity="sha256-LoWeSZK81ez8GkgREhb5iVjNBpbAJ4wOJRPlDuZOrQ0=" crossorigin="anonymous">
+    
     
     <title>It&#39;s still the same old story | Blog @unjello</title>
   </head>
@@ -144,6 +147,26 @@
                 
             </div>
         </section>
+        <script>
+              
+                        (function addTitleToCodeBlock() {
+  let list = document.body.getElementsByClassName("highlight");
+
+  for (i = 0; i <= list.length - 1; i++) {
+    let code = list[i].firstElementChild.firstElementChild;
+    let codeName = code ? code.className.split(":")[1] : null;
+
+    if (codeName) {
+                console.log(codeName)
+      let div = document.createElement("div");
+      div.textContent = codeName;
+      div.classList.add("code-name");
+      code.parentNode.insertBefore(div, code);
+    }
+  }
+})();
+
+        </script>
 
         <footer class="fs-6 text-muted mt-5">
             <p>

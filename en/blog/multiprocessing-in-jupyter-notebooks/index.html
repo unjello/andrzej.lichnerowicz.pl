@@ -1,0 +1,763 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="og:title" content="Multiprocessing in Jupyter Notebooks | @unjello" />
+    <meta property="twitter:title" content="Multiprocessing in Jupyter Notebooks | @unjello">
+    <meta property="og:url" content="http://andrzej.lichnerowicz.pl/en/blog/multiprocessing-in-jupyter-notebooks/" />
+    <meta property="og:type" content="blog" />
+    
+    
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.1.7/purify.min.js" integrity="sha512-BdRNuI8/lsyxkKQVxK1lVtfZshggfXPAwEP+JAOJEKx6Y8SLfcBSRdaWyXQmMxo+wG180uFqXYGjGRL0mh4/Jw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    
+    
+      <link rel="stylesheet" href="/css/style.min.2e859e4992bcd5ecfc1a48111216f98958cd0696c0278c0e2513e50ee64ead0d.css" integrity="sha256-LoWeSZK81ez8GkgREhb5iVjNBpbAJ4wOJRPlDuZOrQ0=" crossorigin="anonymous">
+    
+    
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)']]                  
+    }
+  };
+</script>
+
+    
+    <title>Multiprocessing in Jupyter Notebooks | Blog @unjello</title>
+  </head>
+  <body>
+    <div class="layout container-fluid">
+        <header>
+            <h1>
+                <a href="/">Andrzej unjello Lichnerowicz</a>
+            </h1>
+            <ul class="list-inline tagline">
+                
+                    <li class="list-inline-item">he</li>
+                
+                    <li class="list-inline-item">him</li>
+                
+                    <li class="list-inline-item">activist</li>
+                
+                    <li class="list-inline-item">trees and greenery lover</li>
+                
+            </ul>
+            <ul class="list-inline socialmedia">
+                
+                    <li class="list-inline-item">
+                        <a href="https://mastodon.gamedev.place/@unjello">mastodon</a>
+                    </li>                            
+                
+                    <li class="list-inline-item">
+                        <a href="https://codeberg.org/unjello">codeberg</a>
+                    </li>                            
+                
+                    <li class="list-inline-item">
+                        <a href="mailto:andrzej@lichnerowicz.pl">email</a>
+                    </li>                            
+                
+            </ul>
+        </header>
+
+        <section class="blog_single">
+            <h1>Multiprocessing in Jupyter Notebooks</h1>
+            <div class="date">2024-10-13T20:01:33&#43;02:00</div>
+            <div class="content">
+                <h1 id="tldr">TL;DR</h1>
+<p>To run heavy workloads in a Jupyter Notebook, you need to take your function and store it in a temporary Python source file so it’s importable as a module:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> contextlib
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> inspect
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> importlib
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> pathlib
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> sys
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> tempfile
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@contextlib.contextmanager</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">wrap_fn</span>(fn):
+</span></span><span style="display:flex;"><span>    importlib<span style="color:#f92672">.</span>invalidate_caches()
+</span></span><span style="display:flex;"><span>    source <span style="color:#f92672">=</span> inspect<span style="color:#f92672">.</span>getsource(fn)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">with</span> tempfile<span style="color:#f92672">.</span>NamedTemporaryFile(suffix<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;.py&#34;</span>, mode<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;w&#34;</span>, encoding<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;utf-8&#34;</span>) <span style="color:#66d9ef">as</span> f:
+</span></span><span style="display:flex;"><span>        f<span style="color:#f92672">.</span>write(source)
+</span></span><span style="display:flex;"><span>        f<span style="color:#f92672">.</span>flush()
+</span></span><span style="display:flex;"><span>        path <span style="color:#f92672">=</span> pathlib<span style="color:#f92672">.</span>Path(f<span style="color:#f92672">.</span>name)
+</span></span><span style="display:flex;"><span>        directory <span style="color:#f92672">=</span> str(path<span style="color:#f92672">.</span>parent)
+</span></span><span style="display:flex;"><span>        sys<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>append(directory)
+</span></span><span style="display:flex;"><span>        module <span style="color:#f92672">=</span> importlib<span style="color:#f92672">.</span>import_module(str(path<span style="color:#f92672">.</span>stem))
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">yield</span> getattr(module, func<span style="color:#f92672">.</span>__name__)
+</span></span><span style="display:flex;"><span>        sys<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>remove(directory)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">square</span>(x):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> x<span style="color:#f92672">*</span>x
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>context <span style="color:#f92672">=</span> multiprocessing<span style="color:#f92672">.</span>get_context(<span style="color:#e6db74">&#34;spawn&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">with</span> ProcessPoolExecutor(max_workers<span style="color:#f92672">=</span><span style="color:#ae81ff">12</span>, mp_context<span style="color:#f92672">=</span>context) <span style="color:#66d9ef">as</span> executor, wrap_fn(square) <span style="color:#66d9ef">as</span> fn:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> sq <span style="color:#f92672">in</span> executor<span style="color:#f92672">.</span>map(fn, range(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">10</span>))
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{</span>sq<span style="color:#e6db74">}</span><span style="color:#e6db74"> &#34;</span>, end<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;&#34;</span>)
+</span></span></code></pre></div><p>Here’s what’s happening in this code:</p>
+<ul>
+<li>The wrap_fn context manager takes your function fn.</li>
+<li>It gets the source code of fn and writes it to a temporary Python file.</li>
+<li>It then imports this temporary file as a module, making your function accessible via a module name.</li>
+<li>Inside the context, fn is now the function from the temporary module and can be pickled and sent to child processes.</li>
+<li>We use <code>ProcessPoolExecutor</code> to distribute the workload across multiple processes.</li>
+</ul>
+<p>By doing this, we avoid the issue of the function not being picklable due to being defined in the interactive namespace.</p>
+<h1 id="but-if-you-ask-me-on-a-deeper-level">But if you ask me on a deeper level&hellip;</h1>
+<p>Jupyter Notebooks offer a great way to work with many things, combining the ability to play around with data like in a REPL with the maintainability of a script. Once in a while, though, you face a problem that requires some serious raw power. For me, such a moment occurred when I was working on a data matching problem in a dataset containing almost \(900,000\) elements. Performing naive \(A \times B\) pair matching with similarity tests over a couple of parameters that take 1 second would have me processing the set for… about 25,684 years. A gentle reminder that:</p>
+<p><img alt="Big Oh N squared is bad, and you should feel bad &ndash; a Zoidberg meme, very mature&hellip;" src="/en/blog/multiprocessing-in-jupyter-notebooks/images/96dz0h.jpg"></p>
+<h1 id="multiprocessing">Multiprocessing</h1>
+<p>So what do you do when you have so much crunching to do that you want to utilize all CPU cores? That’s when <a href="https://docs.python.org/3/library/concurrent.futures.html#processpoolexecutor"><code>ProcessPoolExecutor</code></a> steps in to save the day. For those unfamiliar, <code>ProcessPoolExecutor</code> is like that friend who helps you move heavy furniture; it lives in the <a href="https://docs.python.org/3/library/concurrent.futures.html"><code>concurrent.futures</code></a> package of the standard Python library and, much like <a href="https://docs.python.org/3/library/concurrent.futures.html#threadpoolexecutor"><code>ThreadPoolExecutor</code></a>, lets you distribute workload across a pool of workers. The difference is, these workers are separate processes, not threads.</p>
+<p>With both <em>threads</em> and <em>processes</em>, the API looks innocently simple: you just pass the function that will be called by each worker with a piece of data:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> concurrent.futures
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">with</span> concurrent<span style="color:#f92672">.</span>futures<span style="color:#f92672">.</span>ThreadsPoolExecutor(max_workers<span style="color:#f92672">=</span><span style="color:#ae81ff">20</span>) <span style="color:#66d9ef">as</span> executor:
+</span></span><span style="display:flex;"><span>    squares <span style="color:#f92672">=</span> executor<span style="color:#f92672">.</span>map(<span style="color:#66d9ef">lambda</span> x: x<span style="color:#f92672">*</span>x, range(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">100000</span>)):
+</span></span></code></pre></div><p>For <em>threads</em>, that’s pretty much it—you can pat yourself on the back and watch your CPU stay underutilized. But <a href="https://stackoverflow.com/questions/4496680/python-threads-all-executing-on-a-single-core">threads aren’t going to use all your cores</a> due to the infamous Global Interpreter Lock (GIL). So what if we swap <code>ThreadPoolExecutor</code> for <code>ProcessPoolExecutor</code> to really get the party started? We get an exception immediately.</p>
+<pre tabindex="0"><code>_pickle.PicklingError: Can&#39;t pickle &lt;function &lt;lambda&gt; at 0x10332e160&gt;: 
+  attribute lookup &lt;lambda&gt; on __main__ failed
+</code></pre><p>What happened? Well, the first rule of multiprocessing is that it uses <a href="https:z//docs.python.org/3/library/pickle.html"><code>pickle</code></a> to serialize a function and data between the parent process and child processes. And pickle’s <a href="https://docs.python.org/3/library/pickle.html">documentation</a> says:</p>
+<blockquote>
+<p>Note that functions (built-in and user-defined) are pickled by <strong>fully qualified name</strong>, not by value.
+This means that only the function name is pickled, along with the name of the containing module and classes.
+Neither the function’s code, nor any of its function attributes are pickled.</p>
+</blockquote>
+<p>Since all lambdas share the same name &ndash; <code>&lt;lambda&gt;</code> &ndash; that explains why we need to define a proper method:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> concurrent.futures
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">square</span>(x):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> x<span style="color:#f92672">*</span>x
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">with</span> concurrent<span style="color:#f92672">.</span>futures<span style="color:#f92672">.</span>ThreadsPoolExecutor(max_workers<span style="color:#f92672">=</span><span style="color:#ae81ff">20</span>) <span style="color:#66d9ef">as</span> executor:
+</span></span><span style="display:flex;"><span>    squares <span style="color:#f92672">=</span> executor<span style="color:#f92672">.</span>map(square, range(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">100000</span>)):
+</span></span></code></pre></div><p>Now it works, but that error above has one little, less obvious consequence. If we only send a <em>fully qualified name</em> over to another process, then how does the method get called?</p>
+<p>When the <code>multiprocessing</code> module starts a new child process, it doesn’t have access to your current interactive namespace. It’s like sending someone to fetch an item from your house without giving them the address—they need to know where to look.</p>
+<p>Under the hood, when multiprocessing starts a new child process, it uses <code>spawn</code> on Windows and macOS. On POSIX systems, it’s still using fork, although since Python 3.12 it’ll throw a <code>DeprecationWarning</code>. Fork is a bit problematic from a safety point of view, as the child process inherits everything from the parent process. Spawn, on the other hand, starts a completely fresh Python interpreter process.</p>
+<p>This means that any variables or functions you’ve defined interactively in your Jupyter Notebook aren’t automatically available in the child processes. They’re starting from scratch, and unless your function is defined in a module they can import, they’re left in the dark.</p>
+<p>Here’s a rough diagram, courtesy of the Python <a href="https://github.com/python/cpython/blob/main/Lib/concurrent/futures/process.py">docs</a>, of how the flow looks when you submit work to the process pool:</p>
+
+
+
+<div class="goat svg-container ">
+  
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      font-family="Menlo,Lucida Console,monospace"
+      
+        viewBox="0 0 656 313"
+      >
+      <g transform='translate(8,16)'>
+<path d='M 0,16 L 88,16' fill='none' stroke='currentColor'></path>
+<path d='M 136,16 L 224,16' fill='none' stroke='currentColor'></path>
+<path d='M 288,16 L 360,16' fill='none' stroke='currentColor'></path>
+<path d='M 408,16 L 504,16' fill='none' stroke='currentColor'></path>
+<path d='M 552,16 L 632,16' fill='none' stroke='currentColor'></path>
+<path d='M 96,32 L 128,32' fill='none' stroke='currentColor'></path>
+<path d='M 136,64 L 224,64' fill='none' stroke='currentColor'></path>
+<path d='M 408,64 L 504,64' fill='none' stroke='currentColor'></path>
+<path d='M 552,64 L 632,64' fill='none' stroke='currentColor'></path>
+<path d='M 232,96 L 280,96' fill='none' stroke='currentColor'></path>
+<path d='M 368,96 L 400,96' fill='none' stroke='currentColor'></path>
+<path d='M 512,96 L 544,96' fill='none' stroke='currentColor'></path>
+<path d='M 408,128 L 504,128' fill='none' stroke='currentColor'></path>
+<path d='M 136,144 L 224,144' fill='none' stroke='currentColor'></path>
+<path d='M 136,176 L 240,176' fill='none' stroke='currentColor'></path>
+<path d='M 408,176 L 504,176' fill='none' stroke='currentColor'></path>
+<path d='M 96,192 L 128,192' fill='none' stroke='currentColor'></path>
+<path d='M 248,192 L 280,192' fill='none' stroke='currentColor'></path>
+<path d='M 368,192 L 400,192' fill='none' stroke='currentColor'></path>
+<path d='M 512,192 L 544,192' fill='none' stroke='currentColor'></path>
+<path d='M 136,208 L 240,208' fill='none' stroke='currentColor'></path>
+<path d='M 408,224 L 504,224' fill='none' stroke='currentColor'></path>
+<path d='M 0,288 L 88,288' fill='none' stroke='currentColor'></path>
+<path d='M 136,288 L 240,288' fill='none' stroke='currentColor'></path>
+<path d='M 288,288 L 360,288' fill='none' stroke='currentColor'></path>
+<path d='M 408,288 L 504,288' fill='none' stroke='currentColor'></path>
+<path d='M 552,288 L 632,288' fill='none' stroke='currentColor'></path>
+<path d='M 0,0 L 0,16' fill='none' stroke='currentColor'></path>
+<path d='M 0,16 L 0,288' fill='none' stroke='currentColor'></path>
+<path d='M 88,16 L 88,288' fill='none' stroke='currentColor'></path>
+<path d='M 136,16 L 136,64' fill='none' stroke='currentColor'></path>
+<path d='M 136,64 L 136,144' fill='none' stroke='currentColor'></path>
+<path d='M 136,176 L 136,208' fill='none' stroke='currentColor'></path>
+<path d='M 136,208 L 136,288' fill='none' stroke='currentColor'></path>
+<path d='M 224,16 L 224,64' fill='none' stroke='currentColor'></path>
+<path d='M 224,64 L 224,144' fill='none' stroke='currentColor'></path>
+<path d='M 240,176 L 240,208' fill='none' stroke='currentColor'></path>
+<path d='M 240,208 L 240,288' fill='none' stroke='currentColor'></path>
+<path d='M 288,16 L 288,288' fill='none' stroke='currentColor'></path>
+<path d='M 360,16 L 360,288' fill='none' stroke='currentColor'></path>
+<path d='M 408,16 L 408,64' fill='none' stroke='currentColor'></path>
+<path d='M 408,64 L 408,128' fill='none' stroke='currentColor'></path>
+<path d='M 408,176 L 408,224' fill='none' stroke='currentColor'></path>
+<path d='M 408,224 L 408,288' fill='none' stroke='currentColor'></path>
+<path d='M 504,16 L 504,64' fill='none' stroke='currentColor'></path>
+<path d='M 504,64 L 504,128' fill='none' stroke='currentColor'></path>
+<path d='M 504,176 L 504,224' fill='none' stroke='currentColor'></path>
+<path d='M 504,224 L 504,288' fill='none' stroke='currentColor'></path>
+<path d='M 552,16 L 552,64' fill='none' stroke='currentColor'></path>
+<path d='M 552,64 L 552,288' fill='none' stroke='currentColor'></path>
+<path d='M 632,0 L 632,16' fill='none' stroke='currentColor'></path>
+<path d='M 632,16 L 632,64' fill='none' stroke='currentColor'></path>
+<path d='M 632,64 L 632,288' fill='none' stroke='currentColor'></path>
+<polygon points='104.000000,192.000000 92.000000,186.399994 92.000000,197.600006' fill='currentColor' transform='rotate(180.000000, 96.000000, 192.000000)'></polygon>
+<polygon points='136.000000,32.000000 124.000000,26.400000 124.000000,37.599998' fill='currentColor' transform='rotate(0.000000, 128.000000, 32.000000)'></polygon>
+<polygon points='136.000000,192.000000 124.000000,186.399994 124.000000,197.600006' fill='currentColor' transform='rotate(0.000000, 128.000000, 192.000000)'></polygon>
+<polygon points='256.000000,192.000000 244.000000,186.399994 244.000000,197.600006' fill='currentColor' transform='rotate(180.000000, 248.000000, 192.000000)'></polygon>
+<polygon points='288.000000,96.000000 276.000000,90.400002 276.000000,101.599998' fill='currentColor' transform='rotate(0.000000, 280.000000, 96.000000)'></polygon>
+<polygon points='288.000000,192.000000 276.000000,186.399994 276.000000,197.600006' fill='currentColor' transform='rotate(0.000000, 280.000000, 192.000000)'></polygon>
+<polygon points='376.000000,192.000000 364.000000,186.399994 364.000000,197.600006' fill='currentColor' transform='rotate(180.000000, 368.000000, 192.000000)'></polygon>
+<polygon points='408.000000,96.000000 396.000000,90.400002 396.000000,101.599998' fill='currentColor' transform='rotate(0.000000, 400.000000, 96.000000)'></polygon>
+<polygon points='520.000000,192.000000 508.000000,186.399994 508.000000,197.600006' fill='currentColor' transform='rotate(180.000000, 512.000000, 192.000000)'></polygon>
+<polygon points='552.000000,96.000000 540.000000,90.400002 540.000000,101.599998' fill='currentColor' transform='rotate(0.000000, 544.000000, 96.000000)'></polygon>
+<text text-anchor='middle' x='8' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='16' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='16' y='132' fill='currentColor' style='font-size:1em'>P</text>
+<text text-anchor='middle' x='16' y='164' fill='currentColor' style='font-size:1em'>E</text>
+<text text-anchor='middle' x='24' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='24' y='132' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='24' y='148' fill='currentColor' style='font-size:1em'>P</text>
+<text text-anchor='middle' x='24' y='164' fill='currentColor' style='font-size:1em'>x</text>
+<text text-anchor='middle' x='32' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='32' y='132' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='32' y='148' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='32' y='164' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='40' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='40' y='132' fill='currentColor' style='font-size:1em'>c</text>
+<text text-anchor='middle' x='40' y='148' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='40' y='164' fill='currentColor' style='font-size:1em'>c</text>
+<text text-anchor='middle' x='48' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='48' y='132' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='48' y='148' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='48' y='164' fill='currentColor' style='font-size:1em'>u</text>
+<text text-anchor='middle' x='56' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='56' y='132' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='56' y='164' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='64' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='64' y='132' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='64' y='164' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='72' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='72' y='164' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='80' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='88' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='96' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='104' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='112' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='120' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='128' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='136' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='144' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='152' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='152' y='36' fill='currentColor' style='font-size:1em'>W</text>
+<text text-anchor='middle' x='152' y='100' fill='currentColor' style='font-size:1em'>6</text>
+<text text-anchor='middle' x='152' y='116' fill='currentColor' style='font-size:1em'>7</text>
+<text text-anchor='middle' x='152' y='196' fill='currentColor' style='font-size:1em'>W</text>
+<text text-anchor='middle' x='152' y='244' fill='currentColor' style='font-size:1em'>6</text>
+<text text-anchor='middle' x='160' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='160' y='36' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='160' y='196' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='160' y='244' fill='currentColor' style='font-size:1em'>:</text>
+<text text-anchor='middle' x='168' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='168' y='36' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='168' y='196' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='176' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='176' y='36' fill='currentColor' style='font-size:1em'>k</text>
+<text text-anchor='middle' x='176' y='196' fill='currentColor' style='font-size:1em'>k</text>
+<text text-anchor='middle' x='176' y='244' fill='currentColor' style='font-size:1em'>c</text>
+<text text-anchor='middle' x='176' y='260' fill='currentColor' style='font-size:1em'>f</text>
+<text text-anchor='middle' x='184' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='184' y='244' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='184' y='260' fill='currentColor' style='font-size:1em'>u</text>
+<text text-anchor='middle' x='192' y='36' fill='currentColor' style='font-size:1em'>I</text>
+<text text-anchor='middle' x='192' y='196' fill='currentColor' style='font-size:1em'>I</text>
+<text text-anchor='middle' x='192' y='244' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='192' y='260' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='200' y='4' fill='currentColor' style='font-size:1em'>I</text>
+<text text-anchor='middle' x='200' y='36' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='200' y='196' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='200' y='244' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='200' y='260' fill='currentColor' style='font-size:1em'>u</text>
+<text text-anchor='middle' x='208' y='4' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='208' y='36' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='208' y='196' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='208' y='244' fill='currentColor' style='font-size:1em'>(</text>
+<text text-anchor='middle' x='208' y='260' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='216' y='4' fill='currentColor' style='font-size:1em'>-</text>
+<text text-anchor='middle' x='216' y='196' fill='currentColor' style='font-size:1em'>m</text>
+<text text-anchor='middle' x='216' y='244' fill='currentColor' style='font-size:1em'>)</text>
+<text text-anchor='middle' x='216' y='260' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='224' y='4' fill='currentColor' style='font-size:1em'>p</text>
+<text text-anchor='middle' x='224' y='196' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='232' y='4' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='240' y='4' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='248' y='4' fill='currentColor' style='font-size:1em'>c</text>
+<text text-anchor='middle' x='256' y='4' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='264' y='4' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='272' y='4' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='288' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='296' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='304' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='304' y='132' fill='currentColor' style='font-size:1em'>L</text>
+<text text-anchor='middle' x='304' y='148' fill='currentColor' style='font-size:1em'>W</text>
+<text text-anchor='middle' x='304' y='164' fill='currentColor' style='font-size:1em'>T</text>
+<text text-anchor='middle' x='312' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='312' y='132' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='312' y='148' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='312' y='164' fill='currentColor' style='font-size:1em'>h</text>
+<text text-anchor='middle' x='320' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='320' y='132' fill='currentColor' style='font-size:1em'>c</text>
+<text text-anchor='middle' x='320' y='148' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='320' y='164' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='328' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='328' y='132' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='328' y='148' fill='currentColor' style='font-size:1em'>k</text>
+<text text-anchor='middle' x='328' y='164' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='336' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='336' y='132' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='336' y='148' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='336' y='164' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='344' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='344' y='148' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='344' y='164' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='352' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='360' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='368' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='376' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='384' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='392' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='400' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='408' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='416' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='424' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='424' y='100' fill='currentColor' style='font-size:1em'>5</text>
+<text text-anchor='middle' x='424' y='260' fill='currentColor' style='font-size:1em'>4</text>
+<text text-anchor='middle' x='424' y='276' fill='currentColor' style='font-size:1em'>3</text>
+<text text-anchor='middle' x='432' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='432' y='100' fill='currentColor' style='font-size:1em'>,</text>
+<text text-anchor='middle' x='432' y='196' fill='currentColor' style='font-size:1em'>R</text>
+<text text-anchor='middle' x='432' y='212' fill='currentColor' style='font-size:1em'>Q</text>
+<text text-anchor='middle' x='432' y='260' fill='currentColor' style='font-size:1em'>,</text>
+<text text-anchor='middle' x='432' y='276' fill='currentColor' style='font-size:1em'>,</text>
+<text text-anchor='middle' x='440' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='440' y='36' fill='currentColor' style='font-size:1em'>C</text>
+<text text-anchor='middle' x='440' y='52' fill='currentColor' style='font-size:1em'>Q</text>
+<text text-anchor='middle' x='440' y='196' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='440' y='212' fill='currentColor' style='font-size:1em'>u</text>
+<text text-anchor='middle' x='448' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='448' y='36' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='448' y='52' fill='currentColor' style='font-size:1em'>u</text>
+<text text-anchor='middle' x='448' y='100' fill='currentColor' style='font-size:1em'>c</text>
+<text text-anchor='middle' x='448' y='196' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='448' y='212' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='448' y='260' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='448' y='276' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='456' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='456' y='36' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='456' y='52' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='456' y='100' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='456' y='196' fill='currentColor' style='font-size:1em'>u</text>
+<text text-anchor='middle' x='456' y='212' fill='currentColor' style='font-size:1em'>u</text>
+<text text-anchor='middle' x='456' y='260' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='456' y='276' fill='currentColor' style='font-size:1em'>x</text>
+<text text-anchor='middle' x='464' y='4' fill='currentColor' style='font-size:1em'>|</text>
+<text text-anchor='middle' x='464' y='36' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='464' y='52' fill='currentColor' style='font-size:1em'>u</text>
+<text text-anchor='middle' x='464' y='100' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='464' y='196' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='464' y='212' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='464' y='260' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='464' y='276' fill='currentColor' style='font-size:1em'>c</text>
+<text text-anchor='middle' x='472' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='472' y='52' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='472' y='100' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='472' y='196' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='472' y='260' fill='currentColor' style='font-size:1em'>u</text>
+<text text-anchor='middle' x='472' y='276' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='480' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='480' y='100' fill='currentColor' style='font-size:1em'>(</text>
+<text text-anchor='middle' x='480' y='260' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='480' y='276' fill='currentColor' style='font-size:1em'>p</text>
+<text text-anchor='middle' x='488' y='100' fill='currentColor' style='font-size:1em'>)</text>
+<text text-anchor='middle' x='488' y='260' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='488' y='276' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='496' y='4' fill='currentColor' style='font-size:1em'>O</text>
+<text text-anchor='middle' x='504' y='4' fill='currentColor' style='font-size:1em'>u</text>
+<text text-anchor='middle' x='512' y='4' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='520' y='4' fill='currentColor' style='font-size:1em'>-</text>
+<text text-anchor='middle' x='528' y='4' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='536' y='4' fill='currentColor' style='font-size:1em'>f</text>
+<text text-anchor='middle' x='544' y='4' fill='currentColor' style='font-size:1em'>-</text>
+<text text-anchor='middle' x='552' y='4' fill='currentColor' style='font-size:1em'>p</text>
+<text text-anchor='middle' x='560' y='4' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='568' y='4' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='568' y='36' fill='currentColor' style='font-size:1em'>P</text>
+<text text-anchor='middle' x='568' y='132' fill='currentColor' style='font-size:1em'>P</text>
+<text text-anchor='middle' x='576' y='4' fill='currentColor' style='font-size:1em'>c</text>
+<text text-anchor='middle' x='576' y='36' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='576' y='52' fill='currentColor' style='font-size:1em'>P</text>
+<text text-anchor='middle' x='576' y='132' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='576' y='148' fill='currentColor' style='font-size:1em'>#</text>
+<text text-anchor='middle' x='584' y='4' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='584' y='36' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='584' y='52' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='584' y='132' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='584' y='148' fill='currentColor' style='font-size:1em'>1</text>
+<text text-anchor='middle' x='592' y='4' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='592' y='36' fill='currentColor' style='font-size:1em'>c</text>
+<text text-anchor='middle' x='592' y='52' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='592' y='132' fill='currentColor' style='font-size:1em'>c</text>
+<text text-anchor='middle' x='592' y='148' fill='currentColor' style='font-size:1em'>.</text>
+<text text-anchor='middle' x='600' y='4' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='600' y='36' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='600' y='52' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='600' y='132' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='600' y='148' fill='currentColor' style='font-size:1em'>.</text>
+<text text-anchor='middle' x='608' y='36' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='608' y='132' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='608' y='148' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='616' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='616' y='36' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='616' y='132' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='624' y='4' fill='currentColor' style='font-size:1em'>=</text>
+</g>
+
+    </svg>
+  
+</div>
+<p>When you call a <code>map</code>, it internally calls <a href="https://github.com/python/cpython/blob/main/Lib/concurrent/futures/process.py#L791">submit</a>, which converts your function, its parameters, and the data into a structure called <code>WorkItem</code> and adds it to a <code>work_ids_queue</code>. In a run-loop, it then pops those work items, and if they’re not canceled, it repackages them into a structure <code>CallItem</code> and puts it on a <code>call_queue</code>. The <a href="https://github.com/python/cpython/blob/main/Lib/multiprocessing/queues.py#L262"><code>multiprocessing.Queue</code></a> handles <code>pickle</code> serialization before writing the data. It’s up to pickle to get the <em>fully qualified name</em> of the function being serialized, and while doing that (and also when deserializing), pickle actually tries to <a href="https://github.com/python/cpython/blob/3.13/Lib/pickle.py#L1082">import the module</a> a function is part of:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python:Lib/pickle.py" data-lang="python:Lib/pickle.py"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> name <span style="color:#f92672">is</span> <span style="color:#66d9ef">None</span>:
+</span></span><span style="display:flex;"><span>    name <span style="color:#f92672">=</span> getattr(obj, <span style="color:#e6db74">&#39;__qualname__&#39;</span>, <span style="color:#66d9ef">None</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> name <span style="color:#f92672">is</span> <span style="color:#66d9ef">None</span>:
+</span></span><span style="display:flex;"><span>    name <span style="color:#f92672">=</span> obj<span style="color:#f92672">.</span>__name__
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>module_name <span style="color:#f92672">=</span> whichmodule(obj, name)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">try</span>:
+</span></span><span style="display:flex;"><span>    __import__(module_name, level<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span>    module <span style="color:#f92672">=</span> sys<span style="color:#f92672">.</span>modules[module_name]
+</span></span><span style="display:flex;"><span>    obj2, parent <span style="color:#f92672">=</span> _getattribute(module, name)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">except</span> (<span style="color:#a6e22e">ImportError</span>, <span style="color:#a6e22e">KeyError</span>, <span style="color:#a6e22e">AttributeError</span>):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">raise</span> PicklingError(
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;Can&#39;t pickle </span><span style="color:#e6db74">%r</span><span style="color:#e6db74">: it&#39;s not found as </span><span style="color:#e6db74">%s</span><span style="color:#e6db74">.</span><span style="color:#e6db74">%s</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">%</span>
+</span></span><span style="display:flex;"><span>        (obj, module_name, name)) <span style="color:#f92672">from</span> None
+</span></span></code></pre></div><p>That brings us to a very important requirement which is:</p>
+
+<div class="admonition important">
+    <p class="title">IMPORTANT</p>
+    <p class="content">A function that we pass to executor must be visible via <code>module.name</code></p>
+</div>
+
+<p>When you submit a function to <code>ProcessPoolExecutor</code>, the function and its arguments are pickled to be sent to the worker process. The pickling process relies on the function being defined at the module level with a name accessible via importing.</p>
+<h1 id="enter-jupyter-notebook">Enter Jupyter Notebook</h1>
+<p>The problem is, Jupyter Notebooks, aside from being a JSON document, execute code dynamically. Let’s see how it works:</p>
+
+
+
+<div class="goat svg-container ">
+  
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      font-family="Menlo,Lucida Console,monospace"
+      
+        viewBox="0 0 640 201"
+      >
+      <g transform='translate(8,16)'>
+<path d='M 0,16 L 88,16' fill='none' stroke='currentColor'></path>
+<path d='M 152,16 L 280,16' fill='none' stroke='currentColor'></path>
+<path d='M 344,16 L 448,16' fill='none' stroke='currentColor'></path>
+<path d='M 504,16 L 616,16' fill='none' stroke='currentColor'></path>
+<path d='M 152,48 L 280,48' fill='none' stroke='currentColor'></path>
+<path d='M 96,64 L 144,64' fill='none' stroke='currentColor'></path>
+<path d='M 344,64 L 448,64' fill='none' stroke='currentColor'></path>
+<path d='M 504,64 L 616,64' fill='none' stroke='currentColor'></path>
+<path d='M 288,80 L 336,80' fill='none' stroke='currentColor'></path>
+<path d='M 456,80 L 496,80' fill='none' stroke='currentColor'></path>
+<path d='M 152,112 L 280,112' fill='none' stroke='currentColor'></path>
+<path d='M 96,144 L 144,144' fill='none' stroke='currentColor'></path>
+<path d='M 288,144 L 336,144' fill='none' stroke='currentColor'></path>
+<path d='M 456,144 L 496,144' fill='none' stroke='currentColor'></path>
+<path d='M 0,176 L 88,176' fill='none' stroke='currentColor'></path>
+<path d='M 152,176 L 280,176' fill='none' stroke='currentColor'></path>
+<path d='M 344,176 L 448,176' fill='none' stroke='currentColor'></path>
+<path d='M 504,176 L 616,176' fill='none' stroke='currentColor'></path>
+<path d='M 0,0 L 0,16' fill='none' stroke='currentColor'></path>
+<path d='M 0,16 L 0,176' fill='none' stroke='currentColor'></path>
+<path d='M 88,16 L 88,176' fill='none' stroke='currentColor'></path>
+<path d='M 152,16 L 152,48' fill='none' stroke='currentColor'></path>
+<path d='M 152,48 L 152,112' fill='none' stroke='currentColor'></path>
+<path d='M 152,112 L 152,176' fill='none' stroke='currentColor'></path>
+<path d='M 280,16 L 280,48' fill='none' stroke='currentColor'></path>
+<path d='M 280,48 L 280,112' fill='none' stroke='currentColor'></path>
+<path d='M 280,112 L 280,176' fill='none' stroke='currentColor'></path>
+<path d='M 344,16 L 344,64' fill='none' stroke='currentColor'></path>
+<path d='M 344,64 L 344,176' fill='none' stroke='currentColor'></path>
+<path d='M 448,16 L 448,64' fill='none' stroke='currentColor'></path>
+<path d='M 448,64 L 448,176' fill='none' stroke='currentColor'></path>
+<path d='M 504,0 L 504,16' fill='none' stroke='currentColor'></path>
+<path d='M 504,16 L 504,64' fill='none' stroke='currentColor'></path>
+<path d='M 504,64 L 504,176' fill='none' stroke='currentColor'></path>
+<path d='M 616,0 L 616,16' fill='none' stroke='currentColor'></path>
+<path d='M 616,16 L 616,64' fill='none' stroke='currentColor'></path>
+<path d='M 616,64 L 616,176' fill='none' stroke='currentColor'></path>
+<polygon points='104.000000,144.000000 92.000000,138.399994 92.000000,149.600006' fill='currentColor' transform='rotate(180.000000, 96.000000, 144.000000)'></polygon>
+<polygon points='152.000000,64.000000 140.000000,58.400002 140.000000,69.599998' fill='currentColor' transform='rotate(0.000000, 144.000000, 64.000000)'></polygon>
+<polygon points='296.000000,144.000000 284.000000,138.399994 284.000000,149.600006' fill='currentColor' transform='rotate(180.000000, 288.000000, 144.000000)'></polygon>
+<polygon points='344.000000,80.000000 332.000000,74.400002 332.000000,85.599998' fill='currentColor' transform='rotate(0.000000, 336.000000, 80.000000)'></polygon>
+<polygon points='464.000000,144.000000 452.000000,138.399994 452.000000,149.600006' fill='currentColor' transform='rotate(180.000000, 456.000000, 144.000000)'></polygon>
+<polygon points='504.000000,80.000000 492.000000,74.400002 492.000000,85.599998' fill='currentColor' transform='rotate(0.000000, 496.000000, 80.000000)'></polygon>
+<text text-anchor='middle' x='8' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='16' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='16' y='100' fill='currentColor' style='font-size:1em'>F</text>
+<text text-anchor='middle' x='24' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='24' y='100' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='32' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='32' y='100' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='40' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='40' y='100' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='48' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='48' y='100' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='56' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='56' y='100' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='64' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='64' y='100' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='72' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='72' y='100' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='80' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='88' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='96' y='4' fill='currentColor' style='font-size:1em'>J</text>
+<text text-anchor='middle' x='104' y='4' fill='currentColor' style='font-size:1em'>u</text>
+<text text-anchor='middle' x='112' y='4' fill='currentColor' style='font-size:1em'>p</text>
+<text text-anchor='middle' x='120' y='4' fill='currentColor' style='font-size:1em'>y</text>
+<text text-anchor='middle' x='128' y='4' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='136' y='4' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='144' y='4' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='152' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='160' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='168' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='168' y='84' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='168' y='148' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='176' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='176' y='84' fill='currentColor' style='font-size:1em'>x</text>
+<text text-anchor='middle' x='176' y='148' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='184' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='184' y='84' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='184' y='148' fill='currentColor' style='font-size:1em'>p</text>
+<text text-anchor='middle' x='192' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='192' y='84' fill='currentColor' style='font-size:1em'>c</text>
+<text text-anchor='middle' x='192' y='148' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='200' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='200' y='36' fill='currentColor' style='font-size:1em'>Ø</text>
+<text text-anchor='middle' x='200' y='84' fill='currentColor' style='font-size:1em'>u</text>
+<text text-anchor='middle' x='200' y='148' fill='currentColor' style='font-size:1em'>y</text>
+<text text-anchor='middle' x='208' y='4' fill='currentColor' style='font-size:1em'>|</text>
+<text text-anchor='middle' x='208' y='36' fill='currentColor' style='font-size:1em'>M</text>
+<text text-anchor='middle' x='208' y='84' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='208' y='148' fill='currentColor' style='font-size:1em'>_</text>
+<text text-anchor='middle' x='216' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='216' y='36' fill='currentColor' style='font-size:1em'>Q</text>
+<text text-anchor='middle' x='216' y='84' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='216' y='148' fill='currentColor' style='font-size:1em'>c</text>
+<text text-anchor='middle' x='224' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='224' y='84' fill='currentColor' style='font-size:1em'>_</text>
+<text text-anchor='middle' x='224' y='148' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='232' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='232' y='84' fill='currentColor' style='font-size:1em'>c</text>
+<text text-anchor='middle' x='232' y='148' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='240' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='240' y='84' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='240' y='148' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='248' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='248' y='84' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='248' y='148' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='256' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='256' y='84' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='256' y='148' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='264' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='264' y='148' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='272' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='288' y='4' fill='currentColor' style='font-size:1em'>K</text>
+<text text-anchor='middle' x='296' y='4' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='304' y='4' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='312' y='4' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='320' y='4' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='328' y='4' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='344' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='352' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='360' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='360' y='116' fill='currentColor' style='font-size:1em'>d</text>
+<text text-anchor='middle' x='368' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='368' y='36' fill='currentColor' style='font-size:1em'>I</text>
+<text text-anchor='middle' x='368' y='52' fill='currentColor' style='font-size:1em'>K</text>
+<text text-anchor='middle' x='368' y='116' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='376' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='376' y='36' fill='currentColor' style='font-size:1em'>P</text>
+<text text-anchor='middle' x='376' y='52' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='376' y='116' fill='currentColor' style='font-size:1em'>_</text>
+<text text-anchor='middle' x='384' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='384' y='36' fill='currentColor' style='font-size:1em'>y</text>
+<text text-anchor='middle' x='384' y='52' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='384' y='116' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='392' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='392' y='36' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='392' y='52' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='392' y='116' fill='currentColor' style='font-size:1em'>x</text>
+<text text-anchor='middle' x='400' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='400' y='36' fill='currentColor' style='font-size:1em'>h</text>
+<text text-anchor='middle' x='400' y='52' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='400' y='116' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='408' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='408' y='36' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='408' y='52' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='408' y='116' fill='currentColor' style='font-size:1em'>c</text>
+<text text-anchor='middle' x='416' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='416' y='36' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='416' y='116' fill='currentColor' style='font-size:1em'>u</text>
+<text text-anchor='middle' x='424' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='424' y='116' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='432' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='432' y='116' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='440' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='448' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='456' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='464' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='472' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='480' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='488' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='496' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='512' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='520' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='520' y='36' fill='currentColor' style='font-size:1em'>I</text>
+<text text-anchor='middle' x='520' y='52' fill='currentColor' style='font-size:1em'>S</text>
+<text text-anchor='middle' x='528' y='36' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='528' y='52' fill='currentColor' style='font-size:1em'>h</text>
+<text text-anchor='middle' x='528' y='116' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='536' y='4' fill='currentColor' style='font-size:1em'>I</text>
+<text text-anchor='middle' x='536' y='36' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='536' y='52' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='536' y='116' fill='currentColor' style='font-size:1em'>u</text>
+<text text-anchor='middle' x='544' y='4' fill='currentColor' style='font-size:1em'>P</text>
+<text text-anchor='middle' x='544' y='36' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='544' y='52' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='544' y='116' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='552' y='4' fill='currentColor' style='font-size:1em'>y</text>
+<text text-anchor='middle' x='552' y='36' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='552' y='52' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='552' y='116' fill='currentColor' style='font-size:1em'>_</text>
+<text text-anchor='middle' x='560' y='4' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='560' y='36' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='560' y='116' fill='currentColor' style='font-size:1em'>c</text>
+<text text-anchor='middle' x='568' y='4' fill='currentColor' style='font-size:1em'>h</text>
+<text text-anchor='middle' x='568' y='36' fill='currentColor' style='font-size:1em'>c</text>
+<text text-anchor='middle' x='568' y='116' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='576' y='4' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='576' y='36' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='576' y='116' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='584' y='4' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='584' y='36' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='584' y='116' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='592' y='36' fill='currentColor' style='font-size:1em'>v</text>
+<text text-anchor='middle' x='600' y='4' fill='currentColor' style='font-size:1em'>=</text>
+<text text-anchor='middle' x='600' y='36' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='608' y='4' fill='currentColor' style='font-size:1em'>=</text>
+</g>
+
+    </svg>
+  
+</div>
+<p>The frontend sends the cell code as text to the kernel:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python:ipykernel/kernelbase.py" data-lang="python:ipykernel/kernelbase.py"><span style="display:flex;"><span>do_execute_args <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;code&#34;</span>: code,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;silent&#34;</span>: silent,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;store_history&#34;</span>: store_history,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;user_expressions&#34;</span>: user_expressions,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;allow_stdin&#34;</span>: allow_stdin,
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> self<span style="color:#f92672">.</span>_do_exec_accepted_params[<span style="color:#e6db74">&#34;cell_meta&#34;</span>]:
+</span></span><span style="display:flex;"><span>    do_execute_args[<span style="color:#e6db74">&#34;cell_meta&#34;</span>] <span style="color:#f92672">=</span> cell_meta
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> self<span style="color:#f92672">.</span>_do_exec_accepted_params[<span style="color:#e6db74">&#34;cell_id&#34;</span>]:
+</span></span><span style="display:flex;"><span>    do_execute_args[<span style="color:#e6db74">&#34;cell_id&#34;</span>] <span style="color:#f92672">=</span> cell_id
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Call do_execute with the appropriate arguments</span>
+</span></span><span style="display:flex;"><span>reply_content <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>do_execute(<span style="color:#f92672">**</span>do_execute_args)
+</span></span></code></pre></div><p>The kernel then decides how to interpret the text of the cell and what to do with it. The IPython Kernel, as the name suggests, runs the <code>IPython</code> interactive shell, so it <a href="https://github.com/ipython/ipykernel/blob/main/ipykernel/ipkernel.py#L339">sends the contents</a> of the cell to the shell to run it:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python:ipkernel/ipkernel.py" data-lang="python:ipkernel/ipkernel.py"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> hasattr(shell, <span style="color:#e6db74">&#34;run_cell_async&#34;</span>) <span style="color:#f92672">and</span> hasattr(shell, <span style="color:#e6db74">&#34;should_run_async&#34;</span>):
+</span></span><span style="display:flex;"><span>    run_cell <span style="color:#f92672">=</span> shell<span style="color:#f92672">.</span>run_cell_async
+</span></span><span style="display:flex;"><span>    should_run_async <span style="color:#f92672">=</span> shell<span style="color:#f92672">.</span>should_run_async
+</span></span><span style="display:flex;"><span>    with_cell_id <span style="color:#f92672">=</span> _accepts_parameters(run_cell, [<span style="color:#e6db74">&#34;cell_id&#34;</span>])
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>    should_run_async <span style="color:#f92672">=</span> <span style="color:#66d9ef">lambda</span> cell: <span style="color:#66d9ef">False</span>  <span style="color:#75715e"># noqa: ARG005, E731</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># older IPython,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># use blocking run_cell and wrap it in coroutine</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">async</span> <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">run_cell</span>(<span style="color:#f92672">*</span>args, <span style="color:#f92672">**</span>kwargs):
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> shell<span style="color:#f92672">.</span>run_cell(<span style="color:#f92672">*</span>args, <span style="color:#f92672">**</span>kwargs)
+</span></span></code></pre></div><p>Finally, <code>IPython</code> runs a separate  <a href="https://github.com/ipython/ipython/blob/main/IPython/core/interactiveshell.py#L3183">session</a>, transforming the cell’s text into an Abstract Syntax Tree (AST), compiling, and running it:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python:IPython/core/interactiveshell.py" data-lang="python:IPython/core/interactiveshell.py"><span style="display:flex;"><span><span style="color:#66d9ef">async</span> <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">run_cell_async</span>(
+</span></span><span style="display:flex;"><span>        self,
+</span></span><span style="display:flex;"><span>        raw_cell: str,
+</span></span><span style="display:flex;"><span>        store_history<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>,
+</span></span><span style="display:flex;"><span>        silent<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>,
+</span></span><span style="display:flex;"><span>        shell_futures<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">*</span>,
+</span></span><span style="display:flex;"><span>        transformed_cell: Optional[str] <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>,
+</span></span><span style="display:flex;"><span>        preprocessing_exc_tuple: Optional[AnyType] <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>,
+</span></span><span style="display:flex;"><span>        cell_id<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>,
+</span></span><span style="display:flex;"><span>    ) <span style="color:#f92672">-&gt;</span> ExecutionResult:
+</span></span><span style="display:flex;"><span><span style="color:#f92672">//</span> <span style="color:#f92672">...</span>
+</span></span><span style="display:flex;"><span>code_ast <span style="color:#f92672">=</span> compiler<span style="color:#f92672">.</span>ast_parse(cell, filename<span style="color:#f92672">=</span>cell_name)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">//</span> <span style="color:#f92672">...</span>
+</span></span><span style="display:flex;"><span>code_ast <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>transform_ast(code_ast)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">//</span> <span style="color:#f92672">...</span>
+</span></span><span style="display:flex;"><span>has_raised <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> self<span style="color:#f92672">.</span>run_ast_nodes(code_ast<span style="color:#f92672">.</span>body, cell_name,
+</span></span><span style="display:flex;"><span>                       interactivity<span style="color:#f92672">=</span>interactivity, 
+</span></span><span style="display:flex;"><span>                       compiler<span style="color:#f92672">=</span>compiler, result<span style="color:#f92672">=</span>result)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>self<span style="color:#f92672">.</span>last_execution_succeeded <span style="color:#f92672">=</span> <span style="color:#f92672">not</span> has_raised
+</span></span><span style="display:flex;"><span>self<span style="color:#f92672">.</span>last_execution_result <span style="color:#f92672">=</span> result
+</span></span></code></pre></div><p>As you can see, the whole thing does not look like something that can be imported as a module. The code exists only in the interactive namespace of the <code>IPython</code> shell. Hence, in order to be able to run <code>ProcessPoolExecutor</code>, we must take our function, store it in a separate file—preferably somewhere in a temp folder, as a temporary module that can be imported. This way we make it accessible to child processes started by <code>ProcessPoolExecutor</code>, so when <code>pickle</code> tries to serialize and deserialize our function, it can successfully import it by name, and everything works smoothly.</p>
+
+
+                
+            </div>
+        </section>
+        <script>
+              
+                        (function addTitleToCodeBlock() {
+  let list = document.body.getElementsByClassName("highlight");
+
+  for (i = 0; i <= list.length - 1; i++) {
+    let code = list[i].firstElementChild.firstElementChild;
+    let codeName = code ? code.className.split(":")[1] : null;
+
+    if (codeName) {
+                console.log(codeName)
+      let div = document.createElement("div");
+      div.textContent = codeName;
+      div.classList.add("code-name");
+      code.parentNode.insertBefore(div, code);
+    }
+  }
+})();
+
+        </script>
+
+        <footer class="fs-6 text-muted mt-5">
+            <p>
+                CC0. Powered by <a href="https://gohugo.io">Hugo</a>. Theme inspired by <a href="https://www.mattdesl.com/">@mattdesl</a> and <a href="https://ozafoto.com/digital/">Oza</a>.
+            </p>
+        </footer>
+    </div>
+  </body>
+</html>
