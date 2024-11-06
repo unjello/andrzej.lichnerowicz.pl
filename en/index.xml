@@ -232,6 +232,13 @@
       <description>&lt;h1 id=&#34;falling-in-love-with-sourcehut-but-still-tempted-by-github-actions&#34;&gt;Falling in Love with SourceHut, But Still Tempted by GitHub Actions&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://git.sr.ht/&#34;&gt;SourceHut&lt;/a&gt; has recently won my heart with its simplicity and 90&amp;rsquo;s UI vibe, but I can&amp;rsquo;t resist the appeal of GitHub&amp;rsquo;s free workflow automation platform. I&amp;rsquo;ve been working on a few small projects in Python, TypeScript, and Rust, and have set up CI for all of them. Now that I&amp;rsquo;ve revived my blog, I thought I&amp;rsquo;d write about my experience using GitHub Actions for deployment.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Rust Macros: A Cautionary Tale</title>
+      <link>http://andrzej.lichnerowicz.pl/en/blog/rust-macros-a-cautionary-tale/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://andrzej.lichnerowicz.pl/en/blog/rust-macros-a-cautionary-tale/</guid>
+      <description>&lt;p&gt;I pitched the idea of rewriting one of the Kubernetes services I work with in Rust, and I got the green light. Long story short, I’ve been writing a lot of Rust lately. It’s obviously not Zig (&amp;lt;3), but it’s way better than some alternatives :)&lt;/p&gt;&#xA;&lt;p&gt;Anyway, one of the trickiest parts of Rust &amp;ndash; even for seasoned Rustaceans &amp;ndash; is the macro system. So how did I end up deep in Rust macros? I needed to create multiple clients following a similar pattern, and I really wanted to use a &lt;a href=&#34;https://en.wikipedia.org/wiki/Builder_pattern&#34;&gt;builder pattern&lt;/a&gt;. My first drafts were highly repetitive, so naturally, the answer seemed to be “macros!”&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>safeshelter</title>
       <link>http://andrzej.lichnerowicz.pl/en/oss/safeshelter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
