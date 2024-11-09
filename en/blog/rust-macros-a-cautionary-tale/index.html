@@ -62,10 +62,12 @@
 
         <section class="blog_single">
             <h1>Rust Macros: A Cautionary Tale</h1>
-            <div class="date">2024-10-26T17:34:33&#43;02:00</div>
+            <div class="date">2024-11-09T18:41:15&#43;02:00</div>
             <div class="content">
                 <p>I pitched the idea of rewriting one of the Kubernetes services I work with in Rust, and I got the green light. Long story short, I’ve been writing a lot of Rust lately. It’s obviously not Zig (&lt;3), but it’s way better than some alternatives :)</p>
-<p>Anyway, one of the trickiest parts of Rust &ndash; even for seasoned Rustaceans &ndash; is the macro system. So how did I end up deep in Rust macros? I needed to create multiple clients following a similar pattern, and I really wanted to use a <a href="https://en.wikipedia.org/wiki/Builder_pattern">builder pattern</a>. My first drafts were highly repetitive, so naturally, the answer seemed to be “macros!”</p>
+<p>One of the trickiest parts of Rust &ndash; even for experienced Rustaceans &ndash; is definitely the macro system. So, how did I find myself neck-deep in Rust macros? I was building a tool that needed to communicate with a few internal services, each with its own client connection pattern. The goal was to create multiple clients that followed a similar structure: connect to a service and fetch data. This seemed like a perfect use case for a <code>Trait</code>.</p>
+<p>But here’s the catch: each service had its own connection requirements. Some used <a href="https://datatracker.ietf.org/doc/html/rfc7617">Basic Auth</a>, others relied on <a href="https://datatracker.ietf.org/doc/html/rfc6750">Bearer Tokens</a>, and a few needed full <a href="https://datatracker.ietf.org/doc/html/rfc6749">OAuth Authorization</a>. Some required a username and password, some wanted a token and username, and others just needed a token. It was a bit all over the place. This felt like the ideal situation for the <a href="https://en.wikipedia.org/wiki/Builder_pattern">builder pattern</a> set up each client with a builder, and then interact with them through a <code>Trait</code>.</p>
+<p>My initial drafts, though, were repetitive and clunky. The solution? Macros!</p>
 <h2 id="overview-of-existing-crates">Overview of Existing Crates</h2>
 <p>First, I looked for crates I could reuse. There’s an excellent and popular crate, <a href="https://crates.io/crates/derive_builder">derive_builder</a>, and another one, <a href="https://crates.io/crates/builder_macro">builder_macro</a>. Unfortunately, neither of them did exactly what I had in mind. I wanted a feature where if I defined a field as an <code>Option</code> in my struct, it would be optional. This might be a questionable pattern, but I wanted to defer calculating certain default values until later.</p>
 <p>At first glance, <code>derive_builder</code> looked perfect because it has a setting to strip the <code>Option</code> from fields:</p>
@@ -216,7 +218,8 @@
 </span></span><span style="display:flex;"><span>    assert(client.field);
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><h1 id="procedural-macros">Procedural Macros</h1>
-<p>With macro-by-example working, I decided to tackle proc-macros. I’d been kind of wary of them, but it felt like the right time to dive in. Proc-macros need to live in a separate crate, and they essentially take in a <code>TokenStream</code> and return another <code>TokenStream</code>, so they allow for a bit more flexibility. Here’s what a basic proc-macro looks like:</p>
+<p>With macro-by-example working, I decided to tackle proc-macros. Right now, you&rsquo;re probably like - but why? And I don&rsquo;t have a good answer to that except - why not? :) To be honest I’d been kind of wary of them, but it felt like the right time to dive in, since I already dived into the topic. I also wondered what would be the better approach. How will it be different? And I already had a pretty good use-case.</p>
+<p>Proc-macros need to live in a separate crate, and they essentially take in a <code>TokenStream</code> and return another <code>TokenStream</code>, so they allow for a bit more flexibility. Here’s what a basic proc-macro looks like:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#66d9ef">use</span> proc_macro::TokenStream;
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">use</span> quote::quote;
 </span></span><span style="display:flex;"><span>
