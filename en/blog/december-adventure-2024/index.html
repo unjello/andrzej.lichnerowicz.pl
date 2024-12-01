@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="og:title" content="December Adventure 2024 | @unjello" />
+    <meta property="twitter:title" content="December Adventure 2024 | @unjello">
+    <meta property="og:url" content="http://andrzej.lichnerowicz.pl/en/blog/december-adventure-2024/" />
+    <meta property="og:type" content="blog" />
+    
+    
+    
+    <meta property="og:description" content="The December Adventure is low key. The goal is to write a little bit of code every day in December." />
+    <meta property="twitter:description" content="The December Adventure is low key. The goal is to write a little bit of code every day in December.">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.1.7/purify.min.js" integrity="sha512-BdRNuI8/lsyxkKQVxK1lVtfZshggfXPAwEP+JAOJEKx6Y8SLfcBSRdaWyXQmMxo+wG180uFqXYGjGRL0mh4/Jw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    
+    
+      <link rel="stylesheet" href="/css/style.min.2e859e4992bcd5ecfc1a48111216f98958cd0696c0278c0e2513e50ee64ead0d.css" integrity="sha256-LoWeSZK81ez8GkgREhb5iVjNBpbAJ4wOJRPlDuZOrQ0=" crossorigin="anonymous">
+    
+    
+    <title>December Adventure 2024 | Blog @unjello</title>
+  </head>
+  <body>
+    <div class="layout container-fluid">
+        <header>
+            <h1>
+                <a href="/">Andrzej unjello Lichnerowicz</a>
+            </h1>
+            <ul class="list-inline tagline">
+                
+                    <li class="list-inline-item">he</li>
+                
+                    <li class="list-inline-item">him</li>
+                
+                    <li class="list-inline-item">activist</li>
+                
+                    <li class="list-inline-item">trees and greenery lover</li>
+                
+            </ul>
+            <ul class="list-inline socialmedia">
+                
+                    <li class="list-inline-item">
+                        <a href="https://mastodon.gamedev.place/@unjello">mastodon</a>
+                    </li>                            
+                
+                    <li class="list-inline-item">
+                        <a href="https://codeberg.org/unjello">codeberg</a>
+                    </li>                            
+                
+                    <li class="list-inline-item">
+                        <a href="mailto:andrzej@lichnerowicz.pl">email</a>
+                    </li>                            
+                
+                    <li class="list-inline-item">
+                        <a href="https://andrzej.lichnerowicz.pl/public.pgp">pgp</a>
+                    </li>                            
+                
+            </ul>
+        </header>
+
+        <section class="blog_single">
+            <h1>December Adventure 2024</h1>
+            <div class="date">2024-12-01T21:10:15&#43;02:00</div>
+            <div class="content">
+                <p>I have stumbled across a <a href="https://mastodon.gamedev.place/@crc@bsd.cafe/113555993612328150">post</a> on mastodon. I never really took part in no trends, but this somehow had the right vibes, or maybe I changed? Dunno. The point is, I feel like I want to do it :)</p>
+<p>So inspired by <a href="https://mastodon.gamedev.place/@eli_oat@tenforward.social">@eli_oat</a>, with a whole <a href="https://eli.li/december-adventure">webring</a> going on, without further ado:</p>
+<h1 id="011224">01.12.24</h1>
+<p>I have few projects in my head, I was trying to <del>finish</del>, who am I kidding, I was trying to even start them, for a long, long time. I am not going to write about the end goal yet, as I am not sure how long I am going to last, but for now, I want to focus on writing a C preprocessor. But also, I really wanna write it in Scheme. Or maybe I should rather say Racket. And to start well, here&rsquo;s a little <a href="https://adventofcode.com">Advent of Code</a> I did:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-racket" data-lang="racket"><span style="display:flex;"><span>(<span style="color:#66d9ef">define</span> (parse-input lines)
+</span></span><span style="display:flex;"><span>  (<span style="color:#66d9ef">for/fold</span> ([left-list <span style="color:#f92672">&#39;</span>()]
+</span></span><span style="display:flex;"><span>             [right-list <span style="color:#f92672">&#39;</span>()])
+</span></span><span style="display:flex;"><span>            ([line lines])
+</span></span><span style="display:flex;"><span>    (<span style="color:#66d9ef">let*</span> ([parts (map string-&gt;number (regexp-split <span style="color:#e6db74">#px&#34;\\s+&#34;</span> line))]
+</span></span><span style="display:flex;"><span>           [left (first parts)]
+</span></span><span style="display:flex;"><span>           [right (second parts)])
+</span></span><span style="display:flex;"><span>      (values (cons left left-list) (cons right right-list)))))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(<span style="color:#66d9ef">define</span> (read-input filename)
+</span></span><span style="display:flex;"><span>  (parse-input (file-&gt;lines filename)))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(<span style="color:#66d9ef">define</span> (calculate-total-distance left right)
+</span></span><span style="display:flex;"><span>  (<span style="color:#66d9ef">letrec</span> ([calculate (<span style="color:#66d9ef">lambda</span> (l r a)
+</span></span><span style="display:flex;"><span>                        (<span style="color:#66d9ef">cond</span>
+</span></span><span style="display:flex;"><span>                          [(<span style="color:#66d9ef">or</span> (empty? l) (empty? r)) a]
+</span></span><span style="display:flex;"><span>                          [<span style="color:#66d9ef">else</span> (calculate (rest l) (rest r) (+ a (abs (- (first l) (first r)))))]))])
+</span></span><span style="display:flex;"><span>    (calculate (sort left &lt;) (sort right &lt;) <span style="color:#ae81ff">0</span>)))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(<span style="color:#66d9ef">define</span> (calculate-similarity-score left right)
+</span></span><span style="display:flex;"><span>  (<span style="color:#66d9ef">let</span> ([frequency-map (make-hash)])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    (<span style="color:#66d9ef">for</span> ([num right])
+</span></span><span style="display:flex;"><span>      (hash-set! frequency-map num (+ (hash-ref frequency-map num <span style="color:#ae81ff">0</span>) <span style="color:#ae81ff">1</span>)))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    (<span style="color:#66d9ef">for/fold</span> ([acc <span style="color:#ae81ff">0</span>]) ([num left])
+</span></span><span style="display:flex;"><span>      (+ acc (* num (hash-ref frequency-map num <span style="color:#ae81ff">0</span>))))))<span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><p>I already know it might be better, and I&rsquo;ll polish it tomorrow. It&rsquo;s kinda getting late, and I wanted to get this post out. G&rsquo;nite :)</p>
+
+
+                
+            </div>
+        </section>
+        <script>
+              
+                        (function addTitleToCodeBlock() {
+  let list = document.body.getElementsByClassName("highlight");
+
+  for (i = 0; i <= list.length - 1; i++) {
+    let code = list[i].firstElementChild.firstElementChild;
+    let codeName = code ? code.className.split(":")[1] : null;
+
+    if (codeName) {
+                console.log(codeName)
+      let div = document.createElement("div");
+      div.textContent = codeName;
+      div.classList.add("code-name");
+      code.parentNode.insertBefore(div, code);
+    }
+  }
+})();
+
+        </script>
+
+        <footer class="fs-6 text-muted mt-5">
+            <p>
+                CC0. Powered by <a href="https://gohugo.io">Hugo</a>. Theme inspired by <a href="https://www.mattdesl.com/">@mattdesl</a> and <a href="https://ozafoto.com/digital/">Oza</a>.
+            </p>
+        </footer>
+    </div>
+  </body>
+</html>
