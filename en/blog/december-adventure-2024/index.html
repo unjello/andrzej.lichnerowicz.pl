@@ -70,11 +70,34 @@
             <div class="content">
                 <p>I have stumbled across a <a href="https://mastodon.gamedev.place/@crc@bsd.cafe/113555993612328150">post</a> on mastodon. I never really took part in no trends, but this somehow had the right vibes, or maybe I changed? Dunno. The point is, I feel like I want to do it :)</p>
 <p>So inspired by <a href="https://mastodon.gamedev.place/@eli_oat@tenforward.social">@eli_oat</a>, with a whole <a href="https://eli.li/december-adventure">webring</a> going on, without further ado:</p>
-<h1 id="021224">02.12.24</h1>
+<h1 id="day-03">Day 03</h1>
+<p>Slowly everything starts coming together. The ports turned out to be quite simple, and intuitive. They&rsquo;re just a <code>HANDLE</code>, an abstraction of input used by other read/write functions. The lexer is not bad either, follows similar pattern to <code>cond</code> or <code>match-string</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-racket" data-lang="racket"><span style="display:flex;"><span>(define-lex-abbrev CRLF (seq <span style="color:#e6db74">#\return</span> <span style="color:#e6db74">#\newline</span>))
+</span></span><span style="display:flex;"><span>(define-lex-abbrev NEWLINE (<span style="color:#66d9ef">or</span> CRLF <span style="color:#e6db74">#\return</span> <span style="color:#e6db74">#\newline</span>))
+</span></span><span style="display:flex;"><span>(define-lex-abbrev BACKSLASH-NEWLINE (seq <span style="color:#e6db74">#\\</span> NEWLINE))
+</span></span><span style="display:flex;"><span>(define-lex-abbrev ANY-NEWLINE (<span style="color:#66d9ef">or</span> BACKSLASH-NEWLINE NEWLINE))
+</span></span><span style="display:flex;"><span>(define-lex-abbrev ANY-CHAR (char-complement (union)))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(<span style="color:#66d9ef">define</span> lex 
+</span></span><span style="display:flex;"><span>  (lexer 
+</span></span><span style="display:flex;"><span>    [(eof) <span style="color:#f92672">&#39;</span><span style="color:#e6db74">EOF</span>] 
+</span></span><span style="display:flex;"><span>    [ANY-NEWLINE (lex input-port)] 
+</span></span><span style="display:flex;"><span>    [ANY-CHAR (display lexeme)]))
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>(<span style="color:#66d9ef">define</span> (run-lexer port) 
+</span></span><span style="display:flex;"><span>  (<span style="color:#66d9ef">when</span> (not (eq? <span style="color:#f92672">&#39;</span><span style="color:#e6db74">eof</span> (lex port))) (run-lexer port)))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(<span style="color:#66d9ef">define</span> (main)
+</span></span><span style="display:flex;"><span>  (run-lexer (open-input-string <span style="color:#e6db74">&#34;_</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">FI</span><span style="color:#ae81ff">\\\n</span><span style="color:#e6db74">LE</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">__&#34;</span>)))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(<span style="color:#66d9ef">module+</span> main
+</span></span><span style="display:flex;"><span>  (main))<span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><p>now that I have this out of the way, I am going to do something I haven&rsquo;t done in a long time - I am going to use the <a href="https://gcc.gnu.org/onlinedocs/cpp/">manual</a> and implement the preprocessor according to the rules :)</p>
+<h1 id="day-02">Day 02</h1>
 <p>Not much time today, so didn&rsquo;t really managed to write any code towards the preprocessor. I was also still having a kind of inner battle between heart (Scheme) and reason (Rust). Not sure if that&rsquo;s a victory, but heart still wins :)</p>
 <p>I&rsquo;ve never really studied parsers. I think I am aware enough to appreciate the complexities and subtlety that goes into them, but throughout my career I only did very naive handmade parsers, then used <a href="https://www.boost.org/doc/libs/1_85_0/libs/spirit/doc/html/index.html">Spirit</a> quite a lot &ndash; and frankly loved it! &ndash; and then used some Parser Expression Grammars like <a href="https://docs.rs/nom/latest/nom/">nom</a> or <a href="https://docs.rs/winnow/latest/winnow/">winnow</a>. I must admit tho, that I find PEGs a little confusing&hellip; the first-match wins rule never won my heart. I think in backtracking terms&hellip;</p>
 <p>Also, since I really only picked up Scheme like 2-3 days ago, every piece of documentation I read, opens another doors to yet another new concept. Like I tried to delay learning <code>input-ports</code> and kept operating on strings as long as I could, but with lexer it was inevitable. So here I am, going down a rabbit hole&hellip; :)</p>
-<h1 id="011224">01.12.24</h1>
+<h1 id="day-01">Day 01</h1>
 <p>I have few projects in my head, I was trying to <del>finish</del>, who am I kidding, I was trying to even start them, for a long, long time. I am not going to write about the end goal yet, as I am not sure how long I am going to last, but for now, I want to focus on writing a C preprocessor. But also, I really wanna write it in Scheme. Or maybe I should rather say Racket. And to start well, here&rsquo;s a little <a href="https://adventofcode.com">Advent of Code</a> I did, my first Scheme in &ldquo;production&rdquo;:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-racket" data-lang="racket"><span style="display:flex;"><span>(<span style="color:#66d9ef">define</span> (parse-input lines)
 </span></span><span style="display:flex;"><span>  (<span style="color:#66d9ef">for/fold</span> ([left-list <span style="color:#f92672">&#39;</span>()]
