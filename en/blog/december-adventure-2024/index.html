@@ -70,6 +70,43 @@
             <div class="content">
                 <p>I have stumbled across a <a href="https://mastodon.gamedev.place/@crc@bsd.cafe/113555993612328150">post</a> on mastodon. I never really took part in no trends, but this somehow had the right vibes, or maybe I changed? Dunno. The point is, I feel like I want to do it :)</p>
 <p>So inspired by <a href="https://mastodon.gamedev.place/@eli_oat@tenforward.social">@eli_oat</a>, with a whole <a href="https://eli.li/december-adventure">webring</a> going on, without further ado:</p>
+<h1 id="day-05">Day 05</h1>
+<p>Today was a busy day, couldn&rsquo;t spend too much time off work. But did manage to think through, or at least to take a stab at the last missing piece I think I need, which is:</p>
+<h2 id="file-io">File I/O</h2>
+<ol>
+<li>Open a file</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-awk" data-lang="awk"><span style="display:flex;"><span><span style="color:#a6e22e">I</span> <span style="color:#a6e22e">HAS</span> <span style="color:#a6e22e">A</span> <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">file_handle</span><span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">ITZ</span> <span style="color:#a6e22e">SHIP</span> <span style="color:#e6db74">&#34;&lt;filename&gt;&#34;</span> <span style="color:#a6e22e">WIF</span> <span style="color:#e6db74">&#34;&lt;mode&gt;&#34;</span>
+</span></span></code></pre></div><p>Mode can be:</p>
+<ul>
+<li><code>SNAGGING</code>: read mode</li>
+<li><code>SLAPIN</code>: write mode, truncates file</li>
+<li><code>ADDIN</code>: append mode</li>
+</ul>
+<p>all file input/output is done assuming text-mode. No support for binary yet.</p>
+<ol start="2">
+<li>Read from a file</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-awk" data-lang="awk"><span style="display:flex;"><span><span style="color:#a6e22e">SLURP</span> <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">variable</span><span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">OFFA</span> <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">file_handle</span><span style="color:#f92672">&gt;</span>
+</span></span></code></pre></div><ol start="3">
+<li>Write to a file</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-awk" data-lang="awk"><span style="display:flex;"><span><span style="color:#a6e22e">SCOOP</span> <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">data</span><span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">IN2</span> <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">file_handle</span><span style="color:#f92672">&gt;</span>
+</span></span></code></pre></div><p>The command <code>VISIBLE &lt;data&gt;</code> is a backwards compatible equivalent of <code>SCOOP &lt;data&gt; IN2 MAHOUT</code>.</p>
+<ol start="4">
+<li>Close the file</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-awk" data-lang="awk"><span style="display:flex;"><span><span style="color:#a6e22e">UNSHIP</span> <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">file_handle</span><span style="color:#f92672">&gt;</span>
+</span></span></code></pre></div><ol start="5">
+<li>Predefined file handles</li>
+</ol>
+<p>As in many systems, LULZ comes with predefined handles for standard streams;</p>
+<ul>
+<li>stdio is <code>MAHIN</code></li>
+<li>stdout is <code>MAHOUT</code></li>
+<li>stderr is <code>MAHBAD</code></li>
+</ul>
+<p>you can use them in place of <code>file_handle</code></p>
 <h1 id="day-04">Day 04</h1>
 <p>Oh dear attention deficit&hellip; today isn&rsquo;t my day with Scheme. To be honest, it&rsquo;s one of those days where everything I touch turns to sh*t. So, I needed something fun. The chain of events that led me here is completely random, but in the end, I stumbled upon LOLCODE! It’s so appealing, in a very weird way, and still&hellip;</p>
 <p>The only problem with this language is its age &ndash; it&rsquo;s almost 15 years old. That nearly qualifies as retro; there are things in museums that are just as old. The issue isn&rsquo;t necessarily its age but the fact that the authors never fully standardized certain aspects of it. What I really need are arrays and file input/output capabilities. So here&rsquo;s my attempt at the spec, and interpreter might follow soon ;)</p>
