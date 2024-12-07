@@ -70,6 +70,95 @@
             <div class="content">
                 <p>I have stumbled across a <a href="https://mastodon.gamedev.place/@crc@bsd.cafe/113555993612328150">post</a> on mastodon. I never really took part in no trends, but this somehow had the right vibes, or maybe I changed? Dunno. The point is, I feel like I want to do it :)</p>
 <p>So inspired by <a href="https://mastodon.gamedev.place/@eli_oat@tenforward.social">@eli_oat</a>, with a whole <a href="https://eli.li/december-adventure">webring</a> going on, without further ado:</p>
+<h1 id="day-07">Day 07</h1>
+<p>A little context switch again. Riddle for <a href="https://adventofcode.com/2024/day/4">day four</a> of advent code bothered me for some time now. It was easy to solve it in imperative way, but I really wanted to solve it in racket in a way that will be generic for both parts.</p>
+<p>So first we define the patterns. I wanted to describe both searches in a purely declarative manner:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-racket" data-lang="racket"><span style="display:flex;"><span>(<span style="color:#66d9ef">define</span> part-1-pattern <span style="color:#f92672">&#39;</span>((<span style="color:#e6db74">#\X</span> <span style="color:#e6db74">&#34;XMAS&#34;</span>
+</span></span><span style="display:flex;"><span>        (((<span style="color:#ae81ff">0</span> <span style="color:#ae81ff">0</span>) (<span style="color:#ae81ff">0</span> <span style="color:#ae81ff">1</span>) (<span style="color:#ae81ff">0</span> <span style="color:#ae81ff">2</span>) (<span style="color:#ae81ff">0</span> <span style="color:#ae81ff">3</span>))
+</span></span><span style="display:flex;"><span>         ((<span style="color:#ae81ff">0</span> <span style="color:#ae81ff">0</span>) (<span style="color:#ae81ff">1</span> <span style="color:#ae81ff">0</span>) (<span style="color:#ae81ff">2</span> <span style="color:#ae81ff">0</span>) (<span style="color:#ae81ff">3</span> <span style="color:#ae81ff">0</span>))
+</span></span><span style="display:flex;"><span>         ((<span style="color:#ae81ff">0</span> <span style="color:#ae81ff">0</span>) (<span style="color:#ae81ff">1</span> <span style="color:#ae81ff">1</span>) (<span style="color:#ae81ff">2</span> <span style="color:#ae81ff">2</span>) (<span style="color:#ae81ff">3</span> <span style="color:#ae81ff">3</span>))
+</span></span><span style="display:flex;"><span>         ((<span style="color:#ae81ff">0</span> <span style="color:#ae81ff">0</span>) (<span style="color:#ae81ff">1</span> <span style="color:#ae81ff">-1</span>) (<span style="color:#ae81ff">2</span> <span style="color:#ae81ff">-2</span>) (<span style="color:#ae81ff">3</span> <span style="color:#ae81ff">-3</span>))
+</span></span><span style="display:flex;"><span>         ((<span style="color:#ae81ff">0</span> <span style="color:#ae81ff">0</span>) (<span style="color:#ae81ff">0</span> <span style="color:#ae81ff">-1</span>) (<span style="color:#ae81ff">0</span> <span style="color:#ae81ff">-2</span>) (<span style="color:#ae81ff">0</span> <span style="color:#ae81ff">-3</span>))
+</span></span><span style="display:flex;"><span>         ((<span style="color:#ae81ff">0</span> <span style="color:#ae81ff">0</span>) (<span style="color:#ae81ff">-1</span> <span style="color:#ae81ff">0</span>) (<span style="color:#ae81ff">-2</span> <span style="color:#ae81ff">0</span>) (<span style="color:#ae81ff">-3</span> <span style="color:#ae81ff">0</span>))
+</span></span><span style="display:flex;"><span>         ((<span style="color:#ae81ff">0</span> <span style="color:#ae81ff">0</span>) (<span style="color:#ae81ff">-1</span> <span style="color:#ae81ff">-1</span>) (<span style="color:#ae81ff">-2</span> <span style="color:#ae81ff">-2</span>) (<span style="color:#ae81ff">-3</span> <span style="color:#ae81ff">-3</span>))
+</span></span><span style="display:flex;"><span>         ((<span style="color:#ae81ff">0</span> <span style="color:#ae81ff">0</span>) (<span style="color:#ae81ff">-1</span> <span style="color:#ae81ff">1</span>) (<span style="color:#ae81ff">-2</span> <span style="color:#ae81ff">2</span>) (<span style="color:#ae81ff">-3</span> <span style="color:#ae81ff">3</span>))))))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(<span style="color:#66d9ef">define</span> part-2-pattern <span style="color:#f92672">&#39;</span>(
+</span></span><span style="display:flex;"><span>  (<span style="color:#e6db74">#\A</span> <span style="color:#e6db74">&#34;MASMAS&#34;</span> (((<span style="color:#ae81ff">-1</span> <span style="color:#ae81ff">-1</span>) (<span style="color:#ae81ff">0</span> <span style="color:#ae81ff">0</span>) (<span style="color:#ae81ff">1</span> <span style="color:#ae81ff">1</span>) (<span style="color:#ae81ff">-1</span> <span style="color:#ae81ff">1</span>) (<span style="color:#ae81ff">0</span> <span style="color:#ae81ff">0</span>) (<span style="color:#ae81ff">1</span> <span style="color:#ae81ff">-1</span>))))
+</span></span><span style="display:flex;"><span>  (<span style="color:#e6db74">#\A</span> <span style="color:#e6db74">&#34;MASSAM&#34;</span> (((<span style="color:#ae81ff">-1</span> <span style="color:#ae81ff">-1</span>) (<span style="color:#ae81ff">0</span> <span style="color:#ae81ff">0</span>) (<span style="color:#ae81ff">1</span> <span style="color:#ae81ff">1</span>) (<span style="color:#ae81ff">-1</span> <span style="color:#ae81ff">1</span>) (<span style="color:#ae81ff">0</span> <span style="color:#ae81ff">0</span>) (<span style="color:#ae81ff">1</span> <span style="color:#ae81ff">-1</span>))))
+</span></span><span style="display:flex;"><span>  (<span style="color:#e6db74">#\A</span> <span style="color:#e6db74">&#34;SAMMAS&#34;</span> (((<span style="color:#ae81ff">-1</span> <span style="color:#ae81ff">-1</span>) (<span style="color:#ae81ff">0</span> <span style="color:#ae81ff">0</span>) (<span style="color:#ae81ff">1</span> <span style="color:#ae81ff">1</span>) (<span style="color:#ae81ff">-1</span> <span style="color:#ae81ff">1</span>) (<span style="color:#ae81ff">0</span> <span style="color:#ae81ff">0</span>) (<span style="color:#ae81ff">1</span> <span style="color:#ae81ff">-1</span>))))))<span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><p>Then some helpers, to get the size of the grid&hellip;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-racket" data-lang="racket"><span style="display:flex;"><span>(<span style="color:#66d9ef">define</span> (grid-size grid)
+</span></span><span style="display:flex;"><span>  (list (string-length (car grid)) (length grid)))<span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><p>&hellip; to check if coordinates are valid&hellip;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-racket" data-lang="racket"><span style="display:flex;"><span>(<span style="color:#66d9ef">define</span> (coord-valid? xy height width)
+</span></span><span style="display:flex;"><span>  (not (<span style="color:#66d9ef">or</span> (&lt; (car xy) <span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span>           (&gt;= (car xy) width)
+</span></span><span style="display:flex;"><span>           (&lt; (cadr xy) <span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span>           (&gt;= (cadr xy) height))))<span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><p>&hellip; and finally to get a character under at the coords, or <code>false</code> if coords are out of bounds.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-racket" data-lang="racket"><span style="display:flex;"><span>(<span style="color:#66d9ef">define</span> (coord-get grid xy width height)
+</span></span><span style="display:flex;"><span>  (<span style="color:#66d9ef">if</span> (coord-valid? xy width height)
+</span></span><span style="display:flex;"><span>      (string-ref (list-ref grid (car xy)) (cadr xy))
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">#f</span>))<span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><p>Next, I loop through the patterns. For every pattern I try to get the characters under the coords. I further process only the strings that are fully fetched &ndash; i.e. they have as many characters as coords in the pattern &ndash; and I return the list with the strings for each pattern matched.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-racket" data-lang="racket"><span style="display:flex;"><span>(<span style="color:#66d9ef">define</span> (patterns-&gt;characters grid xy width height patterns)
+</span></span><span style="display:flex;"><span>  (<span style="color:#66d9ef">let*</span> ([valid? <span style="color:#66d9ef">#t</span>]
+</span></span><span style="display:flex;"><span>         [result <span style="color:#f92672">&#39;</span>()]
+</span></span><span style="display:flex;"><span>         [bind-coord-get (<span style="color:#66d9ef">lambda</span> (bind-xy)
+</span></span><span style="display:flex;"><span>                           (coord-get grid
+</span></span><span style="display:flex;"><span>                                      (list (+ (car xy) (car bind-xy))
+</span></span><span style="display:flex;"><span>                                            (+ (cadr xy) (cadr bind-xy)))
+</span></span><span style="display:flex;"><span>                                      width
+</span></span><span style="display:flex;"><span>                                      height))])
+</span></span><span style="display:flex;"><span>    (<span style="color:#66d9ef">define</span> (pattern-&gt;characters pattern)
+</span></span><span style="display:flex;"><span>      (<span style="color:#66d9ef">let*</span> ([result (filter-map bind-coord-get pattern)]
+</span></span><span style="display:flex;"><span>             [pattern-len (length pattern)]
+</span></span><span style="display:flex;"><span>             [result-len (length result)])
+</span></span><span style="display:flex;"><span>        (<span style="color:#66d9ef">if</span> (equal? pattern-len result-len) result <span style="color:#66d9ef">#f</span>)))
+</span></span><span style="display:flex;"><span>    (map list-&gt;string (filter-map pattern-&gt;characters patterns))))<span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><p>And here&rsquo;s the main loop. Going through the grid, I look for the character defined in the pattern. If I find one, I get all the strings defined by the pattern coords. Then I sum how many of those strings I&rsquo;ve found actually matched a given pattern.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-racket" data-lang="racket"><span style="display:flex;"><span>(<span style="color:#66d9ef">define</span> (solve-pattern grid pattern)
+</span></span><span style="display:flex;"><span>  (<span style="color:#66d9ef">let*</span> ([result <span style="color:#f92672">&#39;</span>()]
+</span></span><span style="display:flex;"><span>         [debug-result <span style="color:#f92672">&#39;</span>()]
+</span></span><span style="display:flex;"><span>         [size (grid-size grid)]
+</span></span><span style="display:flex;"><span>         [width (car size)]
+</span></span><span style="display:flex;"><span>         [height (cadr size)]
+</span></span><span style="display:flex;"><span>         [search-char (car pattern)]
+</span></span><span style="display:flex;"><span>         [search-string (cadr pattern)]
+</span></span><span style="display:flex;"><span>         [search-pattern (caddr pattern)]
+</span></span><span style="display:flex;"><span>         [is-search-string?
+</span></span><span style="display:flex;"><span>          (<span style="color:#66d9ef">lambda</span> (x)
+</span></span><span style="display:flex;"><span>            (<span style="color:#66d9ef">or</span> (equal? x search-string)
+</span></span><span style="display:flex;"><span>                (equal? (list-&gt;string (reverse (string-&gt;list x)))
+</span></span><span style="display:flex;"><span>                        search-string)))])
+</span></span><span style="display:flex;"><span>    (<span style="color:#66d9ef">for*</span> ([x (in-range height)]
+</span></span><span style="display:flex;"><span>           [y (in-range width)])
+</span></span><span style="display:flex;"><span>      (<span style="color:#66d9ef">when</span> (char=? search-char (coord-get grid (list x y) width height))
+</span></span><span style="display:flex;"><span>        (<span style="color:#66d9ef">set!</span>
+</span></span><span style="display:flex;"><span>         result
+</span></span><span style="display:flex;"><span>         (cons (length (filter identity
+</span></span><span style="display:flex;"><span>                               (map is-search-string?
+</span></span><span style="display:flex;"><span>                                    (patterns-&gt;characters grid
+</span></span><span style="display:flex;"><span>                                                          (list x y)
+</span></span><span style="display:flex;"><span>                                                          width
+</span></span><span style="display:flex;"><span>                                                          height
+</span></span><span style="display:flex;"><span>                                                          search-pattern))))
+</span></span><span style="display:flex;"><span>               result))))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    (apply + result)))<span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><p>Finally I sum all the sums, to get the final hit number. In the begining, this was only one loop. The core function was the one above, but I didn&rsquo;t find a feasable way to get Part 2 working with one /search string/. That&rsquo;s why eventually the pattern became a list of patterns.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-racket" data-lang="racket"><span style="display:flex;"><span>(<span style="color:#66d9ef">define</span> (solve grid patterns)
+</span></span><span style="display:flex;"><span>  (apply + (map (<span style="color:#66d9ef">lambda</span> (x) (solve-pattern grid x)) patterns)))<span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><p>And the formalities, print out the answers.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-racket" data-lang="racket"><span style="display:flex;"><span>(<span style="color:#66d9ef">define</span> (main)
+</span></span><span style="display:flex;"><span>  (<span style="color:#66d9ef">let*</span> ([input (port-&gt;string (open-input-file <span style="color:#e6db74">&#34;day04.txt&#34;</span>) <span style="color:#66d9ef">#:close?</span> <span style="color:#66d9ef">#t</span>)]
+</span></span><span style="display:flex;"><span>         [grid (string-split input <span style="color:#e6db74">#px&#34;\n&#34;</span>)])
+</span></span><span style="display:flex;"><span>    (printf <span style="color:#e6db74">&#34;Total XMAS: ~a</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span> (solve grid part-1-pattern))
+</span></span><span style="display:flex;"><span>    (printf <span style="color:#e6db74">&#34;Total X-MAS: ~a</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span> (solve grid part-2-pattern))))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(main)<span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><p>It ain&rsquo;t pretty. Functional mindset was a long dream of mine, but it is apparent that it is hard for me to unlearn imperative ways.</p>
 <h1 id="day-06">Day 06</h1>
 <p>Not much time today either. Work, Xmas Party afterhours, and setting up cookies and milk for Santa with the kids, but also a trap to catch him in the act :)</p>
 <p>Still I managed to add parsing for following sections of 1.2 spec:</p>
