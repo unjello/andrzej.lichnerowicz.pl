@@ -66,11 +66,46 @@
 
         <section class="blog_single">
             <h1>December Adventure 2024</h1>
-            <div class="date">2024-12-01T21:10:15&#43;02:00</div>
+            <div class="date">2024-12-12T21:10:15&#43;02:00</div>
             <div class="content">
                 <p>I have stumbled across a <a href="https://mastodon.gamedev.place/@crc@bsd.cafe/113555993612328150">post</a> on mastodon. I never really took part in no trends, but this somehow had the right vibes, or maybe I changed? Dunno. The point is, I feel like I want to do it :)</p>
 <p>So inspired by <a href="https://mastodon.gamedev.place/@eli_oat@tenforward.social">@eli_oat</a>, with a whole <a href="https://eli.li/december-adventure">webring</a> going on, without further ado:</p>
-<h1 id="day-09">Day 09</h1>
+<h1 id="day-12">Day 12</h1>
+<p>Today I was traveling to Warsaw, for a conference called <a href="https://midi2024.opi.org.pl">12th Machine Intelligence and Digital Interaction</a>. I had one paper accepted for it, but also the organizers were kind enough to invite me for a panel discussion on digital heritage in architecture and arts.</p>
+<p><img src="/en/blog/december-adventure-2024/images/IMG_3064.jpg" alt="A photo of the conference&rsquo;s chair announcing a panel discussion. In the background a huge screen with logo of the conference, and panel information"></p>
+<p>Met couple cool people,</p>
+<p>I have also spent a great time with folks from <a href="https://fhkd.pl">The Foundation for the History of Home Computers </a>. Coming back with at least 2 great ideas. Must. Not. Distract. :)</p>
+<p>Train back home was announced to be 15 minutes late, but eventually came after 45. Disaster.</p>
+<h1 id="day-11">Day 11</h1>
+<p>Not much time today. Renamed <code>Token</code> to <code>Node</code>. I was thinking of naming it <code>Expression</code> but it didn&rsquo;t sit right, as some of the enum variants were in reality just statements&hellip;</p>
+<p>I&rsquo;ve also added a simple <code>Node</code> wrapper for <code>Value</code>, that I actually hate, as it looks ugly, and I am going to refactor it soon hopefully. For now it&rsquo;s enough tho:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#66d9ef">pub</span>(<span style="color:#66d9ef">crate</span>) <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">parse_value</span>(input: <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">mut</span> <span style="color:#f92672">&amp;</span><span style="color:#66d9ef">str</span>) -&gt; <span style="color:#a6e22e">PResult</span><span style="color:#f92672">&lt;</span>Node<span style="color:#f92672">&gt;</span> {
+</span></span><span style="display:flex;"><span>    trace(<span style="color:#e6db74">&#34;value&#34;</span>, Value::parse)
+</span></span><span style="display:flex;"><span>        .map(<span style="color:#f92672">|</span>v<span style="color:#f92672">|</span> Node::Value(v.unwrap()))
+</span></span><span style="display:flex;"><span>        .parse_next(input)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>And that should enable working on actual expressions, operators and function calls.</p>
+<h1 id="day-10">Day 10</h1>
+<p>A little bit more of refactoring. Decided to pull parsing functions into the type for both <code>Value</code> and <code>Token</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#66d9ef">impl</span> Value {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">pub</span>(<span style="color:#66d9ef">crate</span>) <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">parse</span>(input: <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">mut</span> <span style="color:#f92672">&amp;</span><span style="color:#66d9ef">str</span>) -&gt; <span style="color:#a6e22e">PResult</span><span style="color:#f92672">&lt;</span>Option<span style="color:#f92672">&lt;</span>Self<span style="color:#f92672">&gt;&gt;</span> {
+</span></span><span style="display:flex;"><span>        trace(
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;value&#34;</span>,
+</span></span><span style="display:flex;"><span>            alt((
+</span></span><span style="display:flex;"><span>                Self::parse_float_dot,
+</span></span><span style="display:flex;"><span>                Self::parse_uint,
+</span></span><span style="display:flex;"><span>                Self::parse_string,
+</span></span><span style="display:flex;"><span>                Self::parse_boolean,
+</span></span><span style="display:flex;"><span>                Self::parse_undefined,
+</span></span><span style="display:flex;"><span>            )),
+</span></span><span style="display:flex;"><span>        )
+</span></span><span style="display:flex;"><span>        .map(<span style="color:#f92672">|</span>v<span style="color:#f92672">|</span> Ok(v))
+</span></span><span style="display:flex;"><span>        .parse_next(input)<span style="color:#f92672">?</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// ...
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span></code></pre></div><h1 id="day-09">Day 09</h1>
 <p>Had to do a little bit of refactoring. I never understood why some Rust library authors prefer to stuff 100k of code straight into <code>lib.rs</code>. It always felt weird, and unsettling. I like my files broken down. So when my interpreter started to approach 500 LOC, I had to split it into several files.</p>
 <p>Now that I have proper values, as well as variables that can hold values, I figured I need a trait for things that can be turned into value. In the mean time, I had to look up the syntax for matching structure enums&hellip; that&rsquo;s definietely not overly intuitive, but looks pretty after a while:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#66d9ef">impl</span> ToValue <span style="color:#66d9ef">for</span> Token {

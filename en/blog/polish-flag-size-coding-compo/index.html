@@ -78,7 +78,7 @@
 </div>
 
 <p>A trip down memory lane. It&rsquo;s 2002. I&rsquo;m sitting in the dimly lit Heidmarkhalle in Fallingbostel, Germany. It feels great to be back at the <a href="https://demozoo.org/parties/238/">Mekka &amp; Symposium</a> demoscene party.</p>
-<p><img alt="Heidmarkhalle during Mekka &amp; Symposium demoparty. Glowing CRT monitors in the dark" src="/en/blog/polish-flag-size-coding-compo/images/mekka.jpg"></p>
+<p><img src="/en/blog/polish-flag-size-coding-compo/images/mekka.jpg" alt="Heidmarkhalle during Mekka &amp; Symposium demoparty. Glowing CRT monitors in the dark"></p>
 <p>The room is shrouded in darkness, except for the glow of the computer screen illuminating my face. Ah, the good old days, when lugging a PC tower and a CRT monitor to parties was the norm! That year marked a record in the party&rsquo;s history, boasting the highest number of PC demo submissions ever. Over 50 entries!</p>
 <p>At some point, organizers announced a bonus competition &ndash; the Polish flag compo! Organized by <a href="https://demozoo.org/sceners/5832/">mados</a> and <a href="https://demozoo.org/sceners/6833/">tomaes</a> of TAP, a small German demoscene group, this challenge sparked my interest. Even though the official Demozoo records don&rsquo;t list the results, I managed to unearth them <a href="http://tap.wildmag.de/releases/polish_flag_compo.zip">buried deep</a> within the interwebs on the  <a href="http://tap.wildmag.de">TAP webpage</a>.</p>
 <p>I accepted the challenge, with a bit of help from <a href="https://demozoo.org/sceners/11711/">payda/Procreation</a> and a couple others whose names, unfortunately, escape me after all these years. Here&rsquo;s what I came up with</p>
@@ -95,7 +95,7 @@
 </span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">00000013</span>  <span style="color:#a6e22e">F3AA</span>              rep stosb
 </span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">00000015</span>  <span style="color:#a6e22e">CD16</span>              int <span style="color:#ae81ff">0x16</span>
 </span></span></code></pre></div><p>and boy, did it look good:</p>
-<p><img alt="A screenshot of my entry to the Polish flag bonus compo" src="/en/blog/polish-flag-size-coding-compo/images/unj_000.png"></p>
+<p><img src="/en/blog/polish-flag-size-coding-compo/images/unj_000.png" alt="A screenshot of my entry to the Polish flag bonus compo"></p>
 <p>A mere 23 bytes. Impressive, right? Curious if I could optimize it further, I consulted ChatGPT, which suggested this was as compact as it could get. However, the competition results suggested otherwise:</p>
 
 <pre class="topaz">
@@ -131,7 +131,7 @@
 </pre>
 
 <p>9 entries better than me! (of course I already worked through that dissapointment, it was 22 years ago after all:). The first place entry was by <a href="https://demozoo.org/sceners/5484/">bup/fuzzion</a>. His submission bent the rules more than just a bit:</p>
-<p><img alt="Screen of bup&rsquo;s entry. A screen should be half white, half red. It is 99% white." src="/en/blog/polish-flag-size-coding-compo/images/bup_000.png"></p>
+<p><img src="/en/blog/polish-flag-size-coding-compo/images/bup_000.png" alt="Screen of bup&rsquo;s entry. A screen should be half white, half red. It is 99% white."></p>
 <p>Without prior knowledge of the theme, one might never guess it represented the Polish flag. But, moving past this cheeky observation, I&rsquo;ve set my sights on matching the 19-byte record.</p>
 <h2 id="public-service-announcement">Public Service Announcement</h2>
 <p>Before diving deeper, I must confess something I overlooked until writing this post &ndash; my program lacked a <code>ret</code> instruction, and its functioning was purely coincidental. Since all com files load at the same memory location and some participants included a <code>ret</code> in their larger solutions, my program inadvertently stumbled upon this missing instruction, courtesy of these unsung heroes. Not all heroes wear capes, indeed :)</p>
@@ -264,7 +264,7 @@
 </span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">0000000</span><span style="color:#a6e22e">E</span>  <span style="color:#ae81ff">79</span>F8              jns <span style="color:#ae81ff">0x8</span>
 </span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">00000010</span>  <span style="color:#a6e22e">CD16</span>              int <span style="color:#ae81ff">0x16</span>
 </span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">00000012</span>  <span style="color:#a6e22e">C3</span>                ret
-</span></span></code></pre></div><p><img alt="Screenshot of 19 bytes version. You can see a small shift between white and red, because of LDA ES,[BX] trick" src="/en/blog/polish-flag-size-coding-compo/images/unj_001.png"></p>
+</span></span></code></pre></div><p><img src="/en/blog/polish-flag-size-coding-compo/images/unj_001.png" alt="Screenshot of 19 bytes version. You can see a small shift between white and red, because of LDA ES,[BX] trick"></p>
 <p>This subtle yet effective modification not only honors the original challenge but also showcases the beauty of size coding. If it looks good, it is good. Even in a field as precise as assembly, there&rsquo;s room for creativity and improvement.</p>
 
 

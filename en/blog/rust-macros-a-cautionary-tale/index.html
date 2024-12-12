@@ -115,7 +115,7 @@
 </span></span><span style="display:flex;"><span>    })
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>It turns out that stripping the Option makes the field required, which was not what I wanted at all. The other crate, <a href="https://crates.io/crates/derive_builder">builder_macro</a>, also didn’t work for me; it kept <code>Option</code> in the setters, creating code like <code>.with_optional(Some(true))</code>, which felt messy. So, of course, I thought, “I should write a macro to automate this!”</p>
-<p><img alt="I should write a program automating it!" src="/en/blog/rust-macros-a-cautionary-tale/automation_2x.png"></p>
+<p><img src="/en/blog/rust-macros-a-cautionary-tale/automation_2x.png" alt="I should write a program automating it!"></p>
 <h1 id="type-alias-and-struct-limitations-in-macros">Type Alias and Struct Limitations in Macros</h1>
 <p>One of the things I initially hoped was that Rust might allow me to use macros to return a type, something like:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Builder</span> <span style="color:#f92672">=</span> builder!({
