@@ -1,78 +1,199 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="twitter:card" content="summary_large_image">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="twitter:card" content="summary_large_image" />
     <meta property="og:title" content="December Adventure 2024 | @unjello" />
-    <meta property="twitter:title" content="December Adventure 2024 | @unjello">
+    <meta property="twitter:title" content="December Adventure 2024 | @unjello" />
     <meta property="og:url" content="http://andrzej.lichnerowicz.pl/en/blog/december-adventure-2024/" />
     <meta property="og:type" content="blog" />
-    
-    
-    
+     
+    <meta property="og:image" content="http://andrzej.lichnerowicz.pl/en/blog/december-adventure-2024/images/IMG_3064.jpg" />
+    <meta property="twitter:image" content="http://andrzej.lichnerowicz.pl/en/blog/december-adventure-2024/images/IMG_3064.jpg" />
+     
     <meta property="og:description" content="The December Adventure is low key. The goal is to write a little bit of code every day in December." />
-    <meta property="twitter:description" content="The December Adventure is low key. The goal is to write a little bit of code every day in December.">
+    <meta property="twitter:description" content="The December Adventure is low key. The goal is to write a little bit of code every day in December." />
     
-    <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="apple-touch-icon" href="/favicon.ico">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.1.7/purify.min.js" integrity="sha512-BdRNuI8/lsyxkKQVxK1lVtfZshggfXPAwEP+JAOJEKx6Y8SLfcBSRdaWyXQmMxo+wG180uFqXYGjGRL0mh4/Jw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/favicon.ico" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.1.7/purify.min.js"
+      integrity="sha512-BdRNuI8/lsyxkKQVxK1lVtfZshggfXPAwEP+JAOJEKx6Y8SLfcBSRdaWyXQmMxo+wG180uFqXYGjGRL0mh4/Jw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
-    
-    
-      <link rel="stylesheet" href="/css/style.min.2e859e4992bcd5ecfc1a48111216f98958cd0696c0278c0e2513e50ee64ead0d.css" integrity="sha256-LoWeSZK81ez8GkgREhb5iVjNBpbAJ4wOJRPlDuZOrQ0=" crossorigin="anonymous">
-    
-    
+     
+    <link
+      rel="stylesheet"
+      href="/css/style.min.3a7155bb510c74d3ad0ee88347caccee2f18b7d2005edd786edc9f75caca9f7b.css"
+      integrity="sha256-OnFVu1EMdNOtDuiDR8rM7i8Yt9IAXt14btyfdcrKn3s="
+      crossorigin="anonymous"
+    />
+     
     <title>December Adventure 2024 | Blog @unjello</title>
   </head>
   <body>
+    <canvas
+      id="decay-canvas"
+      width="3172"
+      height="440"
+      style="height: 220px; width: 1586px"
+    ></canvas>
     <div class="layout container-fluid">
-        <header>
-            <h1>
-                <a href="/">Andrzej unjello Lichnerowicz</a>
-            </h1>
-            <ul class="list-inline tagline">
-                
-                    <li class="list-inline-item">he</li>
-                
-                    <li class="list-inline-item">him</li>
-                
-                    <li class="list-inline-item">activist</li>
-                
-                    <li class="list-inline-item">trees and greenery lover</li>
-                
-            </ul>
-            <ul class="list-inline socialmedia">
-                
-                    <li class="list-inline-item">
-                        <a href="https://mastodon.gamedev.place/@unjello">mastodon</a>
-                    </li>                            
-                
-                    <li class="list-inline-item">
-                        <a href="https://codeberg.org/unjello">codeberg</a>
-                    </li>                            
-                
-                    <li class="list-inline-item">
-                        <a href="mailto:andrzej@lichnerowicz.pl">email</a>
-                    </li>                            
-                
-                    <li class="list-inline-item">
-                        <a href="https://andrzej.lichnerowicz.pl/public.pgp">pgp</a>
-                    </li>                            
-                
-            </ul>
-        </header>
+      <header>
+        <h1>
+          <a href="/">Andrzej unjello Lichnerowicz</a>
+        </h1>
+        <ul class="list-inline tagline">
+          
+          <li class="list-inline-item">he</li>
+          
+          <li class="list-inline-item">him</li>
+          
+          <li class="list-inline-item">activist</li>
+          
+          <li class="list-inline-item">trees and greenery lover</li>
+          
+        </ul>
+        <ul class="list-inline socialmedia">
+          
+          <li class="list-inline-item">
+            <a href="https://mastodon.gamedev.place/@unjello">mastodon</a>
+          </li>
+          
+          <li class="list-inline-item">
+            <a href="https://codeberg.org/unjello">codeberg</a>
+          </li>
+          
+          <li class="list-inline-item">
+            <a href="mailto:andrzej@lichnerowicz.pl">email</a>
+          </li>
+          
+          <li class="list-inline-item">
+            <a href="https://andrzej.lichnerowicz.pl/public.pgp">pgp</a>
+          </li>
+          
+        </ul>
+      </header>
 
-        <section class="blog_single">
-            <h1>December Adventure 2024</h1>
-            <div class="date">2024-12-12T21:10:15&#43;02:00</div>
-            <div class="content">
-                <p>I have stumbled across a <a href="https://mastodon.gamedev.place/@crc@bsd.cafe/113555993612328150">post</a> on mastodon. I never really took part in no trends, but this somehow had the right vibes, or maybe I changed? Dunno. The point is, I feel like I want to do it :)</p>
+      <section class="blog_single">
+        <h1>December Adventure 2024</h1>
+        <div class="date">2024-12-12T21:10:15&#43;02:00</div>
+        <div class="content">
+          <p>I have stumbled across a <a href="https://mastodon.gamedev.place/@crc@bsd.cafe/113555993612328150">post</a> on mastodon. I never really took part in no trends, but this somehow had the right vibes, or maybe I changed? Dunno. The point is, I feel like I want to do it :)</p>
 <p>So inspired by <a href="https://mastodon.gamedev.place/@eli_oat@tenforward.social">@eli_oat</a>, with a whole <a href="https://eli.li/december-adventure">webring</a> going on, without further ado:</p>
-<h1 id="day-12">Day 12</h1>
+<h1 id="day-13">Day 13</h1>
+<p>Friday 13th. What can go wrong? :)</p>
+<p>Did some updates to my home page. Added recent publication, and the panel discussion. And figured I might as well do some long outstanding fixes :)</p>
+<p>First of all, I&rsquo;ve stolen a way <code>&lt;code&gt;</code> is styled from <a href="http://izzys.casa">Izzy&rsquo;s Casa</a>. I have read an excelent piece on the state of C++ Committee rot, and as good as the article was, couple of the styling tricks stole my heart :)</p>
+<p>I had to experiment a little with it in my setup, because <code>&lt;code&gt;</code> is used for inline-backticked verbatim code, as well as code blocks. I didn&rsquo;t want to mess with background and shadows for the latter, so I had to find a way to leave them alone. Fortunately they all have a <code>class</code> attribute starting with <code>language-</code>, like <code>class=&quot;language-rust&quot;</code>. From there it was realtively easy, once I brushed up on CSS selectors:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scss" data-lang="scss"><span style="display:flex;"><span>$box-shadow-xsmall<span style="color:#f92672">:</span> <span style="color:#ae81ff">2</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">1</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">0</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">0</span><span style="color:#66d9ef">px</span> $code-foreground-color;
+</span></span><span style="display:flex;"><span>$border-small<span style="color:#f92672">:</span> <span style="color:#ae81ff">1</span><span style="color:#66d9ef">px</span> solid $code-foreground-color;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">code</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">:not</span><span style="color:#f92672">([</span><span style="color:#f92672">class</span><span style="color:#f92672">^=</span><span style="color:#e6db74">&#34;language-&#34;</span><span style="color:#f92672">])</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">background-color</span><span style="color:#f92672">:</span> $code-background-color;
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">color</span><span style="color:#f92672">:</span> $code-foreground-color;
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">border</span><span style="color:#f92672">:</span> $border-small;
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">box-shadow</span><span style="color:#f92672">:</span> $box-shadow-xsmall;
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">line-height</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">1</span><span style="color:#ae81ff">.2</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">margin-left</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">1</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">margin-right</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">2</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">padding</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">0</span><span style="color:#ae81ff">.1</span><span style="color:#66d9ef">rem</span> <span style="color:#ae81ff">0</span><span style="color:#ae81ff">.2</span><span style="color:#66d9ef">rem</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">vertical-align</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">10</span><span style="color:#66d9ef">%</span>;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">font-family</span><span style="color:#f92672">:</span> $font-family-code;
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">font-optical-sizing</span><span style="color:#f92672">:</span> auto;
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">font-style</span><span style="color:#f92672">:</span> normal;
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">font-weight</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">500</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">font-size</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">0</span><span style="color:#ae81ff">.95</span><span style="color:#66d9ef">rem</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>I&rsquo;ve also added a cool decay effect on pictures, that I saw in an article <a href="https://lil.law.harvard.edu/century-scale-storage/">Century-Scale Storage</a> by Maxwell Neely-Cohen. It&rsquo;s a great piece on so many levels. First of all it touches a subject dear to my heart for the past few years, ever since I started <a href="https://kskpd.pl/en/projects/polish-entry-to-unesco/">the UNESCO journey</a> which is preservation of digital heritage. But also because it was quite neat on the presentation layer. There&rsquo;s many custom shaders, custom p5 animations, and this one effect that wen you scroll, the image seems to vanish in digital noise.</p>
+<p>The effect is quite easy actually to pull of. First you need a canvas layer overlay fixed at the top:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">canvas</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;decay-canvas&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">width</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;3172&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">height</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;440&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;height: 220px; width: 1586px&#34;</span>
+</span></span><span style="display:flex;"><span>&gt;&lt;/<span style="color:#f92672">canvas</span>&gt;
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>#decay-canvas {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">fixed</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">100</span><span style="color:#66d9ef">%</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">z-index</span>: <span style="color:#ae81ff">100</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>then you need all your text to have <code>z-index</code> higher than the overlay and your images. The images stay below, that way the overlay does seem to impact only the images. Then you need a little script like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">decay</span>() {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">canvas</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;decay-canvas&#34;</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">pixelSize</span> <span style="color:#f92672">=</span> window.<span style="color:#a6e22e">innerWidth</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">1600</span> <span style="color:#f92672">?</span> <span style="color:#ae81ff">8</span> <span style="color:#f92672">:</span> <span style="color:#ae81ff">6</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">canvas</span>.<span style="color:#a6e22e">width</span> <span style="color:#f92672">=</span> window.<span style="color:#a6e22e">innerWidth</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">2</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">canvas</span>.<span style="color:#a6e22e">height</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">440</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">canvas</span>.<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">height</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">canvas</span>.<span style="color:#a6e22e">height</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;px&#34;</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">canvas</span>.<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">width</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">canvas</span>.<span style="color:#a6e22e">width</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;px&#34;</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">ctx</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">canvas</span>.<span style="color:#a6e22e">getContext</span>(<span style="color:#e6db74">&#34;2d&#34;</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">ctx</span>.<span style="color:#a6e22e">fillStyle</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;#fff&#34;</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">ctx</span>.<span style="color:#a6e22e">clearRect</span>(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>, <span style="color:#a6e22e">canvas</span>.<span style="color:#a6e22e">width</span>, <span style="color:#a6e22e">canvas</span>.<span style="color:#a6e22e">height</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">j</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">j</span> <span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">canvas</span>.<span style="color:#a6e22e">height</span>; <span style="color:#a6e22e">j</span> <span style="color:#f92672">+=</span> <span style="color:#a6e22e">pixelSize</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">probability</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">pow</span>(
+</span></span><span style="display:flex;"><span>      (<span style="color:#a6e22e">canvas</span>.<span style="color:#a6e22e">height</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">-</span> <span style="color:#a6e22e">j</span>) <span style="color:#f92672">/</span> (<span style="color:#a6e22e">canvas</span>.<span style="color:#a6e22e">height</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>),
+</span></span><span style="display:flex;"><span>      <span style="color:#ae81ff">3</span>,
+</span></span><span style="display:flex;"><span>    );
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">canvas</span>.<span style="color:#a6e22e">width</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">+=</span> <span style="color:#a6e22e">pixelSize</span>) {
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">if</span> (Math.<span style="color:#a6e22e">random</span>() <span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">probability</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">ctx</span>.<span style="color:#a6e22e">fillRect</span>(<span style="color:#a6e22e">i</span>, <span style="color:#a6e22e">j</span>, <span style="color:#a6e22e">pixelSize</span>, <span style="color:#a6e22e">pixelSize</span>);
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  }
+</span></span></code></pre></div><p>The coders behind the article were nice enough to include one little trick I have not seen before. Which proves nothing, because I am not a front-end person, but it was interesting to me. The trick is to fetch the user preferences regarding <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion">reduced motion</a>. It is something available via css media queries like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>@<span style="color:#66d9ef">media</span> <span style="color:#f92672">(</span><span style="color:#f92672">prefers-reduced-motion</span><span style="color:#f92672">)</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">/* styles to apply if a user&#39;s device settings are set to reduced motion */</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>I have not personally used that one. In media queries I really only used resolution so far, but also I didn&rsquo;t know that it&rsquo;s easy to fetch them from javascript. And since it is, it&rsquo;s really a kind thing to do for your viewers:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>window.<span style="color:#a6e22e">isReducedMotion</span> <span style="color:#f92672">=</span> () =&gt;
+</span></span><span style="display:flex;"><span>  window.<span style="color:#a6e22e">matchMedia</span>(<span style="color:#e6db74">`(prefers-reduced-motion: reduce)`</span>) <span style="color:#f92672">===</span> <span style="color:#66d9ef">true</span> <span style="color:#f92672">||</span>
+</span></span><span style="display:flex;"><span>  window.<span style="color:#a6e22e">matchMedia</span>(<span style="color:#e6db74">`(prefers-reduced-motion: reduce)`</span>).<span style="color:#a6e22e">matches</span> <span style="color:#f92672">===</span> <span style="color:#66d9ef">true</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   window.<span style="color:#a6e22e">onload</span> <span style="color:#f92672">=</span> () =&gt; {
+</span></span><span style="display:flex;"><span>     <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span><span style="color:#a6e22e">isReducedMotion</span>()) {
+</span></span><span style="display:flex;"><span>       <span style="color:#a6e22e">decay</span>();
+</span></span><span style="display:flex;"><span>     }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>     document.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;resize&#34;</span>, () =&gt; {
+</span></span><span style="display:flex;"><span>       <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span><span style="color:#a6e22e">isReducedMotion</span>()) {
+</span></span><span style="display:flex;"><span>         <span style="color:#a6e22e">decay</span>();
+</span></span><span style="display:flex;"><span>       }
+</span></span><span style="display:flex;"><span>     });
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>     document.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;scroll&#34;</span>, () =&gt; {
+</span></span><span style="display:flex;"><span>       <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span><span style="color:#a6e22e">isReducedMotion</span>()) {
+</span></span><span style="display:flex;"><span>         <span style="color:#a6e22e">decay</span>();
+</span></span><span style="display:flex;"><span>       }
+</span></span><span style="display:flex;"><span>     });
+</span></span><span style="display:flex;"><span>   };
+</span></span></code></pre></div><h1 id="day-12">Day 12</h1>
 <p>Today I was traveling to Warsaw, for a conference called <a href="https://midi2024.opi.org.pl">12th Machine Intelligence and Digital Interaction</a>. I had one paper accepted for it, but also the organizers were kind enough to invite me for a panel discussion on digital heritage in architecture and arts.</p>
-<p><img src="/en/blog/december-adventure-2024/images/IMG_3064.jpg" alt="A photo of the conference&rsquo;s chair announcing a panel discussion. In the background a huge screen with logo of the conference, and panel information"></p>
+
+
+  <figure>
+  <img src="images/IMG_3064.jpg" alt="A photo of the conference&#39;s chair announcing a panel discussion. In the background a huge screen with logo of the conference, and panel information"/>
+  </figure>
+  <div class="caption">
+    <p>MIDI Conference</p>
+    <p class="photo-attribution">photo done by author.</p>
+  </div>
+
+
 <p>Met couple cool people including professors Wiesław Kopeć from XR Center at <a href="http://pja.edu.pl">PJAT</a> and Władek Fuchs from <a href="https://volterra-detroit.org">Volterra-Detroit Foundation</a>.</p>
 <p>I have also spent a great time with my favorite man behind <a href="https://fhkd.pl">The Foundation for the History of Home Computers</a> - <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Grzeszczuk,&#43;M">Maciej Grzeszczuk</a>, and the remaining 0.33 of our lil&rsquo; informal research team &ndash; <a href="https://arxiv.org/search/cs?searchtype=author&amp;query=Skorupska,&#43;K">Kinga Skorupska</a>. Love those guys, srsly. Coming back with at least 2 great ideas. Must. Not. Distract. :)</p>
 <p>Train back home was announced to be 15 minutes late, but eventually came after 45. Disaster.</p>
@@ -388,113 +509,172 @@
 </span></span><span style="display:flex;"><span>    (<span style="color:#66d9ef">for/fold</span> ([acc <span style="color:#ae81ff">0</span>]) ([num left])
 </span></span><span style="display:flex;"><span>      (+ acc (* num (hash-ref frequency-map num <span style="color:#ae81ff">0</span>))))))<span style="color:#960050;background-color:#1e0010">
 </span></span></span></code></pre></div><p>I already know it might be better, and I&rsquo;ll polish it tomorrow. It&rsquo;s kinda getting late, and I wanted to get this post out. G&rsquo;nite :)</p>
-
-
-                
-                <div class="comments">
-                    <h2>Comments</h2>
-                    <p>Discussion powered by <i class="fa-brands fa-mastodon"></i>, <a href="https://mastodon.gamedev.place/@unjello/113580023530866158">hop in.</a> if you want.</p>
-                    <div id="comments"></div>
-                </div>
-            <script>
-    (async function() {
-        const commentsDiv = document.getElementById('comments');
-        const statusId = '113580023530866158';
-        const mastodonInstance = 'mastodon.gamedev.place';
-        const contextUrl = `https://${mastodonInstance}/api/v1/statuses/${statusId}/context`;
-
-        try {
-            const response = await fetch(contextUrl);
-
-            if (!response.ok) {
-                throw new Error('Network response was not ok ' + response.statusText);
-            }
-
-            const context = await response.json();
-            const comments = context.descendants;
-            comments.forEach(comment => {
-                const commentElement = document.createElement('div');
-                commentElement.classList.add('comment');
-
-                const authorName = DOMPurify.sanitize(comment.account.display_name || comment.account.username);
-                const authorUrl = DOMPurify.sanitize(comment.account.url);
-                const content = DOMPurify.sanitize(comment.content);
-                const avatarUrl = DOMPurify.sanitize(comment.account.avatar_static || comment.account.avatar);
-                const createdAt = new Date(comment.created_at);
-                const timestamp = createdAt.toLocaleString();
-
-                const avatarImg = document.createElement('img');
-                avatarImg.src = avatarUrl;
-                avatarImg.alt = `${authorName}'s avatar`;
-                avatarImg.classList.add('avatar');
-
-                const contentDiv = document.createElement('div');
-                contentDiv.classList.add('comment-content');
-
-                const headerDiv = document.createElement('div');
-                headerDiv.classList.add('comment-header');
-
-                const authorLink = document.createElement('a');
-                authorLink.href = authorUrl;
-                authorLink.target = '_blank';
-                authorLink.textContent = authorName;
-
-                const timeSpan = document.createElement('span');
-                timeSpan.classList.add('timestamp');
-                timeSpan.textContent = `• ${timestamp}`;
-
-                headerDiv.appendChild(authorLink);
-                headerDiv.appendChild(timeSpan);
-
-                const bodyDiv = document.createElement('div');
-                bodyDiv.classList.add('comment-body');
-                bodyDiv.innerHTML = content;
-
-                contentDiv.appendChild(headerDiv);
-                contentDiv.appendChild(bodyDiv);
-
-                commentElement.appendChild(avatarImg);
-                commentElement.appendChild(contentDiv);
-
-                commentsDiv.appendChild(commentElement);            });
-
-
-        } catch (error) {
-            console.error('Error fetching comments:', error);
-            commentsDiv.innerHTML = '<p>Error loading comments.</p>';
-        }
-    })();
-
-            </script>
-                
-            </div>
-        </section>
-        <script>
-              
-                        (function addTitleToCodeBlock() {
-  let list = document.body.getElementsByClassName("highlight");
-
-  for (i = 0; i <= list.length - 1; i++) {
-    let code = list[i].firstElementChild.firstElementChild;
-    let codeName = code ? code.className.split(":")[1] : null;
-
-    if (codeName) {
-                console.log(codeName)
-      let div = document.createElement("div");
-      div.textContent = codeName;
-      div.classList.add("code-name");
-      code.parentNode.insertBefore(div, code);
-    }
-  }
-})();
-
-        </script>
-
-        <footer class="fs-6 text-muted mt-5">
+ 
+          <div class="comments">
+            <h2>Comments</h2>
             <p>
-                CC0. Powered by <a href="https://gohugo.io">Hugo</a>. Theme inspired by <a href="https://www.mattdesl.com/">@mattdesl</a> and <a href="https://ozafoto.com/digital/">Oza</a>.
+              Discussion powered by <i class="fa-brands fa-mastodon"></i>,
+              <a href="https://mastodon.gamedev.place/@unjello/113580023530866158"
+                >hop in.</a
+              >
+              if you want.
             </p>
-        </footer>
+            <div id="comments"></div>
+          </div>
+          <script>
+            (async function () {
+              const commentsDiv = document.getElementById("comments");
+              const statusId = "113580023530866158";
+              const mastodonInstance = "mastodon.gamedev.place";
+              const contextUrl = `https://${mastodonInstance}/api/v1/statuses/${statusId}/context`;
+
+              try {
+                const response = await fetch(contextUrl);
+
+                if (!response.ok) {
+                  throw new Error(
+                    "Network response was not ok " + response.statusText,
+                  );
+                }
+
+                const context = await response.json();
+                const comments = context.descendants;
+                comments.forEach((comment) => {
+                  const commentElement = document.createElement("div");
+                  commentElement.classList.add("comment");
+
+                  const authorName = DOMPurify.sanitize(
+                    comment.account.display_name || comment.account.username,
+                  );
+                  const authorUrl = DOMPurify.sanitize(comment.account.url);
+                  const content = DOMPurify.sanitize(comment.content);
+                  const avatarUrl = DOMPurify.sanitize(
+                    comment.account.avatar_static || comment.account.avatar,
+                  );
+                  const createdAt = new Date(comment.created_at);
+                  const timestamp = createdAt.toLocaleString();
+
+                  const avatarImg = document.createElement("img");
+                  avatarImg.src = avatarUrl;
+                  avatarImg.alt = `${authorName}'s avatar`;
+                  avatarImg.classList.add("avatar");
+
+                  const contentDiv = document.createElement("div");
+                  contentDiv.classList.add("comment-content");
+
+                  const headerDiv = document.createElement("div");
+                  headerDiv.classList.add("comment-header");
+
+                  const authorLink = document.createElement("a");
+                  authorLink.href = authorUrl;
+                  authorLink.target = "_blank";
+                  authorLink.textContent = authorName;
+
+                  const timeSpan = document.createElement("span");
+                  timeSpan.classList.add("timestamp");
+                  timeSpan.textContent = `• ${timestamp}`;
+
+                  headerDiv.appendChild(authorLink);
+                  headerDiv.appendChild(timeSpan);
+
+                  const bodyDiv = document.createElement("div");
+                  bodyDiv.classList.add("comment-body");
+                  bodyDiv.innerHTML = content;
+
+                  contentDiv.appendChild(headerDiv);
+                  contentDiv.appendChild(bodyDiv);
+
+                  commentElement.appendChild(avatarImg);
+                  commentElement.appendChild(contentDiv);
+
+                  commentsDiv.appendChild(commentElement);
+                });
+              } catch (error) {
+                console.error("Error fetching comments:", error);
+                commentsDiv.innerHTML = "<p>Error loading comments.</p>";
+              }
+            })();
+          </script>
+          
+        </div>
+      </section>
+      <script>
+        
+        (function addTitleToCodeBlock() {
+          let list = document.body.getElementsByClassName("highlight");
+
+          for (i = 0; i <= list.length - 1; i++) {
+            let code = list[i].firstElementChild.firstElementChild;
+            let codeName = code ? code.className.split(":")[1] : null;
+
+            if (codeName) {
+              console.log(codeName);
+              let div = document.createElement("div");
+              div.textContent = codeName;
+              div.classList.add("code-name");
+              code.parentNode.insertBefore(div, code);
+            }
+          }
+        })();
+      </script>
+
+      <footer class="fs-6 text-muted mt-5">
+        <p>
+          CC0. Powered by <a href="https://gohugo.io">Hugo</a>. Theme inspired
+          by <a href="https://www.mattdesl.com/">@mattdesl</a> and
+          <a href="https://ozafoto.com/digital/">Oza</a>.
+        </p>
+      </footer>
     </div>
   </body>
+  <script type="text/javascript">
+    
+
+    function decay() {
+      const canvas = document.getElementById("decay-canvas");
+      const pixelSize = window.innerWidth > 1600 ? 8 : 6;
+
+      canvas.width = window.innerWidth * 2;
+      canvas.height = 440;
+      canvas.style.height = canvas.height / 2 + "px";
+      canvas.style.width = canvas.width / 2 + "px";
+      const ctx = canvas.getContext("2d");
+      ctx.fillStyle = "#fff";
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      for (let j = 0; j < canvas.height; j += pixelSize) {
+        const probability = Math.pow(
+          (canvas.height - 1 - j) / (canvas.height - 1),
+          3,
+        );
+        for (let i = 0; i < canvas.width; i += pixelSize) {
+          if (Math.random() < probability) {
+            ctx.fillRect(i, j, pixelSize, pixelSize);
+          }
+        }
+      }
+    }
+
+    window.isReducedMotion = () =>
+      window.matchMedia(`(prefers-reduced-motion: reduce)`) === true ||
+      window.matchMedia(`(prefers-reduced-motion: reduce)`).matches === true;
+
+    window.onload = () => {
+      if (!isReducedMotion()) {
+        decay();
+      }
+
+      document.addEventListener("resize", () => {
+        if (!isReducedMotion()) {
+          decay();
+        }
+      });
+
+      document.addEventListener("scroll", () => {
+        if (!isReducedMotion()) {
+          decay();
+        }
+      });
+    };
+  </script>
 </html>

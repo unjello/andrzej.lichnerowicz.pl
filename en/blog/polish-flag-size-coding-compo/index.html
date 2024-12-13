@@ -1,84 +1,111 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="twitter:card" content="summary_large_image">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="twitter:card" content="summary_large_image" />
     <meta property="og:title" content="Polish Flag Size Coding Compo | @unjello" />
-    <meta property="twitter:title" content="Polish Flag Size Coding Compo | @unjello">
+    <meta property="twitter:title" content="Polish Flag Size Coding Compo | @unjello" />
     <meta property="og:url" content="http://andrzej.lichnerowicz.pl/en/blog/polish-flag-size-coding-compo/" />
     <meta property="og:type" content="blog" />
-    
-    
+     
     <meta property="og:image" content="http://andrzej.lichnerowicz.pl/en/blog/polish-flag-size-coding-compo/images/unj_001.png" />
-    <meta property="twitter:image" content="http://andrzej.lichnerowicz.pl/en/blog/polish-flag-size-coding-compo/images/unj_001.png">
-    
-    
+    <meta property="twitter:image" content="http://andrzej.lichnerowicz.pl/en/blog/polish-flag-size-coding-compo/images/unj_001.png" />
+     
     <meta property="og:description" content="A trip down memory lane. It&#39;s 2002. I&#39;m sitting in the dimly lit Heidmarkhalle in Fallingbostel, Germany. It feels great to be back at the Mekka Symposium demoscene party. At some point, organizers announced a bonus competition -- the Polish flag compo!" />
-    <meta property="twitter:description" content="A trip down memory lane. It&#39;s 2002. I&#39;m sitting in the dimly lit Heidmarkhalle in Fallingbostel, Germany. It feels great to be back at the Mekka Symposium demoscene party. At some point, organizers announced a bonus competition -- the Polish flag compo!">
+    <meta property="twitter:description" content="A trip down memory lane. It&#39;s 2002. I&#39;m sitting in the dimly lit Heidmarkhalle in Fallingbostel, Germany. It feels great to be back at the Mekka Symposium demoscene party. At some point, organizers announced a bonus competition -- the Polish flag compo!" />
     
-    <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="apple-touch-icon" href="/favicon.ico">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.1.7/purify.min.js" integrity="sha512-BdRNuI8/lsyxkKQVxK1lVtfZshggfXPAwEP+JAOJEKx6Y8SLfcBSRdaWyXQmMxo+wG180uFqXYGjGRL0mh4/Jw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/favicon.ico" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.1.7/purify.min.js"
+      integrity="sha512-BdRNuI8/lsyxkKQVxK1lVtfZshggfXPAwEP+JAOJEKx6Y8SLfcBSRdaWyXQmMxo+wG180uFqXYGjGRL0mh4/Jw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
-    
-    
-      <link rel="stylesheet" href="/css/style.min.2e859e4992bcd5ecfc1a48111216f98958cd0696c0278c0e2513e50ee64ead0d.css" integrity="sha256-LoWeSZK81ez8GkgREhb5iVjNBpbAJ4wOJRPlDuZOrQ0=" crossorigin="anonymous">
-    
-    
+     
+    <link
+      rel="stylesheet"
+      href="/css/style.min.3a7155bb510c74d3ad0ee88347caccee2f18b7d2005edd786edc9f75caca9f7b.css"
+      integrity="sha256-OnFVu1EMdNOtDuiDR8rM7i8Yt9IAXt14btyfdcrKn3s="
+      crossorigin="anonymous"
+    />
+     
     <title>Polish Flag Size Coding Compo | Blog @unjello</title>
   </head>
   <body>
+    <canvas
+      id="decay-canvas"
+      width="3172"
+      height="440"
+      style="height: 220px; width: 1586px"
+    ></canvas>
     <div class="layout container-fluid">
-        <header>
-            <h1>
-                <a href="/">Andrzej unjello Lichnerowicz</a>
-            </h1>
-            <ul class="list-inline tagline">
-                
-                    <li class="list-inline-item">he</li>
-                
-                    <li class="list-inline-item">him</li>
-                
-                    <li class="list-inline-item">activist</li>
-                
-                    <li class="list-inline-item">trees and greenery lover</li>
-                
-            </ul>
-            <ul class="list-inline socialmedia">
-                
-                    <li class="list-inline-item">
-                        <a href="https://mastodon.gamedev.place/@unjello">mastodon</a>
-                    </li>                            
-                
-                    <li class="list-inline-item">
-                        <a href="https://codeberg.org/unjello">codeberg</a>
-                    </li>                            
-                
-                    <li class="list-inline-item">
-                        <a href="mailto:andrzej@lichnerowicz.pl">email</a>
-                    </li>                            
-                
-                    <li class="list-inline-item">
-                        <a href="https://andrzej.lichnerowicz.pl/public.pgp">pgp</a>
-                    </li>                            
-                
-            </ul>
-        </header>
+      <header>
+        <h1>
+          <a href="/">Andrzej unjello Lichnerowicz</a>
+        </h1>
+        <ul class="list-inline tagline">
+          
+          <li class="list-inline-item">he</li>
+          
+          <li class="list-inline-item">him</li>
+          
+          <li class="list-inline-item">activist</li>
+          
+          <li class="list-inline-item">trees and greenery lover</li>
+          
+        </ul>
+        <ul class="list-inline socialmedia">
+          
+          <li class="list-inline-item">
+            <a href="https://mastodon.gamedev.place/@unjello">mastodon</a>
+          </li>
+          
+          <li class="list-inline-item">
+            <a href="https://codeberg.org/unjello">codeberg</a>
+          </li>
+          
+          <li class="list-inline-item">
+            <a href="mailto:andrzej@lichnerowicz.pl">email</a>
+          </li>
+          
+          <li class="list-inline-item">
+            <a href="https://andrzej.lichnerowicz.pl/public.pgp">pgp</a>
+          </li>
+          
+        </ul>
+      </header>
 
-        <section class="blog_single">
-            <h1>Polish Flag Size Coding Compo</h1>
-            <div class="date">2024-02-27T19:11:03&#43;02:00</div>
-            <div class="content">
-                
+      <section class="blog_single">
+        <h1>Polish Flag Size Coding Compo</h1>
+        <div class="date">2024-02-27T19:11:03&#43;02:00</div>
+        <div class="content">
+          
 <div class="admonition note">
     <p class="title">Throwback</p>
     <p class="content">I wrote this post back in February this year, but wanted to have nice disassembly syntax highlighting, so I made an <a href="https://github.com/alecthomas/chroma/pull/933">MR</a> first against <a href="https://github.com/alecthomas/chroma">Chroma</a> that <a href="https://gohugo.io/content-management/syntax-highlighting/">Hugo</a> uses for syntax highlighting, and waited for Hugo to pick up Chroma with my changes, and in the meantime I have sort of forgot about the whole thing.. I haven&rsquo;t written anything since then, so no biggie but wanted to clarify, just in case anyone actually reads this blog and wonders how come the post suddenly appeared in September with date in the past :)</p>
 </div>
 
 <p>A trip down memory lane. It&rsquo;s 2002. I&rsquo;m sitting in the dimly lit Heidmarkhalle in Fallingbostel, Germany. It feels great to be back at the <a href="https://demozoo.org/parties/238/">Mekka &amp; Symposium</a> demoscene party.</p>
-<p><img src="/en/blog/polish-flag-size-coding-compo/images/mekka.jpg" alt="Heidmarkhalle during Mekka &amp; Symposium demoparty. Glowing CRT monitors in the dark"></p>
+
+
+  <figure>
+  <img src="images/mekka.jpg" alt="Heidmarkhalle during Mekka &amp; Symposium demoparty. Glowing CRT monitors in the dark"/>
+  </figure>
+  <div class="caption">
+    <p>Haidmarkhalle, Mekka &amp; Sympsium</p>
+    <p class="photo-attribution"></p>
+  </div>
+
+
 <p>The room is shrouded in darkness, except for the glow of the computer screen illuminating my face. Ah, the good old days, when lugging a PC tower and a CRT monitor to parties was the norm! That year marked a record in the party&rsquo;s history, boasting the highest number of PC demo submissions ever. Over 50 entries!</p>
 <p>At some point, organizers announced a bonus competition &ndash; the Polish flag compo! Organized by <a href="https://demozoo.org/sceners/5832/">mados</a> and <a href="https://demozoo.org/sceners/6833/">tomaes</a> of TAP, a small German demoscene group, this challenge sparked my interest. Even though the official Demozoo records don&rsquo;t list the results, I managed to unearth them <a href="http://tap.wildmag.de/releases/polish_flag_compo.zip">buried deep</a> within the interwebs on the  <a href="http://tap.wildmag.de">TAP webpage</a>.</p>
 <p>I accepted the challenge, with a bit of help from <a href="https://demozoo.org/sceners/11711/">payda/Procreation</a> and a couple others whose names, unfortunately, escape me after all these years. Here&rsquo;s what I came up with</p>
@@ -95,7 +122,17 @@
 </span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">00000013</span>  <span style="color:#a6e22e">F3AA</span>              rep stosb
 </span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">00000015</span>  <span style="color:#a6e22e">CD16</span>              int <span style="color:#ae81ff">0x16</span>
 </span></span></code></pre></div><p>and boy, did it look good:</p>
-<p><img src="/en/blog/polish-flag-size-coding-compo/images/unj_000.png" alt="A screenshot of my entry to the Polish flag bonus compo"></p>
+
+
+  <figure>
+  <img src="images/unj_000.png" alt="A screenshot of my entry to the Polish flag bonus compo"/>
+  </figure>
+  <div class="caption">
+    <p>Polish flag</p>
+    <p class="photo-attribution"></p>
+  </div>
+
+
 <p>A mere 23 bytes. Impressive, right? Curious if I could optimize it further, I consulted ChatGPT, which suggested this was as compact as it could get. However, the competition results suggested otherwise:</p>
 
 <pre class="topaz">
@@ -131,7 +168,17 @@
 </pre>
 
 <p>9 entries better than me! (of course I already worked through that dissapointment, it was 22 years ago after all:). The first place entry was by <a href="https://demozoo.org/sceners/5484/">bup/fuzzion</a>. His submission bent the rules more than just a bit:</p>
-<p><img src="/en/blog/polish-flag-size-coding-compo/images/bup_000.png" alt="Screen of bup&rsquo;s entry. A screen should be half white, half red. It is 99% white."></p>
+
+
+  <figure>
+  <img src="images/bup_000.png" alt="Screen of bup&#39;s entry. A screen should be half white, half red. It is 99% white. Or rather gray."/>
+  </figure>
+  <div class="caption">
+    <p>bup entry, hardly polish flag</p>
+    <p class="photo-attribution"></p>
+  </div>
+
+
 <p>Without prior knowledge of the theme, one might never guess it represented the Polish flag. But, moving past this cheeky observation, I&rsquo;ve set my sights on matching the 19-byte record.</p>
 <h2 id="public-service-announcement">Public Service Announcement</h2>
 <p>Before diving deeper, I must confess something I overlooked until writing this post &ndash; my program lacked a <code>ret</code> instruction, and its functioning was purely coincidental. Since all com files load at the same memory location and some participants included a <code>ret</code> in their larger solutions, my program inadvertently stumbled upon this missing instruction, courtesy of these unsung heroes. Not all heroes wear capes, indeed :)</p>
@@ -264,115 +311,184 @@
 </span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">0000000</span><span style="color:#a6e22e">E</span>  <span style="color:#ae81ff">79</span>F8              jns <span style="color:#ae81ff">0x8</span>
 </span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">00000010</span>  <span style="color:#a6e22e">CD16</span>              int <span style="color:#ae81ff">0x16</span>
 </span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">00000012</span>  <span style="color:#a6e22e">C3</span>                ret
-</span></span></code></pre></div><p><img src="/en/blog/polish-flag-size-coding-compo/images/unj_001.png" alt="Screenshot of 19 bytes version. You can see a small shift between white and red, because of LDA ES,[BX] trick"></p>
+</span></span></code></pre></div>
+
+  <figure>
+  <img src="images/unj_001.png" alt="Screenshot of 19 bytes version. You can see a small shift between white and red, because of LDA ES,[BX] trick"/>
+  </figure>
+  <div class="caption">
+    <p>19 bytes version</p>
+    <p class="photo-attribution"></p>
+  </div>
+
+
 <p>This subtle yet effective modification not only honors the original challenge but also showcases the beauty of size coding. If it looks good, it is good. Even in a field as precise as assembly, there&rsquo;s room for creativity and improvement.</p>
-
-
-                
-                <div class="comments">
-                    <h2>Comments</h2>
-                    <p>Discussion powered by <i class="fa-brands fa-mastodon"></i>, <a href="https://mastodon.gamedev.place/@unjello/113282933258874432">hop in.</a> if you want.</p>
-                    <div id="comments"></div>
-                </div>
-            <script>
-    (async function() {
-        const commentsDiv = document.getElementById('comments');
-        const statusId = '113282933258874432';
-        const mastodonInstance = 'mastodon.gamedev.place';
-        const contextUrl = `https://${mastodonInstance}/api/v1/statuses/${statusId}/context`;
-
-        try {
-            const response = await fetch(contextUrl);
-
-            if (!response.ok) {
-                throw new Error('Network response was not ok ' + response.statusText);
-            }
-
-            const context = await response.json();
-            const comments = context.descendants;
-            comments.forEach(comment => {
-                const commentElement = document.createElement('div');
-                commentElement.classList.add('comment');
-
-                const authorName = DOMPurify.sanitize(comment.account.display_name || comment.account.username);
-                const authorUrl = DOMPurify.sanitize(comment.account.url);
-                const content = DOMPurify.sanitize(comment.content);
-                const avatarUrl = DOMPurify.sanitize(comment.account.avatar_static || comment.account.avatar);
-                const createdAt = new Date(comment.created_at);
-                const timestamp = createdAt.toLocaleString();
-
-                const avatarImg = document.createElement('img');
-                avatarImg.src = avatarUrl;
-                avatarImg.alt = `${authorName}'s avatar`;
-                avatarImg.classList.add('avatar');
-
-                const contentDiv = document.createElement('div');
-                contentDiv.classList.add('comment-content');
-
-                const headerDiv = document.createElement('div');
-                headerDiv.classList.add('comment-header');
-
-                const authorLink = document.createElement('a');
-                authorLink.href = authorUrl;
-                authorLink.target = '_blank';
-                authorLink.textContent = authorName;
-
-                const timeSpan = document.createElement('span');
-                timeSpan.classList.add('timestamp');
-                timeSpan.textContent = `• ${timestamp}`;
-
-                headerDiv.appendChild(authorLink);
-                headerDiv.appendChild(timeSpan);
-
-                const bodyDiv = document.createElement('div');
-                bodyDiv.classList.add('comment-body');
-                bodyDiv.innerHTML = content;
-
-                contentDiv.appendChild(headerDiv);
-                contentDiv.appendChild(bodyDiv);
-
-                commentElement.appendChild(avatarImg);
-                commentElement.appendChild(contentDiv);
-
-                commentsDiv.appendChild(commentElement);            });
-
-
-        } catch (error) {
-            console.error('Error fetching comments:', error);
-            commentsDiv.innerHTML = '<p>Error loading comments.</p>';
-        }
-    })();
-
-            </script>
-                
-            </div>
-        </section>
-        <script>
-              
-                        (function addTitleToCodeBlock() {
-  let list = document.body.getElementsByClassName("highlight");
-
-  for (i = 0; i <= list.length - 1; i++) {
-    let code = list[i].firstElementChild.firstElementChild;
-    let codeName = code ? code.className.split(":")[1] : null;
-
-    if (codeName) {
-                console.log(codeName)
-      let div = document.createElement("div");
-      div.textContent = codeName;
-      div.classList.add("code-name");
-      code.parentNode.insertBefore(div, code);
-    }
-  }
-})();
-
-        </script>
-
-        <footer class="fs-6 text-muted mt-5">
+ 
+          <div class="comments">
+            <h2>Comments</h2>
             <p>
-                CC0. Powered by <a href="https://gohugo.io">Hugo</a>. Theme inspired by <a href="https://www.mattdesl.com/">@mattdesl</a> and <a href="https://ozafoto.com/digital/">Oza</a>.
+              Discussion powered by <i class="fa-brands fa-mastodon"></i>,
+              <a href="https://mastodon.gamedev.place/@unjello/113282933258874432"
+                >hop in.</a
+              >
+              if you want.
             </p>
-        </footer>
+            <div id="comments"></div>
+          </div>
+          <script>
+            (async function () {
+              const commentsDiv = document.getElementById("comments");
+              const statusId = "113282933258874432";
+              const mastodonInstance = "mastodon.gamedev.place";
+              const contextUrl = `https://${mastodonInstance}/api/v1/statuses/${statusId}/context`;
+
+              try {
+                const response = await fetch(contextUrl);
+
+                if (!response.ok) {
+                  throw new Error(
+                    "Network response was not ok " + response.statusText,
+                  );
+                }
+
+                const context = await response.json();
+                const comments = context.descendants;
+                comments.forEach((comment) => {
+                  const commentElement = document.createElement("div");
+                  commentElement.classList.add("comment");
+
+                  const authorName = DOMPurify.sanitize(
+                    comment.account.display_name || comment.account.username,
+                  );
+                  const authorUrl = DOMPurify.sanitize(comment.account.url);
+                  const content = DOMPurify.sanitize(comment.content);
+                  const avatarUrl = DOMPurify.sanitize(
+                    comment.account.avatar_static || comment.account.avatar,
+                  );
+                  const createdAt = new Date(comment.created_at);
+                  const timestamp = createdAt.toLocaleString();
+
+                  const avatarImg = document.createElement("img");
+                  avatarImg.src = avatarUrl;
+                  avatarImg.alt = `${authorName}'s avatar`;
+                  avatarImg.classList.add("avatar");
+
+                  const contentDiv = document.createElement("div");
+                  contentDiv.classList.add("comment-content");
+
+                  const headerDiv = document.createElement("div");
+                  headerDiv.classList.add("comment-header");
+
+                  const authorLink = document.createElement("a");
+                  authorLink.href = authorUrl;
+                  authorLink.target = "_blank";
+                  authorLink.textContent = authorName;
+
+                  const timeSpan = document.createElement("span");
+                  timeSpan.classList.add("timestamp");
+                  timeSpan.textContent = `• ${timestamp}`;
+
+                  headerDiv.appendChild(authorLink);
+                  headerDiv.appendChild(timeSpan);
+
+                  const bodyDiv = document.createElement("div");
+                  bodyDiv.classList.add("comment-body");
+                  bodyDiv.innerHTML = content;
+
+                  contentDiv.appendChild(headerDiv);
+                  contentDiv.appendChild(bodyDiv);
+
+                  commentElement.appendChild(avatarImg);
+                  commentElement.appendChild(contentDiv);
+
+                  commentsDiv.appendChild(commentElement);
+                });
+              } catch (error) {
+                console.error("Error fetching comments:", error);
+                commentsDiv.innerHTML = "<p>Error loading comments.</p>";
+              }
+            })();
+          </script>
+          
+        </div>
+      </section>
+      <script>
+        
+        (function addTitleToCodeBlock() {
+          let list = document.body.getElementsByClassName("highlight");
+
+          for (i = 0; i <= list.length - 1; i++) {
+            let code = list[i].firstElementChild.firstElementChild;
+            let codeName = code ? code.className.split(":")[1] : null;
+
+            if (codeName) {
+              console.log(codeName);
+              let div = document.createElement("div");
+              div.textContent = codeName;
+              div.classList.add("code-name");
+              code.parentNode.insertBefore(div, code);
+            }
+          }
+        })();
+      </script>
+
+      <footer class="fs-6 text-muted mt-5">
+        <p>
+          CC0. Powered by <a href="https://gohugo.io">Hugo</a>. Theme inspired
+          by <a href="https://www.mattdesl.com/">@mattdesl</a> and
+          <a href="https://ozafoto.com/digital/">Oza</a>.
+        </p>
+      </footer>
     </div>
   </body>
+  <script type="text/javascript">
+    
+
+    function decay() {
+      const canvas = document.getElementById("decay-canvas");
+      const pixelSize = window.innerWidth > 1600 ? 8 : 6;
+
+      canvas.width = window.innerWidth * 2;
+      canvas.height = 440;
+      canvas.style.height = canvas.height / 2 + "px";
+      canvas.style.width = canvas.width / 2 + "px";
+      const ctx = canvas.getContext("2d");
+      ctx.fillStyle = "#fff";
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      for (let j = 0; j < canvas.height; j += pixelSize) {
+        const probability = Math.pow(
+          (canvas.height - 1 - j) / (canvas.height - 1),
+          3,
+        );
+        for (let i = 0; i < canvas.width; i += pixelSize) {
+          if (Math.random() < probability) {
+            ctx.fillRect(i, j, pixelSize, pixelSize);
+          }
+        }
+      }
+    }
+
+    window.isReducedMotion = () =>
+      window.matchMedia(`(prefers-reduced-motion: reduce)`) === true ||
+      window.matchMedia(`(prefers-reduced-motion: reduce)`).matches === true;
+
+    window.onload = () => {
+      if (!isReducedMotion()) {
+        decay();
+      }
+
+      document.addEventListener("resize", () => {
+        if (!isReducedMotion()) {
+          decay();
+        }
+      });
+
+      document.addEventListener("scroll", () => {
+        if (!isReducedMotion()) {
+          decay();
+        }
+      });
+    };
+  </script>
 </html>

@@ -1,182 +1,268 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="twitter:card" content="summary_large_image">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="twitter:card" content="summary_large_image" />
     <meta property="og:title" content="It&#39;s still the same old story | @unjello" />
-    <meta property="twitter:title" content="It&#39;s still the same old story | @unjello">
+    <meta property="twitter:title" content="It&#39;s still the same old story | @unjello" />
     <meta property="og:url" content="http://andrzej.lichnerowicz.pl/en/blog/its-still-the-same-old-story/" />
     <meta property="og:type" content="blog" />
-    
-    
-    
-    <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="apple-touch-icon" href="/favicon.ico">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.1.7/purify.min.js" integrity="sha512-BdRNuI8/lsyxkKQVxK1lVtfZshggfXPAwEP+JAOJEKx6Y8SLfcBSRdaWyXQmMxo+wG180uFqXYGjGRL0mh4/Jw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/favicon.ico" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.1.7/purify.min.js"
+      integrity="sha512-BdRNuI8/lsyxkKQVxK1lVtfZshggfXPAwEP+JAOJEKx6Y8SLfcBSRdaWyXQmMxo+wG180uFqXYGjGRL0mh4/Jw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
-    
-    
-      <link rel="stylesheet" href="/css/style.min.2e859e4992bcd5ecfc1a48111216f98958cd0696c0278c0e2513e50ee64ead0d.css" integrity="sha256-LoWeSZK81ez8GkgREhb5iVjNBpbAJ4wOJRPlDuZOrQ0=" crossorigin="anonymous">
-    
-    
+     
+    <link
+      rel="stylesheet"
+      href="/css/style.min.3a7155bb510c74d3ad0ee88347caccee2f18b7d2005edd786edc9f75caca9f7b.css"
+      integrity="sha256-OnFVu1EMdNOtDuiDR8rM7i8Yt9IAXt14btyfdcrKn3s="
+      crossorigin="anonymous"
+    />
+     
     <title>It&#39;s still the same old story | Blog @unjello</title>
   </head>
   <body>
+    <canvas
+      id="decay-canvas"
+      width="3172"
+      height="440"
+      style="height: 220px; width: 1586px"
+    ></canvas>
     <div class="layout container-fluid">
-        <header>
-            <h1>
-                <a href="/">Andrzej unjello Lichnerowicz</a>
-            </h1>
-            <ul class="list-inline tagline">
-                
-                    <li class="list-inline-item">he</li>
-                
-                    <li class="list-inline-item">him</li>
-                
-                    <li class="list-inline-item">activist</li>
-                
-                    <li class="list-inline-item">trees and greenery lover</li>
-                
-            </ul>
-            <ul class="list-inline socialmedia">
-                
-                    <li class="list-inline-item">
-                        <a href="https://mastodon.gamedev.place/@unjello">mastodon</a>
-                    </li>                            
-                
-                    <li class="list-inline-item">
-                        <a href="https://codeberg.org/unjello">codeberg</a>
-                    </li>                            
-                
-                    <li class="list-inline-item">
-                        <a href="mailto:andrzej@lichnerowicz.pl">email</a>
-                    </li>                            
-                
-                    <li class="list-inline-item">
-                        <a href="https://andrzej.lichnerowicz.pl/public.pgp">pgp</a>
-                    </li>                            
-                
-            </ul>
-        </header>
+      <header>
+        <h1>
+          <a href="/">Andrzej unjello Lichnerowicz</a>
+        </h1>
+        <ul class="list-inline tagline">
+          
+          <li class="list-inline-item">he</li>
+          
+          <li class="list-inline-item">him</li>
+          
+          <li class="list-inline-item">activist</li>
+          
+          <li class="list-inline-item">trees and greenery lover</li>
+          
+        </ul>
+        <ul class="list-inline socialmedia">
+          
+          <li class="list-inline-item">
+            <a href="https://mastodon.gamedev.place/@unjello">mastodon</a>
+          </li>
+          
+          <li class="list-inline-item">
+            <a href="https://codeberg.org/unjello">codeberg</a>
+          </li>
+          
+          <li class="list-inline-item">
+            <a href="mailto:andrzej@lichnerowicz.pl">email</a>
+          </li>
+          
+          <li class="list-inline-item">
+            <a href="https://andrzej.lichnerowicz.pl/public.pgp">pgp</a>
+          </li>
+          
+        </ul>
+      </header>
 
-        <section class="blog_single">
-            <h1>It&#39;s still the same old story</h1>
-            <div class="date">2023-02-07T17:28:00&#43;02:00</div>
-            <div class="content">
-                <p><img src="/images/casablanca.jpg" alt="Dooley Wilson, Ingrid Bergman and Humphrey Bogart in a frame from Hollywood&rsquo;s classic: Cassablanca"></p>
+      <section class="blog_single">
+        <h1>It&#39;s still the same old story</h1>
+        <div class="date">2023-02-07T17:28:00&#43;02:00</div>
+        <div class="content">
+          
+
+  <figure>
+  <img src="/images/casablanca.jpg" alt="Dooley Wilson, Ingrid Bergman and Humphrey Bogart in a frame from Hollywood&#39;s classic: Cassablanca"/>
+  </figure>
+  <div class="caption">
+    <p>Play it once, Sam. For old times’ sake</p>
+    <p class="photo-attribution"></p>
+  </div>
+
+
 <p>I don&rsquo;t think I even remember anymore, how many times I have restarted the blog. Last time I wrote something useful, was probably around 2008.</p>
 <p>I still have the old sites backed up somewhere. At least few of them. Unfortunately they&rsquo;re not very useful, mostly because they have been using blogging engines &ndash; either Wordpress-like, or my own &ndash; and while I backed up the code, I did not export anything from the database, leaving myself with just the looks, and no content.</p>
 <p>In 2017 I have discovered <a href="https://gohugo.io/">Static Site Generators</a>, and it changed my approach completely. Primarily, because engines, blogging engines, and Wordpress above anything else, are just one big <a href="https://en.wikipedia.org/wiki/Honeypot_%28computing%29">honeypots</a>. The fact that I didn&rsquo;t have to spin up any MySQL instance and therefore hosting costs dropped to big fat zero, after introduction of <a href="https://pages.github.com">GitHub Pages</a> was a big plus, but the biggest benefit of them all is the fact, that I have a full, working and accessible copy of my blog. If only I continued to write :)</p>
 <p>I hope, this time will truly be better :)</p>
-
-
-                
-                <div class="comments">
-                    <h2>Comments</h2>
-                    <p>Discussion powered by <i class="fa-brands fa-mastodon"></i>, <a href="https://mastodon.gamedev.place/@unjello/109825295757896454">hop in.</a> if you want.</p>
-                    <div id="comments"></div>
-                </div>
-            <script>
-    (async function() {
-        const commentsDiv = document.getElementById('comments');
-        const statusId = '109825295757896454';
-        const mastodonInstance = 'mastodon.gamedev.place';
-        const contextUrl = `https://${mastodonInstance}/api/v1/statuses/${statusId}/context`;
-
-        try {
-            const response = await fetch(contextUrl);
-
-            if (!response.ok) {
-                throw new Error('Network response was not ok ' + response.statusText);
-            }
-
-            const context = await response.json();
-            const comments = context.descendants;
-            comments.forEach(comment => {
-                const commentElement = document.createElement('div');
-                commentElement.classList.add('comment');
-
-                const authorName = DOMPurify.sanitize(comment.account.display_name || comment.account.username);
-                const authorUrl = DOMPurify.sanitize(comment.account.url);
-                const content = DOMPurify.sanitize(comment.content);
-                const avatarUrl = DOMPurify.sanitize(comment.account.avatar_static || comment.account.avatar);
-                const createdAt = new Date(comment.created_at);
-                const timestamp = createdAt.toLocaleString();
-
-                const avatarImg = document.createElement('img');
-                avatarImg.src = avatarUrl;
-                avatarImg.alt = `${authorName}'s avatar`;
-                avatarImg.classList.add('avatar');
-
-                const contentDiv = document.createElement('div');
-                contentDiv.classList.add('comment-content');
-
-                const headerDiv = document.createElement('div');
-                headerDiv.classList.add('comment-header');
-
-                const authorLink = document.createElement('a');
-                authorLink.href = authorUrl;
-                authorLink.target = '_blank';
-                authorLink.textContent = authorName;
-
-                const timeSpan = document.createElement('span');
-                timeSpan.classList.add('timestamp');
-                timeSpan.textContent = `• ${timestamp}`;
-
-                headerDiv.appendChild(authorLink);
-                headerDiv.appendChild(timeSpan);
-
-                const bodyDiv = document.createElement('div');
-                bodyDiv.classList.add('comment-body');
-                bodyDiv.innerHTML = content;
-
-                contentDiv.appendChild(headerDiv);
-                contentDiv.appendChild(bodyDiv);
-
-                commentElement.appendChild(avatarImg);
-                commentElement.appendChild(contentDiv);
-
-                commentsDiv.appendChild(commentElement);            });
-
-
-        } catch (error) {
-            console.error('Error fetching comments:', error);
-            commentsDiv.innerHTML = '<p>Error loading comments.</p>';
-        }
-    })();
-
-            </script>
-                
-            </div>
-        </section>
-        <script>
-              
-                        (function addTitleToCodeBlock() {
-  let list = document.body.getElementsByClassName("highlight");
-
-  for (i = 0; i <= list.length - 1; i++) {
-    let code = list[i].firstElementChild.firstElementChild;
-    let codeName = code ? code.className.split(":")[1] : null;
-
-    if (codeName) {
-                console.log(codeName)
-      let div = document.createElement("div");
-      div.textContent = codeName;
-      div.classList.add("code-name");
-      code.parentNode.insertBefore(div, code);
-    }
-  }
-})();
-
-        </script>
-
-        <footer class="fs-6 text-muted mt-5">
+ 
+          <div class="comments">
+            <h2>Comments</h2>
             <p>
-                CC0. Powered by <a href="https://gohugo.io">Hugo</a>. Theme inspired by <a href="https://www.mattdesl.com/">@mattdesl</a> and <a href="https://ozafoto.com/digital/">Oza</a>.
+              Discussion powered by <i class="fa-brands fa-mastodon"></i>,
+              <a href="https://mastodon.gamedev.place/@unjello/109825295757896454"
+                >hop in.</a
+              >
+              if you want.
             </p>
-        </footer>
+            <div id="comments"></div>
+          </div>
+          <script>
+            (async function () {
+              const commentsDiv = document.getElementById("comments");
+              const statusId = "109825295757896454";
+              const mastodonInstance = "mastodon.gamedev.place";
+              const contextUrl = `https://${mastodonInstance}/api/v1/statuses/${statusId}/context`;
+
+              try {
+                const response = await fetch(contextUrl);
+
+                if (!response.ok) {
+                  throw new Error(
+                    "Network response was not ok " + response.statusText,
+                  );
+                }
+
+                const context = await response.json();
+                const comments = context.descendants;
+                comments.forEach((comment) => {
+                  const commentElement = document.createElement("div");
+                  commentElement.classList.add("comment");
+
+                  const authorName = DOMPurify.sanitize(
+                    comment.account.display_name || comment.account.username,
+                  );
+                  const authorUrl = DOMPurify.sanitize(comment.account.url);
+                  const content = DOMPurify.sanitize(comment.content);
+                  const avatarUrl = DOMPurify.sanitize(
+                    comment.account.avatar_static || comment.account.avatar,
+                  );
+                  const createdAt = new Date(comment.created_at);
+                  const timestamp = createdAt.toLocaleString();
+
+                  const avatarImg = document.createElement("img");
+                  avatarImg.src = avatarUrl;
+                  avatarImg.alt = `${authorName}'s avatar`;
+                  avatarImg.classList.add("avatar");
+
+                  const contentDiv = document.createElement("div");
+                  contentDiv.classList.add("comment-content");
+
+                  const headerDiv = document.createElement("div");
+                  headerDiv.classList.add("comment-header");
+
+                  const authorLink = document.createElement("a");
+                  authorLink.href = authorUrl;
+                  authorLink.target = "_blank";
+                  authorLink.textContent = authorName;
+
+                  const timeSpan = document.createElement("span");
+                  timeSpan.classList.add("timestamp");
+                  timeSpan.textContent = `• ${timestamp}`;
+
+                  headerDiv.appendChild(authorLink);
+                  headerDiv.appendChild(timeSpan);
+
+                  const bodyDiv = document.createElement("div");
+                  bodyDiv.classList.add("comment-body");
+                  bodyDiv.innerHTML = content;
+
+                  contentDiv.appendChild(headerDiv);
+                  contentDiv.appendChild(bodyDiv);
+
+                  commentElement.appendChild(avatarImg);
+                  commentElement.appendChild(contentDiv);
+
+                  commentsDiv.appendChild(commentElement);
+                });
+              } catch (error) {
+                console.error("Error fetching comments:", error);
+                commentsDiv.innerHTML = "<p>Error loading comments.</p>";
+              }
+            })();
+          </script>
+          
+        </div>
+      </section>
+      <script>
+        
+        (function addTitleToCodeBlock() {
+          let list = document.body.getElementsByClassName("highlight");
+
+          for (i = 0; i <= list.length - 1; i++) {
+            let code = list[i].firstElementChild.firstElementChild;
+            let codeName = code ? code.className.split(":")[1] : null;
+
+            if (codeName) {
+              console.log(codeName);
+              let div = document.createElement("div");
+              div.textContent = codeName;
+              div.classList.add("code-name");
+              code.parentNode.insertBefore(div, code);
+            }
+          }
+        })();
+      </script>
+
+      <footer class="fs-6 text-muted mt-5">
+        <p>
+          CC0. Powered by <a href="https://gohugo.io">Hugo</a>. Theme inspired
+          by <a href="https://www.mattdesl.com/">@mattdesl</a> and
+          <a href="https://ozafoto.com/digital/">Oza</a>.
+        </p>
+      </footer>
     </div>
   </body>
+  <script type="text/javascript">
+    
+
+    function decay() {
+      const canvas = document.getElementById("decay-canvas");
+      const pixelSize = window.innerWidth > 1600 ? 8 : 6;
+
+      canvas.width = window.innerWidth * 2;
+      canvas.height = 440;
+      canvas.style.height = canvas.height / 2 + "px";
+      canvas.style.width = canvas.width / 2 + "px";
+      const ctx = canvas.getContext("2d");
+      ctx.fillStyle = "#fff";
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      for (let j = 0; j < canvas.height; j += pixelSize) {
+        const probability = Math.pow(
+          (canvas.height - 1 - j) / (canvas.height - 1),
+          3,
+        );
+        for (let i = 0; i < canvas.width; i += pixelSize) {
+          if (Math.random() < probability) {
+            ctx.fillRect(i, j, pixelSize, pixelSize);
+          }
+        }
+      }
+    }
+
+    window.isReducedMotion = () =>
+      window.matchMedia(`(prefers-reduced-motion: reduce)`) === true ||
+      window.matchMedia(`(prefers-reduced-motion: reduce)`).matches === true;
+
+    window.onload = () => {
+      if (!isReducedMotion()) {
+        decay();
+      }
+
+      document.addEventListener("resize", () => {
+        if (!isReducedMotion()) {
+          decay();
+        }
+      });
+
+      document.addEventListener("scroll", () => {
+        if (!isReducedMotion()) {
+          decay();
+        }
+      });
+    };
+  </script>
 </html>

@@ -1,71 +1,88 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="twitter:card" content="summary_large_image">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="twitter:card" content="summary_large_image" />
     <meta property="og:title" content="Initial Revision | @unjello" />
-    <meta property="twitter:title" content="Initial Revision | @unjello">
+    <meta property="twitter:title" content="Initial Revision | @unjello" />
     <meta property="og:url" content="http://andrzej.lichnerowicz.pl/en/blog/initial-revision/" />
     <meta property="og:type" content="blog" />
-    
-    
-    
-    <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="apple-touch-icon" href="/favicon.ico">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.1.7/purify.min.js" integrity="sha512-BdRNuI8/lsyxkKQVxK1lVtfZshggfXPAwEP+JAOJEKx6Y8SLfcBSRdaWyXQmMxo+wG180uFqXYGjGRL0mh4/Jw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/favicon.ico" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.1.7/purify.min.js"
+      integrity="sha512-BdRNuI8/lsyxkKQVxK1lVtfZshggfXPAwEP+JAOJEKx6Y8SLfcBSRdaWyXQmMxo+wG180uFqXYGjGRL0mh4/Jw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
-    
-    
-      <link rel="stylesheet" href="/css/style.min.2e859e4992bcd5ecfc1a48111216f98958cd0696c0278c0e2513e50ee64ead0d.css" integrity="sha256-LoWeSZK81ez8GkgREhb5iVjNBpbAJ4wOJRPlDuZOrQ0=" crossorigin="anonymous">
-    
-    
+     
+    <link
+      rel="stylesheet"
+      href="/css/style.min.3a7155bb510c74d3ad0ee88347caccee2f18b7d2005edd786edc9f75caca9f7b.css"
+      integrity="sha256-OnFVu1EMdNOtDuiDR8rM7i8Yt9IAXt14btyfdcrKn3s="
+      crossorigin="anonymous"
+    />
+     
     <title>Initial Revision | Blog @unjello</title>
   </head>
   <body>
+    <canvas
+      id="decay-canvas"
+      width="3172"
+      height="440"
+      style="height: 220px; width: 1586px"
+    ></canvas>
     <div class="layout container-fluid">
-        <header>
-            <h1>
-                <a href="/">Andrzej unjello Lichnerowicz</a>
-            </h1>
-            <ul class="list-inline tagline">
-                
-                    <li class="list-inline-item">he</li>
-                
-                    <li class="list-inline-item">him</li>
-                
-                    <li class="list-inline-item">activist</li>
-                
-                    <li class="list-inline-item">trees and greenery lover</li>
-                
-            </ul>
-            <ul class="list-inline socialmedia">
-                
-                    <li class="list-inline-item">
-                        <a href="https://mastodon.gamedev.place/@unjello">mastodon</a>
-                    </li>                            
-                
-                    <li class="list-inline-item">
-                        <a href="https://codeberg.org/unjello">codeberg</a>
-                    </li>                            
-                
-                    <li class="list-inline-item">
-                        <a href="mailto:andrzej@lichnerowicz.pl">email</a>
-                    </li>                            
-                
-                    <li class="list-inline-item">
-                        <a href="https://andrzej.lichnerowicz.pl/public.pgp">pgp</a>
-                    </li>                            
-                
-            </ul>
-        </header>
+      <header>
+        <h1>
+          <a href="/">Andrzej unjello Lichnerowicz</a>
+        </h1>
+        <ul class="list-inline tagline">
+          
+          <li class="list-inline-item">he</li>
+          
+          <li class="list-inline-item">him</li>
+          
+          <li class="list-inline-item">activist</li>
+          
+          <li class="list-inline-item">trees and greenery lover</li>
+          
+        </ul>
+        <ul class="list-inline socialmedia">
+          
+          <li class="list-inline-item">
+            <a href="https://mastodon.gamedev.place/@unjello">mastodon</a>
+          </li>
+          
+          <li class="list-inline-item">
+            <a href="https://codeberg.org/unjello">codeberg</a>
+          </li>
+          
+          <li class="list-inline-item">
+            <a href="mailto:andrzej@lichnerowicz.pl">email</a>
+          </li>
+          
+          <li class="list-inline-item">
+            <a href="https://andrzej.lichnerowicz.pl/public.pgp">pgp</a>
+          </li>
+          
+        </ul>
+      </header>
 
-        <section class="blog_single">
-            <h1>Initial Revision</h1>
-            <div class="date">2017-11-05T10:44:44&#43;01:00</div>
-            <div class="content">
-                <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>% letter
+      <section class="blog_single">
+        <h1>Initial Revision</h1>
+        <div class="date">2017-11-05T10:44:44&#43;01:00</div>
+        <div class="content">
+          <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>% letter
 </span></span><span style="display:flex;"><span>letter: Command not found.
 </span></span><span style="display:flex;"><span>% mail
 </span></span><span style="display:flex;"><span>To: ^X ^F ^C
@@ -83,37 +100,86 @@
 </li>
 </ol>
 </div>
+ 
+        </div>
+      </section>
+      <script>
+        
+        (function addTitleToCodeBlock() {
+          let list = document.body.getElementsByClassName("highlight");
 
+          for (i = 0; i <= list.length - 1; i++) {
+            let code = list[i].firstElementChild.firstElementChild;
+            let codeName = code ? code.className.split(":")[1] : null;
 
-                
-            </div>
-        </section>
-        <script>
-              
-                        (function addTitleToCodeBlock() {
-  let list = document.body.getElementsByClassName("highlight");
+            if (codeName) {
+              console.log(codeName);
+              let div = document.createElement("div");
+              div.textContent = codeName;
+              div.classList.add("code-name");
+              code.parentNode.insertBefore(div, code);
+            }
+          }
+        })();
+      </script>
 
-  for (i = 0; i <= list.length - 1; i++) {
-    let code = list[i].firstElementChild.firstElementChild;
-    let codeName = code ? code.className.split(":")[1] : null;
-
-    if (codeName) {
-                console.log(codeName)
-      let div = document.createElement("div");
-      div.textContent = codeName;
-      div.classList.add("code-name");
-      code.parentNode.insertBefore(div, code);
-    }
-  }
-})();
-
-        </script>
-
-        <footer class="fs-6 text-muted mt-5">
-            <p>
-                CC0. Powered by <a href="https://gohugo.io">Hugo</a>. Theme inspired by <a href="https://www.mattdesl.com/">@mattdesl</a> and <a href="https://ozafoto.com/digital/">Oza</a>.
-            </p>
-        </footer>
+      <footer class="fs-6 text-muted mt-5">
+        <p>
+          CC0. Powered by <a href="https://gohugo.io">Hugo</a>. Theme inspired
+          by <a href="https://www.mattdesl.com/">@mattdesl</a> and
+          <a href="https://ozafoto.com/digital/">Oza</a>.
+        </p>
+      </footer>
     </div>
   </body>
+  <script type="text/javascript">
+    
+
+    function decay() {
+      const canvas = document.getElementById("decay-canvas");
+      const pixelSize = window.innerWidth > 1600 ? 8 : 6;
+
+      canvas.width = window.innerWidth * 2;
+      canvas.height = 440;
+      canvas.style.height = canvas.height / 2 + "px";
+      canvas.style.width = canvas.width / 2 + "px";
+      const ctx = canvas.getContext("2d");
+      ctx.fillStyle = "#fff";
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      for (let j = 0; j < canvas.height; j += pixelSize) {
+        const probability = Math.pow(
+          (canvas.height - 1 - j) / (canvas.height - 1),
+          3,
+        );
+        for (let i = 0; i < canvas.width; i += pixelSize) {
+          if (Math.random() < probability) {
+            ctx.fillRect(i, j, pixelSize, pixelSize);
+          }
+        }
+      }
+    }
+
+    window.isReducedMotion = () =>
+      window.matchMedia(`(prefers-reduced-motion: reduce)`) === true ||
+      window.matchMedia(`(prefers-reduced-motion: reduce)`).matches === true;
+
+    window.onload = () => {
+      if (!isReducedMotion()) {
+        decay();
+      }
+
+      document.addEventListener("resize", () => {
+        if (!isReducedMotion()) {
+          decay();
+        }
+      });
+
+      document.addEventListener("scroll", () => {
+        if (!isReducedMotion()) {
+          decay();
+        }
+      });
+    };
+  </script>
 </html>

@@ -1,71 +1,88 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="twitter:card" content="summary_large_image">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="twitter:card" content="summary_large_image" />
     <meta property="og:title" content="Rocking Rust, Git, and GitHub in 2023 Like a Pro | @unjello" />
-    <meta property="twitter:title" content="Rocking Rust, Git, and GitHub in 2023 Like a Pro | @unjello">
+    <meta property="twitter:title" content="Rocking Rust, Git, and GitHub in 2023 Like a Pro | @unjello" />
     <meta property="og:url" content="http://andrzej.lichnerowicz.pl/en/blog/rocking-rust-git-and-github-in-2023-like-a-pro/" />
     <meta property="og:type" content="blog" />
-    
-    
-    
-    <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="apple-touch-icon" href="/favicon.ico">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.1.7/purify.min.js" integrity="sha512-BdRNuI8/lsyxkKQVxK1lVtfZshggfXPAwEP+JAOJEKx6Y8SLfcBSRdaWyXQmMxo+wG180uFqXYGjGRL0mh4/Jw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/favicon.ico" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.1.7/purify.min.js"
+      integrity="sha512-BdRNuI8/lsyxkKQVxK1lVtfZshggfXPAwEP+JAOJEKx6Y8SLfcBSRdaWyXQmMxo+wG180uFqXYGjGRL0mh4/Jw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
-    
-    
-      <link rel="stylesheet" href="/css/style.min.2e859e4992bcd5ecfc1a48111216f98958cd0696c0278c0e2513e50ee64ead0d.css" integrity="sha256-LoWeSZK81ez8GkgREhb5iVjNBpbAJ4wOJRPlDuZOrQ0=" crossorigin="anonymous">
-    
-    
+     
+    <link
+      rel="stylesheet"
+      href="/css/style.min.3a7155bb510c74d3ad0ee88347caccee2f18b7d2005edd786edc9f75caca9f7b.css"
+      integrity="sha256-OnFVu1EMdNOtDuiDR8rM7i8Yt9IAXt14btyfdcrKn3s="
+      crossorigin="anonymous"
+    />
+     
     <title>Rocking Rust, Git, and GitHub in 2023 Like a Pro | Blog @unjello</title>
   </head>
   <body>
+    <canvas
+      id="decay-canvas"
+      width="3172"
+      height="440"
+      style="height: 220px; width: 1586px"
+    ></canvas>
     <div class="layout container-fluid">
-        <header>
-            <h1>
-                <a href="/">Andrzej unjello Lichnerowicz</a>
-            </h1>
-            <ul class="list-inline tagline">
-                
-                    <li class="list-inline-item">he</li>
-                
-                    <li class="list-inline-item">him</li>
-                
-                    <li class="list-inline-item">activist</li>
-                
-                    <li class="list-inline-item">trees and greenery lover</li>
-                
-            </ul>
-            <ul class="list-inline socialmedia">
-                
-                    <li class="list-inline-item">
-                        <a href="https://mastodon.gamedev.place/@unjello">mastodon</a>
-                    </li>                            
-                
-                    <li class="list-inline-item">
-                        <a href="https://codeberg.org/unjello">codeberg</a>
-                    </li>                            
-                
-                    <li class="list-inline-item">
-                        <a href="mailto:andrzej@lichnerowicz.pl">email</a>
-                    </li>                            
-                
-                    <li class="list-inline-item">
-                        <a href="https://andrzej.lichnerowicz.pl/public.pgp">pgp</a>
-                    </li>                            
-                
-            </ul>
-        </header>
+      <header>
+        <h1>
+          <a href="/">Andrzej unjello Lichnerowicz</a>
+        </h1>
+        <ul class="list-inline tagline">
+          
+          <li class="list-inline-item">he</li>
+          
+          <li class="list-inline-item">him</li>
+          
+          <li class="list-inline-item">activist</li>
+          
+          <li class="list-inline-item">trees and greenery lover</li>
+          
+        </ul>
+        <ul class="list-inline socialmedia">
+          
+          <li class="list-inline-item">
+            <a href="https://mastodon.gamedev.place/@unjello">mastodon</a>
+          </li>
+          
+          <li class="list-inline-item">
+            <a href="https://codeberg.org/unjello">codeberg</a>
+          </li>
+          
+          <li class="list-inline-item">
+            <a href="mailto:andrzej@lichnerowicz.pl">email</a>
+          </li>
+          
+          <li class="list-inline-item">
+            <a href="https://andrzej.lichnerowicz.pl/public.pgp">pgp</a>
+          </li>
+          
+        </ul>
+      </header>
 
-        <section class="blog_single">
-            <h1>Rocking Rust, Git, and GitHub in 2023 Like a Pro</h1>
-            <div class="date">2023-02-26T19:58:00&#43;02:00</div>
-            <div class="content">
-                <h1 id="falling-in-love-with-sourcehut-but-still-tempted-by-github-actions">Falling in Love with SourceHut, But Still Tempted by GitHub Actions</h1>
+      <section class="blog_single">
+        <h1>Rocking Rust, Git, and GitHub in 2023 Like a Pro</h1>
+        <div class="date">2023-02-26T19:58:00&#43;02:00</div>
+        <div class="content">
+          <h1 id="falling-in-love-with-sourcehut-but-still-tempted-by-github-actions">Falling in Love with SourceHut, But Still Tempted by GitHub Actions</h1>
 <p><a href="https://git.sr.ht/">SourceHut</a> has recently won my heart with its simplicity and 90&rsquo;s UI vibe, but I can&rsquo;t resist the appeal of GitHub&rsquo;s free workflow automation platform. I&rsquo;ve been working on a few small projects in Python, TypeScript, and Rust, and have set up CI for all of them. Now that I&rsquo;ve revived my blog, I thought I&rsquo;d write about my experience using GitHub Actions for deployment.</p>
 <p>I use GitHub Actions to deploy my Static Site Generated site to GitHub Pages or upload packages to various registries (pypi, npm, crates). I then added the Continuous Development part with testing, linting, and so on. In my day job, I always advocate for activities like this to be as close to the developer as possible - ideally as a commit pre-hook. I&rsquo;ve followed this principle in my own projects, but to make sure I was getting the most out of GitHub Actions, I also added testing on all platforms I wanted to support but didn&rsquo;t have easy access to. Lastly, I decided to hit the &ldquo;fund&rdquo; button - who knows, maybe it&rsquo;ll be my ticket to an early retirement! :)</p>
 <h1 id="setting-up-a-pre-commit-hook">Setting up a Pre-Commit Hook</h1>
@@ -239,113 +256,172 @@
 </span></span></code></pre></div><p>There are multiple ways to create a release, including using GitHub&rsquo;s REST API, but I prefer to use the command line:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fish" data-lang="fish"><span style="display:flex;"><span>$ git tag <span style="color:#a6e22e">-a</span> v0.<span style="color:#ae81ff">1</span>.<span style="color:#ae81ff">0</span> <span style="color:#a6e22e">-m</span> <span style="color:#e6db74">&#34;Tagging v0.1.0&#34;</span>
 </span></span><span style="display:flex;"><span>$ gh release create v0.<span style="color:#ae81ff">1</span>.<span style="color:#ae81ff">0</span> <span style="color:#a6e22e">-t</span> <span style="color:#e6db74">&#34;Release v0.1.0&#34;</span>
-</span></span></code></pre></div>
-
-                
-                <div class="comments">
-                    <h2>Comments</h2>
-                    <p>Discussion powered by <i class="fa-brands fa-mastodon"></i>, <a href="https://mastodon.gamedev.place/@unjello/109932889945794508">hop in.</a> if you want.</p>
-                    <div id="comments"></div>
-                </div>
-            <script>
-    (async function() {
-        const commentsDiv = document.getElementById('comments');
-        const statusId = '109932889945794508';
-        const mastodonInstance = 'mastodon.gamedev.place';
-        const contextUrl = `https://${mastodonInstance}/api/v1/statuses/${statusId}/context`;
-
-        try {
-            const response = await fetch(contextUrl);
-
-            if (!response.ok) {
-                throw new Error('Network response was not ok ' + response.statusText);
-            }
-
-            const context = await response.json();
-            const comments = context.descendants;
-            comments.forEach(comment => {
-                const commentElement = document.createElement('div');
-                commentElement.classList.add('comment');
-
-                const authorName = DOMPurify.sanitize(comment.account.display_name || comment.account.username);
-                const authorUrl = DOMPurify.sanitize(comment.account.url);
-                const content = DOMPurify.sanitize(comment.content);
-                const avatarUrl = DOMPurify.sanitize(comment.account.avatar_static || comment.account.avatar);
-                const createdAt = new Date(comment.created_at);
-                const timestamp = createdAt.toLocaleString();
-
-                const avatarImg = document.createElement('img');
-                avatarImg.src = avatarUrl;
-                avatarImg.alt = `${authorName}'s avatar`;
-                avatarImg.classList.add('avatar');
-
-                const contentDiv = document.createElement('div');
-                contentDiv.classList.add('comment-content');
-
-                const headerDiv = document.createElement('div');
-                headerDiv.classList.add('comment-header');
-
-                const authorLink = document.createElement('a');
-                authorLink.href = authorUrl;
-                authorLink.target = '_blank';
-                authorLink.textContent = authorName;
-
-                const timeSpan = document.createElement('span');
-                timeSpan.classList.add('timestamp');
-                timeSpan.textContent = `• ${timestamp}`;
-
-                headerDiv.appendChild(authorLink);
-                headerDiv.appendChild(timeSpan);
-
-                const bodyDiv = document.createElement('div');
-                bodyDiv.classList.add('comment-body');
-                bodyDiv.innerHTML = content;
-
-                contentDiv.appendChild(headerDiv);
-                contentDiv.appendChild(bodyDiv);
-
-                commentElement.appendChild(avatarImg);
-                commentElement.appendChild(contentDiv);
-
-                commentsDiv.appendChild(commentElement);            });
-
-
-        } catch (error) {
-            console.error('Error fetching comments:', error);
-            commentsDiv.innerHTML = '<p>Error loading comments.</p>';
-        }
-    })();
-
-            </script>
-                
-            </div>
-        </section>
-        <script>
-              
-                        (function addTitleToCodeBlock() {
-  let list = document.body.getElementsByClassName("highlight");
-
-  for (i = 0; i <= list.length - 1; i++) {
-    let code = list[i].firstElementChild.firstElementChild;
-    let codeName = code ? code.className.split(":")[1] : null;
-
-    if (codeName) {
-                console.log(codeName)
-      let div = document.createElement("div");
-      div.textContent = codeName;
-      div.classList.add("code-name");
-      code.parentNode.insertBefore(div, code);
-    }
-  }
-})();
-
-        </script>
-
-        <footer class="fs-6 text-muted mt-5">
+</span></span></code></pre></div> 
+          <div class="comments">
+            <h2>Comments</h2>
             <p>
-                CC0. Powered by <a href="https://gohugo.io">Hugo</a>. Theme inspired by <a href="https://www.mattdesl.com/">@mattdesl</a> and <a href="https://ozafoto.com/digital/">Oza</a>.
+              Discussion powered by <i class="fa-brands fa-mastodon"></i>,
+              <a href="https://mastodon.gamedev.place/@unjello/109932889945794508"
+                >hop in.</a
+              >
+              if you want.
             </p>
-        </footer>
+            <div id="comments"></div>
+          </div>
+          <script>
+            (async function () {
+              const commentsDiv = document.getElementById("comments");
+              const statusId = "109932889945794508";
+              const mastodonInstance = "mastodon.gamedev.place";
+              const contextUrl = `https://${mastodonInstance}/api/v1/statuses/${statusId}/context`;
+
+              try {
+                const response = await fetch(contextUrl);
+
+                if (!response.ok) {
+                  throw new Error(
+                    "Network response was not ok " + response.statusText,
+                  );
+                }
+
+                const context = await response.json();
+                const comments = context.descendants;
+                comments.forEach((comment) => {
+                  const commentElement = document.createElement("div");
+                  commentElement.classList.add("comment");
+
+                  const authorName = DOMPurify.sanitize(
+                    comment.account.display_name || comment.account.username,
+                  );
+                  const authorUrl = DOMPurify.sanitize(comment.account.url);
+                  const content = DOMPurify.sanitize(comment.content);
+                  const avatarUrl = DOMPurify.sanitize(
+                    comment.account.avatar_static || comment.account.avatar,
+                  );
+                  const createdAt = new Date(comment.created_at);
+                  const timestamp = createdAt.toLocaleString();
+
+                  const avatarImg = document.createElement("img");
+                  avatarImg.src = avatarUrl;
+                  avatarImg.alt = `${authorName}'s avatar`;
+                  avatarImg.classList.add("avatar");
+
+                  const contentDiv = document.createElement("div");
+                  contentDiv.classList.add("comment-content");
+
+                  const headerDiv = document.createElement("div");
+                  headerDiv.classList.add("comment-header");
+
+                  const authorLink = document.createElement("a");
+                  authorLink.href = authorUrl;
+                  authorLink.target = "_blank";
+                  authorLink.textContent = authorName;
+
+                  const timeSpan = document.createElement("span");
+                  timeSpan.classList.add("timestamp");
+                  timeSpan.textContent = `• ${timestamp}`;
+
+                  headerDiv.appendChild(authorLink);
+                  headerDiv.appendChild(timeSpan);
+
+                  const bodyDiv = document.createElement("div");
+                  bodyDiv.classList.add("comment-body");
+                  bodyDiv.innerHTML = content;
+
+                  contentDiv.appendChild(headerDiv);
+                  contentDiv.appendChild(bodyDiv);
+
+                  commentElement.appendChild(avatarImg);
+                  commentElement.appendChild(contentDiv);
+
+                  commentsDiv.appendChild(commentElement);
+                });
+              } catch (error) {
+                console.error("Error fetching comments:", error);
+                commentsDiv.innerHTML = "<p>Error loading comments.</p>";
+              }
+            })();
+          </script>
+          
+        </div>
+      </section>
+      <script>
+        
+        (function addTitleToCodeBlock() {
+          let list = document.body.getElementsByClassName("highlight");
+
+          for (i = 0; i <= list.length - 1; i++) {
+            let code = list[i].firstElementChild.firstElementChild;
+            let codeName = code ? code.className.split(":")[1] : null;
+
+            if (codeName) {
+              console.log(codeName);
+              let div = document.createElement("div");
+              div.textContent = codeName;
+              div.classList.add("code-name");
+              code.parentNode.insertBefore(div, code);
+            }
+          }
+        })();
+      </script>
+
+      <footer class="fs-6 text-muted mt-5">
+        <p>
+          CC0. Powered by <a href="https://gohugo.io">Hugo</a>. Theme inspired
+          by <a href="https://www.mattdesl.com/">@mattdesl</a> and
+          <a href="https://ozafoto.com/digital/">Oza</a>.
+        </p>
+      </footer>
     </div>
   </body>
+  <script type="text/javascript">
+    
+
+    function decay() {
+      const canvas = document.getElementById("decay-canvas");
+      const pixelSize = window.innerWidth > 1600 ? 8 : 6;
+
+      canvas.width = window.innerWidth * 2;
+      canvas.height = 440;
+      canvas.style.height = canvas.height / 2 + "px";
+      canvas.style.width = canvas.width / 2 + "px";
+      const ctx = canvas.getContext("2d");
+      ctx.fillStyle = "#fff";
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      for (let j = 0; j < canvas.height; j += pixelSize) {
+        const probability = Math.pow(
+          (canvas.height - 1 - j) / (canvas.height - 1),
+          3,
+        );
+        for (let i = 0; i < canvas.width; i += pixelSize) {
+          if (Math.random() < probability) {
+            ctx.fillRect(i, j, pixelSize, pixelSize);
+          }
+        }
+      }
+    }
+
+    window.isReducedMotion = () =>
+      window.matchMedia(`(prefers-reduced-motion: reduce)`) === true ||
+      window.matchMedia(`(prefers-reduced-motion: reduce)`).matches === true;
+
+    window.onload = () => {
+      if (!isReducedMotion()) {
+        decay();
+      }
+
+      document.addEventListener("resize", () => {
+        if (!isReducedMotion()) {
+          decay();
+        }
+      });
+
+      document.addEventListener("scroll", () => {
+        if (!isReducedMotion()) {
+          decay();
+        }
+      });
+    };
+  </script>
 </html>

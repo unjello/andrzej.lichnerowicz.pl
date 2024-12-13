@@ -1,77 +1,94 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="twitter:card" content="summary_large_image">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="twitter:card" content="summary_large_image" />
     <meta property="og:title" content="Rust Macros: A Cautionary Tale | @unjello" />
-    <meta property="twitter:title" content="Rust Macros: A Cautionary Tale | @unjello">
+    <meta property="twitter:title" content="Rust Macros: A Cautionary Tale | @unjello" />
     <meta property="og:url" content="http://andrzej.lichnerowicz.pl/en/blog/rust-macros-a-cautionary-tale/" />
     <meta property="og:type" content="blog" />
-    
-    
+     
     <meta property="og:image" content="http://andrzej.lichnerowicz.pl/en/blog/rust-macros-a-cautionary-tale/automation_2x.png" />
-    <meta property="twitter:image" content="http://andrzej.lichnerowicz.pl/en/blog/rust-macros-a-cautionary-tale/automation_2x.png">
-    
-    
+    <meta property="twitter:image" content="http://andrzej.lichnerowicz.pl/en/blog/rust-macros-a-cautionary-tale/automation_2x.png" />
+     
     <meta property="og:description" content="A short story of how I went down the rust macros rabbit hole." />
-    <meta property="twitter:description" content="A short story of how I went down the rust macros rabbit hole.">
+    <meta property="twitter:description" content="A short story of how I went down the rust macros rabbit hole." />
     
-    <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="apple-touch-icon" href="/favicon.ico">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.1.7/purify.min.js" integrity="sha512-BdRNuI8/lsyxkKQVxK1lVtfZshggfXPAwEP+JAOJEKx6Y8SLfcBSRdaWyXQmMxo+wG180uFqXYGjGRL0mh4/Jw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/favicon.ico" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.1.7/purify.min.js"
+      integrity="sha512-BdRNuI8/lsyxkKQVxK1lVtfZshggfXPAwEP+JAOJEKx6Y8SLfcBSRdaWyXQmMxo+wG180uFqXYGjGRL0mh4/Jw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
-    
-    
-      <link rel="stylesheet" href="/css/style.min.2e859e4992bcd5ecfc1a48111216f98958cd0696c0278c0e2513e50ee64ead0d.css" integrity="sha256-LoWeSZK81ez8GkgREhb5iVjNBpbAJ4wOJRPlDuZOrQ0=" crossorigin="anonymous">
-    
-    
+     
+    <link
+      rel="stylesheet"
+      href="/css/style.min.3a7155bb510c74d3ad0ee88347caccee2f18b7d2005edd786edc9f75caca9f7b.css"
+      integrity="sha256-OnFVu1EMdNOtDuiDR8rM7i8Yt9IAXt14btyfdcrKn3s="
+      crossorigin="anonymous"
+    />
+     
     <title>Rust Macros: A Cautionary Tale | Blog @unjello</title>
   </head>
   <body>
+    <canvas
+      id="decay-canvas"
+      width="3172"
+      height="440"
+      style="height: 220px; width: 1586px"
+    ></canvas>
     <div class="layout container-fluid">
-        <header>
-            <h1>
-                <a href="/">Andrzej unjello Lichnerowicz</a>
-            </h1>
-            <ul class="list-inline tagline">
-                
-                    <li class="list-inline-item">he</li>
-                
-                    <li class="list-inline-item">him</li>
-                
-                    <li class="list-inline-item">activist</li>
-                
-                    <li class="list-inline-item">trees and greenery lover</li>
-                
-            </ul>
-            <ul class="list-inline socialmedia">
-                
-                    <li class="list-inline-item">
-                        <a href="https://mastodon.gamedev.place/@unjello">mastodon</a>
-                    </li>                            
-                
-                    <li class="list-inline-item">
-                        <a href="https://codeberg.org/unjello">codeberg</a>
-                    </li>                            
-                
-                    <li class="list-inline-item">
-                        <a href="mailto:andrzej@lichnerowicz.pl">email</a>
-                    </li>                            
-                
-                    <li class="list-inline-item">
-                        <a href="https://andrzej.lichnerowicz.pl/public.pgp">pgp</a>
-                    </li>                            
-                
-            </ul>
-        </header>
+      <header>
+        <h1>
+          <a href="/">Andrzej unjello Lichnerowicz</a>
+        </h1>
+        <ul class="list-inline tagline">
+          
+          <li class="list-inline-item">he</li>
+          
+          <li class="list-inline-item">him</li>
+          
+          <li class="list-inline-item">activist</li>
+          
+          <li class="list-inline-item">trees and greenery lover</li>
+          
+        </ul>
+        <ul class="list-inline socialmedia">
+          
+          <li class="list-inline-item">
+            <a href="https://mastodon.gamedev.place/@unjello">mastodon</a>
+          </li>
+          
+          <li class="list-inline-item">
+            <a href="https://codeberg.org/unjello">codeberg</a>
+          </li>
+          
+          <li class="list-inline-item">
+            <a href="mailto:andrzej@lichnerowicz.pl">email</a>
+          </li>
+          
+          <li class="list-inline-item">
+            <a href="https://andrzej.lichnerowicz.pl/public.pgp">pgp</a>
+          </li>
+          
+        </ul>
+      </header>
 
-        <section class="blog_single">
-            <h1>Rust Macros: A Cautionary Tale</h1>
-            <div class="date">2024-11-09T18:41:15&#43;02:00</div>
-            <div class="content">
-                <p>I pitched the idea of rewriting one of the Kubernetes services I work with in Rust, and I got the green light. Long story short, I’ve been writing a lot of Rust lately. It’s obviously not Zig (&lt;3), but it’s way better than some alternatives :)</p>
+      <section class="blog_single">
+        <h1>Rust Macros: A Cautionary Tale</h1>
+        <div class="date">2024-11-09T18:41:15&#43;02:00</div>
+        <div class="content">
+          <p>I pitched the idea of rewriting one of the Kubernetes services I work with in Rust, and I got the green light. Long story short, I’ve been writing a lot of Rust lately. It’s obviously not Zig (&lt;3), but it’s way better than some alternatives :)</p>
 <p>One of the trickiest parts of Rust &ndash; even for experienced Rustaceans &ndash; is definitely the macro system. So, how did I find myself neck-deep in Rust macros? I was building a tool that needed to communicate with a few internal services, each with its own client connection pattern. The goal was to create multiple clients that followed a similar structure: connect to a service and fetch data. This seemed like a perfect use case for a <code>Trait</code>.</p>
 <p>But here’s the catch: each service had its own connection requirements. Some used <a href="https://datatracker.ietf.org/doc/html/rfc7617">Basic Auth</a>, others relied on <a href="https://datatracker.ietf.org/doc/html/rfc6750">Bearer Tokens</a>, and a few needed full <a href="https://datatracker.ietf.org/doc/html/rfc6749">OAuth Authorization</a>. Some required a username and password, some wanted a token and username, and others just needed a token. It was a bit all over the place. This felt like the ideal situation for the <a href="https://en.wikipedia.org/wiki/Builder_pattern">builder pattern</a> set up each client with a builder, and then interact with them through a <code>Trait</code>.</p>
 <p>My initial drafts, though, were repetitive and clunky. The solution? Macros!</p>
@@ -115,7 +132,17 @@
 </span></span><span style="display:flex;"><span>    })
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>It turns out that stripping the Option makes the field required, which was not what I wanted at all. The other crate, <a href="https://crates.io/crates/derive_builder">builder_macro</a>, also didn’t work for me; it kept <code>Option</code> in the setters, creating code like <code>.with_optional(Some(true))</code>, which felt messy. So, of course, I thought, “I should write a macro to automate this!”</p>
-<p><img src="/en/blog/rust-macros-a-cautionary-tale/automation_2x.png" alt="I should write a program automating it!"></p>
+
+
+  <figure>
+  <img src="automation_2x.png" alt="I should write a program automating it!"/>
+  </figure>
+  <div class="caption">
+    <p>I should write a program automating it!</p>
+    <p class="photo-attribution">comic strip #1319 by Randall Munroe @ <a href="https://xkcd.com">xkcd.com</a></p>
+  </div>
+
+
 <h1 id="type-alias-and-struct-limitations-in-macros">Type Alias and Struct Limitations in Macros</h1>
 <p>One of the things I initially hoped was that Rust might allow me to use macros to return a type, something like:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Builder</span> <span style="color:#f92672">=</span> builder!({
@@ -262,9 +289,10 @@
 </span></span><span style="display:flex;"><span>    TokenStream::from(expanded) 
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>To make our builder actually useful, we’ll want to populate the <code>Builder</code> struct with the same fields as the original struct, but with a twist: if a field is an <code>Option</code>, we’ll strip the <code>Option</code> to have a nice setter syntax. Here’s how we can achieve that:</p>
-<pre><code>1.	First, let’s make sure the macro is only applied to structs and extract their named fields.
-2.	Then, we’ll check each field’s type and strip Option if needed.
-</code></pre>
+<ol>
+<li>First, let’s make sure the macro is only applied to structs and extract their named fields.</li>
+<li>Then, we’ll check each field’s type and strip <code>Option</code> if needed.</li>
+</ol>
 <p>Here’s what that looks like in code:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> fields <span style="color:#f92672">=</span> <span style="color:#66d9ef">match</span> input.data {
 </span></span><span style="display:flex;"><span>        Data::Struct(<span style="color:#66d9ef">ref</span> data_struct) <span style="color:#f92672">=&gt;</span> <span style="color:#66d9ef">match</span> data_struct.fields {
@@ -467,113 +495,172 @@
 <h1 id="wrapping-up">Wrapping Up</h1>
 <p>There are still a few advanced concepts I haven’t fully grasped, like all of the intricacies of <a href="https://crates.io/crates/builder_macro">builder_macro</a>, but I’m now far more comfortable diving into Rust’s macro system. The journey through both macro-by-example and proc-macro approaches was challenging, but the flexibility and power of Rust macros are impressive once you get the hang of it.</p>
 <p>I hope this helps someone who’s just starting out with Rust macros or needs to generate some repetitive code more elegantly. Happy coding, and remember: sometimes the macro rabbit hole is worth it!</p>
-
-
-                
-                <div class="comments">
-                    <h2>Comments</h2>
-                    <p>Discussion powered by <i class="fa-brands fa-mastodon"></i>, <a href="https://mastodon.gamedev.place/@unjello/113454234042223477">hop in.</a> if you want.</p>
-                    <div id="comments"></div>
-                </div>
-            <script>
-    (async function() {
-        const commentsDiv = document.getElementById('comments');
-        const statusId = '113454234042223477';
-        const mastodonInstance = 'mastodon.gamedev.place';
-        const contextUrl = `https://${mastodonInstance}/api/v1/statuses/${statusId}/context`;
-
-        try {
-            const response = await fetch(contextUrl);
-
-            if (!response.ok) {
-                throw new Error('Network response was not ok ' + response.statusText);
-            }
-
-            const context = await response.json();
-            const comments = context.descendants;
-            comments.forEach(comment => {
-                const commentElement = document.createElement('div');
-                commentElement.classList.add('comment');
-
-                const authorName = DOMPurify.sanitize(comment.account.display_name || comment.account.username);
-                const authorUrl = DOMPurify.sanitize(comment.account.url);
-                const content = DOMPurify.sanitize(comment.content);
-                const avatarUrl = DOMPurify.sanitize(comment.account.avatar_static || comment.account.avatar);
-                const createdAt = new Date(comment.created_at);
-                const timestamp = createdAt.toLocaleString();
-
-                const avatarImg = document.createElement('img');
-                avatarImg.src = avatarUrl;
-                avatarImg.alt = `${authorName}'s avatar`;
-                avatarImg.classList.add('avatar');
-
-                const contentDiv = document.createElement('div');
-                contentDiv.classList.add('comment-content');
-
-                const headerDiv = document.createElement('div');
-                headerDiv.classList.add('comment-header');
-
-                const authorLink = document.createElement('a');
-                authorLink.href = authorUrl;
-                authorLink.target = '_blank';
-                authorLink.textContent = authorName;
-
-                const timeSpan = document.createElement('span');
-                timeSpan.classList.add('timestamp');
-                timeSpan.textContent = `• ${timestamp}`;
-
-                headerDiv.appendChild(authorLink);
-                headerDiv.appendChild(timeSpan);
-
-                const bodyDiv = document.createElement('div');
-                bodyDiv.classList.add('comment-body');
-                bodyDiv.innerHTML = content;
-
-                contentDiv.appendChild(headerDiv);
-                contentDiv.appendChild(bodyDiv);
-
-                commentElement.appendChild(avatarImg);
-                commentElement.appendChild(contentDiv);
-
-                commentsDiv.appendChild(commentElement);            });
-
-
-        } catch (error) {
-            console.error('Error fetching comments:', error);
-            commentsDiv.innerHTML = '<p>Error loading comments.</p>';
-        }
-    })();
-
-            </script>
-                
-            </div>
-        </section>
-        <script>
-              
-                        (function addTitleToCodeBlock() {
-  let list = document.body.getElementsByClassName("highlight");
-
-  for (i = 0; i <= list.length - 1; i++) {
-    let code = list[i].firstElementChild.firstElementChild;
-    let codeName = code ? code.className.split(":")[1] : null;
-
-    if (codeName) {
-                console.log(codeName)
-      let div = document.createElement("div");
-      div.textContent = codeName;
-      div.classList.add("code-name");
-      code.parentNode.insertBefore(div, code);
-    }
-  }
-})();
-
-        </script>
-
-        <footer class="fs-6 text-muted mt-5">
+ 
+          <div class="comments">
+            <h2>Comments</h2>
             <p>
-                CC0. Powered by <a href="https://gohugo.io">Hugo</a>. Theme inspired by <a href="https://www.mattdesl.com/">@mattdesl</a> and <a href="https://ozafoto.com/digital/">Oza</a>.
+              Discussion powered by <i class="fa-brands fa-mastodon"></i>,
+              <a href="https://mastodon.gamedev.place/@unjello/113454234042223477"
+                >hop in.</a
+              >
+              if you want.
             </p>
-        </footer>
+            <div id="comments"></div>
+          </div>
+          <script>
+            (async function () {
+              const commentsDiv = document.getElementById("comments");
+              const statusId = "113454234042223477";
+              const mastodonInstance = "mastodon.gamedev.place";
+              const contextUrl = `https://${mastodonInstance}/api/v1/statuses/${statusId}/context`;
+
+              try {
+                const response = await fetch(contextUrl);
+
+                if (!response.ok) {
+                  throw new Error(
+                    "Network response was not ok " + response.statusText,
+                  );
+                }
+
+                const context = await response.json();
+                const comments = context.descendants;
+                comments.forEach((comment) => {
+                  const commentElement = document.createElement("div");
+                  commentElement.classList.add("comment");
+
+                  const authorName = DOMPurify.sanitize(
+                    comment.account.display_name || comment.account.username,
+                  );
+                  const authorUrl = DOMPurify.sanitize(comment.account.url);
+                  const content = DOMPurify.sanitize(comment.content);
+                  const avatarUrl = DOMPurify.sanitize(
+                    comment.account.avatar_static || comment.account.avatar,
+                  );
+                  const createdAt = new Date(comment.created_at);
+                  const timestamp = createdAt.toLocaleString();
+
+                  const avatarImg = document.createElement("img");
+                  avatarImg.src = avatarUrl;
+                  avatarImg.alt = `${authorName}'s avatar`;
+                  avatarImg.classList.add("avatar");
+
+                  const contentDiv = document.createElement("div");
+                  contentDiv.classList.add("comment-content");
+
+                  const headerDiv = document.createElement("div");
+                  headerDiv.classList.add("comment-header");
+
+                  const authorLink = document.createElement("a");
+                  authorLink.href = authorUrl;
+                  authorLink.target = "_blank";
+                  authorLink.textContent = authorName;
+
+                  const timeSpan = document.createElement("span");
+                  timeSpan.classList.add("timestamp");
+                  timeSpan.textContent = `• ${timestamp}`;
+
+                  headerDiv.appendChild(authorLink);
+                  headerDiv.appendChild(timeSpan);
+
+                  const bodyDiv = document.createElement("div");
+                  bodyDiv.classList.add("comment-body");
+                  bodyDiv.innerHTML = content;
+
+                  contentDiv.appendChild(headerDiv);
+                  contentDiv.appendChild(bodyDiv);
+
+                  commentElement.appendChild(avatarImg);
+                  commentElement.appendChild(contentDiv);
+
+                  commentsDiv.appendChild(commentElement);
+                });
+              } catch (error) {
+                console.error("Error fetching comments:", error);
+                commentsDiv.innerHTML = "<p>Error loading comments.</p>";
+              }
+            })();
+          </script>
+          
+        </div>
+      </section>
+      <script>
+        
+        (function addTitleToCodeBlock() {
+          let list = document.body.getElementsByClassName("highlight");
+
+          for (i = 0; i <= list.length - 1; i++) {
+            let code = list[i].firstElementChild.firstElementChild;
+            let codeName = code ? code.className.split(":")[1] : null;
+
+            if (codeName) {
+              console.log(codeName);
+              let div = document.createElement("div");
+              div.textContent = codeName;
+              div.classList.add("code-name");
+              code.parentNode.insertBefore(div, code);
+            }
+          }
+        })();
+      </script>
+
+      <footer class="fs-6 text-muted mt-5">
+        <p>
+          CC0. Powered by <a href="https://gohugo.io">Hugo</a>. Theme inspired
+          by <a href="https://www.mattdesl.com/">@mattdesl</a> and
+          <a href="https://ozafoto.com/digital/">Oza</a>.
+        </p>
+      </footer>
     </div>
   </body>
+  <script type="text/javascript">
+    
+
+    function decay() {
+      const canvas = document.getElementById("decay-canvas");
+      const pixelSize = window.innerWidth > 1600 ? 8 : 6;
+
+      canvas.width = window.innerWidth * 2;
+      canvas.height = 440;
+      canvas.style.height = canvas.height / 2 + "px";
+      canvas.style.width = canvas.width / 2 + "px";
+      const ctx = canvas.getContext("2d");
+      ctx.fillStyle = "#fff";
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      for (let j = 0; j < canvas.height; j += pixelSize) {
+        const probability = Math.pow(
+          (canvas.height - 1 - j) / (canvas.height - 1),
+          3,
+        );
+        for (let i = 0; i < canvas.width; i += pixelSize) {
+          if (Math.random() < probability) {
+            ctx.fillRect(i, j, pixelSize, pixelSize);
+          }
+        }
+      }
+    }
+
+    window.isReducedMotion = () =>
+      window.matchMedia(`(prefers-reduced-motion: reduce)`) === true ||
+      window.matchMedia(`(prefers-reduced-motion: reduce)`).matches === true;
+
+    window.onload = () => {
+      if (!isReducedMotion()) {
+        decay();
+      }
+
+      document.addEventListener("resize", () => {
+        if (!isReducedMotion()) {
+          decay();
+        }
+      });
+
+      document.addEventListener("scroll", () => {
+        if (!isReducedMotion()) {
+          decay();
+        }
+      });
+    };
+  </script>
 </html>
