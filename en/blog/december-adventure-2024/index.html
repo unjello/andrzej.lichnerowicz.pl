@@ -90,6 +90,41 @@
         <div class="content">
           <p>I have stumbled across a <a href="https://mastodon.gamedev.place/@crc@bsd.cafe/113555993612328150">post</a> on mastodon. I never really took part in no trends, but this somehow had the right vibes, or maybe I changed? Dunno. The point is, I feel like I want to do it :)</p>
 <p>So inspired by <a href="https://mastodon.gamedev.place/@eli_oat@tenforward.social">@eli_oat</a>, with a whole <a href="https://eli.li/december-adventure">webring</a> going on, without further ado:</p>
+<h1 id="day-15">Day 15</h1>
+<p>Literally got like 20 minutes of time, at 11:30pm. After all those refactorings it&rsquo;s time to put this all together. And in order to do this, I need a stack info. Or environment how I chose to call it. So the first draft looks like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#75715e">#[derive(Debug, Clone)]</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">pub</span> <span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">Environment</span> {
+</span></span><span style="display:flex;"><span>    variables: <span style="color:#a6e22e">HashMap</span><span style="color:#f92672">&lt;</span>String, Value<span style="color:#f92672">&gt;</span>,
+</span></span><span style="display:flex;"><span>    functions: <span style="color:#a6e22e">HashMap</span><span style="color:#f92672">&lt;</span>String, (Vec<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span>, Block)<span style="color:#f92672">&gt;</span>,
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">impl</span> Default <span style="color:#66d9ef">for</span> Environment {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">default</span>() -&gt; <span style="color:#a6e22e">Self</span> {
+</span></span><span style="display:flex;"><span>        Self {
+</span></span><span style="display:flex;"><span>            variables: <span style="color:#a6e22e">HashMap</span>::new(),
+</span></span><span style="display:flex;"><span>            functions: <span style="color:#a6e22e">HashMap</span>::new(),
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">impl</span> Environment {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">pub</span> <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">get_variable</span>(<span style="color:#f92672">&amp;</span>self, name: <span style="color:#66d9ef">&amp;</span><span style="color:#66d9ef">str</span>) -&gt; Option<span style="color:#f92672">&lt;&amp;</span>Value<span style="color:#f92672">&gt;</span> {
+</span></span><span style="display:flex;"><span>        self.variables.get(name)
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">pub</span> <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">set_variable</span>(<span style="color:#f92672">&amp;</span><span style="color:#66d9ef">mut</span> self, name: <span style="color:#66d9ef">&amp;</span><span style="color:#66d9ef">str</span>, val: <span style="color:#a6e22e">Value</span>) {
+</span></span><span style="display:flex;"><span>        self.variables.insert(name.to_string(), val);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">pub</span> <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">set_function</span>(<span style="color:#f92672">&amp;</span><span style="color:#66d9ef">mut</span> self, name: <span style="color:#66d9ef">&amp;</span><span style="color:#66d9ef">str</span>, params: Vec<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span>, body: <span style="color:#a6e22e">Block</span>) {
+</span></span><span style="display:flex;"><span>        self.functions.insert(name.to_string(), (params, body));
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">pub</span> <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">get_function</span>(<span style="color:#f92672">&amp;</span>self, name: <span style="color:#66d9ef">&amp;</span><span style="color:#66d9ef">str</span>) -&gt; Option<span style="color:#f92672">&lt;&amp;</span>(Vec<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span>, Block)<span style="color:#f92672">&gt;</span> {
+</span></span><span style="display:flex;"><span>        self.functions.get(name)
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>While I usually don&rsquo;t like having setters and getters, but I do not plan on allowing to take (move) values from environment, so it actually might be a good idea. But looking at this, I will need an explicit type for functions for sure.</p>
 <h1 id="day-14">Day 14</h1>
 <p>Yet another refactoring day. After going bottom up with the parsers, I have done some top-down decision on how the enums will look like, so they represent the actual grammar. Not in a PEG sense, but more as an AST. I&rsquo;ve added a <code>Scanner</code> trait (to avoid clash with <code>winnow::Parser</code>. I don&rsquo;t really want to implement the full parser trait) to move all the parsing as <code>impl</code> on the types themselves:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#66d9ef">pub</span> <span style="color:#66d9ef">trait</span> Scanner {
