@@ -90,6 +90,46 @@
         <div class="content">
           <p>I have stumbled across a <a href="https://mastodon.gamedev.place/@crc@bsd.cafe/113555993612328150">post</a> on mastodon. I never really took part in no trends, but this somehow had the right vibes, or maybe I changed? Dunno. The point is, I feel like I want to do it :)</p>
 <p>So inspired by <a href="https://mastodon.gamedev.place/@eli_oat@tenforward.social">@eli_oat</a>, with a whole <a href="https://eli.li/december-adventure">webring</a> going on, without further ado:</p>
+<h1 id="day-16">Day 16</h1>
+<p>Parsing day! But first a minor change, I&rsquo;ve decided to move <code>interpolate_string</code> to execution phase. This way, AST holds an original string, and only at execution I am going to interpolate it. And this has to do directly with the fact I don&rsquo;t wanna deal with variable interpolation or breaking down the string into pieces. At execution <code>interpolate_string</code> will get current environment information, and it&rsquo;ll deal with variables directly.</p>
+<p>The <code>Scanner</code> trait works nice. Brings clarity to the types:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#66d9ef">impl</span> Scanner <span style="color:#66d9ef">for</span> Statement {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Item</span> <span style="color:#f92672">=</span> Statement;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">parse</span>(input: <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">mut</span> <span style="color:#f92672">&amp;</span><span style="color:#66d9ef">str</span>) -&gt; <span style="color:#a6e22e">PResult</span><span style="color:#f92672">&lt;</span>Self::Item<span style="color:#f92672">&gt;</span> {
+</span></span><span style="display:flex;"><span>        trace(
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;statement&#34;</span>,
+</span></span><span style="display:flex;"><span>            alt((
+</span></span><span style="display:flex;"><span>                Statement::parse_comment,
+</span></span><span style="display:flex;"><span>                Statement::parse_variable_definition,
+</span></span><span style="display:flex;"><span>                Statement::parse_variable_assignment,
+</span></span><span style="display:flex;"><span>                Statement::parse_output,
+</span></span><span style="display:flex;"><span>                Expression::parse.map(<span style="color:#f92672">|</span>v<span style="color:#f92672">|</span> Statement::ExpressionStatement(v)),
+</span></span><span style="display:flex;"><span>            )),
+</span></span><span style="display:flex;"><span>        )
+</span></span><span style="display:flex;"><span>        .parse_next(input)
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>I&rsquo;m still kind of thinking how to solve parsing statements. LOLCODE has 3 gotchas. Statements are separated by the new line <code>\n</code>, or a comma <code>,</code>. But new line may be broken into another line with <code>...</code>. Oh, and there&rsquo;s single-line comment that does not really need a comma, and both statements are valid:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-awk" data-lang="awk"><span style="display:flex;"><span><span style="color:#a6e22e">VAR</span> <span style="color:#a6e22e">R</span> <span style="color:#ae81ff">10</span>,       <span style="color:#a6e22e">BTW</span> <span style="color:#a6e22e">assign</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">VAR</span> <span style="color:#a6e22e">R</span> <span style="color:#ae81ff">10</span>        <span style="color:#a6e22e">BTW</span> <span style="color:#a6e22e">assign</span>
+</span></span></code></pre></div><p>The way I have the grammar of statements works, but it&rsquo;s ugly:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> (statements, _): (Block, _) <span style="color:#f92672">=</span> trace(
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;program&#34;</span>,
+</span></span><span style="display:flex;"><span>    repeat_till(
+</span></span><span style="display:flex;"><span>        <span style="color:#ae81ff">0</span><span style="color:#f92672">..</span>,
+</span></span><span style="display:flex;"><span>        trace(
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;program_statement&#34;</span>,
+</span></span><span style="display:flex;"><span>            terminated(
+</span></span><span style="display:flex;"><span>                terminated(preceded(space0, Statement::parse), space0),
+</span></span><span style="display:flex;"><span>                trace(<span style="color:#e6db74">&#34;command_separator&#34;</span>, alt((<span style="color:#e6db74">&#34;,&#34;</span>, line_ending))),
+</span></span><span style="display:flex;"><span>            ),
+</span></span><span style="display:flex;"><span>        ),
+</span></span><span style="display:flex;"><span>        Program::parse_program_end,
+</span></span><span style="display:flex;"><span>    ),
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>.parse_next(<span style="color:#f92672">&amp;</span><span style="color:#66d9ef">mut</span> source)<span style="color:#f92672">?</span>;
+</span></span></code></pre></div><p>Will need to refactor this once I get more going, for now I am going to add parsing of flow control, and I think I&rsquo;ll move to execution and actually interpreting the script.</p>
 <h1 id="day-15">Day 15</h1>
 <p>Literally got like 20 minutes of time, at 11:30pm. After all those refactorings it&rsquo;s time to put this all together. And in order to do this, I need a stack info. Or environment how I chose to call it. So the first draft looks like this:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#75715e">#[derive(Debug, Clone)]</span>
