@@ -90,6 +90,148 @@
         <div class="content">
           <p>I have stumbled across a <a href="https://mastodon.gamedev.place/@crc@bsd.cafe/113555993612328150">post</a> on mastodon. I never really took part in no trends, but this somehow had the right vibes, or maybe I changed? Dunno. The point is, I feel like I want to do it :)</p>
 <p>So inspired by <a href="https://mastodon.gamedev.place/@eli_oat@tenforward.social">@eli_oat</a>, with a whole <a href="https://eli.li/december-adventure">webring</a> going on, without further ado:</p>
+<h1 id="day-20">Day 20</h1>
+<p>Not much today. Spent most of my time re-doing my office. New floors, new furniture. IKEA nesting instict, but I must say the desk hack to use kitchen table as desk top rocks. Looks very nice, is solid, and cost like 25% of hardwood desk top. Finally starts to feel like something I out of a fancy youtuber&rsquo;s background ;&gt;</p>
+<h1 id="day-19">Day 19</h1>
+<p>Inspired by <a href="https://mastodon.social/@mcc/113676267668601431">@mcc@mastodon.social</a>, I&rsquo;ve decided to start a list of languages I will plan on exploring/refreshing next year while catching up on Advent of Code I sort of abandoned around day 06. And because everything needs to have a label or a hashtag these days, imma name it <code>#BabelOfCode</code> &ndash; I am not going to rush like in Advent of Code, especially it&rsquo;s not a competitive coding approach. Every week I am going to take a next day puzzle for 2024 starting from Day 01, and every puzzle I am going to implement in a different langauge, or a flavor of a language, to explore the toolchain, its standard library and its idioms (i.e Pure Scheme vs Racket vs Common Lisp) or a platform (e.g. Intel vs ARM CPU or Linux vs Windows). After a bit of struggling over the past year I think I have finally settled with Rust as my language of choice as a sane tradeoff between reason and passion. I always believed tho that one benefits greatly from learning different perspectives, so to broaden my perspective I&rsquo;ll do a bit of language tourism :)</p>
+<p>Here&rsquo;s the list of languages I am planning on covering. 25 days, 25 languages:</p>
+<ol>
+<li>Assembly (MASM, DOS)</li>
+<li>C (WATCOM, DOS)</li>
+<li>Uxntal</li>
+<li>Prolog</li>
+<li>AWK</li>
+<li>Fish</li>
+<li>Lua</li>
+<li><a href="https://sr.ht/~icefox/garnet/">Garnet</a></li>
+<li><a href="https://scopes.readthedocs.io/en/latest/">Scopes</a></li>
+<li>OCaml</li>
+<li>Haskell</li>
+<li><a href="https://iolanguage.org">IO</a></li>
+<li>Common Lisp</li>
+<li>PureScript</li>
+<li>Fortran</li>
+<li>Forth</li>
+<li>COBOL</li>
+<li>Scala</li>
+<li>Oberon</li>
+<li>Modula-2</li>
+<li>ADA</li>
+<li>Raku</li>
+<li>Gleam</li>
+<li>Pharo</li>
+<li>J</li>
+</ol>
+<p>I am going to refactor this to a separate post at some point when I start. Cheers. <code>#BabelOfCode</code></p>
+<h1 id="day-18">Day 18</h1>
+<p>So I dived deeper into the bug I found yesterday. After fixing some low hanging fruits where I missed to consume whitespaces and newlines (oh, in moments like these I wish I had a lexer first:) I found an interesting bug, or rather a feature, in my PEG parser. I have a following block:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-awk" data-lang="awk"><span style="display:flex;"><span><span style="color:#a6e22e">O</span> <span style="color:#a6e22e">RLY</span><span style="color:#960050;background-color:#1e0010">?</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">YA</span> <span style="color:#a6e22e">RLY</span>, <span style="color:#a6e22e">VISIBLE</span> <span style="color:#e6db74">&#34;J00 HAV A CAT&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">NO</span> <span style="color:#a6e22e">WAI</span>, <span style="color:#a6e22e">VISIBLE</span> <span style="color:#e6db74">&#34;J00 SUX&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">OIC</span>
+</span></span></code></pre></div><p>And the way parser goes is&hellip;tadum, tsss&hellip;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-awk" data-lang="awk"><span style="display:flex;"><span>...
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">block_statement_separator</span>               <span style="color:#f92672">|</span> <span style="color:#e6db74">&#34;\nNO WAI, VISIBLE \&#34;J00
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">       &gt; alt                                    | &#34;</span><span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">nNO</span> <span style="color:#a6e22e">WAI</span>, <span style="color:#a6e22e">VISIBLE</span> <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#e6db74">&#34;J00
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        &gt; &#34;</span>,<span style="color:#e6db74">&#34;                                   | &#34;</span><span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">nNO</span> <span style="color:#a6e22e">WAI</span>, <span style="color:#a6e22e">VISIBLE</span> <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#e6db74">&#34;J00
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        &lt; &#34;</span>,<span style="color:#e6db74">&#34;                                   | backtrack
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        &gt; line_ending                           | &#34;</span><span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">nNO</span> <span style="color:#a6e22e">WAI</span>, <span style="color:#a6e22e">VISIBLE</span> <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#e6db74">&#34;J00
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">         &gt; alt                                  | &#34;</span><span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">nNO</span> <span style="color:#a6e22e">WAI</span>, <span style="color:#a6e22e">VISIBLE</span> <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#e6db74">&#34;J00
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          &gt; &#34;</span><span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">n</span><span style="color:#e6db74">&#34;                                | &#34;</span><span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">nNO</span> <span style="color:#a6e22e">WAI</span>, <span style="color:#a6e22e">VISIBLE</span> <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#e6db74">&#34;J00
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          &lt; &#34;</span><span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">n</span><span style="color:#e6db74">&#34;                                | +1
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">         &lt; alt                                  | +1
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        &lt; line_ending                           | +1
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">       &lt; alt                                    | +1
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      &lt; block_statement_separator               | +1
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">     &lt; terminated                               | +24
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &lt; block_statement                           | +24
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &gt; program_end                               | &#34;</span><span style="color:#a6e22e">NO</span> <span style="color:#a6e22e">WAI</span>, <span style="color:#a6e22e">VISIBLE</span> <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#e6db74">&#34;J00 SU
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">     &gt; &#34;</span><span style="color:#a6e22e">KTHXBYE</span><span style="color:#e6db74">&#34;                                | &#34;</span><span style="color:#a6e22e">NO</span> <span style="color:#a6e22e">WAI</span>, <span style="color:#a6e22e">VISIBLE</span> <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#e6db74">&#34;J00 SU
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">     &lt; &#34;</span><span style="color:#a6e22e">KTHXBYE</span><span style="color:#e6db74">&#34;                                | backtrack
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">   &lt; pr ogram_end                               | backtrack
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &gt; block_statement:1                         | &#34;</span><span style="color:#a6e22e">NO</span> <span style="color:#a6e22e">WAI</span>, <span style="color:#a6e22e">VISIBLE</span> <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#e6db74">&#34;J00 SU
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">...
+</span></span></span><span style="display:flex; background-color:#3c3d38"><span><span style="color:#e6db74">            &gt; variable_reference                | &#34;</span><span style="color:#a6e22e">NO</span> <span style="color:#a6e22e">WAI</span>, <span style="color:#a6e22e">VISIBLE</span> <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#e6db74">&#34;J00 SU
+</span></span></span><span style="display:flex; background-color:#3c3d38"><span><span style="color:#e6db74">             &gt; variable_name                    | &#34;</span><span style="color:#a6e22e">NO</span> <span style="color:#a6e22e">WAI</span>, <span style="color:#a6e22e">VISIBLE</span> <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#e6db74">&#34;J00 SU
+</span></span></span><span style="display:flex; background-color:#3c3d38"><span><span style="color:#e6db74">              &gt;                                 | &#34;</span><span style="color:#a6e22e">NO</span> <span style="color:#a6e22e">WAI</span>, <span style="color:#a6e22e">VISIBLE</span> <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#e6db74">&#34;J00 SU
+</span></span></span><span style="display:flex; background-color:#3c3d38"><span><span style="color:#e6db74">               &gt; take_while                     | &#34;</span><span style="color:#a6e22e">NO</span> <span style="color:#a6e22e">WAI</span>, <span style="color:#a6e22e">VISIBLE</span> <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#e6db74">&#34;J00 SU
+</span></span></span><span style="display:flex; background-color:#3c3d38"><span><span style="color:#e6db74">               &lt; take_while                     | +1
+</span></span></span><span style="display:flex; background-color:#3c3d38"><span><span style="color:#e6db74">               &gt; take_while                     | &#34;</span><span style="color:#a6e22e">O</span> <span style="color:#a6e22e">WAI</span>, <span style="color:#a6e22e">VISIBLE</span> <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#e6db74">&#34;J00 SUX
+</span></span></span><span style="display:flex; background-color:#3c3d38"><span><span style="color:#e6db74">               &lt; take_while                     | +1
+</span></span></span><span style="display:flex; background-color:#3c3d38"><span><span style="color:#e6db74">              &lt;                                 | +2
+</span></span></span><span style="display:flex; background-color:#3c3d38"><span><span style="color:#e6db74">             &lt; variable_name                    | +2
+</span></span></span><span style="display:flex; background-color:#3c3d38"><span><span style="color:#e6db74">            &lt; variable_reference                | +2
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">           &lt; alt                                | +2
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          &lt; expression                          | +2
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">         &lt; alt                                  | +2
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        &lt; statement                             | +2
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">       &lt; preceded:1                             | +2
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">       &gt; space0                                 | &#34;</span> <span style="color:#a6e22e">WAI</span>, <span style="color:#a6e22e">VISIBLE</span> <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#e6db74">&#34;J00 SUX\
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        &gt; take_while                            | &#34;</span> <span style="color:#a6e22e">WAI</span>, <span style="color:#a6e22e">VISIBLE</span> <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#e6db74">&#34;J00 SUX\
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        &lt; take_while                            | +1
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">       &lt; space0                                 | +1
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      &lt; terminated:1                            | +3
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      &gt; block_statement_separator:1             | &#34;</span><span style="color:#a6e22e">WAI</span>, <span style="color:#a6e22e">VISIBLE</span> <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#e6db74">&#34;J00 SUX\&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">       &gt; alt:1                                  | &#34;</span><span style="color:#a6e22e">WAI</span>, <span style="color:#a6e22e">VISIBLE</span> <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#e6db74">&#34;J00 SUX\&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        &gt; &#34;</span>,<span style="color:#e6db74">&#34;                                   | &#34;</span><span style="color:#a6e22e">WAI</span>, <span style="color:#a6e22e">VISIBLE</span> <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#e6db74">&#34;J00 SUX\&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        &lt; &#34;</span>,<span style="color:#e6db74">&#34;                                   | backtrack
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        &gt; line_ending                           | &#34;</span><span style="color:#a6e22e">WAI</span>, <span style="color:#a6e22e">VISIBLE</span> <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#e6db74">&#34;J00 SUX\&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">         &gt; alt                                  | &#34;</span><span style="color:#a6e22e">WAI</span>, <span style="color:#a6e22e">VISIBLE</span> <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#e6db74">&#34;J00 SUX\&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          &gt; &#34;</span><span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">n</span><span style="color:#e6db74">&#34;                                | &#34;</span><span style="color:#a6e22e">WAI</span>, <span style="color:#a6e22e">VISIBLE</span> <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#e6db74">&#34;J00 SUX\&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          &lt; &#34;</span><span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">n</span><span style="color:#e6db74">&#34;                                | backtrack
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          &gt; &#34;</span><span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">r</span><span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">n</span><span style="color:#e6db74">&#34;                              | &#34;</span><span style="color:#a6e22e">WAI</span>, <span style="color:#a6e22e">VISIBLE</span> <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#e6db74">&#34;J00 SUX\&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          &lt; &#34;</span><span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">r</span><span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">n</span><span style="color:#960050;background-color:#1e0010">&#34;</span>                              <span style="color:#f92672">|</span> <span style="color:#a6e22e">backtrack</span>
+</span></span><span style="display:flex;"><span>         <span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">alt</span>                                  <span style="color:#f92672">|</span> <span style="color:#a6e22e">backtrack</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">line_ending</span>                           <span style="color:#f92672">|</span> <span style="color:#a6e22e">backtrack</span>
+</span></span><span style="display:flex;"><span>       <span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">alt</span><span style="color:#960050;background-color:#1e0010">:</span><span style="color:#ae81ff">1</span>                                  <span style="color:#f92672">|</span> <span style="color:#a6e22e">backtrack</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">block_statement_separator</span><span style="color:#960050;background-color:#1e0010">:</span><span style="color:#ae81ff">1</span>             <span style="color:#f92672">|</span> <span style="color:#a6e22e">backtrack</span>
+</span></span><span style="display:flex;"><span>     <span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">terminated</span><span style="color:#960050;background-color:#1e0010">:</span><span style="color:#ae81ff">1</span>                             <span style="color:#f92672">|</span> <span style="color:#a6e22e">backtrack</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">block_statement</span><span style="color:#960050;background-color:#1e0010">:</span><span style="color:#ae81ff">1</span>                         <span style="color:#f92672">|</span> <span style="color:#a6e22e">backtrack</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">repeat_till</span>                                <span style="color:#f92672">|</span> <span style="color:#a6e22e">backtrack</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">block</span>                                       <span style="color:#f92672">|</span> <span style="color:#a6e22e">backtrack</span>
+</span></span><span style="display:flex;"><span> <span style="color:#f92672">&lt;</span>                                              <span style="color:#f92672">|</span> <span style="color:#a6e22e">backtrack</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">ya_rly</span>                                        <span style="color:#f92672">|</span> <span style="color:#a6e22e">backtrack</span></span></span></code></pre></div>
+<p>And here I am, making the very mistake I told during the talk to avoid. Currently my grammar looks like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#66d9ef">impl</span> Scanner <span style="color:#66d9ef">for</span> Statement {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">parse</span>(input: <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">mut</span> <span style="color:#f92672">&amp;</span><span style="color:#66d9ef">str</span>) -&gt; <span style="color:#a6e22e">PResult</span><span style="color:#f92672">&lt;</span>Statement<span style="color:#f92672">&gt;</span> {
+</span></span><span style="display:flex;"><span>        alt((
+</span></span><span style="display:flex;"><span>            Statement::parse_if,
+</span></span><span style="display:flex;"><span>            Statement::parse_comment,
+</span></span><span style="display:flex;"><span>            Statement::parse_visible,
+</span></span><span style="display:flex;"><span>            Statement::parse_variable_definition,
+</span></span><span style="display:flex;"><span>            Statement::parse_variable_assignment,
+</span></span><span style="display:flex;"><span>            Expression::parse.map(<span style="color:#f92672">|</span>v<span style="color:#f92672">|</span> Statement::ExpressionStatement(v)),
+</span></span><span style="display:flex;"><span>        )).parse_next(input)
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">parse_if</span>(input: <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">mut</span> <span style="color:#f92672">&amp;</span><span style="color:#66d9ef">str</span>) -&gt; <span style="color:#a6e22e">PResult</span><span style="color:#f92672">&lt;</span>Statement<span style="color:#f92672">&gt;</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;if&#34;</span>,
+</span></span><span style="display:flex;"><span>        seq!((
+</span></span><span style="display:flex;"><span>            _: <span style="color:#a6e22e">Caseless</span>(<span style="color:#e6db74">&#34;O RLY?&#34;</span>), _: (till_line_ending, line_ending),
+</span></span><span style="display:flex;"><span>            trace(<span style="color:#e6db74">&#34;ya_rly&#34;</span>, seq!(_: <span style="color:#a6e22e">Caseless</span>(<span style="color:#e6db74">&#34;YA RLY,&#34;</span>),
+</span></span><span style="display:flex;"><span>            _: <span style="color:#a6e22e">space1</span>,
+</span></span><span style="display:flex; background-color:#3c3d38"><span>            Block::parse)),
+</span></span><span style="display:flex;"><span>            opt(seq!(_: <span style="color:#a6e22e">Caseless</span>(<span style="color:#e6db74">&#34;MEBBE&#34;</span>), Expression::parse, _: <span style="color:#a6e22e">delimited</span>(space1, <span style="color:#e6db74">&#34;, &#34;</span>, space1), Block::parse)),
+</span></span><span style="display:flex;"><span>            opt(seq!(_: <span style="color:#a6e22e">Caseless</span>(<span style="color:#e6db74">&#34;NO WAI,&#34;</span>), _: <span style="color:#a6e22e">space1</span>, Block::parse)),
+</span></span><span style="display:flex;"><span>            _: <span style="color:#a6e22e">Caseless</span>(<span style="color:#e6db74">&#34;OIC&#34;</span>)
+</span></span><span style="display:flex;"><span>        )),
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Block</span> <span style="color:#f92672">=</span> Vec<span style="color:#f92672">&lt;</span>Statement<span style="color:#f92672">&gt;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">impl</span> Scanner <span style="color:#66d9ef">for</span> Expression {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">parse</span>(input: <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">mut</span> <span style="color:#f92672">&amp;</span><span style="color:#66d9ef">str</span>) -&gt; <span style="color:#a6e22e">PResult</span><span style="color:#f92672">&lt;</span>Expression<span style="color:#f92672">&gt;</span> {
+</span></span><span style="display:flex;"><span>        alt((
+</span></span><span style="display:flex;"><span>            Expression::parse_unary_op,
+</span></span><span style="display:flex;"><span>            Expression::parse_binary_op,
+</span></span><span style="display:flex;"><span>            Expression::parse_variadic_op,
+</span></span><span style="display:flex;"><span>            Expression::parse_literal,
+</span></span><span style="display:flex;"><span>            Expression::parse_variable_reference,
+</span></span><span style="display:flex;"><span>        )).parse_next(input)
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+<p><code>Expression</code> parser is trying to parse <code>NO</code> and identifies it as standalone variable reference, which should be terminated with <code>,</code> or <code>\n</code>. But instead it finds <code>WAI,</code> and backtracks the entire <code>ya_rly</code> rule. At this point I am not really even sure how to refactor this, and running out of time for today. Will look at it tomorrow :/</p>
+<h1 id="day-17">Day 17</h1>
+<p>Not much done. Tried to wrap up <code>IF</code> statement, or rather <code>O RLY?</code> statement, but run into several issues with grammar. Looks easy, but need to prepare for tomorrow&rsquo;s talk I voloutneered to give at work about parsing in Rust :) Given the issues with <code>O RLY?</code> I am not sure anymore if I am the best person to give this talk :)</p>
 <h1 id="day-16">Day 16</h1>
 <p>Parsing day! But first a minor change, I&rsquo;ve decided to move <code>interpolate_string</code> to execution phase. This way, AST holds an original string, and only at execution I am going to interpolate it. And this has to do directly with the fact I don&rsquo;t wanna deal with variable interpolation or breaking down the string into pieces. At execution <code>interpolate_string</code> will get current environment information, and it&rsquo;ll deal with variables directly.</p>
 <p>The <code>Scanner</code> trait works nice. Brings clarity to the types:</p>
