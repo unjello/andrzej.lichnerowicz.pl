@@ -90,6 +90,30 @@
         <div class="content">
           <p>I have stumbled across a <a href="https://mastodon.gamedev.place/@crc@bsd.cafe/113555993612328150">post</a> on mastodon. I never really took part in no trends, but this somehow had the right vibes, or maybe I changed? Dunno. The point is, I feel like I want to do it :)</p>
 <p>So inspired by <a href="https://mastodon.gamedev.place/@eli_oat@tenforward.social">@eli_oat</a>, with a whole <a href="https://eli.li/december-adventure">webring</a> going on, without further ado:</p>
+<h1 id="day-28">Day 28</h1>
+<p>What seemed like a simple change, led me to having to take a huuuge step back. It turns out, parametrizing a parser turned is not so easy. After an uneven battle I ended up doing this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#66d9ef">pub</span> <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">repeat_block_till</span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">&#39;a</span>, <span style="color:#a6e22e">&#39;c</span>, TerminatorParser<span style="color:#f92672">&gt;</span>(
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">mut</span> terminator: <span style="color:#a6e22e">TerminatorParser</span>,
+</span></span><span style="display:flex;"><span>) -&gt; <span style="color:#a6e22e">impl</span> FnMut(<span style="color:#f92672">&amp;</span><span style="color:#66d9ef">mut</span> <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">&#39;a</span> <span style="color:#66d9ef">str</span>) -&gt; <span style="color:#a6e22e">PResult</span><span style="color:#f92672">&lt;</span>Block<span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">where</span>
+</span></span><span style="display:flex;"><span>    TerminatorParser: <span style="color:#a6e22e">Parser</span><span style="color:#f92672">&lt;&amp;</span><span style="color:#a6e22e">&#39;a</span> <span style="color:#66d9ef">str</span>, <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">&#39;c</span> <span style="color:#66d9ef">str</span>, ContextError<span style="color:#f92672">&gt;</span> <span style="color:#f92672">+</span> Copy,
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">move</span> <span style="color:#f92672">|</span>input: <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">mut</span> <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">&#39;a</span> <span style="color:#66d9ef">str</span><span style="color:#f92672">|</span> -&gt; <span style="color:#a6e22e">PResult</span><span style="color:#f92672">&lt;</span>Block<span style="color:#f92672">&gt;</span> {
+</span></span><span style="display:flex;"><span>        repeat_till(<span style="color:#ae81ff">0</span><span style="color:#f92672">..</span>, trace(<span style="color:#e6db74">&#34;block_statement&#34;</span>, Statement::parse), terminator)
+</span></span><span style="display:flex;"><span>            .map(<span style="color:#f92672">|</span>(block, _)<span style="color:#f92672">|</span> block)
+</span></span><span style="display:flex;"><span>            .parse_next(input)
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>which looked nice, but worked only for simple terminator like <code>Caseless(&quot;KTHXBYE&quot;)</code>. As soon as I tried <code>alt((&quot;OIC&quot;, &quot;NO WAI&quot;))</code> everything fell apart, because <code>impl Parser&lt;_, _, _&gt;</code> does not implement <code>Copy</code> trait&hellip; For now I have removed the <code>Block::parse</code> functin alltogether, and inlined this.</p>
+<p>But then, I faced another issue, that is <code>repeat_till</code> function in <code>winnow</code> consumes the terminator. That means that when doing <code>YA RLY</code> parsing, I need to terminate on either <code>MEBBE</code> or <code>NO WAI</code> or <code>OIC</code>. BUT. Since those terminators will be consumed, I have no easy way to tell what to do next other than imperatively implementing the entire logic step by step. I  might have to do a non-consuming alternative to <code>repeat_till</code>.</p>
+<h1 id="day-27">Day 27</h1>
+<p>After a week of Xmasing, time to catch up. I&rsquo;ve made some modifications to the <a href="https://mastodon.gamedev.place/tags/BabelOfCode">#BabelOfCode</a> language list. I replaced couple languages I felt I&rsquo;ll benefit least from, in favor of:</p>
+<ol>
+<li><a href="http://lean-lang.org">Lean</a> - First time I was looking at formal verification about 15 years ago while still working on some RTOS embedded telecommunication stuff. I have recently looked at <a href="https://www.pm.inf.ethz.ch/research/prusti.html">Prusti</a> - a verifier for Rust that I really wanted to try out, only to find out about this new Lean-language that <a href="https://hachyderm.io/@zwarich">@zwarich</a> moved to work on. Coincidence? :)</li>
+<li><a href="https://wren.io">wren</a> - a scripting language that <a href="https://luxeengine.com">luxe</a> is using. Something between lua and smalltalk? Thought it sounded cool.</li>
+<li><a href="http://fennel-lang.org">Fennel</a> - another lua-like language, this time with a dash of LISP.</li>
+</ol>
+<p>Also, it occured to me the next morning during walking out the dogs, that the answer to my previous dillema was quite simple actualy. Yes, I was right. Filtering out stop-words inside <code>Value</code> is just bad. I should really parametrize block parsing function by the terminating keyword, such that the program level would terminate on <code>KTHXBYE</code> and if-level on <code>OIC</code> or <code>NO WAI</code>.</p>
 <h1 id="day-21">Day 21</h1>
 <p>Found a nasty solution to PEG first-matched-first-served problem. First of all, I changed statements from:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span>alt((
@@ -142,9 +166,9 @@
 <li>C (WATCOM, DOS)</li>
 <li>Uxntal</li>
 <li>Prolog</li>
-<li>AWK</li>
+<li><del>AWK</del> <a href="https://lean-lang.org">Lean</a> - AWK can wait :) See <a href="/en/blog/december-adventure-2024/#day-27">Day 27</a>.</li>
 <li>Fish</li>
-<li>Lua</li>
+<li><del>Lua</del> <a href="http://wren.io">wren</a></li>
 <li><a href="https://sr.ht/~icefox/garnet/">Garnet</a></li>
 <li><a href="https://scopes.readthedocs.io/en/latest/">Scopes</a></li>
 <li>OCaml</li>
@@ -155,7 +179,7 @@
 <li>Fortran</li>
 <li>Forth</li>
 <li>COBOL</li>
-<li>Scala</li>
+<li><del>Scala</del> <a href="http://fennel-lang.org">fennel</a> - JVM can wait too. See <a href="/en/blog/december-adventure-2024/#day-27">Day 27</a>.</li>
 <li>Oberon</li>
 <li><del>Modula-2</del> Occam &ndash; thx <a href="https://merveilles.town/@neauoire/113691577833286571">@neauoire</a> for the tip.</li>
 <li>ADA</li>
