@@ -86,11 +86,48 @@
 
       <section class="blog_single">
         <h1>December Adventure 2024</h1>
-        <div class="date">2024-12-12T21:10:15&#43;02:00</div>
+        <div class="date">2024-12-31T23:59:15&#43;02:00</div>
         <div class="content">
           <p>I have stumbled across a <a href="https://mastodon.gamedev.place/@crc@bsd.cafe/113555993612328150">post</a> on mastodon. I never really took part in no trends, but this somehow had the right vibes, or maybe I changed? Dunno. The point is, I feel like I want to do it :)</p>
 <p>So inspired by <a href="https://mastodon.gamedev.place/@eli_oat@tenforward.social">@eli_oat</a>, with a whole <a href="https://eli.li/december-adventure">webring</a> going on, without further ado:</p>
-<h1 id="day-29">Day 29</h1>
+<h1 id="day-31">Day 31</h1>
+<p>Again, not much time due to New Year&rsquo;s preparations, but I spent some evening yesterday re-reading <a href="https://doc.rust-lang.org/book/">The Rust Book</a>. As always, some new tricks stuck with me, and it took some time for them to sink in. Everything just came together at the right moment for yet another refactoring. First of all, I still like the idea of <code>Noob</code> or <code>undefined</code> not being a member of <code>Value</code> enum, and having <code>Value</code> represented as an <code>Option</code>, but making it more explicit was important. So, I started off by renaming old <code>Value</code> into <code>TypedValue</code>, and made <code>Value</code> a:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#66d9ef">pub</span> <span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Value</span> <span style="color:#f92672">=</span> Option<span style="color:#f92672">&lt;</span>TypedValue<span style="color:#f92672">&gt;</span>;
+</span></span></code></pre></div><p>However, this approach doesn&rsquo;t work well, because implementing system traits like <code>Display</code> or <code>From</code> on a type alias isn&rsquo;t possible, as the compiler treats it just like an alias:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>error<span style="color:#f92672">[</span>E0117<span style="color:#f92672">]</span>: only traits defined in the current crate can be implemented <span style="color:#66d9ef">for</span> types defined outside of the crate
+</span></span><span style="display:flex;"><span>  --&gt; src/value.rs:38:1
+</span></span><span style="display:flex;"><span>   |
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">38</span> | impl Display <span style="color:#66d9ef">for</span> Value <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>   | ^^^^^^^^^^^^^^^^^-----
+</span></span><span style="display:flex;"><span>   | |                |
+</span></span><span style="display:flex;"><span>   | |                <span style="color:#e6db74">`</span>Option<span style="color:#e6db74">`</span> is not defined in the current crate
+</span></span><span style="display:flex;"><span>   | impl doesn<span style="color:#960050;background-color:#1e0010">&#39;</span>t use only types from inside the current crate
+</span></span><span style="display:flex;"><span>   |
+</span></span><span style="display:flex;"><span>   <span style="color:#f92672">=</span> note: define and implement a trait or new type instead
+</span></span></code></pre></div><p>This simplification of the API has its advantages, but also introduces ambiguity in certain places where I still need to construct <code>Some(TypeValue::Int())</code>. Therefore, I need to create a whole new type to wrap it.
+&lt;/rewrite_this&gt;</p>
+<p>Wrapping up - #DecemberAdventure didn&rsquo;t finished how I planned. Instread of diving into Advent of Coding, I went down the parser rabbit hole, but I am glad I did so, as I already had one failed attempt at a parser a while back and it was good to overcome this little trauma :)</p>
+<p>I will continue to work on this, and will post a write up on <code>LULZ</code> but also some insights on parsing in Rust in a very near future, but for now I am starting a new adventure - the <a href="https://mastodon.gamedev.place/tags/BabelOfCode">#BabelOfCode</a>. See you there :)</p>
+<h1 id="day-30">Day 30</h1>
+<p>Now, that I have passed through that bump in parsing, I should probably start implementing execution. The first step is going to be to implement evaluation of expressions. I&rsquo;m making a new trait:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#66d9ef">pub</span> <span style="color:#66d9ef">trait</span> Evaluate {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">evaluate</span>(<span style="color:#f92672">&amp;</span>self, env: <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">mut</span> Environment) -&gt; <span style="color:#a6e22e">EvalResult</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">pub</span> <span style="color:#66d9ef">type</span> <span style="color:#a6e22e">EvalResult</span> <span style="color:#f92672">=</span> Result<span style="color:#f92672">&lt;</span>Value, RuntimeError<span style="color:#f92672">&gt;</span>;
+</span></span></code></pre></div><p>And then just proceed with <code>Expression</code> variants, one-by-one:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#66d9ef">impl</span> Evaluate <span style="color:#66d9ef">for</span> Expression {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">evaluate</span>(<span style="color:#f92672">&amp;</span>self, env: <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">mut</span> Environment) -&gt; <span style="color:#a6e22e">EvalResult</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">match</span> self {
+</span></span><span style="display:flex;"><span>            Expression::Literal(val) <span style="color:#f92672">=&gt;</span> Ok(val.clone()),
+</span></span><span style="display:flex;"><span>            Expression::VarRef(name) <span style="color:#f92672">=&gt;</span> env
+</span></span><span style="display:flex;"><span>                .get_var(name)
+</span></span><span style="display:flex;"><span>                .cloned()
+</span></span><span style="display:flex;"><span>                .ok_or_else(<span style="color:#f92672">||</span> RuntimeError::UndefinedVariable(name.clone())),
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h1 id="day-29">Day 29</h1>
 <p>Another dog-walking breakthrough. It figured I can just pass the array of terminating slices, rather than trying to pass the parsers. Also, after reading through <a href="https://github.com/winnow-rs/winnow/discussions/561">discussions</a> on <code>winnow</code> (and this was probably the first time ever I have read any discussions on github&hellip;), I have found out that idiomatic way to work around <code>repeat_till</code> consuming the terminator is to actually wrap it inside <code>peek</code>. So now the generic <code>Block</code> parsing code looks like this:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#66d9ef">pub</span> <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">repeat_block_till</span><span style="color:#f92672">&lt;</span><span style="color:#66d9ef">const</span> W: <span style="color:#66d9ef">usize</span><span style="color:#f92672">&gt;</span>(
 </span></span><span style="display:flex;"><span>    terminators: [<span style="color:#f92672">&amp;</span><span style="color:#66d9ef">str</span>; W],
