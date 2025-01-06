@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="og:title" content="Babel of Code 2024 | @unjello" />
+    <meta property="twitter:title" content="Babel of Code 2024 | @unjello" />
+    <meta property="og:url" content="http://andrzej.lichnerowicz.pl/en/blog/babel-of-code-2024/" />
+    <meta property="og:type" content="blog" />
+     
+    <meta property="og:image" content="/images/avatar.png" />
+    <meta property="twitter:image" content="/images/avatar.png" />
+     
+    <meta property="og:description" content="Babel of Code" />
+    <meta property="twitter:description" content="Babel of Code" />
+    
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/favicon.ico" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.1.7/purify.min.js"
+      integrity="sha512-BdRNuI8/lsyxkKQVxK1lVtfZshggfXPAwEP+JAOJEKx6Y8SLfcBSRdaWyXQmMxo+wG180uFqXYGjGRL0mh4/Jw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+     
+    <link
+      rel="stylesheet"
+      href="/css/style.min.0bd0e511a5997e0a2fdf3c1656bdb1dd6a82c80ce6f4b9010ed0da819b553c45.css"
+      integrity="sha256-C9DlEaWZfgov3zwWVr2x3WqCyAzm9LkBDtDagZtVPEU="
+      crossorigin="anonymous"
+    />
+     
+    <title>Babel of Code 2024 | Blog @unjello</title>
+  </head>
+  <body>
+    <canvas
+      id="decay-canvas"
+      width="3172"
+      height="440"
+      style="height: 220px; width: 1586px"
+    ></canvas>
+    <div class="layout container-fluid">
+      <header>
+        <h1>
+          <a href="/">Andrzej unjello Lichnerowicz</a>
+        </h1>
+        <ul class="list-inline tagline">
+          
+          <li class="list-inline-item">he</li>
+          
+          <li class="list-inline-item">him</li>
+          
+          <li class="list-inline-item">activist</li>
+          
+          <li class="list-inline-item">trees and greenery lover</li>
+          
+        </ul>
+        <ul class="list-inline socialmedia">
+          
+          <li class="list-inline-item">
+            <a href="https://mastodon.gamedev.place/@unjello">mastodon</a>
+          </li>
+          
+          <li class="list-inline-item">
+            <a href="https://codeberg.org/unjello">codeberg</a>
+          </li>
+          
+          <li class="list-inline-item">
+            <a href="mailto:andrzej@lichnerowicz.pl">email</a>
+          </li>
+          
+          <li class="list-inline-item">
+            <a href="https://andrzej.lichnerowicz.pl/public.pgp">pgp</a>
+          </li>
+          
+        </ul>
+      </header>
+
+      <section class="blog_single">
+        <h1>Babel of Code 2024</h1>
+        <div class="date">2025-01-01T13:59:15&#43;02:00</div>
+        <div class="content">
+          <p>Inspired by <a href="https://mastodon.social/@mcc/113676267668601431">@mcc@mastodon.social</a>, I&rsquo;ve decided to start a list of languages I am planning on exploring/refreshing next year, while catching up on Advent of Code that I sort of abandoned around day 06. And because everything needs to have a label or a hashtag these days, imma name it <code>#BabelOfCode</code> &ndash; I am not going to rush like in Advent of Code, especially it&rsquo;s not a competitive coding scenario. Every week I am going to take a puzzle from 2024 AoC pool, starting from Day 01, and every puzzle I am going to implement in a different langauge, or a flavor of a language, to explore the toolchain, its standard library and its idioms (i.e Pure Scheme vs Racket vs Common Lisp) or a platform (e.g. Intel vs ARM CPU or Linux vs Windows). After a bit of struggling over the past year, I think I have finally settled with Rust as my language of choice. It seems as a sane tradeoff between reason and passion. I always believed tho that one benefits greatly from learning different perspectives, so to broaden mine, I&rsquo;ll do a bit of language tourism :)</p>
+<p>Here&rsquo;s the list of languages I am planning on covering. 25 weeks, 25 languages:</p>
+<ol>
+<li><del>Assembly (MASM, DOS)</del> - <a href="http://andrzej.lichnerowicz.pl/en/blog/microsoft-macro-assembler--w01--babelofcode/">DONE</a></li>
+<li>C (WATCOM, DOS)</li>
+<li>Uxntal</li>
+<li>Prolog</li>
+<li><del>AWK</del> <a href="https://lean-lang.org">Lean</a> - AWK can wait :) See <a href="/en/blog/babel-of-code-2024/#day-27">Day 27</a>.</li>
+<li>Fish</li>
+<li><del>Lua</del> <a href="http://wren.io">wren</a></li>
+<li><a href="https://sr.ht/~icefox/garnet/">Garnet</a></li>
+<li><a href="https://scopes.readthedocs.io/en/latest/">Scopes</a></li>
+<li>OCaml</li>
+<li>Haskell</li>
+<li><a href="https://iolanguage.org">IO</a></li>
+<li>Common Lisp</li>
+<li>PureScript</li>
+<li>Fortran</li>
+<li>Forth</li>
+<li>COBOL</li>
+<li><del>Scala</del> <a href="http://fennel-lang.org">fennel</a> - JVM can wait too. See <a href="/en/blog/babel-of-code-2024/#day-27">Day 27</a>.</li>
+<li>Oberon</li>
+<li><del>Modula-2</del> Occam &ndash; thx <a href="https://merveilles.town/@neauoire/113691577833286571">@neauoire</a> for the tip.</li>
+<li>ADA</li>
+<li>Raku</li>
+<li>Gleam</li>
+<li>Pharo</li>
+<li>J</li>
+</ol>
+ 
+        </div>
+      </section>
+      <script>
+        
+        (function addTitleToCodeBlock() {
+          let list = document.body.getElementsByClassName("highlight");
+
+          for (i = 0; i <= list.length - 1; i++) {
+            let code = list[i].firstElementChild.firstElementChild;
+            let codeName = code ? code.className.split(":")[1] : null;
+
+            if (codeName) {
+              console.log(codeName);
+              let div = document.createElement("div");
+              div.textContent = codeName;
+              div.classList.add("code-name");
+              code.parentNode.insertBefore(div, code);
+            }
+          }
+        })();
+      </script>
+
+      <footer class="fs-6 text-muted mt-5">
+        <p>
+          CC0. Powered by <a href="https://gohugo.io">Hugo</a>. Theme inspired
+          by <a href="https://www.mattdesl.com/">@mattdesl</a> and
+          <a href="https://ozafoto.com/digital/">Oza</a>.
+        </p>
+      </footer>
+    </div>
+  </body>
+  <script type="text/javascript">
+    
+
+    function decay() {
+      const canvas = document.getElementById("decay-canvas");
+      const pixelSize = window.innerWidth > 1600 ? 8 : 6;
+
+      canvas.width = window.innerWidth * 2;
+      canvas.height = 440;
+      canvas.style.height = canvas.height / 2 + "px";
+      canvas.style.width = canvas.width / 2 + "px";
+      const ctx = canvas.getContext("2d");
+      ctx.fillStyle = "#fff";
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      for (let j = 0; j < canvas.height; j += pixelSize) {
+        const probability = Math.pow(
+          (canvas.height - 1 - j) / (canvas.height - 1),
+          3,
+        );
+        for (let i = 0; i < canvas.width; i += pixelSize) {
+          if (Math.random() < probability) {
+            ctx.fillRect(i, j, pixelSize, pixelSize);
+          }
+        }
+      }
+    }
+
+    window.isReducedMotion = () =>
+      window.matchMedia(`(prefers-reduced-motion: reduce)`) === true ||
+      window.matchMedia(`(prefers-reduced-motion: reduce)`).matches === true;
+
+    window.onload = () => {
+      if (!isReducedMotion()) {
+        decay();
+      }
+
+      document.addEventListener("resize", () => {
+        if (!isReducedMotion()) {
+          decay();
+        }
+      });
+
+      document.addEventListener("scroll", () => {
+        if (!isReducedMotion()) {
+          decay();
+        }
+      });
+    };
+  </script>
+</html>
