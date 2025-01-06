@@ -1,0 +1,609 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="og:title" content="Microsoft Macro Assembler -- w01 -- BabelOfCode | @unjello" />
+    <meta property="twitter:title" content="Microsoft Macro Assembler -- w01 -- BabelOfCode | @unjello" />
+    <meta property="og:url" content="http://andrzej.lichnerowicz.pl/en/blog/microsoft-macro-assembler--w01--babelofcode/" />
+    <meta property="og:type" content="blog" />
+     
+    <meta property="og:image" content="http://andrzej.lichnerowicz.pl/en/blog/microsoft-macro-assembler--w01--babelofcode/dosbox-debugger.png" />
+    <meta property="twitter:image" content="http://andrzej.lichnerowicz.pl/en/blog/microsoft-macro-assembler--w01--babelofcode/dosbox-debugger.png" />
+     
+    <meta property="og:description" content="Let&#39;s implement 2024/day/1 Advent of Code puzzle in Microsoft Macro Assembler. BabelOfCode is low key. The goal is to solve each Advent of Code puzzle in a different language." />
+    <meta property="twitter:description" content="Let&#39;s implement 2024/day/1 Advent of Code puzzle in Microsoft Macro Assembler. BabelOfCode is low key. The goal is to solve each Advent of Code puzzle in a different language." />
+    
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/favicon.ico" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.1.7/purify.min.js"
+      integrity="sha512-BdRNuI8/lsyxkKQVxK1lVtfZshggfXPAwEP+JAOJEKx6Y8SLfcBSRdaWyXQmMxo+wG180uFqXYGjGRL0mh4/Jw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+     
+    <link
+      rel="stylesheet"
+      href="/css/style.min.0bd0e511a5997e0a2fdf3c1656bdb1dd6a82c80ce6f4b9010ed0da819b553c45.css"
+      integrity="sha256-C9DlEaWZfgov3zwWVr2x3WqCyAzm9LkBDtDagZtVPEU="
+      crossorigin="anonymous"
+    />
+     
+    <title>Microsoft Macro Assembler -- w01 -- BabelOfCode | Blog @unjello</title>
+  </head>
+  <body>
+    <canvas
+      id="decay-canvas"
+      width="3172"
+      height="440"
+      style="height: 220px; width: 1586px"
+    ></canvas>
+    <div class="layout container-fluid">
+      <header>
+        <h1>
+          <a href="/">Andrzej unjello Lichnerowicz</a>
+        </h1>
+        <ul class="list-inline tagline">
+          
+          <li class="list-inline-item">he</li>
+          
+          <li class="list-inline-item">him</li>
+          
+          <li class="list-inline-item">activist</li>
+          
+          <li class="list-inline-item">trees and greenery lover</li>
+          
+        </ul>
+        <ul class="list-inline socialmedia">
+          
+          <li class="list-inline-item">
+            <a href="https://mastodon.gamedev.place/@unjello">mastodon</a>
+          </li>
+          
+          <li class="list-inline-item">
+            <a href="https://codeberg.org/unjello">codeberg</a>
+          </li>
+          
+          <li class="list-inline-item">
+            <a href="mailto:andrzej@lichnerowicz.pl">email</a>
+          </li>
+          
+          <li class="list-inline-item">
+            <a href="https://andrzej.lichnerowicz.pl/public.pgp">pgp</a>
+          </li>
+          
+        </ul>
+      </header>
+
+      <section class="blog_single">
+        <h1>Microsoft Macro Assembler -- w01 -- BabelOfCode</h1>
+        <div class="date">2025-01-03T13:59:15&#43;02:00</div>
+        <div class="content">
+          <h1 id="prerequsites">Prerequsites</h1>
+<ol>
+<li><a href="https://winworldpc.com/product/macro-assembler/6x">Microsoft Macro Assembler 6.11</a></li>
+<li><a href="https://dosbox-x.com">DosBox-X</a></li>
+<li><a href="http://www.bitsavers.org/pdf/microsoft/masm/Microsoft_MASM_5.1_1987/410610014-500-R00-0787_MASM_5.1_Programmers_Guide_198707.pdf">Microsoft Macro Assembler 5.1 Programmer&rsquo;s Guide</a></li>
+<li><a href="https://archive.org/details/bitsavers_microsoftm1991MicrosoftMacroAssembler6.0Programmer_32964948">Microsoft Macro Assembler 6.0 Programmer&rsquo;s Guide</a></li>
+<li><a href="https://archive.org/details/isbn_9781556153297">Microsoft MS-DOS Programmer&rsquo;s Reference 5.0</a></li>
+<li><a href="https://archive.org/details/microsoft-ms-dos-3.2-programmers-reference-1986">Microsoft MS-DOS 3.2 Programmer&rsquo;s Reference</a></li>
+<li><a href="https://archive.org/details/ms-dos-2.00-programmers-manuals">MS-DOS 2.00 Programmer&rsquo;s Manual</a></li>
+</ol>
+<h1 id="installation">Installation</h1>
+<p>MASM comes on 5 disks. Install it somewhere and add it to your PATH.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fish" data-lang="fish"><span style="display:flex;"><span>❯ set MASM_INSTALL_PATH <span style="color:#e6db74">&#39;$HOME/&lt;path_to_ml.exe&gt;&#39;</span>
+</span></span><span style="display:flex;"><span>❯ dosbox-x <span style="color:#a6e22e">-c</span> <span style="color:#e6db74">&#34;MOUNT C: &#34;</span><span style="color:#f92672">(</span><span style="color:#a6e22e">pwd</span><span style="color:#f92672">)</span> <span style="color:#a6e22e">-c</span> <span style="color:#e6db74">&#34;MOUNT D &#34;</span>$MASM_INSTALL_PATH <span style="color:#a6e22e">-c</span> <span style="color:#e6db74">&#34;SET PATH=%PATH%;D:\\&#34;</span>
+</span></span></code></pre></div><p>Check if that works. Once I have a simple &ldquo;Hello World,&rdquo; I’ll create a <code>Makefile</code>. For now, let’s just try to get something running.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-nasm" data-lang="nasm"><span style="display:flex;"><span><span style="color:#a6e22e">.386</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">.model</span> small
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">.stack</span> <span style="color:#ae81ff">100h</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">.data</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">msg</span> db <span style="color:#e6db74">&#34;Hello World!&#34;</span>, <span style="color:#ae81ff">13</span>, <span style="color:#ae81ff">10</span>, <span style="color:#e6db74">&#39;$&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">.code</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">.startup</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">mov</span> ax, <span style="color:#960050;background-color:#1e0010">@</span>data
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">mov</span> ds, ax
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">mov</span> ah, <span style="color:#ae81ff">9</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">mov</span> dx, offset msg
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">int</span> <span style="color:#ae81ff">21h</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">mov</span> ah, <span style="color:#ae81ff">4Ch</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">mov</span> al, <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">int</span> <span style="color:#ae81ff">21h</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">.exit</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">end</span>
+</span></span></code></pre></div><p>let&rsquo;s run it:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>C:\ML<span style="color:#75715e"> DAY01.ASM</span>
+</span></span><span style="display:flex;"><span>Microsoft (R) Macro Assembler Version 6.11
+</span></span><span style="display:flex;"><span>Copyright (C) Microsoft Corp 1981-1993. All rights reserved.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Assembling: DAY01.ASM
+</span></span><span style="display:flex;"><span>DAY01.ASM(9): error A2199: .STARTUP does not work with 32-bit segments
+</span></span><span style="display:flex;"><span>DAY01.ASM(21): error A2198: .EXIT does not work with 32-bit segments
+</span></span><span style="display:flex;"><span>DAY01.ASM(14): error A2022: instruction operands must be the same size
+</span></span></code></pre></div><p>Oops. What’s going on here? It took me a while and one question (not even an answer) on <a href="https://stackoverflow.com/questions/47941699/using-32-bit-registers-in-masm-without-changing-the-default-segment-definition-s">Stack Overflow</a> to figure out the order of compiler directives really matters. Amusingly, this detail is only spelled out in the MASM 5.1 manual and seems to have vanished from the MASM 6.0 docs…</p>
+
+
+<div class="figure-wrapper">
+<div class="figure">
+  <figure>
+  <img src="masm-5-1-manual.png" alt="A page from Microsoft Macro Assembler Programmer&#39;s Guide manual. Highlighted text says: If you use the .386 directive before the .MODEL directive, the setgment definitions defines 32-bit segments. If you want to enable the 80386 processor with 16-bit segments, you should give the .386 directive after the .MODEL directive."/>
+  </figure>
+  <div class="caption">
+    <p>Microsoft Macro Assembler 5.1 Programmer&#39;s Guide</p>
+    <p class="photo-attribution">Documents archived by <a href="https://bitsavers.org">BitSavers.org</a></p>
+  </div>
+</div></div>
+
+
+<p>With that small change, everything’s back to how it should be. Next up: debugging. DosBox-X ships with a pretty nice debugger, but you need to build it yourself. The version you get from Homebrew doesn’t have debugging enabled. Fortunately, you can compile it by hand:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fish" data-lang="fish"><span style="display:flex;"><span><span style="color:#a6e22e">dosbox-x</span> on  master 
+</span></span><span style="display:flex;"><span>❯ ./build-debug-macos-sdl2
+</span></span></code></pre></div><h1 id="the-plumbing">The Plumbing</h1>
+<p>Before we jump into the puzzle, let’s see how to get command-line arguments. This is probably the <a href="https://andrzej.lichnerowicz.pl/en/blog/polish-flag-size-coding-compo/">second time</a> I’ve had to dig into the <a href="https://en.wikipedia.org/wiki/Program_Segment_Prefix">PSP</a> recently, and it turns out that if you want argv in DOS, you need to read the size at <code>80h</code> and then the string between <code>81h</code> and <code>81h + *(80h)</code>. It’s capped at 127 bytes.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>C:<span style="color:#75715e">&gt;DEBUGBOX DAY01.EXE EXAMPLE.TXT</span>
+</span></span></code></pre></div><p><code>DEBUGBOX</code> is an internal command that loads a program with parameters and sets a breakpoint at the first instruction. It looks like this:</p>
+
+
+<div class="figure-wrapper">
+<div class="figure">
+  <figure>
+  <img src="dosbox-debugger.png" alt="Screenshot of DosBox-X debugger. There are 4 windows: Register Overview, Data view, Code Overview and Output. Data View has two rectangles highlighting portions of memory dump. Red rectange highlights memory at 0814:080 that points to command-tail, and orange rectangle highlights memory at 0814:5C where File Control Block is."/>
+  </figure>
+  <div class="caption">
+    <p>Program Segment Prefix memory view under DosBox-X debugger</p>
+    <p class="photo-attribution">Screenshot by author.</p>
+  </div>
+</div></div>
+
+
+<p>When I look at the <em>Program Segment Prefix</em> under <em>Data View</em>, I can see the string <code>EXAMPLE.TXT</code> at offset <code>80h</code> in the command-line tail section, but I also see it at offset <code>5Ch</code>. That was unexpected. Turns out those are two File Control Block (<a href="https://en.wikipedia.org/wiki/File_Control_Block">FCB</a>) entries in the PSP. FCBs predate file handles and come from CP/M. DOS kept them for backward compatibility, but they aren’t typically relevant for modern usage. Wikipedia states:</p>
+<blockquote>
+<p>The FCB originates from CP/M and is also present in most variants of DOS, though only as a backward compatibility measure in MS-DOS versions 2.0 and later.</p>
+</blockquote>
+<p>This is spot on. MS-DOS 5.0 still [documents]](<a href="https://archive.org/details/isbn_9781556153297">https://archive.org/details/isbn_9781556153297</a>) the old FCB functions &ndash; albeit briefly &ndash; and doesn’t explain what <code>unopened</code> means in any great detail. For that, you have to check older manuals like the <a href="https://archive.org/details/microsoft-ms-dos-3.2-programmers-reference-1986">Microsoft MS-DOS 3.2 Programmer&rsquo;s Reference</a>:</p>
+
+
+<div class="figure-wrapper">
+<div class="figure">
+  <figure>
+  <img src="fcb.png" alt="Screenshot of MS-DOS 3.2 Manual. Highlighted text says: An unopened FCB contains only a drive specifier and filename. An opened FCB contains all fields filled by Function OFh (Open File)."/>
+  </figure>
+  <div class="caption">
+    <p>Microsoft Macro Assembler 3.2 Programmer&#39;s Guide</p>
+    <p class="photo-attribution">Documents archived by <a href="https://archive.org">Internet Archive</a></p>
+  </div>
+</div></div>
+
+
+<p>MS-DOS populates these blocks with the first two parameters passed on the command line. If a parameter included a path, DOS would store only the drive letter (with no filename). For instance:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>C:\<span style="color:#75715e">&gt;DAY01.EXE C:</span>
+</span></span></code></pre></div><p>The <em>Data View</em> might look like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>0814:00000050 CD 21 CB 00 00 00 00 00 00 00 00 00 03 20 20 20  .!...........
+</span></span><span style="display:flex;"><span>0814:00000060 20 20 20 20 20 20 20 20 00 00 00 00 00 20 20 20          .....
+</span></span></code></pre></div><p>If I do:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>C:\<span style="color:#75715e">&gt;DAY01.EXE DOESNTEX.IST</span>
+</span></span></code></pre></div><p>Then <em>Data View</em> looks like:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>0814:00000050 CD 21 CB 00 00 00 00 00 00 00 00 00 00 44 4F 45  .!...........DOE
+</span></span><span style="display:flex;"><span>0814:00000060 53 4E 54 45 58 49 53 54 00 00 00 00 00 20 20 20  SNTEXIST.....   
+</span></span></code></pre></div><p>Notice how DOS doesn’t validate whether the argument is a filename. It just takes the first one and populates the FCB. It also doesn’t preserve a dot (.), so <code>DOESNTEX.IST</code> becomes <code>DOESNTEXIST</code> internally (FAT-style). That’s a conversation for another day.</p>
+
+<div class="admonition note">
+    <p class="title"></p>
+    <p class="content">What’s also interesting is that the MS-DOS 3.2 manual still refers to the FCB as something used by <em>old system calls</em>. Wikipedia notes that FCBs were introduced in MS-DOS 1.0, and by version 2.0 they were only kept for compatibility. I can’t fully verify this, but from what I’ve seen, the 3.2 manual labels them as “old,” while the <a href="https://archive.org/details/ms-dos-2.00-programmers-manuals">MS-DOS 2.00 Programmer&rsquo;s Manual</a> doesn’t. And without digging into the actual <a href="https://github.com/microsoft/MS-DOS/tree/main/v2.0">source code</a>, it’s hard to say for sure. What we do know is that DOS 3.0 underwent a <a href="https://www.os2museum.com/wp/dos/dos-3-0-3-2/">a major kernel re-write</a>, at which point <code>int 21h</code> and file-handle-based I/O became the primary focus.</p>
+</div>
+
+<p>Anyway, for our purpose, the single byte at <code>80h</code> is the length of the command-line arguments. The actual string starts at <code>81h</code>, including the trailing whitespace.</p>
+
+
+<div class="figure-wrapper">
+<div class="figure">
+  <figure>
+  <img src="cli.png" alt="Screenshot of MS-DOS 3.2 Manual. Highlighted text says: An unformatted parameter area at 81H contains all the characters typed after the command (including leading and embedded delimiters), with the byte at 80H set to the number of characters. If you type &lt;, &gt;, or parameters on the command line, they do not appear in this area (nor the filenames associated with them). Redirection of standard input and output is transparent to applications."/>
+  </figure>
+  <div class="caption">
+    <p>Microsoft Macro Assembler 3.2 Programmer&#39;s Guide</p>
+    <p class="photo-attribution">Documents archived by <a href="https://archive.org">Internet Archive</a></p>
+  </div>
+</div></div>
+
+
+<p>Let’s update our program to retrieve the filename from the PSP. First, we declare a buffer:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-asm" data-lang="asm"><span style="display:flex;"><span>    <span style="color:#a6e22e">FileNameBuffer</span>       <span style="color:#66d9ef">db</span>  <span style="color:#ae81ff">128</span> <span style="color:#66d9ef">dup</span> (<span style="color:#ae81ff">0</span>)
+</span></span></code></pre></div><p>Then we ask DOS for the PSP segment, just to be sure:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-asm" data-lang="asm"><span style="display:flex;"><span>    <span style="color:#a6e22e">mov</span> <span style="color:#66d9ef">ah</span>, <span style="color:#ae81ff">51</span><span style="color:#66d9ef">h</span>            <span style="color:#75715e">; Get PSP segment
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">int</span> <span style="color:#ae81ff">21</span><span style="color:#66d9ef">h</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">mov</span> <span style="color:#66d9ef">es</span>, <span style="color:#66d9ef">bx</span>             <span style="color:#75715e">; ES now points to PSP
+</span></span></span></code></pre></div><p>Check if there’s a parameter string:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-asm" data-lang="asm"><span style="display:flex;"><span>    <span style="color:#a6e22e">mov</span> <span style="color:#66d9ef">si</span>, <span style="color:#ae81ff">80</span><span style="color:#66d9ef">h</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">xor</span> <span style="color:#66d9ef">ax</span>, <span style="color:#66d9ef">ax</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">mov</span> <span style="color:#66d9ef">al</span>, <span style="color:#66d9ef">es</span>:[<span style="color:#66d9ef">si</span>]         <span style="color:#75715e">; AL = length of parameter string
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">cmp</span> <span style="color:#66d9ef">al</span>, <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">jz</span>  <span style="color:#66d9ef">exit</span>                <span style="color:#75715e">; If zero, no arguments =&gt; print usage
+</span></span></span></code></pre></div><p>If not zero, we copy it out of the PSP into our own buffer. Sure, we could use <code>MOVSB</code>, but that would mean juggling segment registers for <code>.DATA</code> vs. PSP. Instead, I just wrote a small copy loop:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-asm" data-lang="asm"><span style="display:flex;"><span>    <span style="color:#a6e22e">add</span> <span style="color:#66d9ef">si</span>, <span style="color:#ae81ff">2</span>               <span style="color:#75715e">; first character in the command-line tail is a space!
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">mov</span> <span style="color:#66d9ef">cx</span>, <span style="color:#66d9ef">ax</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">mov</span> <span style="color:#66d9ef">di</span>, <span style="color:#66d9ef">offset</span> <span style="color:#66d9ef">FileNameBuffer</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">cld</span>
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>copy_loop:
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">mov</span> <span style="color:#66d9ef">al</span>, <span style="color:#66d9ef">es</span>:[<span style="color:#66d9ef">si</span>]
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">mov</span> <span style="color:#66d9ef">ds</span>:[<span style="color:#66d9ef">di</span>], <span style="color:#66d9ef">al</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">inc</span> <span style="color:#66d9ef">si</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">inc</span> <span style="color:#66d9ef">di</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">loop</span> <span style="color:#66d9ef">copy_loop</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">mov</span> <span style="color:#66d9ef">al</span>, <span style="color:#960050;background-color:#1e0010">&#39;</span><span style="color:#66d9ef">$</span><span style="color:#960050;background-color:#1e0010">&#39;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">mov</span> <span style="color:#66d9ef">ds</span>:[<span style="color:#66d9ef">di</span>], <span style="color:#66d9ef">al</span>         <span style="color:#75715e">; 21.9 prints `$` terminated strings, not null.
+</span></span></span></code></pre></div><p>All that remains is a proper Makefile. It’s tricky to capture DosBox-X output directly, but DOS redirection doesn’t get passed to the PSP, so we can safely use it. Then we can just cat the output file in our <code>Makefile</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-makefile" data-lang="makefile"><span style="display:flex;"><span>MASM_INSTALL_PATH <span style="color:#f92672">?=</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>HOME<span style="color:#e6db74">}</span><span style="color:#e6db74">/.dos/MASM611&#34;</span>
+</span></span><span style="display:flex;"><span>MASM_MOUNT <span style="color:#f92672">?=</span> <span style="color:#e6db74">&#34;D&#34;</span>
+</span></span><span style="display:flex;"><span>DOSBOX_CMD <span style="color:#f92672">?=</span> <span style="color:#e6db74">&#34;dosbox-x&#34;</span>
+</span></span><span style="display:flex;"><span>ROOT_DIR<span style="color:#f92672">:=</span><span style="color:#66d9ef">$(</span>shell dirname <span style="color:#66d9ef">$(</span>realpath <span style="color:#66d9ef">$(</span>firstword <span style="color:#66d9ef">$(</span>MAKEFILE_LIST<span style="color:#66d9ef">))))</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>ASM_SRC <span style="color:#f92672">=</span> day01.asm
+</span></span><span style="display:flex;"><span>EXE <span style="color:#f92672">=</span> <span style="color:#66d9ef">$(</span>basename <span style="color:#66d9ef">$(</span>ASM_SRC<span style="color:#66d9ef">))</span>.exe
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">all</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">$(</span>EXE<span style="color:#66d9ef">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">$(EXE)</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">$(</span>ASM_SRC<span style="color:#66d9ef">)</span>
+</span></span><span style="display:flex;"><span>	@<span style="color:#66d9ef">$(</span>DOSBOX_CMD<span style="color:#66d9ef">)</span> -silent -nolog -nogui <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>        -c <span style="color:#e6db74">&#34;MOUNT C </span><span style="color:#66d9ef">$(</span>ROOT_DIR<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>        -c <span style="color:#e6db74">&#34;MOUNT </span><span style="color:#66d9ef">$(</span>MASM_MOUNT<span style="color:#66d9ef">)</span><span style="color:#e6db74"> </span><span style="color:#66d9ef">$(</span>MASM_INSTALL_PATH<span style="color:#66d9ef">)</span><span style="color:#e6db74">/BIN&#34;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>        -c <span style="color:#e6db74">&#34;SET PATH=%PATH;</span><span style="color:#66d9ef">$(</span>MASM_MOUNT<span style="color:#66d9ef">)</span><span style="color:#e6db74">:\\&#34;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>        -c <span style="color:#e6db74">&#34;C:&#34;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>        -c <span style="color:#e6db74">&#34;ML /Zd /Zi </span><span style="color:#66d9ef">$(</span>notdir $&lt;<span style="color:#66d9ef">)</span><span style="color:#e6db74"> &gt; ML.TXT&#34;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>        -c <span style="color:#e6db74">&#34;exit&#34;</span>
+</span></span><span style="display:flex;"><span>	@cat ML.TXT
+</span></span><span style="display:flex;"><span>	@rm -f ML.TXT
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">.PHONY</span><span style="color:#f92672">:</span> run
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">run</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">$(</span>EXE<span style="color:#66d9ef">)</span>
+</span></span><span style="display:flex;"><span>	@<span style="color:#66d9ef">$(</span>DOSBOX_CMD<span style="color:#66d9ef">)</span> -silent -nolog -nogui <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    	-c <span style="color:#e6db74">&#34;MOUNT C </span><span style="color:#66d9ef">$(</span>ROOT_DIR<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    	-c <span style="color:#e6db74">&#34;C:&#34;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    	-c <span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>EXE<span style="color:#66d9ef">)</span><span style="color:#e6db74"> &gt; RUN.TXT&#34;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    	-c <span style="color:#e6db74">&#34;exit&#34;</span>
+</span></span><span style="display:flex;"><span>	@cat RUN.TXT
+</span></span><span style="display:flex;"><span>	@rm -f RUN.TXT
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">.PHONY</span><span style="color:#f92672">:</span> clean
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">clean</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>	@rm <span style="color:#66d9ef">$(</span>EXE<span style="color:#66d9ef">)</span>
+</span></span></code></pre></div><h1 id="the-puzzle">The Puzzle</h1>
+<p>Now let’s tackle the <a href="https://adventofcode.com/2024/day/1">puzzle</a>.</p>
+<p>I decided to write a simple <a href="https://en.wikipedia.org/wiki/Bubble_sort">Bubble Sort</a> function for sorting a list of 32-bit integers. I toyed with the idea of doing <a href="https://en.wikipedia.org/wiki/Quicksort">Quick Sort</a>, but with only 1000 integers, Bubble Sort is good enough and way more compact.</p>
+<p>I used a custom calling convention that relies on registers only. Typically, x86 calling conventions use <code>EAX</code>, <code>ECX</code>, and <code>EDX</code> (and sometimes <code>EBX</code>), but I chose <code>SI</code>, <code>DI</code>, and so on to minimize trouble and for semantic clarity:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-asm" data-lang="asm"><span style="display:flex;"><span><span style="color:#75715e">;--------------------------------------------------------------------
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">; Sub-procedure to sort array of 32 bit integers
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">; In:
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">;   CX - element count
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">;   SI - offset to array
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">; Destroys:
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">;   CX, DX, SI, DI
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">;--------------------------------------------------------------------
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">BubbleSort32</span> <span style="color:#66d9ef">PROC</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">; if array has &lt; 2 elements, no sort needed
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">cmp</span> <span style="color:#66d9ef">cx</span>, <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">jb</span> <span style="color:#66d9ef">bs16_exit</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">; Set DI to the start of the array, for the inner loops
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">mov</span> <span style="color:#66d9ef">di</span>, <span style="color:#66d9ef">si</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">dec</span> <span style="color:#66d9ef">cx</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>bs16_outter_loop:
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">cmp</span> <span style="color:#66d9ef">cx</span>, <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">je</span> <span style="color:#66d9ef">bs16_exit</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">mov</span> <span style="color:#66d9ef">bx</span>, <span style="color:#66d9ef">cx</span>                      <span style="color:#75715e">; set counter for the inner loop
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">mov</span> <span style="color:#66d9ef">si</span>, <span style="color:#66d9ef">di</span>                      <span style="color:#75715e">; set pointer for the inner loop
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>    bs16_inner_loop:
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">mov</span>  <span style="color:#66d9ef">edx</span>, [<span style="color:#66d9ef">si</span>]              <span style="color:#75715e">; get array[i]
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#a6e22e">cmp</span>  <span style="color:#66d9ef">edx</span>, [<span style="color:#66d9ef">si</span> <span style="color:#960050;background-color:#1e0010">+</span> <span style="color:#ae81ff">4</span>]          <span style="color:#75715e">; compare dx(array[i]) and array[i+1]
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#a6e22e">jbe</span>  <span style="color:#66d9ef">bs16_no_swap</span>           <span style="color:#75715e">; if array[i] &lt;= array[i+1] -&gt; no swap needed
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">xchg</span> <span style="color:#66d9ef">edx</span>, [<span style="color:#66d9ef">si</span> <span style="color:#960050;background-color:#1e0010">+</span> <span style="color:#ae81ff">4</span>]          <span style="color:#75715e">; array[i+1] is set to array[i], while dx holds old array[i+1] value
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#a6e22e">mov</span> [<span style="color:#66d9ef">si</span>], <span style="color:#66d9ef">edx</span>               <span style="color:#75715e">; array[i] = old array[i+1]
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>    bs16_no_swap:
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">add</span> <span style="color:#66d9ef">si</span>, <span style="color:#ae81ff">4</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">dec</span> <span style="color:#66d9ef">bx</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">jnz</span> <span style="color:#66d9ef">bs16_inner_loop</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">dec</span> <span style="color:#66d9ef">cx</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">jmp</span> <span style="color:#66d9ef">bs16_outter_loop</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>bs16_exit:
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">ret</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">BubbleSort32</span> <span style="color:#66d9ef">ENDP</span>
+</span></span></code></pre></div><p>Then I wrote another function to compute the sum of differences between two arrays. I used the <a href="https://en.wikipedia.org/wiki/X86_calling_conventions#stdcall">stdcall</a> calling convention, that I remembered from the WATCOM C++ times, which means parameters go on the stack and the callee cleans them up:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-asm" data-lang="asm"><span style="display:flex;"><span><span style="color:#a6e22e">push</span> <span style="color:#66d9ef">offset</span> <span style="color:#66d9ef">RightArray</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">push</span> <span style="color:#66d9ef">offset</span> <span style="color:#66d9ef">LeftArray</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">push</span> [<span style="color:#66d9ef">LineCount</span>]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">call</span> <span style="color:#66d9ef">FindSumOfDifferences</span>
+</span></span></code></pre></div><p>Under DosBox-X, if you press <code>^ S</code> or <code>Alt-S</code>, you can see the stack in <em>Data View</em>:</p>
+
+
+<div class="figure-wrapper">
+<div class="figure">
+  <figure>
+  <img src="dosbox-stdcall.png" alt="Screenshot of DosBox-X debugger. There are 4 windows: Register Overview, Data view, Code Overview and Output. Code Overview has a piece of code highlighted. The code does push 4C50; push 3B20; push word [3B1E]; call 000001D0; The data view has a rectangle highlighting corresponding stack area and shows how parameters and return address for the function look on the stack."/>
+  </figure>
+  <div class="caption">
+    <p>Stack memory view after function call under DosBox-X debugger</p>
+    <p class="photo-attribution">Screenshot by author.</p>
+  </div>
+</div></div>
+
+
+<p>Stack is at <code>SS:SP</code> which is <code>104E:F8</code>, the first value there is <code>242h</code>, <code>call</code> instruction automatically saves <code>IP</code> of the next instruction, so the address to return to. Next are our parameters - <code>LinesCount: 03E8h</code>, <code>LeftArray: 3B20</code> and <code>RightArray: 4C50</code>.</p>
+<p>Here&rsquo;s the final code:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-asm" data-lang="asm"><span style="display:flex;"><span><span style="color:#a6e22e">FindSumOfDifferences</span> <span style="color:#66d9ef">PROC</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">push</span> <span style="color:#66d9ef">bp</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">push</span> <span style="color:#66d9ef">si</span>             <span style="color:#75715e">; only eax, ecx and edx are for use
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">push</span> <span style="color:#66d9ef">di</span>             <span style="color:#75715e">; only eax, ecx and edx are for use
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">mov</span>  <span style="color:#66d9ef">bp</span>, <span style="color:#66d9ef">sp</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">mov</span> <span style="color:#66d9ef">cx</span>, [<span style="color:#66d9ef">bp</span> <span style="color:#960050;background-color:#1e0010">+</span> <span style="color:#ae81ff">8</span>]    <span style="color:#75715e">; Lines Count. +4 because we also pushed BP on
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>                        <span style="color:#75715e">; the stack, so the stack looks like this:
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>                        <span style="color:#75715e">; BP+0 OLD BP
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>                        <span style="color:#75715e">; BP+2 OLD SI
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>                        <span style="color:#75715e">; BP+4 OLD DI
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>                        <span style="color:#75715e">; BP+6 RET ADDRESS
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>                        <span style="color:#75715e">; BP+8 LinesCount
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>                        <span style="color:#75715e">; ...
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">mov</span> <span style="color:#66d9ef">si</span>, [<span style="color:#66d9ef">bp</span> <span style="color:#960050;background-color:#1e0010">+</span> <span style="color:#ae81ff">10</span>]
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">mov</span> <span style="color:#66d9ef">di</span>, [<span style="color:#66d9ef">bp</span> <span style="color:#960050;background-color:#1e0010">+</span> <span style="color:#ae81ff">12</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">xor</span> <span style="color:#66d9ef">eax</span>, <span style="color:#66d9ef">eax</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">xor</span> <span style="color:#66d9ef">edx</span>, <span style="color:#66d9ef">edx</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>fsod_loop:
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">mov</span> <span style="color:#66d9ef">edx</span>, [<span style="color:#66d9ef">si</span>]
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">cmp</span> <span style="color:#66d9ef">edx</span>, [<span style="color:#66d9ef">di</span>]
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">jbe</span> <span style="color:#66d9ef">fsod_smaller</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">sub</span> <span style="color:#66d9ef">edx</span>, [<span style="color:#66d9ef">di</span>]
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">jmp</span> <span style="color:#66d9ef">fsod_advance</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>fsod_smaller:
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">mov</span> <span style="color:#66d9ef">edx</span>, [<span style="color:#66d9ef">di</span>]
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">sub</span> <span style="color:#66d9ef">edx</span>, [<span style="color:#66d9ef">si</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>fsod_advance:
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">add</span> <span style="color:#66d9ef">si</span>, <span style="color:#ae81ff">4</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">add</span> <span style="color:#66d9ef">di</span>, <span style="color:#ae81ff">4</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">add</span> <span style="color:#66d9ef">eax</span>, <span style="color:#66d9ef">edx</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">loop</span> <span style="color:#66d9ef">fsod_loop</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">pop</span> <span style="color:#66d9ef">di</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">pop</span> <span style="color:#66d9ef">si</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">pop</span> <span style="color:#66d9ef">bp</span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">ret</span> <span style="color:#ae81ff">8</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">FindSumOfDifferences</span> <span style="color:#66d9ef">ENDP</span>
+</span></span></code></pre></div><p>WATCOM C++ had (in a roundabout way) a <a href="https://en.wikipedia.org/wiki/X86_calling_conventions#Watcom_register">register calling convetion</a>, so I took a stab at something similar for the next function. It’s not terribly complicated, just requires a bit of planning with registers:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-asm" data-lang="asm"><span style="display:flex;"><span><span style="color:#a6e22e">FindOccurencesCount</span> <span style="color:#66d9ef">PROC</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">push</span> <span style="color:#66d9ef">si</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">push</span> <span style="color:#66d9ef">di</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">mov</span> <span style="color:#66d9ef">si</span>, <span style="color:#66d9ef">dx</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">mov</span> <span style="color:#66d9ef">di</span>, <span style="color:#66d9ef">bx</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">mov</span> <span style="color:#66d9ef">ecx</span>, <span style="color:#66d9ef">eax</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">xor</span> <span style="color:#66d9ef">edx</span>, <span style="color:#66d9ef">edx</span>
+</span></span><span style="display:flex;"><span>foc_left_loop:
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">push</span> <span style="color:#66d9ef">ecx</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">mov</span> <span style="color:#66d9ef">ebx</span>, <span style="color:#66d9ef">eax</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">mov</span> <span style="color:#66d9ef">ecx</span>, [<span style="color:#66d9ef">si</span>]
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">push</span> <span style="color:#66d9ef">edi</span>
+</span></span><span style="display:flex;"><span>    foc_right_loop:
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">push</span> <span style="color:#66d9ef">ebx</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">cmp</span> <span style="color:#66d9ef">ecx</span>, [<span style="color:#66d9ef">di</span>]
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">jne</span> <span style="color:#66d9ef">foc_right_advance</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">add</span> <span style="color:#66d9ef">edx</span>, <span style="color:#66d9ef">ecx</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    foc_right_advance:
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">mov</span> <span style="color:#66d9ef">bx</span>, <span style="color:#66d9ef">di</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">add</span> <span style="color:#66d9ef">bx</span>, <span style="color:#ae81ff">4</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">mov</span> <span style="color:#66d9ef">di</span>, <span style="color:#66d9ef">bx</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">pop</span> <span style="color:#66d9ef">ebx</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">dec</span> <span style="color:#66d9ef">ebx</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">jnz</span> <span style="color:#66d9ef">foc_right_loop</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">pop</span> <span style="color:#66d9ef">edi</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">mov</span> <span style="color:#66d9ef">cx</span>, <span style="color:#66d9ef">si</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">add</span> <span style="color:#66d9ef">cx</span>, <span style="color:#ae81ff">4</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">mov</span> <span style="color:#66d9ef">si</span>, <span style="color:#66d9ef">cx</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">pop</span> <span style="color:#66d9ef">ecx</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">loop</span> <span style="color:#66d9ef">foc_left_loop</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">mov</span> <span style="color:#66d9ef">eax</span>, <span style="color:#66d9ef">edx</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">pop</span> <span style="color:#66d9ef">di</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">pop</span> <span style="color:#66d9ef">si</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">ret</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">FindOccurencesCount</span> <span style="color:#66d9ef">ENDP</span>
+</span></span></code></pre></div><p>And there you have it. The complete solution is on <a href="https://codeberg.org/unjello/babel-of-code/src/branch/main/2025/01">Codeberg</a>. Enjoy!</p>
+ 
+          <div class="comments">
+            <h2>Comments</h2>
+            <p>
+              Discussion powered by <i class="fa-brands fa-mastodon"></i>,
+              <a href="https://mastodon.gamedev.place/@unjello/113580023530866158"
+                >hop in.</a
+              >
+              if you want.
+            </p>
+            <div id="comments"></div>
+          </div>
+          <script>
+            (async function () {
+              const commentsDiv = document.getElementById("comments");
+              const statusId = "113580023530866158";
+              const mastodonInstance = "mastodon.gamedev.place";
+              const contextUrl = `https://${mastodonInstance}/api/v1/statuses/${statusId}/context`;
+
+              try {
+                const response = await fetch(contextUrl);
+
+                if (!response.ok) {
+                  throw new Error(
+                    "Network response was not ok " + response.statusText,
+                  );
+                }
+
+                const context = await response.json();
+                const comments = context.descendants;
+                comments.forEach((comment) => {
+                  const commentElement = document.createElement("div");
+                  commentElement.classList.add("comment");
+
+                  const authorName = DOMPurify.sanitize(
+                    comment.account.display_name || comment.account.username,
+                  );
+                  const authorUrl = DOMPurify.sanitize(comment.account.url);
+                  const content = DOMPurify.sanitize(comment.content);
+                  const avatarUrl = DOMPurify.sanitize(
+                    comment.account.avatar_static || comment.account.avatar,
+                  );
+                  const createdAt = new Date(comment.created_at);
+                  const timestamp = createdAt.toLocaleString();
+
+                  const avatarImg = document.createElement("img");
+                  avatarImg.src = avatarUrl;
+                  avatarImg.alt = `${authorName}'s avatar`;
+                  avatarImg.classList.add("avatar");
+
+                  const contentDiv = document.createElement("div");
+                  contentDiv.classList.add("comment-content");
+
+                  const headerDiv = document.createElement("div");
+                  headerDiv.classList.add("comment-header");
+
+                  const authorLink = document.createElement("a");
+                  authorLink.href = authorUrl;
+                  authorLink.target = "_blank";
+                  authorLink.textContent = authorName;
+
+                  const timeSpan = document.createElement("span");
+                  timeSpan.classList.add("timestamp");
+                  timeSpan.textContent = `• ${timestamp}`;
+
+                  headerDiv.appendChild(authorLink);
+                  headerDiv.appendChild(timeSpan);
+
+                  const bodyDiv = document.createElement("div");
+                  bodyDiv.classList.add("comment-body");
+                  bodyDiv.innerHTML = content;
+
+                  contentDiv.appendChild(headerDiv);
+                  contentDiv.appendChild(bodyDiv);
+
+                  commentElement.appendChild(avatarImg);
+                  commentElement.appendChild(contentDiv);
+
+                  commentsDiv.appendChild(commentElement);
+                });
+              } catch (error) {
+                console.error("Error fetching comments:", error);
+                commentsDiv.innerHTML = "<p>Error loading comments.</p>";
+              }
+            })();
+          </script>
+          
+        </div>
+      </section>
+      <script>
+        
+        (function addTitleToCodeBlock() {
+          let list = document.body.getElementsByClassName("highlight");
+
+          for (i = 0; i <= list.length - 1; i++) {
+            let code = list[i].firstElementChild.firstElementChild;
+            let codeName = code ? code.className.split(":")[1] : null;
+
+            if (codeName) {
+              console.log(codeName);
+              let div = document.createElement("div");
+              div.textContent = codeName;
+              div.classList.add("code-name");
+              code.parentNode.insertBefore(div, code);
+            }
+          }
+        })();
+      </script>
+
+      <footer class="fs-6 text-muted mt-5">
+        <p>
+          CC0. Powered by <a href="https://gohugo.io">Hugo</a>. Theme inspired
+          by <a href="https://www.mattdesl.com/">@mattdesl</a> and
+          <a href="https://ozafoto.com/digital/">Oza</a>.
+        </p>
+      </footer>
+    </div>
+  </body>
+  <script type="text/javascript">
+    
+
+    function decay() {
+      const canvas = document.getElementById("decay-canvas");
+      const pixelSize = window.innerWidth > 1600 ? 8 : 6;
+
+      canvas.width = window.innerWidth * 2;
+      canvas.height = 440;
+      canvas.style.height = canvas.height / 2 + "px";
+      canvas.style.width = canvas.width / 2 + "px";
+      const ctx = canvas.getContext("2d");
+      ctx.fillStyle = "#fff";
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      for (let j = 0; j < canvas.height; j += pixelSize) {
+        const probability = Math.pow(
+          (canvas.height - 1 - j) / (canvas.height - 1),
+          3,
+        );
+        for (let i = 0; i < canvas.width; i += pixelSize) {
+          if (Math.random() < probability) {
+            ctx.fillRect(i, j, pixelSize, pixelSize);
+          }
+        }
+      }
+    }
+
+    window.isReducedMotion = () =>
+      window.matchMedia(`(prefers-reduced-motion: reduce)`) === true ||
+      window.matchMedia(`(prefers-reduced-motion: reduce)`).matches === true;
+
+    window.onload = () => {
+      if (!isReducedMotion()) {
+        decay();
+      }
+
+      document.addEventListener("resize", () => {
+        if (!isReducedMotion()) {
+          decay();
+        }
+      });
+
+      document.addEventListener("scroll", () => {
+        if (!isReducedMotion()) {
+          decay();
+        }
+      });
+    };
+  </script>
+</html>
