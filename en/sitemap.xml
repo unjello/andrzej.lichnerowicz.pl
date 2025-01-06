@@ -52,8 +52,6 @@
   </url><url>
     <loc>http://andrzej.lichnerowicz.pl/en/art/memory-remains/</loc>
   </url><url>
-    <loc>http://andrzej.lichnerowicz.pl/en/blog/microsoft-macro-assembler-w01/</loc>
-  </url><url>
     <loc>http://andrzej.lichnerowicz.pl/en/oss/msctexen/</loc>
   </url><url>
     <loc>http://andrzej.lichnerowicz.pl/en/blog/multiprocessing-in-jupyter-notebooks/</loc>
@@ -83,6 +81,8 @@
     <loc>http://andrzej.lichnerowicz.pl/en/oss/safeshelter/</loc>
   </url><url>
     <loc>http://andrzej.lichnerowicz.pl/en/art/simulacrum/</loc>
+  </url><url>
+    <loc>http://andrzej.lichnerowicz.pl/en/blog/solving-aoc-in-microsoft-macro-assembler/</loc>
   </url><url>
     <loc>http://andrzej.lichnerowicz.pl/en/tags/</loc>
   </url><url>
