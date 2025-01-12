@@ -233,6 +233,92 @@
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>And that’s it &ndash; correct answer in hand. Can’t wait for next week&hellip; which happens to be tomorrow!</p>
  
+          <div class="comments">
+            <h2>Comments</h2>
+            <p>
+              Discussion powered by <i class="fa-brands fa-mastodon"></i>,
+              <a href="https://mastodon.gamedev.place/@unjello/113817136802850195"
+                >hop in.</a
+              >
+              if you want.
+            </p>
+            <div id="comments"></div>
+          </div>
+          <script>
+            (async function () {
+              const commentsDiv = document.getElementById("comments");
+              const statusId = "113817136802850195";
+              const mastodonInstance = "mastodon.gamedev.place";
+              const contextUrl = `https://${mastodonInstance}/api/v1/statuses/${statusId}/context`;
+
+              try {
+                const response = await fetch(contextUrl);
+
+                if (!response.ok) {
+                  throw new Error(
+                    "Network response was not ok " + response.statusText,
+                  );
+                }
+
+                const context = await response.json();
+                const comments = context.descendants;
+                comments.forEach((comment) => {
+                  const commentElement = document.createElement("div");
+                  commentElement.classList.add("comment");
+
+                  const authorName = DOMPurify.sanitize(
+                    comment.account.display_name || comment.account.username,
+                  );
+                  const authorUrl = DOMPurify.sanitize(comment.account.url);
+                  const content = DOMPurify.sanitize(comment.content);
+                  const avatarUrl = DOMPurify.sanitize(
+                    comment.account.avatar_static || comment.account.avatar,
+                  );
+                  const createdAt = new Date(comment.created_at);
+                  const timestamp = createdAt.toLocaleString();
+
+                  const avatarImg = document.createElement("img");
+                  avatarImg.src = avatarUrl;
+                  avatarImg.alt = `${authorName}'s avatar`;
+                  avatarImg.classList.add("avatar");
+
+                  const contentDiv = document.createElement("div");
+                  contentDiv.classList.add("comment-content");
+
+                  const headerDiv = document.createElement("div");
+                  headerDiv.classList.add("comment-header");
+
+                  const authorLink = document.createElement("a");
+                  authorLink.href = authorUrl;
+                  authorLink.target = "_blank";
+                  authorLink.textContent = authorName;
+
+                  const timeSpan = document.createElement("span");
+                  timeSpan.classList.add("timestamp");
+                  timeSpan.textContent = `• ${timestamp}`;
+
+                  headerDiv.appendChild(authorLink);
+                  headerDiv.appendChild(timeSpan);
+
+                  const bodyDiv = document.createElement("div");
+                  bodyDiv.classList.add("comment-body");
+                  bodyDiv.innerHTML = content;
+
+                  contentDiv.appendChild(headerDiv);
+                  contentDiv.appendChild(bodyDiv);
+
+                  commentElement.appendChild(avatarImg);
+                  commentElement.appendChild(contentDiv);
+
+                  commentsDiv.appendChild(commentElement);
+                });
+              } catch (error) {
+                console.error("Error fetching comments:", error);
+                commentsDiv.innerHTML = "<p>Error loading comments.</p>";
+              }
+            })();
+          </script>
+          
         </div>
       </section>
       <script>
