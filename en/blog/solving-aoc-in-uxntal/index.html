@@ -1,0 +1,542 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="og:title" content="Solving AoC in Uxntal | @unjello" />
+    <meta property="twitter:title" content="Solving AoC in Uxntal | @unjello" />
+    <meta property="og:url" content="http://andrzej.lichnerowicz.pl/en/blog/solving-aoc-in-uxntal/" />
+    <meta property="og:type" content="blog" />
+     
+    <meta property="og:image" content="http://andrzej.lichnerowicz.pl/en/blog/solving-aoc-in-uxntal/beetbug.png" />
+    <meta property="twitter:image" content="http://andrzej.lichnerowicz.pl/en/blog/solving-aoc-in-uxntal/beetbug.png" />
+     
+    <meta property="og:description" content="Let&#39;s implement 2024/day/3 Advent of Code puzzle in Uxntal. BabelOfCode is low key. The goal is to solve each Advent of Code puzzle in a different language." />
+    <meta property="twitter:description" content="Let&#39;s implement 2024/day/3 Advent of Code puzzle in Uxntal. BabelOfCode is low key. The goal is to solve each Advent of Code puzzle in a different language." />
+    
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/favicon.ico" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.1.7/purify.min.js"
+      integrity="sha512-BdRNuI8/lsyxkKQVxK1lVtfZshggfXPAwEP+JAOJEKx6Y8SLfcBSRdaWyXQmMxo+wG180uFqXYGjGRL0mh4/Jw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+     
+    <link
+      rel="stylesheet"
+      href="/css/style.min.1383b2b88f11c77e52dfaac1bb207e0ad22fa43fc6667da8d1fcf0a06223f40a.css"
+      integrity="sha256-E4OyuI8Rx35S36rBuyB&#43;CtIvpD/GZn2o0fzwoGIj9Ao="
+      crossorigin="anonymous"
+    />
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)']]                  
+    }
+  };
+</script>
+ 
+    <title>Solving AoC in Uxntal | Blog @unjello</title>
+  </head>
+  <body>
+    <canvas
+      id="decay-canvas"
+      width="3172"
+      height="440"
+      style="height: 220px; width: 1586px"
+    ></canvas>
+    <div class="layout container-fluid">
+      <header>
+        <h1>
+          <a href="/">Andrzej unjello Lichnerowicz</a>
+        </h1>
+        <ul class="list-inline tagline">
+          
+          <li class="list-inline-item">he</li>
+          
+          <li class="list-inline-item">him</li>
+          
+          <li class="list-inline-item">activist</li>
+          
+          <li class="list-inline-item">trees and greenery lover</li>
+          
+        </ul>
+        <ul class="list-inline socialmedia">
+          
+          <li class="list-inline-item">
+            <a href="https://mastodon.gamedev.place/@unjello">mastodon</a>
+          </li>
+          
+          <li class="list-inline-item">
+            <a href="https://codeberg.org/unjello">codeberg</a>
+          </li>
+          
+          <li class="list-inline-item">
+            <a href="mailto:andrzej@lichnerowicz.pl">email</a>
+          </li>
+          
+          <li class="list-inline-item">
+            <a href="https://andrzej.lichnerowicz.pl/public.pgp">pgp</a>
+          </li>
+          
+        </ul>
+      </header>
+
+      <section class="blog_single">
+        <h1>Solving AoC in Uxntal</h1>
+        <div class="date">2025-01-26T23:54:15&#43;02:00</div>
+        <div class="content">
+          <h1 id="prerequisites">Prerequisites</h1>
+<ol>
+<li><a href="https://git.sr.ht/~rabbits/uxn">Uxn</a> &ndash; Graphical emulator (<code>uxnemu</code>), command-line emulator (<code>uxncli</code>), and assembler (<code>uxnasm</code>).</li>
+<li><a href="https://git.sr.ht/~rabbits/drifblim">Dfriblim</a> &ndash; A native Uxn compiler.</li>
+<li><a href="https://git.sr.ht/~rabbits/beetbug">Beetbug</a> &ndash; A debugger.</li>
+<li><a href="https://git.sr.ht/~rabbits/uxnlin">Uxnlin</a> &ndash; A linter.</li>
+<li><a href="https://git.sr.ht/~rabbits/uxnfor">Uxnfor</a> &ndash; A formatter.</li>
+<li><a href="https://100r.co/site/left.html">Lef</a> &ndash; A native Uxn IDE.</li>
+<li><a href="https://wiki.xxiivv.com/site/uxntal_opcodes.html">Uxn Opcodes</a> - Uxntal opcode reference.</li>
+<li><a href="https://wiki.xxiivv.com/site/varvara.html">Varvara</a> - External I/O reference for Uxn.</li>
+</ol>
+<h1 id="installation">Installation</h1>
+<p>Installation is fairly straightforward. The easiest method (in my opinion) is to visit the <a href="https://git.sr.ht/~rabbits/">source-hut repository</a> maintained by 100 Rabbits, then download and compile the emulator you want. I use <code>uxnemu</code> on macOS, while <code>uxn11</code> might be the author’s preference. After compiling your chosen emulator, you can download and compile other tools (like <code>beetbug</code>) the same way:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fish" data-lang="fish"><span style="display:flex;"><span>❯ ~/bin/uxnasm src/beetbug.tal beetbug.rom
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">-- Unused</span> label: cursor
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">-- Unused</span> label: cursor/x
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">-- Unused</span> label: cursor/y
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">-- Unused</span> label: emu
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">-- Unused</span> label: uxn
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">-- Unused</span> label: draw-bal
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">-- Unused</span> label: dict
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">-- Unused</span> label: push/<span style="color:#ae81ff">8</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">-- Unused</span> label: poke/<span style="color:#ae81ff">8</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">-- Unused</span> label: peek/<span style="color:#ae81ff">8</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">-- Unused</span> label: warp/<span style="color:#ae81ff">8</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">-- Unused</span> label: devw/<span style="color:#ae81ff">8</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">-- Unused</span> label: devr/<span style="color:#ae81ff">8</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">-- Unused</span> label: scrollbar-icn
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">-- Unused</span> label: cap-icn
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">-- Unused</span> label: controls-icns
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">Assembled</span> beetbug.rom in <span style="color:#ae81ff">5595</span> bytes<span style="color:#f92672">(</span><span style="color:#a6e22e">8</span>.<span style="color:#ae81ff">57</span>% used<span style="color:#f92672">)</span>, <span style="color:#ae81ff">338</span> labels, <span style="color:#ae81ff">0</span> macros.
+</span></span></code></pre></div><p>At this point, you have three particularly useful tools: the emulator, the assembler, and the debugger.</p>
+<p>Now that we h
+
+<div class="admonition note">
+    <p class="title"></p>
+    <p class="content"><p>If you use <code>uxncli</code> on macOS, you might encounter the following warning:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fish" data-lang="fish"><span style="display:flex;"><span><span style="color:#a6e22e">uxncli</span><span style="color:#f92672">(</span><span style="color:#a6e22e">64788</span>,0x1ff0b0240<span style="color:#f92672">)</span> malloc: nano zone abandoned due to inability to reserve vm space.
+</span></span></code></pre></div><p>As suggested on <a href="https://stackoverflow.com/questions/64126942/malloc-nano-zone-abandoned-due-to-inability-to-preallocate-reserved-vm-space">Stack Overflow</a>, setting the following environment variable typically fixes it:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fish" data-lang="fish"><span style="display:flex;"><span><span style="color:#a6e22e">export</span> MallocNanoZone<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>
+</span></span></code></pre></div></p>
+</div>
+</p>
+<h1 id="uxn">UXN</h1>
+<p>At its core, <strong>Uxn</strong> is a virtual CPU, an idealized 6502, so some of its opcodes might look familiar to 8-bit veterans. Another nostalgic quirk is that Uxn programs start at memory offset <code>0x100</code>, reminiscent of .COM files under DOS or CP/M.</p>
+<p><strong>Varvara</strong> is the name for the complete &ldquo;computer&rdquo; built around the Uxn CPU, encompassing devices for external I/O. You might see the terms &ldquo;Uxn&rdquo; and &ldquo;Varvara&rdquo; used interchangeably, but they differ conceptually.</p>
+<p>Uxn is designed to be small. It has a 16-bit address bus, meaning base memory is 64 KiB. Emulators are encouraged to support 16 &ldquo;banks&rdquo; of memory (1 MiB total), although the specification allows up to 4 GiB of bank-switched memory in theory.</p>
+<p>The Uxn system also provides four customizable colors, mouse and keyboard input, four-channel audio, and a display resolution of 512×320, which can scale up to 2048×2048 (at least in the <a href="https://git.sr.ht/~rabbits/uxn11/tree/main/item/src/devices/screen.c#L71">reference emulator</a>). Despite this minimalistic palette, many Uxn applications still look strikingly aesthetic, reminiscent of old black-and-white or 2-bit graphics.</p>
+
+
+<div class="figure-wrapper">
+<div class="figure">
+  <figure>
+  <img src="left.png" alt="Screenshot of UXN emulator running Left, a UXN-native IDE for developing UXN programs."/>
+  </figure>
+  <div class="caption">
+    <p>Left -- UXN developer environment</p>
+    <p class="photo-attribution">Screenshot by author.</p>
+  </div>
+</div></div>
+
+
+
+<div class="admonition note">
+    <p class="title"></p>
+    <p class="content"><p>One design motivation behind Uxn is software sustainability and longevity. Devine Lu Linvega (the creator) aims for a platform that could feasibly run for 100+ years, one simple enough to be re-implemented on nearly any future hardware or environment. This stands in contrast to modern platforms that change constantly and lock you into complicated subscription models or online verifications.</p>
+<p>For more background, consider Devine’s talks:</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=OfnEfFb8yks&amp;t=8079s">A shining palace built upon the sand</a> which may be taken down in a near future due to Handmade Con orgas going with the wave of anti-everything-human thats rolling through US recently,</li>
+<li><a href="https://www.youtube.com/watch?v=17iNTN1LGM8">Weathering Software Winter</a>,</li>
+<li><a href="https://www.youtube.com/watch?v=T3u7bGgVspM">An approach to computing and sustainability inspired from permaculture</a>,</li>
+</ul>
+</p>
+</div>
+
+
+
+<div class="figure-wrapper">
+<div class="figure">
+  <figure>
+  <img src="oquonie.png" alt="Screenshot of Oquonie. A game by 100 Rabits studio. The biggest UXN program to date -- ROM is around 500KiB"/>
+  </figure>
+  <div class="caption">
+    <p>Oquonie -- UXN game</p>
+    <p class="photo-attribution">Screenshot by author.</p>
+  </div>
+</div></div>
+
+
+<h1 id="uxntal">UXNTAL</h1>
+<p><strong>Tal</strong> (or <strong>Uxntal</strong>) is a &ldquo;semi-assembly&rdquo; language for the Uxn CPU. It mostly works like assembly but incorporates features such as lambdas. It’s also stack-based, making it feel like a cross between traditional assembly and <a href="https://en.wikipedia.org/wiki/Forth_%28programming_language%29">Forth</a>, where opcodes like <code>DUP</code> and <code>SWP</code> replace what might otherwise be high-level function calls.</p>
+
+<div class="admonition note">
+    <p class="title"></p>
+    <p class="content">This post focuses on the debugging and puzzle-solving process. For a deep dive into Varvara’s I/O design or the full Uxntal specification, see the official <a href="https://wiki.xxiivv.com/site/uxntal_opcodes.html">Uxntal documentation</a> and the <a href="https://wiki.xxiivv.com/site/varvara.html">Varvara reference</a>.</p>
+</div>
+
+<p>When learning a new language, I often skim the docs, attempt a small project, and iterate with the help of a debugger. Uxntal has a few unique twists:</p>
+<ul>
+<li>Stack-based operations sometimes cause confusion about byte vs. short usage.</li>
+<li>Conditional jumps come in two flavors: label-based (?&amp;label) and lambda-based (?{ &hellip; }).</li>
+<li>Self-modifying code is common as a technique to increment pointers or store data inline.</li>
+</ul>
+<p>Below is a snippet from a standard library I studied to understand Uxntal better:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-uxntal" data-lang="uxntal"><span style="display:flex;"><span><span style="color:#a6e22e">@pdec</span> <span style="color:#75715e">( short* -- )</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#ae81ff">#000a</span> <span style="color:#66d9ef">SWP2</span> [ <span style="color:#66d9ef">LITr</span> <span style="color:#ae81ff">ff</span> ]
+</span></span><span style="display:flex;"><span>	&amp;&gt;get <span style="color:#75715e">( -- )</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">SWP2k</span> <span style="color:#66d9ef">DIV2k</span> <span style="color:#66d9ef">MUL2</span> <span style="color:#66d9ef">SUB2</span> <span style="color:#66d9ef">STH</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">POP</span> <span style="color:#66d9ef">OVR2</span> <span style="color:#66d9ef">DIV2</span> <span style="color:#66d9ef">ORAk</span> <span style="color:#a6e22e">?&amp;&gt;get</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">POP2</span> <span style="color:#66d9ef">POP2</span>
+</span></span><span style="display:flex;"><span>	&amp;&gt;put <span style="color:#75715e">( -- )</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">STHr</span> <span style="color:#66d9ef">INCk</span> <span style="color:#a6e22e">?{</span> <span style="color:#66d9ef">POP</span> <span style="color:#66d9ef">JMP2r</span> }
+</span></span><span style="display:flex;"><span>		[ <span style="color:#66d9ef">LIT</span> <span style="color:#e6db74">&#34;0</span> ] <span style="color:#66d9ef">ADD</span> <span style="color:#ae81ff">#18</span> <span style="color:#66d9ef">DEO</span> <span style="color:#a6e22e">!&amp;&gt;put</span>
+</span></span></code></pre></div><p>I wanted to understand how it worked, so I carefully tracked how the stack changed after each instruction (similar to what I once did with <a href="https://en.wikipedia.org/wiki/X87">x87</a> math instructions):</p>
+
+
+<div class="figure-wrapper">
+<div class="figure">
+  <figure>
+  <img src="notes.jpg" alt="Photo of a sheet of paper with careful notes on stack contents after each instruction."/>
+  </figure>
+  <div class="caption">
+    <p>Unroll all the loops! Show me the stack.</p>
+    <p class="photo-attribution">Photo by author.</p>
+  </div>
+</div></div>
+
+
+<p>Later, Devine mentioned a much simpler technique for debugging: printing stack contents via <code>.System/debug</code>. The official docs say:</p>
+<blockquote>
+<p>Sending a non-null byte to the System/debug port will print the content of the stacks or pause
+the evaluation if the emulator includes a step-debugger.</p>
+</blockquote>
+<p>Since Uxn debuggers (like <code>beetbug</code>) currently don’t integrate with command-line parameters, <code>.System/debug</code> calls (<code>#010e DEO #0a18 DEO</code>) turned out to be the most convenient debug method. For instance:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-uxntal" data-lang="uxntal"><span style="display:flex;"><span><span style="color:#a6e22e">%debug</span> { <span style="color:#ae81ff">#010e</span> <span style="color:#66d9ef">DEO</span> <span style="color:#ae81ff">#0a18</span> <span style="color:#66d9ef">DEO</span> }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@pdec</span> <span style="color:#75715e">( short* -- )</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#ae81ff">#000a</span> <span style="color:#66d9ef">SWP2</span> [ <span style="color:#66d9ef">LITr</span> <span style="color:#ae81ff">ff</span> ]
+</span></span><span style="display:flex;"><span>	&amp;&gt;get <span style="color:#75715e">( -- )</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">SWP2k</span> <span style="color:#66d9ef">DIV2k</span> <span style="color:#66d9ef">MUL2</span> <span style="color:#66d9ef">SUB2</span> <span style="color:#66d9ef">STH</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">POP</span> <span style="color:#66d9ef">OVR2</span> <span style="color:#66d9ef">DIV2</span> <span style="color:#66d9ef">ORAk</span> <span style="color:#a6e22e">?&amp;&gt;get</span> 
+</span></span><span style="display:flex; background-color:#3c3d38"><span>		<span style="color:#a6e22e">debug</span>
+</span></span><span style="display:flex; background-color:#3c3d38"><span>		<span style="color:#66d9ef">BRK</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">POP2</span> <span style="color:#66d9ef">POP2</span>
+</span></span><span style="display:flex;"><span>	&amp;&gt;put <span style="color:#75715e">( -- )</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">STHr</span> <span style="color:#66d9ef">INCk</span> <span style="color:#a6e22e">?{</span> <span style="color:#66d9ef">POP</span> <span style="color:#66d9ef">JMP2r</span> }
+</span></span><span style="display:flex;"><span>		[ <span style="color:#66d9ef">LIT</span> <span style="color:#e6db74">&#34;0</span> ] <span style="color:#66d9ef">ADD</span> <span style="color:#ae81ff">#18</span> <span style="color:#66d9ef">DEO</span> <span style="color:#a6e22e">!&amp;&gt;put</span></span></span></code></pre></div>
+<p>When running:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fish" data-lang="fish"><span style="display:flex;"><span>❯ ~/bin/uxnasm day03.tal day03.rom <span style="color:#f92672">&amp;&amp;</span> ~/bin/uxncli day03.rom
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">Assembled</span> day03.rom in <span style="color:#ae81ff">482</span> bytes<span style="color:#f92672">(</span><span style="color:#a6e22e">0</span>.<span style="color:#ae81ff">74</span>% used<span style="color:#f92672">)</span>, <span style="color:#ae81ff">61</span> labels, <span style="color:#ae81ff">2</span> macros.
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">WST</span> <span style="color:#ae81ff">00</span> <span style="color:#ae81ff">00</span> <span style="color:#ae81ff">00</span> <span style="color:#ae81ff">00</span> <span style="color:#ae81ff">00</span> <span style="color:#ae81ff">00</span> <span style="color:#ae81ff">00</span><span style="color:#f92672">|</span><span style="color:#a6e22e">32</span> <span style="color:#f92672">&lt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">RST</span> <span style="color:#ae81ff">00</span> <span style="color:#ae81ff">00</span> <span style="color:#ae81ff">00</span> <span style="color:#ae81ff">00</span> <span style="color:#ae81ff">00</span> <span style="color:#ae81ff">00</span><span style="color:#f92672">|</span><span style="color:#a6e22e">02</span> <span style="color:#ae81ff">00</span> <span style="color:#f92672">&lt;</span>
+</span></span></code></pre></div><p>I can see the stack changes at each debug. Usually, mistakes arise from forgetting to handle short vs. byte properly.</p>
+<p>Another subtlety: there are two ways to do conditional jumps in Uxntal with the <code>?</code> rune, either with labels or lambdas. Internally, <code>?</code> emits the <code>JCI</code> opcode:</p>
+<blockquote>
+<p><strong>JCI</strong> cond8 &ndash;  Pops a byte from the working stack and if it is not zero,
+moves the PC to a relative address at a distance equal to the next short in memory,
+otherwise moves PC+2. This opcode has no modes.</p>
+</blockquote>
+<p>Consider this snippet:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-uxntal" data-lang="uxntal"><span style="display:flex;"><span><span style="color:#66d9ef">|100</span> <span style="color:#ae81ff">#0000</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">@&gt;get</span> 
+</span></span><span style="display:flex;"><span>        <span style="color:#ae81ff">#01</span> <span style="color:#a6e22e">?&gt;get</span> <span style="color:#66d9ef">POP2</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fish" data-lang="fish"><span style="display:flex;"><span><span style="color:#f92672">|</span><span style="color:#a6e22e">0100</span>	<span style="color:#75715e">#0000		( a00000 )
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#f92672">|</span><span style="color:#a6e22e">0103</span>	<span style="color:#75715e">#01		    ( 8001 )
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#f92672">|</span><span style="color:#a6e22e">0105</span>	JCI         <span style="color:#f92672">(</span> <span style="color:#a6e22e">20</span> <span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">|</span><span style="color:#a6e22e">0106</span>	FFFB        <span style="color:#f92672">(</span> -<span style="color:#ae81ff">4</span> <span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">|</span><span style="color:#a6e22e">0108</span>	POP2		<span style="color:#f92672">(</span> <span style="color:#a6e22e">22</span> <span style="color:#f92672">)</span>
+</span></span></code></pre></div><p>We push <code>#01</code> onto the stack, then <code>JCI</code> checks if it’s nonzero. If it is, jump to the relative address in the next short <code>-4</code> to <code>|0103</code>. If zero, skip past it. That’s logical enough.</p>
+<p>But this snippet with lambdas behaves differently:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-uxntal" data-lang="uxntal"><span style="display:flex;"><span><span style="color:#66d9ef">|100</span> <span style="color:#ae81ff">#0000</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">@&gt;put</span> <span style="color:#75715e">( -- )</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#ae81ff">#01</span> <span style="color:#a6e22e">?{</span> <span style="color:#66d9ef">POP</span> <span style="color:#66d9ef">BRK</span> }
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">#0a#18</span> <span style="color:#66d9ef">DEO</span> <span style="color:#a6e22e">!&gt;put</span>
+</span></span></code></pre></div><p>Initially, I thought lambdas should be identical to label-based conditional jumps, where instead of <code>?&gt;get POP2</code> I would get <code>?&gt;relocated_lambda #0a#18 DEO</code>. But they&rsquo;re not. <code>{</code> introduces a block that ends at <code>}</code>, and the <code>?</code> references the block’s end address. Visually, it can look odd, but it avoids the complexity of relocations</p>
+
+
+<div class="figure-wrapper">
+<div class="figure">
+  <figure>
+  <img src="beetbug.png" alt="Screenshot of beetbug debugger showing disassembled code, and memory view"/>
+  </figure>
+  <div class="caption">
+    <p>Diassembled lambda</p>
+    <p class="photo-attribution">Photo by author.</p>
+  </div>
+</div></div>
+
+
+
+<div class="admonition note">
+    <p class="title"></p>
+    <p class="content"><p>When you really think about it, it makes complete sense. Handling relocations that way would be difficult, and this approach lets Uxn provide higher-level features while still generating code whose layout directly reflects the source &ndash; much like traditional assembly. Because <code>{</code> points to the closing bracket (the end of the lambda), <code>JCI</code> can jump in the non-zero case to whatever visually follows that lambda.</p>
+<p>This design also reflects a key point Devine discusses in his presentations: modern tools often sacrifice performance for developer convenience. While this might not be the most pleasant developer experience, it keeps the opcode set minimal, removes the need for complex relocation, and yields compact binaries.</p>
+</p>
+</div>
+
+<p>While working on a puzzle, I wanted to handle command-line parameters and read from a file specified in those parameters. Reading the file is straightforward:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-uxntal" data-lang="uxntal"><span style="display:flex;"><span><span style="color:#66d9ef">|a0</span> <span style="color:#a6e22e">@File</span> &amp;vector <span style="color:#66d9ef">$2</span> &amp;success <span style="color:#66d9ef">$2</span> &amp;stat <span style="color:#66d9ef">$2</span> &amp;delete <span style="color:#66d9ef">$1</span> 
+</span></span><span style="display:flex;"><span>          &amp;append <span style="color:#66d9ef">$1</span> &amp;name <span style="color:#66d9ef">$2</span> &amp;length <span style="color:#66d9ef">$2</span> &amp;read <span style="color:#66d9ef">$2</span> &amp;write <span style="color:#66d9ef">$2</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">|100</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">@data/read</span> <span style="color:#a6e22e">(buffer*</span> <span style="color:#a6e22e">name*</span> <span style="color:#ae81ff">-&gt;</span> <span style="color:#a6e22e">)</span>
+</span></span><span style="display:flex;"><span>        .File/name <span style="color:#66d9ef">DEO2</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ae81ff">#4e20</span> .File/length <span style="color:#66d9ef">DEO2</span>
+</span></span><span style="display:flex;"><span>        .File/read <span style="color:#66d9ef">DEO2</span>
+</span></span><span style="display:flex;"><span>        .File/success <span style="color:#66d9ef">DEI2</span>
+</span></span><span style="display:flex;"><span>        ;data/file-size <span style="color:#66d9ef">STA2</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">JMP2r</span>
+</span></span></code></pre></div><p>Reading arguments was a little trickier. Information about them and <code>stdin</code> comes through the same mechanism in Uxn: the console subsystem vector. Vectors in Uxn behave much like interrupts—small routines that the host calls. To determine whether any parameters are available, you can check the console input port <code>0x17</code>:</p>
+<pre tabindex="0"><code class="language-uxn" data-lang="uxn">.Console/type DEI ?&amp;has-args &lt;print-usage&gt; BRK
+&amp;has-args ( ... )
+</code></pre><p>That port tells you the type of incoming data via port <code>0x12</code>. The documentation is sparse, but it does mention:</p>
+<blockquote>
+<p>The <strong>Console/vector</strong>* is evaluated when a byte is received. The <strong>Console/type</strong> port holds one of 5 known types: no-queue(0), stdin(1), argument(2), argument-spacer(3), argument-end(4).</p>
+</blockquote>
+<p>In practice, this means:</p>
+<ol>
+<li>There is a single queue that merges command-line arguments and stdin. The emulator effectively concatenates them into one string.</li>
+<li>For each byte in that string, <code>.Console/vector</code> is triggered.</li>
+</ol>
+<p>For example, running <code>echo test | uxncli test.rom x --help</code> provides the uxn program with a concatenated string of <code>x\n--help\ntest\x00</code> and a corresponding sequence of type values like <code>23222222411114</code>. I didn’t fully understood that until I read the <a href="https://git.sr.ht/~rabbits/uxn-utils/tree/main/item/ref/uxnmin.c#L140">emulator source code</a>.</p>
+<p>To handle arguments, you simply set up a function for the console interrupt:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-uxntal" data-lang="uxntal"><span style="display:flex;"><span>;read-args .Console/vector <span style="color:#66d9ef">DEO2</span>
+</span></span></code></pre></div><p>Then you can read and store each incoming byte:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-uxntal" data-lang="uxntal"><span style="display:flex;"><span><span style="color:#a6e22e">@read-args</span> <span style="color:#75715e">( -&gt; )</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ae81ff">#02</span> .Console/type <span style="color:#66d9ef">DEI</span> <span style="color:#66d9ef">NEQ</span> <span style="color:#a6e22e">?&amp;is-arg-done</span>
+</span></span><span style="display:flex;"><span>        .Console/read <span style="color:#66d9ef">DEI</span>
+</span></span><span style="display:flex;"><span>        [ <span style="color:#66d9ef">LIT2</span> <span style="color:#ae81ff">00</span> &amp;ptr <span style="color:#ae81ff">-arg</span> ]
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">INCk</span> ,&amp;ptr <span style="color:#66d9ef">STR</span> <span style="color:#66d9ef">STZ2</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">BRK</span>
+</span></span><span style="display:flex;"><span>    &amp;is-arg-done
+</span></span></code></pre></div><p>This snippet could be more flexible for edge cases, but it works for me. It uses two handy tricks:</p>
+<ol>
+<li><em>Self-modifying code</em> A naive approach might look like:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-uxntal" data-lang="uxntal"><span style="display:flex;"><span>.Console/read <span style="color:#66d9ef">DEI</span>  <span style="color:#75715e">( read the byte from console )</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">-arg</span>               <span style="color:#75715e">( store buffer address )</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">STZ</span>                <span style="color:#75715e">( store byte in zero page )</span>
+</span></span></code></pre></div><p>The STZ instruction stores a byte at a given zero-page address. However, we also need to increment the pointer so the next interrupt stores the next byte at <code>-arg + 1</code>. That’s where self-modifying code helps. Instead of a fixed <code>LIT 50</code>, we use:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-uxntal" data-lang="uxntal"><span style="display:flex;"><span>[ <span style="color:#66d9ef">LIT</span> &amp;ptr <span style="color:#ae81ff">-arg</span> ]
+</span></span></code></pre></div><p>This creates a label (&amp;ptr) referencing the exact memory that holds the LIT operand. Later, we can write:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-uxntal" data-lang="uxntal"><span style="display:flex;"><span><span style="color:#ae81ff">#51</span> ,&amp;ptr <span style="color:#66d9ef">STR</span>
+</span></span></code></pre></div><p>which changes that operand from <code>50</code> to <code>51</code>. The next time the code runs, it effectively executes <code>LIT 51</code>. On older 8-bit systems like the Atari XL/XE or C64, self-modifying code was common, but I hadn’t used it much until now.</p>
+<ol start="2">
+<li><strong>Ensuring a zero-terminated string</strong>. By using <code>LIT2 00 -arg</code>, we push a two-byte value onto the stack (e.g., <code>32 00 50</code> for address <code>0x50</code>), and then <code>STZ2</code> will store <code>3200</code> at that address, guaranteeing a <code>0x00</code> terminator. This way, every time we read a byte from <code>.Console/read</code>, we also keep the string properly null-terminated.</li>
+</ol>
+<p>With a better handle on the language, platform, and tools, I’m now ready to move on to the main part of the project.</p>
+<h1 id="the-puzzle">The Puzzle</h1>
+<p>To no surprise, I’m working on the <a href="https://adventofcode.com/2024/day/3">3rd day</a> of Advent of Code this time. It doesn’t look too bad. I need to find <code>mul(digit,digit)</code> occurrences and sum them up.</p>
+<p>Here&rsquo;s what I came up with:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-uxntal" data-lang="uxntal"><span style="display:flex;"><span><span style="color:#66d9ef">|100</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@aoc</span> <span style="color:#75715e">( -&gt; )</span>
+</span></span><span style="display:flex;"><span>	;data/file-buffer ;data/buffer-ptr <span style="color:#66d9ef">STA2</span> &amp;loop ;data/buffer-ptr <span style="color:#66d9ef">LDA2</span> <span style="color:#66d9ef">LDA2k</span> <span style="color:#66d9ef">DUP2</span> <span style="color:#ae81ff">#6d75</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">NEQ2</span> <span style="color:#a6e22e">?&amp;advance</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">( print mu )</span> [ <span style="color:#66d9ef">LIT</span> <span style="color:#e6db74">&#34;_</span> ] <span style="color:#ae81ff">#18</span> <span style="color:#66d9ef">DEO</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#ae81ff">#18</span> <span style="color:#66d9ef">DEO2</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">INC2</span> <span style="color:#66d9ef">INC2</span> <span style="color:#66d9ef">LDA2k</span> <span style="color:#66d9ef">DUP2</span> <span style="color:#ae81ff">#6c28</span> <span style="color:#66d9ef">NEQ2</span> <span style="color:#a6e22e">?&amp;advance</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">( print )</span> <span style="color:#ae81ff">#18</span> <span style="color:#66d9ef">DEO2</span> [ <span style="color:#66d9ef">LIT</span> <span style="color:#e6db74">&#34;_</span> ] <span style="color:#ae81ff">#18</span> <span style="color:#66d9ef">DEO</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">INC2</span> <span style="color:#66d9ef">INC2</span> <span style="color:#66d9ef">DUP2</span> <span style="color:#a6e22e">sdec</span> <span style="color:#66d9ef">SWP2</span> <span style="color:#66d9ef">INC2</span> <span style="color:#66d9ef">DUP2</span> <span style="color:#a6e22e">sdec</span> <span style="color:#66d9ef">ROT2</span> <span style="color:#66d9ef">MUL2</span> ;data/part1-result <span style="color:#66d9ef">LDA2</span> <span style="color:#66d9ef">ADD2</span> <span style="color:#a6e22e">debug</span> 
+</span></span><span style="display:flex;"><span>	;data/part1-result <span style="color:#66d9ef">STA2</span> <span style="color:#66d9ef">INC2</span> <span style="color:#66d9ef">LDA2k</span> &amp;advance <span style="color:#66d9ef">POP</span> <span style="color:#ae81ff">#18</span> <span style="color:#66d9ef">DEO</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">INC2</span> <span style="color:#66d9ef">DUP2</span> ;data/buffer-ptr <span style="color:#66d9ef">STA2</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">LDA</span> <span style="color:#a6e22e">?&amp;loop</span>
+</span></span><span style="display:flex;"><span>	;data/part1-result <span style="color:#66d9ef">LDA2</span> <span style="color:#a6e22e">print-break</span> <span style="color:#a6e22e">print-break</span> <span style="color:#a6e22e">debug</span> <span style="color:#66d9ef">BRK</span>
+</span></span></code></pre></div><p>that small loop goes through the file’s contents byte by byte, fetches the next two characters, assumes they’re ASCII so I can compare them numerically, and <code>#6d75 NEQ2</code> means <code>if not (*ptr == 'm' &amp;&amp; *(ptr+1) == 'u')</code>. In other words, I first catch the <code>mu</code> token, then the <code>l)</code> token. If I detect <code>mul(,</code> I parse the digits, move one byte forward to skip the comma, and parse the next set of digits.</p>
+<p>That all worked fine for my test input, but when I ran it on <code>input.txt</code>, the result was wrong. Now what? Since I can’t easily use <code>beetbug</code>, and stack-dumping with <code>#010e DEO</code> would be painful given there are 720 mul operations in total, I decided to print all the muls I found and <code>diff</code> compare them with a list generated by an external script:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> re
+</span></span><span style="display:flex;"><span>regex <span style="color:#f92672">=</span> re<span style="color:#f92672">.</span>compile(<span style="color:#e6db74">r</span><span style="color:#e6db74">&#34;mul\([0-9]+,[0-9]+\)&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>file <span style="color:#f92672">=</span> open(<span style="color:#e6db74">&#34;input.txt&#34;</span>, <span style="color:#e6db74">&#34;r&#34;</span>)
+</span></span><span style="display:flex;"><span>text <span style="color:#f92672">=</span> file<span style="color:#f92672">.</span>read()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> <span style="color:#66d9ef">match</span> <span style="color:#f92672">in</span> regex<span style="color:#f92672">.</span>findall(text):
+</span></span><span style="display:flex;"><span>    print(<span style="color:#66d9ef">match</span>)
+</span></span></code></pre></div><p>I discovered my code was too naive. It only checked for the start of the pattern, which allowed a few invalid entries, such as <code>mul(320,495/')</code> or <code>mul(20, 99]</code>. I needed to verify there was a <code>)</code> after the digits. That also meant I couldn’t immediately calculate and store the product. Instead, I had to wait until I confirmed the pattern ended correctly. To do that, I temporarily hid the values on the return stack:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-uxntal" data-lang="uxntal"><span style="display:flex;"><span><span style="color:#66d9ef">STH2</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">STH2</span>    
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">LDAk</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">#29</span> <span style="color:#66d9ef">NEQ</span> <span style="color:#a6e22e">?&amp;skip-pop</span> <span style="color:#75715e">( 29 is closing paren )</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">STH2r</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">STH2r</span>
+</span></span><span style="display:flex;"><span>;data/part1-result <span style="color:#ae81ff">#0002</span> <span style="color:#66d9ef">ADD2</span> <span style="color:#66d9ef">STA2</span>
+</span></span><span style="display:flex;"><span>;data/part1-result <span style="color:#66d9ef">STA2</span> &amp;skip
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">( ... )</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&amp;skip-pop <span style="color:#66d9ef">POP2r</span> <span style="color:#66d9ef">POP2r</span> <span style="color:#a6e22e">!&amp;skip</span>
+</span></span></code></pre></div><p>I also realized I had incremented the pointer too soon after parsing the closing bracket, missing patterns like <code>mul(296,939)mul(745,689)mul(162,820)</code>. That was a quick fix.</p>
+<p>I ran it again:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fish" data-lang="fish"><span style="display:flex;"><span><span style="color:#a6e22e">Assembled</span> day03.rom in <span style="color:#ae81ff">473</span> bytes<span style="color:#f92672">(</span><span style="color:#a6e22e">0</span>.<span style="color:#ae81ff">72</span>% used<span style="color:#f92672">)</span>, <span style="color:#ae81ff">64</span> labels, <span style="color:#ae81ff">2</span> macros.
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">loading</span> file: input.txt
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">result</span> part <span style="color:#ae81ff">1</span>: <span style="color:#ae81ff">26926</span>
+</span></span></code></pre></div><p>and the answer was still incorrect. After inspecting the last few muls, I noticed <code>mul(296,939)</code> alone yields <code>277944</code>, which is too large for a 16-bit value.</p>
+<p>At that point, I was about ready to give up. I didn’t feel like implementing full 32-bit math myself on a Saturday evening. Fortunately, Devine pointed me to an <a href="https://git.phial.org/d6/nxu/src/branch/main/math32.tal">excellent library</a> that was already written. I only had to add a few minor helpers and a routine to print 32-bit numbers (the Uxn standard library only includes 16-bit decimal printing):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-uxntal" data-lang="uxntal"><span style="display:flex;"><span><span style="color:#a6e22e">%u32-pop</span> { <span style="color:#66d9ef">POP2</span> <span style="color:#66d9ef">POP2</span> }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@u32-pdec</span> <span style="color:#75715e">( hi* lo* -- )</span>
+</span></span><span style="display:flex;"><span>	[ <span style="color:#66d9ef">LITr</span> <span style="color:#ae81ff">ff</span> ]
+</span></span><span style="display:flex;"><span>	&amp;&gt;get <span style="color:#75715e">( -- )</span>
+</span></span><span style="display:flex;"><span>    	<span style="color:#ae81ff">#0000</span> <span style="color:#ae81ff">#000a</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">u32-divmod</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">STHk</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">u32-pop</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">u32-dup</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">u32-non-zero</span> <span style="color:#a6e22e">?&amp;&gt;get</span>
+</span></span><span style="display:flex;"><span>	    <span style="color:#a6e22e">u32-pop</span>
+</span></span><span style="display:flex;"><span>	&amp;&gt;put <span style="color:#75715e">( -- )</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">STHr</span> <span style="color:#66d9ef">INCk</span> <span style="color:#a6e22e">?{</span> <span style="color:#66d9ef">POP</span> <span style="color:#66d9ef">JMP2r</span> }
+</span></span><span style="display:flex;"><span>		[ <span style="color:#66d9ef">LIT</span> <span style="color:#e6db74">&#34;0</span> ] <span style="color:#66d9ef">ADD</span> <span style="color:#ae81ff">#18</span> <span style="color:#66d9ef">DEO</span> <span style="color:#a6e22e">!&amp;&gt;put</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@u32-dup</span> <span style="color:#75715e">( hi* lo* -- hi* lo* hi* lo* )</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">STH2</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">DUP2</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">STH2r</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">DUP2</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">STH2</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">SWP2</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">STH2r</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">JMP2r</span>
+</span></span></code></pre></div><p>Let’s see:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fish" data-lang="fish"><span style="display:flex;"><span><span style="color:#a6e22e">Assembled</span> day03.rom in <span style="color:#ae81ff">1343</span> bytes<span style="color:#f92672">(</span><span style="color:#a6e22e">2</span>.<span style="color:#ae81ff">06</span>% used<span style="color:#f92672">)</span>, <span style="color:#ae81ff">144</span> labels, <span style="color:#ae81ff">2</span> macros.
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">loading</span> file: input.txt
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">result</span> part <span style="color:#ae81ff">1</span>: <span style="color:#ae81ff">184576302</span>
+</span></span></code></pre></div><p>Perfect! Now, on to part 2. Fortunately, part 2 is a minor modification of part 1, so I reused most of the code with only a few changes. I added support for detecting <code>do()</code> and <code>don't()</code>, simplified by matching four bytes <code>do</code> and then either <code>()</code> or <code>n'</code>. I was lucky that part 2 didn’t have any tricky edge cases.</p>
+<p>I inserted this snippet at the start of the loop:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-uxntal" data-lang="uxntal"><span style="display:flex;"><span>    <span style="color:#66d9ef">DUP2</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ae81ff">#646f</span> <span style="color:#75715e">( do )</span> <span style="color:#66d9ef">NEQ2</span> <span style="color:#a6e22e">?&amp;parse-mul</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">POP2</span> <span style="color:#66d9ef">INC2</span> <span style="color:#66d9ef">INC2</span> <span style="color:#66d9ef">LDA2k</span> <span style="color:#66d9ef">DUP2</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ae81ff">#2829</span> <span style="color:#75715e">( open-paren close-paren )</span> <span style="color:#66d9ef">NEQ2</span> <span style="color:#a6e22e">?&amp;do-skip</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">( [ LIT &#34;+ ] #18 DEO #0a18 DEO )</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ae81ff">#01</span> ;data/dodont <span style="color:#66d9ef">STA</span> <span style="color:#a6e22e">!&amp;parse-mul</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&amp;do-skip
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">DUP2</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ae81ff">#6e27</span> <span style="color:#75715e">( n&#39; )</span> <span style="color:#66d9ef">NEQ2</span> <span style="color:#a6e22e">?&amp;parse-mul</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">( [ LIT &#34;- ] #18 DEO #0a18 DEO )</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ae81ff">#00</span> ;data/dodont <span style="color:#66d9ef">STA</span>
+</span></span></code></pre></div><p>Then I set a variable <code>data/dodont</code> depending on those tokens. Inside the loop, I added to the second result only if the variable was set:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-uxntal" data-lang="uxntal"><span style="display:flex;"><span>    ;data/dodont <span style="color:#66d9ef">LDA</span> <span style="color:#a6e22e">?&amp;store-do-result</span> <span style="color:#a6e22e">!&amp;pop-do-result</span>
+</span></span><span style="display:flex;"><span>&amp;store-do-result
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">STH2r</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">STH2r</span>
+</span></span><span style="display:flex;"><span>    ;data/part2-result <span style="color:#ae81ff">#0002</span> <span style="color:#66d9ef">ADD2</span> <span style="color:#66d9ef">STA2</span>
+</span></span><span style="display:flex;"><span>    ;data/part2-result <span style="color:#66d9ef">STA2</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">( ... )</span>
+</span></span><span style="display:flex;"><span>&amp;pop-do-result <span style="color:#66d9ef">POP2r</span> <span style="color:#66d9ef">POP2r</span> <span style="color:#a6e22e">!&amp;skip</span>
+</span></span></code></pre></div><p>Final run:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fish" data-lang="fish"><span style="display:flex;"><span><span style="color:#a6e22e">Assembled</span> day03.rom in <span style="color:#ae81ff">1476</span> bytes<span style="color:#f92672">(</span><span style="color:#a6e22e">2</span>.<span style="color:#ae81ff">26</span>% used<span style="color:#f92672">)</span>, <span style="color:#ae81ff">150</span> labels,  <span style="color:#ae81ff">3</span> macros.
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">loading</span> file: input.txt
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">result</span> part <span style="color:#ae81ff">1</span>: <span style="color:#ae81ff">184576302</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">result</span> part <span style="color:#ae81ff">2</span>: <span style="color:#ae81ff">118173507</span>
+</span></span></code></pre></div><p>The correct answer on the first try! After some practice, it definitely gets easier.</p>
+<p>One interesting takeaway: adding 32-bit (u32) support increased the ROM size from <code>473</code> bytes to <code>1343</code> bytes—nearly a <code>300%</code> jump.</p>
+<p>The code is available on Codeberg as usual. It&rsquo;s pretty brute force, looses track of the stack in few places, and could definietely use some refactoring&hellip; my point is: Do not try this at home. Or at all.</p>
+<p>You&rsquo;ll probably be better off learning from <a href="https://sr.ht/~rabbits/">Rek &amp; Devine</a>, or from IRC crowd (#uxn @ Libera).</p>
+<p>Till the next time!</p>
+ 
+        </div>
+      </section>
+      <script>
+        
+        (function addTitleToCodeBlock() {
+          let list = document.body.getElementsByClassName("highlight");
+
+          for (i = 0; i <= list.length - 1; i++) {
+            let code = list[i].firstElementChild.firstElementChild;
+            let codeName = code ? code.className.split(":")[1] : null;
+
+            if (codeName) {
+              console.log(codeName);
+              let div = document.createElement("div");
+              div.textContent = codeName;
+              div.classList.add("code-name");
+              code.parentNode.insertBefore(div, code);
+            }
+          }
+        })();
+      </script>
+
+      <footer class="fs-6 text-muted mt-5">
+        <p>
+          CC0. Powered by <a href="https://gohugo.io">Hugo</a>. Theme inspired
+          by <a href="https://www.mattdesl.com/">@mattdesl</a> and
+          <a href="https://ozafoto.com/digital/">Oza</a>.
+        </p>
+      </footer>
+    </div>
+  </body>
+  <script type="text/javascript">
+    
+
+    function decay() {
+      const canvas = document.getElementById("decay-canvas");
+      const pixelSize = window.innerWidth > 1600 ? 8 : 6;
+
+      canvas.width = window.innerWidth * 2;
+      canvas.height = 440;
+      canvas.style.height = canvas.height / 2 + "px";
+      canvas.style.width = canvas.width / 2 + "px";
+      const ctx = canvas.getContext("2d");
+      ctx.fillStyle = "#fff";
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      for (let j = 0; j < canvas.height; j += pixelSize) {
+        const probability = Math.pow(
+          (canvas.height - 1 - j) / (canvas.height - 1),
+          3,
+        );
+        for (let i = 0; i < canvas.width; i += pixelSize) {
+          if (Math.random() < probability) {
+            ctx.fillRect(i, j, pixelSize, pixelSize);
+          }
+        }
+      }
+    }
+
+    window.isReducedMotion = () =>
+      window.matchMedia(`(prefers-reduced-motion: reduce)`) === true ||
+      window.matchMedia(`(prefers-reduced-motion: reduce)`).matches === true;
+
+    window.onload = () => {
+      if (!isReducedMotion()) {
+        decay();
+      }
+
+      document.addEventListener("resize", () => {
+        if (!isReducedMotion()) {
+          decay();
+        }
+      });
+
+      document.addEventListener("scroll", () => {
+        if (!isReducedMotion()) {
+          decay();
+        }
+      });
+    };
+  </script>
+</html>
