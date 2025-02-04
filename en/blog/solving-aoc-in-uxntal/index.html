@@ -228,8 +228,7 @@
 <p>Later, Devine mentioned a much simpler technique for debugging: printing stack contents via <code>.System/debug</code>. The official docs say:</p>
 <blockquote>
 <p>Sending a non-null byte to the System/debug port will print the content of the stacks or pause
-the evaluation if the emulator includes a step-debugger.</p>
-</blockquote>
+the evaluation if the emulator includes a step-debugger.</p></blockquote>
 <p>Since Uxn debuggers (like <code>beetbug</code>) currently don’t integrate with command-line parameters, <code>.System/debug</code> calls (<code>#010e DEO #0a18 DEO</code>) turned out to be the most convenient debug method. For instance:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-uxntal" data-lang="uxntal"><span style="display:flex;"><span><span style="color:#a6e22e">%debug</span> { <span style="color:#ae81ff">#010e</span> <span style="color:#66d9ef">DEO</span> <span style="color:#ae81ff">#0a18</span> <span style="color:#66d9ef">DEO</span> }
 </span></span><span style="display:flex;"><span>
@@ -254,8 +253,7 @@ the evaluation if the emulator includes a step-debugger.</p>
 <blockquote>
 <p><strong>JCI</strong> cond8 &ndash;  Pops a byte from the working stack and if it is not zero,
 moves the PC to a relative address at a distance equal to the next short in memory,
-otherwise moves PC+2. This opcode has no modes.</p>
-</blockquote>
+otherwise moves PC+2. This opcode has no modes.</p></blockquote>
 <p>Consider this snippet:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-uxntal" data-lang="uxntal"><span style="display:flex;"><span><span style="color:#66d9ef">|100</span> <span style="color:#ae81ff">#0000</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">@&gt;get</span> 
@@ -311,8 +309,7 @@ otherwise moves PC+2. This opcode has no modes.</p>
 &amp;has-args ( ... )
 </code></pre><p>That port tells you the type of incoming data via port <code>0x12</code>. The documentation is sparse, but it does mention:</p>
 <blockquote>
-<p>The <strong>Console/vector</strong>* is evaluated when a byte is received. The <strong>Console/type</strong> port holds one of 5 known types: no-queue(0), stdin(1), argument(2), argument-spacer(3), argument-end(4).</p>
-</blockquote>
+<p>The <strong>Console/vector</strong>* is evaluated when a byte is received. The <strong>Console/type</strong> port holds one of 5 known types: no-queue(0), stdin(1), argument(2), argument-spacer(3), argument-end(4).</p></blockquote>
 <p>In practice, this means:</p>
 <ol>
 <li>There is a single queue that merges command-line arguments and stdin. The emulator effectively concatenates them into one string.</li>

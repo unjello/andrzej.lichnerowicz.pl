@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="og:title" content="Rust Inherited | @unjello" />
+    <meta property="twitter:title" content="Rust Inherited | @unjello" />
+    <meta property="og:url" content="http://andrzej.lichnerowicz.pl/en/blog/rust-inherited/" />
+    <meta property="og:type" content="blog" />
+     
+    <meta property="og:image" content="http://andrzej.lichnerowicz.pl/en/blog/rust-inherited/rust.png" />
+    <meta property="twitter:image" content="http://andrzej.lichnerowicz.pl/en/blog/rust-inherited/rust.png" />
+     
+    <meta property="og:description" content="How I tried to make Rust do inheritance." />
+    <meta property="twitter:description" content="How I tried to make Rust do inheritance." />
+    
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/favicon.ico" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.1.7/purify.min.js"
+      integrity="sha512-BdRNuI8/lsyxkKQVxK1lVtfZshggfXPAwEP+JAOJEKx6Y8SLfcBSRdaWyXQmMxo+wG180uFqXYGjGRL0mh4/Jw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+     
+    <link
+      rel="stylesheet"
+      href="/css/style.min.1383b2b88f11c77e52dfaac1bb207e0ad22fa43fc6667da8d1fcf0a06223f40a.css"
+      integrity="sha256-E4OyuI8Rx35S36rBuyB&#43;CtIvpD/GZn2o0fzwoGIj9Ao="
+      crossorigin="anonymous"
+    />
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)']]                  
+    }
+  };
+</script>
+ 
+    <title>Rust Inherited | Blog @unjello</title>
+  </head>
+  <body>
+    <canvas
+      id="decay-canvas"
+      width="3172"
+      height="440"
+      style="height: 220px; width: 1586px"
+    ></canvas>
+    <div class="layout container-fluid">
+      <header>
+        <h1>
+          <a href="/">Andrzej unjello Lichnerowicz</a>
+        </h1>
+        <ul class="list-inline tagline">
+          
+          <li class="list-inline-item">he</li>
+          
+          <li class="list-inline-item">him</li>
+          
+          <li class="list-inline-item">activist</li>
+          
+          <li class="list-inline-item">trees and greenery lover</li>
+          
+        </ul>
+        <ul class="list-inline socialmedia">
+          
+          <li class="list-inline-item">
+            <a href="https://mastodon.gamedev.place/@unjello">mastodon</a>
+          </li>
+          
+          <li class="list-inline-item">
+            <a href="https://codeberg.org/unjello">codeberg</a>
+          </li>
+          
+          <li class="list-inline-item">
+            <a href="mailto:andrzej@lichnerowicz.pl">email</a>
+          </li>
+          
+          <li class="list-inline-item">
+            <a href="https://andrzej.lichnerowicz.pl/public.pgp">pgp</a>
+          </li>
+          
+        </ul>
+      </header>
+
+      <section class="blog_single">
+        <h1>Rust Inherited</h1>
+        <div class="date">2025-02-04T16:54:15&#43;02:00</div>
+        <div class="content">
+          <p>I was working on a plugin system the other day and ran into an interesting problem. Imagine you&rsquo;re building a distributed map/reduce framework. The core operations &ndash; <code>filter</code>, <code>map</code>, and <code>fold</code> &ndash; are conceptually the same, but each function is executed as a separate binary by the platform. This binary reads incoming data, transforms it into a <code>Vec</code>, does its thing, and then returns a <code>Vec</code> for serialization and further processing.</p>
+<p>Most of the logic is shared: serialization, deserialization, protocol handling, maybe even some keepalives. But there are also unique requirements for each function—for example, <code>fold</code> needs to maintain an accumulator.</p>
+<p>From the start, I had a few goals in mind:</p>
+<ol>
+<li>The SDK should abstract away all protocol handling, exposing only the core data processing functionality.</li>
+<li>The setup should be minimal.</li>
+<li>The design should be self-explanatory.</li>
+<li>It should be foolproof &ndash; each plugin type (<code>Filter</code>, <code>Map</code>, <code>Fold</code>) should be mutually exclusive.</li>
+</ol>
+<h1 id="the-oop-approach">The OOP Approach</h1>
+<p>If I were doing this in Python or C++, I&rsquo;d reach for inheritance. I&rsquo;d create a base <code>Plugin</code> class with most of the functionality and subclass it for <code>Filter</code>, <code>Map</code>, and <code>Fold</code>. Something like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Plugin</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">process</span>(self):
+</span></span><span style="display:flex;"><span>    self<span style="color:#f92672">.</span>protocol_handshake()
+</span></span><span style="display:flex;"><span>    input <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>receive_records()
+</span></span><span style="display:flex;"><span>    output <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>handle_records(input)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> output:
+</span></span><span style="display:flex;"><span>      self<span style="color:#f92672">.</span>send_records(output)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">handle_records</span>(self, input):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">raise</span> <span style="color:#a6e22e">NotImplementedError</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Filter</span>(Plugin):)
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">handle_records</span>(self, input):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>filter(input)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">filter</span>(self, input):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">raise</span> <span style="color:#a6e22e">NotImplementedError</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Map</span>(Plugin):
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">handle_records</span>(self, input):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>map(input)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">map</span>(self, input):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">raise</span> <span style="color:#a6e22e">NotImplementedError</span>
+</span></span></code></pre></div><p>A developer using this SDK would just subclass one of these:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> sdk <span style="color:#f92672">import</span> Filter
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">MyGreenGrassFilter</span>(Filter):
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">filter</span>(self, input):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">None</span> <span style="color:#66d9ef">if</span> <span style="color:#e6db74">&#39;failed&#39;</span> <span style="color:#f92672">in</span> input <span style="color:#66d9ef">else</span> input
+</span></span></code></pre></div><p>This is clean, easy to understand, and exactly what I’d want from a developer’s perspective. The only issue? There’s no real way to enforce that a plugin is only a <code>Filter</code>, <code>Map</code>, or <code>Fold</code>. Someone could mix them up, and things could get messy.</p>
+<h1 id="rust-doesnt-do-that">Rust Doesn’t Do That</h1>
+<p>Rust doesn’t have inheritance, nor does it let you implement traits for traits, like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#66d9ef">trait</span> Plugin {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">handle_records</span>(<span style="color:#f92672">&amp;</span>self, input: Vec<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span>) -&gt; Vec<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">trait</span> Filter {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">filter</span>(<span style="color:#f92672">&amp;</span>self, input: Vec<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span>) -&gt; Vec<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">impl</span> Plugin <span style="color:#66d9ef">for</span> Filter {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">handle_records</span>(<span style="color:#f92672">&amp;</span>self, input: Vec<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span>) -&gt; Vec<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span> {
+</span></span><span style="display:flex;"><span>    self.filter(input)
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>That just doesn’t work. Rust traits don’t stack like that.</p>
+<p>I tried getting around this with generics:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#66d9ef">trait</span> Plugin {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">handle_records</span>(<span style="color:#f92672">&amp;</span>self, input: Vec<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span>) -&gt; Vec<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">trait</span> Filter {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">filter</span>(<span style="color:#f92672">&amp;</span>self, input: Vec<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span>) -&gt; Vec<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">impl</span><span style="color:#f92672">&lt;</span>X<span style="color:#f92672">&gt;</span> Plugin <span style="color:#66d9ef">for</span> X 
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">where</span>
+</span></span><span style="display:flex;"><span>  X: <span style="color:#a6e22e">Filter</span>
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">handle_records</span>(<span style="color:#f92672">&amp;</span>self, input: Vec<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span>) -&gt; Vec<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span> {
+</span></span><span style="display:flex;"><span>    self.filter(input)
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>That worked&hellip; until I needed another command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#66d9ef">trait</span> Map {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">map</span>(<span style="color:#f92672">&amp;</span>self, input: Vec<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span>) -&gt; Vec<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">impl</span><span style="color:#f92672">&lt;</span>X<span style="color:#f92672">&gt;</span> Plugin <span style="color:#66d9ef">for</span> X 
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">where</span>
+</span></span><span style="display:flex;"><span>  X: <span style="color:#a6e22e">Map</span>
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">handle_records</span>(<span style="color:#f92672">&amp;</span>self, input: Vec<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span>) -&gt; Vec<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span> {
+</span></span><span style="display:flex;"><span>    self.map(input)
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Suddenly, Rust yelled at me:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fish" data-lang="fish"><span style="display:flex;"><span><span style="color:#a6e22e">sdk</span> on  main <span style="color:#f92672">[</span>?<span style="color:#f92672">]</span> is 🦀 v1.<span style="color:#ae81ff">86</span>.<span style="color:#ae81ff">0</span>-nightly took 12s
+</span></span><span style="display:flex;"><span>❯ cargo build
+</span></span><span style="display:flex;"><span>   <span style="color:#a6e22e">Compiling</span> sdk v0.<span style="color:#ae81ff">1</span>.<span style="color:#ae81ff">0</span> <span style="color:#f92672">(</span>/Users/angelo/sdk<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">error</span><span style="color:#f92672">[</span>E0119<span style="color:#f92672">]</span>: conflicting implementations of trait `Plugin`
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">--&gt;</span> src/main.rs:<span style="color:#ae81ff">22</span>:<span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#f92672">|</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">9</span>  <span style="color:#f92672">|</span> / impl<span style="color:#f92672">&lt;</span>X<span style="color:#f92672">&gt;</span> Plugin for X
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">10</span> <span style="color:#f92672">|</span> <span style="color:#f92672">|</span> <span style="color:#a6e22e">where</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">11</span> <span style="color:#f92672">|</span> <span style="color:#f92672">|</span>   <span style="color:#a6e22e">X</span>: Filter
+</span></span><span style="display:flex;"><span>   <span style="color:#f92672">|</span> <span style="color:#f92672">|</span><span style="color:#a6e22e">___________-</span> first implementation here
+</span></span><span style="display:flex;"><span>...
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">22</span> <span style="color:#f92672">|</span> / impl<span style="color:#f92672">&lt;</span>X<span style="color:#f92672">&gt;</span> Plugin for X
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">23</span> <span style="color:#f92672">|</span> <span style="color:#f92672">|</span> <span style="color:#a6e22e">where</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">24</span> <span style="color:#f92672">|</span> <span style="color:#f92672">|</span>   <span style="color:#a6e22e">X</span>: Map
+</span></span><span style="display:flex;"><span>   <span style="color:#f92672">|</span> <span style="color:#f92672">|</span><span style="color:#a6e22e">________</span><span style="color:#f92672">^</span> conflicting implementation
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">For</span> more information about this error, try `rustc <span style="color:#a6e22e">--explain</span> E0119`.
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">error</span>: could not compile `sdk` <span style="color:#f92672">(</span><span style="color:#a6e22e">bin</span> <span style="color:#e6db74">&#34;sdk&#34;</span><span style="color:#f92672">)</span> due to <span style="color:#ae81ff">1</span> previous error
+</span></span></code></pre></div><p>Rust was absolutely correct &ndash; I couldn’t guarantee that <code>Map</code> and <code>Filter</code> wouldn&rsquo;t be implemented on the same type. And Rust really cares about safety.</p>
+<h1 id="the-solution-enum-based-plugins">The Solution: Enum-based Plugins</h1>
+<p>After a bit of soul-searching, I landed on this approach:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Records</span> <span style="color:#f92672">=</span> Vec<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">pub</span> <span style="color:#66d9ef">enum</span> <span style="color:#a6e22e">PluginType</span> {
+</span></span><span style="display:flex;"><span>  Filter(Box<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">dyn</span> Filter<span style="color:#f92672">&gt;</span>),
+</span></span><span style="display:flex;"><span>  Map(Box<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">dyn</span> Map<span style="color:#f92672">&gt;</span>),
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">pub</span> <span style="color:#66d9ef">trait</span> Plugin {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">handle_records</span>(<span style="color:#f92672">&amp;</span>self, input: <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">Records</span>) -&gt; Result<span style="color:#f92672">&lt;</span>Records<span style="color:#f92672">&gt;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">run</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//...
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">impl</span> Plugin <span style="color:#66d9ef">for</span> PluginType {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">handle_records</span>(<span style="color:#f92672">&amp;</span>self, input: <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">Records</span>) -&gt; Result<span style="color:#f92672">&lt;</span>Records<span style="color:#f92672">&gt;</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">match</span> self {
+</span></span><span style="display:flex;"><span>      PluginType::Filter(v) <span style="color:#f92672">=&gt;</span> v.filter(input),
+</span></span><span style="display:flex;"><span>      PluginType::Map(v) <span style="color:#f92672">=&gt;</span> v.map(records),
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">pub</span> <span style="color:#66d9ef">trait</span> Filter {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">Filter</span>(<span style="color:#f92672">&amp;</span>self, input: <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">Records</span>) -&gt; <span style="color:#a6e22e">Records</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">pub</span> <span style="color:#66d9ef">trait</span> Map {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">map</span>(<span style="color:#f92672">&amp;</span>self, input: <span style="color:#66d9ef">&amp;</span><span style="color:#a6e22e">Records</span>) -&gt; <span style="color:#a6e22e">Records</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">pub</span> <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">filter_plugin</span><span style="color:#f92672">&lt;</span>F<span style="color:#f92672">&gt;</span>(plugin: <span style="color:#a6e22e">F</span>) -&gt; <span style="color:#a6e22e">PluginType</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">where</span>
+</span></span><span style="display:flex;"><span>  F: <span style="color:#a6e22e">Filter</span> <span style="color:#f92672">+</span> &#39;static
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  PluginType::Filter(Box::new(plugin))
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">pub</span> <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">map_plugin</span><span style="color:#f92672">&lt;</span>M<span style="color:#f92672">&gt;</span>(plugin: <span style="color:#a6e22e">M</span>) -&gt; <span style="color:#a6e22e">PluginType</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">where</span>
+</span></span><span style="display:flex;"><span>  M: <span style="color:#a6e22e">Map</span> <span style="color:#f92672">+</span> &#39;static
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  PluginType::Map(Box::new(plugin))
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>And for the developer, it looks just as clean as the Python version:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#66d9ef">use</span> sdk::Filter;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">Passthrough</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">impl</span> Filter <span style="color:#66d9ef">for</span> Passthrough {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">filter</span>(<span style="color:#f92672">&amp;</span>self, input: Vec<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span>) -&gt; Vec<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span> {
+</span></span><span style="display:flex;"><span>    input
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> plugin <span style="color:#f92672">=</span> filter_plugin(Passthrough);
+</span></span><span style="display:flex;"><span>  plugin.run();
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h1 id="the-best-part">The Best Part?</h1>
+<p>Not only does this keep the API as clean as the OOP version, but it also ensures mutual exclusivity between plugin types! A type cannot be both a Filter and a Map &ndash; Rust enforces this at compile time.</p>
+<p>So while Rust might not have traditional inheritance, with a little creativity (and a few enums), you can still get a clean and safe design.</p>
+ 
+        </div>
+      </section>
+      <script>
+        
+        (function addTitleToCodeBlock() {
+          let list = document.body.getElementsByClassName("highlight");
+
+          for (i = 0; i <= list.length - 1; i++) {
+            let code = list[i].firstElementChild.firstElementChild;
+            let codeName = code ? code.className.split(":")[1] : null;
+
+            if (codeName) {
+              console.log(codeName);
+              let div = document.createElement("div");
+              div.textContent = codeName;
+              div.classList.add("code-name");
+              code.parentNode.insertBefore(div, code);
+            }
+          }
+        })();
+      </script>
+
+      <footer class="fs-6 text-muted mt-5">
+        <p>
+          CC0. Powered by <a href="https://gohugo.io">Hugo</a>. Theme inspired
+          by <a href="https://www.mattdesl.com/">@mattdesl</a> and
+          <a href="https://ozafoto.com/digital/">Oza</a>.
+        </p>
+      </footer>
+    </div>
+  </body>
+  <script type="text/javascript">
+    
+
+    function decay() {
+      const canvas = document.getElementById("decay-canvas");
+      const pixelSize = window.innerWidth > 1600 ? 8 : 6;
+
+      canvas.width = window.innerWidth * 2;
+      canvas.height = 440;
+      canvas.style.height = canvas.height / 2 + "px";
+      canvas.style.width = canvas.width / 2 + "px";
+      const ctx = canvas.getContext("2d");
+      ctx.fillStyle = "#fff";
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      for (let j = 0; j < canvas.height; j += pixelSize) {
+        const probability = Math.pow(
+          (canvas.height - 1 - j) / (canvas.height - 1),
+          3,
+        );
+        for (let i = 0; i < canvas.width; i += pixelSize) {
+          if (Math.random() < probability) {
+            ctx.fillRect(i, j, pixelSize, pixelSize);
+          }
+        }
+      }
+    }
+
+    window.isReducedMotion = () =>
+      window.matchMedia(`(prefers-reduced-motion: reduce)`) === true ||
+      window.matchMedia(`(prefers-reduced-motion: reduce)`).matches === true;
+
+    window.onload = () => {
+      if (!isReducedMotion()) {
+        decay();
+      }
+
+      document.addEventListener("resize", () => {
+        if (!isReducedMotion()) {
+          decay();
+        }
+      });
+
+      document.addEventListener("scroll", () => {
+        if (!isReducedMotion()) {
+          decay();
+        }
+      });
+    };
+  </script>
+</html>

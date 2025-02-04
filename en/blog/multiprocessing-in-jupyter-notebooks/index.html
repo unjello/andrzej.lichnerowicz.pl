@@ -167,8 +167,7 @@
 <blockquote>
 <p>Note that functions (built-in and user-defined) are pickled by <strong>fully qualified name</strong>, not by value.
 This means that only the function name is pickled, along with the name of the containing module and classes.
-Neither the function’s code, nor any of its function attributes are pickled.</p>
-</blockquote>
+Neither the function’s code, nor any of its function attributes are pickled.</p></blockquote>
 <p>Since all lambdas share the same name &ndash; <code>&lt;lambda&gt;</code> &ndash; that explains why we need to define a proper method:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> concurrent.futures
 </span></span><span style="display:flex;"><span>

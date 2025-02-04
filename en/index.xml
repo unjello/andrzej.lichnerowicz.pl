@@ -253,6 +253,13 @@
       <description>&lt;h1 id=&#34;falling-in-love-with-sourcehut-but-still-tempted-by-github-actions&#34;&gt;Falling in Love with SourceHut, But Still Tempted by GitHub Actions&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://git.sr.ht/&#34;&gt;SourceHut&lt;/a&gt; has recently won my heart with its simplicity and 90&amp;rsquo;s UI vibe, but I can&amp;rsquo;t resist the appeal of GitHub&amp;rsquo;s free workflow automation platform. I&amp;rsquo;ve been working on a few small projects in Python, TypeScript, and Rust, and have set up CI for all of them. Now that I&amp;rsquo;ve revived my blog, I thought I&amp;rsquo;d write about my experience using GitHub Actions for deployment.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Rust Inherited</title>
+      <link>http://andrzej.lichnerowicz.pl/en/blog/rust-inherited/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://andrzej.lichnerowicz.pl/en/blog/rust-inherited/</guid>
+      <description>&lt;p&gt;I was working on a plugin system the other day and ran into an interesting problem. Imagine you&amp;rsquo;re building a distributed map/reduce framework. The core operations &amp;ndash; &lt;code&gt;filter&lt;/code&gt;, &lt;code&gt;map&lt;/code&gt;, and &lt;code&gt;fold&lt;/code&gt; &amp;ndash; are conceptually the same, but each function is executed as a separate binary by the platform. This binary reads incoming data, transforms it into a &lt;code&gt;Vec&lt;/code&gt;, does its thing, and then returns a &lt;code&gt;Vec&lt;/code&gt; for serialization and further processing.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Rust Macros: A Cautionary Tale</title>
       <link>http://andrzej.lichnerowicz.pl/en/blog/rust-macros-a-cautionary-tale/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

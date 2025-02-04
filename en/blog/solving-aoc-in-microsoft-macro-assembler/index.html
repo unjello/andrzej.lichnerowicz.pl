@@ -172,8 +172,7 @@
 
 <p>When I look at the <em>Program Segment Prefix</em> under <em>Data View</em>, I can see the string <code>EXAMPLE.TXT</code> at offset <code>80h</code> in the command-line tail section, but I also see it at offset <code>5Ch</code>. That was unexpected. Turns out those are two File Control Block (<a href="https://en.wikipedia.org/wiki/File_Control_Block">FCB</a>) entries in the PSP. FCBs predate file handles and come from CP/M. DOS kept them for backward compatibility, but they aren’t typically relevant for modern usage. Wikipedia states:</p>
 <blockquote>
-<p>The FCB originates from CP/M and is also present in most variants of DOS, though only as a backward compatibility measure in MS-DOS versions 2.0 and later.</p>
-</blockquote>
+<p>The FCB originates from CP/M and is also present in most variants of DOS, though only as a backward compatibility measure in MS-DOS versions 2.0 and later.</p></blockquote>
 <p>This is spot on. MS-DOS 5.0 still <a href="https://archive.org/details/isbn_9781556153297">documents</a> the old FCB functions &ndash; albeit briefly &ndash; and doesn’t explain what <code>unopened</code> means in any great detail. For that, you have to check older manuals like the <a href="https://archive.org/details/microsoft-ms-dos-3.2-programmers-reference-1986">Microsoft MS-DOS 3.2 Programmer&rsquo;s Reference</a>:</p>
 
 
