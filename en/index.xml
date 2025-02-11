@@ -281,6 +281,13 @@
       <description>&lt;p&gt;Demo, 1st place at Xenium 2019, PL.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Solving AoC in LEAN</title>
+      <link>http://andrzej.lichnerowicz.pl/en/blog/solving-aoc-in-lean/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://andrzej.lichnerowicz.pl/en/blog/solving-aoc-in-lean/</guid>
+      <description>&lt;h1 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/leanprover-community/lean4-mode&#34;&gt;Emacs Major Mode&lt;/a&gt; — there are also extensions for &lt;a href=&#34;https://github.com/Julian/lean.nvim&#34;&gt;Neovim&lt;/a&gt; and &lt;a href=&#34;https://marketplace.visualstudio.com/items?itemName=leanprover.lean4&#34;&gt;VS Code&lt;/a&gt;.&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://lean-lang.org/functional_programming_in_lean/title.html&#34;&gt;Functional Programming in Lean&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://lean-lang.org/doc/reference/latest/&#34;&gt;The Lean Language Reference&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://leanprover.zulipchat.com&#34;&gt;Zulip Forum?&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;installation&#34;&gt;Installation&lt;/h1&gt;&#xA;&lt;p&gt;It&amp;rsquo;s fairly straightforward, but you need to be careful with package names. In Homebrew, &lt;code&gt;brew install lean&lt;/code&gt; points to the old Lean 3 package. What you actually want now is:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fish&#34; data-lang=&#34;fish&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;❯ brew install elan&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Similarly, for the Emacs extension, Doom Emacs already includes Lean in its init.el (just uncomment the lean line):&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Solving AoC in Microsoft Macro Assembler</title>
       <link>http://andrzej.lichnerowicz.pl/en/blog/solving-aoc-in-microsoft-macro-assembler/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
