@@ -1,0 +1,564 @@
+1:"$Sreact.fragment"
+2:I[1544,["177","static/chunks/app/layout-7ea7f0006323b5b6.js"],"AsciiArtLogger"]
+3:I[2738,["177","static/chunks/app/layout-7ea7f0006323b5b6.js"],"ThemeProvider"]
+4:I[7555,[],""]
+5:I[1295,[],""]
+6:I[9543,["345","static/chunks/app/not-found-374964195ecf67e5.js"],"default"]
+8:I[9665,[],"MetadataBoundary"]
+a:I[9665,[],"OutletBoundary"]
+d:I[4911,[],"AsyncMetadataOutlet"]
+f:I[9665,[],"ViewportBoundary"]
+11:I[6614,[],""]
+:HL["/_next/static/css/e5565d963fd839c1.css","style"]
+:HL["/_next/static/css/72f0b751ba818b6f.css","style"]
+0:{"P":null,"b":"vI1f1rc00foWP8-o_ZTsc","p":"","c":["","en","blog","2025","01","babel-of-code-w03",""],"i":false,"f":[[["",{"children":["en",{"children":["blog",{"children":[["slug","2025/01/babel-of-code-w03","oc"],{"children":["__PAGE__",{}]}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/e5565d963fd839c1.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","link",null,{"rel":"icon","href":"/favicon.ico","sizes":"any"}],["$","link",null,{"rel":"apple-touch-icon","href":"/apple-touch-icon.png"}]]}],["$","body",null,{"children":[["$","$L2",null,{}],["$","$L3",null,{"children":["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","$L6",null,{}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]]}]]}]]}],{"children":["en",["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["blog",["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","2025/01/babel-of-code-w03","oc"],["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L7",["$","$L8",null,{"children":"$L9"}],[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/72f0b751ba818b6f.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$La",null,{"children":["$Lb","$Lc",["$","$Ld",null,{"promise":"$@e"}]]}]]}],{},null,false]},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","chZE1HvHnvU2zw2oIZIR-",{"children":[["$","$Lf",null,{"children":"$L10"}],null]}],null]}],false]],"m":"$undefined","G":["$11","$undefined"],"s":false,"S":true}
+12:"$Sreact.suspense"
+13:I[4911,[],"AsyncMetadata"]
+9:["$","$12",null,{"fallback":null,"children":["$","$L13",null,{"promise":"$@14"}]}]
+c:null
+10:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+b:null
+14:{"metadata":[["$","title","0",{"children":"Solving AoC in Uxntal | @unjello blog"}],["$","meta","1",{"name":"description","content":"Let's implement 2024/day/3 Advent of Code puzzle in Uxntal. BabelOfCode is low key. The goal is to solve each Advent of Code puzzle in a different language."}],["$","meta","2",{"property":"og:title","content":"Solving AoC in Uxntal | @unjello blog"}],["$","meta","3",{"property":"og:description","content":"Let's implement 2024/day/3 Advent of Code puzzle in Uxntal. BabelOfCode is low key. The goal is to solve each Advent of Code puzzle in a different language."}],["$","meta","4",{"property":"og:url","content":"https://andrzej.lichnerowicz.pl/en/blog/2025/01/babel-of-code-w03/"}],["$","meta","5",{"property":"og:image","content":"https://andrzej.lichnerowicz.pl/images/2025/01/babel-of-code-w03/beetbug.png"}],["$","meta","6",{"property":"og:image:width","content":"1200"}],["$","meta","7",{"property":"og:image:height","content":"630"}],["$","meta","8",{"property":"og:image:alt","content":"Solving AoC in Uxntal | @unjello blog"}],["$","meta","9",{"property":"og:type","content":"article"}],["$","meta","10",{"property":"article:published_time","content":"2025-01-26T23:54:15+02:00"}],["$","meta","11",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","12",{"name":"twitter:title","content":"Solving AoC in Uxntal | @unjello blog"}],["$","meta","13",{"name":"twitter:description","content":"Let's implement 2024/day/3 Advent of Code puzzle in Uxntal. BabelOfCode is low key. The goal is to solve each Advent of Code puzzle in a different language."}],["$","meta","14",{"name":"twitter:image","content":"https://andrzej.lichnerowicz.pl/images/2025/01/babel-of-code-w03/beetbug.png"}],["$","link","15",{"rel":"shortcut icon","href":"/favicon.ico"}],["$","link","16",{"rel":"icon","href":"/favicon.ico","sizes":"any"}],["$","link","17",{"rel":"apple-touch-icon","href":"/apple-touch-icon.png"}]],"error":null,"digest":"$undefined"}
+e:{"metadata":"$14:metadata","error":null,"digest":"$undefined"}
+15:I[8109,["72","static/chunks/72-d3fcf2c32f7e11b9.js","435","static/chunks/435-711aececbe1f0279.js","447","static/chunks/app/en/blog/%5B%5B...slug%5D%5D/page-6c4a572667fc6dca.js"],"ThemeSwitcher"]
+17:I[6874,["72","static/chunks/72-d3fcf2c32f7e11b9.js","435","static/chunks/435-711aececbe1f0279.js","447","static/chunks/app/en/blog/%5B%5B...slug%5D%5D/page-6c4a572667fc6dca.js"],""]
+18:I[1809,["72","static/chunks/72-d3fcf2c32f7e11b9.js","435","static/chunks/435-711aececbe1f0279.js","447","static/chunks/app/en/blog/%5B%5B...slug%5D%5D/page-6c4a572667fc6dca.js"],"AsciiBorderedMdx"]
+16:T548,                              _______._ _
+                      _ _.___/       |
+                         |           |
+                         |           |
+                                                 ∙
+                         .                       :
+             ____________¡ >>>  _______   _ __ _ ¡  __    _______
+          __|⌐           |  ___|  ⌐____|_ ______ |       |       |
+        . |     [        | |                   _ |  :  __l.|  ┌  | .
+     ÷¼¼¼ |     |         \|    _____|       _ __|  |_|   |      | ¼¼¼÷
+          |_____l  _ l         |     |___|        ________|------!
+          ! ___ _         \____| ___ !  _________|.sti      __ _ :
+          ∙                          :             < <<<<        ∙
+                                     ∙
+                         :           |
+    - -----andrzej-_ ____\_____|----_|_____________'-lichnerowicz-------- -
+                         :           |
+ .     p e r s o n a l ! |    #1     | wEBPAGE                            .
+ . _         - --------- |  - -- -   | ------- -                         _  .
+-:-\-\-------------------|- -     - -|-----------------------------------\-\-:
+ |                      _|___________|_                                      |
+ |                       :           :                                       |7:["$","div",null,{"className":"flex justify-center","children":["$","div",null,{"className":"ascii-art nfo-pre","children":[["$","$L15",null,{}],["$","div",null,{"className":"header-component","children":"$16"}]," |//_)-> 2 0 2 5 . 0 1 . 2 6 <--------------------------------------------(_\\|\n",[["$","div",null,{"className":"whitespace-pre font-mono","children":" |                                                                           |"}],["$","div",null,{"className":"whitespace-pre font-mono","children":" |                                                                           |"}],["$","div",null,{"className":"whitespace-pre font-mono","style":{"display":"flex"},"children":[" | ",["$","$L17",null,{"href":"/","className":"hover:underline inline-block","prefetch":false,"style":{"textDecoration":"none","color":"inherit","width":"calc(100% - 6ch)"},"children":"<< back                                                                     "}],"|"]}],["$","div",null,{"className":"whitespace-pre font-mono","children":" |                                                                           |"}]],["$","$L18",null,{"children":[["$","div",null,{"style":{"fontWeight":"bold","fontSize":"1.2em","marginTop":"1em","marginBottom":"2.5em"},"children":["# ","Solving AoC in Uxntal"]}],"$L19"]}],"$7:props:children:props:children:3",["$","div",null,{"children":[" \\__                      --> ",["$","a",null,{"href":"http://andrzej.lichnerowicz.pl","target":"_blank","rel":"noopener noreferrer","title":"andrzej.lichnerowicz.pl","className":"link","style":{"cursor":"pointer"},"children":"andrzej.lichnerowicz.pl"}]," <--                  __/\n   //                                                                      \\\\\n  // ------------------------                        ---------------------- \\\\\n '~~~~~~~~~~~~~~~~~~~~~~~~~// ------         ------- \\~~~~~~~~~~~~~~~~~~~~~~`\n                          '~~~~~~~//          \\~~~~~~~`\n                                 // ---------- \\\n                                '~~~~~~~~~~~~~~~`\n      "]}]]}]}]
+1b:I[877,["72","static/chunks/72-d3fcf2c32f7e11b9.js","435","static/chunks/435-711aececbe1f0279.js","447","static/chunks/app/en/blog/%5B%5B...slug%5D%5D/page-6c4a572667fc6dca.js"],"Admonition"]
+1e:I[316,["72","static/chunks/72-d3fcf2c32f7e11b9.js","435","static/chunks/435-711aececbe1f0279.js","447","static/chunks/app/en/blog/%5B%5B...slug%5D%5D/page-6c4a572667fc6dca.js"],"Figure"]
+19:[["$","div",null,{"className":"MarkdownHeading_markdown-heading__G6B4T","children":[["$","span",null,{"className":"MarkdownHeading_markdown-hash__CheR_","children":["##"," "]}],["$","span",null,{"children":"Prerequisites"}]]}],"\n",["$","ol",null,{"children":["\n",["$","li",null,{"children":[["$","a",null,{"href":"https://git.sr.ht/~rabbits/uxn","children":"Uxn"}]," -- Graphical emulator (",null,"), command-line emulator (",null,"), and assembler (",null,")."]}],"\n",["$","li",null,{"children":[["$","a",null,{"href":"https://git.sr.ht/~rabbits/drifblim","children":"Dfriblim"}]," -- A native Uxn compiler."]}],"\n",["$","li",null,{"children":[["$","a",null,{"href":"https://git.sr.ht/~rabbits/beetbug","children":"Beetbug"}]," -- A debugger."]}],"\n",["$","li",null,{"children":[["$","a",null,{"href":"https://git.sr.ht/~rabbits/uxnlin","children":"Uxnlin"}]," -- A linter."]}],"\n",["$","li",null,{"children":[["$","a",null,{"href":"https://git.sr.ht/~rabbits/uxnfor","children":"Uxnfor"}]," -- A formatter."]}],"\n",["$","li",null,{"children":[["$","a",null,{"href":"https://100r.co/site/left.html","children":"Lef"}]," -- A native Uxn IDE."]}],"\n",["$","li",null,{"children":[["$","a",null,{"href":"https://wiki.xxiivv.com/site/uxntal_opcodes.html","children":"Uxn Opcodes"}]," - Uxntal opcode reference."]}],"\n",["$","li",null,{"children":[["$","a",null,{"href":"https://wiki.xxiivv.com/site/varvara.html","children":"Varvara"}]," - External I/O reference for Uxn."]}],"\n"]}],"\n",["$","div",null,{"className":"MarkdownHeading_markdown-heading__G6B4T","children":[["$","span",null,{"className":"MarkdownHeading_markdown-hash__CheR_","children":["##"," "]}],["$","span",null,{"children":"Installation"}]]}],"\n",["$","p",null,{"children":["Installation is fairly straightforward. The easiest method (in my opinion) is to visit the ",["$","a",null,{"href":"https://git.sr.ht/~rabbits/","children":"source-hut repository"}]," maintained by 100 Rabbits, then download and compile the emulator you want. I use ",null," on macOS, while ",null," might be the author’s preference. After compiling your chosen emulator, you can download and compile other tools (like ",null,") the same way:"]}],"\n",["","$L1a"],"\n",["$","p",null,{"children":"At this point, you have three particularly useful tools: the emulator, the assembler, and the debugger."}],"\n",["$","$L1b",null,{"type":"note","title":"$undefined","children":[["$","p",null,{"children":["If you use ",null," on macOS, you might encounter the following warning:"]}],["","$L1c"],["$","p",null,{"children":["As suggested on ",["$","a",null,{"href":"https://stackoverflow.com/questions/64126942/malloc-nano-zone-abandoned-due-to-inability-to-preallocate-reserved-vm-space","children":"Stack Overflow"}],", setting the following environment variable typically fixes it:"]}],["","$L1d"]]}],"\n",["$","div",null,{"className":"MarkdownHeading_markdown-heading__G6B4T","children":[["$","span",null,{"className":"MarkdownHeading_markdown-hash__CheR_","children":["##"," "]}],["$","span",null,{"children":"UXN"}]]}],"\n",["$","p",null,{"children":["At its core, ",["$","strong",null,{"children":"Uxn"}]," is a virtual CPU, an idealized 6502, so some of its opcodes might look familiar to 8-bit veterans. Another nostalgic quirk is that Uxn programs start at memory offset ",null,", reminiscent of .COM files under DOS or CP/M."]}],"\n",["$","p",null,{"children":[["$","strong",null,{"children":"Varvara"}]," is the name for the complete \"computer\" built around the Uxn CPU, encompassing devices for external I/O. You might see the terms \"Uxn\" and \"Varvara\" used interchangeably, but they differ conceptually."]}],"\n",["$","p",null,{"children":"Uxn is designed to be small. It has a 16-bit address bus, meaning base memory is 64 KiB. Emulators are encouraged to support 16 \"banks\" of memory (1 MiB total), although the specification allows up to 4 GiB of bank-switched memory in theory."}],"\n",["$","p",null,{"children":["The Uxn system also provides four customizable colors, mouse and keyboard input, four-channel audio, and a display resolution of 512×320, which can scale up to 2048×2048 (at least in the ",["$","a",null,{"href":"https://git.sr.ht/~rabbits/uxn11/tree/main/item/src/devices/screen.c#L71","children":"reference emulator"}],"). Despite this minimalistic palette, many Uxn applications still look strikingly aesthetic, reminiscent of old black-and-white or 2-bit graphics."]}],"\n",["$","$L1e",null,{"src":"./left.png","alt":"Screenshot of UXN emulator running Left, a UXN-native IDE for developing UXN programs.","caption":"Left -- UXN developer environment","attribution":"Screenshot by author.","postSlug":"/blog/2025/01/babel-of-code-w03"}],"\n",["$","$L1b",null,{"type":"note","title":"$undefined","children":[["$","p",null,{"children":"One design motivation behind Uxn is software sustainability and longevity. Devine Lu Linvega (the creator) aims for a platform that could feasibly run for 100+ years, one simple enough to be re-implemented on nearly any future hardware or environment. This stands in contrast to modern platforms that change constantly and lock you into complicated subscription models or online verifications."}],["$","p",null,{"children":"For more background, consider Devine’s talks:"}],["$","ul",null,{"children":["\n",["$","li",null,{"children":[["$","a",null,{"href":"https://www.youtube.com/watch?v=OfnEfFb8yks&t=8079s","children":"A shining palace built upon the sand"}]," which may be taken down in a near future due to Handmade Con orgas going with the wave of anti-everything-human thats rolling through US recently,"]}],"\n",["$","li",null,{"children":[["$","a",null,{"href":"https://www.youtube.com/watch?v=17iNTN1LGM8","children":"Weathering Software Winter"}],","]}],"\n",["$","li",null,{"children":[["$","a",null,{"href":"https://www.youtube.com/watch?v=T3u7bGgVspM","children":"An approach to computing and sustainability inspired from permaculture"}],","]}],"\n"]}]]}],"\n",["$","$L1e",null,{"src":"./oquonie.png","alt":"Screenshot of Oquonie. A game by 100 Rabits studio. The biggest UXN program to date -- ROM is around 500KiB","caption":"Oquonie -- UXN game","attribution":"Screenshot by author.","postSlug":"/blog/2025/01/babel-of-code-w03"}],"\n",["$","div",null,{"className":"MarkdownHeading_markdown-heading__G6B4T","children":[["$","span",null,{"className":"MarkdownHeading_markdown-hash__CheR_","children":["##"," "]}],["$","span",null,{"children":"UXNTAL"}]]}],"\n",["$","p",null,{"children":[["$","strong",null,{"children":"Tal"}]," (or ",["$","strong",null,{"children":"Uxntal"}],") is a \"semi-assembly\" language for the Uxn CPU. It mostly works like assembly but incorporates features such as lambdas. It’s also stack-based, making it feel like a cross between traditional assembly and ",["$","a",null,{"href":"https://en.wikipedia.org/wiki/Forth_(programming_language)","children":"Forth"}],", where opcodes like ",null," and ",null," replace what might otherwise be high-level function calls."]}],"\n",["$","$L1b",null,{"type":"note","title":"$undefined","children":["$","p",null,{"children":["This post focuses on the debugging and puzzle-solving process. For a deep dive into Varvara’s I/O design or the full Uxntal specification, see the official ",["$","a",null,{"href":"https://wiki.xxiivv.com/site/uxntal_opcodes.html","children":"Uxntal documentation"}]," and the ",["$","a",null,{"href":"https://wiki.xxiivv.com/site/varvara.html","children":"Varvara reference"}],"."]}]}],"\n",["$","p",null,{"children":"When learning a new language, I often skim the docs, attempt a small project, and iterate with the help of a debugger. Uxntal has a few unique twists:"}],"\n",["$","ul",null,{"children":["\n",["$","li",null,{"children":"Stack-based operations sometimes cause confusion about byte vs. short usage."}],"\n",["$","li",null,{"children":"Conditional jumps come in two flavors: label-based (?&label) and lambda-based (?{ ... })."}],"\n",["$","li",null,{"children":"Self-modifying code is common as a technique to increment pointers or store data inline."}],"\n"]}],"\n",["$","p",null,{"children":"Below is a snippet from a standard library I studied to understand Uxntal better:"}],"\n",["","$L1f"],"\n",["$","p",null,{"children":["I wanted to understand how it worked, so I carefully tracked how the stack changed after each instruction (similar to what I once did with ",["$","a",null,{"href":"https://en.wikipedia.org/wiki/X87","children":"x87"}]," math instructions):"]}],"\n",["$","$L1e",null,{"src":"./notes.jpg","alt":"Photo of a sheet of paper with careful notes on stack contents after each instruction.","caption":"Unroll all the loops! Show me the stack.","attribution":"Photo by author.","postSlug":"/blog/2025/01/babel-of-code-w03"}],"\n",["$","p",null,{"children":["Later, Devine mentioned a much simpler technique for debugging: printing stack contents via ",null,". The official docs say:"]}],"\n",["$","blockquote",null,{"children":["\n",["$","p",null,{"children":"Sending a non-null byte to the System/debug port will print the content of the stacks or pause\nthe evaluation if the emulator includes a step-debugger."}],"\n"]}],"\n",["$","p",null,{"children":["Since Uxn debuggers (like ",null,") currently don’t integrate with command-line parameters, ",null," calls (",null,") turned out to be the most convenient debug method. For instance:"]}],"\n",["","$L20"],"\n",["$","p",null,{"children":"When running:"}],"\n",["","$L21"],"\n",["$","p",null,{"children":"I can see the stack changes at each debug. Usually, mistakes arise from forgetting to handle short vs. byte properly."}],"\n",["$","p",null,{"children":["Another subtlety: there are two ways to do conditional jumps in Uxntal with the ",null," rune, either with labels or lambdas. Internally, ",null," emits the ",null," opcode:"]}],"\n",["$","blockquote",null,{"children":["\n",["$","p",null,{"children":[["$","strong",null,{"children":"JCI"}]," cond8 --  Pops a byte from the working stack and if it is not zero,\nmoves the PC to a relative address at a distance equal to the next short in memory,\notherwise moves PC+2. This opcode has no modes."]}],"\n"]}],"\n",["$","p",null,{"children":"Consider this snippet:"}],"\n",["","$L22"],"\n",["","$L23"],"\n",["$","p",null,{"children":["We push ",null," onto the stack, then ",null," checks if it’s nonzero. If it is, jump to the relative address in the next short ",null," to ",null,". If zero, skip past it. That’s logical enough."]}],"\n",["$","p",null,{"children":"But this snippet with lambdas behaves differently:"}],"\n",["","$L24"],"\n",["$","p",null,{"children":["Initially, I thought lambdas should be identical to label-based conditional jumps, where instead of ",null," I would get ",null,". But they're not. ",null," introduces a block that ends at ",null,", and the ",null," references the block’s end address. Visually, it can look odd, but it avoids the complexity of relocations"]}],"\n",["$","$L1e",null,{"src":"./beetbug.png","alt":"Screenshot of beetbug debugger showing disassembled code, and memory view","caption":"Diassembled lambda","attribution":"Photo by author.","postSlug":"/blog/2025/01/babel-of-code-w03"}],"\n",["$","$L1b",null,{"type":"note","title":"$undefined","children":[["$","p",null,{"children":["When you really think about it, it makes complete sense. Handling relocations that way would be difficult, and this approach lets Uxn provide higher-level features while still generating code whose layout directly reflects the source -- much like traditional assembly. Because ",null," points to the closing bracket (the end of the lambda), ",null," can jump in the non-zero case to whatever visually follows that lambda."]}],["$","p",null,{"children":"This design also reflects a key point Devine discusses in his presentations: modern tools often sacrifice performance for developer convenience. While this might not be the most pleasant developer experience, it keeps the opcode set minimal, removes the need for complex relocation, and yields compact binaries."}]]}],"\n",["$","p",null,{"children":"While working on a puzzle, I wanted to handle command-line parameters and read from a file specified in those parameters. Reading the file is straightforward:"}],"\n",["","$L25"],"\n",["$","p",null,{"children":["Reading arguments was a little trickier. Information about them and ",null," comes through the same mechanism in Uxn: the console subsystem vector. Vectors in Uxn behave much like interrupts—small routines that the host calls. To determine whether any parameters are available, you can check the console input port ",null,":"]}],"\n",["","$L26"],"\n",["$","p",null,{"children":["That port tells you the type of incoming data via port ",null,". The documentation is sparse, but it does mention:"]}],"\n",["$","blockquote",null,{"children":["\n",["$","p",null,{"children":["The ",["$","strong",null,{"children":"Console/vector"}],"* is evaluated when a byte is received. The ",["$","strong",null,{"children":"Console/type"}]," port holds one of 5 known types: no-queue(0), stdin(1), argument(2), argument-spacer(3), argument-end(4)."]}],"\n"]}],"\n",["$","p",null,{"children":"In practice, this means:"}],"\n",["$","ol",null,{"children":["\n",["$","li",null,{"children":"There is a single queue that merges command-line arguments and stdin. The emulator effectively concatenates them into one string."}],"\n",["$","li",null,{"children":["For each byte in that string, ",null," is triggered."]}],"\n"]}],"\n",["$","p",null,{"children":["For example, running ",null," provides the uxn program with a concatenated string of ",null," and a corresponding sequence of type values like ",null,". I didn’t fully understood that until I read the ",["$","a",null,{"href":"https://git.sr.ht/~rabbits/uxn-utils/tree/main/item/ref/uxnmin.c#L140","children":"emulator source code"}],"."]}],"\n",["$","p",null,{"children":"To handle arguments, you simply set up a function for the console interrupt:"}],"\n",["","$L27"],"\n",["$","p",null,{"children":"Then you can read and store each incoming byte:"}],"\n",["","$L28"],"\n",["$","p",null,{"children":"This snippet could be more flexible for edge cases, but it works for me. It uses two handy tricks:"}],"\n",["$","ol",null,{"children":["\n",["$","li",null,{"children":[["$","em",null,{"children":"Self-modifying code"}]," A naive approach might look like:"]}],"\n"]}],"\n",["","$L29"],"\n",["$","p",null,{"children":["The STZ instruction stores a byte at a given zero-page address. However, we also need to increment the pointer so the next interrupt stores the next byte at ",null,". That’s where self-modifying code helps. Instead of a fixed ",null,", we use:"]}],"\n",["","$L2a"],"\n",["$","p",null,{"children":"This creates a label (&ptr) referencing the exact memory that holds the LIT operand. Later, we can write:"}],"\n",["","$L2b"],"\n",["$","p",null,{"children":["which changes that operand from ",null," to ",null,". The next time the code runs, it effectively executes ",null,". On older 8-bit systems like the Atari XL/XE or C64, self-modifying code was common, but I hadn’t used it much until now."]}],"\n",["$","ol",null,{"start":"2","children":["\n",["$","li",null,{"children":[["$","strong",null,{"children":"Ensuring a zero-terminated string"}],". By using ",null,", we push a two-byte value onto the stack (e.g., ",null," for address ",null,"), and then ",null," will store ",null," at that address, guaranteeing a ",null," terminator. This way, every time we read a byte from ",null,", we also keep the string properly null-terminated."]}],"\n"]}],"\n",["$","p",null,{"children":"With a better handle on the language, platform, and tools, I’m now ready to move on to the main part of the project."}],"\n",["$","div",null,{"className":"MarkdownHeading_markdown-heading__G6B4T","children":[["$","span",null,{"className":"MarkdownHeading_markdown-hash__CheR_","children":["##"," "]}],["$","span",null,{"children":"The Puzzle"}]]}],"\n",["$","p",null,{"children":["To no surprise, I’m working on the ",["$","a",null,{"href":"https://adventofcode.com/2024/day/3","children":"3rd day"}]," of Advent of Code this time. It doesn’t look too bad. I need to find ",null," occurrences and sum them up."]}],"\n",["$","p",null,{"children":"Here's what I came up with:"}],"\n",["","$L2c"],"\n",["$","p",null,{"children":["that small loop goes through the file’s contents byte by byte, fetches the next two characters, assumes they’re ASCII so I can compare them numerically, and ",null," means ",null,". In other words, I first catch the ",null," token, then the ",null," token. If I detect ",null," I parse the digits, move one byte forward to skip the comma, and parse the next set of digits."]}],"\n",["$","p",null,{"children":["That all worked fine for my test input, but when I ran it on ",null,", the result was wrong. Now what? Since I can’t easily use ",null,", and stack-dumping with ",null," would be painful given there are 720 mul operations in total, I decided to print all the muls I found and ",null," compare them with a list generated by an external script:"]}],"\n",["","$L2d"],"\n",["$","p",null,{"children":["I discovered my code was too naive. It only checked for the start of the pattern, which allowed a few invalid entries, such as ",null," or ",null,". I needed to verify there was a ",null," after the digits. That also meant I couldn’t immediately calculate and store the product. Instead, I had to wait until I confirmed the pattern ended correctly. To do that, I temporarily hid the values on the return stack:"]}],"\n",["","$L2e"],"\n",["$","p",null,{"children":["I also realized I had incremented the pointer too soon after parsing the closing bracket, missing patterns like ",null,". That was a quick fix."]}],"\n",["$","p",null,{"children":"I ran it again:"}],"\n",["","$L2f"],"\n",["$","p",null,{"children":["and the answer was still incorrect. After inspecting the last few muls, I noticed ",null," alone yields ",null,", which is too large for a 16-bit value."]}],"\n",["$","p",null,{"children":["At that point, I was about ready to give up. I didn’t feel like implementing full 32-bit math myself on a Saturday evening. Fortunately, Devine pointed me to an ",["$","a",null,{"href":"https://git.phial.org/d6/nxu/src/branch/main/math32.tal","children":"excellent library"}]," that was already written. I only had to add a few minor helpers and a routine to print 32-bit numbers (the Uxn standard library only includes 16-bit decimal printing):"]}],"\n",["","$L30"],"\n",["$","p",null,{"children":"Let’s see:"}],"\n",["","$L31"],"\n",["$","p",null,{"children":["Perfect! Now, on to part 2. Fortunately, part 2 is a minor modification of part 1, so I reused most of the code with only a few changes. I added support for detecting ",null," and ",null,", simplified by matching four bytes ",null," and then either ",null," or ",null,". I was lucky that part 2 didn’t have any tricky edge cases."]}],"\n",["$","p",null,{"children":"I inserted this snippet at the start of the loop:"}],"\n",["","$L32"],"\n",["$","p",null,{"children":["Then I set a variable ",null," depending on those tokens. Inside the loop, I added to the second result only if the variable was set:"]}],"\n",["","$L33"],"\n",["$","p",null,{"children":"Final run:"}],"\n",["","$L34"],"\n",["$","p",null,{"children":"The correct answer on the first try! After some practice, it definitely gets easier."}],"\n",["$","p",null,{"children":["One interesting takeaway: adding 32-bit (u32) support increased the ROM size from ",null," bytes to ",null," bytes—nearly a ",null," jump."]}],"\n",["$","p",null,{"children":["The code is available on ",["$","a",null,{"href":"https://codeberg.org/unjello/babel-of-code/src/branch/main/2025/03","children":"Codeberg"}]," as usual. It's pretty brute force, looses track of the stack in few places, and could definietely use some refactoring... my point is: Do not try this at home. Or at all."]}],"\n",["$","p",null,{"children":["You'll probably be better off learning from ",["$","a",null,{"href":"https://sr.ht/~rabbits/","children":"Rek & Devine"}],", or from IRC crowd (#uxn @ Libera)."]}],"\n",["$","p",null,{"children":"Till the next time!"}]]
+35:T1b5e,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
+        <td class="code-ln-code" data-line-number="1"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">❯ ~/bin/uxnasm src/beetbug.tal beetbug.rom</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="2"><div class="code-ln-n" data-line-number="2"></div></td>
+        <td class="code-ln-code" data-line-number="2"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">--</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> Unused label: cursor</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="3"><div class="code-ln-n" data-line-number="3"></div></td>
+        <td class="code-ln-code" data-line-number="3"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">--</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> Unused label: cursor/x</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="4"><div class="code-ln-n" data-line-number="4"></div></td>
+        <td class="code-ln-code" data-line-number="4"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">--</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> Unused label: cursor/y</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="5"><div class="code-ln-n" data-line-number="5"></div></td>
+        <td class="code-ln-code" data-line-number="5"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">--</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> Unused label: emu</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="6"><div class="code-ln-n" data-line-number="6"></div></td>
+        <td class="code-ln-code" data-line-number="6"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">--</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> Unused label: uxn</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="7"><div class="code-ln-n" data-line-number="7"></div></td>
+        <td class="code-ln-code" data-line-number="7"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">--</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> Unused label: draw-bal</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="8"><div class="code-ln-n" data-line-number="8"></div></td>
+        <td class="code-ln-code" data-line-number="8"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">--</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> Unused label: dict</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="9"><div class="code-ln-n" data-line-number="9"></div></td>
+        <td class="code-ln-code" data-line-number="9"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">--</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> Unused label: push/8</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="10"><div class="code-ln-n" data-line-number="10"></div></td>
+        <td class="code-ln-code" data-line-number="10"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">--</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> Unused label: poke/8</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="11"><div class="code-ln-n" data-line-number="11"></div></td>
+        <td class="code-ln-code" data-line-number="11"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">--</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> Unused label: peek/8</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="12"><div class="code-ln-n" data-line-number="12"></div></td>
+        <td class="code-ln-code" data-line-number="12"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">--</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> Unused label: warp/8</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="13"><div class="code-ln-n" data-line-number="13"></div></td>
+        <td class="code-ln-code" data-line-number="13"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">--</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> Unused label: devw/8</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="14"><div class="code-ln-n" data-line-number="14"></div></td>
+        <td class="code-ln-code" data-line-number="14"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">--</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> Unused label: devr/8</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="15"><div class="code-ln-n" data-line-number="15"></div></td>
+        <td class="code-ln-code" data-line-number="15"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">--</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> Unused label: scrollbar-icn</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="16"><div class="code-ln-n" data-line-number="16"></div></td>
+        <td class="code-ln-code" data-line-number="16"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">--</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> Unused label: cap-icn</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="17"><div class="code-ln-n" data-line-number="17"></div></td>
+        <td class="code-ln-code" data-line-number="17"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">--</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> Unused label: controls-icns</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="18"><div class="code-ln-n" data-line-number="18"></div></td>
+        <td class="code-ln-code" data-line-number="18"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">Assembled</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> beetbug.rom </span><span style="color:#D73A49;--shiki-dark:#F97583">in</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> 5595 bytes(</span><span style="color:#005CC5;--shiki-dark:#79B8FF">8.57</span><span style="color:#24292E;--shiki-dark:#E1E4E8">% used), 338 labels, 0 macros.</span></span></td>
+      </tr></tbody></table>1a:["$","pre",null,{"className":"language-fish pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$35"}}]}]
+1c:["$","pre",null,{"className":"language-fish pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"<table class=\"code-ln-table\"><tbody><tr class=\"code-ln-line\">\n        <td class=\"code-ln-numbers\" data-line-number=\"1\"><div class=\"code-ln-n\" data-line-number=\"1\"></div></td>\n        <td class=\"code-ln-code\" data-line-number=\"1\"><span class=\"line\"><span style=\"color:#005CC5;--shiki-dark:#79B8FF\">uxncli</span><span style=\"color:#24292E;--shiki-dark:#E1E4E8\">(</span><span style=\"color:#005CC5;--shiki-dark:#79B8FF\">64788</span><span style=\"color:#24292E;--shiki-dark:#E1E4E8\">,0x1ff0b0240) malloc: nano zone abandoned due to inability to reserve vm space.</span></span></td>\n      </tr></tbody></table>"}}]}]
+1d:["$","pre",null,{"className":"language-fish pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"<table class=\"code-ln-table\"><tbody><tr class=\"code-ln-line\">\n        <td class=\"code-ln-numbers\" data-line-number=\"1\"><div class=\"code-ln-n\" data-line-number=\"1\"></div></td>\n        <td class=\"code-ln-code\" data-line-number=\"1\"><span class=\"line\"><span style=\"color:#005CC5;--shiki-dark:#79B8FF\">export</span><span style=\"color:#24292E;--shiki-dark:#E1E4E8\"> MallocNanoZone=0</span></span></td>\n      </tr></tbody></table>"}}]}]
+36:T9c6,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
+        <td class="code-ln-code" data-line-number="1"><span class="line"><span>@pdec ( short* -- )</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="2"><div class="code-ln-n" data-line-number="2"></div></td>
+        <td class="code-ln-code" data-line-number="2"><span class="line"><span>	#000a SWP2 [ LITr ff ]</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="3"><div class="code-ln-n" data-line-number="3"></div></td>
+        <td class="code-ln-code" data-line-number="3"><span class="line"><span>	&#x26;>get ( -- )</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="4"><div class="code-ln-n" data-line-number="4"></div></td>
+        <td class="code-ln-code" data-line-number="4"><span class="line"><span>		SWP2k DIV2k MUL2 SUB2 STH</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="5"><div class="code-ln-n" data-line-number="5"></div></td>
+        <td class="code-ln-code" data-line-number="5"><span class="line"><span>		POP OVR2 DIV2 ORAk ?&#x26;>get</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="6"><div class="code-ln-n" data-line-number="6"></div></td>
+        <td class="code-ln-code" data-line-number="6"><span class="line"><span>	POP2 POP2</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="7"><div class="code-ln-n" data-line-number="7"></div></td>
+        <td class="code-ln-code" data-line-number="7"><span class="line"><span>	&#x26;>put ( -- )</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="8"><div class="code-ln-n" data-line-number="8"></div></td>
+        <td class="code-ln-code" data-line-number="8"><span class="line"><span>		STHr INCk ?{ POP JMP2r }</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="9"><div class="code-ln-n" data-line-number="9"></div></td>
+        <td class="code-ln-code" data-line-number="9"><span class="line"><span>		[ LIT "0 ] ADD #18 DEO !&#x26;>put</span></span></td>
+      </tr></tbody></table>1f:["$","pre",null,{"className":"language-plaintext pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$36"}}]}]
+37:Tdfb,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
+        <td class="code-ln-code" data-line-number="1"><span class="line"><span>%debug { #010e DEO #0a18 DEO }</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="2"><div class="code-ln-n" data-line-number="2"></div></td>
+        <td class="code-ln-code" data-line-number="2"><span class="line"><span></span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="3"><div class="code-ln-n" data-line-number="3"></div></td>
+        <td class="code-ln-code" data-line-number="3"><span class="line"><span>@pdec ( short* -- )</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="4"><div class="code-ln-n" data-line-number="4"></div></td>
+        <td class="code-ln-code" data-line-number="4"><span class="line"><span>	#000a SWP2 [ LITr ff ]</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="5"><div class="code-ln-n" data-line-number="5"></div></td>
+        <td class="code-ln-code" data-line-number="5"><span class="line"><span>	&#x26;>get ( -- )</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="6"><div class="code-ln-n" data-line-number="6"></div></td>
+        <td class="code-ln-code" data-line-number="6"><span class="line"><span>		SWP2k DIV2k MUL2 SUB2 STH</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="7"><div class="code-ln-n" data-line-number="7"></div></td>
+        <td class="code-ln-code" data-line-number="7"><span class="line"><span>		POP OVR2 DIV2 ORAk ?&#x26;>get </span></span></td>
+      </tr><tr class="code-ln-line code-ln-mark">
+        <td class="code-ln-numbers" data-line-number="8"><div class="code-ln-n" data-line-number="8"></div></td>
+        <td class="code-ln-code" data-line-number="8"><span class="line"><span>		debug</span></span></td>
+      </tr><tr class="code-ln-line code-ln-mark">
+        <td class="code-ln-numbers" data-line-number="9"><div class="code-ln-n" data-line-number="9"></div></td>
+        <td class="code-ln-code" data-line-number="9"><span class="line"><span>		BRK</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="10"><div class="code-ln-n" data-line-number="10"></div></td>
+        <td class="code-ln-code" data-line-number="10"><span class="line"><span>	POP2 POP2</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="11"><div class="code-ln-n" data-line-number="11"></div></td>
+        <td class="code-ln-code" data-line-number="11"><span class="line"><span>	&#x26;>put ( -- )</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="12"><div class="code-ln-n" data-line-number="12"></div></td>
+        <td class="code-ln-code" data-line-number="12"><span class="line"><span>		STHr INCk ?{ POP JMP2r }</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="13"><div class="code-ln-n" data-line-number="13"></div></td>
+        <td class="code-ln-code" data-line-number="13"><span class="line"><span>		[ LIT "0 ] ADD #18 DEO !&#x26;>put</span></span></td>
+      </tr></tbody></table>20:["$","pre",null,{"className":"language-plaintext pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$37"}}]}]
+38:T8a2,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
+        <td class="code-ln-code" data-line-number="1"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">❯ ~/bin/uxnasm day03.tal day03.rom </span><span style="color:#D73A49;--shiki-dark:#F97583">&#x26;&#x26;</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> ~/bin/uxncli day03.rom</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="2"><div class="code-ln-n" data-line-number="2"></div></td>
+        <td class="code-ln-code" data-line-number="2"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">Assembled</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> day03.rom </span><span style="color:#D73A49;--shiki-dark:#F97583">in</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> 482 bytes(</span><span style="color:#005CC5;--shiki-dark:#79B8FF">0.74</span><span style="color:#24292E;--shiki-dark:#E1E4E8">% used), 61 labels, 2 macros.</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="3"><div class="code-ln-n" data-line-number="3"></div></td>
+        <td class="code-ln-code" data-line-number="3"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">WST</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> 00 00 00 00 00 00 00|</span><span style="color:#005CC5;--shiki-dark:#79B8FF">32</span><span style="color:#D73A49;--shiki-dark:#F97583"> &#x3C;</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="4"><div class="code-ln-n" data-line-number="4"></div></td>
+        <td class="code-ln-code" data-line-number="4"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">RST</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> 00 00 00 00 00 00|</span><span style="color:#005CC5;--shiki-dark:#79B8FF">02</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> 00 </span><span style="color:#D73A49;--shiki-dark:#F97583">&#x3C;</span></span></td>
+      </tr></tbody></table>21:["$","pre",null,{"className":"language-fish pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$38"}}]}]
+22:["$","pre",null,{"className":"language-plaintext pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"<table class=\"code-ln-table\"><tbody><tr class=\"code-ln-line\">\n        <td class=\"code-ln-numbers\" data-line-number=\"1\"><div class=\"code-ln-n\" data-line-number=\"1\"></div></td>\n        <td class=\"code-ln-code\" data-line-number=\"1\"><span class=\"line\"><span>|100 #0000</span></span></td>\n      </tr><tr class=\"code-ln-line\">\n        <td class=\"code-ln-numbers\" data-line-number=\"2\"><div class=\"code-ln-n\" data-line-number=\"2\"></div></td>\n        <td class=\"code-ln-code\" data-line-number=\"2\"><span class=\"line\"><span>    @>get </span></span></td>\n      </tr><tr class=\"code-ln-line\">\n        <td class=\"code-ln-numbers\" data-line-number=\"3\"><div class=\"code-ln-n\" data-line-number=\"3\"></div></td>\n        <td class=\"code-ln-code\" data-line-number=\"3\"><span class=\"line\"><span>        #01 ?>get POP2</span></span></td>\n      </tr></tbody></table>"}}]}]
+39:T9d8,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
+        <td class="code-ln-code" data-line-number="1"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">|</span><span style="color:#005CC5;--shiki-dark:#79B8FF">0100</span><span style="color:#6A737D;--shiki-dark:#6A737D">	#0000		( a00000 )</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="2"><div class="code-ln-n" data-line-number="2"></div></td>
+        <td class="code-ln-code" data-line-number="2"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">|</span><span style="color:#005CC5;--shiki-dark:#79B8FF">0103</span><span style="color:#6A737D;--shiki-dark:#6A737D">	#01		    ( 8001 )</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="3"><div class="code-ln-n" data-line-number="3"></div></td>
+        <td class="code-ln-code" data-line-number="3"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">|</span><span style="color:#005CC5;--shiki-dark:#79B8FF">0105</span><span style="color:#24292E;--shiki-dark:#E1E4E8">	JCI         ( </span><span style="color:#005CC5;--shiki-dark:#79B8FF">20</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> )</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="4"><div class="code-ln-n" data-line-number="4"></div></td>
+        <td class="code-ln-code" data-line-number="4"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">|</span><span style="color:#005CC5;--shiki-dark:#79B8FF">0106</span><span style="color:#24292E;--shiki-dark:#E1E4E8">	FFFB        ( </span><span style="color:#005CC5;--shiki-dark:#79B8FF">-4</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> )</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="5"><div class="code-ln-n" data-line-number="5"></div></td>
+        <td class="code-ln-code" data-line-number="5"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">|</span><span style="color:#005CC5;--shiki-dark:#79B8FF">0108</span><span style="color:#24292E;--shiki-dark:#E1E4E8">	POP2		( </span><span style="color:#005CC5;--shiki-dark:#79B8FF">22</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> )</span></span></td>
+      </tr></tbody></table>23:["$","pre",null,{"className":"language-fish pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$39"}}]}]
+3a:T456,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
+        <td class="code-ln-code" data-line-number="1"><span class="line"><span>|100 #0000</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="2"><div class="code-ln-n" data-line-number="2"></div></td>
+        <td class="code-ln-code" data-line-number="2"><span class="line"><span>    @>put ( -- )</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="3"><div class="code-ln-n" data-line-number="3"></div></td>
+        <td class="code-ln-code" data-line-number="3"><span class="line"><span>		#01 ?{ POP BRK }</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="4"><div class="code-ln-n" data-line-number="4"></div></td>
+        <td class="code-ln-code" data-line-number="4"><span class="line"><span>		#0a#18 DEO !>put</span></span></td>
+      </tr></tbody></table>24:["$","pre",null,{"className":"language-plaintext pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$3a"}}]}]
+3b:Tc40,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
+        <td class="code-ln-code" data-line-number="1"><span class="line"><span>|a0 @File &#x26;vector $2 &#x26;success $2 &#x26;stat $2 &#x26;delete $1 </span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="2"><div class="code-ln-n" data-line-number="2"></div></td>
+        <td class="code-ln-code" data-line-number="2"><span class="line"><span>          &#x26;append $1 &#x26;name $2 &#x26;length $2 &#x26;read $2 &#x26;write $2</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="3"><div class="code-ln-n" data-line-number="3"></div></td>
+        <td class="code-ln-code" data-line-number="3"><span class="line"><span></span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="4"><div class="code-ln-n" data-line-number="4"></div></td>
+        <td class="code-ln-code" data-line-number="4"><span class="line"><span>|100</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="5"><div class="code-ln-n" data-line-number="5"></div></td>
+        <td class="code-ln-code" data-line-number="5"><span class="line"><span>    @data/read (buffer* name* -> )</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="6"><div class="code-ln-n" data-line-number="6"></div></td>
+        <td class="code-ln-code" data-line-number="6"><span class="line"><span>        .File/name DEO2</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="7"><div class="code-ln-n" data-line-number="7"></div></td>
+        <td class="code-ln-code" data-line-number="7"><span class="line"><span>        #4e20 .File/length DEO2</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="8"><div class="code-ln-n" data-line-number="8"></div></td>
+        <td class="code-ln-code" data-line-number="8"><span class="line"><span>        .File/read DEO2</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="9"><div class="code-ln-n" data-line-number="9"></div></td>
+        <td class="code-ln-code" data-line-number="9"><span class="line"><span>        .File/success DEI2</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="10"><div class="code-ln-n" data-line-number="10"></div></td>
+        <td class="code-ln-code" data-line-number="10"><span class="line"><span>        ;data/file-size STA2</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="11"><div class="code-ln-n" data-line-number="11"></div></td>
+        <td class="code-ln-code" data-line-number="11"><span class="line"><span>        JMP2r</span></span></td>
+      </tr></tbody></table>25:["$","pre",null,{"className":"language-plaintext pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$3b"}}]}]
+26:["$","pre",null,{"className":"language-plaintext pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"<table class=\"code-ln-table\"><tbody><tr class=\"code-ln-line\">\n        <td class=\"code-ln-numbers\" data-line-number=\"1\"><div class=\"code-ln-n\" data-line-number=\"1\"></div></td>\n        <td class=\"code-ln-code\" data-line-number=\"1\"><span class=\"line\"><span>.Console/type DEI ?&#x26;has-args &#x3C;print-usage> BRK</span></span></td>\n      </tr><tr class=\"code-ln-line\">\n        <td class=\"code-ln-numbers\" data-line-number=\"2\"><div class=\"code-ln-n\" data-line-number=\"2\"></div></td>\n        <td class=\"code-ln-code\" data-line-number=\"2\"><span class=\"line\"><span>&#x26;has-args ( ... )</span></span></td>\n      </tr></tbody></table>"}}]}]
+27:["$","pre",null,{"className":"language-plaintext pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"<table class=\"code-ln-table\"><tbody><tr class=\"code-ln-line\">\n        <td class=\"code-ln-numbers\" data-line-number=\"1\"><div class=\"code-ln-n\" data-line-number=\"1\"></div></td>\n        <td class=\"code-ln-code\" data-line-number=\"1\"><span class=\"line\"><span>;read-args .Console/vector DEO2</span></span></td>\n      </tr></tbody></table>"}}]}]
+3c:T7bf,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
+        <td class="code-ln-code" data-line-number="1"><span class="line"><span>@read-args ( -> )</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="2"><div class="code-ln-n" data-line-number="2"></div></td>
+        <td class="code-ln-code" data-line-number="2"><span class="line"><span>    #02 .Console/type DEI NEQ ?&#x26;is-arg-done</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="3"><div class="code-ln-n" data-line-number="3"></div></td>
+        <td class="code-ln-code" data-line-number="3"><span class="line"><span>        .Console/read DEI</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="4"><div class="code-ln-n" data-line-number="4"></div></td>
+        <td class="code-ln-code" data-line-number="4"><span class="line"><span>        [ LIT2 00 &#x26;ptr -arg ]</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="5"><div class="code-ln-n" data-line-number="5"></div></td>
+        <td class="code-ln-code" data-line-number="5"><span class="line"><span>        INCk ,&#x26;ptr STR STZ2</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="6"><div class="code-ln-n" data-line-number="6"></div></td>
+        <td class="code-ln-code" data-line-number="6"><span class="line"><span>        BRK</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="7"><div class="code-ln-n" data-line-number="7"></div></td>
+        <td class="code-ln-code" data-line-number="7"><span class="line"><span>    &#x26;is-arg-done</span></span></td>
+      </tr></tbody></table>28:["$","pre",null,{"className":"language-plaintext pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$3c"}}]}]
+29:["$","pre",null,{"className":"language-plaintext pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"<table class=\"code-ln-table\"><tbody><tr class=\"code-ln-line\">\n        <td class=\"code-ln-numbers\" data-line-number=\"1\"><div class=\"code-ln-n\" data-line-number=\"1\"></div></td>\n        <td class=\"code-ln-code\" data-line-number=\"1\"><span class=\"line\"><span>.Console/read DEI  ( read the byte from console )</span></span></td>\n      </tr><tr class=\"code-ln-line\">\n        <td class=\"code-ln-numbers\" data-line-number=\"2\"><div class=\"code-ln-n\" data-line-number=\"2\"></div></td>\n        <td class=\"code-ln-code\" data-line-number=\"2\"><span class=\"line\"><span>-arg               ( store buffer address )</span></span></td>\n      </tr><tr class=\"code-ln-line\">\n        <td class=\"code-ln-numbers\" data-line-number=\"3\"><div class=\"code-ln-n\" data-line-number=\"3\"></div></td>\n        <td class=\"code-ln-code\" data-line-number=\"3\"><span class=\"line\"><span>STZ                ( store byte in zero page )</span></span></td>\n      </tr></tbody></table>"}}]}]
+2a:["$","pre",null,{"className":"language-plaintext pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"<table class=\"code-ln-table\"><tbody><tr class=\"code-ln-line\">\n        <td class=\"code-ln-numbers\" data-line-number=\"1\"><div class=\"code-ln-n\" data-line-number=\"1\"></div></td>\n        <td class=\"code-ln-code\" data-line-number=\"1\"><span class=\"line\"><span>[ LIT &#x26;ptr -arg ]</span></span></td>\n      </tr></tbody></table>"}}]}]
+2b:["$","pre",null,{"className":"language-plaintext pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"<table class=\"code-ln-table\"><tbody><tr class=\"code-ln-line\">\n        <td class=\"code-ln-numbers\" data-line-number=\"1\"><div class=\"code-ln-n\" data-line-number=\"1\"></div></td>\n        <td class=\"code-ln-code\" data-line-number=\"1\"><span class=\"line\"><span>#51 ,&#x26;ptr STR</span></span></td>\n      </tr></tbody></table>"}}]}]
+3d:Tfd9,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
+        <td class="code-ln-code" data-line-number="1"><span class="line"><span>|100</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="2"><div class="code-ln-n" data-line-number="2"></div></td>
+        <td class="code-ln-code" data-line-number="2"><span class="line"><span></span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="3"><div class="code-ln-n" data-line-number="3"></div></td>
+        <td class="code-ln-code" data-line-number="3"><span class="line"><span>@aoc ( -> )</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="4"><div class="code-ln-n" data-line-number="4"></div></td>
+        <td class="code-ln-code" data-line-number="4"><span class="line"><span>	;data/file-buffer ;data/buffer-ptr STA2 &#x26;loop ;data/buffer-ptr LDA2 LDA2k DUP2 #6d75</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="5"><div class="code-ln-n" data-line-number="5"></div></td>
+        <td class="code-ln-code" data-line-number="5"><span class="line"><span>	NEQ2 ?&#x26;advance</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="6"><div class="code-ln-n" data-line-number="6"></div></td>
+        <td class="code-ln-code" data-line-number="6"><span class="line"><span>	( print mu ) [ LIT "_ ] #18 DEO</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="7"><div class="code-ln-n" data-line-number="7"></div></td>
+        <td class="code-ln-code" data-line-number="7"><span class="line"><span>	#18 DEO2</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="8"><div class="code-ln-n" data-line-number="8"></div></td>
+        <td class="code-ln-code" data-line-number="8"><span class="line"><span>	INC2 INC2 LDA2k DUP2 #6c28 NEQ2 ?&#x26;advance</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="9"><div class="code-ln-n" data-line-number="9"></div></td>
+        <td class="code-ln-code" data-line-number="9"><span class="line"><span>	( print ) #18 DEO2 [ LIT "_ ] #18 DEO</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="10"><div class="code-ln-n" data-line-number="10"></div></td>
+        <td class="code-ln-code" data-line-number="10"><span class="line"><span>	INC2 INC2 DUP2 sdec SWP2 INC2 DUP2 sdec ROT2 MUL2 ;data/part1-result LDA2 ADD2 debug </span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="11"><div class="code-ln-n" data-line-number="11"></div></td>
+        <td class="code-ln-code" data-line-number="11"><span class="line"><span>	;data/part1-result STA2 INC2 LDA2k &#x26;advance POP #18 DEO</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="12"><div class="code-ln-n" data-line-number="12"></div></td>
+        <td class="code-ln-code" data-line-number="12"><span class="line"><span>	INC2 DUP2 ;data/buffer-ptr STA2</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="13"><div class="code-ln-n" data-line-number="13"></div></td>
+        <td class="code-ln-code" data-line-number="13"><span class="line"><span>	LDA ?&#x26;loop</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="14"><div class="code-ln-n" data-line-number="14"></div></td>
+        <td class="code-ln-code" data-line-number="14"><span class="line"><span>	;data/part1-result LDA2 print-break print-break debug BRK</span></span></td>
+      </tr></tbody></table>2c:["$","pre",null,{"className":"language-plaintext pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$3d"}}]}]
+3e:T102e,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
+        <td class="code-ln-code" data-line-number="1"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">import</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> re</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="2"><div class="code-ln-n" data-line-number="2"></div></td>
+        <td class="code-ln-code" data-line-number="2"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">regex </span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> re.compile(</span><span style="color:#D73A49;--shiki-dark:#F97583">r</span><span style="color:#032F62;--shiki-dark:#9ECBFF">"</span><span style="color:#032F62;--shiki-dark:#DBEDFF">mul</span><span style="color:#22863A;font-weight:bold;--shiki-dark:#85E89D;--shiki-dark-font-weight:bold">\(</span><span style="color:#005CC5;--shiki-dark:#79B8FF">[0-9]</span><span style="color:#D73A49;--shiki-dark:#F97583">+</span><span style="color:#032F62;--shiki-dark:#DBEDFF">,</span><span style="color:#005CC5;--shiki-dark:#79B8FF">[0-9]</span><span style="color:#D73A49;--shiki-dark:#F97583">+</span><span style="color:#22863A;font-weight:bold;--shiki-dark:#85E89D;--shiki-dark-font-weight:bold">\)</span><span style="color:#032F62;--shiki-dark:#9ECBFF">"</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="3"><div class="code-ln-n" data-line-number="3"></div></td>
+        <td class="code-ln-code" data-line-number="3"><span class="line"></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="4"><div class="code-ln-n" data-line-number="4"></div></td>
+        <td class="code-ln-code" data-line-number="4"><span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">file</span><span style="color:#D73A49;--shiki-dark:#F97583"> =</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> open</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#032F62;--shiki-dark:#9ECBFF">"input.txt"</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#032F62;--shiki-dark:#9ECBFF">"r"</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="5"><div class="code-ln-n" data-line-number="5"></div></td>
+        <td class="code-ln-code" data-line-number="5"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">text </span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#E36209;--shiki-dark:#FFAB70"> file</span><span style="color:#24292E;--shiki-dark:#E1E4E8">.read()</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="6"><div class="code-ln-n" data-line-number="6"></div></td>
+        <td class="code-ln-code" data-line-number="6"><span class="line"></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="7"><div class="code-ln-n" data-line-number="7"></div></td>
+        <td class="code-ln-code" data-line-number="7"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">for</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> match </span><span style="color:#D73A49;--shiki-dark:#F97583">in</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> regex.findall(text):</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="8"><div class="code-ln-n" data-line-number="8"></div></td>
+        <td class="code-ln-code" data-line-number="8"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">    print</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(match)</span></span></td>
+      </tr></tbody></table>2d:["$","pre",null,{"className":"language-python pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$3e"}}]}]
+3f:Tca3,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
+        <td class="code-ln-code" data-line-number="1"><span class="line"><span>STH2</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="2"><div class="code-ln-n" data-line-number="2"></div></td>
+        <td class="code-ln-code" data-line-number="2"><span class="line"><span>STH2    </span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="3"><div class="code-ln-n" data-line-number="3"></div></td>
+        <td class="code-ln-code" data-line-number="3"><span class="line"><span>LDAk</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="4"><div class="code-ln-n" data-line-number="4"></div></td>
+        <td class="code-ln-code" data-line-number="4"><span class="line"><span>#29 NEQ ?&#x26;skip-pop ( 29 is closing paren )</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="5"><div class="code-ln-n" data-line-number="5"></div></td>
+        <td class="code-ln-code" data-line-number="5"><span class="line"><span>STH2r</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="6"><div class="code-ln-n" data-line-number="6"></div></td>
+        <td class="code-ln-code" data-line-number="6"><span class="line"><span>STH2r</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="7"><div class="code-ln-n" data-line-number="7"></div></td>
+        <td class="code-ln-code" data-line-number="7"><span class="line"><span>;data/part1-result #0002 ADD2 STA2</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="8"><div class="code-ln-n" data-line-number="8"></div></td>
+        <td class="code-ln-code" data-line-number="8"><span class="line"><span>;data/part1-result STA2 &#x26;skip</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="9"><div class="code-ln-n" data-line-number="9"></div></td>
+        <td class="code-ln-code" data-line-number="9"><span class="line"><span></span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="10"><div class="code-ln-n" data-line-number="10"></div></td>
+        <td class="code-ln-code" data-line-number="10"><span class="line"><span>( ... )</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="11"><div class="code-ln-n" data-line-number="11"></div></td>
+        <td class="code-ln-code" data-line-number="11"><span class="line"><span></span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="12"><div class="code-ln-n" data-line-number="12"></div></td>
+        <td class="code-ln-code" data-line-number="12"><span class="line"><span>&#x26;skip-pop POP2r POP2r !&#x26;skip</span></span></td>
+      </tr></tbody></table>2e:["$","pre",null,{"className":"language-plaintext pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$3f"}}]}]
+40:T595,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
+        <td class="code-ln-code" data-line-number="1"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">Assembled</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> day03.rom </span><span style="color:#D73A49;--shiki-dark:#F97583">in</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> 473 bytes(</span><span style="color:#005CC5;--shiki-dark:#79B8FF">0.72</span><span style="color:#24292E;--shiki-dark:#E1E4E8">% used), 64 labels, 2 macros.</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="2"><div class="code-ln-n" data-line-number="2"></div></td>
+        <td class="code-ln-code" data-line-number="2"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">loading</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> file: input.txt</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="3"><div class="code-ln-n" data-line-number="3"></div></td>
+        <td class="code-ln-code" data-line-number="3"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">result</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> part 1: 26926</span></span></td>
+      </tr></tbody></table>2f:["$","pre",null,{"className":"language-fish pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$40"}}]}]
+41:T1a53,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
+        <td class="code-ln-code" data-line-number="1"><span class="line"><span>%u32-pop { POP2 POP2 }</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="2"><div class="code-ln-n" data-line-number="2"></div></td>
+        <td class="code-ln-code" data-line-number="2"><span class="line"><span></span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="3"><div class="code-ln-n" data-line-number="3"></div></td>
+        <td class="code-ln-code" data-line-number="3"><span class="line"><span>@u32-pdec ( hi* lo* -- )</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="4"><div class="code-ln-n" data-line-number="4"></div></td>
+        <td class="code-ln-code" data-line-number="4"><span class="line"><span>	[ LITr ff ]</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="5"><div class="code-ln-n" data-line-number="5"></div></td>
+        <td class="code-ln-code" data-line-number="5"><span class="line"><span>	&#x26;>get ( -- )</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="6"><div class="code-ln-n" data-line-number="6"></div></td>
+        <td class="code-ln-code" data-line-number="6"><span class="line"><span>    	#0000 #000a</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="7"><div class="code-ln-n" data-line-number="7"></div></td>
+        <td class="code-ln-code" data-line-number="7"><span class="line"><span>        u32-divmod</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="8"><div class="code-ln-n" data-line-number="8"></div></td>
+        <td class="code-ln-code" data-line-number="8"><span class="line"><span>        STHk</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="9"><div class="code-ln-n" data-line-number="9"></div></td>
+        <td class="code-ln-code" data-line-number="9"><span class="line"><span>        u32-pop</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="10"><div class="code-ln-n" data-line-number="10"></div></td>
+        <td class="code-ln-code" data-line-number="10"><span class="line"><span>        u32-dup</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="11"><div class="code-ln-n" data-line-number="11"></div></td>
+        <td class="code-ln-code" data-line-number="11"><span class="line"><span>        u32-non-zero ?&#x26;>get</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="12"><div class="code-ln-n" data-line-number="12"></div></td>
+        <td class="code-ln-code" data-line-number="12"><span class="line"><span>	    u32-pop</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="13"><div class="code-ln-n" data-line-number="13"></div></td>
+        <td class="code-ln-code" data-line-number="13"><span class="line"><span>	&#x26;>put ( -- )</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="14"><div class="code-ln-n" data-line-number="14"></div></td>
+        <td class="code-ln-code" data-line-number="14"><span class="line"><span>		STHr INCk ?{ POP JMP2r }</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="15"><div class="code-ln-n" data-line-number="15"></div></td>
+        <td class="code-ln-code" data-line-number="15"><span class="line"><span>		[ LIT "0 ] ADD #18 DEO !&#x26;>put</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="16"><div class="code-ln-n" data-line-number="16"></div></td>
+        <td class="code-ln-code" data-line-number="16"><span class="line"><span></span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="17"><div class="code-ln-n" data-line-number="17"></div></td>
+        <td class="code-ln-code" data-line-number="17"><span class="line"><span>@u32-dup ( hi* lo* -- hi* lo* hi* lo* )</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="18"><div class="code-ln-n" data-line-number="18"></div></td>
+        <td class="code-ln-code" data-line-number="18"><span class="line"><span>        STH2</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="19"><div class="code-ln-n" data-line-number="19"></div></td>
+        <td class="code-ln-code" data-line-number="19"><span class="line"><span>        DUP2</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="20"><div class="code-ln-n" data-line-number="20"></div></td>
+        <td class="code-ln-code" data-line-number="20"><span class="line"><span>        STH2r</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="21"><div class="code-ln-n" data-line-number="21"></div></td>
+        <td class="code-ln-code" data-line-number="21"><span class="line"><span>        DUP2</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="22"><div class="code-ln-n" data-line-number="22"></div></td>
+        <td class="code-ln-code" data-line-number="22"><span class="line"><span>        STH2</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="23"><div class="code-ln-n" data-line-number="23"></div></td>
+        <td class="code-ln-code" data-line-number="23"><span class="line"><span>        SWP2</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="24"><div class="code-ln-n" data-line-number="24"></div></td>
+        <td class="code-ln-code" data-line-number="24"><span class="line"><span>        STH2r</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="25"><div class="code-ln-n" data-line-number="25"></div></td>
+        <td class="code-ln-code" data-line-number="25"><span class="line"><span>        JMP2r</span></span></td>
+      </tr></tbody></table>30:["$","pre",null,{"className":"language-plaintext pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$41"}}]}]
+42:T59b,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
+        <td class="code-ln-code" data-line-number="1"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">Assembled</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> day03.rom </span><span style="color:#D73A49;--shiki-dark:#F97583">in</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> 1343 bytes(</span><span style="color:#005CC5;--shiki-dark:#79B8FF">2.06</span><span style="color:#24292E;--shiki-dark:#E1E4E8">% used), 144 labels, 2 macros.</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="2"><div class="code-ln-n" data-line-number="2"></div></td>
+        <td class="code-ln-code" data-line-number="2"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">loading</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> file: input.txt</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="3"><div class="code-ln-n" data-line-number="3"></div></td>
+        <td class="code-ln-code" data-line-number="3"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">result</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> part 1: 184576302</span></span></td>
+      </tr></tbody></table>31:["$","pre",null,{"className":"language-fish pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$42"}}]}]
+43:Tf28,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
+        <td class="code-ln-code" data-line-number="1"><span class="line"><span>    DUP2</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="2"><div class="code-ln-n" data-line-number="2"></div></td>
+        <td class="code-ln-code" data-line-number="2"><span class="line"><span>    #646f ( do ) NEQ2 ?&#x26;parse-mul</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="3"><div class="code-ln-n" data-line-number="3"></div></td>
+        <td class="code-ln-code" data-line-number="3"><span class="line"><span></span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="4"><div class="code-ln-n" data-line-number="4"></div></td>
+        <td class="code-ln-code" data-line-number="4"><span class="line"><span>    POP2 INC2 INC2 LDA2k DUP2</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="5"><div class="code-ln-n" data-line-number="5"></div></td>
+        <td class="code-ln-code" data-line-number="5"><span class="line"><span>    #2829 ( open-paren close-paren ) NEQ2 ?&#x26;do-skip</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="6"><div class="code-ln-n" data-line-number="6"></div></td>
+        <td class="code-ln-code" data-line-number="6"><span class="line"><span></span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="7"><div class="code-ln-n" data-line-number="7"></div></td>
+        <td class="code-ln-code" data-line-number="7"><span class="line"><span>    ( [ LIT "+ ] #18 DEO #0a18 DEO )</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="8"><div class="code-ln-n" data-line-number="8"></div></td>
+        <td class="code-ln-code" data-line-number="8"><span class="line"><span>    #01 ;data/dodont STA !&#x26;parse-mul</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="9"><div class="code-ln-n" data-line-number="9"></div></td>
+        <td class="code-ln-code" data-line-number="9"><span class="line"><span></span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="10"><div class="code-ln-n" data-line-number="10"></div></td>
+        <td class="code-ln-code" data-line-number="10"><span class="line"><span>&#x26;do-skip</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="11"><div class="code-ln-n" data-line-number="11"></div></td>
+        <td class="code-ln-code" data-line-number="11"><span class="line"><span>    DUP2</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="12"><div class="code-ln-n" data-line-number="12"></div></td>
+        <td class="code-ln-code" data-line-number="12"><span class="line"><span>    #6e27 ( n' ) NEQ2 ?&#x26;parse-mul</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="13"><div class="code-ln-n" data-line-number="13"></div></td>
+        <td class="code-ln-code" data-line-number="13"><span class="line"><span>    ( [ LIT "- ] #18 DEO #0a18 DEO )</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="14"><div class="code-ln-n" data-line-number="14"></div></td>
+        <td class="code-ln-code" data-line-number="14"><span class="line"><span>    #00 ;data/dodont STA</span></span></td>
+      </tr></tbody></table>32:["$","pre",null,{"className":"language-plaintext pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$43"}}]}]
+44:T9d3,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
+        <td class="code-ln-code" data-line-number="1"><span class="line"><span>    ;data/dodont LDA ?&#x26;store-do-result !&#x26;pop-do-result</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="2"><div class="code-ln-n" data-line-number="2"></div></td>
+        <td class="code-ln-code" data-line-number="2"><span class="line"><span>&#x26;store-do-result</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="3"><div class="code-ln-n" data-line-number="3"></div></td>
+        <td class="code-ln-code" data-line-number="3"><span class="line"><span>    STH2r</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="4"><div class="code-ln-n" data-line-number="4"></div></td>
+        <td class="code-ln-code" data-line-number="4"><span class="line"><span>    STH2r</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="5"><div class="code-ln-n" data-line-number="5"></div></td>
+        <td class="code-ln-code" data-line-number="5"><span class="line"><span>    ;data/part2-result #0002 ADD2 STA2</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="6"><div class="code-ln-n" data-line-number="6"></div></td>
+        <td class="code-ln-code" data-line-number="6"><span class="line"><span>    ;data/part2-result STA2</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="7"><div class="code-ln-n" data-line-number="7"></div></td>
+        <td class="code-ln-code" data-line-number="7"><span class="line"><span></span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="8"><div class="code-ln-n" data-line-number="8"></div></td>
+        <td class="code-ln-code" data-line-number="8"><span class="line"><span>    ( ... )</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="9"><div class="code-ln-n" data-line-number="9"></div></td>
+        <td class="code-ln-code" data-line-number="9"><span class="line"><span>&#x26;pop-do-result POP2r POP2r !&#x26;skip</span></span></td>
+      </tr></tbody></table>33:["$","pre",null,{"className":"language-plaintext pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$44"}}]}]
+45:T710,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
+        <td class="code-ln-code" data-line-number="1"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">Assembled</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> day03.rom </span><span style="color:#D73A49;--shiki-dark:#F97583">in</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> 1476 bytes(</span><span style="color:#005CC5;--shiki-dark:#79B8FF">2.26</span><span style="color:#24292E;--shiki-dark:#E1E4E8">% used), 150 labels,  3 macros.</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="2"><div class="code-ln-n" data-line-number="2"></div></td>
+        <td class="code-ln-code" data-line-number="2"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">loading</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> file: input.txt</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="3"><div class="code-ln-n" data-line-number="3"></div></td>
+        <td class="code-ln-code" data-line-number="3"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">result</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> part 1: 184576302</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="4"><div class="code-ln-n" data-line-number="4"></div></td>
+        <td class="code-ln-code" data-line-number="4"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">result</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> part 2: 118173507</span></span></td>
+      </tr></tbody></table>34:["$","pre",null,{"className":"language-fish pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$45"}}]}]

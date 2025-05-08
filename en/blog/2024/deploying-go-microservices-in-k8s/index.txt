@@ -1,0 +1,764 @@
+1:"$Sreact.fragment"
+2:I[1544,["177","static/chunks/app/layout-7ea7f0006323b5b6.js"],"AsciiArtLogger"]
+3:I[2738,["177","static/chunks/app/layout-7ea7f0006323b5b6.js"],"ThemeProvider"]
+4:I[7555,[],""]
+5:I[1295,[],""]
+6:I[9543,["345","static/chunks/app/not-found-374964195ecf67e5.js"],"default"]
+8:I[9665,[],"MetadataBoundary"]
+a:I[9665,[],"OutletBoundary"]
+d:I[4911,[],"AsyncMetadataOutlet"]
+f:I[9665,[],"ViewportBoundary"]
+11:I[6614,[],""]
+:HL["/_next/static/css/e5565d963fd839c1.css","style"]
+:HL["/_next/static/css/72f0b751ba818b6f.css","style"]
+0:{"P":null,"b":"vI1f1rc00foWP8-o_ZTsc","p":"","c":["","en","blog","2024","deploying-go-microservices-in-k8s",""],"i":false,"f":[[["",{"children":["en",{"children":["blog",{"children":[["slug","2024/deploying-go-microservices-in-k8s","oc"],{"children":["__PAGE__",{}]}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/e5565d963fd839c1.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","link",null,{"rel":"icon","href":"/favicon.ico","sizes":"any"}],["$","link",null,{"rel":"apple-touch-icon","href":"/apple-touch-icon.png"}]]}],["$","body",null,{"children":[["$","$L2",null,{}],["$","$L3",null,{"children":["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","$L6",null,{}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]]}]]}]]}],{"children":["en",["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["blog",["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","2024/deploying-go-microservices-in-k8s","oc"],["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L7",["$","$L8",null,{"children":"$L9"}],[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/72f0b751ba818b6f.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$La",null,{"children":["$Lb","$Lc",["$","$Ld",null,{"promise":"$@e"}]]}]]}],{},null,false]},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","v9bfM3_GpwG0OgQO01isn",{"children":[["$","$Lf",null,{"children":"$L10"}],null]}],null]}],false]],"m":"$undefined","G":["$11","$undefined"],"s":false,"S":true}
+12:"$Sreact.suspense"
+13:I[4911,[],"AsyncMetadata"]
+9:["$","$12",null,{"fallback":null,"children":["$","$L13",null,{"promise":"$@14"}]}]
+c:null
+10:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+b:null
+14:{"metadata":[["$","title","0",{"children":"Deploying a Go Microservice in Kubernetes | @unjello blog"}],["$","meta","1",{"property":"og:title","content":"Deploying a Go Microservice in Kubernetes | @unjello blog"}],["$","meta","2",{"property":"og:url","content":"https://andrzej.lichnerowicz.pl/en/blog/2024/deploying-go-microservices-in-k8s/"}],["$","meta","3",{"property":"og:image","content":"https://andrzej.lichnerowicz.pl/avatar.png"}],["$","meta","4",{"property":"og:image:width","content":"1200"}],["$","meta","5",{"property":"og:image:height","content":"630"}],["$","meta","6",{"property":"og:image:alt","content":"Deploying a Go Microservice in Kubernetes | @unjello blog"}],["$","meta","7",{"property":"og:type","content":"article"}],["$","meta","8",{"property":"article:published_time","content":"2024-01-23T20:19:11+02:00"}],["$","meta","9",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","10",{"name":"twitter:title","content":"Deploying a Go Microservice in Kubernetes | @unjello blog"}],["$","meta","11",{"name":"twitter:image","content":"https://andrzej.lichnerowicz.pl/avatar.png"}],["$","link","12",{"rel":"shortcut icon","href":"/favicon.ico"}],["$","link","13",{"rel":"icon","href":"/favicon.ico","sizes":"any"}],["$","link","14",{"rel":"apple-touch-icon","href":"/apple-touch-icon.png"}]],"error":null,"digest":"$undefined"}
+e:{"metadata":"$14:metadata","error":null,"digest":"$undefined"}
+15:I[8109,["72","static/chunks/72-d3fcf2c32f7e11b9.js","435","static/chunks/435-711aececbe1f0279.js","447","static/chunks/app/en/blog/%5B%5B...slug%5D%5D/page-6c4a572667fc6dca.js"],"ThemeSwitcher"]
+16:I[6874,["72","static/chunks/72-d3fcf2c32f7e11b9.js","435","static/chunks/435-711aececbe1f0279.js","447","static/chunks/app/en/blog/%5B%5B...slug%5D%5D/page-6c4a572667fc6dca.js"],""]
+17:I[1809,["72","static/chunks/72-d3fcf2c32f7e11b9.js","435","static/chunks/435-711aececbe1f0279.js","447","static/chunks/app/en/blog/%5B%5B...slug%5D%5D/page-6c4a572667fc6dca.js"],"AsciiBorderedMdx"]
+7:["$","div",null,{"className":"flex justify-center","children":["$","div",null,{"className":"ascii-art nfo-pre","children":[["$","$L15",null,{}],["$","div",null,{"className":"header-component","children":"                              _______._ _\n                      _ _.___/       |\n                         |           |\n                         |           |\n                       __-___    _____   _____\r\n              ____-___/ __   .__/_ ._/__(_  ..)\r\n             /... |  ..../   .| ) ./_  ./ ..(/\r\n             \\_   .\\ .../     .\\_ / __./\\_   \\ ang3lo/ex0dus\r\n             (   )  |../ ^xhb  ..|.| /___\\ .. .)\r\n          Oo. \\_____|_/_________|_|________/_/ .oO\n                         :           |\n    - -----andrzej-_ ____\\_____|----_|_____________'-lichnerowicz-------- -\n                         :           |\n .     p e r s o n a l ! |    #1     | wEBPAGE                            .\n . _         - --------- |  - -- -   | ------- -                         _  .\n-:-\\-\\-------------------|- -     - -|-----------------------------------\\-\\-:\n |                      _|___________|_                                      |\n |                       :           :                                       |"}]," |//_)-> 2 0 2 4 . 0 1 . 2 3 <--------------------------------------------(_\\|\n",[["$","div",null,{"className":"whitespace-pre font-mono","children":" |                                                                           |"}],["$","div",null,{"className":"whitespace-pre font-mono","children":" |                                                                           |"}],["$","div",null,{"className":"whitespace-pre font-mono","style":{"display":"flex"},"children":[" | ",["$","$L16",null,{"href":"/","className":"hover:underline inline-block","prefetch":false,"style":{"textDecoration":"none","color":"inherit","width":"calc(100% - 6ch)"},"children":"<< back                                                                     "}],"|"]}],["$","div",null,{"className":"whitespace-pre font-mono","children":" |                                                                           |"}]],["$","$L17",null,{"children":[["$","div",null,{"style":{"fontWeight":"bold","fontSize":"1.2em","marginTop":"1em","marginBottom":"2.5em"},"children":["# ","Deploying a Go Microservice in Kubernetes"]}],"$L18"]}],"$7:props:children:props:children:3",["$","div",null,{"children":[" \\__                      --> ",["$","a",null,{"href":"http://andrzej.lichnerowicz.pl","target":"_blank","rel":"noopener noreferrer","title":"andrzej.lichnerowicz.pl","className":"link","style":{"cursor":"pointer"},"children":"andrzej.lichnerowicz.pl"}]," <--                  __/\n   //                                                                      \\\\\n  // ------------------------                        ---------------------- \\\\\n '~~~~~~~~~~~~~~~~~~~~~~~~~// ------         ------- \\~~~~~~~~~~~~~~~~~~~~~~`\n                          '~~~~~~~//          \\~~~~~~~`\n                                 // ---------- \\\n                                '~~~~~~~~~~~~~~~`\n      "]}]]}]}]
+19:I[316,["72","static/chunks/72-d3fcf2c32f7e11b9.js","435","static/chunks/435-711aececbe1f0279.js","447","static/chunks/app/en/blog/%5B%5B...slug%5D%5D/page-6c4a572667fc6dca.js"],"Figure"]
+1a:I[877,["72","static/chunks/72-d3fcf2c32f7e11b9.js","435","static/chunks/435-711aececbe1f0279.js","447","static/chunks/app/en/blog/%5B%5B...slug%5D%5D/page-6c4a572667fc6dca.js"],"Admonition"]
+18:[["$","div",null,{"className":"MarkdownHeading_markdown-heading__G6B4T","children":[["$","span",null,{"className":"MarkdownHeading_markdown-hash__CheR_","children":["##"," "]}],["$","span",null,{"children":"Disclaimer"}]]}],"\n",["$","p",null,{"children":"Disclaimer: This post will showcase some macOS-specific tools, primarily brew. This isn't to make a platform statement; it's simply to avoid the complexities of multi-platform discussion for brevity's sake."}],"\n",["$","div",null,{"className":"MarkdownHeading_markdown-heading__G6B4T","children":[["$","span",null,{"className":"MarkdownHeading_markdown-hash__CheR_","children":["##"," "]}],["$","span",null,{"children":"Over the Hill and Under the Hill"}]]}],"\n",["$","p",null,{"children":["So, this is going to be a bit of a shameless plug, though all the praise towards my current employer, ",["$","a",null,{"href":"https://splunk.com/","children":"Splunk"}],", is purely accidental :)"]}],"\n",["$","p",null,{"children":["My journey here has been nothing short of remarkable, largely thanks to the incredible people I've had the chance to work with. One of them was ",["$","a",null,{"href":"https://github.com/gotwarlost","children":"Krishnan Anantheswaran"}],", known for his work on ",["$","a",null,{"href":"https://istanbul.js.org","children":"Istanbul"}]," - a javascript coverage framework I used back in my front-end days. Krishnan interviewed me for the company, and for a few months, I soaked up as much knowledge as I could from him until his departure. Suddenly, I was in at the deep end, tasked with understanding a vast ecosystem. The component I was to take over wasn't particularly challenging, but the surrounding environment was immense. As you can imagine, one of my key challenges was learning how to deploy our software effectively. This post is a reflection on the lessons I learned from this journey."]}],"\n",["$","p",null,{"children":["When the Kubernetes team was formed at Splunk, I was told that some teams were already using ",["$","a",null,{"href":"https://https://ksonnet.io/","children":"ksonnet"}],", a tool for managing Kubernetes configurations similar to ",["$","a",null,{"href":"https://helm.sh/","children":"Helm"}],". However, they quickly found out that ksonnet wasn't the most user-friendly tool and was rather complex. Moreover, it was abandoned by its creators around the same time kubernetes team was coming together. Helm had its issues too, primarily because it uses Golang templates, which, while powerful, were primarily designed for HTML, XML, and text generation. These templates can control whitespaces, but they're tricky to get right. A single mistake in YAML whitespace, and you're in for a world of pain..."]}],"\n",["$","$L19",null,{"src":"/images/2024/deploying_go_microservices_in_k8s/world-of-pain.jpg","alt":"John Goodman as Walter Sobchak in a frame from Coehn sisters' classic: Big Lebowski, when Walter is about to say: Smokey, my friend, you're entering a world of pain.","caption":"Smokey, my friend, you're entering a world of pain.","attribution":"","postSlug":"/blog/2024/deploying_go_microservices_in_k8s"}],"\n",["$","p",null,{"children":["In contrast, ksonnet utilizes ",["$","a",null,{"href":"https://jsonnet.org/","children":"Jsonnet"}]," for templating, offering more complex and reusable configurations. Jsonnet enables capabilities like imports, functions, and variables, fostering modular and maintainable configurations. ",["$","em",null,{"children":"If only there was a tool that combined all the pros and eliminated the cons..."}]," Enter ",["$","a",null,{"href":"https://qbec.io/","children":"qbec"}]," (pronounced like the Canadian province) written by Krishnan, now a staple tool around here."]}],"\n",["$","p",null,{"children":"Later I will share some of the tools and conventions I find beneficial, such as folder structures and Makefiles, but let's set the stage for the application we'll be discussing."}],"\n",["$","div",null,{"className":"MarkdownHeading_markdown-heading__G6B4T","children":[["$","span",null,{"className":"MarkdownHeading_markdown-hash__CheR_","children":["##"," "]}],["$","span",null,{"children":"The Application: Choosing the Right Example"}]]}],"\n",["$","p",null,{"children":"I was grappling with the choice of a demonstration application. Initially, I considered a classic ToDo application, but it required incorporating storage elements like Redis or a database, which might dilute the focus of this post. Instead, I decided on a slightly contrived, yet very useful example - an RPN (Reverse Polish Notation) calculator."}],"\n",["$","div",null,{"className":"MarkdownHeading_markdown-heading__G6B4T","children":[["$","span",null,{"className":"MarkdownHeading_markdown-hash__CheR_","children":["##"," "]}],["$","span",null,{"children":"Intermission: A Fun Fact About RPN"}]]}],"\n",["$","p",null,{"children":["While there were uses of ",["$","a",null,{"href":"https://en.wikipedia.org/wiki/Reverse_Polish_notation","children":"Reverse Polish Notation"}]," even in the 40s it was an australian philosopher ",["$","a",null,{"href":"https://en.wikipedia.org/wiki/Charles_Leonard_Hamblin","children":"Charles Hamblin"}]," who made final version of alogrithm and the notation, that adopted ",["$","a",null,{"href":"https://en.wikipedia.org/wiki/Jan_%C5%81ukasiewicz","children":"Jan Łukasiewicz's"}]," ",["$","a",null,{"href":"https://en.wikipedia.org/wiki/Polish_notation","children":"Polish Notation"}]," for computers. It's a suffix notation that aligns well with stack operations."]}],"\n",["$","$L1a",null,{"type":"idea","title":"Fun fact","children":["$","p",null,{"children":"Hamblin initially suggested naming it “Azciweisakul notation” as a spelled backwards tribute to Jan Łukasiewicz's last name. Glad it didn't stick."}]}],"\n",["$","p",null,{"children":"The RPN sequence is straightforward: first, the operands are entered, followed by the operation."}],"\n",["$","p",null,{"children":["For example, the RPN for ",null," would be: ",null,"."]}],"\n",["$","div",null,{"className":"MarkdownHeading_markdown-heading__G6B4T","children":[["$","span",null,{"className":"MarkdownHeading_markdown-hash__CheR_","children":["##"," "]}],["$","span",null,{"children":"Application Folder Structure"}]]}],"\n",["$","p",null,{"children":"This brings us to our first convention. Although our example involves just one microservice, our setup is designed to accommodate multiple services per functional area."}],"\n",["","$L1b"],"\n",["$","p",null,{"children":["Each service is placed in a separate folder under ",null," This folder may also include supporting microservices and tools, such as those for synthetic transactions or automated service operations. Sometimes, as tools grow or their use extends beyond the team, it becomes practical to move them to a separate repository."]}],"\n",["$","div",null,{"className":"MarkdownHeading_markdown-heading__G6B4T","children":[["$","span",null,{"className":"MarkdownHeading_markdown-hash__CheR_","children":["##"," "]}],["$","span",null,{"children":"Embracing Makefiles"}]]}],"\n",["$","p",null,{"children":"We extensively use Makefiles here as well. Coming from a Makefile-heavy background in early C/C++ development on DOS and Unix platforms, I thought I was well-prepared. However, during my initial days, I found myself looking up numerous commands, which was a humbling experience. Initially, I wondered if they should be replaced with simpler tools like Ansible or custom Python scripts. But over time, I grew to appreciate their power and versatility, and now I use them in almost all of my projects."}],"\n",["$","p",null,{"children":"There are at least two Makefile tricks worth mentioning. Here's the first one:"}],"\n",["","$L1c"],"\n",["$","p",null,{"children":"This self-documenting feature is quite handy. For every target, we add a quick comment, and then we can grep the Makefile itself:"}],"\n",["","$L1d"],"\n",["$","p",null,{"children":["The ",null," includes all files read by GNU Make, not just the Makefile in the current folder."]}],"\n",["$","p",null,{"children":["The second one allows us to generate multiple targets with a template. Let's say we have 10 services in our folder, and wa want to create a ",null," target but for each of them. Instead defining them by hand, we can do:"]}],"\n",["","$L1e"],"\n",["$","p",null,{"children":["and make will generate 3 targets called ",null,", ",null," and ",null," for us. In the makefile above ",null," expands to the original image name i.e. ",null,", and ",null," to the dependent file i.e. ",null,"."]}],"\n",["$","div",null,{"className":"MarkdownHeading_markdown-heading__G6B4T","children":[["$","span",null,{"className":"MarkdownHeading_markdown-hash__CheR_","children":["##"," "]}],["$","span",null,{"children":"Microservice Framework Selection"}]]}],"\n",["$","p",null,{"children":"There are several excellent frameworks for routing HTTP traffic, such as Mux (gorilla/mux) and Gin (gin-gonic/gin). I chose to use Chi because it is 100% compatible with net/http and is built around the context package introduced in Go 1.7, which I frequently use. It's a simple service that accepts a POST on / with application/json encoded content. This example, while a bit contrived, demonstrates how to decode JSON in a handler, which might be useful for those looking to build upon this foundation. With that said, I believe we're ready to start the deployment process."}],"\n",["$","div",null,{"className":"MarkdownHeading_markdown-heading__G6B4T","children":[["$","span",null,{"className":"MarkdownHeading_markdown-hash__CheR_","children":["##"," "]}],["$","span",null,{"children":"The Environment"}]]}],"\n",["$","p",null,{"children":"Before diving in, let me give you a quick overview of our setup. I'll be using minikube with a Docker container inside Minikube’s VM. For the container runtime, I'll use Docker, and Qemu as the VM driver, coupled with a socket_vmnet network, enabling full networking capabilities for minikube under Qemu. I won't delve into the details here, but you can find ample resources online, or feel free to reach out to me on the fediverse."}],"\n",["","$L1f"],"\n",["$","div",null,{"className":"MarkdownHeading_markdown-heading__G6B4T","children":[["$","span",null,{"className":"MarkdownHeading_markdown-hash__CheR_","children":["##"," "]}],["$","span",null,{"children":"Building docker image"}]]}],"\n",["$","p",null,{"children":["A while back ",null," command got deprecated, and now we need to use ",null,". It works pretty much the same, and we will levarage stage builds to get rid off all the build and distro clutter. We will leave only our application and its runtime dependencies by using ",["$","a",null,{"href":"https://github.com/GoogleContainerTools/distroless","children":"distroless Debian 11"}]," container as a base for our final image."]}],"\n",["","$L20"],"\n",["$","p",null,{"children":"or from within our example application with just:"}],"\n",["","$L21"],"\n",["$","div",null,{"className":"MarkdownHeading_markdown-heading__G6B4T","children":[["$","span",null,{"className":"MarkdownHeading_markdown-hash__CheR_","children":["##"," "]}],["$","span",null,{"children":"Deploying with Quebec"}]]}],"\n",["$","p",null,{"children":["With the environment set, and docker image built, let's focus on deployment. One practice I favor is creating a ",null," subfolder for all non-local tasks, including advanced testing and Docker image building. This folder typically contains a Makefile for these tasks, which I include in the main Makefile, as well as folders for Docker images and qbec configurations."]}],"\n",["$","p",null,{"children":"So, what is qbec all about? It's a tool that simplifies the creation and management of Kubernetes objects across multiple clusters and/or namespaces. Let's install it and explore its capabilities."}],"\n",["$","p",null,{"children":"Installation commands:"}],"\n",["","$L22"],"\n",["$","p",null,{"children":"One of the biggest challenges for my team, given the scale of our operations, is managing about 20+ different Kubernetes clusters. We have three types of environments: dev, stage, and live, each with varying levels of traffic and activity. Internally, we also aim to optimize resource utilization – we don't want to set resources too low to avoid frequent scaling, but also not too high to avoid wastage."}],"\n",["$","p",null,{"children":"The question then is: How do we avoid configuration duplication while maintaining a high degree of flexibility? Let's see how qbec can help us in this endeavor."}],"\n",["$","div",null,{"className":"MarkdownHeading_markdown-heading__G6B4T","children":[["$","span",null,{"className":"MarkdownHeading_markdown-hash__CheR_","children":["##"," "]}],["$","span",null,{"children":"20+ Clusters"}]]}],"\n",["$","p",null,{"children":["First of all, we define all our environments in ",null,"."]}],"\n",["","$L23"],"\n",["$","p",null,{"children":"now we can quickly apply changes to each environment with:"}],"\n",["","$L24"],"\n",["$","p",null,{"children":["There are many ways to customize settings for each cluster. The one qbec suggests out-of-the-box is to have an ",null," folder with number of files. First we have ",null," for ",["$","em",null,{"children":"base"}]," environment, or ",null," for short. Other files would be named same as keys of entries in ",null,", so in our case ",null,", ",null,", etc."]}],"\n",["","$L25"],"\n",["$","p",null,{"children":["Our microservice's kubernetes objects are defined in ",null,", but we'll get back to this. First, for base environment let's define all the default parameters that we will later use while constructing our kubernetes resources. Something along the lines of:"]}],"\n",["","$L26"],"\n",["$","p",null,{"children":["then per environment we can use jsonnet's object mergin notation ",null,", which do the nested update of one object with another. Let's say for ",null," environment we just want to have one replica of our service, because why would we need more?"]}],"\n",["","$L27"],"\n",["$","p",null,{"children":"you can now compare the result looking at generated spec for both environments:"}],"\n",["","$L28"],"\n",["$","div",null,{"className":"MarkdownHeading_markdown-heading__G6B4T","children":[["$","span",null,{"className":"MarkdownHeading_markdown-hash__CheR_","children":["##"," "]}],["$","span",null,{"children":"Adjusting Properties Per Tier"}]]}],"\n",["$","p",null,{"children":["There's many default settings in ",null,", but we can also add our own ",null," too. Here, for each environment we are going to add indication if it is a ",["$","em",null,{"children":"local"}],", ",["$","em",null,{"children":"development"}],", ",["$","em",null,{"children":"staging"}]," or ",["$","em",null,{"children":"production"}]," environment:"]}],"\n",["","$L29"],"\n",["$","p",null,{"children":"With that in place, let's see our object definition:"}],"\n",["","$L2a"],"\n",["$","p",null,{"children":"In the code snippet above, the params object is derived from settings we have statically configured for our environments. During each evaluation, params reflects the values computed specifically for the evaluated environment. It's important to note that Jsonnet files always return an object. In our example, we're returning the Deployment resource definition directly."}],"\n",["$","p",null,{"children":"The highlighted lines play a crucial role in the dynamic calculation of properties. Essentially, we're crafting a function that takes the environment type from qbec.yaml. Based on the environment type, this function generates an object with properties tailored to that specific environment. A few lines down, we will manually merge our base properties from props with this dynamically generated object. This process effectively replaces the original values with the new, environment-specific ones."}],"\n",["$","div",null,{"className":"MarkdownHeading_markdown-heading__G6B4T","children":[["$","span",null,{"className":"MarkdownHeading_markdown-hash__CheR_","children":["##"," "]}],["$","span",null,{"children":"Postprocessor"}]]}],"\n",["$","p",null,{"children":["In cloud environments, an essential aspect of management is cost tracking, which often involves adding specific labels to each application for team-based cost analysis. To streamline this process and avoid the repetitive task of manually labeling each object, we can implement a post-processor. Once configured in ",null,", this post-processor automatically appends the necessary per-team labels to every object we create. By doing so, we not only ensure consistent labeling across our application resources' but also significantly simplify the management and tracking of cloud costs."]}],"\n",["","$L2b"],"\n",["$","div",null,{"className":"MarkdownHeading_markdown-heading__G6B4T","children":[["$","span",null,{"className":"MarkdownHeading_markdown-hash__CheR_","children":["##"," "]}],["$","span",null,{"children":"Adjusting Resources Per Tier"}]]}],"\n",["$","p",null,{"children":["A common challenge we encounter involves tailoring the resources we deploy to suit the specific needs of different environments. For instance, in our development environment, there might be no need for HorizontalPodAutoscaler or PodDisruptionBudget. Similarly, we might want to completely disable our service in ",null," if it’s not required there. To address these variations, we can modify our component file slightly. Instead of directly returning a JSON object, we will define each resource individually and then combine them at the end. This approach allows us to have finer control over what gets deployed in each environment, ensuring that resources are allocated efficiently and appropriately."]}],"\n",["","$L2c"],"\n",["$","div",null,{"className":"MarkdownHeading_markdown-heading__G6B4T","children":[["$","span",null,{"className":"MarkdownHeading_markdown-hash__CheR_","children":["##"," "]}],["$","span",null,{"children":"Final words"}]]}],"\n",["$","p",null,{"children":["There's certainly much more to explore beyond what we've covered here, but this should provide you with a solid foundation to get started. This article stems from a talk I delivered at the 11th ",["$","a",null,{"href":"https://www.meetup.com/pl-PL/gocracow/","children":"Go Cracow"}]," meetup. For those interested in diving deeper, all the code discussed can be found on ",["$","a",null,{"href":"https://codeberg.org/unjello/meetup-gocracow11-example","children":"Codeberg"}],". I encourage you to experiment and have fun with it! And if you wanna reach out, feel free to poke me on ",["$","a",null,{"href":"https://mastodon.gamedev.place/@unjello/111817279744934079","children":"Fediverse"}],"."]}],"\n",["$","p",null,{"children":"Happy coding!"}]]
+2d:T1110,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
+        <td class="code-ln-code" data-line-number="1"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">❯ ls -R1</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="2"><div class="code-ln-n" data-line-number="2"></div></td>
+        <td class="code-ln-code" data-line-number="2"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">Makefile</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="3"><div class="code-ln-n" data-line-number="3"></div></td>
+        <td class="code-ln-code" data-line-number="3"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">README.md</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="4"><div class="code-ln-n" data-line-number="4"></div></td>
+        <td class="code-ln-code" data-line-number="4"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">go.mod</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="5"><div class="code-ln-n" data-line-number="5"></div></td>
+        <td class="code-ln-code" data-line-number="5"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">go.sum</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="6"><div class="code-ln-n" data-line-number="6"></div></td>
+        <td class="code-ln-code" data-line-number="6"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">src</span><span style="color:#24292E;--shiki-dark:#E1E4E8">/</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="7"><div class="code-ln-n" data-line-number="7"></div></td>
+        <td class="code-ln-code" data-line-number="7"><span class="line"></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="8"><div class="code-ln-n" data-line-number="8"></div></td>
+        <td class="code-ln-code" data-line-number="8"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">.</span><span style="color:#24292E;--shiki-dark:#E1E4E8">/src:</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="9"><div class="code-ln-n" data-line-number="9"></div></td>
+        <td class="code-ln-code" data-line-number="9"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">calculator</span><span style="color:#24292E;--shiki-dark:#E1E4E8">/</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="10"><div class="code-ln-n" data-line-number="10"></div></td>
+        <td class="code-ln-code" data-line-number="10"><span class="line"></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="11"><div class="code-ln-n" data-line-number="11"></div></td>
+        <td class="code-ln-code" data-line-number="11"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">.</span><span style="color:#24292E;--shiki-dark:#E1E4E8">/src/calculator:</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="12"><div class="code-ln-n" data-line-number="12"></div></td>
+        <td class="code-ln-code" data-line-number="12"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">main.go</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="13"><div class="code-ln-n" data-line-number="13"></div></td>
+        <td class="code-ln-code" data-line-number="13"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">rpn.go</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="14"><div class="code-ln-n" data-line-number="14"></div></td>
+        <td class="code-ln-code" data-line-number="14"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">rpn_test.go</span></span></td>
+      </tr></tbody></table>1b:["$","pre",null,{"className":"language-fish pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$2d"}}]}]
+2e:Tb04,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
+        <td class="code-ln-code" data-line-number="1"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">❯ make help</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="2"><div class="code-ln-n" data-line-number="2"></div></td>
+        <td class="code-ln-code" data-line-number="2"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">help</span><span style="color:#24292E;--shiki-dark:#E1E4E8">         Show this help, automatically generated from comments </span><span style="color:#D73A49;--shiki-dark:#F97583">in</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> the Makefile</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="3"><div class="code-ln-n" data-line-number="3"></div></td>
+        <td class="code-ln-code" data-line-number="3"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">get</span><span style="color:#24292E;--shiki-dark:#E1E4E8">          Download packages </span><span style="color:#D73A49;--shiki-dark:#F97583">and</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> their dependencies from import paths</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="4"><div class="code-ln-n" data-line-number="4"></div></td>
+        <td class="code-ln-code" data-line-number="4"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">run</span><span style="color:#24292E;--shiki-dark:#E1E4E8">          Runs the service</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="5"><div class="code-ln-n" data-line-number="5"></div></td>
+        <td class="code-ln-code" data-line-number="5"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">test</span><span style="color:#24292E;--shiki-dark:#E1E4E8">         Runs unit-tests</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="6"><div class="code-ln-n" data-line-number="6"></div></td>
+        <td class="code-ln-code" data-line-number="6"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">fmt</span><span style="color:#24292E;--shiki-dark:#E1E4E8">          Format </span><span style="color:#D73A49;--shiki-dark:#F97583">source</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> file </span><span style="color:#D73A49;--shiki-dark:#F97583">and</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> basic housekeeping on imports</span></span></td>
+      </tr></tbody></table>1c:["$","pre",null,{"className":"language-fish pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$2e"}}]}]
+2f:T1d36,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
+        <td class="code-ln-code" data-line-number="1"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">.PHONY</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: help</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="2"><div class="code-ln-n" data-line-number="2"></div></td>
+        <td class="code-ln-code" data-line-number="2"><span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">help</span><span style="color:#24292E;--shiki-dark:#E1E4E8">:   </span><span style="color:#6A737D;--shiki-dark:#6A737D">## Show this help, automatically generated from comments in the Makefile</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="3"><div class="code-ln-n" data-line-number="3"></div></td>
+        <td class="code-ln-code" data-line-number="3"><span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">        @fgrep</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> -h</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> "##"</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> $(</span><span style="color:#24292E;--shiki-dark:#E1E4E8">MAKEFILE_LIST</span><span style="color:#032F62;--shiki-dark:#9ECBFF">)</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> |</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> fgrep</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> -v</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> fgrep</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> |</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> sed</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> -e</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> 's/\\</span><span style="color:#005CC5;--shiki-dark:#79B8FF">$$</span><span style="color:#6F42C1;--shiki-dark:#B392F0">//'</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> |</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> sed</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> -e</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> 's/</span><span style="color:#24292E;--shiki-dark:#E1E4E8">:.</span><span style="color:#005CC5;--shiki-dark:#79B8FF">*</span><span style="color:#6A737D;--shiki-dark:#6A737D">##/        /'</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="4"><div class="code-ln-n" data-line-number="4"></div></td>
+        <td class="code-ln-code" data-line-number="4"><span class="line"></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="5"><div class="code-ln-n" data-line-number="5"></div></td>
+        <td class="code-ln-code" data-line-number="5"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">.PHONY</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: get</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="6"><div class="code-ln-n" data-line-number="6"></div></td>
+        <td class="code-ln-code" data-line-number="6"><span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">get</span><span style="color:#24292E;--shiki-dark:#E1E4E8">:    </span><span style="color:#6A737D;--shiki-dark:#6A737D">## Download packages and their dependencies from import paths</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="7"><div class="code-ln-n" data-line-number="7"></div></td>
+        <td class="code-ln-code" data-line-number="7"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">        @echo "+ </span><span style="color:#005CC5;--shiki-dark:#79B8FF">$@</span><span style="color:#24292E;--shiki-dark:#E1E4E8">"</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="8"><div class="code-ln-n" data-line-number="8"></div></td>
+        <td class="code-ln-code" data-line-number="8"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">        @go get ./...</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="9"><div class="code-ln-n" data-line-number="9"></div></td>
+        <td class="code-ln-code" data-line-number="9"><span class="line"></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="10"><div class="code-ln-n" data-line-number="10"></div></td>
+        <td class="code-ln-code" data-line-number="10"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">.PHONY</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: run</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="11"><div class="code-ln-n" data-line-number="11"></div></td>
+        <td class="code-ln-code" data-line-number="11"><span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">run</span><span style="color:#24292E;--shiki-dark:#E1E4E8">:    </span><span style="color:#6A737D;--shiki-dark:#6A737D">## Runs the service</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="12"><div class="code-ln-n" data-line-number="12"></div></td>
+        <td class="code-ln-code" data-line-number="12"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">        @echo "+ </span><span style="color:#005CC5;--shiki-dark:#79B8FF">$@</span><span style="color:#24292E;--shiki-dark:#E1E4E8">"</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="13"><div class="code-ln-n" data-line-number="13"></div></td>
+        <td class="code-ln-code" data-line-number="13"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">        go run ./src/calculator</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="14"><div class="code-ln-n" data-line-number="14"></div></td>
+        <td class="code-ln-code" data-line-number="14"><span class="line"></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="15"><div class="code-ln-n" data-line-number="15"></div></td>
+        <td class="code-ln-code" data-line-number="15"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">.PHONY</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: test</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="16"><div class="code-ln-n" data-line-number="16"></div></td>
+        <td class="code-ln-code" data-line-number="16"><span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">test</span><span style="color:#24292E;--shiki-dark:#E1E4E8">:   </span><span style="color:#6A737D;--shiki-dark:#6A737D">## Runs unit-tests</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="17"><div class="code-ln-n" data-line-number="17"></div></td>
+        <td class="code-ln-code" data-line-number="17"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">        go test -count=1 -v ./...</span></span></td>
+      </tr></tbody></table>1d:["$","pre",null,{"className":"language-makefile pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$2f"}}]}]
+30:T7e3,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
+        <td class="code-ln-code" data-line-number="1"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">IMAGES := calculator otherservice yetanother</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="2"><div class="code-ln-n" data-line-number="2"></div></td>
+        <td class="code-ln-code" data-line-number="2"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">.PHONY</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">$(</span><span style="color:#24292E;--shiki-dark:#E1E4E8">IMAGES:%=ci_%_image</span><span style="color:#032F62;--shiki-dark:#9ECBFF">)</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="3"><div class="code-ln-n" data-line-number="3"></div></td>
+        <td class="code-ln-code" data-line-number="3"><span class="line"><span style="color:#032F62;--shiki-dark:#9ECBFF">$(</span><span style="color:#24292E;--shiki-dark:#E1E4E8">IMAGES:%=ci_%_image</span><span style="color:#032F62;--shiki-dark:#9ECBFF">)</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: ci_%_image: cicd/docker/Dockerfile.%</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="4"><div class="code-ln-n" data-line-number="4"></div></td>
+        <td class="code-ln-code" data-line-number="4"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">        docker buildx build --tag </span><span style="color:#005CC5;--shiki-dark:#79B8FF">$*</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> -f </span><span style="color:#005CC5;--shiki-dark:#79B8FF">$&#x3C;</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> .</span></span></td>
+      </tr></tbody></table>1e:["$","pre",null,{"className":"language-makefile pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$30"}}]}]
+31:T616,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
+        <td class="code-ln-code" data-line-number="1"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">❯ brew install socket_vmnet qemu minikube docker docker-buildx</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="2"><div class="code-ln-n" data-line-number="2"></div></td>
+        <td class="code-ln-code" data-line-number="2"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">❯ brew services start socket_vmnet</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="3"><div class="code-ln-n" data-line-number="3"></div></td>
+        <td class="code-ln-code" data-line-number="3"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">❯ minikube start --driver=qemu --container-runtime=docker --network=socket_vmnet</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="4"><div class="code-ln-n" data-line-number="4"></div></td>
+        <td class="code-ln-code" data-line-number="4"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">❯ minikube -p minikube docker-env </span><span style="color:#D73A49;--shiki-dark:#F97583">|</span><span style="color:#D73A49;--shiki-dark:#F97583"> source</span></span></td>
+      </tr></tbody></table>1f:["$","pre",null,{"className":"language-fish pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$31"}}]}]
+32:T230b,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
+        <td class="code-ln-code" data-line-number="1"><span class="line"><span style="color:#6A737D;--shiki-dark:#6A737D"># syntax=docker/dockerfile:1</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="2"><div class="code-ln-n" data-line-number="2"></div></td>
+        <td class="code-ln-code" data-line-number="2"><span class="line"></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="3"><div class="code-ln-n" data-line-number="3"></div></td>
+        <td class="code-ln-code" data-line-number="3"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">FROM</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> golang:1.21 </span><span style="color:#D73A49;--shiki-dark:#F97583">AS</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> build-stage</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="4"><div class="code-ln-n" data-line-number="4"></div></td>
+        <td class="code-ln-code" data-line-number="4"><span class="line"></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="5"><div class="code-ln-n" data-line-number="5"></div></td>
+        <td class="code-ln-code" data-line-number="5"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">WORKDIR</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> /app</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="6"><div class="code-ln-n" data-line-number="6"></div></td>
+        <td class="code-ln-code" data-line-number="6"><span class="line"></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="7"><div class="code-ln-n" data-line-number="7"></div></td>
+        <td class="code-ln-code" data-line-number="7"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">COPY</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> go.mod go.sum ./</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="8"><div class="code-ln-n" data-line-number="8"></div></td>
+        <td class="code-ln-code" data-line-number="8"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">RUN</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> go mod download</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="9"><div class="code-ln-n" data-line-number="9"></div></td>
+        <td class="code-ln-code" data-line-number="9"><span class="line"></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="10"><div class="code-ln-n" data-line-number="10"></div></td>
+        <td class="code-ln-code" data-line-number="10"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">COPY</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> services/calculator/*.go ./</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="11"><div class="code-ln-n" data-line-number="11"></div></td>
+        <td class="code-ln-code" data-line-number="11"><span class="line"></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="12"><div class="code-ln-n" data-line-number="12"></div></td>
+        <td class="code-ln-code" data-line-number="12"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">RUN</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> CGO_ENABLED=0 GOOS=linux go build -o /calculator</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="13"><div class="code-ln-n" data-line-number="13"></div></td>
+        <td class="code-ln-code" data-line-number="13"><span class="line"></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="14"><div class="code-ln-n" data-line-number="14"></div></td>
+        <td class="code-ln-code" data-line-number="14"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">FROM</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> build-stage </span><span style="color:#D73A49;--shiki-dark:#F97583">AS</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> run-test-stage</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="15"><div class="code-ln-n" data-line-number="15"></div></td>
+        <td class="code-ln-code" data-line-number="15"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">RUN</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> go test -v ./...</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="16"><div class="code-ln-n" data-line-number="16"></div></td>
+        <td class="code-ln-code" data-line-number="16"><span class="line"></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="17"><div class="code-ln-n" data-line-number="17"></div></td>
+        <td class="code-ln-code" data-line-number="17"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">FROM</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> gcr.io/distroless/base-debian11 </span><span style="color:#D73A49;--shiki-dark:#F97583">AS</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> build-release-stage</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="18"><div class="code-ln-n" data-line-number="18"></div></td>
+        <td class="code-ln-code" data-line-number="18"><span class="line"></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="19"><div class="code-ln-n" data-line-number="19"></div></td>
+        <td class="code-ln-code" data-line-number="19"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">WORKDIR</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> /</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="20"><div class="code-ln-n" data-line-number="20"></div></td>
+        <td class="code-ln-code" data-line-number="20"><span class="line"></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="21"><div class="code-ln-n" data-line-number="21"></div></td>
+        <td class="code-ln-code" data-line-number="21"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">COPY</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> --from=build-stage /calculator /calculator</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="22"><div class="code-ln-n" data-line-number="22"></div></td>
+        <td class="code-ln-code" data-line-number="22"><span class="line"></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="23"><div class="code-ln-n" data-line-number="23"></div></td>
+        <td class="code-ln-code" data-line-number="23"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">EXPOSE</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> 8080</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="24"><div class="code-ln-n" data-line-number="24"></div></td>
+        <td class="code-ln-code" data-line-number="24"><span class="line"></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="25"><div class="code-ln-n" data-line-number="25"></div></td>
+        <td class="code-ln-code" data-line-number="25"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">USER</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> nonroot:nonroot</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="26"><div class="code-ln-n" data-line-number="26"></div></td>
+        <td class="code-ln-code" data-line-number="26"><span class="line"></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="27"><div class="code-ln-n" data-line-number="27"></div></td>
+        <td class="code-ln-code" data-line-number="27"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">ENTRYPOINT</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> [</span><span style="color:#032F62;--shiki-dark:#9ECBFF">"/calculator"</span><span style="color:#24292E;--shiki-dark:#E1E4E8">]</span></span></td>
+      </tr></tbody></table>20:["$","pre",null,{"className":"language-dockerfile pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$32"}}]}]
+21:["$","pre",null,{"className":"language-fish pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"<table class=\"code-ln-table\"><tbody><tr class=\"code-ln-line\">\n        <td class=\"code-ln-numbers\" data-line-number=\"1\"><div class=\"code-ln-n\" data-line-number=\"1\"></div></td>\n        <td class=\"code-ln-code\" data-line-number=\"1\"><span class=\"line\"><span style=\"color:#24292E;--shiki-dark:#E1E4E8\">❯ make ci_calculator_image</span></span></td>\n      </tr></tbody></table>"}}]}]
+22:["$","pre",null,{"className":"language-fish pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"<table class=\"code-ln-table\"><tbody><tr class=\"code-ln-line\">\n        <td class=\"code-ln-numbers\" data-line-number=\"1\"><div class=\"code-ln-n\" data-line-number=\"1\"></div></td>\n        <td class=\"code-ln-code\" data-line-number=\"1\"><span class=\"line\"><span style=\"color:#24292E;--shiki-dark:#E1E4E8\">❯ brew tap splunk/tap</span></span></td>\n      </tr><tr class=\"code-ln-line\">\n        <td class=\"code-ln-numbers\" data-line-number=\"2\"><div class=\"code-ln-n\" data-line-number=\"2\"></div></td>\n        <td class=\"code-ln-code\" data-line-number=\"2\"><span class=\"line\"><span style=\"color:#24292E;--shiki-dark:#E1E4E8\">❯ brew install qbec</span></span></td>\n      </tr></tbody></table>"}}]}]
+33:T17df,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
+        <td class="code-ln-code" data-line-number="1"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">apiVersion</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">qbec.io/v1alpha1</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="2"><div class="code-ln-n" data-line-number="2"></div></td>
+        <td class="code-ln-code" data-line-number="2"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">kind</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">App</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="3"><div class="code-ln-n" data-line-number="3"></div></td>
+        <td class="code-ln-code" data-line-number="3"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">metadata</span><span style="color:#24292E;--shiki-dark:#E1E4E8">:</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="4"><div class="code-ln-n" data-line-number="4"></div></td>
+        <td class="code-ln-code" data-line-number="4"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">  name</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">meetup-example</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="5"><div class="code-ln-n" data-line-number="5"></div></td>
+        <td class="code-ln-code" data-line-number="5"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">spec</span><span style="color:#24292E;--shiki-dark:#E1E4E8">:</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="6"><div class="code-ln-n" data-line-number="6"></div></td>
+        <td class="code-ln-code" data-line-number="6"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">  environments</span><span style="color:#24292E;--shiki-dark:#E1E4E8">:</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="7"><div class="code-ln-n" data-line-number="7"></div></td>
+        <td class="code-ln-code" data-line-number="7"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">    local</span><span style="color:#24292E;--shiki-dark:#E1E4E8">:</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="8"><div class="code-ln-n" data-line-number="8"></div></td>
+        <td class="code-ln-code" data-line-number="8"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">      context</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">minikube</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="9"><div class="code-ln-n" data-line-number="9"></div></td>
+        <td class="code-ln-code" data-line-number="9"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">      defaultNamespace</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">default</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="10"><div class="code-ln-n" data-line-number="10"></div></td>
+        <td class="code-ln-code" data-line-number="10"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">    cluster001</span><span style="color:#24292E;--shiki-dark:#E1E4E8">:</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="11"><div class="code-ln-n" data-line-number="11"></div></td>
+        <td class="code-ln-code" data-line-number="11"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">      defaultNamespace</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">default</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="12"><div class="code-ln-n" data-line-number="12"></div></td>
+        <td class="code-ln-code" data-line-number="12"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">      server</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">https://192.168.1.1:8443</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="13"><div class="code-ln-n" data-line-number="13"></div></td>
+        <td class="code-ln-code" data-line-number="13"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">    cluster002</span><span style="color:#24292E;--shiki-dark:#E1E4E8">:</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="14"><div class="code-ln-n" data-line-number="14"></div></td>
+        <td class="code-ln-code" data-line-number="14"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">      defaultNamespace</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">default</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="15"><div class="code-ln-n" data-line-number="15"></div></td>
+        <td class="code-ln-code" data-line-number="15"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">      server</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">https://10.0.0.1:8443</span></span></td>
+      </tr></tbody></table>23:["$","pre",null,{"className":"language-yaml pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$33"}}]}]
+24:["$","pre",null,{"className":"language-fish pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"<table class=\"code-ln-table\"><tbody><tr class=\"code-ln-line\">\n        <td class=\"code-ln-numbers\" data-line-number=\"1\"><div class=\"code-ln-n\" data-line-number=\"1\"></div></td>\n        <td class=\"code-ln-code\" data-line-number=\"1\"><span class=\"line\"><span style=\"color:#24292E;--shiki-dark:#E1E4E8\">❯ qbec apply cluster001</span></span></td>\n      </tr></tbody></table>"}}]}]
+25:["$","pre",null,{"className":"language-fish pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"<table class=\"code-ln-table\"><tbody><tr class=\"code-ln-line\">\n        <td class=\"code-ln-numbers\" data-line-number=\"1\"><div class=\"code-ln-n\" data-line-number=\"1\"></div></td>\n        <td class=\"code-ln-code\" data-line-number=\"1\"><span class=\"line\"><span style=\"color:#24292E;--shiki-dark:#E1E4E8\">❯ ls -1R cicd/qbec/environments/</span></span></td>\n      </tr><tr class=\"code-ln-line\">\n        <td class=\"code-ln-numbers\" data-line-number=\"2\"><div class=\"code-ln-n\" data-line-number=\"2\"></div></td>\n        <td class=\"code-ln-code\" data-line-number=\"2\"><span class=\"line\"><span style=\"color:#005CC5;--shiki-dark:#79B8FF\">base.libsonnet</span></span></td>\n      </tr><tr class=\"code-ln-line\">\n        <td class=\"code-ln-numbers\" data-line-number=\"3\"><div class=\"code-ln-n\" data-line-number=\"3\"></div></td>\n        <td class=\"code-ln-code\" data-line-number=\"3\"><span class=\"line\"><span style=\"color:#005CC5;--shiki-dark:#79B8FF\">local.libsonnet</span></span></td>\n      </tr></tbody></table>"}}]}]
+34:T21d6,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
+        <td class="code-ln-code" data-line-number="1"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">{</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="2"><div class="code-ln-n" data-line-number="2"></div></td>
+        <td class="code-ln-code" data-line-number="2"><span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">  components:</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> {</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="3"><div class="code-ln-n" data-line-number="3"></div></td>
+        <td class="code-ln-code" data-line-number="3"><span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">    calculator:</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> {</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="4"><div class="code-ln-n" data-line-number="4"></div></td>
+        <td class="code-ln-code" data-line-number="4"><span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">      name:</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> "calculator"</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="5"><div class="code-ln-n" data-line-number="5"></div></td>
+        <td class="code-ln-code" data-line-number="5"><span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">      serviceName:</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> "calculator"</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="6"><div class="code-ln-n" data-line-number="6"></div></td>
+        <td class="code-ln-code" data-line-number="6"><span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">      replicaCount:</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 3</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="7"><div class="code-ln-n" data-line-number="7"></div></td>
+        <td class="code-ln-code" data-line-number="7"><span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">      port:</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 8080</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="8"><div class="code-ln-n" data-line-number="8"></div></td>
+        <td class="code-ln-code" data-line-number="8"><span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">      externalServicePort:</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 8989</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="9"><div class="code-ln-n" data-line-number="9"></div></td>
+        <td class="code-ln-code" data-line-number="9"><span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">      serviceType:</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> "NodePort"</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="10"><div class="code-ln-n" data-line-number="10"></div></td>
+        <td class="code-ln-code" data-line-number="10"><span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">      enabled:</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> true</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="11"><div class="code-ln-n" data-line-number="11"></div></td>
+        <td class="code-ln-code" data-line-number="11"><span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">      resources:</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> {</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="12"><div class="code-ln-n" data-line-number="12"></div></td>
+        <td class="code-ln-code" data-line-number="12"><span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">        requests:</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> {</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="13"><div class="code-ln-n" data-line-number="13"></div></td>
+        <td class="code-ln-code" data-line-number="13"><span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">          cpu:</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> "200m"</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="14"><div class="code-ln-n" data-line-number="14"></div></td>
+        <td class="code-ln-code" data-line-number="14"><span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">          memory:</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> "200Mi"</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="15"><div class="code-ln-n" data-line-number="15"></div></td>
+        <td class="code-ln-code" data-line-number="15"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">        },</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="16"><div class="code-ln-n" data-line-number="16"></div></td>
+        <td class="code-ln-code" data-line-number="16"><span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">        limits:</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> {</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="17"><div class="code-ln-n" data-line-number="17"></div></td>
+        <td class="code-ln-code" data-line-number="17"><span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">          cpu:</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> "300m"</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="18"><div class="code-ln-n" data-line-number="18"></div></td>
+        <td class="code-ln-code" data-line-number="18"><span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">          memory:</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> "500Mi"</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="19"><div class="code-ln-n" data-line-number="19"></div></td>
+        <td class="code-ln-code" data-line-number="19"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">        }</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="20"><div class="code-ln-n" data-line-number="20"></div></td>
+        <td class="code-ln-code" data-line-number="20"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">      }</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="21"><div class="code-ln-n" data-line-number="21"></div></td>
+        <td class="code-ln-code" data-line-number="21"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    }</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="22"><div class="code-ln-n" data-line-number="22"></div></td>
+        <td class="code-ln-code" data-line-number="22"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">  },</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="23"><div class="code-ln-n" data-line-number="23"></div></td>
+        <td class="code-ln-code" data-line-number="23"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">}</span></span></td>
+      </tr></tbody></table>26:["$","pre",null,{"className":"language-jsonnet pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$34"}}]}]
+35:Tca8,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
+        <td class="code-ln-code" data-line-number="1"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">local</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> base </span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#D73A49;--shiki-dark:#F97583"> import</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> './base.libsonnet'</span><span style="color:#24292E;--shiki-dark:#E1E4E8">;</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="2"><div class="code-ln-n" data-line-number="2"></div></td>
+        <td class="code-ln-code" data-line-number="2"><span class="line"></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="3"><div class="code-ln-n" data-line-number="3"></div></td>
+        <td class="code-ln-code" data-line-number="3"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">base {</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="4"><div class="code-ln-n" data-line-number="4"></div></td>
+        <td class="code-ln-code" data-line-number="4"><span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">  components +:</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> {</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="5"><div class="code-ln-n" data-line-number="5"></div></td>
+        <td class="code-ln-code" data-line-number="5"><span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">    calculator +:</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> {</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="6"><div class="code-ln-n" data-line-number="6"></div></td>
+        <td class="code-ln-code" data-line-number="6"><span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">      replicaCount:</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 1</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="7"><div class="code-ln-n" data-line-number="7"></div></td>
+        <td class="code-ln-code" data-line-number="7"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    }</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="8"><div class="code-ln-n" data-line-number="8"></div></td>
+        <td class="code-ln-code" data-line-number="8"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">  }</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="9"><div class="code-ln-n" data-line-number="9"></div></td>
+        <td class="code-ln-code" data-line-number="9"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">}</span></span></td>
+      </tr></tbody></table>27:["$","pre",null,{"className":"language-jsonnet pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$35"}}]}]
+36:Tfc4,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
+        <td class="code-ln-code" data-line-number="1"><span class="line"><span style="color:#6F42C1;font-weight:bold;--shiki-dark:#B392F0;--shiki-dark-font-weight:bold">12c12</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="2"><div class="code-ln-n" data-line-number="2"></div></td>
+        <td class="code-ln-code" data-line-number="2"><span class="line"><span style="color:#B31D28;--shiki-dark:#FDAEB7">&#x3C;     qbec.io/environment: local</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="3"><div class="code-ln-n" data-line-number="3"></div></td>
+        <td class="code-ln-code" data-line-number="3"><span class="line"><span style="color:#005CC5;font-weight:bold;--shiki-dark:#79B8FF;--shiki-dark-font-weight:bold">---</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="4"><div class="code-ln-n" data-line-number="4"></div></td>
+        <td class="code-ln-code" data-line-number="4"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">>     qbec.io/environment: _</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="5"><div class="code-ln-n" data-line-number="5"></div></td>
+        <td class="code-ln-code" data-line-number="5"><span class="line"><span style="color:#6F42C1;font-weight:bold;--shiki-dark:#B392F0;--shiki-dark-font-weight:bold">15c15</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="6"><div class="code-ln-n" data-line-number="6"></div></td>
+        <td class="code-ln-code" data-line-number="6"><span class="line"><span style="color:#B31D28;--shiki-dark:#FDAEB7">&#x3C;   replicas: 1</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="7"><div class="code-ln-n" data-line-number="7"></div></td>
+        <td class="code-ln-code" data-line-number="7"><span class="line"><span style="color:#005CC5;font-weight:bold;--shiki-dark:#79B8FF;--shiki-dark-font-weight:bold">---</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="8"><div class="code-ln-n" data-line-number="8"></div></td>
+        <td class="code-ln-code" data-line-number="8"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">>   replicas: 3</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="9"><div class="code-ln-n" data-line-number="9"></div></td>
+        <td class="code-ln-code" data-line-number="9"><span class="line"><span style="color:#6F42C1;font-weight:bold;--shiki-dark:#B392F0;--shiki-dark-font-weight:bold">53c53</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="10"><div class="code-ln-n" data-line-number="10"></div></td>
+        <td class="code-ln-code" data-line-number="10"><span class="line"><span style="color:#B31D28;--shiki-dark:#FDAEB7">&#x3C;     qbec.io/environment: local</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="11"><div class="code-ln-n" data-line-number="11"></div></td>
+        <td class="code-ln-code" data-line-number="11"><span class="line"><span style="color:#005CC5;font-weight:bold;--shiki-dark:#79B8FF;--shiki-dark-font-weight:bold">---</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="12"><div class="code-ln-n" data-line-number="12"></div></td>
+        <td class="code-ln-code" data-line-number="12"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">>     qbec.io/environment: _</span></span></td>
+      </tr></tbody></table>28:["$","pre",null,{"className":"language-diff pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$36"}}]}]
+37:T15b3,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
+        <td class="code-ln-code" data-line-number="1"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">spec</span><span style="color:#24292E;--shiki-dark:#E1E4E8">:</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="2"><div class="code-ln-n" data-line-number="2"></div></td>
+        <td class="code-ln-code" data-line-number="2"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">  environments</span><span style="color:#24292E;--shiki-dark:#E1E4E8">:</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="3"><div class="code-ln-n" data-line-number="3"></div></td>
+        <td class="code-ln-code" data-line-number="3"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">    local</span><span style="color:#24292E;--shiki-dark:#E1E4E8">:</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="4"><div class="code-ln-n" data-line-number="4"></div></td>
+        <td class="code-ln-code" data-line-number="4"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">      context</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">minikube</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="5"><div class="code-ln-n" data-line-number="5"></div></td>
+        <td class="code-ln-code" data-line-number="5"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">      properties</span><span style="color:#24292E;--shiki-dark:#E1E4E8">:</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="6"><div class="code-ln-n" data-line-number="6"></div></td>
+        <td class="code-ln-code" data-line-number="6"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">        envType</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">local</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="7"><div class="code-ln-n" data-line-number="7"></div></td>
+        <td class="code-ln-code" data-line-number="7"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">    cluster001</span><span style="color:#24292E;--shiki-dark:#E1E4E8">:</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="8"><div class="code-ln-n" data-line-number="8"></div></td>
+        <td class="code-ln-code" data-line-number="8"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">      server</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">https://192.168.1.1:8443</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="9"><div class="code-ln-n" data-line-number="9"></div></td>
+        <td class="code-ln-code" data-line-number="9"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">      properties</span><span style="color:#24292E;--shiki-dark:#E1E4E8">:</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="10"><div class="code-ln-n" data-line-number="10"></div></td>
+        <td class="code-ln-code" data-line-number="10"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">        envType</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">staging</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="11"><div class="code-ln-n" data-line-number="11"></div></td>
+        <td class="code-ln-code" data-line-number="11"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">    cluster002</span><span style="color:#24292E;--shiki-dark:#E1E4E8">:</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="12"><div class="code-ln-n" data-line-number="12"></div></td>
+        <td class="code-ln-code" data-line-number="12"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">      server</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">https://10.0.0.1:8443</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="13"><div class="code-ln-n" data-line-number="13"></div></td>
+        <td class="code-ln-code" data-line-number="13"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">      properties</span><span style="color:#24292E;--shiki-dark:#E1E4E8">:</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="14"><div class="code-ln-n" data-line-number="14"></div></td>
+        <td class="code-ln-code" data-line-number="14"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">        envType</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">production</span></span></td>
+      </tr></tbody></table>29:["$","pre",null,{"className":"language-yaml pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$37"}}]}]
+38:T6173,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
+        <td class="code-ln-code" data-line-number="1"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">local</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> paramMap </span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#D73A49;--shiki-dark:#F97583"> import</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> "params.libsonnet"</span><span style="color:#24292E;--shiki-dark:#E1E4E8">;</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="2"><div class="code-ln-n" data-line-number="2"></div></td>
+        <td class="code-ln-code" data-line-number="2"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">local</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> params </span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> paramMap.components.calculator;</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="3"><div class="code-ln-n" data-line-number="3"></div></td>
+        <td class="code-ln-code" data-line-number="3"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">local</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> imagePullPolicy </span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> std.</span><span style="color:#6F42C1;--shiki-dark:#B392F0">extVar</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#032F62;--shiki-dark:#9ECBFF">"pull_policy"</span><span style="color:#24292E;--shiki-dark:#E1E4E8">);</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="4"><div class="code-ln-n" data-line-number="4"></div></td>
+        <td class="code-ln-code" data-line-number="4"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">local</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> imageVersion </span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> std.</span><span style="color:#6F42C1;--shiki-dark:#B392F0">extVar</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#032F62;--shiki-dark:#9ECBFF">"version"</span><span style="color:#24292E;--shiki-dark:#E1E4E8">);</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="5"><div class="code-ln-n" data-line-number="5"></div></td>
+        <td class="code-ln-code" data-line-number="5"><span class="line"></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="6"><div class="code-ln-n" data-line-number="6"></div></td>
+        <td class="code-ln-code" data-line-number="6"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">local</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> name </span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> params.name;</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="7"><div class="code-ln-n" data-line-number="7"></div></td>
+        <td class="code-ln-code" data-line-number="7"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">local</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> podLabels </span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> {</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="8"><div class="code-ln-n" data-line-number="8"></div></td>
+        <td class="code-ln-code" data-line-number="8"><span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">  app:</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> name</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="9"><div class="code-ln-n" data-line-number="9"></div></td>
+        <td class="code-ln-code" data-line-number="9"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">};</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="10"><div class="code-ln-n" data-line-number="10"></div></td>
+        <td class="code-ln-code" data-line-number="10"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">local</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> serviceLabels </span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> {</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="11"><div class="code-ln-n" data-line-number="11"></div></td>
+        <td class="code-ln-code" data-line-number="11"><span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">  service:</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> params.serviceName</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="12"><div class="code-ln-n" data-line-number="12"></div></td>
+        <td class="code-ln-code" data-line-number="12"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">};</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="13"><div class="code-ln-n" data-line-number="13"></div></td>
+        <td class="code-ln-code" data-line-number="13"><span class="line"></span></td>
+      </tr><tr class="code-ln-line code-ln-mark">
+        <td class="code-ln-numbers" data-line-number="14"><div class="code-ln-n" data-line-number="14"></div></td>
+        <td class="code-ln-code" data-line-number="14"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">local</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> target </span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> std.</span><span style="color:#6F42C1;--shiki-dark:#B392F0">extVar</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#032F62;--shiki-dark:#9ECBFF">"qbec.io/env"</span><span style="color:#24292E;--shiki-dark:#E1E4E8">);</span></span></td>
+      </tr><tr class="code-ln-line code-ln-mark">
+        <td class="code-ln-numbers" data-line-number="15"><div class="code-ln-n" data-line-number="15"></div></td>
+        <td class="code-ln-code" data-line-number="15"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">local</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> targetProps </span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> std.</span><span style="color:#6F42C1;--shiki-dark:#B392F0">extVar</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#032F62;--shiki-dark:#9ECBFF">"qbec.io/envProperties"</span><span style="color:#24292E;--shiki-dark:#E1E4E8">);</span></span></td>
+      </tr><tr class="code-ln-line code-ln-mark">
+        <td class="code-ln-numbers" data-line-number="16"><div class="code-ln-n" data-line-number="16"></div></td>
+        <td class="code-ln-code" data-line-number="16"><span class="line"></span></td>
+      </tr><tr class="code-ln-line code-ln-mark">
+        <td class="code-ln-numbers" data-line-number="17"><div class="code-ln-n" data-line-number="17"></div></td>
+        <td class="code-ln-code" data-line-number="17"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">local</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> getResources</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(props) </span><span style="color:#D73A49;--shiki-dark:#F97583">=</span></span></td>
+      </tr><tr class="code-ln-line code-ln-mark">
+        <td class="code-ln-numbers" data-line-number="18"><div class="code-ln-n" data-line-number="18"></div></td>
+        <td class="code-ln-code" data-line-number="18"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">  if</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> std.objectHas</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(props, </span><span style="color:#032F62;--shiki-dark:#9ECBFF">"envType"</span><span style="color:#24292E;--shiki-dark:#E1E4E8">) </span><span style="color:#D73A49;--shiki-dark:#F97583">&#x26;&#x26;</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> props.envType </span><span style="color:#D73A49;--shiki-dark:#F97583">==</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> "staging"</span><span style="color:#D73A49;--shiki-dark:#F97583"> then</span></span></td>
+      </tr><tr class="code-ln-line code-ln-mark">
+        <td class="code-ln-numbers" data-line-number="19"><div class="code-ln-n" data-line-number="19"></div></td>
+        <td class="code-ln-code" data-line-number="19"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">{</span></span></td>
+      </tr><tr class="code-ln-line code-ln-mark">
+        <td class="code-ln-numbers" data-line-number="20"><div class="code-ln-n" data-line-number="20"></div></td>
+        <td class="code-ln-code" data-line-number="20"><span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">  limits +:</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> {</span></span></td>
+      </tr><tr class="code-ln-line code-ln-mark">
+        <td class="code-ln-numbers" data-line-number="21"><div class="code-ln-n" data-line-number="21"></div></td>
+        <td class="code-ln-code" data-line-number="21"><span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">    cpu:</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> "100m"</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span></span></td>
+      </tr><tr class="code-ln-line code-ln-mark">
+        <td class="code-ln-numbers" data-line-number="22"><div class="code-ln-n" data-line-number="22"></div></td>
+        <td class="code-ln-code" data-line-number="22"><span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">    memory:</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> "100Mi"</span></span></td>
+      </tr><tr class="code-ln-line code-ln-mark">
+        <td class="code-ln-numbers" data-line-number="23"><div class="code-ln-n" data-line-number="23"></div></td>
+        <td class="code-ln-code" data-line-number="23"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">  }</span></span></td>
+      </tr><tr class="code-ln-line code-ln-mark">
+        <td class="code-ln-numbers" data-line-number="24"><div class="code-ln-n" data-line-number="24"></div></td>
+        <td class="code-ln-code" data-line-number="24"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">} </span><span style="color:#D73A49;--shiki-dark:#F97583">else</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> {};</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="25"><div class="code-ln-n" data-line-number="25"></div></td>
+        <td class="code-ln-code" data-line-number="25"><span class="line"></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="26"><div class="code-ln-n" data-line-number="26"></div></td>
+        <td class="code-ln-code" data-line-number="26"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">{</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="27"><div class="code-ln-n" data-line-number="27"></div></td>
+        <td class="code-ln-code" data-line-number="27"><span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">  apiVersion:</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> "apps/v1"</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="28"><div class="code-ln-n" data-line-number="28"></div></td>
+        <td class="code-ln-code" data-line-number="28"><span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">  kind:</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> "Deployment"</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="29"><div class="code-ln-n" data-line-number="29"></div></td>
+        <td class="code-ln-code" data-line-number="29"><span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">  metadata:</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> {</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="30"><div class="code-ln-n" data-line-number="30"></div></td>
+        <td class="code-ln-code" data-line-number="30"><span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">    name:</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> name,</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="31"><div class="code-ln-n" data-line-number="31"></div></td>
+        <td class="code-ln-code" data-line-number="31"><span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">    labels:</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> podLabels,</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="32"><div class="code-ln-n" data-line-number="32"></div></td>
+        <td class="code-ln-code" data-line-number="32"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">  },</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="33"><div class="code-ln-n" data-line-number="33"></div></td>
+        <td class="code-ln-code" data-line-number="33"><span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">  spec:</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> {</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="34"><div class="code-ln-n" data-line-number="34"></div></td>
+        <td class="code-ln-code" data-line-number="34"><span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">    replicas:</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> params.replicaCount,</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="35"><div class="code-ln-n" data-line-number="35"></div></td>
+        <td class="code-ln-code" data-line-number="35"><span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">    selector:</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> {</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="36"><div class="code-ln-n" data-line-number="36"></div></td>
+        <td class="code-ln-code" data-line-number="36"><span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">      matchLabels:</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> podLabels</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="37"><div class="code-ln-n" data-line-number="37"></div></td>
+        <td class="code-ln-code" data-line-number="37"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    },</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="38"><div class="code-ln-n" data-line-number="38"></div></td>
+        <td class="code-ln-code" data-line-number="38"><span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">    strategy:</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> {</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="39"><div class="code-ln-n" data-line-number="39"></div></td>
+        <td class="code-ln-code" data-line-number="39"><span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">      type:</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> "RollingUpdate"</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="40"><div class="code-ln-n" data-line-number="40"></div></td>
+        <td class="code-ln-code" data-line-number="40"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    },</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="41"><div class="code-ln-n" data-line-number="41"></div></td>
+        <td class="code-ln-code" data-line-number="41"><span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">    template:</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> {</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="42"><div class="code-ln-n" data-line-number="42"></div></td>
+        <td class="code-ln-code" data-line-number="42"><span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">      metadata:</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> {</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="43"><div class="code-ln-n" data-line-number="43"></div></td>
+        <td class="code-ln-code" data-line-number="43"><span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">        labels:</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> podLabels</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="44"><div class="code-ln-n" data-line-number="44"></div></td>
+        <td class="code-ln-code" data-line-number="44"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">      },</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="45"><div class="code-ln-n" data-line-number="45"></div></td>
+        <td class="code-ln-code" data-line-number="45"><span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">      spec:</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> {</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="46"><div class="code-ln-n" data-line-number="46"></div></td>
+        <td class="code-ln-code" data-line-number="46"><span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">        containers:</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> [</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="47"><div class="code-ln-n" data-line-number="47"></div></td>
+        <td class="code-ln-code" data-line-number="47"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">          {</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="48"><div class="code-ln-n" data-line-number="48"></div></td>
+        <td class="code-ln-code" data-line-number="48"><span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">            name:</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> name,</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="49"><div class="code-ln-n" data-line-number="49"></div></td>
+        <td class="code-ln-code" data-line-number="49"><span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">            image:</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> "calculator:"</span><span style="color:#D73A49;--shiki-dark:#F97583"> +</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> imageVersion,</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="50"><div class="code-ln-n" data-line-number="50"></div></td>
+        <td class="code-ln-code" data-line-number="50"><span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">            imagePullPolicy:</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> imagePullPolicy,</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="51"><div class="code-ln-n" data-line-number="51"></div></td>
+        <td class="code-ln-code" data-line-number="51"><span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">            ports:</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> [{</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="52"><div class="code-ln-n" data-line-number="52"></div></td>
+        <td class="code-ln-code" data-line-number="52"><span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">              containerPort:</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> params.port,</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="53"><div class="code-ln-n" data-line-number="53"></div></td>
+        <td class="code-ln-code" data-line-number="53"><span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">              name:</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> "http"</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="54"><div class="code-ln-n" data-line-number="54"></div></td>
+        <td class="code-ln-code" data-line-number="54"><span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">              protocol:</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> "TCP"</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="55"><div class="code-ln-n" data-line-number="55"></div></td>
+        <td class="code-ln-code" data-line-number="55"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">            }],</span></span></td>
+      </tr><tr class="code-ln-line code-ln-mark">
+        <td class="code-ln-numbers" data-line-number="56"><div class="code-ln-n" data-line-number="56"></div></td>
+        <td class="code-ln-code" data-line-number="56"><span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">            resources:</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> params.resources </span><span style="color:#D73A49;--shiki-dark:#F97583">+</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> getResources</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(targetProps)</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="57"><div class="code-ln-n" data-line-number="57"></div></td>
+        <td class="code-ln-code" data-line-number="57"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">          },</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="58"><div class="code-ln-n" data-line-number="58"></div></td>
+        <td class="code-ln-code" data-line-number="58"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">        ],</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="59"><div class="code-ln-n" data-line-number="59"></div></td>
+        <td class="code-ln-code" data-line-number="59"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">      },</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="60"><div class="code-ln-n" data-line-number="60"></div></td>
+        <td class="code-ln-code" data-line-number="60"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    },</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="61"><div class="code-ln-n" data-line-number="61"></div></td>
+        <td class="code-ln-code" data-line-number="61"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">  },</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="62"><div class="code-ln-n" data-line-number="62"></div></td>
+        <td class="code-ln-code" data-line-number="62"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">};</span></span></td>
+      </tr></tbody></table>2a:["$","pre",null,{"className":"language-jsonnet pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$38"}}]}]
+39:Tbf6,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
+        <td class="code-ln-code" data-line-number="1"><span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">function</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (object) object {</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="2"><div class="code-ln-n" data-line-number="2"></div></td>
+        <td class="code-ln-code" data-line-number="2"><span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">    metadata +:</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> {</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="3"><div class="code-ln-n" data-line-number="3"></div></td>
+        <td class="code-ln-code" data-line-number="3"><span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">        annotations +:</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> {</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="4"><div class="code-ln-n" data-line-number="4"></div></td>
+        <td class="code-ln-code" data-line-number="4"><span class="line"><span style="color:#032F62;--shiki-dark:#9ECBFF">            "meetup.com/type"</span><span style="color:#D73A49;--shiki-dark:#F97583">:</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> "meetup"</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="5"><div class="code-ln-n" data-line-number="5"></div></td>
+        <td class="code-ln-code" data-line-number="5"><span class="line"><span style="color:#032F62;--shiki-dark:#9ECBFF">            "meetup.com/technology"</span><span style="color:#D73A49;--shiki-dark:#F97583">:</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> "golang"</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="6"><div class="code-ln-n" data-line-number="6"></div></td>
+        <td class="code-ln-code" data-line-number="6"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">        },</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="7"><div class="code-ln-n" data-line-number="7"></div></td>
+        <td class="code-ln-code" data-line-number="7"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    },</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="8"><div class="code-ln-n" data-line-number="8"></div></td>
+        <td class="code-ln-code" data-line-number="8"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">}</span></span></td>
+      </tr></tbody></table>2b:["$","pre",null,{"className":"language-jsonnet pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$39"}}]}]
+3a:T2bb3,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
+        <td class="code-ln-code" data-line-number="1"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">local</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> deployment </span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> {</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="2"><div class="code-ln-n" data-line-number="2"></div></td>
+        <td class="code-ln-code" data-line-number="2"><span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">        apiVersion:</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> "apps/v1"</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="3"><div class="code-ln-n" data-line-number="3"></div></td>
+        <td class="code-ln-code" data-line-number="3"><span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">        kind:</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> "Deployment"</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="4"><div class="code-ln-n" data-line-number="4"></div></td>
+        <td class="code-ln-code" data-line-number="4"><span class="line"><span style="color:#6A737D;--shiki-dark:#6A737D">        // ...</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="5"><div class="code-ln-n" data-line-number="5"></div></td>
+        <td class="code-ln-code" data-line-number="5"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">};</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="6"><div class="code-ln-n" data-line-number="6"></div></td>
+        <td class="code-ln-code" data-line-number="6"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">local</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> service </span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> {</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="7"><div class="code-ln-n" data-line-number="7"></div></td>
+        <td class="code-ln-code" data-line-number="7"><span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">        apiVersion:</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> "v1"</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="8"><div class="code-ln-n" data-line-number="8"></div></td>
+        <td class="code-ln-code" data-line-number="8"><span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">        kind:</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> "Service"</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="9"><div class="code-ln-n" data-line-number="9"></div></td>
+        <td class="code-ln-code" data-line-number="9"><span class="line"><span style="color:#6A737D;--shiki-dark:#6A737D">        // ...</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="10"><div class="code-ln-n" data-line-number="10"></div></td>
+        <td class="code-ln-code" data-line-number="10"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">};</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="11"><div class="code-ln-n" data-line-number="11"></div></td>
+        <td class="code-ln-code" data-line-number="11"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">local</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> hpa </span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> {</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="12"><div class="code-ln-n" data-line-number="12"></div></td>
+        <td class="code-ln-code" data-line-number="12"><span class="line"><span style="color:#6A737D;--shiki-dark:#6A737D">        // definition for HorizontalPodAutoscaler</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="13"><div class="code-ln-n" data-line-number="13"></div></td>
+        <td class="code-ln-code" data-line-number="13"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">};</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="14"><div class="code-ln-n" data-line-number="14"></div></td>
+        <td class="code-ln-code" data-line-number="14"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">local</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> pdb </span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> {</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="15"><div class="code-ln-n" data-line-number="15"></div></td>
+        <td class="code-ln-code" data-line-number="15"><span class="line"><span style="color:#6A737D;--shiki-dark:#6A737D">        // definition for PodDisruptionBudget</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="16"><div class="code-ln-n" data-line-number="16"></div></td>
+        <td class="code-ln-code" data-line-number="16"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">};</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="17"><div class="code-ln-n" data-line-number="17"></div></td>
+        <td class="code-ln-code" data-line-number="17"><span class="line"></span></td>
+      </tr><tr class="code-ln-line code-ln-mark">
+        <td class="code-ln-numbers" data-line-number="18"><div class="code-ln-n" data-line-number="18"></div></td>
+        <td class="code-ln-code" data-line-number="18"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">local</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> dev_resources </span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> [deployment, service];</span></span></td>
+      </tr><tr class="code-ln-line code-ln-mark">
+        <td class="code-ln-numbers" data-line-number="19"><div class="code-ln-n" data-line-number="19"></div></td>
+        <td class="code-ln-code" data-line-number="19"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">local</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> all_resources </span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> [deployment, service, hpa, pdb];</span></span></td>
+      </tr><tr class="code-ln-line code-ln-mark">
+        <td class="code-ln-numbers" data-line-number="20"><div class="code-ln-n" data-line-number="20"></div></td>
+        <td class="code-ln-code" data-line-number="20"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">local</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> isDevelopment</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(props) </span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> </span></span></td>
+      </tr><tr class="code-ln-line code-ln-mark">
+        <td class="code-ln-numbers" data-line-number="21"><div class="code-ln-n" data-line-number="21"></div></td>
+        <td class="code-ln-code" data-line-number="21"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">        if</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> std.objectHas</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(props, </span><span style="color:#032F62;--shiki-dark:#9ECBFF">"envType"</span><span style="color:#24292E;--shiki-dark:#E1E4E8">) </span><span style="color:#D73A49;--shiki-dark:#F97583">&#x26;&#x26;</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (props.envType </span><span style="color:#D73A49;--shiki-dark:#F97583">==</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> "development"</span><span style="color:#D73A49;--shiki-dark:#F97583"> ||</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> props.envType </span><span style="color:#D73A49;--shiki-dark:#F97583">==</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> "local"</span><span style="color:#24292E;--shiki-dark:#E1E4E8">) </span><span style="color:#D73A49;--shiki-dark:#F97583">then</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> true</span><span style="color:#D73A49;--shiki-dark:#F97583"> else</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> false</span><span style="color:#24292E;--shiki-dark:#E1E4E8">;</span></span></td>
+      </tr><tr class="code-ln-line code-ln-mark">
+        <td class="code-ln-numbers" data-line-number="22"><div class="code-ln-n" data-line-number="22"></div></td>
+        <td class="code-ln-code" data-line-number="22"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">local</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> resources </span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> isDevelopment</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(targetProps) </span><span style="color:#D73A49;--shiki-dark:#F97583">then</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> dev_resources </span><span style="color:#D73A49;--shiki-dark:#F97583">else</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> all_resources;</span></span></td>
+      </tr><tr class="code-ln-line code-ln-mark">
+        <td class="code-ln-numbers" data-line-number="23"><div class="code-ln-n" data-line-number="23"></div></td>
+        <td class="code-ln-code" data-line-number="23"><span class="line"></span></td>
+      </tr><tr class="code-ln-line code-ln-mark">
+        <td class="code-ln-numbers" data-line-number="24"><div class="code-ln-n" data-line-number="24"></div></td>
+        <td class="code-ln-code" data-line-number="24"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">if</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> params.enabled </span><span style="color:#D73A49;--shiki-dark:#F97583">then</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> resources </span><span style="color:#D73A49;--shiki-dark:#F97583">else</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> []</span></span></td>
+      </tr></tbody></table>2c:["$","pre",null,{"className":"language-jsonnet pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$3a"}}]}]

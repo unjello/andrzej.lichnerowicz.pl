@@ -1,0 +1,21 @@
+1:"$Sreact.fragment"
+2:I[1544,["177","static/chunks/app/layout-7ea7f0006323b5b6.js"],"AsciiArtLogger"]
+3:I[2738,["177","static/chunks/app/layout-7ea7f0006323b5b6.js"],"ThemeProvider"]
+4:I[7555,[],""]
+5:I[1295,[],""]
+6:I[9543,["345","static/chunks/app/not-found-374964195ecf67e5.js"],"default"]
+7:I[9665,[],"MetadataBoundary"]
+9:I[9665,[],"OutletBoundary"]
+c:I[4911,[],"AsyncMetadataOutlet"]
+e:I[9665,[],"ViewportBoundary"]
+10:I[6614,[],""]
+:HL["/_next/static/css/e5565d963fd839c1.css","style"]
+0:{"P":null,"b":"vI1f1rc00foWP8-o_ZTsc","p":"","c":["","blog",""],"i":false,"f":[[["",{"children":["blog",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/e5565d963fd839c1.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","link",null,{"rel":"icon","href":"/favicon.ico","sizes":"any"}],["$","link",null,{"rel":"apple-touch-icon","href":"/apple-touch-icon.png"}]]}],["$","body",null,{"children":[["$","$L2",null,{}],["$","$L3",null,{"children":["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","$L6",null,{}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]]}]]}]]}],{"children":["blog",["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":[["$","html",null,{"children":[["$","head",null,{"children":[["$","meta",null,{"httpEquiv":"refresh","content":"0;url=/en/blog"}],["$","title",null,{"children":"Redirecting..."}]]}],["$","body",null,{"children":[["$","p",null,{"children":["Redirecting to ",["$","a",null,{"href":"/en/blog","children":"/en/blog"}],"..."]}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\n          window.location.href = \"/en/blog\";\n        "}}]]}]]}],["$","$L7",null,{"children":"$L8"}],null,["$","$L9",null,{"children":["$La","$Lb",["$","$Lc",null,{"promise":"$@d"}]]}]]}],{},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","qDSCuK5w8iDHXfRWApaBs",{"children":[["$","$Le",null,{"children":"$Lf"}],null]}],null]}],false]],"m":"$undefined","G":["$10","$undefined"],"s":false,"S":true}
+11:"$Sreact.suspense"
+12:I[4911,[],"AsyncMetadata"]
+8:["$","$11",null,{"fallback":null,"children":["$","$L12",null,{"promise":"$@13"}]}]
+b:null
+f:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+a:null
+13:{"metadata":[["$","title","0",{"children":"@unjello | personal website"}],["$","meta","1",{"name":"description","content":"Personal website of Andrzej Lichnerowicz featuring blog, publications, talks, art, and projects"}],["$","link","2",{"rel":"shortcut icon","href":"/favicon.ico"}],["$","link","3",{"rel":"icon","href":"/favicon.ico","sizes":"any"}],["$","link","4",{"rel":"apple-touch-icon","href":"/apple-touch-icon.png"}]],"error":null,"digest":"$undefined"}
+d:{"metadata":"$13:metadata","error":null,"digest":"$undefined"}

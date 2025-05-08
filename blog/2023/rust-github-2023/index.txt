@@ -1,0 +1,494 @@
+1:"$Sreact.fragment"
+2:I[1544,["177","static/chunks/app/layout-7ea7f0006323b5b6.js"],"AsciiArtLogger"]
+3:I[2738,["177","static/chunks/app/layout-7ea7f0006323b5b6.js"],"ThemeProvider"]
+4:I[7555,[],""]
+5:I[1295,[],""]
+6:I[9543,["345","static/chunks/app/not-found-374964195ecf67e5.js"],"default"]
+8:I[9665,[],"MetadataBoundary"]
+a:I[9665,[],"OutletBoundary"]
+d:I[4911,[],"AsyncMetadataOutlet"]
+f:I[9665,[],"ViewportBoundary"]
+11:I[6614,[],""]
+:HL["/_next/static/css/e5565d963fd839c1.css","style"]
+:HL["/_next/static/css/72f0b751ba818b6f.css","style"]
+0:{"P":null,"b":"vI1f1rc00foWP8-o_ZTsc","p":"","c":["","blog","2023","rust-github-2023",""],"i":false,"f":[[["",{"children":["blog",{"children":[["slug","2023/rust-github-2023","c"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/e5565d963fd839c1.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","link",null,{"rel":"icon","href":"/favicon.ico","sizes":"any"}],["$","link",null,{"rel":"apple-touch-icon","href":"/apple-touch-icon.png"}]]}],["$","body",null,{"children":[["$","$L2",null,{}],["$","$L3",null,{"children":["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","$L6",null,{}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]]}]]}]]}],{"children":["blog",["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","2023/rust-github-2023","c"],["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L7",["$","$L8",null,{"children":"$L9"}],[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/72f0b751ba818b6f.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$La",null,{"children":["$Lb","$Lc",["$","$Ld",null,{"promise":"$@e"}]]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","oEKXYIsLnpWfjZBRuoOl6",{"children":[["$","$Lf",null,{"children":"$L10"}],null]}],null]}],false]],"m":"$undefined","G":["$11","$undefined"],"s":false,"S":true}
+12:"$Sreact.suspense"
+13:I[4911,[],"AsyncMetadata"]
+9:["$","$12",null,{"fallback":null,"children":["$","$L13",null,{"promise":"$@14"}]}]
+c:null
+10:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+b:null
+14:{"metadata":[["$","title","0",{"children":"Rocking Rust, Git, and GitHub in 2023 Like a Pro | @unjello blog"}],["$","meta","1",{"property":"og:title","content":"Rocking Rust, Git, and GitHub in 2023 Like a Pro | @unjello blog"}],["$","meta","2",{"property":"og:url","content":"https://andrzej.lichnerowicz.pl/en/blog/2023/rust-github-2023/"}],["$","meta","3",{"property":"og:image","content":"https://andrzej.lichnerowicz.pl/avatar.png"}],["$","meta","4",{"property":"og:image:width","content":"1200"}],["$","meta","5",{"property":"og:image:height","content":"630"}],["$","meta","6",{"property":"og:image:alt","content":"Rocking Rust, Git, and GitHub in 2023 Like a Pro | @unjello blog"}],["$","meta","7",{"property":"og:type","content":"article"}],["$","meta","8",{"property":"article:published_time","content":"2023-02-26T19:58:00+02:00"}],["$","meta","9",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","10",{"name":"twitter:title","content":"Rocking Rust, Git, and GitHub in 2023 Like a Pro | @unjello blog"}],["$","meta","11",{"name":"twitter:image","content":"https://andrzej.lichnerowicz.pl/avatar.png"}],["$","link","12",{"rel":"shortcut icon","href":"/favicon.ico"}],["$","link","13",{"rel":"icon","href":"/favicon.ico","sizes":"any"}],["$","link","14",{"rel":"apple-touch-icon","href":"/apple-touch-icon.png"}]],"error":null,"digest":"$undefined"}
+e:{"metadata":"$14:metadata","error":null,"digest":"$undefined"}
+15:I[8109,["72","static/chunks/72-d3fcf2c32f7e11b9.js","435","static/chunks/435-711aececbe1f0279.js","909","static/chunks/app/blog/%5B...slug%5D/page-f4d9e761670d07e8.js"],"ThemeSwitcher"]
+17:I[6874,["72","static/chunks/72-d3fcf2c32f7e11b9.js","435","static/chunks/435-711aececbe1f0279.js","909","static/chunks/app/blog/%5B...slug%5D/page-f4d9e761670d07e8.js"],""]
+18:I[1809,["72","static/chunks/72-d3fcf2c32f7e11b9.js","435","static/chunks/435-711aececbe1f0279.js","909","static/chunks/app/blog/%5B...slug%5D/page-f4d9e761670d07e8.js"],"AsciiBorderedMdx"]
+16:T548,                              _______._ _
+                      _ _.___/       |
+                         |           |
+                         |           |
+                                                 ∙
+                         .                       :
+             ____________¡ >>>  _______   _ __ _ ¡  __    _______
+          __|⌐           |  ___|  ⌐____|_ ______ |       |       |
+        . |     [        | |                   _ |  :  __l.|  ┌  | .
+     ÷¼¼¼ |     |         \|    _____|       _ __|  |_|   |      | ¼¼¼÷
+          |_____l  _ l         |     |___|        ________|------!
+          ! ___ _         \____| ___ !  _________|.sti      __ _ :
+          ∙                          :             < <<<<        ∙
+                                     ∙
+                         :           |
+    - -----andrzej-_ ____\_____|----_|_____________'-lichnerowicz-------- -
+                         :           |
+ .     p e r s o n a l ! |    #1     | wEBPAGE                            .
+ . _         - --------- |  - -- -   | ------- -                         _  .
+-:-\-\-------------------|- -     - -|-----------------------------------\-\-:
+ |                      _|___________|_                                      |
+ |                       :           :                                       |7:["$","div",null,{"className":"flex justify-center","children":["$","div",null,{"className":"ascii-art nfo-pre","children":[["$","$L15",null,{}],["$","div",null,{"className":"header-component","children":"$16"}]," |//_)-> 2 0 2 3 . 0 2 . 2 6 <--------------------------------------------(_\\|\n",[["$","div",null,{"className":"whitespace-pre font-mono","children":" |                                                                           |"}],["$","div",null,{"className":"whitespace-pre font-mono","children":" |                                                                           |"}],["$","div",null,{"className":"whitespace-pre font-mono","style":{"display":"flex"},"children":[" | ",["$","$L17",null,{"href":"/","className":"hover:underline inline-block","prefetch":false,"style":{"textDecoration":"none","color":"inherit","width":"calc(100% - 6ch)"},"children":"<< back                                                                     "}],"|"]}],["$","div",null,{"className":"whitespace-pre font-mono","children":" |                                                                           |"}]],["$","$L18",null,{"children":[["$","div",null,{"style":{"fontWeight":"bold","fontSize":"1.2em","marginTop":"1em","marginBottom":"2.5em"},"children":["# ","Rocking Rust, Git, and GitHub in 2023 Like a Pro"]}],"$L19"]}],"$7:props:children:props:children:3",["$","div",null,{"children":[" \\__                      --> ",["$","a",null,{"href":"http://andrzej.lichnerowicz.pl","target":"_blank","rel":"noopener noreferrer","title":"andrzej.lichnerowicz.pl","className":"link","style":{"cursor":"pointer"},"children":"andrzej.lichnerowicz.pl"}]," <--                  __/\n   //                                                                      \\\\\n  // ------------------------                        ---------------------- \\\\\n '~~~~~~~~~~~~~~~~~~~~~~~~~// ------         ------- \\~~~~~~~~~~~~~~~~~~~~~~`\n                          '~~~~~~~//          \\~~~~~~~`\n                                 // ---------- \\\n                                '~~~~~~~~~~~~~~~`\n      "]}]]}]}]
+19:[["$","div",null,{"className":"MarkdownHeading_markdown-heading__G6B4T","children":[["$","span",null,{"className":"MarkdownHeading_markdown-hash__CheR_","children":["##"," "]}],["$","span",null,{"children":"Falling in Love with SourceHut, But Still Tempted by GitHub Actions"}]]}],"\n",["$","p",null,{"children":[["$","a",null,{"href":"https://git.sr.ht/","children":"SourceHut"}]," has recently won my heart with its simplicity and 90's UI vibe, but I can't resist the appeal of GitHub's free workflow automation platform. I've been working on a few small projects in Python, TypeScript, and Rust, and have set up CI for all of them. Now that I've revived my blog, I thought I'd write about my experience using GitHub Actions for deployment."]}],"\n",["$","p",null,{"children":"I use GitHub Actions to deploy my Static Site Generated site to GitHub Pages or upload packages to various registries (pypi, npm, crates). I then added the Continuous Development part with testing, linting, and so on. In my day job, I always advocate for activities like this to be as close to the developer as possible - ideally as a commit pre-hook. I've followed this principle in my own projects, but to make sure I was getting the most out of GitHub Actions, I also added testing on all platforms I wanted to support but didn't have easy access to. Lastly, I decided to hit the \"fund\" button - who knows, maybe it'll be my ticket to an early retirement! :)"}],"\n",["$","div",null,{"className":"MarkdownHeading_markdown-heading__G6B4T","children":[["$","span",null,{"className":"MarkdownHeading_markdown-hash__CheR_","children":["##"," "]}],["$","span",null,{"children":"Setting up a Pre-Commit Hook"}]]}],"\n",["$","p",null,{"children":["The first step to creating a smooth workflow is to set up a pre-commit hook. This helps to ensure that code is well-formatted and free of errors before it's pushed to the remote repository. To make this happen, I use ",["$","a",null,{"href":"https://pre-commit.com","children":"pre-commit"}],". It's an amazing tool that works across different programming languages and makes it easy to run checks locally."]}],"\n",["$","p",null,{"children":"Getting started is pretty simple, just follow the installation instructions on the pre-commit website. Then, you'll need to define the validation rules for your project. Here's an example of the rules I use for Rust projects:"}],"\n",["","$L1a"],"\n",["$","p",null,{"children":["Next, install the rules with the pre-commit install command. This will set up the ",null," file for you. Keep in mind that this file is not synced to the remote repository, so each developer will need to run the setup locally. To make this easier, I like to create a file with useful commands using a tool called ",["$","a",null,{"href":"https://github.com/casey/just","children":"just"}],"."]}],"\n",["$","p",null,{"children":["With the following ",null,", you can run ",null," to create the hooks and ",null," to run checks on demand:"]}],"\n",["","$L1b"],"\n",["$","div",null,{"className":"MarkdownHeading_markdown-heading__G6B4T","children":[["$","span",null,{"className":"MarkdownHeading_markdown-hash__CheR_","children":["##"," "]}],["$","span",null,{"children":"Triggering Your Workflow"}]]}],"\n",["$","p",null,{"children":"The next step in setting up your workflow is to determine when it should run. I usually use just a couple of triggers."}],"\n",["$","p",null,{"children":"For everyday Continuous Integration, I set it up to run on every push or pull request:"}],"\n",["","$L1c"],"\n",["$","p",null,{"children":"If I have some expensive tests that take a long time to run, I'll schedule them to run nightly:"}],"\n",["","$L1d"],"\n",["$","p",null,{"children":"For libraries or websites - anything that gets published - I have a separate workflow that's triggered by gh release create:"}],"\n",["","$L1e"],"\n",["$","div",null,{"className":"MarkdownHeading_markdown-heading__G6B4T","children":[["$","span",null,{"className":"MarkdownHeading_markdown-hash__CheR_","children":["##"," "]}],["$","span",null,{"children":"Defining your testing strategy matrix"}]]}],"\n",["$","p",null,{"children":"When it comes to testing on different platforms, I love using GitHub Actions. It's super easy to use and just works for me. Sure, some people may have had issues with the stability of GitHub's workers, but I haven't had any problems yet. I'm not doing any heavy compiling, so I might just be lucky."}],"\n",["$","p",null,{"children":["To test on different platforms, we'll be using something called a ",["$","a",null,{"href":"https://docs.github.com/en/actions/using-jobs/using-a-matrix-for-your-jobs","children":"strategy matrix"}],". There are a few ways to define this matrix, like providing separate lists of OS types and hardware architectures and letting GitHub calculate all the possibilities. But, I usually just keep it simple and go for a list of 64-bit Windows, 64-bit Linux, and both Intel and ARM macOS."]}],"\n",["","$L1f"],"\n",["$","div",null,{"className":"MarkdownHeading_markdown-heading__G6B4T","children":[["$","span",null,{"className":"MarkdownHeading_markdown-hash__CheR_","children":["##"," "]}],["$","span",null,{"children":"Running validation"}]]}],"\n",["$","p",null,{"children":"If you've been following along, now it's time to actually run the validation checks on our code. But first, for our Ubuntu workflow, you'll need to install some build tools first:"}],"\n",["","$L20"],"\n",["$","p",null,{"children":["Now, for the actual validation, we'll be using GitHub Actions. Actions are packages in JavaScript or TypeScript format, and we'll be using the official ",["$","a",null,{"href":"https://github.com/actions/checkout","children":"actions/checkout"}]," to checkout our code. This action is provided by GitHub and is the recommended way to do this."]}],"\n",["","$L21"],"\n",["$","p",null,{"children":["Next, we'll use the ",["$","a",null,{"href":"https://github.com/actions-rs","children":"action-rs"}]," package to handle everything we need for our continuous integration pipeline: installing the toolchain, running formatting checks, clippy checks, and tests. This is how my ",null," looks like:"]}],"\n",["","$L22"],"\n",["$","div",null,{"className":"MarkdownHeading_markdown-heading__G6B4T","children":[["$","span",null,{"className":"MarkdownHeading_markdown-hash__CheR_","children":["##"," "]}],["$","span",null,{"children":"Publishing to Crates.io"}]]}],"\n",["$","p",null,{"children":["To have a complete publishing pipeline, we need to create an API token. You can do this by going to the ",["$","a",null,{"href":"https://crates.io/settings/tokens","children":"API Tokens"}]," page on ",["$","a",null,{"href":"https://crates.io/","children":"crates.io"}]," and creating a new token. After that, go to your repository's ",null," and create a new repository secret, so that the token is visible to the actions without being exposed publicly. I typically name it ",null,"."]}],"\n",["$","p",null,{"children":["There are a few ways to publish packages, but I prefer to create both a ",["$","em",null,{"children":"tag"}]," and a ",["$","em",null,{"children":"release"}],". First, I create a separate pipeline that is triggered by creating a release."]}],"\n",["$","p",null,{"children":"The YAML code looks like this:"}],"\n",["","$L23"],"\n",["$","p",null,{"children":"There are multiple ways to create a release, including using GitHub's REST API, but I prefer to use the command line:"}],"\n",["","$L24"]]
+25:T271d,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
+        <td class="code-ln-code" data-line-number="1"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">repos</span><span style="color:#24292E;--shiki-dark:#E1E4E8">:</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="2"><div class="code-ln-n" data-line-number="2"></div></td>
+        <td class="code-ln-code" data-line-number="2"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">  -   </span><span style="color:#22863A;--shiki-dark:#85E89D">repo</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">https://github.com/pre-commit/pre-commit-hooks</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="3"><div class="code-ln-n" data-line-number="3"></div></td>
+        <td class="code-ln-code" data-line-number="3"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">      rev</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">v4.4.0</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="4"><div class="code-ln-n" data-line-number="4"></div></td>
+        <td class="code-ln-code" data-line-number="4"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">      hooks</span><span style="color:#24292E;--shiki-dark:#E1E4E8">:</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="5"><div class="code-ln-n" data-line-number="5"></div></td>
+        <td class="code-ln-code" data-line-number="5"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">        -   </span><span style="color:#22863A;--shiki-dark:#85E89D">id</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">fix-byte-order-marker</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="6"><div class="code-ln-n" data-line-number="6"></div></td>
+        <td class="code-ln-code" data-line-number="6"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">        -   </span><span style="color:#22863A;--shiki-dark:#85E89D">id</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">check-case-conflict</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="7"><div class="code-ln-n" data-line-number="7"></div></td>
+        <td class="code-ln-code" data-line-number="7"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">        -   </span><span style="color:#22863A;--shiki-dark:#85E89D">id</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">check-merge-conflict</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="8"><div class="code-ln-n" data-line-number="8"></div></td>
+        <td class="code-ln-code" data-line-number="8"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">        -   </span><span style="color:#22863A;--shiki-dark:#85E89D">id</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">check-symlinks</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="9"><div class="code-ln-n" data-line-number="9"></div></td>
+        <td class="code-ln-code" data-line-number="9"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">        -   </span><span style="color:#22863A;--shiki-dark:#85E89D">id</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">check-yaml</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="10"><div class="code-ln-n" data-line-number="10"></div></td>
+        <td class="code-ln-code" data-line-number="10"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">        -   </span><span style="color:#22863A;--shiki-dark:#85E89D">id</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">check-toml</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="11"><div class="code-ln-n" data-line-number="11"></div></td>
+        <td class="code-ln-code" data-line-number="11"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">        -   </span><span style="color:#22863A;--shiki-dark:#85E89D">id</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">end-of-file-fixer</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="12"><div class="code-ln-n" data-line-number="12"></div></td>
+        <td class="code-ln-code" data-line-number="12"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">        -   </span><span style="color:#22863A;--shiki-dark:#85E89D">id</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">mixed-line-ending</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="13"><div class="code-ln-n" data-line-number="13"></div></td>
+        <td class="code-ln-code" data-line-number="13"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">            args</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: [</span><span style="color:#032F62;--shiki-dark:#9ECBFF">--fix=lf</span><span style="color:#24292E;--shiki-dark:#E1E4E8">]</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="14"><div class="code-ln-n" data-line-number="14"></div></td>
+        <td class="code-ln-code" data-line-number="14"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">        -   </span><span style="color:#22863A;--shiki-dark:#85E89D">id</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">trailing-whitespace</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="15"><div class="code-ln-n" data-line-number="15"></div></td>
+        <td class="code-ln-code" data-line-number="15"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">  -   </span><span style="color:#22863A;--shiki-dark:#85E89D">repo</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">https://github.com/doublify/pre-commit-rust</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="16"><div class="code-ln-n" data-line-number="16"></div></td>
+        <td class="code-ln-code" data-line-number="16"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">      rev</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">master</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="17"><div class="code-ln-n" data-line-number="17"></div></td>
+        <td class="code-ln-code" data-line-number="17"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">      hooks</span><span style="color:#24292E;--shiki-dark:#E1E4E8">:</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="18"><div class="code-ln-n" data-line-number="18"></div></td>
+        <td class="code-ln-code" data-line-number="18"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">        -   </span><span style="color:#22863A;--shiki-dark:#85E89D">id</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">fmt</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="19"><div class="code-ln-n" data-line-number="19"></div></td>
+        <td class="code-ln-code" data-line-number="19"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">            args</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: [</span><span style="color:#032F62;--shiki-dark:#9ECBFF">"--verbose"</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#032F62;--shiki-dark:#9ECBFF">"--"</span><span style="color:#24292E;--shiki-dark:#E1E4E8">]</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="20"><div class="code-ln-n" data-line-number="20"></div></td>
+        <td class="code-ln-code" data-line-number="20"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">        -   </span><span style="color:#22863A;--shiki-dark:#85E89D">id</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">cargo-check</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="21"><div class="code-ln-n" data-line-number="21"></div></td>
+        <td class="code-ln-code" data-line-number="21"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">        -   </span><span style="color:#22863A;--shiki-dark:#85E89D">id</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">clippy</span></span></td>
+      </tr></tbody></table>1a:["$","pre",null,{"className":"language-yaml pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$25"}}]}]
+26:T553,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
+        <td class="code-ln-code" data-line-number="1"><span class="line"><span>configure:</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="2"><div class="code-ln-n" data-line-number="2"></div></td>
+        <td class="code-ln-code" data-line-number="2"><span class="line"><span>	pre-commit install</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="3"><div class="code-ln-n" data-line-number="3"></div></td>
+        <td class="code-ln-code" data-line-number="3"><span class="line"><span></span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="4"><div class="code-ln-n" data-line-number="4"></div></td>
+        <td class="code-ln-code" data-line-number="4"><span class="line"><span>precommit:</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="5"><div class="code-ln-n" data-line-number="5"></div></td>
+        <td class="code-ln-code" data-line-number="5"><span class="line"><span>	pre-commit run --all-files</span></span></td>
+      </tr></tbody></table>1b:["$","pre",null,{"className":"language-plaintext pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$26"}}]}]
+1c:["$","pre",null,{"className":"language-yaml pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"<table class=\"code-ln-table\"><tbody><tr class=\"code-ln-line\">\n        <td class=\"code-ln-numbers\" data-line-number=\"1\"><div class=\"code-ln-n\" data-line-number=\"1\"></div></td>\n        <td class=\"code-ln-code\" data-line-number=\"1\"><span class=\"line\"><span style=\"color:#005CC5;--shiki-dark:#79B8FF\">on</span><span style=\"color:#24292E;--shiki-dark:#E1E4E8\">: [</span><span style=\"color:#032F62;--shiki-dark:#9ECBFF\">push</span><span style=\"color:#24292E;--shiki-dark:#E1E4E8\">, </span><span style=\"color:#032F62;--shiki-dark:#9ECBFF\">pull_request</span><span style=\"color:#24292E;--shiki-dark:#E1E4E8\">]</span></span></td>\n      </tr></tbody></table>"}}]}]
+27:T4dd,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
+        <td class="code-ln-code" data-line-number="1"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">on</span><span style="color:#24292E;--shiki-dark:#E1E4E8">:</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="2"><div class="code-ln-n" data-line-number="2"></div></td>
+        <td class="code-ln-code" data-line-number="2"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">  schedule</span><span style="color:#24292E;--shiki-dark:#E1E4E8">:</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="3"><div class="code-ln-n" data-line-number="3"></div></td>
+        <td class="code-ln-code" data-line-number="3"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    - </span><span style="color:#22863A;--shiki-dark:#85E89D">cron</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">"0 0 * * *"</span></span></td>
+      </tr></tbody></table>1d:["$","pre",null,{"className":"language-yaml pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$27"}}]}]
+28:T4d9,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
+        <td class="code-ln-code" data-line-number="1"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">on</span><span style="color:#24292E;--shiki-dark:#E1E4E8">:</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="2"><div class="code-ln-n" data-line-number="2"></div></td>
+        <td class="code-ln-code" data-line-number="2"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">  release</span><span style="color:#24292E;--shiki-dark:#E1E4E8">:</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="3"><div class="code-ln-n" data-line-number="3"></div></td>
+        <td class="code-ln-code" data-line-number="3"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">    types</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: [</span><span style="color:#032F62;--shiki-dark:#9ECBFF">created</span><span style="color:#24292E;--shiki-dark:#E1E4E8">]</span></span></td>
+      </tr></tbody></table>1e:["$","pre",null,{"className":"language-yaml pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$28"}}]}]
+29:T23dd,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
+        <td class="code-ln-code" data-line-number="1"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">jobs</span><span style="color:#24292E;--shiki-dark:#E1E4E8">:</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="2"><div class="code-ln-n" data-line-number="2"></div></td>
+        <td class="code-ln-code" data-line-number="2"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">  dist</span><span style="color:#24292E;--shiki-dark:#E1E4E8">:</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="3"><div class="code-ln-n" data-line-number="3"></div></td>
+        <td class="code-ln-code" data-line-number="3"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">    strategy</span><span style="color:#24292E;--shiki-dark:#E1E4E8">:</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="4"><div class="code-ln-n" data-line-number="4"></div></td>
+        <td class="code-ln-code" data-line-number="4"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">      matrix</span><span style="color:#24292E;--shiki-dark:#E1E4E8">:</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="5"><div class="code-ln-n" data-line-number="5"></div></td>
+        <td class="code-ln-code" data-line-number="5"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">        include</span><span style="color:#24292E;--shiki-dark:#E1E4E8">:</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="6"><div class="code-ln-n" data-line-number="6"></div></td>
+        <td class="code-ln-code" data-line-number="6"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">          - </span><span style="color:#22863A;--shiki-dark:#85E89D">os</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">windows-latest</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="7"><div class="code-ln-n" data-line-number="7"></div></td>
+        <td class="code-ln-code" data-line-number="7"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">            target</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">x86_64-pc-windows-msvc</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="8"><div class="code-ln-n" data-line-number="8"></div></td>
+        <td class="code-ln-code" data-line-number="8"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">            code-target</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">win32-x64</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="9"><div class="code-ln-n" data-line-number="9"></div></td>
+        <td class="code-ln-code" data-line-number="9"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">          - </span><span style="color:#22863A;--shiki-dark:#85E89D">os</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">windows-latest</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="10"><div class="code-ln-n" data-line-number="10"></div></td>
+        <td class="code-ln-code" data-line-number="10"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">            target</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">aarch64-pc-windows-msvc</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="11"><div class="code-ln-n" data-line-number="11"></div></td>
+        <td class="code-ln-code" data-line-number="11"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">            code-target</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">win32-arm64</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="12"><div class="code-ln-n" data-line-number="12"></div></td>
+        <td class="code-ln-code" data-line-number="12"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">          - </span><span style="color:#22863A;--shiki-dark:#85E89D">os</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">ubuntu-20.04</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="13"><div class="code-ln-n" data-line-number="13"></div></td>
+        <td class="code-ln-code" data-line-number="13"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">            target</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">x86_64-unknown-linux-gnu</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="14"><div class="code-ln-n" data-line-number="14"></div></td>
+        <td class="code-ln-code" data-line-number="14"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">            code-target</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">linux-x64</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="15"><div class="code-ln-n" data-line-number="15"></div></td>
+        <td class="code-ln-code" data-line-number="15"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">            container</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">ubuntu:18.04</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="16"><div class="code-ln-n" data-line-number="16"></div></td>
+        <td class="code-ln-code" data-line-number="16"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">          - </span><span style="color:#22863A;--shiki-dark:#85E89D">os</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">macos-11</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="17"><div class="code-ln-n" data-line-number="17"></div></td>
+        <td class="code-ln-code" data-line-number="17"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">            target</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">x86_64-apple-darwin</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="18"><div class="code-ln-n" data-line-number="18"></div></td>
+        <td class="code-ln-code" data-line-number="18"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">            code-target</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">darwin-x64</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="19"><div class="code-ln-n" data-line-number="19"></div></td>
+        <td class="code-ln-code" data-line-number="19"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">          - </span><span style="color:#22863A;--shiki-dark:#85E89D">os</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">macos-11</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="20"><div class="code-ln-n" data-line-number="20"></div></td>
+        <td class="code-ln-code" data-line-number="20"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">            target</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">aarch64-apple-darwin</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="21"><div class="code-ln-n" data-line-number="21"></div></td>
+        <td class="code-ln-code" data-line-number="21"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">            code-target</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">darwin-arm64</span></span></td>
+      </tr></tbody></table>1f:["$","pre",null,{"className":"language-yaml pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$29"}}]}]
+20:["$","pre",null,{"className":"language-yaml pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"<table class=\"code-ln-table\"><tbody><tr class=\"code-ln-line\">\n        <td class=\"code-ln-numbers\" data-line-number=\"1\"><div class=\"code-ln-n\" data-line-number=\"1\"></div></td>\n        <td class=\"code-ln-code\" data-line-number=\"1\"><span class=\"line\"><span style=\"color:#22863A;--shiki-dark:#85E89D\">if</span><span style=\"color:#24292E;--shiki-dark:#E1E4E8\">: </span><span style=\"color:#032F62;--shiki-dark:#9ECBFF\">contains(matrix.os, 'ubuntu')</span></span></td>\n      </tr><tr class=\"code-ln-line\">\n        <td class=\"code-ln-numbers\" data-line-number=\"2\"><div class=\"code-ln-n\" data-line-number=\"2\"></div></td>\n        <td class=\"code-ln-code\" data-line-number=\"2\"><span class=\"line\"><span style=\"color:#22863A;--shiki-dark:#85E89D\">run</span><span style=\"color:#24292E;--shiki-dark:#E1E4E8\">: </span><span style=\"color:#032F62;--shiki-dark:#9ECBFF\">apt-get update &#x26;&#x26; apt-get install -y curl build-essential gcc g++</span></span></td>\n      </tr></tbody></table>"}}]}]
+21:["$","pre",null,{"className":"language-yaml pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"<table class=\"code-ln-table\"><tbody><tr class=\"code-ln-line\">\n        <td class=\"code-ln-numbers\" data-line-number=\"1\"><div class=\"code-ln-n\" data-line-number=\"1\"></div></td>\n        <td class=\"code-ln-code\" data-line-number=\"1\"><span class=\"line\"><span style=\"color:#22863A;--shiki-dark:#85E89D\">uses</span><span style=\"color:#24292E;--shiki-dark:#E1E4E8\">: </span><span style=\"color:#032F62;--shiki-dark:#9ECBFF\">actions/checkout@v3</span></span></td>\n      </tr></tbody></table>"}}]}]
+2a:T6d19,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
+        <td class="code-ln-code" data-line-number="1"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">on</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: [</span><span style="color:#032F62;--shiki-dark:#9ECBFF">push</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#032F62;--shiki-dark:#9ECBFF">pull_request</span><span style="color:#24292E;--shiki-dark:#E1E4E8">]</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="2"><div class="code-ln-n" data-line-number="2"></div></td>
+        <td class="code-ln-code" data-line-number="2"><span class="line"></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="3"><div class="code-ln-n" data-line-number="3"></div></td>
+        <td class="code-ln-code" data-line-number="3"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">name</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">CI</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="4"><div class="code-ln-n" data-line-number="4"></div></td>
+        <td class="code-ln-code" data-line-number="4"><span class="line"></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="5"><div class="code-ln-n" data-line-number="5"></div></td>
+        <td class="code-ln-code" data-line-number="5"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">jobs</span><span style="color:#24292E;--shiki-dark:#E1E4E8">:</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="6"><div class="code-ln-n" data-line-number="6"></div></td>
+        <td class="code-ln-code" data-line-number="6"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">  dist</span><span style="color:#24292E;--shiki-dark:#E1E4E8">:</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="7"><div class="code-ln-n" data-line-number="7"></div></td>
+        <td class="code-ln-code" data-line-number="7"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">    strategy</span><span style="color:#24292E;--shiki-dark:#E1E4E8">:</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="8"><div class="code-ln-n" data-line-number="8"></div></td>
+        <td class="code-ln-code" data-line-number="8"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">      matrix</span><span style="color:#24292E;--shiki-dark:#E1E4E8">:</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="9"><div class="code-ln-n" data-line-number="9"></div></td>
+        <td class="code-ln-code" data-line-number="9"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">        include</span><span style="color:#24292E;--shiki-dark:#E1E4E8">:</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="10"><div class="code-ln-n" data-line-number="10"></div></td>
+        <td class="code-ln-code" data-line-number="10"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">          - </span><span style="color:#22863A;--shiki-dark:#85E89D">os</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">windows-latest</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="11"><div class="code-ln-n" data-line-number="11"></div></td>
+        <td class="code-ln-code" data-line-number="11"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">            target</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">x86_64-pc-windows-msvc</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="12"><div class="code-ln-n" data-line-number="12"></div></td>
+        <td class="code-ln-code" data-line-number="12"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">            code-target</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">win32-x64</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="13"><div class="code-ln-n" data-line-number="13"></div></td>
+        <td class="code-ln-code" data-line-number="13"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">          - </span><span style="color:#22863A;--shiki-dark:#85E89D">os</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">windows-latest</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="14"><div class="code-ln-n" data-line-number="14"></div></td>
+        <td class="code-ln-code" data-line-number="14"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">            target</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">aarch64-pc-windows-msvc</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="15"><div class="code-ln-n" data-line-number="15"></div></td>
+        <td class="code-ln-code" data-line-number="15"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">            code-target</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">win32-arm64</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="16"><div class="code-ln-n" data-line-number="16"></div></td>
+        <td class="code-ln-code" data-line-number="16"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">          - </span><span style="color:#22863A;--shiki-dark:#85E89D">os</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">ubuntu-20.04</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="17"><div class="code-ln-n" data-line-number="17"></div></td>
+        <td class="code-ln-code" data-line-number="17"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">            target</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">x86_64-unknown-linux-gnu</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="18"><div class="code-ln-n" data-line-number="18"></div></td>
+        <td class="code-ln-code" data-line-number="18"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">            code-target</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">linux-x64</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="19"><div class="code-ln-n" data-line-number="19"></div></td>
+        <td class="code-ln-code" data-line-number="19"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">            container</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">ubuntu:18.04</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="20"><div class="code-ln-n" data-line-number="20"></div></td>
+        <td class="code-ln-code" data-line-number="20"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">          - </span><span style="color:#22863A;--shiki-dark:#85E89D">os</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">macos-11</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="21"><div class="code-ln-n" data-line-number="21"></div></td>
+        <td class="code-ln-code" data-line-number="21"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">            target</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">x86_64-apple-darwin</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="22"><div class="code-ln-n" data-line-number="22"></div></td>
+        <td class="code-ln-code" data-line-number="22"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">            code-target</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">darwin-x64</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="23"><div class="code-ln-n" data-line-number="23"></div></td>
+        <td class="code-ln-code" data-line-number="23"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">          - </span><span style="color:#22863A;--shiki-dark:#85E89D">os</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">macos-11</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="24"><div class="code-ln-n" data-line-number="24"></div></td>
+        <td class="code-ln-code" data-line-number="24"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">            target</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">aarch64-apple-darwin</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="25"><div class="code-ln-n" data-line-number="25"></div></td>
+        <td class="code-ln-code" data-line-number="25"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">            code-target</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">darwin-arm64</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="26"><div class="code-ln-n" data-line-number="26"></div></td>
+        <td class="code-ln-code" data-line-number="26"><span class="line"></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="27"><div class="code-ln-n" data-line-number="27"></div></td>
+        <td class="code-ln-code" data-line-number="27"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">    name</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">dist (${{ matrix.target }})</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="28"><div class="code-ln-n" data-line-number="28"></div></td>
+        <td class="code-ln-code" data-line-number="28"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">    runs-on</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">${{ matrix.os }}</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="29"><div class="code-ln-n" data-line-number="29"></div></td>
+        <td class="code-ln-code" data-line-number="29"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">    container</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">${{ matrix.container }}</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="30"><div class="code-ln-n" data-line-number="30"></div></td>
+        <td class="code-ln-code" data-line-number="30"><span class="line"></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="31"><div class="code-ln-n" data-line-number="31"></div></td>
+        <td class="code-ln-code" data-line-number="31"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">    steps</span><span style="color:#24292E;--shiki-dark:#E1E4E8">:</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="32"><div class="code-ln-n" data-line-number="32"></div></td>
+        <td class="code-ln-code" data-line-number="32"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">      - </span><span style="color:#22863A;--shiki-dark:#85E89D">name</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">Install prerequisites</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="33"><div class="code-ln-n" data-line-number="33"></div></td>
+        <td class="code-ln-code" data-line-number="33"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">        if</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">contains(matrix.os, 'ubuntu')</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="34"><div class="code-ln-n" data-line-number="34"></div></td>
+        <td class="code-ln-code" data-line-number="34"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">        run</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">apt-get update &#x26;&#x26; apt-get install -y curl build-essential gcc g++</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="35"><div class="code-ln-n" data-line-number="35"></div></td>
+        <td class="code-ln-code" data-line-number="35"><span class="line"></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="36"><div class="code-ln-n" data-line-number="36"></div></td>
+        <td class="code-ln-code" data-line-number="36"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">      - </span><span style="color:#22863A;--shiki-dark:#85E89D">name</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">Checkout sources</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="37"><div class="code-ln-n" data-line-number="37"></div></td>
+        <td class="code-ln-code" data-line-number="37"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">        uses</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">actions/checkout@v3</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="38"><div class="code-ln-n" data-line-number="38"></div></td>
+        <td class="code-ln-code" data-line-number="38"><span class="line"></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="39"><div class="code-ln-n" data-line-number="39"></div></td>
+        <td class="code-ln-code" data-line-number="39"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">      - </span><span style="color:#22863A;--shiki-dark:#85E89D">name</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">Install Rust toolchain</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="40"><div class="code-ln-n" data-line-number="40"></div></td>
+        <td class="code-ln-code" data-line-number="40"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">        uses</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">actions-rs/toolchain@v1</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="41"><div class="code-ln-n" data-line-number="41"></div></td>
+        <td class="code-ln-code" data-line-number="41"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">        with</span><span style="color:#24292E;--shiki-dark:#E1E4E8">:</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="42"><div class="code-ln-n" data-line-number="42"></div></td>
+        <td class="code-ln-code" data-line-number="42"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">          profile</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">minimal</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="43"><div class="code-ln-n" data-line-number="43"></div></td>
+        <td class="code-ln-code" data-line-number="43"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">          toolchain</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">stable</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="44"><div class="code-ln-n" data-line-number="44"></div></td>
+        <td class="code-ln-code" data-line-number="44"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">          override</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#005CC5;--shiki-dark:#79B8FF">true</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="45"><div class="code-ln-n" data-line-number="45"></div></td>
+        <td class="code-ln-code" data-line-number="45"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">          target</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">${{ matrix.target }}</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="46"><div class="code-ln-n" data-line-number="46"></div></td>
+        <td class="code-ln-code" data-line-number="46"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">          components</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">rustfmt, clippy, rust-src</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="47"><div class="code-ln-n" data-line-number="47"></div></td>
+        <td class="code-ln-code" data-line-number="47"><span class="line"></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="48"><div class="code-ln-n" data-line-number="48"></div></td>
+        <td class="code-ln-code" data-line-number="48"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">      - </span><span style="color:#22863A;--shiki-dark:#85E89D">name</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">Run cargo check</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="49"><div class="code-ln-n" data-line-number="49"></div></td>
+        <td class="code-ln-code" data-line-number="49"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">        uses</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">actions-rs/cargo@v1</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="50"><div class="code-ln-n" data-line-number="50"></div></td>
+        <td class="code-ln-code" data-line-number="50"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">        with</span><span style="color:#24292E;--shiki-dark:#E1E4E8">:</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="51"><div class="code-ln-n" data-line-number="51"></div></td>
+        <td class="code-ln-code" data-line-number="51"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">          command</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">check</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="52"><div class="code-ln-n" data-line-number="52"></div></td>
+        <td class="code-ln-code" data-line-number="52"><span class="line"></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="53"><div class="code-ln-n" data-line-number="53"></div></td>
+        <td class="code-ln-code" data-line-number="53"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">      - </span><span style="color:#22863A;--shiki-dark:#85E89D">name</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">Run cargo test</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="54"><div class="code-ln-n" data-line-number="54"></div></td>
+        <td class="code-ln-code" data-line-number="54"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">        uses</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">actions-rs/cargo@v1</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="55"><div class="code-ln-n" data-line-number="55"></div></td>
+        <td class="code-ln-code" data-line-number="55"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">        with</span><span style="color:#24292E;--shiki-dark:#E1E4E8">:</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="56"><div class="code-ln-n" data-line-number="56"></div></td>
+        <td class="code-ln-code" data-line-number="56"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">          command</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">test</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="57"><div class="code-ln-n" data-line-number="57"></div></td>
+        <td class="code-ln-code" data-line-number="57"><span class="line"></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="58"><div class="code-ln-n" data-line-number="58"></div></td>
+        <td class="code-ln-code" data-line-number="58"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">      - </span><span style="color:#22863A;--shiki-dark:#85E89D">name</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">Run cargo fmt</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="59"><div class="code-ln-n" data-line-number="59"></div></td>
+        <td class="code-ln-code" data-line-number="59"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">        uses</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">actions-rs/cargo@v1</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="60"><div class="code-ln-n" data-line-number="60"></div></td>
+        <td class="code-ln-code" data-line-number="60"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">        with</span><span style="color:#24292E;--shiki-dark:#E1E4E8">:</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="61"><div class="code-ln-n" data-line-number="61"></div></td>
+        <td class="code-ln-code" data-line-number="61"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">          command</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">fmt</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="62"><div class="code-ln-n" data-line-number="62"></div></td>
+        <td class="code-ln-code" data-line-number="62"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">          args</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">--all -- --check</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="63"><div class="code-ln-n" data-line-number="63"></div></td>
+        <td class="code-ln-code" data-line-number="63"><span class="line"></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="64"><div class="code-ln-n" data-line-number="64"></div></td>
+        <td class="code-ln-code" data-line-number="64"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">      - </span><span style="color:#22863A;--shiki-dark:#85E89D">name</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">Run cargo clippy</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="65"><div class="code-ln-n" data-line-number="65"></div></td>
+        <td class="code-ln-code" data-line-number="65"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">        uses</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">actions-rs/cargo@v1</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="66"><div class="code-ln-n" data-line-number="66"></div></td>
+        <td class="code-ln-code" data-line-number="66"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">        with</span><span style="color:#24292E;--shiki-dark:#E1E4E8">:</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="67"><div class="code-ln-n" data-line-number="67"></div></td>
+        <td class="code-ln-code" data-line-number="67"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">          command</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">clippy</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="68"><div class="code-ln-n" data-line-number="68"></div></td>
+        <td class="code-ln-code" data-line-number="68"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">          args</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">-- -D warnings</span></span></td>
+      </tr></tbody></table>22:["$","pre",null,{"className":"language-yaml pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$2a"}}]}]
+2b:T22f7,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
+        <td class="code-ln-code" data-line-number="1"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">name</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">Publish Package to crates.io</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="2"><div class="code-ln-n" data-line-number="2"></div></td>
+        <td class="code-ln-code" data-line-number="2"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">on</span><span style="color:#24292E;--shiki-dark:#E1E4E8">:</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="3"><div class="code-ln-n" data-line-number="3"></div></td>
+        <td class="code-ln-code" data-line-number="3"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">  release</span><span style="color:#24292E;--shiki-dark:#E1E4E8">:</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="4"><div class="code-ln-n" data-line-number="4"></div></td>
+        <td class="code-ln-code" data-line-number="4"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">    types</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: [</span><span style="color:#032F62;--shiki-dark:#9ECBFF">created</span><span style="color:#24292E;--shiki-dark:#E1E4E8">]</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="5"><div class="code-ln-n" data-line-number="5"></div></td>
+        <td class="code-ln-code" data-line-number="5"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">jobs</span><span style="color:#24292E;--shiki-dark:#E1E4E8">:</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="6"><div class="code-ln-n" data-line-number="6"></div></td>
+        <td class="code-ln-code" data-line-number="6"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">  publish</span><span style="color:#24292E;--shiki-dark:#E1E4E8">:</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="7"><div class="code-ln-n" data-line-number="7"></div></td>
+        <td class="code-ln-code" data-line-number="7"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">    name</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">Publish</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="8"><div class="code-ln-n" data-line-number="8"></div></td>
+        <td class="code-ln-code" data-line-number="8"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">    runs-on</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">ubuntu-latest</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="9"><div class="code-ln-n" data-line-number="9"></div></td>
+        <td class="code-ln-code" data-line-number="9"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">    steps</span><span style="color:#24292E;--shiki-dark:#E1E4E8">:</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="10"><div class="code-ln-n" data-line-number="10"></div></td>
+        <td class="code-ln-code" data-line-number="10"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">      - </span><span style="color:#22863A;--shiki-dark:#85E89D">name</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">Checkout sources</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="11"><div class="code-ln-n" data-line-number="11"></div></td>
+        <td class="code-ln-code" data-line-number="11"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">        uses</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">actions/checkout@v3</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="12"><div class="code-ln-n" data-line-number="12"></div></td>
+        <td class="code-ln-code" data-line-number="12"><span class="line"></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="13"><div class="code-ln-n" data-line-number="13"></div></td>
+        <td class="code-ln-code" data-line-number="13"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">      - </span><span style="color:#22863A;--shiki-dark:#85E89D">name</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">Install stable toolchain</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="14"><div class="code-ln-n" data-line-number="14"></div></td>
+        <td class="code-ln-code" data-line-number="14"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">        uses</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">actions-rs/toolchain@v1</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="15"><div class="code-ln-n" data-line-number="15"></div></td>
+        <td class="code-ln-code" data-line-number="15"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">        with</span><span style="color:#24292E;--shiki-dark:#E1E4E8">:</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="16"><div class="code-ln-n" data-line-number="16"></div></td>
+        <td class="code-ln-code" data-line-number="16"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">          profile</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">minimal</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="17"><div class="code-ln-n" data-line-number="17"></div></td>
+        <td class="code-ln-code" data-line-number="17"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">          toolchain</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">stable</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="18"><div class="code-ln-n" data-line-number="18"></div></td>
+        <td class="code-ln-code" data-line-number="18"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">          override</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#005CC5;--shiki-dark:#79B8FF">true</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="19"><div class="code-ln-n" data-line-number="19"></div></td>
+        <td class="code-ln-code" data-line-number="19"><span class="line"></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="20"><div class="code-ln-n" data-line-number="20"></div></td>
+        <td class="code-ln-code" data-line-number="20"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">      - </span><span style="color:#22863A;--shiki-dark:#85E89D">run</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">cargo publish --token ${CRATES_TOKEN}</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="21"><div class="code-ln-n" data-line-number="21"></div></td>
+        <td class="code-ln-code" data-line-number="21"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">        env</span><span style="color:#24292E;--shiki-dark:#E1E4E8">:</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="22"><div class="code-ln-n" data-line-number="22"></div></td>
+        <td class="code-ln-code" data-line-number="22"><span class="line"><span style="color:#22863A;--shiki-dark:#85E89D">          CRATES_TOKEN</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#032F62;--shiki-dark:#9ECBFF">${{ secrets.CRATES_TOKEN }}</span></span></td>
+      </tr></tbody></table>23:["$","pre",null,{"className":"language-yaml pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$2b"}}]}]
+2c:T571,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
+        <td class="code-ln-code" data-line-number="1"><span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">$</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> git</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> tag</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> -a</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> v0.1.0</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> -m</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> "Tagging v0.1.0"</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="2"><div class="code-ln-n" data-line-number="2"></div></td>
+        <td class="code-ln-code" data-line-number="2"><span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">$</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> gh</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> release</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> create</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> v0.1.0</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> -t</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> "Release v0.1.0"</span></span></td>
+      </tr></tbody></table>24:["$","pre",null,{"className":"language-bash pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$2c"}}]}]
