@@ -1,6 +1,6 @@
 1:"$Sreact.fragment"
-2:I[1544,["177","static/chunks/app/layout-7ea7f0006323b5b6.js"],"AsciiArtLogger"]
-3:I[2738,["177","static/chunks/app/layout-7ea7f0006323b5b6.js"],"ThemeProvider"]
+2:I[1544,["177","static/chunks/app/layout-cb5038e2af1ab31b.js"],"AsciiArtLogger"]
+3:I[2738,["177","static/chunks/app/layout-cb5038e2af1ab31b.js"],"ThemeProvider"]
 4:I[7555,[],""]
 5:I[1295,[],""]
 6:I[9543,["345","static/chunks/app/not-found-374964195ecf67e5.js"],"default"]
@@ -9,9 +9,10 @@ a:I[9665,[],"OutletBoundary"]
 d:I[4911,[],"AsyncMetadataOutlet"]
 f:I[9665,[],"ViewportBoundary"]
 11:I[6614,[],""]
-:HL["/_next/static/css/e5565d963fd839c1.css","style"]
+:HL["/_next/static/css/09dfadb69bdaa005.css","style"]
+:HL["/_next/static/css/043572ff16fa1c63.css","style"]
 :HL["/_next/static/css/72f0b751ba818b6f.css","style"]
-0:{"P":null,"b":"vI1f1rc00foWP8-o_ZTsc","p":"","c":["","en","blog","2025","01","babel-of-code-w03",""],"i":false,"f":[[["",{"children":["en",{"children":["blog",{"children":[["slug","2025/01/babel-of-code-w03","oc"],{"children":["__PAGE__",{}]}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/e5565d963fd839c1.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","link",null,{"rel":"icon","href":"/favicon.ico","sizes":"any"}],["$","link",null,{"rel":"apple-touch-icon","href":"/apple-touch-icon.png"}]]}],["$","body",null,{"children":[["$","$L2",null,{}],["$","$L3",null,{"children":["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","$L6",null,{}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]]}]]}]]}],{"children":["en",["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["blog",["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","2025/01/babel-of-code-w03","oc"],["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L7",["$","$L8",null,{"children":"$L9"}],[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/72f0b751ba818b6f.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$La",null,{"children":["$Lb","$Lc",["$","$Ld",null,{"promise":"$@e"}]]}]]}],{},null,false]},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","chZE1HvHnvU2zw2oIZIR-",{"children":[["$","$Lf",null,{"children":"$L10"}],null]}],null]}],false]],"m":"$undefined","G":["$11","$undefined"],"s":false,"S":true}
+0:{"P":null,"b":"m4fWy0SUBB4cXIzg0MG-6","p":"","c":["","en","blog","2025","01","babel-of-code-w03",""],"i":false,"f":[[["",{"children":["en",{"children":["blog",{"children":[["slug","2025/01/babel-of-code-w03","oc"],{"children":["__PAGE__",{}]}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/09dfadb69bdaa005.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/043572ff16fa1c63.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","link",null,{"rel":"icon","href":"/favicon.ico","sizes":"any"}],["$","link",null,{"rel":"apple-touch-icon","href":"/apple-touch-icon.png"}]]}],["$","body",null,{"children":[["$","$L2",null,{}],["$","$L3",null,{"children":["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","$L6",null,{}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]]}]]}]]}],{"children":["en",["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["blog",["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","2025/01/babel-of-code-w03","oc"],["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L7",["$","$L8",null,{"children":"$L9"}],[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/72f0b751ba818b6f.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$La",null,{"children":["$Lb","$Lc",["$","$Ld",null,{"promise":"$@e"}]]}]]}],{},null,false]},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","SEWTdHrQ9GDVqZsY6mixR",{"children":[["$","$Lf",null,{"children":"$L10"}],null]}],null]}],false]],"m":"$undefined","G":["$11","$undefined"],"s":false,"S":true}
 12:"$Sreact.suspense"
 13:I[4911,[],"AsyncMetadata"]
 9:["$","$12",null,{"fallback":null,"children":["$","$L13",null,{"promise":"$@14"}]}]
@@ -23,20 +24,15 @@ e:{"metadata":"$14:metadata","error":null,"digest":"$undefined"}
 15:I[8109,["72","static/chunks/72-d3fcf2c32f7e11b9.js","435","static/chunks/435-711aececbe1f0279.js","447","static/chunks/app/en/blog/%5B%5B...slug%5D%5D/page-6c4a572667fc6dca.js"],"ThemeSwitcher"]
 17:I[6874,["72","static/chunks/72-d3fcf2c32f7e11b9.js","435","static/chunks/435-711aececbe1f0279.js","447","static/chunks/app/en/blog/%5B%5B...slug%5D%5D/page-6c4a572667fc6dca.js"],""]
 18:I[1809,["72","static/chunks/72-d3fcf2c32f7e11b9.js","435","static/chunks/435-711aececbe1f0279.js","447","static/chunks/app/en/blog/%5B%5B...slug%5D%5D/page-6c4a572667fc6dca.js"],"AsciiBorderedMdx"]
-16:T548,                              _______._ _
+16:T665,                              _______._ _
                       _ _.___/       |
                          |           |
                          |           |
-                                                 ∙
-                         .                       :
-             ____________¡ >>>  _______   _ __ _ ¡  __    _______
-          __|⌐           |  ___|  ⌐____|_ ______ |       |       |
-        . |     [        | |                   _ |  :  __l.|  ┌  | .
-     ÷¼¼¼ |     |         \|    _____|       _ __|  |_|   |      | ¼¼¼÷
-          |_____l  _ l         |     |___|        ________|------!
-          ! ___ _         \____| ___ !  _________|.sti      __ _ :
-          ∙                          :             < <<<<        ∙
-                                     ∙
+     █ ▀▀▀▀▀▀███ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀ █▀▀▀▀▀▀███ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█
+     █ █▀▀▀▀▀███ █▀▀▀▀▀███ █▀▀▀▀▀███ █▀▀▀▀▀▀▀▀▀ █ angelo!  █▀▀▀▀▀▀███ ▄
+     █ █████ ███ █████ ███ █████ ███ ██████ ███ ██████ ███ ██████ ███ █
+     ▄ ▀▀▀▀▀ ▀▀▀ ▀▀▀▀▀ ███ ▀▀▀▀▀ ███ ▀▀▀▀▀▀ ▀▀▀ ▀▀▀▀▀▀ ▀▀▀ ▀▀▀▀▀▀ ▀▀▀ █
+     ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀ ▀▀▀ ▀▀▀▀▀▀▀▀▀ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀ √m⌡
                          :           |
     - -----andrzej-_ ____\_____|----_|_____________'-lichnerowicz-------- -
                          :           |
