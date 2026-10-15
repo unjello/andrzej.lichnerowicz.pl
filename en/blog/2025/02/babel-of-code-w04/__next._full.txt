@@ -1,0 +1,547 @@
+1:"$Sreact.fragment"
+2:"/_next/static/chunks/3y26xv8sa1dt0.js"
+3:I[53695,["$2"],"AsciiArtLogger"]
+4:I[96406,["$2"],"ThemeProvider"]
+5:I[10085,["$2"],"ThemeSwitcher"]
+6:I[8333,["$2"],"AvailableWidth"]
+7:I[11585,["$2"],"default"]
+8:I[97478,["$2"],"default"]
+9:"/_next/static/chunks/3kcn8wz7h7dvj.js"
+a:I[29306,["$2","$9"],"default"]
+11:I[44259,["$2"],"OutletBoundary"]
+12:"$Sreact.suspense"
+14:"ViewportBoundary"
+15:I[44259,["$2"],"$14"]
+17:"MetadataBoundary"
+18:I[44259,["$2"],"$17"]
+1a:I[45497,["$2"],"default",1]
+:HL["/_next/static/chunks/0n0ucni11z82d.css","style"]
+:HC["/",""]
+:HL["/_next/static/chunks/3ert6xgjkvepg.css","style"]
+c:X
+f:[["children",{"s":"__PAGE__","h":512,"d":{"r":["$","$1","c",{"children":["$L10",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/3ert6xgjkvepg.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/0jybh4guong1_.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/1pfxd-dkulr8v.js","async":true,"nonce":"$undefined"}]],["$","$L11",null,{"children":["$","$12",null,{"name":"Next.MetadataOutlet","children":"$@13"}]}]]}],"p":false,"v":null}}]]
+e:[["children",{"s":{"n":"slug","t":"oc","k":"2025/02/babel-of-code-w04","s":[]},"h":512,"d":{"r":["$","$1","c",{"children":[null,["$","$L7",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],"p":false,"v":"$c"},"c":"$Qf"}]]
+d:[["children",{"s":"blog","h":512,"d":{"r":["$","$1","c",{"children":[null,["$","$L7",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],"p":false,"v":"$c"},"c":"$Qe"}]]
+b:[["children",{"s":"en","h":512,"d":{"r":["$","$1","c",{"children":[null,["$","$L7",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],"p":false,"v":"$c"},"c":"$Qd"}]]
+0:{"P":null,"c":["","en","blog","2025","02","babel-of-code-w04",""],"q":"","i":false,"t":{"t":{"s":"","h":528,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0n0ucni11z82d.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/3y26xv8sa1dt0.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","link",null,{"rel":"icon","href":"/favicon.ico","sizes":"any"}],["$","link",null,{"rel":"apple-touch-icon","href":"/apple-touch-icon.png"}]]}],["$","body",null,{"children":[["$","$L3",null,{}],["$","$L4",null,{"children":[["$","$L5",null,{}],["$","$L6",null,{"children":["$","$L7",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","$La",null,{}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]]}]]}]]}]]}],"p":false,"v":null},"c":"$Qb"},"h":{"r":["$","$1","h",{"children":[null,["$","$L15",null,{"children":"$L16"}],["$","$L18",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$12",null,{"name":"Next.Metadata","children":"$L19"}]}],null]}],null]}],"p":false,"v":null}},"m":"$undefined","G":["$1a",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0n0ucni11z82d.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]]],"S":true,"r":"$undefined","s":"$undefined","a":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"eTjHqyI6G4EuxW6ACICD-"}
+c:C
+16:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+1b:I[19565,["$2"],"IconMark"]
+13:null
+19:[["$","title","0",{"children":"Solving AoC in Prolog | @unjello blog"}],["$","meta","1",{"name":"description","content":"Let's implement 2024/day/4 Advent of Code puzzle in Prolog. BabelOfCode is low key. The goal is to solve each Advent of Code puzzle in a different language."}],["$","meta","2",{"property":"og:title","content":"Solving AoC in Prolog | @unjello blog"}],["$","meta","3",{"property":"og:description","content":"Let's implement 2024/day/4 Advent of Code puzzle in Prolog. BabelOfCode is low key. The goal is to solve each Advent of Code puzzle in a different language."}],["$","meta","4",{"property":"og:url","content":"https://andrzej.lichnerowicz.pl/en/blog/2025/02/babel-of-code-w04/"}],["$","meta","5",{"property":"og:image","content":"https://andrzej.lichnerowicz.pl/images/2025/02/babel-of-code-w04/swish.png"}],["$","meta","6",{"property":"og:image:width","content":"1200"}],["$","meta","7",{"property":"og:image:height","content":"630"}],["$","meta","8",{"property":"og:image:alt","content":"Solving AoC in Prolog | @unjello blog"}],["$","meta","9",{"property":"og:type","content":"article"}],["$","meta","10",{"property":"article:published_time","content":"2025-02-02T16:45:11+02:00"}],["$","meta","11",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","12",{"name":"twitter:title","content":"Solving AoC in Prolog | @unjello blog"}],["$","meta","13",{"name":"twitter:description","content":"Let's implement 2024/day/4 Advent of Code puzzle in Prolog. BabelOfCode is low key. The goal is to solve each Advent of Code puzzle in a different language."}],["$","meta","14",{"name":"twitter:image","content":"https://andrzej.lichnerowicz.pl/images/2025/02/babel-of-code-w04/swish.png"}],["$","link","15",{"rel":"shortcut icon","href":"/favicon.ico"}],["$","link","16",{"rel":"icon","href":"/favicon.ico","sizes":"any"}],["$","link","17",{"rel":"apple-touch-icon","href":"/apple-touch-icon.png"}],["$","$L1b","18",{}]]
+1d:"/_next/static/chunks/0jybh4guong1_.js"
+1e:"/_next/static/chunks/1pfxd-dkulr8v.js"
+1f:I[21864,["$2","$1d","$1e"],""]
+20:"AsciiBorderedMdx"
+21:I[9655,["$2","$1d","$1e"],"$20"]
+1c:T545,                              _______._ _
+                      _ _.___/       |
+                         |           |
+                         |           |
+             -----+-----                          ___     ___
+                  |              ______   ___    /  /____    \
+            __________ _-+-_____/ .(  .\_(xhb)__|  |(     \   |
+           /.   |..   \..  ___/.\ . ) ..\ . ____\  |  o  / |  |
+          |..    ).    |.  \    .|.(  ...|.(.   :  (____|  |  |
+         (______/..    |.   \___.|______ . ______|..       | 9|
+          )..          |.      |    ..   |..     \ .       | 9[
+         ( .    o      |.      |     .\  |.       |. ___/ (|  ]
+          \___________/..      |\_______/________/\_________\ [
+               |_______________|  ____________________________]
+                         :           |
+    - -----andrzej-_ ____\_____|----_|_____________'-lichnerowicz-------- -
+                         :           |
+ .     p e r s o n a l ! |    #1     | wEBPAGE                            .
+ . _         - --------- |  - -- -   | ------- -                         _  .
+-:-\-\-------------------|- -     - -|-----------------------------------\-\-:
+ |                      _|___________|_                                      |
+ |                       :           :                                       |10:["$","div",null,{"className":"flex justify-center","children":["$","div",null,{"className":"ascii-art nfo-pre","children":[["$","div",null,{"className":"header-component","children":"$1c"}],[["$","div",null,{"className":"whitespace-pre font-mono","children":" |                                                                           |"}],["$","div",null,{"className":"post-back-link","children":[" | ",["$","$L1f",null,{"href":"/","className":"hover:underline","prefetch":false,"style":{"flex":1,"minWidth":0,"textDecoration":"none","color":"inherit"},"children":"<< back"}]," |"]}],["$","div",null,{"className":"whitespace-pre font-mono","children":" |                                                                           |"}]],["$","$L21",null,{"children":[["$","header",null,{"className":"post-header","children":[["$","h1",null,{"className":"post-title","children":["# ","Solving AoC in Prolog"]}],["$","time",null,{"className":"post-date","dateTime":"2025-02-02T16:45:11+02:00","children":["[ ","2025.02.02"," ]"]}]]}],"$L22"]}],"$10:props:children:props:children:1",["$","div",null,{"children":[" \\__                    --> ",["$","a",null,{"href":"http://andrzej.lichnerowicz.pl","target":"_blank","rel":"noopener noreferrer","title":"andrzej.lichnerowicz.pl","className":"link","style":{"cursor":"pointer"},"children":"andrzej.lichnerowicz.pl"}]," <--                    __/\n   //                                                                     \\\\\n  // ------------------------                     ------------------------ \\\\\n '~~~~~~~~~~~~~~~~~~~~~~~~~// ------       ------ \\\\~~~~~~~~~~~~~~~~~~~~~~~~~`\n                          '~~~~~~~//       \\\\~~~~~~~`\n                                 // ------- \\\\\n                                '~~~~~~~~~~~~~`\n      "]}]]}]}]
+24:I[90891,["$2","$1d","$1e"],"Admonition"]
+22:[["$","div",null,{"className":"JaoSHW_markdown-heading","children":[["$","span",null,{"className":"JaoSHW_markdown-hash","children":["##"," "]}],["$","span",null,{"children":"Prerequisites"}]]}],"\n",["$","ul",null,{"children":["\n",["$","li",null,{"children":["$","a",null,{"href":"https://www.swi-prolog.org/pldoc/doc_for?object=manual","children":"SWI Prolog"}]}],"\n",["$","li",null,{"children":["Latest ",["$","a",null,{"href":"https://marketplace.visualstudio.com/items?itemName=AmauryRabouan.new-vsc-prolog","children":"VScode Extention"}]," for Prolog"]}],"\n",["$","li",null,{"children":[["$","a",null,{"href":"https://github.com/mthom/scryer-prolog","children":"Scryer"}]," - A Prolog rewritten in Rust :)"]}],"\n"]}],"\n",["$","div",null,{"className":"JaoSHW_markdown-heading","children":[["$","span",null,{"className":"JaoSHW_markdown-hash","children":["##"," "]}],["$","span",null,{"children":"Installation"}]]}],"\n",["$","p",null,{"children":"I installed both SWI Prolog and Scryer Prolog. They’re not the only implementations out there, but they seemed the most useful for my purposes. SWI Prolog appears to be the standard: for example, the VS Code extension only supports debugging when using SWI."}],"\n",["$","p",null,{"children":["Scryer was appealing because it’s written in Rust. Unfortunately, it quickly became obvious that it lacks many of the convenient libraries that SWI has (such as reading a file into a string) or even built-ins like ",["$","code",null,{"children":"length"}],"."]}],"\n",["$","div",null,{"className":"JaoSHW_markdown-heading","children":[["$","span",null,{"className":"JaoSHW_markdown-hash","children":["##"," "]}],["$","span",null,{"children":"Prolog Basics"}]]}],"\n",["$","p",null,{"children":"Prolog works a bit differently from most languages: it’s all about facts and rules. The rules try to infer outcomes based on the facts. Let’s take a quick look at a simple example:"}],"\n",["","$L23"],"\n",["$","p",null,{"children":["Save this in ",["$","code",null,{"children":"test.pro"}],"."]}],"\n",["$","$L24",null,{"type":"note","title":"$undefined","children":["$","p",null,{"children":["There doesn’t seem to be an official Prolog extension recommendation, but many folks use ",["$","code",null,{"children":".pl"}],". I prefer using ",["$","code",null,{"children":".pro"}]," so it won’t collide with Perl’s ",["$","code",null,{"children":".pl"}],"."]}]}],"\n",["$","p",null,{"children":"When Prolog loads the script we can test the facts we've declared:"}],"\n",["","$L25"],"\n",["$","p",null,{"children":"We can also run inference, for example:"}],"\n",["","$L26"],"\n",["$","p",null,{"children":["Here, we’re asking Prolog for which values of ",["$","code",null,{"children":"X"}]," the fact ",["$","code",null,{"children":"capital(warsaw, X)"}]," holds. We can even ask for all possible pairs without supplying a known variable:"]}],"\n",["","$L27"],"\n",["$","p",null,{"children":"Prolog shows you the first result, then waits for a semicolon (;) to give you the next. Under the hood, it essentially brute-forces checks of each fact, but Prolog engines use clever optimizations to make it surprisingly fast."}],"\n",["$","p",null,{"children":"Usually, Prolog encourages defining facts and rules in a file, but we can also do this in a REPL. To define facts on the fly:"}],"\n",["","$L28"],"\n",["$","p",null,{"children":["Press ",["$","code",null,{"children":"Ctrl+D"}]," to finish, and Prolog compiles these facts for you."]}],"\n",["$","div",null,{"className":"JaoSHW_markdown-heading","children":[["$","span",null,{"className":"JaoSHW_markdown-hash","children":["##"," "]}],["$","span",null,{"children":"A Fun Easter Egg"}]]}],"\n",["$","p",null,{"children":"I discovered a neat difference between Scryer and SWI. If you query Scryer with a variable it can’t bind, it just fails:"}],"\n",["","$L29"],"\n",["$","p",null,{"children":"But if you do the same in SWI:"}],"\n",["","$L2a"],"\n",["$","p",null,{"children":"It’s one of those small, amusing things :)"}],"\n",["$","div",null,{"className":"JaoSHW_markdown-heading","children":[["$","span",null,{"className":"JaoSHW_markdown-hash","children":["##"," "]}],["$","span",null,{"children":"Reading Files"}]]}],"\n","$L2b","\n","$L2c","\n","$L2d","\n","$L2e","\n","$L2f","\n","$L30","\n","$L31","\n","$L32","\n","$L33","\n","$L34","\n","$L35","\n","$L36","\n","$L37","\n","$L38","\n","$L39","\n","$L3a","\n","$L3b","\n","$L3c","\n","$L3d","\n","$L3e","\n","$L3f","\n","$L40"]
+2b:["$","p",null,{"children":["Initially, to load a file in SWI Prolog, I used the ",["$","code",null,{"children":"readutil"}]," library:"]}]
+2c:["","$L41"]
+2d:["$","p",null,{"children":"This prints the file’s contents:"}]
+2e:["","$L42"]
+2f:["$","p",null,{"children":"But to make it work in Scryer, I wrote a pure Prolog version:"}]
+30:["","$L43"]
+31:["$","p",null,{"children":"Here are a few interesting bits:"}]
+32:["$","ol",null,{"children":["\n",["$","li",null,{"children":[["$","strong",null,{"children":"Variable Binding"}],"\nWe call ",["$","code",null,{"children":"read_file('example.txt', Lines)"}]," with Lines unbound, and Prolog binds it to the file’s contents."]}],"\n",["$","li",null,{"children":[["$","strong",null,{"children":"Negation"}],"\nThe ",["$","code",null,{"children":"\\+ at_end_of_stream(Stream)"}]," checks if we’re ",["$","strong",null,{"children":"NOT"}]," at the end of the stream. If that succeeds, we read a line and recurse."]}],"\n",["$","li",null,{"children":[["$","strong",null,{"children":"If-Then-Else Syntax"}],"\nProlog uses ",["$","code",null,{"children":"(Condition -> Then; Else)"}],". Due to operator precedence, we typically wrap it in parentheses. For the line reader, if the character is end_of_file or a newline, we return an empty list. Otherwise, we accumulate characters recursively."]}],"\n"]}]
+33:["$","div",null,{"className":"JaoSHW_markdown-heading","children":[["$","span",null,{"className":"JaoSHW_markdown-hash","children":["##"," "]}],["$","span",null,{"children":"The Puzzle"}]]}]
+34:["$","p",null,{"children":["I was working on ",["$","a",null,{"href":"https://adventofcode.com/2024/day/4","children":"Advent of Code 2024 Day 4"}],". The goal is to find occurrences of the word XMAS spelled forward or backward, in all directions (horizontal, vertical, diagonal) within a grid of characters."]}]
+35:["$","p",null,{"children":["Let’s start by finding the first letter, ",["$","code",null,{"children":"X"}],", in every possible cell:"]}]
+36:["","$L44"]
+37:["$","p",null,{"children":["Prolog’s ",["$","code",null,{"children":"findall/3"}]," collects all ",["$","code",null,{"children":"(X,Y)"}]," pairs where the letter is ",["$","code",null,{"children":"X"}],". Behind the scenes, ",["$","code",null,{"children":"between(1, Width, X)"}]," generates possible ",["$","code",null,{"children":"X"}]," values, and similarly for ",["$","code",null,{"children":"Y"}],", then check_letter checks if the cell matches."]}]
+38:["","$L45"]
+39:["$","p",null,{"children":["For the full solution, I used a recursive ",["$","code",null,{"children":"check_word"}]," predicate. It checks each subsequent letter in the grid while moving in the specified direction:"]}]
+3a:["","$L46"]
+3b:["$","p",null,{"children":["For part 2, I just needed to find diagonal placements of smaller substrings (",["$","code",null,{"children":"MAS"}]," and ",["$","code",null,{"children":"SAM"}],"):"]}]
+3c:["","$L47"]
+3d:["$","p",null,{"children":"And that’s it! When I run:"}]
+3e:["","$L48"]
+3f:["$","p",null,{"children":["I get the final answers. This detour into Prolog felt like a breath of fresh air—very different from C, Rust, or even Lisp. If you’re curious, you can find the full code on my ",["$","a",null,{"href":"https://codeberg.org/unjello/babel-of-code/src/branch/main/2025/04","children":"Codeberg"}]," repo."]}]
+40:["$","p",null,{"children":"Hope this helps if you’re exploring Prolog or working through Advent of Code with logic programming. Happy hacking!"}]
+49:T54d,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
+        <td class="code-ln-code" data-line-number="1"><span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">capital</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#005CC5;--shiki-dark:#79B8FF">poland</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#005CC5;--shiki-dark:#79B8FF">warsaw</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)</span><span style="color:#D73A49;--shiki-dark:#F97583">.</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="2"><div class="code-ln-n" data-line-number="2"></div></td>
+        <td class="code-ln-code" data-line-number="2"><span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">capital</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#005CC5;--shiki-dark:#79B8FF">germany</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#005CC5;--shiki-dark:#79B8FF">berlin</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)</span><span style="color:#D73A49;--shiki-dark:#F97583">.</span></span></td>
+      </tr></tbody></table>23:["$","pre",null,{"className":"language-prolog pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$49"}}]}]
+4a:T1155,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
+        <td class="code-ln-code" data-line-number="1"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">❯ swipl -s day04.pro</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="2"><div class="code-ln-n" data-line-number="2"></div></td>
+        <td class="code-ln-code" data-line-number="2"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">Welcome</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> to SWI-Prolog (</span><span style="color:#005CC5;--shiki-dark:#79B8FF">threaded</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, 64 bits, version 9.2.9)</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="3"><div class="code-ln-n" data-line-number="3"></div></td>
+        <td class="code-ln-code" data-line-number="3"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">SWI-Prolog</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> comes with ABSOLUTELY NO WARRANTY. This is free software.</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="4"><div class="code-ln-n" data-line-number="4"></div></td>
+        <td class="code-ln-code" data-line-number="4"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">Please</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> run </span><span style="color:#D73A49;--shiki-dark:#F97583">?</span><span style="color:#24292E;--shiki-dark:#E1E4E8">- license. for legal details.</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="5"><div class="code-ln-n" data-line-number="5"></div></td>
+        <td class="code-ln-code" data-line-number="5"><span class="line"></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="6"><div class="code-ln-n" data-line-number="6"></div></td>
+        <td class="code-ln-code" data-line-number="6"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">For</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> online help and background, visit https://www.swi-prolog.org</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="7"><div class="code-ln-n" data-line-number="7"></div></td>
+        <td class="code-ln-code" data-line-number="7"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">For</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> built-</span><span style="color:#D73A49;--shiki-dark:#F97583">in</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> help, use </span><span style="color:#D73A49;--shiki-dark:#F97583">?</span><span style="color:#24292E;--shiki-dark:#E1E4E8">- help(</span><span style="color:#005CC5;--shiki-dark:#79B8FF">Topic</span><span style="color:#24292E;--shiki-dark:#E1E4E8">). or </span><span style="color:#D73A49;--shiki-dark:#F97583">?</span><span style="color:#24292E;--shiki-dark:#E1E4E8">- apropos(</span><span style="color:#005CC5;--shiki-dark:#79B8FF">Word</span><span style="color:#24292E;--shiki-dark:#E1E4E8">).</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="8"><div class="code-ln-n" data-line-number="8"></div></td>
+        <td class="code-ln-code" data-line-number="8"><span class="line"></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="9"><div class="code-ln-n" data-line-number="9"></div></td>
+        <td class="code-ln-code" data-line-number="9"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">?</span><span style="color:#24292E;--shiki-dark:#E1E4E8">- capital(</span><span style="color:#005CC5;--shiki-dark:#79B8FF">poland</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, warsaw).</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="10"><div class="code-ln-n" data-line-number="10"></div></td>
+        <td class="code-ln-code" data-line-number="10"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">true.</span></span></td>
+      </tr></tbody></table>25:["$","pre",null,{"className":"language-fish pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$4a"}}]}]
+26:["$","pre",null,{"className":"language-prolog pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"<table class=\"code-ln-table\"><tbody><tr class=\"code-ln-line\">\n        <td class=\"code-ln-numbers\" data-line-number=\"1\"><div class=\"code-ln-n\" data-line-number=\"1\"></div></td>\n        <td class=\"code-ln-code\" data-line-number=\"1\"><span class=\"line\"><span style=\"color:#24292E;--shiki-dark:#E1E4E8\">?- capital(warsaw, X).</span></span></td>\n      </tr><tr class=\"code-ln-line\">\n        <td class=\"code-ln-numbers\" data-line-number=\"2\"><div class=\"code-ln-n\" data-line-number=\"2\"></div></td>\n        <td class=\"code-ln-code\" data-line-number=\"2\"><span class=\"line\"><span style=\"color:#6F42C1;--shiki-dark:#B392F0\">X</span><span style=\"color:#24292E;--shiki-dark:#E1E4E8\"> = </span><span style=\"color:#005CC5;--shiki-dark:#79B8FF\">poland</span></span></td>\n      </tr></tbody></table>"}}]}]
+4b:T88e,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
+        <td class="code-ln-code" data-line-number="1"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">?- capital(X, Y).</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="2"><div class="code-ln-n" data-line-number="2"></div></td>
+        <td class="code-ln-code" data-line-number="2"><span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">X</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> = </span><span style="color:#005CC5;--shiki-dark:#79B8FF">poland</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="3"><div class="code-ln-n" data-line-number="3"></div></td>
+        <td class="code-ln-code" data-line-number="3"><span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">Y</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> = </span><span style="color:#005CC5;--shiki-dark:#79B8FF">warsaw</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> ;</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="4"><div class="code-ln-n" data-line-number="4"></div></td>
+        <td class="code-ln-code" data-line-number="4"><span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">X</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> = </span><span style="color:#005CC5;--shiki-dark:#79B8FF">germany</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="5"><div class="code-ln-n" data-line-number="5"></div></td>
+        <td class="code-ln-code" data-line-number="5"><span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">Y</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> = </span><span style="color:#005CC5;--shiki-dark:#79B8FF">berlin</span><span style="color:#D73A49;--shiki-dark:#F97583">.</span></span></td>
+      </tr></tbody></table>27:["$","pre",null,{"className":"language-prolog pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$4b"}}]}]
+4c:T7bb,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
+        <td class="code-ln-code" data-line-number="1"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">?- [user].</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="2"><div class="code-ln-n" data-line-number="2"></div></td>
+        <td class="code-ln-code" data-line-number="2"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">|: :- </span><span style="color:#D73A49;--shiki-dark:#F97583">dynamic</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#005CC5;--shiki-dark:#79B8FF">capital</span><span style="color:#24292E;--shiki-dark:#E1E4E8">/2)</span><span style="color:#D73A49;--shiki-dark:#F97583">.</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="3"><div class="code-ln-n" data-line-number="3"></div></td>
+        <td class="code-ln-code" data-line-number="3"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">|: capital(poland, warsaw).</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="4"><div class="code-ln-n" data-line-number="4"></div></td>
+        <td class="code-ln-code" data-line-number="4"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">|: capital(germany, berlin).</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="5"><div class="code-ln-n" data-line-number="5"></div></td>
+        <td class="code-ln-code" data-line-number="5"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">|: ^D</span><span style="color:#6A737D;--shiki-dark:#6A737D">% user://1 compiled 0.00s, 2 clauses</span></span></td>
+      </tr></tbody></table>28:["$","pre",null,{"className":"language-prolog pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$4c"}}]}]
+4d:T523,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
+        <td class="code-ln-code" data-line-number="1"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">?- Something.</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="2"><div class="code-ln-n" data-line-number="2"></div></td>
+        <td class="code-ln-code" data-line-number="2"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">.</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="3"><div class="code-ln-n" data-line-number="3"></div></td>
+        <td class="code-ln-code" data-line-number="3"><span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">   error</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#005CC5;--shiki-dark:#79B8FF">instantiation_error</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span><span style="color:#005CC5;--shiki-dark:#79B8FF">repl</span><span style="color:#24292E;--shiki-dark:#E1E4E8">/0)</span><span style="color:#D73A49;--shiki-dark:#F97583">.</span></span></td>
+      </tr></tbody></table>29:["$","pre",null,{"className":"language-prolog pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$4d"}}]}]
+4e:T541,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
+        <td class="code-ln-code" data-line-number="1"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">?- Something.</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="2"><div class="code-ln-n" data-line-number="2"></div></td>
+        <td class="code-ln-code" data-line-number="2"><span class="line"><span style="color:#6A737D;--shiki-dark:#6A737D">% ... 1,000,000 ............ 10,000,000 years later</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="3"><div class="code-ln-n" data-line-number="3"></div></td>
+        <td class="code-ln-code" data-line-number="3"><span class="line"><span style="color:#6A737D;--shiki-dark:#6A737D">%</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="4"><div class="code-ln-n" data-line-number="4"></div></td>
+        <td class="code-ln-code" data-line-number="4"><span class="line"><span style="color:#6A737D;--shiki-dark:#6A737D">%       >> 42 &#x3C;&#x3C; (last release gives the question)</span></span></td>
+      </tr></tbody></table>2a:["$","pre",null,{"className":"language-prolog pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$4e"}}]}]
+4f:T14bf,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
+        <td class="code-ln-code" data-line-number="1"><span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">use_module</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(library(</span><span style="color:#005CC5;--shiki-dark:#79B8FF">readutil</span><span style="color:#24292E;--shiki-dark:#E1E4E8">))</span><span style="color:#D73A49;--shiki-dark:#F97583">.</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="2"><div class="code-ln-n" data-line-number="2"></div></td>
+        <td class="code-ln-code" data-line-number="2"><span class="line"></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="3"><div class="code-ln-n" data-line-number="3"></div></td>
+        <td class="code-ln-code" data-line-number="3"><span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">main</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#E36209;--shiki-dark:#FFAB70">Filename</span><span style="color:#24292E;--shiki-dark:#E1E4E8">) </span><span style="color:#D73A49;--shiki-dark:#F97583">:-</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="4"><div class="code-ln-n" data-line-number="4"></div></td>
+        <td class="code-ln-code" data-line-number="4"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">	process(</span><span style="color:#E36209;--shiki-dark:#FFAB70">Filename</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)</span><span style="color:#D73A49;--shiki-dark:#F97583">.</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="5"><div class="code-ln-n" data-line-number="5"></div></td>
+        <td class="code-ln-code" data-line-number="5"><span class="line"></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="6"><div class="code-ln-n" data-line-number="6"></div></td>
+        <td class="code-ln-code" data-line-number="6"><span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">process</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#E36209;--shiki-dark:#FFAB70">Filename</span><span style="color:#24292E;--shiki-dark:#E1E4E8">) </span><span style="color:#D73A49;--shiki-dark:#F97583">:-</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="7"><div class="code-ln-n" data-line-number="7"></div></td>
+        <td class="code-ln-code" data-line-number="7"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">    open</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#E36209;--shiki-dark:#FFAB70">Filename</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#005CC5;--shiki-dark:#79B8FF">read</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">Fd</span><span style="color:#24292E;--shiki-dark:#E1E4E8">),</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="8"><div class="code-ln-n" data-line-number="8"></div></td>
+        <td class="code-ln-code" data-line-number="8"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    read_file_to_string(</span><span style="color:#E36209;--shiki-dark:#FFAB70">Filename</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">Str</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#005CC5;--shiki-dark:#79B8FF">[]</span><span style="color:#24292E;--shiki-dark:#E1E4E8">),</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="9"><div class="code-ln-n" data-line-number="9"></div></td>
+        <td class="code-ln-code" data-line-number="9"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">    close</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#E36209;--shiki-dark:#FFAB70">Fd</span><span style="color:#24292E;--shiki-dark:#E1E4E8">),</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="10"><div class="code-ln-n" data-line-number="10"></div></td>
+        <td class="code-ln-code" data-line-number="10"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">    write</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#E36209;--shiki-dark:#FFAB70">Str</span><span style="color:#24292E;--shiki-dark:#E1E4E8">),</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="11"><div class="code-ln-n" data-line-number="11"></div></td>
+        <td class="code-ln-code" data-line-number="11"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">	true</span><span style="color:#D73A49;--shiki-dark:#F97583">.</span></span></td>
+      </tr></tbody></table>41:["$","pre",null,{"className":"language-prolog pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$4f"}}]}]
+50:Tea5,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
+        <td class="code-ln-code" data-line-number="1"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">?- main('example.txt').</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="2"><div class="code-ln-n" data-line-number="2"></div></td>
+        <td class="code-ln-code" data-line-number="2"><span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">MMMSXXMASM</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="3"><div class="code-ln-n" data-line-number="3"></div></td>
+        <td class="code-ln-code" data-line-number="3"><span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">MSAMXMSMSA</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="4"><div class="code-ln-n" data-line-number="4"></div></td>
+        <td class="code-ln-code" data-line-number="4"><span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">AMXSXMAAMM</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="5"><div class="code-ln-n" data-line-number="5"></div></td>
+        <td class="code-ln-code" data-line-number="5"><span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">MSAMASMSMX</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="6"><div class="code-ln-n" data-line-number="6"></div></td>
+        <td class="code-ln-code" data-line-number="6"><span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">XMASAMXAMM</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="7"><div class="code-ln-n" data-line-number="7"></div></td>
+        <td class="code-ln-code" data-line-number="7"><span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">XXAMMXXAMA</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="8"><div class="code-ln-n" data-line-number="8"></div></td>
+        <td class="code-ln-code" data-line-number="8"><span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">SMSMSASXSS</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="9"><div class="code-ln-n" data-line-number="9"></div></td>
+        <td class="code-ln-code" data-line-number="9"><span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">SAXAMASAAA</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="10"><div class="code-ln-n" data-line-number="10"></div></td>
+        <td class="code-ln-code" data-line-number="10"><span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">MAMMMXMMMM</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="11"><div class="code-ln-n" data-line-number="11"></div></td>
+        <td class="code-ln-code" data-line-number="11"><span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">MXMXAXMASX</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="12"><div class="code-ln-n" data-line-number="12"></div></td>
+        <td class="code-ln-code" data-line-number="12"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">true</span><span style="color:#D73A49;--shiki-dark:#F97583">.</span></span></td>
+      </tr></tbody></table>42:["$","pre",null,{"className":"language-prolog pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$50"}}]}]
+51:T2b10,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
+        <td class="code-ln-code" data-line-number="1"><span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">read_file</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#E36209;--shiki-dark:#FFAB70">Filename</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">Lines</span><span style="color:#24292E;--shiki-dark:#E1E4E8">) </span><span style="color:#D73A49;--shiki-dark:#F97583">:-</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="2"><div class="code-ln-n" data-line-number="2"></div></td>
+        <td class="code-ln-code" data-line-number="2"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">    open</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#E36209;--shiki-dark:#FFAB70">Filename</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#005CC5;--shiki-dark:#79B8FF">read</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">Stream</span><span style="color:#24292E;--shiki-dark:#E1E4E8">),</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="3"><div class="code-ln-n" data-line-number="3"></div></td>
+        <td class="code-ln-code" data-line-number="3"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    read_lines(</span><span style="color:#E36209;--shiki-dark:#FFAB70">Stream</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">Lines</span><span style="color:#24292E;--shiki-dark:#E1E4E8">),</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="4"><div class="code-ln-n" data-line-number="4"></div></td>
+        <td class="code-ln-code" data-line-number="4"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">    close</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#E36209;--shiki-dark:#FFAB70">Stream</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)</span><span style="color:#D73A49;--shiki-dark:#F97583">.</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="5"><div class="code-ln-n" data-line-number="5"></div></td>
+        <td class="code-ln-code" data-line-number="5"><span class="line"></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="6"><div class="code-ln-n" data-line-number="6"></div></td>
+        <td class="code-ln-code" data-line-number="6"><span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">read_lines</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#E36209;--shiki-dark:#FFAB70">Stream</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#005CC5;--shiki-dark:#79B8FF">[]</span><span style="color:#24292E;--shiki-dark:#E1E4E8">) </span><span style="color:#D73A49;--shiki-dark:#F97583">:-</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="7"><div class="code-ln-n" data-line-number="7"></div></td>
+        <td class="code-ln-code" data-line-number="7"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">        at_end_of_stream</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#E36209;--shiki-dark:#FFAB70">Stream</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)</span><span style="color:#D73A49;--shiki-dark:#F97583">.</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="8"><div class="code-ln-n" data-line-number="8"></div></td>
+        <td class="code-ln-code" data-line-number="8"><span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">read_lines</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#E36209;--shiki-dark:#FFAB70">Stream</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, [</span><span style="color:#E36209;--shiki-dark:#FFAB70">Line</span><span style="color:#24292E;--shiki-dark:#E1E4E8">|</span><span style="color:#E36209;--shiki-dark:#FFAB70">Rest</span><span style="color:#24292E;--shiki-dark:#E1E4E8">]) </span><span style="color:#D73A49;--shiki-dark:#F97583">:-</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="9"><div class="code-ln-n" data-line-number="9"></div></td>
+        <td class="code-ln-code" data-line-number="9"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">        \+</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> at_end_of_stream</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#E36209;--shiki-dark:#FFAB70">Stream</span><span style="color:#24292E;--shiki-dark:#E1E4E8">),</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="10"><div class="code-ln-n" data-line-number="10"></div></td>
+        <td class="code-ln-code" data-line-number="10"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">        read_line(</span><span style="color:#E36209;--shiki-dark:#FFAB70">Stream</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">Line</span><span style="color:#24292E;--shiki-dark:#E1E4E8">),</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="11"><div class="code-ln-n" data-line-number="11"></div></td>
+        <td class="code-ln-code" data-line-number="11"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">        read_lines(</span><span style="color:#E36209;--shiki-dark:#FFAB70">Stream</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">Rest</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)</span><span style="color:#D73A49;--shiki-dark:#F97583">.</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="12"><div class="code-ln-n" data-line-number="12"></div></td>
+        <td class="code-ln-code" data-line-number="12"><span class="line"></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="13"><div class="code-ln-n" data-line-number="13"></div></td>
+        <td class="code-ln-code" data-line-number="13"><span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">read_line</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#E36209;--shiki-dark:#FFAB70">Stream</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">Line</span><span style="color:#24292E;--shiki-dark:#E1E4E8">) </span><span style="color:#D73A49;--shiki-dark:#F97583">:-</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="14"><div class="code-ln-n" data-line-number="14"></div></td>
+        <td class="code-ln-code" data-line-number="14"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">        get_char</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#E36209;--shiki-dark:#FFAB70">Stream</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">Char</span><span style="color:#24292E;--shiki-dark:#E1E4E8">),</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="15"><div class="code-ln-n" data-line-number="15"></div></td>
+        <td class="code-ln-code" data-line-number="15"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">        (   </span><span style="color:#E36209;--shiki-dark:#FFAB70">Char</span><span style="color:#D73A49;--shiki-dark:#F97583"> ==</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> end_of_file</span><span style="color:#D73A49;--shiki-dark:#F97583"> -></span><span style="color:#E36209;--shiki-dark:#FFAB70"> Line</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> = </span><span style="color:#005CC5;--shiki-dark:#79B8FF">[]</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="16"><div class="code-ln-n" data-line-number="16"></div></td>
+        <td class="code-ln-code" data-line-number="16"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">        ;</span><span style="color:#E36209;--shiki-dark:#FFAB70">   Char</span><span style="color:#D73A49;--shiki-dark:#F97583"> ==</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> '\n'</span><span style="color:#D73A49;--shiki-dark:#F97583">      -></span><span style="color:#E36209;--shiki-dark:#FFAB70"> Line</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> = </span><span style="color:#005CC5;--shiki-dark:#79B8FF">[]</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="17"><div class="code-ln-n" data-line-number="17"></div></td>
+        <td class="code-ln-code" data-line-number="17"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">        ;</span><span style="color:#E36209;--shiki-dark:#FFAB70">   Line</span><span style="color:#D73A49;--shiki-dark:#F97583"> =</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> [</span><span style="color:#E36209;--shiki-dark:#FFAB70">Char</span><span style="color:#24292E;--shiki-dark:#E1E4E8">|</span><span style="color:#E36209;--shiki-dark:#FFAB70">Rest</span><span style="color:#24292E;--shiki-dark:#E1E4E8">],</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="18"><div class="code-ln-n" data-line-number="18"></div></td>
+        <td class="code-ln-code" data-line-number="18"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">            read_line(</span><span style="color:#E36209;--shiki-dark:#FFAB70">Stream</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">Rest</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="19"><div class="code-ln-n" data-line-number="19"></div></td>
+        <td class="code-ln-code" data-line-number="19"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">        )</span><span style="color:#D73A49;--shiki-dark:#F97583">.</span></span></td>
+      </tr></tbody></table>43:["$","pre",null,{"className":"language-prolog pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$51"}}]}]
+52:T25c3,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
+        <td class="code-ln-code" data-line-number="1"><span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">check_letter</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#E36209;--shiki-dark:#FFAB70">Grid</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">Y</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">X</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">Letter</span><span style="color:#24292E;--shiki-dark:#E1E4E8">) </span><span style="color:#D73A49;--shiki-dark:#F97583">:-</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="2"><div class="code-ln-n" data-line-number="2"></div></td>
+        <td class="code-ln-code" data-line-number="2"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">            cell(</span><span style="color:#E36209;--shiki-dark:#FFAB70">Grid</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">Y</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">X</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">Letter</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)</span><span style="color:#D73A49;--shiki-dark:#F97583">.</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="3"><div class="code-ln-n" data-line-number="3"></div></td>
+        <td class="code-ln-code" data-line-number="3"><span class="line"></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="4"><div class="code-ln-n" data-line-number="4"></div></td>
+        <td class="code-ln-code" data-line-number="4"><span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">find_x</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#E36209;--shiki-dark:#FFAB70">Grid</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">Occurrences</span><span style="color:#24292E;--shiki-dark:#E1E4E8">) </span><span style="color:#D73A49;--shiki-dark:#F97583">:-</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="5"><div class="code-ln-n" data-line-number="5"></div></td>
+        <td class="code-ln-code" data-line-number="5"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    grid_size(</span><span style="color:#E36209;--shiki-dark:#FFAB70">Grid</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">Height</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">Width</span><span style="color:#24292E;--shiki-dark:#E1E4E8">),</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="6"><div class="code-ln-n" data-line-number="6"></div></td>
+        <td class="code-ln-code" data-line-number="6"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">    findall</span><span style="color:#24292E;--shiki-dark:#E1E4E8">((</span><span style="color:#E36209;--shiki-dark:#FFAB70">X</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span><span style="color:#E36209;--shiki-dark:#FFAB70">Y</span><span style="color:#24292E;--shiki-dark:#E1E4E8">),</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="7"><div class="code-ln-n" data-line-number="7"></div></td>
+        <td class="code-ln-code" data-line-number="7"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">      ( </span><span style="color:#005CC5;--shiki-dark:#79B8FF">between</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#005CC5;--shiki-dark:#79B8FF">1</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">Height</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">Y</span><span style="color:#24292E;--shiki-dark:#E1E4E8">),</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="8"><div class="code-ln-n" data-line-number="8"></div></td>
+        <td class="code-ln-code" data-line-number="8"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">        between</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#005CC5;--shiki-dark:#79B8FF">1</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">Width</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">X</span><span style="color:#24292E;--shiki-dark:#E1E4E8">),</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="9"><div class="code-ln-n" data-line-number="9"></div></td>
+        <td class="code-ln-code" data-line-number="9"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">        check_letter(</span><span style="color:#E36209;--shiki-dark:#FFAB70">Grid</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">Y</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">X</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#005CC5;--shiki-dark:#79B8FF">'X'</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="10"><div class="code-ln-n" data-line-number="10"></div></td>
+        <td class="code-ln-code" data-line-number="10"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">      ), </span><span style="color:#E36209;--shiki-dark:#FFAB70">Occurrences</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)</span><span style="color:#D73A49;--shiki-dark:#F97583">.</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="11"><div class="code-ln-n" data-line-number="11"></div></td>
+        <td class="code-ln-code" data-line-number="11"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">      </span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="12"><div class="code-ln-n" data-line-number="12"></div></td>
+        <td class="code-ln-code" data-line-number="12"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">?- read_grid('example.txt', Grid), find_x(Grid, Occurences).</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="13"><div class="code-ln-n" data-line-number="13"></div></td>
+        <td class="code-ln-code" data-line-number="13"><span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">Occurences</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> = [(</span><span style="color:#005CC5;--shiki-dark:#79B8FF">5</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#005CC5;--shiki-dark:#79B8FF">1</span><span style="color:#24292E;--shiki-dark:#E1E4E8">), (</span><span style="color:#005CC5;--shiki-dark:#79B8FF">6</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#005CC5;--shiki-dark:#79B8FF">1</span><span style="color:#24292E;--shiki-dark:#E1E4E8">), (</span><span style="color:#005CC5;--shiki-dark:#79B8FF">5</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#005CC5;--shiki-dark:#79B8FF">2</span><span style="color:#24292E;--shiki-dark:#E1E4E8">), (</span><span style="color:#005CC5;--shiki-dark:#79B8FF">3</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#005CC5;--shiki-dark:#79B8FF">3</span><span style="color:#24292E;--shiki-dark:#E1E4E8">), (</span><span style="color:#005CC5;--shiki-dark:#79B8FF">5</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#005CC5;--shiki-dark:#79B8FF">3</span><span style="color:#24292E;--shiki-dark:#E1E4E8">), (</span><span style="color:#005CC5;--shiki-dark:#79B8FF">10</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#005CC5;--shiki-dark:#79B8FF">4</span><span style="color:#24292E;--shiki-dark:#E1E4E8">), (</span><span style="color:#005CC5;--shiki-dark:#79B8FF">1</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#005CC5;--shiki-dark:#79B8FF">5</span><span style="color:#24292E;--shiki-dark:#E1E4E8">), (</span><span style="color:#005CC5;--shiki-dark:#79B8FF">7</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#005CC5;--shiki-dark:#79B8FF">5</span><span style="color:#24292E;--shiki-dark:#E1E4E8">), (</span><span style="color:#D73A49;--shiki-dark:#F97583">.</span><span style="color:#24292E;--shiki-dark:#E1E4E8">.., ...)|...]</span></span></td>
+      </tr></tbody></table>44:["$","pre",null,{"className":"language-prolog pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$52"}}]}]
+53:T1524,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
+        <td class="code-ln-code" data-line-number="1"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">?- between(1, 10, X).</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="2"><div class="code-ln-n" data-line-number="2"></div></td>
+        <td class="code-ln-code" data-line-number="2"><span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">   X</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> = </span><span style="color:#005CC5;--shiki-dark:#79B8FF">1</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="3"><div class="code-ln-n" data-line-number="3"></div></td>
+        <td class="code-ln-code" data-line-number="3"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">;  </span><span style="color:#E36209;--shiki-dark:#FFAB70">X</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> = </span><span style="color:#005CC5;--shiki-dark:#79B8FF">2</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="4"><div class="code-ln-n" data-line-number="4"></div></td>
+        <td class="code-ln-code" data-line-number="4"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">;  </span><span style="color:#E36209;--shiki-dark:#FFAB70">X</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> = </span><span style="color:#005CC5;--shiki-dark:#79B8FF">3</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="5"><div class="code-ln-n" data-line-number="5"></div></td>
+        <td class="code-ln-code" data-line-number="5"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">;  </span><span style="color:#E36209;--shiki-dark:#FFAB70">X</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> = </span><span style="color:#005CC5;--shiki-dark:#79B8FF">4</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="6"><div class="code-ln-n" data-line-number="6"></div></td>
+        <td class="code-ln-code" data-line-number="6"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">;  </span><span style="color:#E36209;--shiki-dark:#FFAB70">X</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> = </span><span style="color:#005CC5;--shiki-dark:#79B8FF">5</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="7"><div class="code-ln-n" data-line-number="7"></div></td>
+        <td class="code-ln-code" data-line-number="7"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">;  </span><span style="color:#E36209;--shiki-dark:#FFAB70">X</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> = </span><span style="color:#005CC5;--shiki-dark:#79B8FF">6</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="8"><div class="code-ln-n" data-line-number="8"></div></td>
+        <td class="code-ln-code" data-line-number="8"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">;  </span><span style="color:#E36209;--shiki-dark:#FFAB70">X</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> = </span><span style="color:#005CC5;--shiki-dark:#79B8FF">7</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="9"><div class="code-ln-n" data-line-number="9"></div></td>
+        <td class="code-ln-code" data-line-number="9"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">;  </span><span style="color:#E36209;--shiki-dark:#FFAB70">X</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> = </span><span style="color:#005CC5;--shiki-dark:#79B8FF">8</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="10"><div class="code-ln-n" data-line-number="10"></div></td>
+        <td class="code-ln-code" data-line-number="10"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">;  </span><span style="color:#E36209;--shiki-dark:#FFAB70">X</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> = </span><span style="color:#005CC5;--shiki-dark:#79B8FF">9</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="11"><div class="code-ln-n" data-line-number="11"></div></td>
+        <td class="code-ln-code" data-line-number="11"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">;  </span><span style="color:#E36209;--shiki-dark:#FFAB70">X</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> = </span><span style="color:#005CC5;--shiki-dark:#79B8FF">10</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="12"><div class="code-ln-n" data-line-number="12"></div></td>
+        <td class="code-ln-code" data-line-number="12"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">;  </span><span style="color:#005CC5;--shiki-dark:#79B8FF">false</span><span style="color:#D73A49;--shiki-dark:#F97583">.</span></span></td>
+      </tr></tbody></table>45:["$","pre",null,{"className":"language-prolog pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$53"}}]}]
+54:T3ce4,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
+        <td class="code-ln-code" data-line-number="1"><span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">directions</span><span style="color:#24292E;--shiki-dark:#E1E4E8">([ (-</span><span style="color:#005CC5;--shiki-dark:#79B8FF">1</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,-</span><span style="color:#005CC5;--shiki-dark:#79B8FF">1</span><span style="color:#24292E;--shiki-dark:#E1E4E8">), (-</span><span style="color:#005CC5;--shiki-dark:#79B8FF">1</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span><span style="color:#005CC5;--shiki-dark:#79B8FF">0</span><span style="color:#24292E;--shiki-dark:#E1E4E8">), (-</span><span style="color:#005CC5;--shiki-dark:#79B8FF">1</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span><span style="color:#005CC5;--shiki-dark:#79B8FF">1</span><span style="color:#24292E;--shiki-dark:#E1E4E8">),</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="2"><div class="code-ln-n" data-line-number="2"></div></td>
+        <td class="code-ln-code" data-line-number="2"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">             ( </span><span style="color:#005CC5;--shiki-dark:#79B8FF">0</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> -</span><span style="color:#005CC5;--shiki-dark:#79B8FF">1</span><span style="color:#24292E;--shiki-dark:#E1E4E8">),         ( </span><span style="color:#005CC5;--shiki-dark:#79B8FF">0</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span><span style="color:#005CC5;--shiki-dark:#79B8FF">1</span><span style="color:#24292E;--shiki-dark:#E1E4E8">),</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="3"><div class="code-ln-n" data-line-number="3"></div></td>
+        <td class="code-ln-code" data-line-number="3"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">             ( </span><span style="color:#005CC5;--shiki-dark:#79B8FF">1</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,-</span><span style="color:#005CC5;--shiki-dark:#79B8FF">1</span><span style="color:#24292E;--shiki-dark:#E1E4E8">), ( </span><span style="color:#005CC5;--shiki-dark:#79B8FF">1</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span><span style="color:#005CC5;--shiki-dark:#79B8FF">0</span><span style="color:#24292E;--shiki-dark:#E1E4E8">), ( </span><span style="color:#005CC5;--shiki-dark:#79B8FF">1</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span><span style="color:#005CC5;--shiki-dark:#79B8FF">1</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)])</span><span style="color:#D73A49;--shiki-dark:#F97583">.</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="4"><div class="code-ln-n" data-line-number="4"></div></td>
+        <td class="code-ln-code" data-line-number="4"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">             </span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="5"><div class="code-ln-n" data-line-number="5"></div></td>
+        <td class="code-ln-code" data-line-number="5"><span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">check_word</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#005CC5;--shiki-dark:#79B8FF">_</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#005CC5;--shiki-dark:#79B8FF">_</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#005CC5;--shiki-dark:#79B8FF">_</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#005CC5;--shiki-dark:#79B8FF">_</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#005CC5;--shiki-dark:#79B8FF">_</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#005CC5;--shiki-dark:#79B8FF">[]</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)</span><span style="color:#D73A49;--shiki-dark:#F97583">.</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="6"><div class="code-ln-n" data-line-number="6"></div></td>
+        <td class="code-ln-code" data-line-number="6"><span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">check_word</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#E36209;--shiki-dark:#FFAB70">Grid</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">Y</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">X</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">MoveY</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">MoveX</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, [</span><span style="color:#E36209;--shiki-dark:#FFAB70">Letter</span><span style="color:#24292E;--shiki-dark:#E1E4E8">|</span><span style="color:#E36209;--shiki-dark:#FFAB70">Rest</span><span style="color:#24292E;--shiki-dark:#E1E4E8">]) </span><span style="color:#D73A49;--shiki-dark:#F97583">:-</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="7"><div class="code-ln-n" data-line-number="7"></div></td>
+        <td class="code-ln-code" data-line-number="7"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">            cell(</span><span style="color:#E36209;--shiki-dark:#FFAB70">Grid</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">Y</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">X</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">Letter</span><span style="color:#24292E;--shiki-dark:#E1E4E8">),</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="8"><div class="code-ln-n" data-line-number="8"></div></td>
+        <td class="code-ln-code" data-line-number="8"><span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">            NewY</span><span style="color:#D73A49;--shiki-dark:#F97583"> is </span><span style="color:#E36209;--shiki-dark:#FFAB70">Y</span><span style="color:#D73A49;--shiki-dark:#F97583"> +</span><span style="color:#E36209;--shiki-dark:#FFAB70"> MoveY</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="9"><div class="code-ln-n" data-line-number="9"></div></td>
+        <td class="code-ln-code" data-line-number="9"><span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">            NewX</span><span style="color:#D73A49;--shiki-dark:#F97583"> is </span><span style="color:#E36209;--shiki-dark:#FFAB70">X</span><span style="color:#D73A49;--shiki-dark:#F97583"> +</span><span style="color:#E36209;--shiki-dark:#FFAB70"> MoveX</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="10"><div class="code-ln-n" data-line-number="10"></div></td>
+        <td class="code-ln-code" data-line-number="10"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">            check_word(</span><span style="color:#E36209;--shiki-dark:#FFAB70">Grid</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">NewY</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">NewX</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">MoveY</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">MoveX</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">Rest</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)</span><span style="color:#D73A49;--shiki-dark:#F97583">.</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="11"><div class="code-ln-n" data-line-number="11"></div></td>
+        <td class="code-ln-code" data-line-number="11"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">            </span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="12"><div class="code-ln-n" data-line-number="12"></div></td>
+        <td class="code-ln-code" data-line-number="12"><span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">part1</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#E36209;--shiki-dark:#FFAB70">Grid</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">Word</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">Count</span><span style="color:#24292E;--shiki-dark:#E1E4E8">) </span><span style="color:#D73A49;--shiki-dark:#F97583">:-</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="13"><div class="code-ln-n" data-line-number="13"></div></td>
+        <td class="code-ln-code" data-line-number="13"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    grid_size(</span><span style="color:#E36209;--shiki-dark:#FFAB70">Grid</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">Height</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">Width</span><span style="color:#24292E;--shiki-dark:#E1E4E8">),</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="14"><div class="code-ln-n" data-line-number="14"></div></td>
+        <td class="code-ln-code" data-line-number="14"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    directions(</span><span style="color:#E36209;--shiki-dark:#FFAB70">Directions</span><span style="color:#24292E;--shiki-dark:#E1E4E8">),</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="15"><div class="code-ln-n" data-line-number="15"></div></td>
+        <td class="code-ln-code" data-line-number="15"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">    findall</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#005CC5;--shiki-dark:#79B8FF">1</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="16"><div class="code-ln-n" data-line-number="16"></div></td>
+        <td class="code-ln-code" data-line-number="16"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">      ( </span><span style="color:#005CC5;--shiki-dark:#79B8FF">between</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#005CC5;--shiki-dark:#79B8FF">1</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">Height</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">Y</span><span style="color:#24292E;--shiki-dark:#E1E4E8">),</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="17"><div class="code-ln-n" data-line-number="17"></div></td>
+        <td class="code-ln-code" data-line-number="17"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">        between</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#005CC5;--shiki-dark:#79B8FF">1</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">Width</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">X</span><span style="color:#24292E;--shiki-dark:#E1E4E8">),</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="18"><div class="code-ln-n" data-line-number="18"></div></td>
+        <td class="code-ln-code" data-line-number="18"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">        member((</span><span style="color:#E36209;--shiki-dark:#FFAB70">MoveY</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">MoveX</span><span style="color:#24292E;--shiki-dark:#E1E4E8">), </span><span style="color:#E36209;--shiki-dark:#FFAB70">Directions</span><span style="color:#24292E;--shiki-dark:#E1E4E8">),</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="19"><div class="code-ln-n" data-line-number="19"></div></td>
+        <td class="code-ln-code" data-line-number="19"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">        check_word(</span><span style="color:#E36209;--shiki-dark:#FFAB70">Grid</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">Y</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">X</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">MoveY</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">MoveX</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">Word</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="20"><div class="code-ln-n" data-line-number="20"></div></td>
+        <td class="code-ln-code" data-line-number="20"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">      ), </span><span style="color:#E36209;--shiki-dark:#FFAB70">Occurrences</span><span style="color:#24292E;--shiki-dark:#E1E4E8">),</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="21"><div class="code-ln-n" data-line-number="21"></div></td>
+        <td class="code-ln-code" data-line-number="21"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">    length</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#E36209;--shiki-dark:#FFAB70">Occurrences</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">Count</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)</span><span style="color:#D73A49;--shiki-dark:#F97583">.</span></span></td>
+      </tr></tbody></table>46:["$","pre",null,{"className":"language-prolog pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$54"}}]}]
+55:T4937,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
+        <td class="code-ln-code" data-line-number="1"><span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">valid_diagonal</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#005CC5;--shiki-dark:#79B8FF">'M'</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#005CC5;--shiki-dark:#79B8FF">'A'</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#005CC5;--shiki-dark:#79B8FF">'S'</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)</span><span style="color:#D73A49;--shiki-dark:#F97583">.</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="2"><div class="code-ln-n" data-line-number="2"></div></td>
+        <td class="code-ln-code" data-line-number="2"><span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">valid_diagonal</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#005CC5;--shiki-dark:#79B8FF">'S'</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#005CC5;--shiki-dark:#79B8FF">'A'</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#005CC5;--shiki-dark:#79B8FF">'M'</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)</span><span style="color:#D73A49;--shiki-dark:#F97583">.</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="3"><div class="code-ln-n" data-line-number="3"></div></td>
+        <td class="code-ln-code" data-line-number="3"><span class="line"></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="4"><div class="code-ln-n" data-line-number="4"></div></td>
+        <td class="code-ln-code" data-line-number="4"><span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">part2</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#E36209;--shiki-dark:#FFAB70">Grid</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">Count</span><span style="color:#24292E;--shiki-dark:#E1E4E8">) </span><span style="color:#D73A49;--shiki-dark:#F97583">:-</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="5"><div class="code-ln-n" data-line-number="5"></div></td>
+        <td class="code-ln-code" data-line-number="5"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    grid_size(</span><span style="color:#E36209;--shiki-dark:#FFAB70">Grid</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">Height</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">Width</span><span style="color:#24292E;--shiki-dark:#E1E4E8">),</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="6"><div class="code-ln-n" data-line-number="6"></div></td>
+        <td class="code-ln-code" data-line-number="6"><span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">    LowY</span><span style="color:#D73A49;--shiki-dark:#F97583"> is </span><span style="color:#005CC5;--shiki-dark:#79B8FF">2</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="7"><div class="code-ln-n" data-line-number="7"></div></td>
+        <td class="code-ln-code" data-line-number="7"><span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">    LowX</span><span style="color:#D73A49;--shiki-dark:#F97583"> is </span><span style="color:#005CC5;--shiki-dark:#79B8FF">2</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="8"><div class="code-ln-n" data-line-number="8"></div></td>
+        <td class="code-ln-code" data-line-number="8"><span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">    HighY</span><span style="color:#D73A49;--shiki-dark:#F97583"> is </span><span style="color:#E36209;--shiki-dark:#FFAB70">Height</span><span style="color:#D73A49;--shiki-dark:#F97583"> -</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 1</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="9"><div class="code-ln-n" data-line-number="9"></div></td>
+        <td class="code-ln-code" data-line-number="9"><span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">    HighX</span><span style="color:#D73A49;--shiki-dark:#F97583"> is </span><span style="color:#E36209;--shiki-dark:#FFAB70">Width</span><span style="color:#D73A49;--shiki-dark:#F97583"> -</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 1</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="10"><div class="code-ln-n" data-line-number="10"></div></td>
+        <td class="code-ln-code" data-line-number="10"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">    findall</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#005CC5;--shiki-dark:#79B8FF">1</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="11"><div class="code-ln-n" data-line-number="11"></div></td>
+        <td class="code-ln-code" data-line-number="11"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">      ( </span><span style="color:#005CC5;--shiki-dark:#79B8FF">between</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#E36209;--shiki-dark:#FFAB70">LowY</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">HighY</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">Y</span><span style="color:#24292E;--shiki-dark:#E1E4E8">),</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="12"><div class="code-ln-n" data-line-number="12"></div></td>
+        <td class="code-ln-code" data-line-number="12"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">        between</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#E36209;--shiki-dark:#FFAB70">LowX</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">HighX</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">X</span><span style="color:#24292E;--shiki-dark:#E1E4E8">),</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="13"><div class="code-ln-n" data-line-number="13"></div></td>
+        <td class="code-ln-code" data-line-number="13"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">        cell(</span><span style="color:#E36209;--shiki-dark:#FFAB70">Grid</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">Y</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">X</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#005CC5;--shiki-dark:#79B8FF">'A'</span><span style="color:#24292E;--shiki-dark:#E1E4E8">),</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="14"><div class="code-ln-n" data-line-number="14"></div></td>
+        <td class="code-ln-code" data-line-number="14"><span class="line"></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="15"><div class="code-ln-n" data-line-number="15"></div></td>
+        <td class="code-ln-code" data-line-number="15"><span class="line"><span style="color:#6A737D;--shiki-dark:#6A737D">        % Check main diagonal (top–left and bottom–right)</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="16"><div class="code-ln-n" data-line-number="16"></div></td>
+        <td class="code-ln-code" data-line-number="16"><span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">        TopLeftY</span><span style="color:#D73A49;--shiki-dark:#F97583"> is </span><span style="color:#E36209;--shiki-dark:#FFAB70">Y</span><span style="color:#D73A49;--shiki-dark:#F97583"> -</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 1</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">TopLeftX</span><span style="color:#D73A49;--shiki-dark:#F97583"> is </span><span style="color:#E36209;--shiki-dark:#FFAB70">X</span><span style="color:#D73A49;--shiki-dark:#F97583"> -</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 1</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="17"><div class="code-ln-n" data-line-number="17"></div></td>
+        <td class="code-ln-code" data-line-number="17"><span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">        BottomRightY</span><span style="color:#D73A49;--shiki-dark:#F97583"> is </span><span style="color:#E36209;--shiki-dark:#FFAB70">Y</span><span style="color:#D73A49;--shiki-dark:#F97583"> +</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 1</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">BottomRightX</span><span style="color:#D73A49;--shiki-dark:#F97583"> is </span><span style="color:#E36209;--shiki-dark:#FFAB70">X</span><span style="color:#D73A49;--shiki-dark:#F97583"> +</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 1</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="18"><div class="code-ln-n" data-line-number="18"></div></td>
+        <td class="code-ln-code" data-line-number="18"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">        cell(</span><span style="color:#E36209;--shiki-dark:#FFAB70">Grid</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">TopLeftY</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">TopLeftX</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">TopLeftLetter</span><span style="color:#24292E;--shiki-dark:#E1E4E8">),</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="19"><div class="code-ln-n" data-line-number="19"></div></td>
+        <td class="code-ln-code" data-line-number="19"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">        cell(</span><span style="color:#E36209;--shiki-dark:#FFAB70">Grid</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">BottomRightY</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">BottomRightX</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">BottomRightLetter</span><span style="color:#24292E;--shiki-dark:#E1E4E8">),</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="20"><div class="code-ln-n" data-line-number="20"></div></td>
+        <td class="code-ln-code" data-line-number="20"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">        valid_diagonal(</span><span style="color:#E36209;--shiki-dark:#FFAB70">TopLeftLetter</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#005CC5;--shiki-dark:#79B8FF">'A'</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">BottomRightLetter</span><span style="color:#24292E;--shiki-dark:#E1E4E8">),</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="21"><div class="code-ln-n" data-line-number="21"></div></td>
+        <td class="code-ln-code" data-line-number="21"><span class="line"></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="22"><div class="code-ln-n" data-line-number="22"></div></td>
+        <td class="code-ln-code" data-line-number="22"><span class="line"><span style="color:#6A737D;--shiki-dark:#6A737D">        % Check anti–diagonal (top–right and bottom–left)</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="23"><div class="code-ln-n" data-line-number="23"></div></td>
+        <td class="code-ln-code" data-line-number="23"><span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">        TopRightY</span><span style="color:#D73A49;--shiki-dark:#F97583"> is </span><span style="color:#E36209;--shiki-dark:#FFAB70">Y</span><span style="color:#D73A49;--shiki-dark:#F97583"> -</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 1</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">TopRightX</span><span style="color:#D73A49;--shiki-dark:#F97583"> is </span><span style="color:#E36209;--shiki-dark:#FFAB70">X</span><span style="color:#D73A49;--shiki-dark:#F97583"> +</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 1</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="24"><div class="code-ln-n" data-line-number="24"></div></td>
+        <td class="code-ln-code" data-line-number="24"><span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">        BottomLeftY</span><span style="color:#D73A49;--shiki-dark:#F97583"> is </span><span style="color:#E36209;--shiki-dark:#FFAB70">Y</span><span style="color:#D73A49;--shiki-dark:#F97583"> +</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 1</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">BottomLeftX</span><span style="color:#D73A49;--shiki-dark:#F97583"> is </span><span style="color:#E36209;--shiki-dark:#FFAB70">X</span><span style="color:#D73A49;--shiki-dark:#F97583"> -</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 1</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="25"><div class="code-ln-n" data-line-number="25"></div></td>
+        <td class="code-ln-code" data-line-number="25"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">        cell(</span><span style="color:#E36209;--shiki-dark:#FFAB70">Grid</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">TopRightY</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">TopRightX</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">TopRightLetter</span><span style="color:#24292E;--shiki-dark:#E1E4E8">),</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="26"><div class="code-ln-n" data-line-number="26"></div></td>
+        <td class="code-ln-code" data-line-number="26"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">        cell(</span><span style="color:#E36209;--shiki-dark:#FFAB70">Grid</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">BottomLeftY</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">BottomLeftX</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">BottomLeftLetter</span><span style="color:#24292E;--shiki-dark:#E1E4E8">),</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="27"><div class="code-ln-n" data-line-number="27"></div></td>
+        <td class="code-ln-code" data-line-number="27"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">        valid_diagonal(</span><span style="color:#E36209;--shiki-dark:#FFAB70">TopRightLetter</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#005CC5;--shiki-dark:#79B8FF">'A'</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">BottomLeftLetter</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="28"><div class="code-ln-n" data-line-number="28"></div></td>
+        <td class="code-ln-code" data-line-number="28"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">      ), </span><span style="color:#E36209;--shiki-dark:#FFAB70">Occurrences</span><span style="color:#24292E;--shiki-dark:#E1E4E8">),</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="29"><div class="code-ln-n" data-line-number="29"></div></td>
+        <td class="code-ln-code" data-line-number="29"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">    length</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#E36209;--shiki-dark:#FFAB70">Occurrences</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">Count</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)</span><span style="color:#D73A49;--shiki-dark:#F97583">.</span></span></td>
+      </tr></tbody></table>47:["$","pre",null,{"className":"language-prolog pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$55"}}]}]
+56:T642,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
+        <td class="code-ln-code" data-line-number="1"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">?- main('example.txt').</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="2"><div class="code-ln-n" data-line-number="2"></div></td>
+        <td class="code-ln-code" data-line-number="2"><span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">Part</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 1</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#005CC5;--shiki-dark:#79B8FF">16</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="3"><div class="code-ln-n" data-line-number="3"></div></td>
+        <td class="code-ln-code" data-line-number="3"><span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">Part</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 2</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: </span><span style="color:#005CC5;--shiki-dark:#79B8FF">9</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="4"><div class="code-ln-n" data-line-number="4"></div></td>
+        <td class="code-ln-code" data-line-number="4"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">true</span></span></td>
+      </tr></tbody></table>48:["$","pre",null,{"className":"language-prolog pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$56"}}]}]

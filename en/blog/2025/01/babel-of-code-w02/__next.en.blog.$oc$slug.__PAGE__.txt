@@ -1,0 +1,338 @@
+1:"$Sreact.fragment"
+2:"/_next/static/chunks/3y26xv8sa1dt0.js"
+3:I[53695,["$2"],"AsciiArtLogger"]
+4:I[96406,["$2"],"ThemeProvider"]
+5:I[10085,["$2"],"ThemeSwitcher"]
+6:I[8333,["$2"],"AvailableWidth"]
+7:I[11585,["$2"],"default"]
+8:I[97478,["$2"],"default"]
+9:"/_next/static/chunks/3kcn8wz7h7dvj.js"
+a:I[29306,["$2","$9"],"default"]
+15:"/_next/static/chunks/0jybh4guong1_.js"
+16:"/_next/static/chunks/1pfxd-dkulr8v.js"
+17:I[21864,["$2","$15","$16"],""]
+18:"AsciiBorderedMdx"
+19:I[9655,["$2","$15","$16"],"$18"]
+33:"ViewportBoundary"
+34:I[44259,["$2"],"$33"]
+35:"MetadataBoundary"
+36:I[44259,["$2"],"$35"]
+37:"$Sreact.suspense"
+38:I[19565,["$2"],"IconMark"]
+:HL["/_next/static/chunks/0n0ucni11z82d.css","style"]
+c:X
+f:X
+f:C
+14:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$1","c",{"children":[["$","div",null,{"className":"flex justify-center","children":["$","div",null,{"className":"ascii-art nfo-pre","children":[["$","div",null,{"className":"header-component","children":"                              _______._ _\n                      _ _.___/       |\n                         |           |\n                         |           |\n                       __-___    _____   _____\r\n              ____-___/ __   .__/_ ._/__(_  ..)\r\n             /... |  ..../   .| ) ./_  ./ ..(/\r\n             \\_   .\\ .../     .\\_ / __./\\_   \\ ang3lo/ex0dus\r\n             (   )  |../ ^xhb  ..|.| /___\\ .. .)\r\n          Oo. \\_____|_/_________|_|________/_/ .oO\n                         :           |\n    - -----andrzej-_ ____\\_____|----_|_____________'-lichnerowicz-------- -\n                         :           |\n .     p e r s o n a l ! |    #1     | wEBPAGE                            .\n . _         - --------- |  - -- -   | ------- -                         _  .\n-:-\\-\\-------------------|- -     - -|-----------------------------------\\-\\-:\n |                      _|___________|_                                      |\n |                       :           :                                       |"}],[["$","div",null,{"className":"whitespace-pre font-mono","children":" |                                                                           |"}],["$","div",null,{"className":"post-back-link","children":[" | ",["$","$L17",null,{"href":"/","className":"hover:underline","prefetch":false,"style":{"flex":1,"minWidth":0,"textDecoration":"none","color":"inherit"},"children":"<< back"}]," |"]}],["$","div",null,{"className":"whitespace-pre font-mono","children":" |                                                                           |"}]],["$","$L19",null,{"children":[["$","header",null,{"className":"post-header","children":[["$","h1",null,{"className":"post-title","children":["# ","Solving AoC in Watcom C/C++"]}],["$","time",null,{"className":"post-date","dateTime":"2025-01-12T23:54:15+02:00","children":["[ ","2025.01.12"," ]"]}]]}],[["$","div",null,{"className":"JaoSHW_markdown-heading","children":[["$","span",null,{"className":"JaoSHW_markdown-hash","children":["##"," "]}],["$","span",null,{"children":"Prerequisites"}]]}],"\n",["$","ol",null,{"children":["\n",["$","li",null,{"children":["$","a",null,{"href":"https://archive.org/details/Watcom_C_11.0","children":"Watcom C/C++ 11.0 Installer"}]}],"\n"]}],"\n",["$","div",null,{"className":"JaoSHW_markdown-heading","children":[["$","span",null,{"className":"JaoSHW_markdown-hash","children":["##"," "]}],["$","span",null,{"children":"Installation"}]]}],"\n",["$","p",null,{"children":["This time, we have a CD, folks -- 650MiB of data. Some serious business indeed. And only this, as I never really found any proper manual for WATCOM. Only ",["$","a",null,{"href":"https://openwatcom.org/ftp/archive/11.0c/docs/cprogguide.pdf","children":"Programmers Guide"}]," that skims over basic compilation syntax for all the combinations of 16/32 bit and different pmode extenders."]}],"\n","$L1a","\n","$L1b","\n",["","$L1c"],"\n","$L1d","\n","$L1e","\n","$L1f","\n",["","$L20"],"\n","$L21","\n",["","$L22"],"\n","$L23","\n","$L24","\n","$L25","\n","$L26","\n","$L27","\n","$L28","\n","$L29","\n","$L2a","\n","$L2b","\n","$L2c"]]}],"$14:0:1:d:r:props:children:0:props:children:props:children:1","$L2d"]}]}],["$L2e","$L2f","$L30"],"$L31"]}],"p":"$@32","v":null,"s":"$c"}}]]
+12:[["children",{"s":{"n":"slug","t":"oc","k":"2025/01/babel-of-code-w02","s":[]},"h":96,"d":{"r":["$","$1","c",{"children":[null,["$","$L7",null,{"parallelRouterKey":"children","template":["$","$L8",null,{}]}]]}],"p":"$@13","v":"$f","s":"$c"},"c":"$Q14"}]]
+10:[["children",{"s":"blog","h":96,"d":{"r":["$","$1","c",{"children":[null,["$","$L7",null,{"parallelRouterKey":"children","template":["$","$L8",null,{}]}]]}],"p":"$@11","v":"$f","s":"$c"},"c":"$Q12"}]]
+d:[["children",{"s":"en","h":96,"d":{"r":["$","$1","c",{"children":[null,["$","$L7",null,{"parallelRouterKey":"children","template":["$","$L8",null,{}]}]]}],"p":"$@e","v":"$f","s":"$c"},"c":"$Q10"}]]
+0:{"t":{"t":{"s":"","h":80,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0n0ucni11z82d.css","precedence":"next"}],["$","script","script-0",{"src":"/_next/static/chunks/3y26xv8sa1dt0.js","async":true}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","link",null,{"rel":"icon","href":"/favicon.ico","sizes":"any"}],["$","link",null,{"rel":"apple-touch-icon","href":"/apple-touch-icon.png"}]]}],["$","body",null,{"children":[["$","$L3",null,{}],["$","$L4",null,{"children":[["$","$L5",null,{}],["$","$L6",null,{"children":["$","$L7",null,{"parallelRouterKey":"children","template":["$","$L8",null,{}],"notFound":[["$","$La",null,{}],[]]}]}]]}]]}]]}]]}],"p":"$@b","v":null,"s":"$c"},"c":"$Qd"},"h":{"r":["$","$1","h",{"children":[null,["$","$L34",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","$L36",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$37",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Solving AoC in Watcom C/C++ | @unjello blog"}],["$","meta","1",{"name":"description","content":"Let's implement 2024/day/2 Advent of Code puzzle in Watcom C/C++. BabelOfCode is low key. The goal is to solve each Advent of Code puzzle in a different language."}],["$","meta","2",{"property":"og:title","content":"Solving AoC in Watcom C/C++ | @unjello blog"}],["$","meta","3",{"property":"og:description","content":"Let's implement 2024/day/2 Advent of Code puzzle in Watcom C/C++. BabelOfCode is low key. The goal is to solve each Advent of Code puzzle in a different language."}],["$","meta","4",{"property":"og:url","content":"https://andrzej.lichnerowicz.pl/en/blog/2025/01/babel-of-code-w02/"}],["$","meta","5",{"property":"og:image","content":"https://andrzej.lichnerowicz.pl/images/2025/01/babel-of-code-w02/watcom.png"}],["$","meta","6",{"property":"og:image:width","content":"1200"}],["$","meta","7",{"property":"og:image:height","content":"630"}],["$","meta","8",{"property":"og:image:alt","content":"Solving AoC in Watcom C/C++ | @unjello blog"}],["$","meta","9",{"property":"og:type","content":"article"}],["$","meta","10",{"property":"article:published_time","content":"2025-01-12T23:54:15+02:00"}],["$","meta","11",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","12",{"name":"twitter:title","content":"Solving AoC in Watcom C/C++ | @unjello blog"}],["$","meta","13",{"name":"twitter:description","content":"Let's implement 2024/day/2 Advent of Code puzzle in Watcom C/C++. BabelOfCode is low key. The goal is to solve each Advent of Code puzzle in a different language."}],["$","meta","14",{"name":"twitter:image","content":"https://andrzej.lichnerowicz.pl/images/2025/01/babel-of-code-w02/watcom.png"}],["$","link","15",{"rel":"shortcut icon","href":"/favicon.ico"}],["$","link","16",{"rel":"icon","href":"/favicon.ico","sizes":"any"}],["$","link","17",{"rel":"apple-touch-icon","href":"/apple-touch-icon.png"}],["$","$L38","18",{}]]}]}],null]}],null]}],"p":"$@39","v":null,"s":"$c"}},"a":"$@3a","u":"$@3b","b":"eTjHqyI6G4EuxW6ACICD-"}
+3c:I[65255,["$2","$15","$16"],"Figure"]
+43:I[44259,["$2"],"OutletBoundary"]
+:HL["/_next/static/chunks/3ert6xgjkvepg.css","style"]
+1a:["$","$L3c",null,{"src":"./watcom.png","alt":"Screenshot of DosBox-X with Watcom C/C++ 11.0 installation in progress.","caption":"Watcom C/C++ 11 installation","attribution":"Screenshot by author.","postSlug":"/blog/2025/01/babel-of-code-w02"}]
+1b:["$","p",null,{"children":["The installer modifies ",["$","code",null,{"children":"CONFIG.SYS"}]," and ",["$","code",null,{"children":"AUTOEXEC.BAT"}],". The former doesn’t really affect us -- ",["$","code",null,{"children":"CONFIG.SYS"}]," is managed by DosBox anyway. As for ",["$","code",null,{"children":"AUTOEXEC.BAT"}],", we’re pulling its contents into a copy of a Makefile from the previous day:"]}]
+3d:Tca1,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
+        <td class="code-ln-code" data-line-number="1"><span class="line"><span>$(EXE): $(CPP_SRC)</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="2"><div class="code-ln-n" data-line-number="2"></div></td>
+        <td class="code-ln-code" data-line-number="2"><span class="line"><span>	@$(DOSBOX_CMD) -silent -nolog -nogui \</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="3"><div class="code-ln-n" data-line-number="3"></div></td>
+        <td class="code-ln-code" data-line-number="3"><span class="line"><span>	    -c "MOUNT C $(ROOT_DIR)" \</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="4"><div class="code-ln-n" data-line-number="4"></div></td>
+        <td class="code-ln-code" data-line-number="4"><span class="line"><span>        -c "MOUNT $(TOOLS_MOUNT) $(TOOLS_INSTALL_PATH)" \</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="5"><div class="code-ln-n" data-line-number="5"></div></td>
+        <td class="code-ln-code" data-line-number="5"><span class="line"><span>        -c "PATH $(TOOLS_MOUNT):\WATC11\BINW;%path%" \</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="6"><div class="code-ln-n" data-line-number="6"></div></td>
+        <td class="code-ln-code" data-line-number="6"><span class="line"><span>        -c "SET INCLUDE=$(TOOLS_MOUNT):\WATC11\H" \</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="7"><div class="code-ln-n" data-line-number="7"></div></td>
+        <td class="code-ln-code" data-line-number="7"><span class="line"><span>        -c "SET WATCOM=$(TOOLS_MOUNT):\WATC11" \</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="8"><div class="code-ln-n" data-line-number="8"></div></td>
+        <td class="code-ln-code" data-line-number="8"><span class="line"><span>        -c "SET EDPATH=$(TOOLS_MOUNT):\WATC11\EDDAT" \</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="9"><div class="code-ln-n" data-line-number="9"></div></td>
+        <td class="code-ln-code" data-line-number="9"><span class="line"><span>        -c "C:" \</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="10"><div class="code-ln-n" data-line-number="10"></div></td>
+        <td class="code-ln-code" data-line-number="10"><span class="line"><span>        -c "WCL DAY02.CPP > WCL.TXT" \</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="11"><div class="code-ln-n" data-line-number="11"></div></td>
+        <td class="code-ln-code" data-line-number="11"><span class="line"><span>        -c "exit" 2>/dev/null</span></span></td>
+      </tr></tbody></table>1c:["$","pre",null,{"className":"language-plaintext pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$3d"}}]}]
+1d:["$","p",null,{"children":"A quick side note: Watcom is really dear to my heart. I did my first serious software with it -- first demoscene code and first OSS tools. I don’t remember what happened to my very first Watcom version (10.0), but I still have the 11.0 CD after multiple apartment changes and other adventures in adulthood. I got the CD from the only place I could back then, the Russian flea market, because -- let’s face it -- there were hardly any official software channels in the mid-90s. I keep that CD as a lucky charm. I still remember being shocked to discover the turtle graphic wasn’t an official Sybase cover..."}]
+1e:["$","$L3c",null,{"src":"./watcom11.jpeg","alt":"A photo of CD case and a disk with Watcom C++ 11","caption":"Russian edition of Watcom C/C++ 11","attribution":"Photo by author.","postSlug":"/blog/2025/01/babel-of-code-w02"}]
+1f:["$","p",null,{"children":"Now that the tools are installed, let’s do a quick sanity-check compilation:"}]
+3e:T116f,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
+        <td class="code-ln-code" data-line-number="1"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">#include</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> &#x3C;stdio.h></span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="2"><div class="code-ln-n" data-line-number="2"></div></td>
+        <td class="code-ln-code" data-line-number="2"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">#include</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> &#x3C;iostream></span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="3"><div class="code-ln-n" data-line-number="3"></div></td>
+        <td class="code-ln-code" data-line-number="3"><span class="line"></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="4"><div class="code-ln-n" data-line-number="4"></div></td>
+        <td class="code-ln-code" data-line-number="4"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">int</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> main</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#D73A49;--shiki-dark:#F97583">int</span><span style="color:#E36209;--shiki-dark:#FFAB70"> argc</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#D73A49;--shiki-dark:#F97583">char**</span><span style="color:#E36209;--shiki-dark:#FFAB70"> argv</span><span style="color:#24292E;--shiki-dark:#E1E4E8">) {</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="5"><div class="code-ln-n" data-line-number="5"></div></td>
+        <td class="code-ln-code" data-line-number="5"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">    if</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (argc </span><span style="color:#D73A49;--shiki-dark:#F97583">&#x3C;</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 1</span><span style="color:#24292E;--shiki-dark:#E1E4E8">) {</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="6"><div class="code-ln-n" data-line-number="6"></div></td>
+        <td class="code-ln-code" data-line-number="6"><span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">        std</span><span style="color:#24292E;--shiki-dark:#E1E4E8">::cout </span><span style="color:#D73A49;--shiki-dark:#F97583">&#x3C;&#x3C;</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> "Usage: day02 &#x3C;file></span><span style="color:#005CC5;--shiki-dark:#79B8FF">\n</span><span style="color:#032F62;--shiki-dark:#9ECBFF">"</span><span style="color:#24292E;--shiki-dark:#E1E4E8">;</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="7"><div class="code-ln-n" data-line-number="7"></div></td>
+        <td class="code-ln-code" data-line-number="7"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">        return</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 1</span><span style="color:#24292E;--shiki-dark:#E1E4E8">;</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="8"><div class="code-ln-n" data-line-number="8"></div></td>
+        <td class="code-ln-code" data-line-number="8"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    }</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="9"><div class="code-ln-n" data-line-number="9"></div></td>
+        <td class="code-ln-code" data-line-number="9"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">    return</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 0</span><span style="color:#24292E;--shiki-dark:#E1E4E8">;</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="10"><div class="code-ln-n" data-line-number="10"></div></td>
+        <td class="code-ln-code" data-line-number="10"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">}</span></span></td>
+      </tr></tbody></table>20:["$","pre",null,{"className":"language-cpp pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$3e"}}]}]
+21:["$","p",null,{"children":"and..."}]
+3f:Tf0d,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
+        <td class="code-ln-code" data-line-number="1"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">Watcom C/C++16 Compile and Link Utility Version 11.0</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="2"><div class="code-ln-n" data-line-number="2"></div></td>
+        <td class="code-ln-code" data-line-number="2"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">Copyright by Sybase, Inc., and its subsidiaries, 1988, 1997.</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="3"><div class="code-ln-n" data-line-number="3"></div></td>
+        <td class="code-ln-code" data-line-number="3"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">All rights reserved.  Watcom is a trademark of Sybase, Inc.</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="4"><div class="code-ln-n" data-line-number="4"></div></td>
+        <td class="code-ln-code" data-line-number="4"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">       wpp DAY02.CPP </span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="5"><div class="code-ln-n" data-line-number="5"></div></td>
+        <td class="code-ln-code" data-line-number="5"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">Watcom C++16 Optimizing Compiler  Version 11.0 </span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="6"><div class="code-ln-n" data-line-number="6"></div></td>
+        <td class="code-ln-code" data-line-number="6"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">Copyright by Sybase, Inc., and its subsidiaries, 1989, 1996.</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="7"><div class="code-ln-n" data-line-number="7"></div></td>
+        <td class="code-ln-code" data-line-number="7"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">All rights reserved.  Watcom is a trademark of Sybase, Inc.</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="8"><div class="code-ln-n" data-line-number="8"></div></td>
+        <td class="code-ln-code" data-line-number="8"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">DAY02.CPP(6): Error! E241: col(14) 'class std' has </span><span style="color:#D73A49;--shiki-dark:#F97583">not</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> been declared </span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="9"><div class="code-ln-n" data-line-number="9"></div></td>
+        <td class="code-ln-code" data-line-number="9"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">DAY02.CPP: </span><span style="color:#005CC5;--shiki-dark:#79B8FF">10</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> lines, included 1922, no warnings, </span><span style="color:#005CC5;--shiki-dark:#79B8FF">1</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> error</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="10"><div class="code-ln-n" data-line-number="10"></div></td>
+        <td class="code-ln-code" data-line-number="10"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">Error: Compiler returned a bad status compiling 'DAY02.CPP'</span></span></td>
+      </tr></tbody></table>22:["$","pre",null,{"className":"language-cmd pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$3f"}}]}]
+23:["$","p",null,{"children":["Oops… guess who forgot that Watcom 11.0 was released in 1997 -- a whole year before the standard got, well, standardized. The ",["$","a",null,{"href":"https://en.wikipedia.org/wiki/Standard_Template_Library","children":"STL"}]," already existed (created around 1994 and released to the public domain by Hewlett Packard about a year later), but there was no ",["$","code",null,{"children":"std"}]," namespace in Watcom 11.0. Muscle memory got me. After some thought, I decided to avoid the STL altogether. I’ve never really been a fan anyway (except maybe ",["$","code",null,{"children":"std::vector"}],", which is nice, and ",["$","code",null,{"children":"std::optional"}],", though that’s mostly because it was authored by a ",["$","a",null,{"href":"https://akrzemi1.wordpress.com/","children":"a friend"}]," I admire)."]}]
+24:["$","div",null,{"className":"JaoSHW_markdown-heading","children":[["$","span",null,{"className":"JaoSHW_markdown-hash","children":["##"," "]}],["$","span",null,{"children":"The Puzzle"}]]}]
+25:["$","p",null,{"children":["And now, the ",["$","a",null,{"href":"https://adventofcode.com/2024/day/2","children":"puzzle"}],". The first part looks pretty straightforward: just a simple loop. ",["$","code",null,{"children":"fscanf"}]," consumes all the whitespace, and for the example data, it’s just regular 5-digit columns."]}]
+40:T3c30,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
+        <td class="code-ln-code" data-line-number="1"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">bool</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> is_safe_level</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#D73A49;--shiki-dark:#F97583">int*</span><span style="color:#E36209;--shiki-dark:#FFAB70"> v</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#D73A49;--shiki-dark:#F97583">size_t</span><span style="color:#E36209;--shiki-dark:#FFAB70"> len</span><span style="color:#24292E;--shiki-dark:#E1E4E8">) {</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="2"><div class="code-ln-n" data-line-number="2"></div></td>
+        <td class="code-ln-code" data-line-number="2"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">    if</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (len </span><span style="color:#D73A49;--shiki-dark:#F97583">&#x3C;</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 2</span><span style="color:#24292E;--shiki-dark:#E1E4E8">) </span><span style="color:#D73A49;--shiki-dark:#F97583">return</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> false</span><span style="color:#24292E;--shiki-dark:#E1E4E8">;</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="3"><div class="code-ln-n" data-line-number="3"></div></td>
+        <td class="code-ln-code" data-line-number="3"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">    int</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> sign </span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> get_sign</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(v[</span><span style="color:#005CC5;--shiki-dark:#79B8FF">0</span><span style="color:#24292E;--shiki-dark:#E1E4E8">], v[</span><span style="color:#005CC5;--shiki-dark:#79B8FF">1</span><span style="color:#24292E;--shiki-dark:#E1E4E8">]);</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="4"><div class="code-ln-n" data-line-number="4"></div></td>
+        <td class="code-ln-code" data-line-number="4"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">    for</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (</span><span style="color:#D73A49;--shiki-dark:#F97583">int</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> i </span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 0</span><span style="color:#24292E;--shiki-dark:#E1E4E8">; i </span><span style="color:#D73A49;--shiki-dark:#F97583">&#x3C;</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> len </span><span style="color:#D73A49;--shiki-dark:#F97583">-</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 1</span><span style="color:#24292E;--shiki-dark:#E1E4E8">; i</span><span style="color:#D73A49;--shiki-dark:#F97583">++</span><span style="color:#24292E;--shiki-dark:#E1E4E8">) {</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="5"><div class="code-ln-n" data-line-number="5"></div></td>
+        <td class="code-ln-code" data-line-number="5"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">        const</span><span style="color:#D73A49;--shiki-dark:#F97583"> int</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> a </span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> v[i];</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="6"><div class="code-ln-n" data-line-number="6"></div></td>
+        <td class="code-ln-code" data-line-number="6"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">        const</span><span style="color:#D73A49;--shiki-dark:#F97583"> int</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> b </span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> v[i</span><span style="color:#D73A49;--shiki-dark:#F97583">+</span><span style="color:#005CC5;--shiki-dark:#79B8FF">1</span><span style="color:#24292E;--shiki-dark:#E1E4E8">];</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="7"><div class="code-ln-n" data-line-number="7"></div></td>
+        <td class="code-ln-code" data-line-number="7"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">        const</span><span style="color:#D73A49;--shiki-dark:#F97583"> int</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> diff </span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> abs</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(a </span><span style="color:#D73A49;--shiki-dark:#F97583">-</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> b);</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="8"><div class="code-ln-n" data-line-number="8"></div></td>
+        <td class="code-ln-code" data-line-number="8"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">        const</span><span style="color:#D73A49;--shiki-dark:#F97583"> int</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> s </span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> get_sign</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(a, b);</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="9"><div class="code-ln-n" data-line-number="9"></div></td>
+        <td class="code-ln-code" data-line-number="9"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">        if</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (s </span><span style="color:#D73A49;--shiki-dark:#F97583">!=</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> sign </span><span style="color:#D73A49;--shiki-dark:#F97583">||</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> diff </span><span style="color:#D73A49;--shiki-dark:#F97583">></span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 3</span><span style="color:#D73A49;--shiki-dark:#F97583"> ||</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> diff </span><span style="color:#D73A49;--shiki-dark:#F97583">&#x3C;</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 1</span><span style="color:#24292E;--shiki-dark:#E1E4E8">) </span><span style="color:#D73A49;--shiki-dark:#F97583">return</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> false</span><span style="color:#24292E;--shiki-dark:#E1E4E8">;</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="10"><div class="code-ln-n" data-line-number="10"></div></td>
+        <td class="code-ln-code" data-line-number="10"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    }</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="11"><div class="code-ln-n" data-line-number="11"></div></td>
+        <td class="code-ln-code" data-line-number="11"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">    return</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> true</span><span style="color:#24292E;--shiki-dark:#E1E4E8">;</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="12"><div class="code-ln-n" data-line-number="12"></div></td>
+        <td class="code-ln-code" data-line-number="12"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">}</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="13"><div class="code-ln-n" data-line-number="13"></div></td>
+        <td class="code-ln-code" data-line-number="13"><span class="line"></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="14"><div class="code-ln-n" data-line-number="14"></div></td>
+        <td class="code-ln-code" data-line-number="14"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">int</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> main</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#D73A49;--shiki-dark:#F97583">int</span><span style="color:#E36209;--shiki-dark:#FFAB70"> argc</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#D73A49;--shiki-dark:#F97583">char**</span><span style="color:#E36209;--shiki-dark:#FFAB70"> argv</span><span style="color:#24292E;--shiki-dark:#E1E4E8">) {</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="15"><div class="code-ln-n" data-line-number="15"></div></td>
+        <td class="code-ln-code" data-line-number="15"><span class="line"><span style="color:#6A737D;--shiki-dark:#6A737D">    // [...]</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="16"><div class="code-ln-n" data-line-number="16"></div></td>
+        <td class="code-ln-code" data-line-number="16"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">    int</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> c;</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="17"><div class="code-ln-n" data-line-number="17"></div></td>
+        <td class="code-ln-code" data-line-number="17"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">    int</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> v[</span><span style="color:#005CC5;--shiki-dark:#79B8FF">5</span><span style="color:#24292E;--shiki-dark:#E1E4E8">];</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="18"><div class="code-ln-n" data-line-number="18"></div></td>
+        <td class="code-ln-code" data-line-number="18"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">    do</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> {</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="19"><div class="code-ln-n" data-line-number="19"></div></td>
+        <td class="code-ln-code" data-line-number="19"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">        for</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (i </span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 0</span><span style="color:#24292E;--shiki-dark:#E1E4E8">; i </span><span style="color:#D73A49;--shiki-dark:#F97583">&#x3C;</span><span style="color:#D73A49;--shiki-dark:#F97583"> sizeof</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(v)</span><span style="color:#D73A49;--shiki-dark:#F97583">/sizeof</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(v[</span><span style="color:#005CC5;--shiki-dark:#79B8FF">0</span><span style="color:#24292E;--shiki-dark:#E1E4E8">]); i</span><span style="color:#D73A49;--shiki-dark:#F97583">++</span><span style="color:#24292E;--shiki-dark:#E1E4E8">) c</span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#6F42C1;--shiki-dark:#B392F0">fscanf</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(fp, </span><span style="color:#032F62;--shiki-dark:#9ECBFF">"</span><span style="color:#005CC5;--shiki-dark:#79B8FF">%d</span><span style="color:#032F62;--shiki-dark:#9ECBFF">"</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#D73A49;--shiki-dark:#F97583">&#x26;</span><span style="color:#24292E;--shiki-dark:#E1E4E8">v[i]);</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="20"><div class="code-ln-n" data-line-number="20"></div></td>
+        <td class="code-ln-code" data-line-number="20"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">        if</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (c </span><span style="color:#D73A49;--shiki-dark:#F97583">==</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> EOF) </span><span style="color:#D73A49;--shiki-dark:#F97583">break</span><span style="color:#24292E;--shiki-dark:#E1E4E8">;</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="21"><div class="code-ln-n" data-line-number="21"></div></td>
+        <td class="code-ln-code" data-line-number="21"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    </span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="22"><div class="code-ln-n" data-line-number="22"></div></td>
+        <td class="code-ln-code" data-line-number="22"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">        if</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (</span><span style="color:#6F42C1;--shiki-dark:#B392F0">is_safe_level</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(v, </span><span style="color:#D73A49;--shiki-dark:#F97583">sizeof</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(v)</span><span style="color:#D73A49;--shiki-dark:#F97583">/sizeof</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(v[</span><span style="color:#005CC5;--shiki-dark:#79B8FF">0</span><span style="color:#24292E;--shiki-dark:#E1E4E8">]))) part1_count</span><span style="color:#D73A49;--shiki-dark:#F97583">++</span><span style="color:#24292E;--shiki-dark:#E1E4E8">;</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="23"><div class="code-ln-n" data-line-number="23"></div></td>
+        <td class="code-ln-code" data-line-number="23"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    } </span><span style="color:#D73A49;--shiki-dark:#F97583">while</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#D73A49;--shiki-dark:#F97583">!</span><span style="color:#6F42C1;--shiki-dark:#B392F0">feof</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(fp));</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="24"><div class="code-ln-n" data-line-number="24"></div></td>
+        <td class="code-ln-code" data-line-number="24"><span class="line"><span style="color:#6A737D;--shiki-dark:#6A737D">    // [...]</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="25"><div class="code-ln-n" data-line-number="25"></div></td>
+        <td class="code-ln-code" data-line-number="25"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">}</span></span></td>
+      </tr></tbody></table>26:["",["$","pre",null,{"className":"language-cpp pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$40"}}]}]]
+27:["$","p",null,{"children":["It works flawlessly with the example. But when I tried it on the real puzzle data, I got the wrong number. After closer inspection, the total records came out to ",["$","code",null,{"children":"1315"}]," when it should have been around ",["$","code",null,{"children":"1000"}],". It turned out that production data doesn’t always have 5 columns; the records vary in length. I decided to read the whole line first, then use ",["$","code",null,{"children":"sscanf"}]," on that string."]}]
+28:["$","p",null,{"children":["There is one catch: I need to parse digits until EOF, but I don’t know how many there will be. That means I have to do it one by one. Like the rest of its family, ",["$","code",null,{"children":"sscanf"}]," returns the number of records parsed, so ",["$","code",null,{"children":"sscanf(buf, \"%d\", &number)"}]," will return ",["$","code",null,{"children":"1"}],". The question is, how do I advance the string pointer after reading one integer? It turns out ",["$","code",null,{"children":"%n"}]," returns the number of characters read so far. That’s exactly what I need:"]}]
+41:T2726,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
+        <td class="code-ln-code" data-line-number="1"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">int</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> c;</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="2"><div class="code-ln-n" data-line-number="2"></div></td>
+        <td class="code-ln-code" data-line-number="2"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">int</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> v[</span><span style="color:#005CC5;--shiki-dark:#79B8FF">30</span><span style="color:#24292E;--shiki-dark:#E1E4E8">];</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="3"><div class="code-ln-n" data-line-number="3"></div></td>
+        <td class="code-ln-code" data-line-number="3"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">char</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> line[</span><span style="color:#005CC5;--shiki-dark:#79B8FF">1024</span><span style="color:#24292E;--shiki-dark:#E1E4E8">];</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="4"><div class="code-ln-n" data-line-number="4"></div></td>
+        <td class="code-ln-code" data-line-number="4"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">char</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> newline;</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="5"><div class="code-ln-n" data-line-number="5"></div></td>
+        <td class="code-ln-code" data-line-number="5"><span class="line"></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="6"><div class="code-ln-n" data-line-number="6"></div></td>
+        <td class="code-ln-code" data-line-number="6"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">int</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> part1_count </span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 0</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, total </span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 0</span><span style="color:#24292E;--shiki-dark:#E1E4E8">;</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="7"><div class="code-ln-n" data-line-number="7"></div></td>
+        <td class="code-ln-code" data-line-number="7"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">while</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#6F42C1;--shiki-dark:#B392F0">fgets</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(line, sizeof line, fp) </span><span style="color:#D73A49;--shiki-dark:#F97583">!=</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> NULL</span><span style="color:#24292E;--shiki-dark:#E1E4E8">) {</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="8"><div class="code-ln-n" data-line-number="8"></div></td>
+        <td class="code-ln-code" data-line-number="8"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">    int</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> count </span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 0</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, characters_read </span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 0</span><span style="color:#24292E;--shiki-dark:#E1E4E8">;</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="9"><div class="code-ln-n" data-line-number="9"></div></td>
+        <td class="code-ln-code" data-line-number="9"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">    char</span><span style="color:#D73A49;--shiki-dark:#F97583"> *</span><span style="color:#24292E;--shiki-dark:#E1E4E8">buf </span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> line;</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="10"><div class="code-ln-n" data-line-number="10"></div></td>
+        <td class="code-ln-code" data-line-number="10"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">    while</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> ((c </span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> sscanf</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(buf, </span><span style="color:#032F62;--shiki-dark:#9ECBFF">"</span><span style="color:#005CC5;--shiki-dark:#79B8FF">%d%n</span><span style="color:#032F62;--shiki-dark:#9ECBFF">"</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#D73A49;--shiki-dark:#F97583">&#x26;</span><span style="color:#24292E;--shiki-dark:#E1E4E8">v[count], </span><span style="color:#D73A49;--shiki-dark:#F97583">&#x26;</span><span style="color:#24292E;--shiki-dark:#E1E4E8">characters_read)) </span><span style="color:#D73A49;--shiki-dark:#F97583">!=</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> EOF </span><span style="color:#D73A49;--shiki-dark:#F97583">&#x26;&#x26;</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> c </span><span style="color:#D73A49;--shiki-dark:#F97583">></span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 0</span><span style="color:#24292E;--shiki-dark:#E1E4E8">) {</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="11"><div class="code-ln-n" data-line-number="11"></div></td>
+        <td class="code-ln-code" data-line-number="11"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">        buf </span><span style="color:#D73A49;--shiki-dark:#F97583">+=</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> characters_read;</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="12"><div class="code-ln-n" data-line-number="12"></div></td>
+        <td class="code-ln-code" data-line-number="12"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">        count</span><span style="color:#D73A49;--shiki-dark:#F97583">++</span><span style="color:#24292E;--shiki-dark:#E1E4E8">;</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="13"><div class="code-ln-n" data-line-number="13"></div></td>
+        <td class="code-ln-code" data-line-number="13"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    }</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="14"><div class="code-ln-n" data-line-number="14"></div></td>
+        <td class="code-ln-code" data-line-number="14"><span class="line"></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="15"><div class="code-ln-n" data-line-number="15"></div></td>
+        <td class="code-ln-code" data-line-number="15"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">    if</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (</span><span style="color:#6F42C1;--shiki-dark:#B392F0">is_safe_level</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(v, count)) part1_count</span><span style="color:#D73A49;--shiki-dark:#F97583">++</span><span style="color:#24292E;--shiki-dark:#E1E4E8">;</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="16"><div class="code-ln-n" data-line-number="16"></div></td>
+        <td class="code-ln-code" data-line-number="16"><span class="line"></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="17"><div class="code-ln-n" data-line-number="17"></div></td>
+        <td class="code-ln-code" data-line-number="17"><span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">    memset</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(line, sizeof line, </span><span style="color:#005CC5;--shiki-dark:#79B8FF">0</span><span style="color:#24292E;--shiki-dark:#E1E4E8">);</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="18"><div class="code-ln-n" data-line-number="18"></div></td>
+        <td class="code-ln-code" data-line-number="18"><span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">    memset</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(v, sizeof v, </span><span style="color:#005CC5;--shiki-dark:#79B8FF">0</span><span style="color:#24292E;--shiki-dark:#E1E4E8">);</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="19"><div class="code-ln-n" data-line-number="19"></div></td>
+        <td class="code-ln-code" data-line-number="19"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    total</span><span style="color:#D73A49;--shiki-dark:#F97583">++</span><span style="color:#24292E;--shiki-dark:#E1E4E8">;</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="20"><div class="code-ln-n" data-line-number="20"></div></td>
+        <td class="code-ln-code" data-line-number="20"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">}</span></span></td>
+      </tr></tbody></table>29:["",["$","pre",null,{"className":"language-cpp pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$41"}}]}]]
+2a:["$","p",null,{"children":["Okay, now it works. On to the second part of the puzzle, which is a little trickier. I tried to be clever by just summing a sign function: ",["$","code",null,{"children":"sign = a == b ? 0 : ((a < b) ? -1 : 1)"}],", expecting that if I got one less than the total number of elements in the array, that would reveal the solution. So if for a 5-element array I get ",["$","code",null,{"children":"-5"}],", for the array with one element removed I should get ",["$","code",null,{"children":"-4"}]," if it's safe... Turns out that didn't match up. Since the number of columns is small, I ended up using an ",["$","span",null,{"className":"katex","children":[["$","span",null,{"className":"katex-mathml","children":["$","math",null,{"xmlns":"http://www.w3.org/1998/Math/MathML","children":["$","semantics",null,{"children":[["$","mrow",null,{"children":[["$","mi",null,{"children":"O"}],["$","mo",null,{"stretchy":"false","children":"("}],["$","msup",null,{"children":[["$","mi",null,{"children":"N"}],["$","mn",null,{"children":"2"}]]}],["$","mo",null,{"stretchy":"false","children":")"}]]}],["$","annotation",null,{"encoding":"application/x-tex","children":"O(N^2)"}]]}]}]}],["$","span",null,{"className":"katex-html","aria-hidden":"true","children":["$","span",null,{"className":"base","children":[["$","span",null,{"className":"strut","style":{"height":"1.0641em","verticalAlign":"-0.25em"}}],["$","span",null,{"className":"mord mathnormal","style":{"marginRight":"0.0278em"},"children":"O"}],["$","span",null,{"className":"mopen","children":"("}],["$","span",null,{"className":"mord","children":[["$","span",null,{"className":"mord mathnormal","style":{"marginRight":"0.109em"},"children":"N"}],["$","span",null,{"className":"msupsub","children":["$","span",null,{"className":"vlist-t","children":["$","span",null,{"className":"vlist-r","children":["$","span",null,{"className":"vlist","style":{"height":"0.8141em"},"children":["$","span",null,{"style":{"top":"-3.063em","marginRight":"0.05em"},"children":[["$","span",null,{"className":"pstrut","style":{"height":"2.7em"}}],["$","span",null,{"className":"sizing reset-size6 size3 mtight","children":["$","span",null,{"className":"mord mtight","children":"2"}]}]]}]}]}]}]}]]}],["$","span",null,{"className":"mclose","children":")"}]]}]}]]}]," approach: test all permutations by removing one element at a time."]}]
+42:T1ed1,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
+        <td class="code-ln-code" data-line-number="1"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">bool</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> is_safe_level_dampener</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#D73A49;--shiki-dark:#F97583">int</span><span style="color:#D73A49;--shiki-dark:#F97583"> *</span><span style="color:#E36209;--shiki-dark:#FFAB70">v</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#D73A49;--shiki-dark:#F97583">size_t</span><span style="color:#E36209;--shiki-dark:#FFAB70"> len</span><span style="color:#24292E;--shiki-dark:#E1E4E8">) {</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="2"><div class="code-ln-n" data-line-number="2"></div></td>
+        <td class="code-ln-code" data-line-number="2"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">    if</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (</span><span style="color:#6F42C1;--shiki-dark:#B392F0">is_safe_level</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(v, len)) </span><span style="color:#D73A49;--shiki-dark:#F97583">return</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> true</span><span style="color:#24292E;--shiki-dark:#E1E4E8">;</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="3"><div class="code-ln-n" data-line-number="3"></div></td>
+        <td class="code-ln-code" data-line-number="3"><span class="line"></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="4"><div class="code-ln-n" data-line-number="4"></div></td>
+        <td class="code-ln-code" data-line-number="4"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">    int</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> modified_v[</span><span style="color:#005CC5;--shiki-dark:#79B8FF">30</span><span style="color:#24292E;--shiki-dark:#E1E4E8">];</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="5"><div class="code-ln-n" data-line-number="5"></div></td>
+        <td class="code-ln-code" data-line-number="5"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">    for</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (</span><span style="color:#D73A49;--shiki-dark:#F97583">int</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> ex </span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> 0</span><span style="color:#24292E;--shiki-dark:#E1E4E8">; ex </span><span style="color:#D73A49;--shiki-dark:#F97583">&#x3C;</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> len; ex</span><span style="color:#D73A49;--shiki-dark:#F97583">++</span><span style="color:#24292E;--shiki-dark:#E1E4E8">) {</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="6"><div class="code-ln-n" data-line-number="6"></div></td>
+        <td class="code-ln-code" data-line-number="6"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">        for</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (</span><span style="color:#D73A49;--shiki-dark:#F97583">int</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> i</span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#005CC5;--shiki-dark:#79B8FF">0</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, j</span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#005CC5;--shiki-dark:#79B8FF">0</span><span style="color:#24292E;--shiki-dark:#E1E4E8">; i </span><span style="color:#D73A49;--shiki-dark:#F97583">&#x3C;</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> len; i</span><span style="color:#D73A49;--shiki-dark:#F97583">++</span><span style="color:#24292E;--shiki-dark:#E1E4E8">) {</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="7"><div class="code-ln-n" data-line-number="7"></div></td>
+        <td class="code-ln-code" data-line-number="7"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">            if</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (i </span><span style="color:#D73A49;--shiki-dark:#F97583">!=</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> ex) modified_v[j</span><span style="color:#D73A49;--shiki-dark:#F97583">++</span><span style="color:#24292E;--shiki-dark:#E1E4E8">] </span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> v[i];</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="8"><div class="code-ln-n" data-line-number="8"></div></td>
+        <td class="code-ln-code" data-line-number="8"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">        }</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="9"><div class="code-ln-n" data-line-number="9"></div></td>
+        <td class="code-ln-code" data-line-number="9"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">        if</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (</span><span style="color:#6F42C1;--shiki-dark:#B392F0">is_safe_level</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(modified_v, len</span><span style="color:#D73A49;--shiki-dark:#F97583">-</span><span style="color:#005CC5;--shiki-dark:#79B8FF">1</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)) </span><span style="color:#D73A49;--shiki-dark:#F97583">return</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> true</span><span style="color:#24292E;--shiki-dark:#E1E4E8">;</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="10"><div class="code-ln-n" data-line-number="10"></div></td>
+        <td class="code-ln-code" data-line-number="10"><span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">        memset</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(v, sizeof v, </span><span style="color:#005CC5;--shiki-dark:#79B8FF">0</span><span style="color:#24292E;--shiki-dark:#E1E4E8">);</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="11"><div class="code-ln-n" data-line-number="11"></div></td>
+        <td class="code-ln-code" data-line-number="11"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    }</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="12"><div class="code-ln-n" data-line-number="12"></div></td>
+        <td class="code-ln-code" data-line-number="12"><span class="line"></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="13"><div class="code-ln-n" data-line-number="13"></div></td>
+        <td class="code-ln-code" data-line-number="13"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">    return</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> false</span><span style="color:#24292E;--shiki-dark:#E1E4E8">;</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="14"><div class="code-ln-n" data-line-number="14"></div></td>
+        <td class="code-ln-code" data-line-number="14"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">}</span></span></td>
+      </tr></tbody></table>2b:["",["$","pre",null,{"className":"language-cpp pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$42"}}]}]]
+2c:["$","p",null,{"children":"And that’s it -- correct answer in hand. Can’t wait for next week... which happens to be tomorrow!"}]
+2d:["$","div",null,{"children":[" \\__                    --> ",["$","a",null,{"href":"http://andrzej.lichnerowicz.pl","target":"_blank","rel":"noopener noreferrer","title":"andrzej.lichnerowicz.pl","className":"link","style":{"cursor":"pointer"},"children":"andrzej.lichnerowicz.pl"}]," <--                    __/\n   //                                                                     \\\\\n  // ------------------------                     ------------------------ \\\\\n '~~~~~~~~~~~~~~~~~~~~~~~~~// ------       ------ \\\\~~~~~~~~~~~~~~~~~~~~~~~~~`\n                          '~~~~~~~//       \\\\~~~~~~~`\n                                 // ------- \\\\\n                                '~~~~~~~~~~~~~`\n      "]}]
+2e:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/3ert6xgjkvepg.css","precedence":"next"}]
+2f:["$","script","script-0",{"src":"/_next/static/chunks/0jybh4guong1_.js","async":true}]
+30:["$","script","script-1",{"src":"/_next/static/chunks/1pfxd-dkulr8v.js","async":true}]
+31:["$","$L43",null,{"children":["$","$37",null,{"name":"Next.MetadataOutlet","children":"$@44"}]}]
+c:300
+44:null
+3b:true
+c:C
+3a:0
+13:"$undefined"
+11:"$undefined"
+e:"$undefined"
+b:"$undefined"
+39:"$undefined"
+32:"$undefined"

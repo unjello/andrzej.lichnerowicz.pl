@@ -1,0 +1,1 @@
+(globalThis.TURBOPACK||(globalThis.TURBOPACK=[])).push(["object"==typeof document?document.currentScript:void 0,29306,t=>{"use strict";var e=t.i(56615);t.s(["default",0,function(){return(0,e.jsx)("iframe",{src:"/not-found.html",style:{border:"none",position:"fixed",width:"100vw",height:"100vh",top:0,left:0},title:"404 - Page Not Found"})}])}]);

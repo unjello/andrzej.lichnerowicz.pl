@@ -1,0 +1,816 @@
+1:"$Sreact.fragment"
+2:"/_next/static/chunks/3y26xv8sa1dt0.js"
+3:I[53695,["$2"],"AsciiArtLogger"]
+4:I[96406,["$2"],"ThemeProvider"]
+5:I[10085,["$2"],"ThemeSwitcher"]
+6:I[8333,["$2"],"AvailableWidth"]
+7:I[11585,["$2"],"default"]
+8:I[97478,["$2"],"default"]
+9:"/_next/static/chunks/3kcn8wz7h7dvj.js"
+a:I[29306,["$2","$9"],"default"]
+14:"/_next/static/chunks/0jybh4guong1_.js"
+15:"/_next/static/chunks/1pfxd-dkulr8v.js"
+16:I[21864,["$2","$14","$15"],""]
+17:"AsciiBorderedMdx"
+18:I[9655,["$2","$14","$15"],"$17"]
+46:"ViewportBoundary"
+47:I[44259,["$2"],"$46"]
+48:"MetadataBoundary"
+49:I[44259,["$2"],"$48"]
+4a:"$Sreact.suspense"
+4b:I[19565,["$2"],"IconMark"]
+:HL["/_next/static/chunks/0n0ucni11z82d.css","style"]
+c:X
+f:X
+f:C
+13:T665,                              _______._ _
+                      _ _.___/       |
+                         |           |
+                         |           |
+     █ ▀▀▀▀▀▀███ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀ █▀▀▀▀▀▀███ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█
+     █ █▀▀▀▀▀███ █▀▀▀▀▀███ █▀▀▀▀▀███ █▀▀▀▀▀▀▀▀▀ █ angelo!  █▀▀▀▀▀▀███ ▄
+     █ █████ ███ █████ ███ █████ ███ ██████ ███ ██████ ███ ██████ ███ █
+     ▄ ▀▀▀▀▀ ▀▀▀ ▀▀▀▀▀ ███ ▀▀▀▀▀ ███ ▀▀▀▀▀▀ ▀▀▀ ▀▀▀▀▀▀ ▀▀▀ ▀▀▀▀▀▀ ▀▀▀ █
+     ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀ ▀▀▀ ▀▀▀▀▀▀▀▀▀ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀ √m⌡
+                         :           |
+    - -----andrzej-_ ____\_____|----_|_____________'-lichnerowicz-------- -
+                         :           |
+ .     p e r s o n a l ! |    #1     | wEBPAGE                            .
+ . _         - --------- |  - -- -   | ------- -                         _  .
+-:-\-\-------------------|- -     - -|-----------------------------------\-\-:
+ |                      _|___________|_                                      |
+ |                       :           :                                       |19:T38fd,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
+        <td class="code-ln-code" data-line-number="1"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">import</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> contextlib</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="2"><div class="code-ln-n" data-line-number="2"></div></td>
+        <td class="code-ln-code" data-line-number="2"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">import</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> inspect</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="3"><div class="code-ln-n" data-line-number="3"></div></td>
+        <td class="code-ln-code" data-line-number="3"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">import</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> importlib</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="4"><div class="code-ln-n" data-line-number="4"></div></td>
+        <td class="code-ln-code" data-line-number="4"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">import</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> pathlib</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="5"><div class="code-ln-n" data-line-number="5"></div></td>
+        <td class="code-ln-code" data-line-number="5"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">import</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> sys</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="6"><div class="code-ln-n" data-line-number="6"></div></td>
+        <td class="code-ln-code" data-line-number="6"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">import</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> tempfile</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="7"><div class="code-ln-n" data-line-number="7"></div></td>
+        <td class="code-ln-code" data-line-number="7"><span class="line"></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="8"><div class="code-ln-n" data-line-number="8"></div></td>
+        <td class="code-ln-code" data-line-number="8"><span class="line"></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="9"><div class="code-ln-n" data-line-number="9"></div></td>
+        <td class="code-ln-code" data-line-number="9"><span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">@contextlib.contextmanager</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="10"><div class="code-ln-n" data-line-number="10"></div></td>
+        <td class="code-ln-code" data-line-number="10"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">def</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> wrap_fn</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(fn):</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="11"><div class="code-ln-n" data-line-number="11"></div></td>
+        <td class="code-ln-code" data-line-number="11"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    importlib.invalidate_caches()</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="12"><div class="code-ln-n" data-line-number="12"></div></td>
+        <td class="code-ln-code" data-line-number="12"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    source </span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> inspect.getsource(fn)</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="13"><div class="code-ln-n" data-line-number="13"></div></td>
+        <td class="code-ln-code" data-line-number="13"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">    with</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> tempfile.NamedTemporaryFile(</span><span style="color:#E36209;--shiki-dark:#FFAB70">suffix</span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#032F62;--shiki-dark:#9ECBFF">".py"</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">mode</span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#032F62;--shiki-dark:#9ECBFF">"w"</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">encoding</span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#032F62;--shiki-dark:#9ECBFF">"utf-8"</span><span style="color:#24292E;--shiki-dark:#E1E4E8">) </span><span style="color:#D73A49;--shiki-dark:#F97583">as</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> f:</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="14"><div class="code-ln-n" data-line-number="14"></div></td>
+        <td class="code-ln-code" data-line-number="14"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">        f.write(source)</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="15"><div class="code-ln-n" data-line-number="15"></div></td>
+        <td class="code-ln-code" data-line-number="15"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">        f.flush()</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="16"><div class="code-ln-n" data-line-number="16"></div></td>
+        <td class="code-ln-code" data-line-number="16"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">        path </span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> pathlib.Path(f.name)</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="17"><div class="code-ln-n" data-line-number="17"></div></td>
+        <td class="code-ln-code" data-line-number="17"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">        directory </span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> str</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(path.parent)</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="18"><div class="code-ln-n" data-line-number="18"></div></td>
+        <td class="code-ln-code" data-line-number="18"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">        sys.path.append(directory)</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="19"><div class="code-ln-n" data-line-number="19"></div></td>
+        <td class="code-ln-code" data-line-number="19"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">        module </span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> importlib.import_module(</span><span style="color:#005CC5;--shiki-dark:#79B8FF">str</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(path.stem))</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="20"><div class="code-ln-n" data-line-number="20"></div></td>
+        <td class="code-ln-code" data-line-number="20"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">        yield</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> getattr</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(module, func.</span><span style="color:#005CC5;--shiki-dark:#79B8FF">__name__</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="21"><div class="code-ln-n" data-line-number="21"></div></td>
+        <td class="code-ln-code" data-line-number="21"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">        sys.path.remove(directory)</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="22"><div class="code-ln-n" data-line-number="22"></div></td>
+        <td class="code-ln-code" data-line-number="22"><span class="line"></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="23"><div class="code-ln-n" data-line-number="23"></div></td>
+        <td class="code-ln-code" data-line-number="23"><span class="line"></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="24"><div class="code-ln-n" data-line-number="24"></div></td>
+        <td class="code-ln-code" data-line-number="24"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">def</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> square</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(x):</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="25"><div class="code-ln-n" data-line-number="25"></div></td>
+        <td class="code-ln-code" data-line-number="25"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">    return</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> x</span><span style="color:#D73A49;--shiki-dark:#F97583">*</span><span style="color:#24292E;--shiki-dark:#E1E4E8">x</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="26"><div class="code-ln-n" data-line-number="26"></div></td>
+        <td class="code-ln-code" data-line-number="26"><span class="line"></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="27"><div class="code-ln-n" data-line-number="27"></div></td>
+        <td class="code-ln-code" data-line-number="27"><span class="line"></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="28"><div class="code-ln-n" data-line-number="28"></div></td>
+        <td class="code-ln-code" data-line-number="28"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">context </span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> multiprocessing.get_context(</span><span style="color:#032F62;--shiki-dark:#9ECBFF">"spawn"</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="29"><div class="code-ln-n" data-line-number="29"></div></td>
+        <td class="code-ln-code" data-line-number="29"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">with</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> ProcessPoolExecutor(</span><span style="color:#E36209;--shiki-dark:#FFAB70">max_workers</span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#005CC5;--shiki-dark:#79B8FF">12</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">mp_context</span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#24292E;--shiki-dark:#E1E4E8">context) </span><span style="color:#D73A49;--shiki-dark:#F97583">as</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> executor, wrap_fn(square) </span><span style="color:#D73A49;--shiki-dark:#F97583">as</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> fn:</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="30"><div class="code-ln-n" data-line-number="30"></div></td>
+        <td class="code-ln-code" data-line-number="30"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">    for</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> sq </span><span style="color:#D73A49;--shiki-dark:#F97583">in</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> executor.map(fn, </span><span style="color:#005CC5;--shiki-dark:#79B8FF">range</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#005CC5;--shiki-dark:#79B8FF">0</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#005CC5;--shiki-dark:#79B8FF">10</span><span style="color:#24292E;--shiki-dark:#E1E4E8">))</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="31"><div class="code-ln-n" data-line-number="31"></div></td>
+        <td class="code-ln-code" data-line-number="31"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">        print</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#D73A49;--shiki-dark:#F97583">f</span><span style="color:#032F62;--shiki-dark:#9ECBFF">"</span><span style="color:#005CC5;--shiki-dark:#79B8FF">{</span><span style="color:#24292E;--shiki-dark:#E1E4E8">sq</span><span style="color:#005CC5;--shiki-dark:#79B8FF">}</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> "</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">end</span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#032F62;--shiki-dark:#9ECBFF">""</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="32"><div class="code-ln-n" data-line-number="32"></div></td>
+        <td class="code-ln-code" data-line-number="32"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">print</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#032F62;--shiki-dark:#9ECBFF">""</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)</span></span></td>
+      </tr></tbody></table>12:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$1","c",{"children":[["$","div",null,{"className":"flex justify-center","children":["$","div",null,{"className":"ascii-art nfo-pre","children":[["$","div",null,{"className":"header-component","children":"$13"}],[["$","div",null,{"className":"whitespace-pre font-mono","children":" |                                                                           |"}],["$","div",null,{"className":"post-back-link","children":[" | ",["$","$L16",null,{"href":"/","className":"hover:underline","prefetch":false,"style":{"flex":1,"minWidth":0,"textDecoration":"none","color":"inherit"},"children":"<< back"}]," |"]}],["$","div",null,{"className":"whitespace-pre font-mono","children":" |                                                                           |"}]],["$","$L18",null,{"children":[["$","header",null,{"className":"post-header","children":[["$","h1",null,{"className":"post-title","children":["# ","Multiprocessing in Jupyter Notebooks"]}],["$","time",null,{"className":"post-date","dateTime":"2024-10-13T20:01:33+02:00","children":["[ ","2024.10.13"," ]"]}]]}],[["$","div",null,{"className":"JaoSHW_markdown-heading","children":[["$","span",null,{"className":"JaoSHW_markdown-hash","children":["##"," "]}],["$","span",null,{"children":"TL;DR"}]]}],"\n",["$","p",null,{"children":"To run heavy workloads in a Jupyter Notebook, you need to take your function and store it in a temporary Python source file so it's importable as a module:"}],"\n",["",["$","pre",null,{"className":"language-python pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$19"}}]}]],"\n","$L1a","\n","$L1b","\n","$L1c","\n","$L1d","\n","$L1e","\n","$L1f","\n","$L20","\n","$L21","\n","$L22","\n","$L23","\n","$L24","\n","$L25","\n","$L26","\n","$L27","\n","$L28","\n","$L29","\n","$L2a","\n","$L2b","\n","$L2c","\n","$L2d","\n","$L2e","\n","$L2f","\n","$L30","\n","$L31","\n","$L32","\n","$L33","\n","$L34","\n","$L35","\n","$L36","\n","$L37","\n","$L38","\n","$L39","\n","$L3a","\n","$L3b","\n","$L3c","\n","$L3d","\n","$L3e","\n","$L3f"]]}],"$12:0:1:d:r:props:children:0:props:children:props:children:1","$L40"]}]}],["$L41","$L42","$L43"],"$L44"]}],"p":"$@45","v":null,"s":"$c"}}]]
+10:[["children",{"s":{"n":"slug","t":"c","k":"2024/notebook-multiprocessing","s":[]},"h":96,"d":{"r":["$","$1","c",{"children":[null,["$","$L7",null,{"parallelRouterKey":"children","template":["$","$L8",null,{}]}]]}],"p":"$@11","v":"$f","s":"$c"},"c":"$Q12"}]]
+d:[["children",{"s":"blog","h":96,"d":{"r":["$","$1","c",{"children":[null,["$","$L7",null,{"parallelRouterKey":"children","template":["$","$L8",null,{}]}]]}],"p":"$@e","v":"$f","s":"$c"},"c":"$Q10"}]]
+0:{"t":{"t":{"s":"","h":80,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0n0ucni11z82d.css","precedence":"next"}],["$","script","script-0",{"src":"/_next/static/chunks/3y26xv8sa1dt0.js","async":true}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","link",null,{"rel":"icon","href":"/favicon.ico","sizes":"any"}],["$","link",null,{"rel":"apple-touch-icon","href":"/apple-touch-icon.png"}]]}],["$","body",null,{"children":[["$","$L3",null,{}],["$","$L4",null,{"children":[["$","$L5",null,{}],["$","$L6",null,{"children":["$","$L7",null,{"parallelRouterKey":"children","template":["$","$L8",null,{}],"notFound":[["$","$La",null,{}],[]]}]}]]}]]}]]}]]}],"p":"$@b","v":null,"s":"$c"},"c":"$Qd"},"h":{"r":["$","$1","h",{"children":[null,["$","$L47",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","$L49",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$4a",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Multiprocessing in Jupyter Notebooks | @unjello blog"}],["$","meta","1",{"property":"og:title","content":"Multiprocessing in Jupyter Notebooks | @unjello blog"}],["$","meta","2",{"property":"og:url","content":"https://andrzej.lichnerowicz.pl/en/blog/2024/notebook-multiprocessing/"}],["$","meta","3",{"property":"og:image","content":"https://andrzej.lichnerowicz.pl/images/2024/notebook_multiprocessing/index/96dz0h.jpg"}],["$","meta","4",{"property":"og:image:width","content":"1200"}],["$","meta","5",{"property":"og:image:height","content":"630"}],["$","meta","6",{"property":"og:image:alt","content":"Multiprocessing in Jupyter Notebooks | @unjello blog"}],["$","meta","7",{"property":"og:type","content":"article"}],["$","meta","8",{"property":"article:published_time","content":"2024-10-13T20:01:33+02:00"}],["$","meta","9",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","10",{"name":"twitter:title","content":"Multiprocessing in Jupyter Notebooks | @unjello blog"}],["$","meta","11",{"name":"twitter:image","content":"https://andrzej.lichnerowicz.pl/images/2024/notebook_multiprocessing/index/96dz0h.jpg"}],["$","link","12",{"rel":"shortcut icon","href":"/favicon.ico"}],["$","link","13",{"rel":"icon","href":"/favicon.ico","sizes":"any"}],["$","link","14",{"rel":"apple-touch-icon","href":"/apple-touch-icon.png"}],["$","$L4b","15",{}]]}]}],null]}],null]}],"p":"$@4c","v":null,"s":"$c"}},"a":"$@4d","u":"$@4e","b":"eTjHqyI6G4EuxW6ACICD-"}
+4f:I[65255,["$2","$14","$15"],"Figure"]
+146:I[90891,["$2","$14","$15"],"Admonition"]
+1e6:I[44259,["$2"],"OutletBoundary"]
+:HL["/_next/static/chunks/3ert6xgjkvepg.css","style"]
+1a:["$","p",null,{"children":"Here's what's happening in this code:"}]
+1b:["$","ul",null,{"children":["\n",["$","li",null,{"children":"The wrap_fn context manager takes your function fn."}],"\n",["$","li",null,{"children":"It gets the source code of fn and writes it to a temporary Python file."}],"\n",["$","li",null,{"children":"It then imports this temporary file as a module, making your function accessible via a module name."}],"\n",["$","li",null,{"children":"Inside the context, fn is now the function from the temporary module and can be pickled and sent to child processes."}],"\n",["$","li",null,{"children":["We use ",["$","code",null,{"children":"ProcessPoolExecutor"}]," to distribute the workload across multiple processes."]}],"\n"]}]
+1c:["$","p",null,{"children":"By doing this, we avoid the issue of the function not being picklable due to being defined in the interactive namespace."}]
+1d:["$","div",null,{"className":"JaoSHW_markdown-heading","children":[["$","span",null,{"className":"JaoSHW_markdown-hash","children":["##"," "]}],["$","span",null,{"children":"But if you ask me on a deeper level..."}]]}]
+1e:["$","p",null,{"children":["Jupyter Notebooks offer a great way to work with many things, combining the ability to play around with data like in a REPL with the maintainability of a script. Once in a while, though, you face a problem that requires some serious raw power. For me, such a moment occurred when I was working on a data matching problem in a dataset containing almost ",["$","span",null,{"className":"katex","children":[["$","span",null,{"className":"katex-mathml","children":["$","math",null,{"xmlns":"http://www.w3.org/1998/Math/MathML","children":["$","semantics",null,{"children":[["$","mrow",null,{"children":[["$","mn",null,{"children":"900"}],["$","mo",null,{"separator":"true","children":","}],["$","mn",null,{"children":"000"}]]}],["$","annotation",null,{"encoding":"application/x-tex","children":"900,000"}]]}]}]}],["$","span",null,{"className":"katex-html","aria-hidden":"true","children":["$","span",null,{"className":"base","children":[["$","span",null,{"className":"strut","style":{"height":"0.8389em","verticalAlign":"-0.1944em"}}],["$","span",null,{"className":"mord","children":"900"}],["$","span",null,{"className":"mpunct","children":","}],["$","span",null,{"className":"mspace","style":{"marginRight":"0.1667em"}}],["$","span",null,{"className":"mord","children":"000"}]]}]}]]}]," elements. Performing naive ",["$","span",null,{"className":"katex","children":[["$","span",null,{"className":"katex-mathml","children":["$","math",null,{"xmlns":"http://www.w3.org/1998/Math/MathML","children":["$","semantics",null,{"children":[["$","mrow",null,{"children":[["$","mi",null,{"children":"A"}],["$","mo",null,{"children":"×"}],["$","mi",null,{"children":"B"}]]}],["$","annotation",null,{"encoding":"application/x-tex","children":"A \\times B"}]]}]}]}],["$","span",null,{"className":"katex-html","aria-hidden":"true","children":[["$","span",null,{"className":"base","children":[["$","span",null,{"className":"strut","style":{"height":"0.7667em","verticalAlign":"-0.0833em"}}],["$","span",null,{"className":"mord mathnormal","children":"A"}],["$","span",null,{"className":"mspace","style":{"marginRight":"0.2222em"}}],["$","span",null,{"className":"mbin","children":"×"}],["$","span",null,{"className":"mspace","style":{"marginRight":"0.2222em"}}]]}],["$","span",null,{"className":"base","children":[["$","span",null,{"className":"strut","style":{"height":"0.6833em"}}],["$","span",null,{"className":"mord mathnormal","style":{"marginRight":"0.0502em"},"children":"B"}]]}]]}]]}]," pair matching with similarity tests over a couple of parameters that take 1 second would have me processing the set for… about 25,684 years. A gentle reminder that:"]}]
+1f:["$","$L4f",null,{"src":"./96dz0h.jpg","alt":"Big Oh N squared is bad, and you should feel bad -- a Zoidberg meme, very mature...","caption":"Very mature meme","attribution":"Original idea captioned in [memegenerator](https://imgflip.com/memegenerator/)","postSlug":"/blog/2024/notebook_multiprocessing"}]
+20:["$","div",null,{"className":"JaoSHW_markdown-heading","children":[["$","span",null,{"className":"JaoSHW_markdown-hash","children":["##"," "]}],["$","span",null,{"children":"Multiprocessing"}]]}]
+21:["$","p",null,{"children":["So what do you do when you have so much crunching to do that you want to utilize all CPU cores? That’s when ",["$","a",null,{"href":"https://docs.python.org/3/library/concurrent.futures.html#processpoolexecutor","children":["$","code",null,{"children":"ProcessPoolExecutor"}]}]," steps in to save the day. For those unfamiliar, ",["$","code",null,{"children":"ProcessPoolExecutor"}]," is like that friend who helps you move heavy furniture; it lives in the ",["$","a",null,{"href":"https://docs.python.org/3/library/concurrent.futures.html","children":["$","code",null,{"children":"concurrent.futures"}]}]," package of the standard Python library and, much like ",["$","a",null,{"href":"https://docs.python.org/3/library/concurrent.futures.html#threadpoolexecutor","children":["$","code",null,{"children":"ThreadPoolExecutor"}]}],", lets you distribute workload across a pool of workers. The difference is, these workers are separate processes, not threads."]}]
+22:["$","p",null,{"children":["With both ",["$","em",null,{"children":"threads"}]," and ",["$","em",null,{"children":"processes"}],", the API looks innocently simple: you just pass the function that will be called by each worker with a piece of data:"]}]
+50:T989,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
+        <td class="code-ln-code" data-line-number="1"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">import</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> concurrent.futures</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="2"><div class="code-ln-n" data-line-number="2"></div></td>
+        <td class="code-ln-code" data-line-number="2"><span class="line"></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="3"><div class="code-ln-n" data-line-number="3"></div></td>
+        <td class="code-ln-code" data-line-number="3"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">with</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> concurrent.futures.ThreadsPoolExecutor(</span><span style="color:#E36209;--shiki-dark:#FFAB70">max_workers</span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#005CC5;--shiki-dark:#79B8FF">20</span><span style="color:#24292E;--shiki-dark:#E1E4E8">) </span><span style="color:#D73A49;--shiki-dark:#F97583">as</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> executor:</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="4"><div class="code-ln-n" data-line-number="4"></div></td>
+        <td class="code-ln-code" data-line-number="4"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    squares </span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> executor.map(</span><span style="color:#D73A49;--shiki-dark:#F97583">lambda</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> x: x</span><span style="color:#D73A49;--shiki-dark:#F97583">*</span><span style="color:#24292E;--shiki-dark:#E1E4E8">x, </span><span style="color:#005CC5;--shiki-dark:#79B8FF">range</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#005CC5;--shiki-dark:#79B8FF">0</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#005CC5;--shiki-dark:#79B8FF">100000</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)):</span></span></td>
+      </tr></tbody></table>23:["",["$","pre",null,{"className":"language-python pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$50"}}]}]]
+24:["$","p",null,{"children":["For ",["$","em",null,{"children":"threads"}],", that's pretty much it—you can pat yourself on the back and watch your CPU stay underutilized. But ",["$","a",null,{"href":"https://stackoverflow.com/questions/4496680/python-threads-all-executing-on-a-single-core","children":"threads aren't going to use all your cores"}]," due to the infamous Global Interpreter Lock (GIL). So what if we swap ",["$","code",null,{"children":"ThreadPoolExecutor"}]," for ",["$","code",null,{"children":"ProcessPoolExecutor"}]," to really get the party started? We get an exception immediately."]}]
+25:["",["$","pre",null,{"className":"language-plaintext pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"<table class=\"code-ln-table\"><tbody><tr class=\"code-ln-line\">\n        <td class=\"code-ln-numbers\" data-line-number=\"1\"><div class=\"code-ln-n\" data-line-number=\"1\"></div></td>\n        <td class=\"code-ln-code\" data-line-number=\"1\"><span class=\"line\"><span>_pickle.PicklingError: Can't pickle &#x3C;function &#x3C;lambda> at 0x10332e160>: </span></span></td>\n      </tr><tr class=\"code-ln-line\">\n        <td class=\"code-ln-numbers\" data-line-number=\"2\"><div class=\"code-ln-n\" data-line-number=\"2\"></div></td>\n        <td class=\"code-ln-code\" data-line-number=\"2\"><span class=\"line\"><span>  attribute lookup &#x3C;lambda> on __main__ failed</span></span></td>\n      </tr></tbody></table>"}}]}]]
+26:["$","p",null,{"children":["What happened? Well, the first rule of multiprocessing is that it uses ",["$","a",null,{"href":"https:z//docs.python.org/3/library/pickle.html","children":["$","code",null,{"children":"pickle"}]}]," to serialize a function and data between the parent process and child processes. And pickle's ",["$","a",null,{"href":"https://docs.python.org/3/library/pickle.html","children":"documentation"}]," says:"]}]
+27:["$","blockquote",null,{"children":["\n",["$","p",null,{"children":["Note that functions (built-in and user-defined) are pickled by ",["$","strong",null,{"children":"fully qualified name"}],", not by value.\nThis means that only the function name is pickled, along with the name of the containing module and classes.\nNeither the function's code, nor any of its function attributes are pickled."]}],"\n"]}]
+28:["$","p",null,{"children":["Since all lambdas share the same name -- ",["$","code",null,{"children":"<lambda>"}]," -- that explains why we need to define a proper method:"]}]
+51:Td0a,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
+        <td class="code-ln-code" data-line-number="1"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">import</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> concurrent.futures</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="2"><div class="code-ln-n" data-line-number="2"></div></td>
+        <td class="code-ln-code" data-line-number="2"><span class="line"></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="3"><div class="code-ln-n" data-line-number="3"></div></td>
+        <td class="code-ln-code" data-line-number="3"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">def</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> square</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(x):</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="4"><div class="code-ln-n" data-line-number="4"></div></td>
+        <td class="code-ln-code" data-line-number="4"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">    return</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> x</span><span style="color:#D73A49;--shiki-dark:#F97583">*</span><span style="color:#24292E;--shiki-dark:#E1E4E8">x</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="5"><div class="code-ln-n" data-line-number="5"></div></td>
+        <td class="code-ln-code" data-line-number="5"><span class="line"></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="6"><div class="code-ln-n" data-line-number="6"></div></td>
+        <td class="code-ln-code" data-line-number="6"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">with</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> concurrent.futures.ThreadsPoolExecutor(</span><span style="color:#E36209;--shiki-dark:#FFAB70">max_workers</span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#005CC5;--shiki-dark:#79B8FF">20</span><span style="color:#24292E;--shiki-dark:#E1E4E8">) </span><span style="color:#D73A49;--shiki-dark:#F97583">as</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> executor:</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="7"><div class="code-ln-n" data-line-number="7"></div></td>
+        <td class="code-ln-code" data-line-number="7"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    squares </span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> executor.map(square, </span><span style="color:#005CC5;--shiki-dark:#79B8FF">range</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#005CC5;--shiki-dark:#79B8FF">0</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#005CC5;--shiki-dark:#79B8FF">100000</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)):</span></span></td>
+      </tr></tbody></table>29:["",["$","pre",null,{"className":"language-python pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$51"}}]}]]
+2a:["$","p",null,{"children":["Now it works, but that error above has one little, less obvious consequence. If we only send a ",["$","em",null,{"children":"fully qualified name"}]," over to another process, then how does the method get called?"]}]
+2b:["$","p",null,{"children":["When the ",["$","code",null,{"children":"multiprocessing"}]," module starts a new child process, it doesn't have access to your current interactive namespace. It's like sending someone to fetch an item from your house without giving them the address—they need to know where to look."]}]
+2c:["$","p",null,{"children":["Under the hood, when multiprocessing starts a new child process, it uses ",["$","code",null,{"children":"spawn"}]," on Windows and macOS. On POSIX systems, it's still using fork, although since Python 3.12 it'll throw a ",["$","code",null,{"children":"DeprecationWarning"}],". Fork is a bit problematic from a safety point of view, as the child process inherits everything from the parent process. Spawn, on the other hand, starts a completely fresh Python interpreter process."]}]
+2d:["$","p",null,{"children":"This means that any variables or functions you've defined interactively in your Jupyter Notebook aren't automatically available in the child processes. They're starting from scratch, and unless your function is defined in a module they can import, they're left in the dark."}]
+2e:["$","p",null,{"children":["Here's a rough diagram, courtesy of the Python ",["$","a",null,{"href":"https://github.com/python/cpython/blob/main/Lib/concurrent/futures/process.py","children":"docs"}],", of how the flow looks when you submit work to the process pool:"]}]
+2f:["$","div",null,{"className":"goat-diagram-wrapper","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","version":"1.1","height":"313","width":"656","fontFamily":"Menlo,Lucida Console,monospace","viewBox":"0 0 656 313","preserveAspectRatio":"xMidYMid meet","children":["\n",["$","style",null,{"type":"text/css","children":"\nsvg {\n   color: #000000;\n}\n@media (prefers-color-scheme: dark) {\n   svg {\n      color-scheme: dark; /* ask the browser for a dark background */\n      color: #FFFFFF;\n   }\n}\n"}],"\n",["$","g",null,{"transform":"translate(8,16)","children":["\n",["$","path",null,{"d":"M 0,16 L 88,16","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 136,16 L 224,16","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 288,16 L 360,16","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 408,16 L 504,16","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 552,16 L 632,16","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 96,32 L 128,32","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 136,64 L 224,64","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 408,64 L 504,64","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 552,64 L 632,64","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 232,96 L 280,96","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 368,96 L 400,96","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 512,96 L 544,96","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 408,128 L 504,128","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 136,144 L 224,144","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 136,176 L 240,176","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 408,176 L 504,176","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 96,192 L 128,192","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 248,192 L 280,192","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 368,192 L 400,192","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 512,192 L 544,192","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 136,208 L 240,208","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 408,224 L 504,224","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 0,288 L 88,288","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 136,288 L 240,288","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 288,288 L 360,288","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 408,288 L 504,288","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 552,288 L 632,288","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 0,0 L 0,16","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 0,16 L 0,288","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 88,16 L 88,288","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 136,16 L 136,64","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 136,64 L 136,144","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 136,176 L 136,208","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 136,208 L 136,288","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 224,16 L 224,64","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 224,64 L 224,144","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 240,176 L 240,208","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 240,208 L 240,288","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 288,16 L 288,288","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 360,16 L 360,288","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 408,16 L 408,64","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 408,64 L 408,128","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 408,176 L 408,224","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 408,224 L 408,288","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 504,16 L 504,64","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 504,64 L 504,128","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 504,176 L 504,224","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 504,224 L 504,288","fill":"none","stroke":"currentColor"}],"\n","$L52","\n","$L53","\n","$L54","\n","$L55","\n","$L56","\n","$L57","\n","$L58","\n","$L59","\n","$L5a","\n","$L5b","\n","$L5c","\n","$L5d","\n","$L5e","\n","$L5f","\n","$L60","\n","$L61","\n","$L62","\n","$L63","\n","$L64","\n","$L65","\n","$L66","\n","$L67","\n","$L68","\n","$L69","\n","$L6a","\n","$L6b","\n","$L6c","\n","$L6d","\n","$L6e","\n","$L6f","\n","$L70","\n","$L71","\n","$L72","\n","$L73","\n","$L74","\n","$L75","\n","$L76","\n","$L77","\n","$L78","\n","$L79","\n","$L7a","\n","$L7b","\n","$L7c","\n","$L7d","\n","$L7e","\n","$L7f","\n","$L80","\n","$L81","\n","$L82","\n","$L83","\n","$L84","\n","$L85","\n","$L86","\n","$L87","\n","$L88","\n","$L89","\n","$L8a","\n","$L8b","\n","$L8c","\n","$L8d","\n","$L8e","\n","$L8f","\n","$L90","\n","$L91","\n","$L92","\n","$L93","\n","$L94","\n","$L95","\n","$L96","\n","$L97","\n","$L98","\n","$L99","\n","$L9a","\n","$L9b","\n","$L9c","\n","$L9d","\n","$L9e","\n","$L9f","\n","$La0","\n","$La1","\n","$La2","\n","$La3","\n","$La4","\n","$La5","\n","$La6","\n","$La7","\n","$La8","\n","$La9","\n","$Laa","\n","$Lab","\n","$Lac","\n","$Lad","\n","$Lae","\n","$Laf","\n","$Lb0","\n","$Lb1","\n","$Lb2","\n","$Lb3","\n","$Lb4","\n","$Lb5","\n","$Lb6","\n","$Lb7","\n","$Lb8","\n","$Lb9","\n","$Lba","\n","$Lbb","\n","$Lbc","\n","$Lbd","\n","$Lbe","\n","$Lbf","\n","$Lc0","\n","$Lc1","\n","$Lc2","\n","$Lc3","\n","$Lc4","\n","$Lc5","\n","$Lc6","\n","$Lc7","\n","$Lc8","\n","$Lc9","\n","$Lca","\n","$Lcb","\n","$Lcc","\n","$Lcd","\n","$Lce","\n","$Lcf","\n","$Ld0","\n","$Ld1","\n","$Ld2","\n","$Ld3","\n","$Ld4","\n","$Ld5","\n","$Ld6","\n","$Ld7","\n","$Ld8","\n","$Ld9","\n","$Lda","\n","$Ldb","\n","$Ldc","\n","$Ldd","\n","$Lde","\n","$Ldf","\n","$Le0","\n","$Le1","\n","$Le2","\n","$Le3","\n","$Le4","\n","$Le5","\n","$Le6","\n","$Le7","\n","$Le8","\n","$Le9","\n","$Lea","\n","$Leb","\n","$Lec","\n","$Led","\n","$Lee","\n","$Lef","\n","$Lf0","\n","$Lf1","\n","$Lf2","\n","$Lf3","\n","$Lf4","\n","$Lf5","\n","$Lf6","\n","$Lf7","\n","$Lf8","\n","$Lf9","\n","$Lfa","\n","$Lfb","\n","$Lfc","\n","$Lfd","\n","$Lfe","\n","$Lff","\n","$L100","\n","$L101","\n","$L102","\n","$L103","\n","$L104","\n","$L105","\n","$L106","\n","$L107","\n","$L108","\n","$L109","\n","$L10a","\n","$L10b","\n","$L10c","\n","$L10d","\n","$L10e","\n","$L10f","\n","$L110","\n","$L111","\n","$L112","\n","$L113","\n","$L114","\n","$L115","\n","$L116","\n","$L117","\n","$L118","\n","$L119","\n","$L11a","\n","$L11b","\n","$L11c","\n","$L11d","\n","$L11e","\n","$L11f","\n","$L120","\n","$L121","\n","$L122","\n","$L123","\n","$L124","\n","$L125","\n","$L126","\n","$L127","\n","$L128","\n","$L129","\n","$L12a","\n","$L12b","\n","$L12c","\n","$L12d","\n","$L12e","\n","$L12f","\n","$L130","\n","$L131","\n","$L132","\n","$L133","\n","$L134","\n","$L135","\n","$L136","\n","$L137","\n","$L138","\n","$L139","\n","$L13a","\n","$L13b","\n","$L13c","\n","$L13d","\n","$L13e","\n","$L13f","\n","$L140","\n","$L141","\n","$L142","\n","$L143","\n","$L144","\n"]}],"\n"]}],"\n"]}]
+30:["$","p",null,{"children":["When you call a ",["$","code",null,{"children":"map"}],", it internally calls ",["$","a",null,{"href":"https://github.com/python/cpython/blob/main/Lib/concurrent/futures/process.py#L791","children":"submit"}],", which converts your function, its parameters, and the data into a structure called ",["$","code",null,{"children":"WorkItem"}]," and adds it to a ",["$","code",null,{"children":"work_ids_queue"}],". In a run-loop, it then pops those work items, and if they're not canceled, it repackages them into a structure ",["$","code",null,{"children":"CallItem"}]," and puts it on a ",["$","code",null,{"children":"call_queue"}],". The ",["$","a",null,{"href":"https://github.com/python/cpython/blob/main/Lib/multiprocessing/queues.py#L262","children":["$","code",null,{"children":"multiprocessing.Queue"}]}]," handles ",["$","code",null,{"children":"pickle"}]," serialization before writing the data. It's up to pickle to get the ",["$","em",null,{"children":"fully qualified name"}]," of the function being serialized, and while doing that (and also when deserializing), pickle actually tries to ",["$","a",null,{"href":"https://github.com/python/cpython/blob/3.13/Lib/pickle.py#L1082","children":"import the module"}]," a function is part of:"]}]
+145:T1bf4,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
+        <td class="code-ln-code" data-line-number="1"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">if</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> name </span><span style="color:#D73A49;--shiki-dark:#F97583">is</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> None</span><span style="color:#24292E;--shiki-dark:#E1E4E8">:</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="2"><div class="code-ln-n" data-line-number="2"></div></td>
+        <td class="code-ln-code" data-line-number="2"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    name </span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> getattr</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(obj, </span><span style="color:#032F62;--shiki-dark:#9ECBFF">'__qualname__'</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#005CC5;--shiki-dark:#79B8FF">None</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="3"><div class="code-ln-n" data-line-number="3"></div></td>
+        <td class="code-ln-code" data-line-number="3"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">if</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> name </span><span style="color:#D73A49;--shiki-dark:#F97583">is</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> None</span><span style="color:#24292E;--shiki-dark:#E1E4E8">:</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="4"><div class="code-ln-n" data-line-number="4"></div></td>
+        <td class="code-ln-code" data-line-number="4"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    name </span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> obj.</span><span style="color:#005CC5;--shiki-dark:#79B8FF">__name__</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="5"><div class="code-ln-n" data-line-number="5"></div></td>
+        <td class="code-ln-code" data-line-number="5"><span class="line"></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="6"><div class="code-ln-n" data-line-number="6"></div></td>
+        <td class="code-ln-code" data-line-number="6"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">module_name </span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> whichmodule(obj, name)</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="7"><div class="code-ln-n" data-line-number="7"></div></td>
+        <td class="code-ln-code" data-line-number="7"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">try</span><span style="color:#24292E;--shiki-dark:#E1E4E8">:</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="8"><div class="code-ln-n" data-line-number="8"></div></td>
+        <td class="code-ln-code" data-line-number="8"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">    __import__</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(module_name, </span><span style="color:#E36209;--shiki-dark:#FFAB70">level</span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#005CC5;--shiki-dark:#79B8FF">0</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="9"><div class="code-ln-n" data-line-number="9"></div></td>
+        <td class="code-ln-code" data-line-number="9"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    module </span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> sys.modules[module_name]</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="10"><div class="code-ln-n" data-line-number="10"></div></td>
+        <td class="code-ln-code" data-line-number="10"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    obj2, parent </span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> _getattribute(module, name)</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="11"><div class="code-ln-n" data-line-number="11"></div></td>
+        <td class="code-ln-code" data-line-number="11"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">except</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (</span><span style="color:#005CC5;--shiki-dark:#79B8FF">ImportError</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#005CC5;--shiki-dark:#79B8FF">KeyError</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#005CC5;--shiki-dark:#79B8FF">AttributeError</span><span style="color:#24292E;--shiki-dark:#E1E4E8">):</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="12"><div class="code-ln-n" data-line-number="12"></div></td>
+        <td class="code-ln-code" data-line-number="12"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">    raise</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> PicklingError(</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="13"><div class="code-ln-n" data-line-number="13"></div></td>
+        <td class="code-ln-code" data-line-number="13"><span class="line"><span style="color:#032F62;--shiki-dark:#9ECBFF">        "Can't pickle </span><span style="color:#005CC5;--shiki-dark:#79B8FF">%r</span><span style="color:#032F62;--shiki-dark:#9ECBFF">: it's not found as </span><span style="color:#005CC5;--shiki-dark:#79B8FF">%s</span><span style="color:#032F62;--shiki-dark:#9ECBFF">.</span><span style="color:#005CC5;--shiki-dark:#79B8FF">%s</span><span style="color:#032F62;--shiki-dark:#9ECBFF">"</span><span style="color:#D73A49;--shiki-dark:#F97583"> %</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="14"><div class="code-ln-n" data-line-number="14"></div></td>
+        <td class="code-ln-code" data-line-number="14"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">        (obj, module_name, name)) </span><span style="color:#D73A49;--shiki-dark:#F97583">from</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> None</span></span></td>
+      </tr></tbody></table>31:[["$","div",null,{"className":"code-filename","children":["$","span",null,{"children":"Lib/pickle.py"}]}],["$","pre",null,{"className":"language-python pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$145"}}]}]]
+32:["$","p",null,{"children":"That brings us to a very important requirement which is:"}]
+33:["$","$L146",null,{"type":"important","title":"IMPORTANT","children":["$","p",null,{"children":["A function that we pass to executor must be visible via ",["$","code",null,{"children":"module.name"}]]}]}]
+34:["$","p",null,{"children":["When you submit a function to ",["$","code",null,{"children":"ProcessPoolExecutor"}],", the function and its arguments are pickled to be sent to the worker process. The pickling process relies on the function being defined at the module level with a name accessible via importing."]}]
+35:["$","div",null,{"className":"JaoSHW_markdown-heading","children":[["$","span",null,{"className":"JaoSHW_markdown-hash","children":["##"," "]}],["$","span",null,{"children":"Enter Jupyter Notebook"}]]}]
+36:["$","p",null,{"children":"The problem is, Jupyter Notebooks, aside from being a JSON document, execute code dynamically. Let's see how it works:"}]
+37:["$","div",null,{"className":"goat-diagram-wrapper","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","version":"1.1","height":"201","width":"640","fontFamily":"Menlo,Lucida Console,monospace","viewBox":"0 0 640 201","preserveAspectRatio":"xMidYMid meet","children":["\n",["$","style",null,{"type":"text/css","children":"\nsvg {\n   color: #000000;\n}\n@media (prefers-color-scheme: dark) {\n   svg {\n      color-scheme: dark; /* ask the browser for a dark background */\n      color: #FFFFFF;\n   }\n}\n"}],"\n",["$","g",null,{"transform":"translate(8,16)","children":["\n",["$","path",null,{"d":"M 0,16 L 88,16","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 152,16 L 280,16","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 344,16 L 448,16","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 504,16 L 616,16","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 152,48 L 280,48","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 96,64 L 144,64","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 344,64 L 448,64","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 504,64 L 616,64","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 288,80 L 336,80","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 456,80 L 496,80","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 152,112 L 280,112","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 96,144 L 144,144","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 288,144 L 336,144","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 456,144 L 496,144","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 0,176 L 88,176","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 152,176 L 280,176","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 344,176 L 448,176","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 504,176 L 616,176","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 0,0 L 0,16","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 0,16 L 0,176","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 88,16 L 88,176","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 152,16 L 152,48","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 152,48 L 152,112","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 152,112 L 152,176","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 280,16 L 280,48","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 280,48 L 280,112","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 280,112 L 280,176","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 344,16 L 344,64","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 344,64 L 344,176","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 448,16 L 448,64","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 448,64 L 448,176","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 504,0 L 504,16","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 504,16 L 504,64","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 504,64 L 504,176","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 616,0 L 616,16","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 616,16 L 616,64","fill":"none","stroke":"currentColor"}],"\n",["$","path",null,{"d":"M 616,64 L 616,176","fill":"none","stroke":"currentColor"}],"\n",["$","polygon",null,{"points":"104.000000,144.000000 92.000000,138.399994 92.000000,149.600006","fill":"currentColor","transform":"rotate(180.000000, 96.000000, 144.000000)"}],"\n",["$","polygon",null,{"points":"152.000000,64.000000 140.000000,58.400002 140.000000,69.599998","fill":"currentColor","transform":"rotate(0.000000, 144.000000, 64.000000)"}],"\n",["$","polygon",null,{"points":"296.000000,144.000000 284.000000,138.399994 284.000000,149.600006","fill":"currentColor","transform":"rotate(180.000000, 288.000000, 144.000000)"}],"\n",["$","polygon",null,{"points":"344.000000,80.000000 332.000000,74.400002 332.000000,85.599998","fill":"currentColor","transform":"rotate(0.000000, 336.000000, 80.000000)"}],"\n",["$","polygon",null,{"points":"464.000000,144.000000 452.000000,138.399994 452.000000,149.600006","fill":"currentColor","transform":"rotate(180.000000, 456.000000, 144.000000)"}],"\n","$L147","\n","$L148","\n","$L149","\n","$L14a","\n","$L14b","\n","$L14c","\n","$L14d","\n","$L14e","\n","$L14f","\n","$L150","\n","$L151","\n","$L152","\n","$L153","\n","$L154","\n","$L155","\n","$L156","\n","$L157","\n","$L158","\n","$L159","\n","$L15a","\n","$L15b","\n","$L15c","\n","$L15d","\n","$L15e","\n","$L15f","\n","$L160","\n","$L161","\n","$L162","\n","$L163","\n","$L164","\n","$L165","\n","$L166","\n","$L167","\n","$L168","\n","$L169","\n","$L16a","\n","$L16b","\n","$L16c","\n","$L16d","\n","$L16e","\n","$L16f","\n","$L170","\n","$L171","\n","$L172","\n","$L173","\n","$L174","\n","$L175","\n","$L176","\n","$L177","\n","$L178","\n","$L179","\n","$L17a","\n","$L17b","\n","$L17c","\n","$L17d","\n","$L17e","\n","$L17f","\n","$L180","\n","$L181","\n","$L182","\n","$L183","\n","$L184","\n","$L185","\n","$L186","\n","$L187","\n","$L188","\n","$L189","\n","$L18a","\n","$L18b","\n","$L18c","\n","$L18d","\n","$L18e","\n","$L18f","\n","$L190","\n","$L191","\n","$L192","\n","$L193","\n","$L194","\n","$L195","\n","$L196","\n","$L197","\n","$L198","\n","$L199","\n","$L19a","\n","$L19b","\n","$L19c","\n","$L19d","\n","$L19e","\n","$L19f","\n","$L1a0","\n","$L1a1","\n","$L1a2","\n","$L1a3","\n","$L1a4","\n","$L1a5","\n","$L1a6","\n","$L1a7","\n","$L1a8","\n","$L1a9","\n","$L1aa","\n","$L1ab","\n","$L1ac","\n","$L1ad","\n","$L1ae","\n","$L1af","\n","$L1b0","\n","$L1b1","\n","$L1b2","\n","$L1b3","\n","$L1b4","\n","$L1b5","\n","$L1b6","\n","$L1b7","\n","$L1b8","\n","$L1b9","\n","$L1ba","\n","$L1bb","\n","$L1bc","\n","$L1bd","\n","$L1be","\n","$L1bf","\n","$L1c0","\n","$L1c1","\n","$L1c2","\n","$L1c3","\n","$L1c4","\n","$L1c5","\n","$L1c6","\n","$L1c7","\n","$L1c8","\n","$L1c9","\n","$L1ca","\n","$L1cb","\n","$L1cc","\n","$L1cd","\n","$L1ce","\n","$L1cf","\n","$L1d0","\n","$L1d1","\n","$L1d2","\n","$L1d3","\n","$L1d4","\n","$L1d5","\n","$L1d6","\n","$L1d7","\n","$L1d8","\n","$L1d9","\n","$L1da","\n","$L1db","\n","$L1dc","\n","$L1dd","\n","$L1de","\n","$L1df","\n","$L1e0","\n","$L1e1","\n","$L1e2","\n"]}],"\n"]}],"\n"]}]
+38:["$","p",null,{"children":"The frontend sends the cell code as text to the kernel:"}]
+1e3:T18c7,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
+        <td class="code-ln-code" data-line-number="1"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">do_execute_args </span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> {</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="2"><div class="code-ln-n" data-line-number="2"></div></td>
+        <td class="code-ln-code" data-line-number="2"><span class="line"><span style="color:#032F62;--shiki-dark:#9ECBFF">    "code"</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: code,</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="3"><div class="code-ln-n" data-line-number="3"></div></td>
+        <td class="code-ln-code" data-line-number="3"><span class="line"><span style="color:#032F62;--shiki-dark:#9ECBFF">    "silent"</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: silent,</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="4"><div class="code-ln-n" data-line-number="4"></div></td>
+        <td class="code-ln-code" data-line-number="4"><span class="line"><span style="color:#032F62;--shiki-dark:#9ECBFF">    "store_history"</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: store_history,</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="5"><div class="code-ln-n" data-line-number="5"></div></td>
+        <td class="code-ln-code" data-line-number="5"><span class="line"><span style="color:#032F62;--shiki-dark:#9ECBFF">    "user_expressions"</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: user_expressions,</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="6"><div class="code-ln-n" data-line-number="6"></div></td>
+        <td class="code-ln-code" data-line-number="6"><span class="line"><span style="color:#032F62;--shiki-dark:#9ECBFF">    "allow_stdin"</span><span style="color:#24292E;--shiki-dark:#E1E4E8">: allow_stdin,</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="7"><div class="code-ln-n" data-line-number="7"></div></td>
+        <td class="code-ln-code" data-line-number="7"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">}</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="8"><div class="code-ln-n" data-line-number="8"></div></td>
+        <td class="code-ln-code" data-line-number="8"><span class="line"></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="9"><div class="code-ln-n" data-line-number="9"></div></td>
+        <td class="code-ln-code" data-line-number="9"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">if</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> self</span><span style="color:#24292E;--shiki-dark:#E1E4E8">._do_exec_accepted_params[</span><span style="color:#032F62;--shiki-dark:#9ECBFF">"cell_meta"</span><span style="color:#24292E;--shiki-dark:#E1E4E8">]:</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="10"><div class="code-ln-n" data-line-number="10"></div></td>
+        <td class="code-ln-code" data-line-number="10"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    do_execute_args[</span><span style="color:#032F62;--shiki-dark:#9ECBFF">"cell_meta"</span><span style="color:#24292E;--shiki-dark:#E1E4E8">] </span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> cell_meta</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="11"><div class="code-ln-n" data-line-number="11"></div></td>
+        <td class="code-ln-code" data-line-number="11"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">if</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> self</span><span style="color:#24292E;--shiki-dark:#E1E4E8">._do_exec_accepted_params[</span><span style="color:#032F62;--shiki-dark:#9ECBFF">"cell_id"</span><span style="color:#24292E;--shiki-dark:#E1E4E8">]:</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="12"><div class="code-ln-n" data-line-number="12"></div></td>
+        <td class="code-ln-code" data-line-number="12"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    do_execute_args[</span><span style="color:#032F62;--shiki-dark:#9ECBFF">"cell_id"</span><span style="color:#24292E;--shiki-dark:#E1E4E8">] </span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> cell_id</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="13"><div class="code-ln-n" data-line-number="13"></div></td>
+        <td class="code-ln-code" data-line-number="13"><span class="line"></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="14"><div class="code-ln-n" data-line-number="14"></div></td>
+        <td class="code-ln-code" data-line-number="14"><span class="line"><span style="color:#6A737D;--shiki-dark:#6A737D"># Call do_execute with the appropriate arguments</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="15"><div class="code-ln-n" data-line-number="15"></div></td>
+        <td class="code-ln-code" data-line-number="15"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">reply_content </span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> self</span><span style="color:#24292E;--shiki-dark:#E1E4E8">.do_execute(</span><span style="color:#D73A49;--shiki-dark:#F97583">**</span><span style="color:#24292E;--shiki-dark:#E1E4E8">do_execute_args)</span></span></td>
+      </tr></tbody></table>39:[["$","div",null,{"className":"code-filename","children":["$","span",null,{"children":"ipykernel/kernelbase.py"}]}],["$","pre",null,{"className":"language-python pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$1e3"}}]}]]
+3a:["$","p",null,{"children":["The kernel then decides how to interpret the text of the cell and what to do with it. The IPython Kernel, as the name suggests, runs the ",["$","code",null,{"children":"IPython"}]," interactive shell, so it ",["$","a",null,{"href":"https://github.com/ipython/ipykernel/blob/main/ipykernel/ipkernel.py#L339","children":"sends the contents"}]," of the cell to the shell to run it:"]}]
+1e4:T15f0,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
+        <td class="code-ln-code" data-line-number="1"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">if</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> hasattr</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(shell, </span><span style="color:#032F62;--shiki-dark:#9ECBFF">"run_cell_async"</span><span style="color:#24292E;--shiki-dark:#E1E4E8">) </span><span style="color:#D73A49;--shiki-dark:#F97583">and</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> hasattr</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(shell, </span><span style="color:#032F62;--shiki-dark:#9ECBFF">"should_run_async"</span><span style="color:#24292E;--shiki-dark:#E1E4E8">):</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="2"><div class="code-ln-n" data-line-number="2"></div></td>
+        <td class="code-ln-code" data-line-number="2"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    run_cell </span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> shell.run_cell_async</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="3"><div class="code-ln-n" data-line-number="3"></div></td>
+        <td class="code-ln-code" data-line-number="3"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    should_run_async </span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> shell.should_run_async</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="4"><div class="code-ln-n" data-line-number="4"></div></td>
+        <td class="code-ln-code" data-line-number="4"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    with_cell_id </span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> _accepts_parameters(run_cell, [</span><span style="color:#032F62;--shiki-dark:#9ECBFF">"cell_id"</span><span style="color:#24292E;--shiki-dark:#E1E4E8">])</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="5"><div class="code-ln-n" data-line-number="5"></div></td>
+        <td class="code-ln-code" data-line-number="5"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">else</span><span style="color:#24292E;--shiki-dark:#E1E4E8">:</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="6"><div class="code-ln-n" data-line-number="6"></div></td>
+        <td class="code-ln-code" data-line-number="6"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    should_run_async </span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#D73A49;--shiki-dark:#F97583"> lambda</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> cell: </span><span style="color:#005CC5;--shiki-dark:#79B8FF">False</span><span style="color:#6A737D;--shiki-dark:#6A737D">  # noqa: ARG005, E731</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="7"><div class="code-ln-n" data-line-number="7"></div></td>
+        <td class="code-ln-code" data-line-number="7"><span class="line"><span style="color:#6A737D;--shiki-dark:#6A737D">    # older IPython,</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="8"><div class="code-ln-n" data-line-number="8"></div></td>
+        <td class="code-ln-code" data-line-number="8"><span class="line"><span style="color:#6A737D;--shiki-dark:#6A737D">    # use blocking run_cell and wrap it in coroutine</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="9"><div class="code-ln-n" data-line-number="9"></div></td>
+        <td class="code-ln-code" data-line-number="9"><span class="line"></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="10"><div class="code-ln-n" data-line-number="10"></div></td>
+        <td class="code-ln-code" data-line-number="10"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">    async</span><span style="color:#D73A49;--shiki-dark:#F97583"> def</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> run_cell</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#D73A49;--shiki-dark:#F97583">*</span><span style="color:#24292E;--shiki-dark:#E1E4E8">args, </span><span style="color:#D73A49;--shiki-dark:#F97583">**</span><span style="color:#24292E;--shiki-dark:#E1E4E8">kwargs):</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="11"><div class="code-ln-n" data-line-number="11"></div></td>
+        <td class="code-ln-code" data-line-number="11"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">        return</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> shell.run_cell(</span><span style="color:#D73A49;--shiki-dark:#F97583">*</span><span style="color:#24292E;--shiki-dark:#E1E4E8">args, </span><span style="color:#D73A49;--shiki-dark:#F97583">**</span><span style="color:#24292E;--shiki-dark:#E1E4E8">kwargs)</span></span></td>
+      </tr></tbody></table>3b:[["$","div",null,{"className":"code-filename","children":["$","span",null,{"children":"ipkernel/ipkernel.py"}]}],["$","pre",null,{"className":"language-python pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$1e4"}}]}]]
+3c:["$","p",null,{"children":["Finally, ",["$","code",null,{"children":"IPython"}]," runs a separate  ",["$","a",null,{"href":"https://github.com/ipython/ipython/blob/main/IPython/core/interactiveshell.py#L3183","children":"session"}],", transforming the cell's text into an Abstract Syntax Tree (AST), compiling, and running it:"]}]
+1e5:T27d9,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
+        <td class="code-ln-code" data-line-number="1"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">async</span><span style="color:#D73A49;--shiki-dark:#F97583"> def</span><span style="color:#6F42C1;--shiki-dark:#B392F0"> run_cell_async</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="2"><div class="code-ln-n" data-line-number="2"></div></td>
+        <td class="code-ln-code" data-line-number="2"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">        self,</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="3"><div class="code-ln-n" data-line-number="3"></div></td>
+        <td class="code-ln-code" data-line-number="3"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">        raw_cell: </span><span style="color:#005CC5;--shiki-dark:#79B8FF">str</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="4"><div class="code-ln-n" data-line-number="4"></div></td>
+        <td class="code-ln-code" data-line-number="4"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">        store_history</span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#005CC5;--shiki-dark:#79B8FF">False</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="5"><div class="code-ln-n" data-line-number="5"></div></td>
+        <td class="code-ln-code" data-line-number="5"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">        silent</span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#005CC5;--shiki-dark:#79B8FF">False</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="6"><div class="code-ln-n" data-line-number="6"></div></td>
+        <td class="code-ln-code" data-line-number="6"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">        shell_futures</span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#005CC5;--shiki-dark:#79B8FF">True</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="7"><div class="code-ln-n" data-line-number="7"></div></td>
+        <td class="code-ln-code" data-line-number="7"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">        *</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="8"><div class="code-ln-n" data-line-number="8"></div></td>
+        <td class="code-ln-code" data-line-number="8"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">        transformed_cell: Optional[</span><span style="color:#005CC5;--shiki-dark:#79B8FF">str</span><span style="color:#24292E;--shiki-dark:#E1E4E8">] </span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> None</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="9"><div class="code-ln-n" data-line-number="9"></div></td>
+        <td class="code-ln-code" data-line-number="9"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">        preprocessing_exc_tuple: Optional[AnyType] </span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> None</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="10"><div class="code-ln-n" data-line-number="10"></div></td>
+        <td class="code-ln-code" data-line-number="10"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">        cell_id</span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#005CC5;--shiki-dark:#79B8FF">None</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="11"><div class="code-ln-n" data-line-number="11"></div></td>
+        <td class="code-ln-code" data-line-number="11"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">    ) -> ExecutionResult:</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="12"><div class="code-ln-n" data-line-number="12"></div></td>
+        <td class="code-ln-code" data-line-number="12"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">//</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> ...</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="13"><div class="code-ln-n" data-line-number="13"></div></td>
+        <td class="code-ln-code" data-line-number="13"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">code_ast </span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> compiler.ast_parse(cell, </span><span style="color:#E36209;--shiki-dark:#FFAB70">filename</span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#24292E;--shiki-dark:#E1E4E8">cell_name)</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="14"><div class="code-ln-n" data-line-number="14"></div></td>
+        <td class="code-ln-code" data-line-number="14"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">//</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> ...</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="15"><div class="code-ln-n" data-line-number="15"></div></td>
+        <td class="code-ln-code" data-line-number="15"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">code_ast </span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> self</span><span style="color:#24292E;--shiki-dark:#E1E4E8">.transform_ast(code_ast)</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="16"><div class="code-ln-n" data-line-number="16"></div></td>
+        <td class="code-ln-code" data-line-number="16"><span class="line"><span style="color:#D73A49;--shiki-dark:#F97583">//</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> ...</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="17"><div class="code-ln-n" data-line-number="17"></div></td>
+        <td class="code-ln-code" data-line-number="17"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">has_raised </span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#D73A49;--shiki-dark:#F97583"> await</span><span style="color:#005CC5;--shiki-dark:#79B8FF"> self</span><span style="color:#24292E;--shiki-dark:#E1E4E8">.run_ast_nodes(code_ast.body, cell_name, </span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="18"><div class="code-ln-n" data-line-number="18"></div></td>
+        <td class="code-ln-code" data-line-number="18"><span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">                       interactivity</span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#24292E;--shiki-dark:#E1E4E8">interactivity, </span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="19"><div class="code-ln-n" data-line-number="19"></div></td>
+        <td class="code-ln-code" data-line-number="19"><span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">                       compiler</span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#24292E;--shiki-dark:#E1E4E8">compiler, </span><span style="color:#E36209;--shiki-dark:#FFAB70">result</span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#24292E;--shiki-dark:#E1E4E8">result)</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="20"><div class="code-ln-n" data-line-number="20"></div></td>
+        <td class="code-ln-code" data-line-number="20"><span class="line"></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="21"><div class="code-ln-n" data-line-number="21"></div></td>
+        <td class="code-ln-code" data-line-number="21"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">self</span><span style="color:#24292E;--shiki-dark:#E1E4E8">.last_execution_succeeded </span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#D73A49;--shiki-dark:#F97583"> not</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> has_raised</span></span></td>
+      </tr><tr class="code-ln-line">
+        <td class="code-ln-numbers" data-line-number="22"><div class="code-ln-n" data-line-number="22"></div></td>
+        <td class="code-ln-code" data-line-number="22"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">self</span><span style="color:#24292E;--shiki-dark:#E1E4E8">.last_execution_result </span><span style="color:#D73A49;--shiki-dark:#F97583">=</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> result</span></span></td>
+      </tr></tbody></table>3d:[["$","div",null,{"className":"code-filename","children":["$","span",null,{"children":"IPython/core/interactiveshell.py"}]}],["$","pre",null,{"className":"language-python pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$1e5"}}]}]]
+3e:["$","p",null,{"children":["As you can see, the whole thing does not look like something that can be imported as a module. The code exists only in the interactive namespace of the ",["$","code",null,{"children":"IPython"}]," shell. Hence, in order to be able to run ",["$","code",null,{"children":"ProcessPoolExecutor"}],", we must take our function, store it in a separate file—preferably somewhere in a temp folder, as a temporary module that can be imported. This way we make it accessible to child processes started by ",["$","code",null,{"children":"ProcessPoolExecutor"}],", so when ",["$","code",null,{"children":"pickle"}]," tries to serialize and deserialize our function, it can successfully import it by name, and everything works smoothly."]}]
+3f:["",null]
+40:["$","div",null,{"children":[" \\__                    --> ",["$","a",null,{"href":"http://andrzej.lichnerowicz.pl","target":"_blank","rel":"noopener noreferrer","title":"andrzej.lichnerowicz.pl","className":"link","style":{"cursor":"pointer"},"children":"andrzej.lichnerowicz.pl"}]," <--                    __/\n   //                                                                     \\\\\n  // ------------------------                     ------------------------ \\\\\n '~~~~~~~~~~~~~~~~~~~~~~~~~// ------       ------ \\\\~~~~~~~~~~~~~~~~~~~~~~~~~`\n                          '~~~~~~~//       \\\\~~~~~~~`\n                                 // ------- \\\\\n                                '~~~~~~~~~~~~~`\n      "]}]
+41:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/3ert6xgjkvepg.css","precedence":"next"}]
+42:["$","script","script-0",{"src":"/_next/static/chunks/0jybh4guong1_.js","async":true}]
+43:["$","script","script-1",{"src":"/_next/static/chunks/1pfxd-dkulr8v.js","async":true}]
+44:["$","$L1e6",null,{"children":["$","$4a",null,{"name":"Next.MetadataOutlet","children":"$@1e7"}]}]
+c:300
+52:["$","path",null,{"d":"M 552,16 L 552,64","fill":"none","stroke":"currentColor"}]
+53:["$","path",null,{"d":"M 552,64 L 552,288","fill":"none","stroke":"currentColor"}]
+54:["$","path",null,{"d":"M 632,0 L 632,16","fill":"none","stroke":"currentColor"}]
+55:["$","path",null,{"d":"M 632,16 L 632,64","fill":"none","stroke":"currentColor"}]
+56:["$","path",null,{"d":"M 632,64 L 632,288","fill":"none","stroke":"currentColor"}]
+57:["$","polygon",null,{"points":"104.000000,192.000000 92.000000,186.399994 92.000000,197.600006","fill":"currentColor","transform":"rotate(180.000000, 96.000000, 192.000000)"}]
+58:["$","polygon",null,{"points":"136.000000,32.000000 124.000000,26.400000 124.000000,37.599998","fill":"currentColor","transform":"rotate(0.000000, 128.000000, 32.000000)"}]
+59:["$","polygon",null,{"points":"136.000000,192.000000 124.000000,186.399994 124.000000,197.600006","fill":"currentColor","transform":"rotate(0.000000, 128.000000, 192.000000)"}]
+5a:["$","polygon",null,{"points":"256.000000,192.000000 244.000000,186.399994 244.000000,197.600006","fill":"currentColor","transform":"rotate(180.000000, 248.000000, 192.000000)"}]
+5b:["$","polygon",null,{"points":"288.000000,96.000000 276.000000,90.400002 276.000000,101.599998","fill":"currentColor","transform":"rotate(0.000000, 280.000000, 96.000000)"}]
+5c:["$","polygon",null,{"points":"288.000000,192.000000 276.000000,186.399994 276.000000,197.600006","fill":"currentColor","transform":"rotate(0.000000, 280.000000, 192.000000)"}]
+5d:["$","polygon",null,{"points":"376.000000,192.000000 364.000000,186.399994 364.000000,197.600006","fill":"currentColor","transform":"rotate(180.000000, 368.000000, 192.000000)"}]
+5e:["$","polygon",null,{"points":"408.000000,96.000000 396.000000,90.400002 396.000000,101.599998","fill":"currentColor","transform":"rotate(0.000000, 400.000000, 96.000000)"}]
+5f:["$","polygon",null,{"points":"520.000000,192.000000 508.000000,186.399994 508.000000,197.600006","fill":"currentColor","transform":"rotate(180.000000, 512.000000, 192.000000)"}]
+60:["$","polygon",null,{"points":"552.000000,96.000000 540.000000,90.400002 540.000000,101.599998","fill":"currentColor","transform":"rotate(0.000000, 544.000000, 96.000000)"}]
+61:["$","style",null,{"children":"\n  text {\n       text-anchor: middle;\n       font-family: \"Menlo\",\"Lucida Console\",\"monospace\";\n       fill: currentColor;\n       font-size: 1em;\n  }\n"}]
+62:["$","text",null,{"x":"8","y":"4","children":"="}]
+63:["$","text",null,{"x":"16","y":"4","children":"="}]
+64:["$","text",null,{"x":"24","y":"4","children":"="}]
+65:["$","text",null,{"x":"32","y":"4","children":"="}]
+66:["$","text",null,{"x":"40","y":"4","children":"="}]
+67:["$","text",null,{"x":"48","y":"4","children":"="}]
+68:["$","text",null,{"x":"56","y":"4","children":"="}]
+69:["$","text",null,{"x":"64","y":"4","children":"="}]
+6a:["$","text",null,{"x":"72","y":"4","children":"="}]
+6b:["$","text",null,{"x":"80","y":"4","children":"="}]
+6c:["$","text",null,{"x":"88","y":"4","children":"="}]
+6d:["$","text",null,{"x":"96","y":"4","children":"="}]
+6e:["$","text",null,{"x":"104","y":"4","children":"="}]
+6f:["$","text",null,{"x":"112","y":"4","children":"="}]
+70:["$","text",null,{"x":"120","y":"4","children":"="}]
+71:["$","text",null,{"x":"128","y":"4","children":"="}]
+72:["$","text",null,{"x":"136","y":"4","children":"="}]
+73:["$","text",null,{"x":"144","y":"4","children":"="}]
+74:["$","text",null,{"x":"152","y":"4","children":"="}]
+75:["$","text",null,{"x":"160","y":"4","children":"="}]
+76:["$","text",null,{"x":"168","y":"4","children":"="}]
+77:["$","text",null,{"x":"176","y":"4","children":"="}]
+78:["$","text",null,{"x":"184","y":"4","children":"="}]
+79:["$","text",null,{"x":"200","y":"4","children":"I"}]
+7a:["$","text",null,{"x":"208","y":"4","children":"n"}]
+7b:["$","text",null,{"x":"216","y":"4","children":"-"}]
+7c:["$","text",null,{"x":"224","y":"4","children":"p"}]
+7d:["$","text",null,{"x":"232","y":"4","children":"r"}]
+7e:["$","text",null,{"x":"240","y":"4","children":"o"}]
+7f:["$","text",null,{"x":"248","y":"4","children":"c"}]
+80:["$","text",null,{"x":"256","y":"4","children":"e"}]
+81:["$","text",null,{"x":"264","y":"4","children":"s"}]
+82:["$","text",null,{"x":"272","y":"4","children":"s"}]
+83:["$","text",null,{"x":"288","y":"4","children":"="}]
+84:["$","text",null,{"x":"296","y":"4","children":"="}]
+85:["$","text",null,{"x":"304","y":"4","children":"="}]
+86:["$","text",null,{"x":"312","y":"4","children":"="}]
+87:["$","text",null,{"x":"320","y":"4","children":"="}]
+88:["$","text",null,{"x":"328","y":"4","children":"="}]
+89:["$","text",null,{"x":"336","y":"4","children":"="}]
+8a:["$","text",null,{"x":"344","y":"4","children":"="}]
+8b:["$","text",null,{"x":"352","y":"4","children":"="}]
+8c:["$","text",null,{"x":"360","y":"4","children":"="}]
+8d:["$","text",null,{"x":"368","y":"4","children":"="}]
+8e:["$","text",null,{"x":"376","y":"4","children":"="}]
+8f:["$","text",null,{"x":"384","y":"4","children":"="}]
+90:["$","text",null,{"x":"392","y":"4","children":"="}]
+91:["$","text",null,{"x":"400","y":"4","children":"="}]
+92:["$","text",null,{"x":"408","y":"4","children":"="}]
+93:["$","text",null,{"x":"416","y":"4","children":"="}]
+94:["$","text",null,{"x":"424","y":"4","children":"="}]
+95:["$","text",null,{"x":"432","y":"4","children":"="}]
+96:["$","text",null,{"x":"440","y":"4","children":"="}]
+97:["$","text",null,{"x":"448","y":"4","children":"="}]
+98:["$","text",null,{"x":"456","y":"4","children":"="}]
+99:["$","text",null,{"x":"464","y":"4","children":"|"}]
+9a:["$","text",null,{"x":"472","y":"4","children":"="}]
+9b:["$","text",null,{"x":"480","y":"4","children":"="}]
+9c:["$","text",null,{"x":"496","y":"4","children":"O"}]
+9d:["$","text",null,{"x":"504","y":"4","children":"u"}]
+9e:["$","text",null,{"x":"512","y":"4","children":"t"}]
+9f:["$","text",null,{"x":"520","y":"4","children":"-"}]
+a0:["$","text",null,{"x":"528","y":"4","children":"o"}]
+a1:["$","text",null,{"x":"536","y":"4","children":"f"}]
+a2:["$","text",null,{"x":"544","y":"4","children":"-"}]
+a3:["$","text",null,{"x":"552","y":"4","children":"p"}]
+a4:["$","text",null,{"x":"560","y":"4","children":"r"}]
+a5:["$","text",null,{"x":"568","y":"4","children":"o"}]
+a6:["$","text",null,{"x":"576","y":"4","children":"c"}]
+a7:["$","text",null,{"x":"584","y":"4","children":"e"}]
+a8:["$","text",null,{"x":"592","y":"4","children":"s"}]
+a9:["$","text",null,{"x":"600","y":"4","children":"s"}]
+aa:["$","text",null,{"x":"616","y":"4","children":"="}]
+ab:["$","text",null,{"x":"624","y":"4","children":"="}]
+ac:["$","text",null,{"x":"152","y":"36","children":"W"}]
+ad:["$","text",null,{"x":"160","y":"36","children":"o"}]
+ae:["$","text",null,{"x":"168","y":"36","children":"r"}]
+af:["$","text",null,{"x":"176","y":"36","children":"k"}]
+b0:["$","text",null,{"x":"192","y":"36","children":"I"}]
+b1:["$","text",null,{"x":"200","y":"36","children":"d"}]
+b2:["$","text",null,{"x":"208","y":"36","children":"s"}]
+b3:["$","text",null,{"x":"440","y":"36","children":"C"}]
+b4:["$","text",null,{"x":"448","y":"36","children":"a"}]
+b5:["$","text",null,{"x":"456","y":"36","children":"l"}]
+b6:["$","text",null,{"x":"464","y":"36","children":"l"}]
+b7:["$","text",null,{"x":"568","y":"36","children":"P"}]
+b8:["$","text",null,{"x":"576","y":"36","children":"r"}]
+b9:["$","text",null,{"x":"584","y":"36","children":"o"}]
+ba:["$","text",null,{"x":"592","y":"36","children":"c"}]
+bb:["$","text",null,{"x":"600","y":"36","children":"e"}]
+bc:["$","text",null,{"x":"608","y":"36","children":"s"}]
+bd:["$","text",null,{"x":"616","y":"36","children":"s"}]
+be:["$","text",null,{"x":"440","y":"52","children":"Q"}]
+bf:["$","text",null,{"x":"448","y":"52","children":"u"}]
+c0:["$","text",null,{"x":"456","y":"52","children":"e"}]
+c1:["$","text",null,{"x":"464","y":"52","children":"u"}]
+c2:["$","text",null,{"x":"472","y":"52","children":"e"}]
+c3:["$","text",null,{"x":"576","y":"52","children":"P"}]
+c4:["$","text",null,{"x":"584","y":"52","children":"o"}]
+c5:["$","text",null,{"x":"592","y":"52","children":"o"}]
+c6:["$","text",null,{"x":"600","y":"52","children":"l"}]
+c7:["$","text",null,{"x":"152","y":"84","children":"."}]
+c8:["$","text",null,{"x":"160","y":"84","children":"."}]
+c9:["$","text",null,{"x":"168","y":"84","children":"."}]
+ca:["$","text",null,{"x":"424","y":"84","children":"."}]
+cb:["$","text",null,{"x":"432","y":"84","children":"."}]
+cc:["$","text",null,{"x":"440","y":"84","children":"."}]
+cd:["$","text",null,{"x":"152","y":"100","children":"6"}]
+ce:["$","text",null,{"x":"424","y":"100","children":"5"}]
+cf:["$","text",null,{"x":"432","y":"100","children":","}]
+d0:["$","text",null,{"x":"448","y":"100","children":"c"}]
+d1:["$","text",null,{"x":"456","y":"100","children":"a"}]
+d2:["$","text",null,{"x":"464","y":"100","children":"l"}]
+d3:["$","text",null,{"x":"472","y":"100","children":"l"}]
+d4:["$","text",null,{"x":"480","y":"100","children":"("}]
+d5:["$","text",null,{"x":"488","y":"100","children":")"}]
+d6:["$","text",null,{"x":"152","y":"116","children":"7"}]
+d7:["$","text",null,{"x":"424","y":"116","children":"."}]
+d8:["$","text",null,{"x":"432","y":"116","children":"."}]
+d9:["$","text",null,{"x":"440","y":"116","children":"."}]
+da:["$","text",null,{"x":"16","y":"132","children":"P"}]
+db:["$","text",null,{"x":"24","y":"132","children":"r"}]
+dc:["$","text",null,{"x":"32","y":"132","children":"o"}]
+dd:["$","text",null,{"x":"40","y":"132","children":"c"}]
+de:["$","text",null,{"x":"48","y":"132","children":"e"}]
+df:["$","text",null,{"x":"56","y":"132","children":"s"}]
+e0:["$","text",null,{"x":"64","y":"132","children":"s"}]
+e1:["$","text",null,{"x":"152","y":"132","children":"."}]
+e2:["$","text",null,{"x":"160","y":"132","children":"."}]
+e3:["$","text",null,{"x":"168","y":"132","children":"."}]
+e4:["$","text",null,{"x":"304","y":"132","children":"L"}]
+e5:["$","text",null,{"x":"312","y":"132","children":"o"}]
+e6:["$","text",null,{"x":"320","y":"132","children":"c"}]
+e7:["$","text",null,{"x":"328","y":"132","children":"a"}]
+e8:["$","text",null,{"x":"336","y":"132","children":"l"}]
+e9:["$","text",null,{"x":"568","y":"132","children":"P"}]
+ea:["$","text",null,{"x":"576","y":"132","children":"r"}]
+eb:["$","text",null,{"x":"584","y":"132","children":"o"}]
+ec:["$","text",null,{"x":"592","y":"132","children":"c"}]
+ed:["$","text",null,{"x":"600","y":"132","children":"e"}]
+ee:["$","text",null,{"x":"608","y":"132","children":"s"}]
+ef:["$","text",null,{"x":"616","y":"132","children":"s"}]
+f0:["$","text",null,{"x":"24","y":"148","children":"P"}]
+f1:["$","text",null,{"x":"32","y":"148","children":"o"}]
+f2:["$","text",null,{"x":"40","y":"148","children":"o"}]
+f3:["$","text",null,{"x":"48","y":"148","children":"l"}]
+f4:["$","text",null,{"x":"304","y":"148","children":"W"}]
+f5:["$","text",null,{"x":"312","y":"148","children":"o"}]
+f6:["$","text",null,{"x":"320","y":"148","children":"r"}]
+f7:["$","text",null,{"x":"328","y":"148","children":"k"}]
+f8:["$","text",null,{"x":"336","y":"148","children":"e"}]
+f9:["$","text",null,{"x":"344","y":"148","children":"r"}]
+fa:["$","text",null,{"x":"576","y":"148","children":"#"}]
+fb:["$","text",null,{"x":"584","y":"148","children":"1"}]
+fc:["$","text",null,{"x":"592","y":"148","children":"."}]
+fd:["$","text",null,{"x":"600","y":"148","children":"."}]
+fe:["$","text",null,{"x":"608","y":"148","children":"n"}]
+ff:["$","text",null,{"x":"16","y":"164","children":"E"}]
+100:["$","text",null,{"x":"24","y":"164","children":"x"}]
+101:["$","text",null,{"x":"32","y":"164","children":"e"}]
+102:["$","text",null,{"x":"40","y":"164","children":"c"}]
+103:["$","text",null,{"x":"48","y":"164","children":"u"}]
+104:["$","text",null,{"x":"56","y":"164","children":"t"}]
+105:["$","text",null,{"x":"64","y":"164","children":"o"}]
+106:["$","text",null,{"x":"72","y":"164","children":"r"}]
+107:["$","text",null,{"x":"304","y":"164","children":"T"}]
+108:["$","text",null,{"x":"312","y":"164","children":"h"}]
+109:["$","text",null,{"x":"320","y":"164","children":"r"}]
+10a:["$","text",null,{"x":"328","y":"164","children":"e"}]
+10b:["$","text",null,{"x":"336","y":"164","children":"a"}]
+10c:["$","text",null,{"x":"344","y":"164","children":"d"}]
+10d:["$","text",null,{"x":"152","y":"196","children":"W"}]
+10e:["$","text",null,{"x":"160","y":"196","children":"o"}]
+10f:["$","text",null,{"x":"168","y":"196","children":"r"}]
+110:["$","text",null,{"x":"176","y":"196","children":"k"}]
+111:["$","text",null,{"x":"192","y":"196","children":"I"}]
+112:["$","text",null,{"x":"200","y":"196","children":"t"}]
+113:["$","text",null,{"x":"208","y":"196","children":"e"}]
+114:["$","text",null,{"x":"216","y":"196","children":"m"}]
+115:["$","text",null,{"x":"224","y":"196","children":"s"}]
+116:["$","text",null,{"x":"432","y":"196","children":"R"}]
+117:["$","text",null,{"x":"440","y":"196","children":"e"}]
+118:["$","text",null,{"x":"448","y":"196","children":"s"}]
+119:["$","text",null,{"x":"456","y":"196","children":"u"}]
+11a:["$","text",null,{"x":"464","y":"196","children":"l"}]
+11b:["$","text",null,{"x":"472","y":"196","children":"t"}]
+11c:["$","text",null,{"x":"432","y":"212","children":"Q"}]
+11d:["$","text",null,{"x":"440","y":"212","children":"u"}]
+11e:["$","text",null,{"x":"448","y":"212","children":"e"}]
+11f:["$","text",null,{"x":"456","y":"212","children":"u"}]
+120:["$","text",null,{"x":"464","y":"212","children":"e"}]
+121:["$","text",null,{"x":"152","y":"244","children":"6"}]
+122:["$","text",null,{"x":"160","y":"244","children":":"}]
+123:["$","text",null,{"x":"176","y":"244","children":"c"}]
+124:["$","text",null,{"x":"184","y":"244","children":"a"}]
+125:["$","text",null,{"x":"192","y":"244","children":"l"}]
+126:["$","text",null,{"x":"200","y":"244","children":"l"}]
+127:["$","text",null,{"x":"208","y":"244","children":"("}]
+128:["$","text",null,{"x":"216","y":"244","children":")"}]
+129:["$","text",null,{"x":"424","y":"244","children":"."}]
+12a:["$","text",null,{"x":"432","y":"244","children":"."}]
+12b:["$","text",null,{"x":"440","y":"244","children":"."}]
+12c:["$","text",null,{"x":"176","y":"260","children":"f"}]
+12d:["$","text",null,{"x":"184","y":"260","children":"u"}]
+12e:["$","text",null,{"x":"192","y":"260","children":"t"}]
+12f:["$","text",null,{"x":"200","y":"260","children":"u"}]
+130:["$","text",null,{"x":"208","y":"260","children":"r"}]
+131:["$","text",null,{"x":"216","y":"260","children":"e"}]
+132:["$","text",null,{"x":"424","y":"260","children":"4"}]
+133:["$","text",null,{"x":"432","y":"260","children":","}]
+134:["$","text",null,{"x":"448","y":"260","children":"r"}]
+135:["$","text",null,{"x":"456","y":"260","children":"e"}]
+136:["$","text",null,{"x":"464","y":"260","children":"s"}]
+137:["$","text",null,{"x":"472","y":"260","children":"u"}]
+138:["$","text",null,{"x":"480","y":"260","children":"l"}]
+139:["$","text",null,{"x":"488","y":"260","children":"t"}]
+13a:["$","text",null,{"x":"152","y":"276","children":"."}]
+13b:["$","text",null,{"x":"160","y":"276","children":"."}]
+13c:["$","text",null,{"x":"168","y":"276","children":"."}]
+13d:["$","text",null,{"x":"424","y":"276","children":"3"}]
+13e:["$","text",null,{"x":"432","y":"276","children":","}]
+13f:["$","text",null,{"x":"448","y":"276","children":"e"}]
+140:["$","text",null,{"x":"456","y":"276","children":"x"}]
+141:["$","text",null,{"x":"464","y":"276","children":"c"}]
+142:["$","text",null,{"x":"472","y":"276","children":"e"}]
+143:["$","text",null,{"x":"480","y":"276","children":"p"}]
+144:["$","text",null,{"x":"488","y":"276","children":"t"}]
+147:["$","polygon",null,{"points":"504.000000,80.000000 492.000000,74.400002 492.000000,85.599998","fill":"currentColor","transform":"rotate(0.000000, 496.000000, 80.000000)"}]
+148:["$","style",null,{"children":"\n  text {\n       text-anchor: middle;\n       font-family: \"Menlo\",\"Lucida Console\",\"monospace\";\n       fill: currentColor;\n       font-size: 1em;\n  }\n"}]
+149:["$","text",null,{"x":"8","y":"4","children":"="}]
+14a:["$","text",null,{"x":"16","y":"4","children":"="}]
+14b:["$","text",null,{"x":"24","y":"4","children":"="}]
+14c:["$","text",null,{"x":"32","y":"4","children":"="}]
+14d:["$","text",null,{"x":"40","y":"4","children":"="}]
+14e:["$","text",null,{"x":"48","y":"4","children":"="}]
+14f:["$","text",null,{"x":"56","y":"4","children":"="}]
+150:["$","text",null,{"x":"64","y":"4","children":"="}]
+151:["$","text",null,{"x":"72","y":"4","children":"="}]
+152:["$","text",null,{"x":"80","y":"4","children":"="}]
+153:["$","text",null,{"x":"88","y":"4","children":"="}]
+154:["$","text",null,{"x":"96","y":"4","children":"J"}]
+155:["$","text",null,{"x":"104","y":"4","children":"u"}]
+156:["$","text",null,{"x":"112","y":"4","children":"p"}]
+157:["$","text",null,{"x":"120","y":"4","children":"y"}]
+158:["$","text",null,{"x":"128","y":"4","children":"t"}]
+159:["$","text",null,{"x":"136","y":"4","children":"e"}]
+15a:["$","text",null,{"x":"144","y":"4","children":"r"}]
+15b:["$","text",null,{"x":"152","y":"4","children":"="}]
+15c:["$","text",null,{"x":"160","y":"4","children":"="}]
+15d:["$","text",null,{"x":"168","y":"4","children":"="}]
+15e:["$","text",null,{"x":"176","y":"4","children":"="}]
+15f:["$","text",null,{"x":"184","y":"4","children":"="}]
+160:["$","text",null,{"x":"192","y":"4","children":"="}]
+161:["$","text",null,{"x":"200","y":"4","children":"="}]
+162:["$","text",null,{"x":"208","y":"4","children":"|"}]
+163:["$","text",null,{"x":"216","y":"4","children":"="}]
+164:["$","text",null,{"x":"224","y":"4","children":"="}]
+165:["$","text",null,{"x":"232","y":"4","children":"="}]
+166:["$","text",null,{"x":"240","y":"4","children":"="}]
+167:["$","text",null,{"x":"248","y":"4","children":"="}]
+168:["$","text",null,{"x":"256","y":"4","children":"="}]
+169:["$","text",null,{"x":"264","y":"4","children":"="}]
+16a:["$","text",null,{"x":"272","y":"4","children":"="}]
+16b:["$","text",null,{"x":"288","y":"4","children":"K"}]
+16c:["$","text",null,{"x":"296","y":"4","children":"e"}]
+16d:["$","text",null,{"x":"304","y":"4","children":"r"}]
+16e:["$","text",null,{"x":"312","y":"4","children":"n"}]
+16f:["$","text",null,{"x":"320","y":"4","children":"e"}]
+170:["$","text",null,{"x":"328","y":"4","children":"l"}]
+171:["$","text",null,{"x":"344","y":"4","children":"="}]
+172:["$","text",null,{"x":"352","y":"4","children":"="}]
+173:["$","text",null,{"x":"360","y":"4","children":"="}]
+174:["$","text",null,{"x":"368","y":"4","children":"="}]
+175:["$","text",null,{"x":"376","y":"4","children":"="}]
+176:["$","text",null,{"x":"384","y":"4","children":"="}]
+177:["$","text",null,{"x":"392","y":"4","children":"="}]
+178:["$","text",null,{"x":"400","y":"4","children":"="}]
+179:["$","text",null,{"x":"408","y":"4","children":"="}]
+17a:["$","text",null,{"x":"416","y":"4","children":"="}]
+17b:["$","text",null,{"x":"424","y":"4","children":"="}]
+17c:["$","text",null,{"x":"432","y":"4","children":"="}]
+17d:["$","text",null,{"x":"440","y":"4","children":"="}]
+17e:["$","text",null,{"x":"448","y":"4","children":"="}]
+17f:["$","text",null,{"x":"456","y":"4","children":"="}]
+180:["$","text",null,{"x":"464","y":"4","children":"="}]
+181:["$","text",null,{"x":"472","y":"4","children":"="}]
+182:["$","text",null,{"x":"480","y":"4","children":"="}]
+183:["$","text",null,{"x":"488","y":"4","children":"="}]
+184:["$","text",null,{"x":"496","y":"4","children":"="}]
+185:["$","text",null,{"x":"512","y":"4","children":"="}]
+186:["$","text",null,{"x":"520","y":"4","children":"="}]
+187:["$","text",null,{"x":"536","y":"4","children":"I"}]
+188:["$","text",null,{"x":"544","y":"4","children":"P"}]
+189:["$","text",null,{"x":"552","y":"4","children":"y"}]
+18a:["$","text",null,{"x":"560","y":"4","children":"t"}]
+18b:["$","text",null,{"x":"568","y":"4","children":"h"}]
+18c:["$","text",null,{"x":"576","y":"4","children":"o"}]
+18d:["$","text",null,{"x":"584","y":"4","children":"n"}]
+18e:["$","text",null,{"x":"600","y":"4","children":"="}]
+18f:["$","text",null,{"x":"608","y":"4","children":"="}]
+190:["$","text",null,{"x":"200","y":"36","children":"Ø"}]
+191:["$","text",null,{"x":"208","y":"36","children":"M"}]
+192:["$","text",null,{"x":"216","y":"36","children":"Q"}]
+193:["$","text",null,{"x":"368","y":"36","children":"I"}]
+194:["$","text",null,{"x":"376","y":"36","children":"P"}]
+195:["$","text",null,{"x":"384","y":"36","children":"y"}]
+196:["$","text",null,{"x":"392","y":"36","children":"t"}]
+197:["$","text",null,{"x":"400","y":"36","children":"h"}]
+198:["$","text",null,{"x":"408","y":"36","children":"o"}]
+199:["$","text",null,{"x":"416","y":"36","children":"n"}]
+19a:["$","text",null,{"x":"520","y":"36","children":"I"}]
+19b:["$","text",null,{"x":"528","y":"36","children":"n"}]
+19c:["$","text",null,{"x":"536","y":"36","children":"t"}]
+19d:["$","text",null,{"x":"544","y":"36","children":"e"}]
+19e:["$","text",null,{"x":"552","y":"36","children":"r"}]
+19f:["$","text",null,{"x":"560","y":"36","children":"a"}]
+1a0:["$","text",null,{"x":"568","y":"36","children":"c"}]
+1a1:["$","text",null,{"x":"576","y":"36","children":"t"}]
+1a2:["$","text",null,{"x":"584","y":"36","children":"i"}]
+1a3:["$","text",null,{"x":"592","y":"36","children":"v"}]
+1a4:["$","text",null,{"x":"600","y":"36","children":"e"}]
+1a5:["$","text",null,{"x":"368","y":"52","children":"K"}]
+1a6:["$","text",null,{"x":"376","y":"52","children":"e"}]
+1a7:["$","text",null,{"x":"384","y":"52","children":"r"}]
+1a8:["$","text",null,{"x":"392","y":"52","children":"n"}]
+1a9:["$","text",null,{"x":"400","y":"52","children":"e"}]
+1aa:["$","text",null,{"x":"408","y":"52","children":"l"}]
+1ab:["$","text",null,{"x":"520","y":"52","children":"S"}]
+1ac:["$","text",null,{"x":"528","y":"52","children":"h"}]
+1ad:["$","text",null,{"x":"536","y":"52","children":"e"}]
+1ae:["$","text",null,{"x":"544","y":"52","children":"l"}]
+1af:["$","text",null,{"x":"552","y":"52","children":"l"}]
+1b0:["$","text",null,{"x":"168","y":"84","children":"e"}]
+1b1:["$","text",null,{"x":"176","y":"84","children":"x"}]
+1b2:["$","text",null,{"x":"184","y":"84","children":"e"}]
+1b3:["$","text",null,{"x":"192","y":"84","children":"c"}]
+1b4:["$","text",null,{"x":"200","y":"84","children":"u"}]
+1b5:["$","text",null,{"x":"208","y":"84","children":"t"}]
+1b6:["$","text",null,{"x":"216","y":"84","children":"e"}]
+1b7:["$","text",null,{"x":"224","y":"84","children":"_"}]
+1b8:["$","text",null,{"x":"232","y":"84","children":"c"}]
+1b9:["$","text",null,{"x":"240","y":"84","children":"o"}]
+1ba:["$","text",null,{"x":"248","y":"84","children":"d"}]
+1bb:["$","text",null,{"x":"256","y":"84","children":"e"}]
+1bc:["$","text",null,{"x":"16","y":"100","children":"F"}]
+1bd:["$","text",null,{"x":"24","y":"100","children":"r"}]
+1be:["$","text",null,{"x":"32","y":"100","children":"o"}]
+1bf:["$","text",null,{"x":"40","y":"100","children":"n"}]
+1c0:["$","text",null,{"x":"48","y":"100","children":"t"}]
+1c1:["$","text",null,{"x":"56","y":"100","children":"e"}]
+1c2:["$","text",null,{"x":"64","y":"100","children":"n"}]
+1c3:["$","text",null,{"x":"72","y":"100","children":"d"}]
+1c4:["$","text",null,{"x":"360","y":"116","children":"d"}]
+1c5:["$","text",null,{"x":"368","y":"116","children":"o"}]
+1c6:["$","text",null,{"x":"376","y":"116","children":"_"}]
+1c7:["$","text",null,{"x":"384","y":"116","children":"e"}]
+1c8:["$","text",null,{"x":"392","y":"116","children":"x"}]
+1c9:["$","text",null,{"x":"400","y":"116","children":"e"}]
+1ca:["$","text",null,{"x":"408","y":"116","children":"c"}]
+1cb:["$","text",null,{"x":"416","y":"116","children":"u"}]
+1cc:["$","text",null,{"x":"424","y":"116","children":"t"}]
+1cd:["$","text",null,{"x":"432","y":"116","children":"e"}]
+1ce:["$","text",null,{"x":"528","y":"116","children":"r"}]
+1cf:["$","text",null,{"x":"536","y":"116","children":"u"}]
+1d0:["$","text",null,{"x":"544","y":"116","children":"n"}]
+1d1:["$","text",null,{"x":"552","y":"116","children":"_"}]
+1d2:["$","text",null,{"x":"560","y":"116","children":"c"}]
+1d3:["$","text",null,{"x":"568","y":"116","children":"e"}]
+1d4:["$","text",null,{"x":"576","y":"116","children":"l"}]
+1d5:["$","text",null,{"x":"584","y":"116","children":"l"}]
+1d6:["$","text",null,{"x":"168","y":"148","children":"r"}]
+1d7:["$","text",null,{"x":"176","y":"148","children":"e"}]
+1d8:["$","text",null,{"x":"184","y":"148","children":"p"}]
+1d9:["$","text",null,{"x":"192","y":"148","children":"l"}]
+1da:["$","text",null,{"x":"200","y":"148","children":"y"}]
+1db:["$","text",null,{"x":"208","y":"148","children":"_"}]
+1dc:["$","text",null,{"x":"216","y":"148","children":"c"}]
+1dd:["$","text",null,{"x":"224","y":"148","children":"o"}]
+1de:["$","text",null,{"x":"232","y":"148","children":"n"}]
+1df:["$","text",null,{"x":"240","y":"148","children":"t"}]
+1e0:["$","text",null,{"x":"248","y":"148","children":"e"}]
+1e1:["$","text",null,{"x":"256","y":"148","children":"n"}]
+1e2:["$","text",null,{"x":"264","y":"148","children":"t"}]
+1e7:null
+4e:true
+c:C
+4d:0
+11:"$undefined"
+e:"$undefined"
+b:"$undefined"
+4c:"$undefined"
+45:"$undefined"
