@@ -8,43 +8,22 @@
 8:I[97478,["$2"],"default"]
 9:"/_next/static/chunks/3kcn8wz7h7dvj.js"
 a:I[29306,["$2","$9"],"default"]
-14:"/_next/static/chunks/0jybh4guong1_.js"
-15:"/_next/static/chunks/1pfxd-dkulr8v.js"
-16:I[21864,["$2","$14","$15"],""]
-17:"AsciiBorderedMdx"
-18:I[9655,["$2","$14","$15"],"$17"]
-22:"ViewportBoundary"
-23:I[44259,["$2"],"$22"]
-24:"MetadataBoundary"
-25:I[44259,["$2"],"$24"]
-26:"$Sreact.suspense"
-27:I[19565,["$2"],"IconMark"]
-:HL["/_next/static/chunks/0n0ucni11z82d.css","style"]
+13:"/_next/static/chunks/0jybh4guong1_.js"
+14:"/_next/static/chunks/1n020gr3ll-6x.js"
+15:I[21864,["$2","$13","$14"],""]
+16:"AsciiBorderedMdx"
+17:I[9655,["$2","$13","$14"],"$16"]
+21:"ViewportBoundary"
+22:I[44259,["$2"],"$21"]
+23:"MetadataBoundary"
+24:I[44259,["$2"],"$23"]
+25:"$Sreact.suspense"
+26:I[19565,["$2"],"IconMark"]
+:HL["/_next/static/chunks/30-je2wmn_k88.css","style"]
 c:X
 f:X
 f:C
-13:T545,                              _______._ _
-                      _ _.___/       |
-                         |           |
-                         |           |
-             -----+-----                          ___     ___
-                  |              ______   ___    /  /____    \
-            __________ _-+-_____/ .(  .\_(xhb)__|  |(     \   |
-           /.   |..   \..  ___/.\ . ) ..\ . ____\  |  o  / |  |
-          |..    ).    |.  \    .|.(  ...|.(.   :  (____|  |  |
-         (______/..    |.   \___.|______ . ______|..       | 9|
-          )..          |.      |    ..   |..     \ .       | 9[
-         ( .    o      |.      |     .\  |.       |. ___/ (|  ]
-          \___________/..      |\_______/________/\_________\ [
-               |_______________|  ____________________________]
-                         :           |
-    - -----andrzej-_ ____\_____|----_|_____________'-lichnerowicz-------- -
-                         :           |
- .     p e r s o n a l ! |    #1     | wEBPAGE                            .
- . _         - --------- |  - -- -   | ------- -                         _  .
--:-\-\-------------------|- -     - -|-----------------------------------\-\-:
- |                      _|___________|_                                      |
- |                       :           :                                       |19:Tee3,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+18:Tee3,<table class="code-ln-table"><tbody><tr class="code-ln-line">
         <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
         <td class="code-ln-code" data-line-number="1"><span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">%</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> letter</span></span></td>
       </tr><tr class="code-ln-line">
@@ -71,26 +50,26 @@ f:C
       </tr><tr class="code-ln-line">
         <td class="code-ln-numbers" data-line-number="9"><div class="code-ln-n" data-line-number="9"></div></td>
         <td class="code-ln-code" data-line-number="9"><span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">%</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> logout</span></span></td>
-      </tr></tbody></table>12:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$1","c",{"children":[["$","div",null,{"className":"flex justify-center","children":["$","div",null,{"className":"ascii-art nfo-pre","children":[["$","div",null,{"className":"header-component","children":"$13"}],[["$","div",null,{"className":"whitespace-pre font-mono","children":" |                                                                           |"}],["$","div",null,{"className":"post-back-link","children":[" | ",["$","$L16",null,{"href":"/","className":"hover:underline","prefetch":false,"style":{"flex":1,"minWidth":0,"textDecoration":"none","color":"inherit"},"children":"<< back"}]," |"]}],["$","div",null,{"className":"whitespace-pre font-mono","children":" |                                                                           |"}]],["$","$L18",null,{"children":[["$","header",null,{"className":"post-header","children":[["$","h1",null,{"className":"post-title","children":["# ","Initial Revision"]}],["$","time",null,{"className":"post-date","dateTime":"2017-11-05T10:44:44+01:00","children":["[ ","2017.11.05"," ]"]}]]}],[["",["$","pre",null,{"className":"language-bash pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$19"}}]}]],"\n","$L1a","\n","$L1b"]]}],"$12:0:1:d:r:props:children:0:props:children:props:children:1","$L1c"]}]}],["$L1d","$L1e","$L1f"],"$L20"]}],"p":"$@21","v":null,"s":"$c"}}]]
+      </tr></tbody></table>12:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$1","c",{"children":[["$","div",null,{"className":"flex justify-center","children":["$","div",null,{"className":"ascii-art nfo-pre","children":[["$","div",null,{"className":"header-component","children":"                              _______._ _\n                      _ _.___/       |\n                         |           |\n                         |           |\n                       __-___    _____   _____\r\n              ____-___/ __   .__/_ ._/__(_  ..)\r\n             /... |  ..../   .| ) ./_  ./ ..(/\r\n             \\_   .\\ .../     .\\_ / __./\\_   \\ ang3lo/ex0dus\r\n             (   )  |../ ^xhb  ..|.| /___\\ .. .)\r\n          Oo. \\_____|_/_________|_|________/_/ .oO\n                         :           |\n    - -----andrzej-_ ____\\_____|----_|_____________'-lichnerowicz-------- -\n                         :           |\n .     p e r s o n a l ! |    #1     | wEBPAGE                            .\n . _         - --------- |  - -- -   | ------- -                         _  .\n-:-\\-\\-------------------|- -     - -|-----------------------------------\\-\\-:\n |                      _|___________|_                                      |\n |                       :           :                                       |"}],[["$","div",null,{"className":"whitespace-pre font-mono","children":" |                                                                           |"}],["$","div",null,{"className":"post-back-link","children":[" | ",["$","$L15",null,{"href":"/","className":"hover:underline","prefetch":false,"style":{"flex":1,"minWidth":0,"textDecoration":"none","color":"inherit"},"children":"<< back"}]," |"]}],["$","div",null,{"className":"whitespace-pre font-mono","children":" |                                                                           |"}]],["$","$L17",null,{"children":[["$","header",null,{"className":"post-header","children":[["$","h1",null,{"className":"post-title","children":["# ","Initial Revision"]}],["$","time",null,{"className":"post-date","dateTime":"2017-11-05T10:44:44+01:00","children":["[ ","2017.11.05"," ]"]}]]}],[["",["$","pre",null,{"className":"language-bash pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$18"}}]}]],"\n","$L19","\n","$L1a"]]}],"$12:0:1:d:r:props:children:0:props:children:props:children:1","$L1b"]}]}],["$L1c","$L1d","$L1e"],"$L1f"]}],"p":"$@20","v":null,"s":"$c"}}]]
 10:[["children",{"s":{"n":"slug","t":"c","k":"2017/hello-world","s":[]},"h":96,"d":{"r":["$","$1","c",{"children":[null,["$","$L7",null,{"parallelRouterKey":"children","template":["$","$L8",null,{}]}]]}],"p":"$@11","v":"$f","s":"$c"},"c":"$Q12"}]]
 d:[["children",{"s":"blog","h":96,"d":{"r":["$","$1","c",{"children":[null,["$","$L7",null,{"parallelRouterKey":"children","template":["$","$L8",null,{}]}]]}],"p":"$@e","v":"$f","s":"$c"},"c":"$Q10"}]]
-0:{"t":{"t":{"s":"","h":80,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0n0ucni11z82d.css","precedence":"next"}],["$","script","script-0",{"src":"/_next/static/chunks/3y26xv8sa1dt0.js","async":true}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","link",null,{"rel":"icon","href":"/favicon.ico","sizes":"any"}],["$","link",null,{"rel":"apple-touch-icon","href":"/apple-touch-icon.png"}]]}],["$","body",null,{"children":[["$","$L3",null,{}],["$","$L4",null,{"children":[["$","$L5",null,{}],["$","$L6",null,{"children":["$","$L7",null,{"parallelRouterKey":"children","template":["$","$L8",null,{}],"notFound":[["$","$La",null,{}],[]]}]}]]}]]}]]}]]}],"p":"$@b","v":null,"s":"$c"},"c":"$Qd"},"h":{"r":["$","$1","h",{"children":[null,["$","$L23",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","$L25",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$26",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Initial Revision | @unjello blog"}],["$","meta","1",{"property":"og:title","content":"Initial Revision | @unjello blog"}],["$","meta","2",{"property":"og:url","content":"https://andrzej.lichnerowicz.pl/en/blog/2017/hello-world/"}],["$","meta","3",{"property":"og:image","content":"https://andrzej.lichnerowicz.pl/avatar.png"}],["$","meta","4",{"property":"og:image:width","content":"1200"}],["$","meta","5",{"property":"og:image:height","content":"630"}],["$","meta","6",{"property":"og:image:alt","content":"Initial Revision | @unjello blog"}],["$","meta","7",{"property":"og:type","content":"article"}],["$","meta","8",{"property":"article:published_time","content":"2017-11-05T10:44:44+01:00"}],["$","meta","9",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","10",{"name":"twitter:title","content":"Initial Revision | @unjello blog"}],["$","meta","11",{"name":"twitter:image","content":"https://andrzej.lichnerowicz.pl/avatar.png"}],["$","link","12",{"rel":"shortcut icon","href":"/favicon.ico"}],["$","link","13",{"rel":"icon","href":"/favicon.ico","sizes":"any"}],["$","link","14",{"rel":"apple-touch-icon","href":"/apple-touch-icon.png"}],["$","$L27","15",{}]]}]}],null]}],null]}],"p":"$@28","v":null,"s":"$c"}},"a":"$@29","u":"$@2a","b":"eTjHqyI6G4EuxW6ACICD-"}
-2b:I[44259,["$2"],"OutletBoundary"]
-:HL["/_next/static/chunks/3ert6xgjkvepg.css","style"]
-1a:["$","p",null,{"children":["It's been sort of a tradition, to begin each incarnation of my blog, with a quote from this old joke",["$","sup",null,{"children":["$","a",null,{"href":"#user-content-fn-1","id":"user-content-fnref-1","data-footnote-ref":"","aria-describedby":"footnote-label","children":"1"}]}],". If one can trust ",["$","em",null,{"children":"the, uh, Internets"}],", this blog was esentially down since 2007. A decade! Enough is enough. Time to get back."]}]
-1b:["$","section",null,{"data-footnotes":"","className":"footnotes","children":[["$","div",null,{"className":"JaoSHW_markdown-heading","children":[["$","span",null,{"className":"JaoSHW_markdown-hash","children":["###"," "]}],["$","span",null,{"children":"Footnotes"}]]}],"\n",["$","ol",null,{"children":["\n",["$","li",null,{"id":"user-content-fn-1","children":["\n",["$","p",null,{"children":[["$","a",null,{"href":"https://gist.github.com/D3MZ/3915286","children":"https://gist.github.com/D3MZ/3915286"}]," ",["$","a",null,{"href":"#user-content-fnref-1","data-footnote-backref":"","aria-label":"Back to reference 1","className":"data-footnote-backref","children":"↩"}]]}],"\n"]}],"\n"]}],"\n"]}]
-1c:["$","div",null,{"children":[" \\__                    --> ",["$","a",null,{"href":"http://andrzej.lichnerowicz.pl","target":"_blank","rel":"noopener noreferrer","title":"andrzej.lichnerowicz.pl","className":"link","style":{"cursor":"pointer"},"children":"andrzej.lichnerowicz.pl"}]," <--                    __/\n   //                                                                     \\\\\n  // ------------------------                     ------------------------ \\\\\n '~~~~~~~~~~~~~~~~~~~~~~~~~// ------       ------ \\\\~~~~~~~~~~~~~~~~~~~~~~~~~`\n                          '~~~~~~~//       \\\\~~~~~~~`\n                                 // ------- \\\\\n                                '~~~~~~~~~~~~~`\n      "]}]
-1d:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/3ert6xgjkvepg.css","precedence":"next"}]
-1e:["$","script","script-0",{"src":"/_next/static/chunks/0jybh4guong1_.js","async":true}]
-1f:["$","script","script-1",{"src":"/_next/static/chunks/1pfxd-dkulr8v.js","async":true}]
-20:["$","$L2b",null,{"children":["$","$26",null,{"name":"Next.MetadataOutlet","children":"$@2c"}]}]
+0:{"t":{"t":{"s":"","h":80,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/30-je2wmn_k88.css","precedence":"next"}],["$","script","script-0",{"src":"/_next/static/chunks/3y26xv8sa1dt0.js","async":true}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","link",null,{"rel":"icon","href":"/favicon.ico","sizes":"any"}],["$","link",null,{"rel":"apple-touch-icon","href":"/apple-touch-icon.png"}]]}],["$","body",null,{"children":[["$","$L3",null,{}],["$","$L4",null,{"children":[["$","$L5",null,{}],["$","$L6",null,{"children":["$","$L7",null,{"parallelRouterKey":"children","template":["$","$L8",null,{}],"notFound":[["$","$La",null,{}],[]]}]}]]}]]}]]}]]}],"p":"$@b","v":null,"s":"$c"},"c":"$Qd"},"h":{"r":["$","$1","h",{"children":[null,["$","$L22",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","$L24",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$25",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Initial Revision | @unjello blog"}],["$","meta","1",{"property":"og:title","content":"Initial Revision | @unjello blog"}],["$","meta","2",{"property":"og:url","content":"https://andrzej.lichnerowicz.pl/en/blog/2017/hello-world/"}],["$","meta","3",{"property":"og:image","content":"https://andrzej.lichnerowicz.pl/avatar.png"}],["$","meta","4",{"property":"og:image:width","content":"1200"}],["$","meta","5",{"property":"og:image:height","content":"630"}],["$","meta","6",{"property":"og:image:alt","content":"Initial Revision | @unjello blog"}],["$","meta","7",{"property":"og:type","content":"article"}],["$","meta","8",{"property":"article:published_time","content":"2017-11-05T10:44:44+01:00"}],["$","meta","9",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","10",{"name":"twitter:title","content":"Initial Revision | @unjello blog"}],["$","meta","11",{"name":"twitter:image","content":"https://andrzej.lichnerowicz.pl/avatar.png"}],["$","link","12",{"rel":"shortcut icon","href":"/favicon.ico"}],["$","link","13",{"rel":"icon","href":"/favicon.ico","sizes":"any"}],["$","link","14",{"rel":"apple-touch-icon","href":"/apple-touch-icon.png"}],["$","$L26","15",{}]]}]}],null]}],null]}],"p":"$@27","v":null,"s":"$c"}},"a":"$@28","u":"$@29","b":"8mR2hOXURDkvIqL-1u1Er"}
+2a:I[44259,["$2"],"OutletBoundary"]
+:HL["/_next/static/chunks/1nym5xdou5nal.css","style"]
+19:["$","p",null,{"children":["It's been sort of a tradition, to begin each incarnation of my blog, with a quote from this old joke",["$","sup",null,{"children":["$","a",null,{"href":"#user-content-fn-1","id":"user-content-fnref-1","data-footnote-ref":"","aria-describedby":"footnote-label","children":"1"}]}],". If one can trust ",["$","em",null,{"children":"the, uh, Internets"}],", this blog was esentially down since 2007. A decade! Enough is enough. Time to get back."]}]
+1a:["$","section",null,{"data-footnotes":"","className":"footnotes","children":[["$","div",null,{"className":"JaoSHW_markdown-heading","children":[["$","span",null,{"className":"JaoSHW_markdown-hash","children":["###"," "]}],["$","span",null,{"children":"Footnotes"}]]}],"\n",["$","ol",null,{"children":["\n",["$","li",null,{"id":"user-content-fn-1","children":["\n",["$","p",null,{"children":[["$","a",null,{"href":"https://gist.github.com/D3MZ/3915286","children":"https://gist.github.com/D3MZ/3915286"}]," ",["$","a",null,{"href":"#user-content-fnref-1","data-footnote-backref":"","aria-label":"Back to reference 1","className":"data-footnote-backref","children":"↩"}]]}],"\n"]}],"\n"]}],"\n"]}]
+1b:["$","div",null,{"children":[" \\__                    --> ",["$","a",null,{"href":"http://andrzej.lichnerowicz.pl","target":"_blank","rel":"noopener noreferrer","title":"andrzej.lichnerowicz.pl","className":"link","style":{"cursor":"pointer"},"children":"andrzej.lichnerowicz.pl"}]," <--                    __/\n   //                                                                     \\\\\n  // ------------------------                     ------------------------ \\\\\n '~~~~~~~~~~~~~~~~~~~~~~~~~// ------       ------ \\\\~~~~~~~~~~~~~~~~~~~~~~~~~`\n                          '~~~~~~~//       \\\\~~~~~~~`\n                                 // ------- \\\\\n                                '~~~~~~~~~~~~~`\n      "]}]
+1c:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/1nym5xdou5nal.css","precedence":"next"}]
+1d:["$","script","script-0",{"src":"/_next/static/chunks/0jybh4guong1_.js","async":true}]
+1e:["$","script","script-1",{"src":"/_next/static/chunks/1n020gr3ll-6x.js","async":true}]
+1f:["$","$L2a",null,{"children":["$","$25",null,{"name":"Next.MetadataOutlet","children":"$@2b"}]}]
 c:300
-2c:null
-2a:true
+2b:null
+29:true
 c:C
-29:0
+28:0
 11:"$undefined"
 e:"$undefined"
 b:"$undefined"
-28:"$undefined"
-21:"$undefined"
+27:"$undefined"
+20:"$undefined"

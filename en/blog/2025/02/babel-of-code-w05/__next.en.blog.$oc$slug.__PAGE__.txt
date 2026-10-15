@@ -9,29 +9,34 @@
 9:"/_next/static/chunks/3kcn8wz7h7dvj.js"
 a:I[29306,["$2","$9"],"default"]
 16:"/_next/static/chunks/0jybh4guong1_.js"
-17:"/_next/static/chunks/1pfxd-dkulr8v.js"
+17:"/_next/static/chunks/1n020gr3ll-6x.js"
 18:I[21864,["$2","$16","$17"],""]
 19:"AsciiBorderedMdx"
 1a:I[9655,["$2","$16","$17"],"$19"]
-70:"ViewportBoundary"
-71:I[44259,["$2"],"$70"]
-72:"MetadataBoundary"
+72:"ViewportBoundary"
 73:I[44259,["$2"],"$72"]
-74:"$Sreact.suspense"
-75:I[19565,["$2"],"IconMark"]
-:HL["/_next/static/chunks/0n0ucni11z82d.css","style"]
+74:"MetadataBoundary"
+75:I[44259,["$2"],"$74"]
+76:"$Sreact.suspense"
+77:I[19565,["$2"],"IconMark"]
+:HL["/_next/static/chunks/30-je2wmn_k88.css","style"]
 c:X
 f:X
 f:C
-15:T665,                              _______._ _
+15:T545,                              _______._ _
                       _ _.___/       |
                          |           |
                          |           |
-     █ ▀▀▀▀▀▀███ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀ █▀▀▀▀▀▀███ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█
-     █ █▀▀▀▀▀███ █▀▀▀▀▀███ █▀▀▀▀▀███ █▀▀▀▀▀▀▀▀▀ █ angelo!  █▀▀▀▀▀▀███ ▄
-     █ █████ ███ █████ ███ █████ ███ ██████ ███ ██████ ███ ██████ ███ █
-     ▄ ▀▀▀▀▀ ▀▀▀ ▀▀▀▀▀ ███ ▀▀▀▀▀ ███ ▀▀▀▀▀▀ ▀▀▀ ▀▀▀▀▀▀ ▀▀▀ ▀▀▀▀▀▀ ▀▀▀ █
-     ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀ ▀▀▀ ▀▀▀▀▀▀▀▀▀ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀ √m⌡
+             -----+-----                          ___     ___
+                  |              ______   ___    /  /____    \
+            __________ _-+-_____/ .(  .\_(xhb)__|  |(     \   |
+           /.   |..   \..  ___/.\ . ) ..\ . ____\  |  o  / |  |
+          |..    ).    |.  \    .|.(  ...|.(.   :  (____|  |  |
+         (______/..    |.   \___.|______ . ______|..       | 9|
+          )..          |.      |    ..   |..     \ .       | 9[
+         ( .    o      |.      |     .\  |.       |. ___/ (|  ]
+          \___________/..      |\_______/________/\_________\ [
+               |_______________|  ____________________________]
                          :           |
     - -----andrzej-_ ____\_____|----_|_____________'-lichnerowicz-------- -
                          :           |
@@ -39,23 +44,25 @@ f:C
  . _         - --------- |  - -- -   | ------- -                         _  .
 -:-\-\-------------------|- -     - -|-----------------------------------\-\-:
  |                      _|___________|_                                      |
- |                       :           :                                       |14:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$1","c",{"children":[["$","div",null,{"className":"flex justify-center","children":["$","div",null,{"className":"ascii-art nfo-pre","children":[["$","div",null,{"className":"header-component","children":"$15"}],[["$","div",null,{"className":"whitespace-pre font-mono","children":" |                                                                           |"}],["$","div",null,{"className":"post-back-link","children":[" | ",["$","$L18",null,{"href":"/","className":"hover:underline","prefetch":false,"style":{"flex":1,"minWidth":0,"textDecoration":"none","color":"inherit"},"children":"<< back"}]," |"]}],["$","div",null,{"className":"whitespace-pre font-mono","children":" |                                                                           |"}]],["$","$L1a",null,{"children":[["$","header",null,{"className":"post-header","children":[["$","h1",null,{"className":"post-title","children":["# ","Solving AoC in LEAN"]}],["$","time",null,{"className":"post-date","dateTime":"2025-02-11T19:45:11+02:00","children":["[ ","2025.02.11"," ]"]}]]}],[["$","div",null,{"className":"JaoSHW_markdown-heading","children":[["$","span",null,{"className":"JaoSHW_markdown-hash","children":["##"," "]}],["$","span",null,{"children":"Prerequisites"}]]}],"\n",["$","ul",null,{"children":["\n",["$","li",null,{"children":[["$","a",null,{"href":"https://github.com/leanprover-community/lean4-mode","children":"Emacs Major Mode"}]," — there are also extensions for ",["$","a",null,{"href":"https://github.com/Julian/lean.nvim","children":"Neovim"}]," and ",["$","a",null,{"href":"https://marketplace.visualstudio.com/items?itemName=leanprover.lean4","children":"VS Code"}],"."]}],"\n",["$","li",null,{"children":["$","a",null,{"href":"https://lean-lang.org/functional_programming_in_lean/title.html","children":"Functional Programming in Lean"}]}],"\n",["$","li",null,{"children":["$","a",null,{"href":"https://lean-lang.org/doc/reference/latest/","children":"The Lean Language Reference"}]}],"\n","$L1b","\n"]}],"\n","$L1c","\n","$L1d","\n",["","$L1e"],"\n","$L1f","\n",["","$L20"],"\n","$L21","\n",["","$L22"],"\n","$L23","\n",["","$L24"],"\n","$L25","\n",["","$L26"],"\n","$L27","\n","$L28","\n",["","$L29"],"\n","$L2a","\n","$L2b","\n",["","$L2c"],"\n","$L2d","\n",["","$L2e"],"\n","$L2f","\n","$L30","\n","$L31","\n","$L32","\n","$L33","\n","$L34","\n","$L35","\n","$L36","\n","$L37","\n","$L38","\n","$L39","\n","$L3a","\n","$L3b","\n","$L3c","\n","$L3d","\n","$L3e","\n","$L3f","\n","$L40","\n","$L41","\n","$L42","\n","$L43","\n","$L44","\n","$L45","\n","$L46","\n","$L47","\n","$L48","\n","$L49","\n","$L4a","\n","$L4b","\n","$L4c","\n","$L4d","\n","$L4e","\n","$L4f","\n","$L50","\n","$L51","\n","$L52","\n","$L53","\n","$L54","\n","$L55","\n","$L56","\n","$L57","\n","$L58","\n","$L59","\n","$L5a","\n","$L5b","\n","$L5c","\n","$L5d","\n","$L5e","\n","$L5f","\n","$L60","\n","$L61","\n","$L62","\n","$L63","\n","$L64","\n","$L65","\n","$L66","\n","$L67","\n","$L68","\n","$L69"]]}],"$14:0:1:d:r:props:children:0:props:children:props:children:1","$L6a"]}]}],["$L6b","$L6c","$L6d"],"$L6e"]}],"p":"$@6f","v":null,"s":"$c"}}]]
+ |                       :           :                                       |14:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$1","c",{"children":[["$","div",null,{"className":"flex justify-center","children":["$","div",null,{"className":"ascii-art nfo-pre","children":[["$","div",null,{"className":"header-component","children":"$15"}],[["$","div",null,{"className":"whitespace-pre font-mono","children":" |                                                                           |"}],["$","div",null,{"className":"post-back-link","children":[" | ",["$","$L18",null,{"href":"/","className":"hover:underline","prefetch":false,"style":{"flex":1,"minWidth":0,"textDecoration":"none","color":"inherit"},"children":"<< back"}]," |"]}],["$","div",null,{"className":"whitespace-pre font-mono","children":" |                                                                           |"}]],["$","$L1a",null,{"children":[["$","header",null,{"className":"post-header","children":[["$","h1",null,{"className":"post-title","children":["# ","Solving AoC in LEAN"]}],["$","time",null,{"className":"post-date","dateTime":"2025-02-11T19:45:11+02:00","children":["[ ","2025.02.11"," ]"]}]]}],[["$","div",null,{"className":"JaoSHW_markdown-heading","children":[["$","span",null,{"className":"JaoSHW_markdown-hash","children":["##"," "]}],["$","span",null,{"children":"Prerequisites"}]]}],"\n",["$","ul",null,{"children":["\n",["$","li",null,{"children":[["$","a",null,{"href":"https://github.com/leanprover-community/lean4-mode","children":"Emacs Major Mode"}]," — there are also extensions for ",["$","a",null,{"href":"https://github.com/Julian/lean.nvim","children":"Neovim"}]," and ",["$","a",null,{"href":"https://marketplace.visualstudio.com/items?itemName=leanprover.lean4","children":"VS Code"}],"."]}],"\n","$L1b","\n","$L1c","\n","$L1d","\n"]}],"\n","$L1e","\n","$L1f","\n",["","$L20"],"\n","$L21","\n",["","$L22"],"\n","$L23","\n",["","$L24"],"\n","$L25","\n",["","$L26"],"\n","$L27","\n",["","$L28"],"\n","$L29","\n","$L2a","\n",["","$L2b"],"\n","$L2c","\n","$L2d","\n",["","$L2e"],"\n","$L2f","\n",["","$L30"],"\n","$L31","\n","$L32","\n","$L33","\n","$L34","\n","$L35","\n","$L36","\n","$L37","\n","$L38","\n","$L39","\n","$L3a","\n","$L3b","\n","$L3c","\n","$L3d","\n","$L3e","\n","$L3f","\n","$L40","\n","$L41","\n","$L42","\n","$L43","\n","$L44","\n","$L45","\n","$L46","\n","$L47","\n","$L48","\n","$L49","\n","$L4a","\n","$L4b","\n","$L4c","\n","$L4d","\n","$L4e","\n","$L4f","\n","$L50","\n","$L51","\n","$L52","\n","$L53","\n","$L54","\n","$L55","\n","$L56","\n","$L57","\n","$L58","\n","$L59","\n","$L5a","\n","$L5b","\n","$L5c","\n","$L5d","\n","$L5e","\n","$L5f","\n","$L60","\n","$L61","\n","$L62","\n","$L63","\n","$L64","\n","$L65","\n","$L66","\n","$L67","\n","$L68","\n","$L69","\n","$L6a","\n","$L6b"]]}],"$14:0:1:d:r:props:children:0:props:children:props:children:1","$L6c"]}]}],["$L6d","$L6e","$L6f"],"$L70"]}],"p":"$@71","v":null,"s":"$c"}}]]
 12:[["children",{"s":{"n":"slug","t":"oc","k":"2025/02/babel-of-code-w05","s":[]},"h":96,"d":{"r":["$","$1","c",{"children":[null,["$","$L7",null,{"parallelRouterKey":"children","template":["$","$L8",null,{}]}]]}],"p":"$@13","v":"$f","s":"$c"},"c":"$Q14"}]]
 10:[["children",{"s":"blog","h":96,"d":{"r":["$","$1","c",{"children":[null,["$","$L7",null,{"parallelRouterKey":"children","template":["$","$L8",null,{}]}]]}],"p":"$@11","v":"$f","s":"$c"},"c":"$Q12"}]]
 d:[["children",{"s":"en","h":96,"d":{"r":["$","$1","c",{"children":[null,["$","$L7",null,{"parallelRouterKey":"children","template":["$","$L8",null,{}]}]]}],"p":"$@e","v":"$f","s":"$c"},"c":"$Q10"}]]
-0:{"t":{"t":{"s":"","h":80,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0n0ucni11z82d.css","precedence":"next"}],["$","script","script-0",{"src":"/_next/static/chunks/3y26xv8sa1dt0.js","async":true}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","link",null,{"rel":"icon","href":"/favicon.ico","sizes":"any"}],["$","link",null,{"rel":"apple-touch-icon","href":"/apple-touch-icon.png"}]]}],["$","body",null,{"children":[["$","$L3",null,{}],["$","$L4",null,{"children":[["$","$L5",null,{}],["$","$L6",null,{"children":["$","$L7",null,{"parallelRouterKey":"children","template":["$","$L8",null,{}],"notFound":[["$","$La",null,{}],[]]}]}]]}]]}]]}]]}],"p":"$@b","v":null,"s":"$c"},"c":"$Qd"},"h":{"r":["$","$1","h",{"children":[null,["$","$L71",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","$L73",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$74",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Solving AoC in LEAN | @unjello blog"}],["$","meta","1",{"name":"description","content":"Let's implement 2024/day/5 Advent of Code puzzle in Lean. BabelOfCode is low key. The goal is to solve each Advent of Code puzzle in a different language."}],["$","meta","2",{"property":"og:title","content":"Solving AoC in LEAN | @unjello blog"}],["$","meta","3",{"property":"og:description","content":"Let's implement 2024/day/5 Advent of Code puzzle in Lean. BabelOfCode is low key. The goal is to solve each Advent of Code puzzle in a different language."}],["$","meta","4",{"property":"og:url","content":"https://andrzej.lichnerowicz.pl/en/blog/2025/02/babel-of-code-w05/"}],["$","meta","5",{"property":"og:image","content":"https://andrzej.lichnerowicz.pl/images/2025/02/babel-of-code-w05/lean-emacs.png"}],["$","meta","6",{"property":"og:image:width","content":"1200"}],["$","meta","7",{"property":"og:image:height","content":"630"}],["$","meta","8",{"property":"og:image:alt","content":"Solving AoC in LEAN | @unjello blog"}],["$","meta","9",{"property":"og:type","content":"article"}],["$","meta","10",{"property":"article:published_time","content":"2025-02-11T19:45:11+02:00"}],["$","meta","11",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","12",{"name":"twitter:title","content":"Solving AoC in LEAN | @unjello blog"}],["$","meta","13",{"name":"twitter:description","content":"Let's implement 2024/day/5 Advent of Code puzzle in Lean. BabelOfCode is low key. The goal is to solve each Advent of Code puzzle in a different language."}],["$","meta","14",{"name":"twitter:image","content":"https://andrzej.lichnerowicz.pl/images/2025/02/babel-of-code-w05/lean-emacs.png"}],["$","link","15",{"rel":"shortcut icon","href":"/favicon.ico"}],["$","link","16",{"rel":"icon","href":"/favicon.ico","sizes":"any"}],["$","link","17",{"rel":"apple-touch-icon","href":"/apple-touch-icon.png"}],["$","$L75","18",{}]]}]}],null]}],null]}],"p":"$@76","v":null,"s":"$c"}},"a":"$@77","u":"$@78","b":"eTjHqyI6G4EuxW6ACICD-"}
-7e:I[65255,["$2","$16","$17"],"Figure"]
-82:I[90891,["$2","$16","$17"],"Admonition"]
-93:I[44259,["$2"],"OutletBoundary"]
-:HL["/_next/static/chunks/3ert6xgjkvepg.css","style"]
-1b:["$","li",null,{"children":["$","a",null,{"href":"https://leanprover.zulipchat.com","children":"Zulip Forum?"}]}]
-1c:["$","div",null,{"className":"JaoSHW_markdown-heading","children":[["$","span",null,{"className":"JaoSHW_markdown-hash","children":["##"," "]}],["$","span",null,{"children":"Installation"}]]}]
-1d:["$","p",null,{"children":["It's fairly straightforward, but you need to be careful with package names. In Homebrew, ",["$","code",null,{"children":"brew install lean"}]," points to the old Lean 3 package. What you actually want now is:"]}]
-1e:["$","pre",null,{"className":"language-fish pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"<table class=\"code-ln-table\"><tbody><tr class=\"code-ln-line\">\n        <td class=\"code-ln-numbers\" data-line-number=\"1\"><div class=\"code-ln-n\" data-line-number=\"1\"></div></td>\n        <td class=\"code-ln-code\" data-line-number=\"1\"><span class=\"line\"><span style=\"color:#24292E;--shiki-dark:#E1E4E8\">❯ brew install elan</span></span></td>\n      </tr></tbody></table>"}}]}]
-1f:["$","p",null,{"children":"Similarly, for the Emacs extension, Doom Emacs already includes Lean in its init.el (just uncomment the lean line):"}]
-20:["$","pre",null,{"className":"language-lisp pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"<table class=\"code-ln-table\"><tbody><tr class=\"code-ln-line\">\n        <td class=\"code-ln-numbers\" data-line-number=\"1\"><div class=\"code-ln-n\" data-line-number=\"1\"></div></td>\n        <td class=\"code-ln-code\" data-line-number=\"1\"><span class=\"line\"><span style=\"color:#24292E;--shiki-dark:#E1E4E8\"> lean              </span><span style=\"color:#6A737D;--shiki-dark:#6A737D\">; for folks with too much to prove</span></span></td>\n      </tr></tbody></table>"}}]}]
-21:["$","p",null,{"children":"However, you will encounter this error:"}]
-79:T753,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+0:{"t":{"t":{"s":"","h":80,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/30-je2wmn_k88.css","precedence":"next"}],["$","script","script-0",{"src":"/_next/static/chunks/3y26xv8sa1dt0.js","async":true}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","link",null,{"rel":"icon","href":"/favicon.ico","sizes":"any"}],["$","link",null,{"rel":"apple-touch-icon","href":"/apple-touch-icon.png"}]]}],["$","body",null,{"children":[["$","$L3",null,{}],["$","$L4",null,{"children":[["$","$L5",null,{}],["$","$L6",null,{"children":["$","$L7",null,{"parallelRouterKey":"children","template":["$","$L8",null,{}],"notFound":[["$","$La",null,{}],[]]}]}]]}]]}]]}]]}],"p":"$@b","v":null,"s":"$c"},"c":"$Qd"},"h":{"r":["$","$1","h",{"children":[null,["$","$L73",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","$L75",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$76",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Solving AoC in LEAN | @unjello blog"}],["$","meta","1",{"name":"description","content":"Let's implement 2024/day/5 Advent of Code puzzle in Lean. BabelOfCode is low key. The goal is to solve each Advent of Code puzzle in a different language."}],["$","meta","2",{"property":"og:title","content":"Solving AoC in LEAN | @unjello blog"}],["$","meta","3",{"property":"og:description","content":"Let's implement 2024/day/5 Advent of Code puzzle in Lean. BabelOfCode is low key. The goal is to solve each Advent of Code puzzle in a different language."}],["$","meta","4",{"property":"og:url","content":"https://andrzej.lichnerowicz.pl/en/blog/2025/02/babel-of-code-w05/"}],["$","meta","5",{"property":"og:image","content":"https://andrzej.lichnerowicz.pl/images/2025/02/babel-of-code-w05/lean-emacs.png"}],["$","meta","6",{"property":"og:image:width","content":"1200"}],["$","meta","7",{"property":"og:image:height","content":"630"}],["$","meta","8",{"property":"og:image:alt","content":"Solving AoC in LEAN | @unjello blog"}],["$","meta","9",{"property":"og:type","content":"article"}],["$","meta","10",{"property":"article:published_time","content":"2025-02-11T19:45:11+02:00"}],["$","meta","11",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","12",{"name":"twitter:title","content":"Solving AoC in LEAN | @unjello blog"}],["$","meta","13",{"name":"twitter:description","content":"Let's implement 2024/day/5 Advent of Code puzzle in Lean. BabelOfCode is low key. The goal is to solve each Advent of Code puzzle in a different language."}],["$","meta","14",{"name":"twitter:image","content":"https://andrzej.lichnerowicz.pl/images/2025/02/babel-of-code-w05/lean-emacs.png"}],["$","link","15",{"rel":"shortcut icon","href":"/favicon.ico"}],["$","link","16",{"rel":"icon","href":"/favicon.ico","sizes":"any"}],["$","link","17",{"rel":"apple-touch-icon","href":"/apple-touch-icon.png"}],["$","$L77","18",{}]]}]}],null]}],null]}],"p":"$@78","v":null,"s":"$c"}},"a":"$@79","u":"$@7a","b":"8mR2hOXURDkvIqL-1u1Er"}
+80:I[65255,["$2","$16","$17"],"Figure"]
+84:I[90891,["$2","$16","$17"],"Admonition"]
+95:I[44259,["$2"],"OutletBoundary"]
+:HL["/_next/static/chunks/1nym5xdou5nal.css","style"]
+1b:["$","li",null,{"children":["$","a",null,{"href":"https://lean-lang.org/functional_programming_in_lean/title.html","children":"Functional Programming in Lean"}]}]
+1c:["$","li",null,{"children":["$","a",null,{"href":"https://lean-lang.org/doc/reference/latest/","children":"The Lean Language Reference"}]}]
+1d:["$","li",null,{"children":["$","a",null,{"href":"https://leanprover.zulipchat.com","children":"Zulip Forum?"}]}]
+1e:["$","div",null,{"className":"JaoSHW_markdown-heading","children":[["$","span",null,{"className":"JaoSHW_markdown-hash","children":["##"," "]}],["$","span",null,{"children":"Installation"}]]}]
+1f:["$","p",null,{"children":["It's fairly straightforward, but you need to be careful with package names. In Homebrew, ",["$","code",null,{"children":"brew install lean"}]," points to the old Lean 3 package. What you actually want now is:"]}]
+20:["$","pre",null,{"className":"language-fish pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"<table class=\"code-ln-table\"><tbody><tr class=\"code-ln-line\">\n        <td class=\"code-ln-numbers\" data-line-number=\"1\"><div class=\"code-ln-n\" data-line-number=\"1\"></div></td>\n        <td class=\"code-ln-code\" data-line-number=\"1\"><span class=\"line\"><span style=\"color:#24292E;--shiki-dark:#E1E4E8\">❯ brew install elan</span></span></td>\n      </tr></tbody></table>"}}]}]
+21:["$","p",null,{"children":"Similarly, for the Emacs extension, Doom Emacs already includes Lean in its init.el (just uncomment the lean line):"}]
+22:["$","pre",null,{"className":"language-lisp pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"<table class=\"code-ln-table\"><tbody><tr class=\"code-ln-line\">\n        <td class=\"code-ln-numbers\" data-line-number=\"1\"><div class=\"code-ln-n\" data-line-number=\"1\"></div></td>\n        <td class=\"code-ln-code\" data-line-number=\"1\"><span class=\"line\"><span style=\"color:#24292E;--shiki-dark:#E1E4E8\"> lean              </span><span style=\"color:#6A737D;--shiki-dark:#6A737D\">; for folks with too much to prove</span></span></td>\n      </tr></tbody></table>"}}]}]
+23:["$","p",null,{"children":"However, you will encounter this error:"}]
+7b:T753,<table class="code-ln-table"><tbody><tr class="code-ln-line">
         <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
         <td class="code-ln-code" data-line-number="1"><span class="line"><span> > Regenerating envvars file</span></span></td>
       </tr><tr class="code-ln-line">
@@ -73,11 +80,11 @@ d:[["children",{"s":"en","h":96,"d":{"r":["$","$1","c",{"children":[null,["$","$
       </tr><tr class="code-ln-line">
         <td class="code-ln-numbers" data-line-number="6"><div class="code-ln-n" data-line-number="6"></div></td>
         <td class="code-ln-code" data-line-number="6"><span class="line"><span>    ‘straight-pull-recipe-repositories’ may fix this</span></span></td>
-      </tr></tbody></table>22:["$","pre",null,{"className":"language-plaintext pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$79"}}]}]
-23:["$","p",null,{"children":["It turns out ",["$","code",null,{"children":"company-lean"}]," was removed from MELPA a few months ago. Upgrading ",["$","code",null,{"children":"doom"}]," fixed the original error for me but led to a new one:"]}]
-24:["$","pre",null,{"className":"language-plaintext pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"<table class=\"code-ln-table\"><tbody><tr class=\"code-ln-line\">\n        <td class=\"code-ln-numbers\" data-line-number=\"1\"><div class=\"code-ln-n\" data-line-number=\"1\"></div></td>\n        <td class=\"code-ln-code\" data-line-number=\"1\"><span class=\"line\"><span>lean get info: (json-readtable-error 108).</span></span></td>\n      </tr></tbody></table>"}}]}]
-25:["$","p",null,{"children":["Digging into an issue from ",["$","a",null,{"href":"https://leanprover-community.github.io/archive/stream/270676-lean4/topic/Doom.20Emacs.20setup.html#234168724","children":"2023"}],", I found a solution. I removed ",["$","code",null,{"children":"lean"}]," from my ",["$","code",null,{"children":"init.el"}]," and installed the Lean 4 mode manually:"]}]
-7a:T6ea,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+      </tr></tbody></table>24:["$","pre",null,{"className":"language-plaintext pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$7b"}}]}]
+25:["$","p",null,{"children":["It turns out ",["$","code",null,{"children":"company-lean"}]," was removed from MELPA a few months ago. Upgrading ",["$","code",null,{"children":"doom"}]," fixed the original error for me but led to a new one:"]}]
+26:["$","pre",null,{"className":"language-plaintext pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"<table class=\"code-ln-table\"><tbody><tr class=\"code-ln-line\">\n        <td class=\"code-ln-numbers\" data-line-number=\"1\"><div class=\"code-ln-n\" data-line-number=\"1\"></div></td>\n        <td class=\"code-ln-code\" data-line-number=\"1\"><span class=\"line\"><span>lean get info: (json-readtable-error 108).</span></span></td>\n      </tr></tbody></table>"}}]}]
+27:["$","p",null,{"children":["Digging into an issue from ",["$","a",null,{"href":"https://leanprover-community.github.io/archive/stream/270676-lean4/topic/Doom.20Emacs.20setup.html#234168724","children":"2023"}],", I found a solution. I removed ",["$","code",null,{"children":"lean"}]," from my ",["$","code",null,{"children":"init.el"}]," and installed the Lean 4 mode manually:"]}]
+7c:T6ea,<table class="code-ln-table"><tbody><tr class="code-ln-line">
         <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
         <td class="code-ln-code" data-line-number="1"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">(package! lean4-mode </span><span style="color:#6F42C1;--shiki-dark:#B392F0">:recipe</span></span></td>
       </tr><tr class="code-ln-line">
@@ -89,10 +96,10 @@ d:[["children",{"s":"en","h":96,"d":{"r":["$","$1","c",{"children":[null,["$","$
       </tr><tr class="code-ln-line">
         <td class="code-ln-numbers" data-line-number="4"><div class="code-ln-n" data-line-number="4"></div></td>
         <td class="code-ln-code" data-line-number="4"><span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">   :files</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> (</span><span style="color:#032F62;--shiki-dark:#9ECBFF">"*.el"</span><span style="color:#032F62;--shiki-dark:#9ECBFF"> "data"</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)))</span></span></td>
-      </tr></tbody></table>26:["$","pre",null,{"className":"language-lisp pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$7a"}}]}]
-27:["$","div",null,{"className":"JaoSHW_markdown-heading","children":[["$","span",null,{"className":"JaoSHW_markdown-hash","children":["##"," "]}],["$","span",null,{"children":"Jump to solution"}]]}]
-28:["$","p",null,{"children":"To begin, I tried a basic snippet from the Lean docs to read a file:"}]
-7b:T7e2,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+      </tr></tbody></table>28:["$","pre",null,{"className":"language-lisp pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$7c"}}]}]
+29:["$","div",null,{"className":"JaoSHW_markdown-heading","children":[["$","span",null,{"className":"JaoSHW_markdown-hash","children":["##"," "]}],["$","span",null,{"children":"Jump to solution"}]]}]
+2a:["$","p",null,{"children":"To begin, I tried a basic snippet from the Lean docs to read a file:"}]
+7d:T7e2,<table class="code-ln-table"><tbody><tr class="code-ln-line">
         <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
         <td class="code-ln-code" data-line-number="1"><span class="line"><span>def main (args : List String) : IO Unit := do</span></span></td>
       </tr><tr class="code-ln-line">
@@ -113,10 +120,10 @@ d:[["children",{"s":"en","h":96,"d":{"r":["$","$1","c",{"children":[null,["$","$
       </tr><tr class="code-ln-line">
         <td class="code-ln-numbers" data-line-number="7"><div class="code-ln-n" data-line-number="7"></div></td>
         <td class="code-ln-code" data-line-number="7"><span class="line"><span>    IO.println content</span></span></td>
-      </tr></tbody></table>29:["$","pre",null,{"className":"language-plaintext pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$7b"}}]}]
-2a:["$","p",null,{"children":["That worked, but I wanted to read the file line by line. I went digging through ",["$","code",null,{"children":"IO.FS"}]," and discovered ",["$","a",null,{"href":"https://lean-lang.org/doc/reference/latest//IO/Files___-File-Handles___-and-Streams/#IO___FS___Handle___getLine","children":"IO.FS.getLine"}],". It turns out it’s basically an ",["$","a",null,{"href":"https://github.com/leanprover/lean4/blob/master/src/Init/System/IO.lean#L429C1-L434C84","children":"FFI"}]," call under the hood, which reads until a line break and returns an empty string on EOF. The details are burried in the Lean 4 source code:"]}]
-2b:["$","p",null,{"children":"Soon, however, I realized Lean’s syntax has some peculiarities, and I needed to go back to the language reference. My attempts at writing a recursive function with do blocks were failing because I hadn’t fully absorbed how Lean’s do syntax actually works."}]
-7c:T74f,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+      </tr></tbody></table>2b:["$","pre",null,{"className":"language-plaintext pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$7d"}}]}]
+2c:["$","p",null,{"children":["That worked, but I wanted to read the file line by line. I went digging through ",["$","code",null,{"children":"IO.FS"}]," and discovered ",["$","a",null,{"href":"https://lean-lang.org/doc/reference/latest//IO/Files___-File-Handles___-and-Streams/#IO___FS___Handle___getLine","children":"IO.FS.getLine"}],". It turns out it’s basically an ",["$","a",null,{"href":"https://github.com/leanprover/lean4/blob/master/src/Init/System/IO.lean#L429C1-L434C84","children":"FFI"}]," call under the hood, which reads until a line break and returns an empty string on EOF. The details are burried in the Lean 4 source code:"]}]
+2d:["$","p",null,{"children":"Soon, however, I realized Lean’s syntax has some peculiarities, and I needed to go back to the language reference. My attempts at writing a recursive function with do blocks were failing because I hadn’t fully absorbed how Lean’s do syntax actually works."}]
+7e:T74f,<table class="code-ln-table"><tbody><tr class="code-ln-line">
         <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
         <td class="code-ln-code" data-line-number="1"><span class="line"><span>/--</span></span></td>
       </tr><tr class="code-ln-line">
@@ -134,9 +141,9 @@ d:[["children",{"s":"en","h":96,"d":{"r":["$","$1","c",{"children":[null,["$","$
       </tr><tr class="code-ln-line">
         <td class="code-ln-numbers" data-line-number="6"><div class="code-ln-n" data-line-number="6"></div></td>
         <td class="code-ln-code" data-line-number="6"><span class="line"><span>@[extern "lean_io_prim_handle_get_line"] opaque getLine (h : @&#x26; Handle) : IO String</span></span></td>
-      </tr></tbody></table>2c:["$","pre",null,{"className":"language-plaintext pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$7c"}}]}]
-2d:["$","p",null,{"children":"From there, I realized that Lean’s syntax can feel unfamiliar if you’re not fully used to it. I kept stumbling over small details, and I began to suspect I was missing fundamental knowledge about Lean. The tipping point was when I tried something like:"}]
-7d:Tb6e,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+      </tr></tbody></table>2e:["$","pre",null,{"className":"language-plaintext pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$7e"}}]}]
+2f:["$","p",null,{"children":"From there, I realized that Lean’s syntax can feel unfamiliar if you’re not fully used to it. I kept stumbling over small details, and I began to suspect I was missing fundamental knowledge about Lean. The tipping point was when I tried something like:"}]
+7f:Tb6e,<table class="code-ln-table"><tbody><tr class="code-ln-line">
         <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
         <td class="code-ln-code" data-line-number="1"><span class="line"><span>def processFile (filename: String) : IO Unit := do</span></span></td>
       </tr><tr class="code-ln-line">
@@ -166,13 +173,13 @@ d:[["children",{"s":"en","h":96,"d":{"r":["$","$1","c",{"children":[null,["$","$
       </tr><tr class="code-ln-line">
         <td class="code-ln-numbers" data-line-number="10"><div class="code-ln-n" data-line-number="10"></div></td>
         <td class="code-ln-code" data-line-number="10"><span class="line"><span>    return</span></span></td>
-      </tr></tbody></table>2e:["$","pre",null,{"className":"language-plaintext pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$7d"}}]}]
-2f:["$","p",null,{"children":["This code snippet threw errors on ",["$","code",null,{"children":"Nat.zero"}]," and also on ",["$","code",null,{"children":"processGraph content content.size"}],". I will later discover why, but it turns out ",["$","code",null,{"children":"do"}]," is not just ",["$","em",null,{"children":"line up instructions in imperative style"}]," and using recursion with it can be tricky unless you get the function signatures and scoping exactly right. At that point, it became impossible to keep sweeping my confusion under the rug: I really needed to read the language reference properly, at least the relevant chapters. (I skimmed four entire chapters of the Lean manual to rush into this solution)"]}]
-30:["$","div",null,{"className":"JaoSHW_markdown-heading","children":[["$","span",null,{"className":"JaoSHW_markdown-hash","children":["##"," "]}],["$","span",null,{"children":"Back to Lean Basics"}]]}]
-31:["$","p",null,{"children":"So, I got humble and restarted from the ground up, going through basic Lean examples:"}]
-32:["$","$L7e",null,{"src":"./lean-emacs.png","alt":"Screenshot of Emacs with Lean and Lean info sidebar","caption":"LƎⱯN in Emacs","attribution":"Screenshot by author.","postSlug":"/blog/2025/02/babel-of-code-w05"}]
-33:["$","p",null,{"children":"One fascinating aspect is that functions can behave like methods if you place them within the namespace of the type. For example:"}]
-7f:T63c,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+      </tr></tbody></table>30:["$","pre",null,{"className":"language-plaintext pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$7f"}}]}]
+31:["$","p",null,{"children":["This code snippet threw errors on ",["$","code",null,{"children":"Nat.zero"}]," and also on ",["$","code",null,{"children":"processGraph content content.size"}],". I will later discover why, but it turns out ",["$","code",null,{"children":"do"}]," is not just ",["$","em",null,{"children":"line up instructions in imperative style"}]," and using recursion with it can be tricky unless you get the function signatures and scoping exactly right. At that point, it became impossible to keep sweeping my confusion under the rug: I really needed to read the language reference properly, at least the relevant chapters. (I skimmed four entire chapters of the Lean manual to rush into this solution)"]}]
+32:["$","div",null,{"className":"JaoSHW_markdown-heading","children":[["$","span",null,{"className":"JaoSHW_markdown-hash","children":["##"," "]}],["$","span",null,{"children":"Back to Lean Basics"}]]}]
+33:["$","p",null,{"children":"So, I got humble and restarted from the ground up, going through basic Lean examples:"}]
+34:["$","$L80",null,{"src":"./lean-emacs.png","alt":"Screenshot of Emacs with Lean and Lean info sidebar","caption":"LƎⱯN in Emacs","attribution":"Screenshot by author.","postSlug":"/blog/2025/02/babel-of-code-w05"}]
+35:["$","p",null,{"children":"One fascinating aspect is that functions can behave like methods if you place them within the namespace of the type. For example:"}]
+81:T63c,<table class="code-ln-table"><tbody><tr class="code-ln-line">
         <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
         <td class="code-ln-code" data-line-number="1"><span class="line"><span>def String.x (_: String) :=</span></span></td>
       </tr><tr class="code-ln-line">
@@ -190,10 +197,10 @@ d:[["children",{"s":"en","h":96,"d":{"r":["$","$1","c",{"children":[null,["$","$
       </tr><tr class="code-ln-line">
         <td class="code-ln-numbers" data-line-number="6"><div class="code-ln-n" data-line-number="6"></div></td>
         <td class="code-ln-code" data-line-number="6"><span class="line"><span>-- 10</span></span></td>
-      </tr></tbody></table>34:["",["$","pre",null,{"className":"language-plaintext pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$7f"}}]}]]
-35:["$","p",null,{"children":"This returns 10. So you can extend a type in Lean by creating a function in the String namespace."}]
-36:["$","p",null,{"children":"Polymorphism in Lean also reminds me a lot of Zig. Generics take a type parameter, which is a first-class citizen:"}]
-80:T67c,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+      </tr></tbody></table>36:["",["$","pre",null,{"className":"language-plaintext pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$81"}}]}]]
+37:["$","p",null,{"children":"This returns 10. So you can extend a type in Lean by creating a function in the String namespace."}]
+38:["$","p",null,{"children":"Polymorphism in Lean also reminds me a lot of Zig. Generics take a type parameter, which is a first-class citizen:"}]
+82:T67c,<table class="code-ln-table"><tbody><tr class="code-ln-line">
         <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
         <td class="code-ln-code" data-line-number="1"><span class="line"><span>structure Point (α : Type) where</span></span></td>
       </tr><tr class="code-ln-line">
@@ -211,9 +218,9 @@ d:[["children",{"s":"en","h":96,"d":{"r":["$","$1","c",{"children":[null,["$","$
       </tr><tr class="code-ln-line">
         <td class="code-ln-numbers" data-line-number="6"><div class="code-ln-n" data-line-number="6"></div></td>
         <td class="code-ln-code" data-line-number="6"><span class="line"><span>#eval ({ x := Nat.zero, y := Nat.zero } : Point Nat)</span></span></td>
-      </tr></tbody></table>37:["",["$","pre",null,{"className":"language-plaintext pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$80"}}]}]]
-38:["$","p",null,{"children":["In Lean, functions are ",["$","em",null,{"children":"curried"}]," by default, meaning a function with multiple arguments conceptually becomes a chain of one-argument functions:"]}]
-81:T6c4,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+      </tr></tbody></table>39:["",["$","pre",null,{"className":"language-plaintext pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$82"}}]}]]
+3a:["$","p",null,{"children":["In Lean, functions are ",["$","em",null,{"children":"curried"}]," by default, meaning a function with multiple arguments conceptually becomes a chain of one-argument functions:"]}]
+83:T6c4,<table class="code-ln-table"><tbody><tr class="code-ln-line">
         <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
         <td class="code-ln-code" data-line-number="1"><span class="line"><span>def replace (α : Type) (point : Point α) (xx : α) (yy : α) : Point α :=</span></span></td>
       </tr><tr class="code-ln-line">
@@ -231,10 +238,10 @@ d:[["children",{"s":"en","h":96,"d":{"r":["$","$1","c",{"children":[null,["$","$
       </tr><tr class="code-ln-line">
         <td class="code-ln-numbers" data-line-number="6"><div class="code-ln-n" data-line-number="6"></div></td>
         <td class="code-ln-code" data-line-number="6"><span class="line"><span>replace : (α : Type) → Point α → α → α → Point α</span></span></td>
-      </tr></tbody></table>39:["",["$","pre",null,{"className":"language-plaintext pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$81"}}]}]]
-3a:["$","$L82",null,{"type":"idea","children":["$","p",null,{"children":["Currying was named after an american mathematician, logician and computer scientist - ",["$","a",null,{"href":"https://en.wikipedia.org/wiki/Haskell_Curry","children":"Haskell Brooks Curry"}]]}]}]
-3b:["$","p",null,{"children":["You can see it’s not just ",["$","code",null,{"children":"(α, point, xx, yy)"}]," in a single call, but actually ",["$","code",null,{"children":"(α) → (point) → (xx) → (yy)"}],". If you partially apply it -- say, omit the last parameter -- you get back a function waiting on that parameter:"]}]
-83:T788,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+      </tr></tbody></table>3b:["",["$","pre",null,{"className":"language-plaintext pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$83"}}]}]]
+3c:["$","$L84",null,{"type":"idea","children":["$","p",null,{"children":["Currying was named after an american mathematician, logician and computer scientist - ",["$","a",null,{"href":"https://en.wikipedia.org/wiki/Haskell_Curry","children":"Haskell Brooks Curry"}]]}]}]
+3d:["$","p",null,{"children":["You can see it’s not just ",["$","code",null,{"children":"(α, point, xx, yy)"}]," in a single call, but actually ",["$","code",null,{"children":"(α) → (point) → (xx) → (yy)"}],". If you partially apply it -- say, omit the last parameter -- you get back a function waiting on that parameter:"]}]
+85:T788,<table class="code-ln-table"><tbody><tr class="code-ln-line">
         <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
         <td class="code-ln-code" data-line-number="1"><span class="line"><span>def add (a : Nat) (b : Nat) : Nat :=</span></span></td>
       </tr><tr class="code-ln-line">
@@ -255,9 +262,9 @@ d:[["children",{"s":"en","h":96,"d":{"r":["$","$1","c",{"children":[null,["$","$
       </tr><tr class="code-ln-line">
         <td class="code-ln-numbers" data-line-number="7"><div class="code-ln-n" data-line-number="7"></div></td>
         <td class="code-ln-code" data-line-number="7"><span class="line"><span>-- Nat → Nat </span></span></td>
-      </tr></tbody></table>3c:["",["$","pre",null,{"className":"language-plaintext pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$83"}}]}]]
-3d:["$","p",null,{"children":"Another awesome feature is that Lean treats types as first-class citizens. You can do things like write a function that returns different types based on an inductive constructor:"}]
-84:T8ad,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+      </tr></tbody></table>3e:["",["$","pre",null,{"className":"language-plaintext pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$85"}}]}]]
+3f:["$","p",null,{"children":"Another awesome feature is that Lean treats types as first-class citizens. You can do things like write a function that returns different types based on an inductive constructor:"}]
+86:T8ad,<table class="code-ln-table"><tbody><tr class="code-ln-line">
         <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
         <td class="code-ln-code" data-line-number="1"><span class="line"><span>inductive Sign where</span></span></td>
       </tr><tr class="code-ln-line">
@@ -281,10 +288,10 @@ d:[["children",{"s":"en","h":96,"d":{"r":["$","$1","c",{"children":[null,["$","$
       </tr><tr class="code-ln-line">
         <td class="code-ln-numbers" data-line-number="8"><div class="code-ln-n" data-line-number="8"></div></td>
         <td class="code-ln-code" data-line-number="8"><span class="line"><span>  | Sign.neg => (-1 : Int)</span></span></td>
-      </tr></tbody></table>3e:["",["$","pre",null,{"className":"language-plaintext pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$84"}}]}]]
-3f:["$","p",null,{"children":"To me, that’s pretty mind-blowing. This kind of type-level computation is powerful and elegantly integrated."}]
-40:["$","p",null,{"children":["Another thing to notice is that ",["$","em",null,{"children":"pairs"}]," in Lean are ",["$","code",null,{"children":"Prods"}],", while ",["$","code",null,{"children":"Sum"}]," is akin to ",["$","code",null,{"children":"std::variant"}]," in C++, so you have:"]}]
-85:T6c7,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+      </tr></tbody></table>40:["",["$","pre",null,{"className":"language-plaintext pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$86"}}]}]]
+41:["$","p",null,{"children":"To me, that’s pretty mind-blowing. This kind of type-level computation is powerful and elegantly integrated."}]
+42:["$","p",null,{"children":["Another thing to notice is that ",["$","em",null,{"children":"pairs"}]," in Lean are ",["$","code",null,{"children":"Prods"}],", while ",["$","code",null,{"children":"Sum"}]," is akin to ",["$","code",null,{"children":"std::variant"}]," in C++, so you have:"]}]
+87:T6c7,<table class="code-ln-table"><tbody><tr class="code-ln-line">
         <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
         <td class="code-ln-code" data-line-number="1"><span class="line"><span>def sevens : String × (Int × Nat) := ("VII", (7, 4 + 3)) - para</span></span></td>
       </tr><tr class="code-ln-line">
@@ -302,9 +309,9 @@ d:[["children",{"s":"en","h":96,"d":{"r":["$","$1","c",{"children":[null,["$","$
       </tr><tr class="code-ln-line">
         <td class="code-ln-numbers" data-line-number="6"><div class="code-ln-n" data-line-number="6"></div></td>
         <td class="code-ln-code" data-line-number="6"><span class="line"><span>  [Sum.inl "S", Sum.inr 10, Sum.inl "F", Sum.inl "R", Sum.inr 20]</span></span></td>
-      </tr></tbody></table>41:["",["$","pre",null,{"className":"language-plaintext pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$85"}}]}]]
-42:["$","p",null,{"children":"Pattern matching is central to Lean, so to define, say, a function that returns the last element of a list:"}]
-86:T79f,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+      </tr></tbody></table>43:["",["$","pre",null,{"className":"language-plaintext pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$87"}}]}]]
+44:["$","p",null,{"children":"Pattern matching is central to Lean, so to define, say, a function that returns the last element of a list:"}]
+88:T79f,<table class="code-ln-table"><tbody><tr class="code-ln-line">
         <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
         <td class="code-ln-code" data-line-number="1"><span class="line"><span>def List.last {α : Type} (xs : List α) : Option α :=</span></span></td>
       </tr><tr class="code-ln-line">
@@ -325,9 +332,9 @@ d:[["children",{"s":"en","h":96,"d":{"r":["$","$1","c",{"children":[null,["$","$
       </tr><tr class="code-ln-line">
         <td class="code-ln-numbers" data-line-number="7"><div class="code-ln-n" data-line-number="7"></div></td>
         <td class="code-ln-code" data-line-number="7"><span class="line"><span>#eval [1, 2, 3].last</span></span></td>
-      </tr></tbody></table>43:["",["$","pre",null,{"className":"language-plaintext pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$86"}}]}]]
-44:["$","p",null,{"children":"Or to find the first element matching a predicate:"}]
-87:Tc0e,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+      </tr></tbody></table>45:["",["$","pre",null,{"className":"language-plaintext pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$88"}}]}]]
+46:["$","p",null,{"children":"Or to find the first element matching a predicate:"}]
+89:Tc0e,<table class="code-ln-table"><tbody><tr class="code-ln-line">
         <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
         <td class="code-ln-code" data-line-number="1"><span class="line"><span>def List.findFirst {α : Type} (xs : List α) (predicate : α -> Bool) : Option α :=</span></span></td>
       </tr><tr class="code-ln-line">
@@ -360,9 +367,9 @@ d:[["children",{"s":"en","h":96,"d":{"r":["$","$1","c",{"children":[null,["$","$
       </tr><tr class="code-ln-line">
         <td class="code-ln-numbers" data-line-number="11"><div class="code-ln-n" data-line-number="11"></div></td>
         <td class="code-ln-code" data-line-number="11"><span class="line"><span>#eval [1, 2, 3].findFirst is2</span></span></td>
-      </tr></tbody></table>45:["",["$","pre",null,{"className":"language-plaintext pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$87"}}]}]]
-46:["$","p",null,{"children":"Pattern matching is so central to Lean that there is a dedicated shortcut for the most common scenario: when your first line of code matches on the function parameter. As a result, the example shown above can be rewritten as follows:"}]
-88:T9d2,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+      </tr></tbody></table>47:["",["$","pre",null,{"className":"language-plaintext pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$89"}}]}]]
+48:["$","p",null,{"children":"Pattern matching is so central to Lean that there is a dedicated shortcut for the most common scenario: when your first line of code matches on the function parameter. As a result, the example shown above can be rewritten as follows:"}]
+8a:T9d2,<table class="code-ln-table"><tbody><tr class="code-ln-line">
         <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
         <td class="code-ln-code" data-line-number="1"><span class="line"><span>def List.findFirst : List α → (α → Bool) → Option α</span></span></td>
       </tr><tr class="code-ln-line">
@@ -389,9 +396,9 @@ d:[["children",{"s":"en","h":96,"d":{"r":["$","$1","c",{"children":[null,["$","$
       </tr><tr class="code-ln-line">
         <td class="code-ln-numbers" data-line-number="9"><div class="code-ln-n" data-line-number="9"></div></td>
         <td class="code-ln-code" data-line-number="9"><span class="line"><span>#eval [1, 2, 3].findFirst is2</span></span></td>
-      </tr></tbody></table>47:["",["$","pre",null,{"className":"language-plaintext pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$88"}}]}]]
-48:["$","p",null,{"children":["Lean also has couple more interesting tricks like ",["$","em",null,{"children":"simulatnous matching"}],", which is matching a pattern of many variables at once. Lean also can deduce most of the types for us, and sometimes defining a type is completly unnecessary. Combine that with anonymous functions and you can rewrite the above as:"]}]
-89:T5c6,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+      </tr></tbody></table>49:["",["$","pre",null,{"className":"language-plaintext pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$8a"}}]}]]
+4a:["$","p",null,{"children":["Lean also has couple more interesting tricks like ",["$","em",null,{"children":"simulatnous matching"}],", which is matching a pattern of many variables at once. Lean also can deduce most of the types for us, and sometimes defining a type is completly unnecessary. Combine that with anonymous functions and you can rewrite the above as:"]}]
+8b:T5c6,<table class="code-ln-table"><tbody><tr class="code-ln-line">
         <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
         <td class="code-ln-code" data-line-number="1"><span class="line"><span>def List.findFirst : List α → (α → Bool) → Option α</span></span></td>
       </tr><tr class="code-ln-line">
@@ -406,12 +413,12 @@ d:[["children",{"s":"en","h":96,"d":{"r":["$","$1","c",{"children":[null,["$","$
       </tr><tr class="code-ln-line">
         <td class="code-ln-numbers" data-line-number="5"><div class="code-ln-n" data-line-number="5"></div></td>
         <td class="code-ln-code" data-line-number="5"><span class="line"><span>#eval [1, 2, 3].findFirst (· = 2)</span></span></td>
-      </tr></tbody></table>49:["",["$","pre",null,{"className":"language-plaintext pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$89"}}]}]]
-4a:["$","p",null,{"children":["Or shorten the predicate to ",["$","code",null,{"children":"(· = 2)"}],", which is the same as ",["$","code",null,{"children":"fun x => x = 2"}],". You’ll also see a lot of Unicode in Lean code (",["$","code",null,{"children":"α"}],", ",["$","code",null,{"children":"β"}],", ",["$","code",null,{"children":"→"}],", etc.). Emacs Lean mode provides a long list of ",["$","a",null,{"href":"https://github.com/leanprover-community/lean4-mode/blob/master/data/abbreviations.json","children":"very handy shortcuts"}]," (e.g., ",["$","code",null,{"children":"\\r"}]," → ",["$","code",null,{"children":"→"}],", ",["$","code",null,{"children":"\\."}]," → ",["$","code",null,{"children":"·"}],", etc.) that make it straightforward to type these symbols."]}]
-4b:["$","p",null,{"children":["Finally, there’s Lean’s ",["$","code",null,{"children":"do"}]," notation. This is not just ",["$","em",null,{"children":"an imperative style"}],", but more accurately a domain-specific language for monadic composition. If you’re coming from Haskell, it’ll feel familiar. If you’re from an imperative language, the syntax looks welcoming, but the semantics are different—each line returns a result that’s passed along in a monadic context."]}]
-4c:["$","div",null,{"className":"JaoSHW_markdown-heading","children":[["$","span",null,{"className":"JaoSHW_markdown-hash","children":["##"," "]}],["$","span",null,{"children":"The Puzzle"}]]}]
-4d:["$","p",null,{"children":["Now, enough with the theory: let’s tackle the ",["$","a",null,{"href":"https://adventofcode.com/2024/day/5","children":"Advent of Code 2024 Day 5"}]," puzzle. The problem deals with a directed graph of page references: ",["$","em",null,{"children":"Page X must come before Page Y"}],". Then we’re given sequences to check whether the order is valid, and we also need a topological ordering for part two."]}]
-8a:T8cb,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+      </tr></tbody></table>4b:["",["$","pre",null,{"className":"language-plaintext pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$8b"}}]}]]
+4c:["$","p",null,{"children":["Or shorten the predicate to ",["$","code",null,{"children":"(· = 2)"}],", which is the same as ",["$","code",null,{"children":"fun x => x = 2"}],". You’ll also see a lot of Unicode in Lean code (",["$","code",null,{"children":"α"}],", ",["$","code",null,{"children":"β"}],", ",["$","code",null,{"children":"→"}],", etc.). Emacs Lean mode provides a long list of ",["$","a",null,{"href":"https://github.com/leanprover-community/lean4-mode/blob/master/data/abbreviations.json","children":"very handy shortcuts"}]," (e.g., ",["$","code",null,{"children":"\\r"}]," → ",["$","code",null,{"children":"→"}],", ",["$","code",null,{"children":"\\."}]," → ",["$","code",null,{"children":"·"}],", etc.) that make it straightforward to type these symbols."]}]
+4d:["$","p",null,{"children":["Finally, there’s Lean’s ",["$","code",null,{"children":"do"}]," notation. This is not just ",["$","em",null,{"children":"an imperative style"}],", but more accurately a domain-specific language for monadic composition. If you’re coming from Haskell, it’ll feel familiar. If you’re from an imperative language, the syntax looks welcoming, but the semantics are different—each line returns a result that’s passed along in a monadic context."]}]
+4e:["$","div",null,{"className":"JaoSHW_markdown-heading","children":[["$","span",null,{"className":"JaoSHW_markdown-hash","children":["##"," "]}],["$","span",null,{"children":"The Puzzle"}]]}]
+4f:["$","p",null,{"children":["Now, enough with the theory: let’s tackle the ",["$","a",null,{"href":"https://adventofcode.com/2024/day/5","children":"Advent of Code 2024 Day 5"}]," puzzle. The problem deals with a directed graph of page references: ",["$","em",null,{"children":"Page X must come before Page Y"}],". Then we’re given sequences to check whether the order is valid, and we also need a topological ordering for part two."]}]
+8c:T8cb,<table class="code-ln-table"><tbody><tr class="code-ln-line">
         <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
         <td class="code-ln-code" data-line-number="1"><span class="line"><span>def parseLines (lines : List String) : List String :=</span></span></td>
       </tr><tr class="code-ln-line">
@@ -435,9 +442,9 @@ d:[["children",{"s":"en","h":96,"d":{"r":["$","$1","c",{"children":[null,["$","$
       </tr><tr class="code-ln-line">
         <td class="code-ln-numbers" data-line-number="8"><div class="code-ln-n" data-line-number="8"></div></td>
         <td class="code-ln-code" data-line-number="8"><span class="line"><span>#eval parseLines ["a|r", "k|a"]</span></span></td>
-      </tr></tbody></table>4e:["",["$","pre",null,{"className":"language-plaintext pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$8a"}}]}]]
-4f:["$","p",null,{"children":"Nope :)"}]
-8b:Td1d,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+      </tr></tbody></table>50:["",["$","pre",null,{"className":"language-plaintext pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$8c"}}]}]]
+51:["$","p",null,{"children":"Nope :)"}]
+8d:Td1d,<table class="code-ln-table"><tbody><tr class="code-ln-line">
         <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
         <td class="code-ln-code" data-line-number="1"><span class="line"><span>Messages below:</span></span></td>
       </tr><tr class="code-ln-line">
@@ -473,12 +480,12 @@ d:[["children",{"s":"en","h":96,"d":{"r":["$","$1","c",{"children":[null,["$","$
       </tr><tr class="code-ln-line">
         <td class="code-ln-numbers" data-line-number="12"><div class="code-ln-n" data-line-number="12"></div></td>
         <td class="code-ln-code" data-line-number="12"><span class="line"><span>To attempt to evaluate anyway despite the risks, use the '#eval!' command.</span></span></td>
-      </tr></tbody></table>50:["",["$","pre",null,{"className":"language-plaintext pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$8b"}}]}]]
-51:["$","p",null,{"children":["That failed because ",["$","code",null,{"children":"posOf"}]," returns a position (a ",["$","code",null,{"children":"Nat"}],"), not a ",["$","code",null,{"children":"Bool"}],". I also got an error about the ",["$","a",null,{"href":"https://github.com/leanprover/lean3/issues/1355","children":"sorry"}]," axiom, which Lean uses to stub out missing proofs."]}]
-52:["",["$","pre",null,{"className":"language-plaintext pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"<table class=\"code-ln-table\"><tbody><tr class=\"code-ln-line\">\n        <td class=\"code-ln-numbers\" data-line-number=\"1\"><div class=\"code-ln-n\" data-line-number=\"1\"></div></td>\n        <td class=\"code-ln-code\" data-line-number=\"1\"><span class=\"line\"><span>theorem my_theorem : 2 + 2 = 4 :=</span></span></td>\n      </tr><tr class=\"code-ln-line\">\n        <td class=\"code-ln-numbers\" data-line-number=\"2\"><div class=\"code-ln-n\" data-line-number=\"2\"></div></td>\n        <td class=\"code-ln-code\" data-line-number=\"2\"><span class=\"line\"><span>sorry</span></span></td>\n      </tr></tbody></table>"}}]}]]
-53:["$","p",null,{"children":["That’s not relevant for finished code, but it’s interesting to see how Lean explicitly requires proofs for certain conditions like termination or safety. In older Lean versions, ",["$","code",null,{"children":"#eval"}]," could run code with unsolved proofs, but that’s no longer allowed by default."]}]
-54:["$","p",null,{"children":["I refactored my approach after more reading. My new idea was: gather all lines containing ",["$","code",null,{"children":"|"}],", split them, convert to ",["$","code",null,{"children":"Nat"}],", and store them in a graph. Something like:"]}]
-8c:T167e,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+      </tr></tbody></table>52:["",["$","pre",null,{"className":"language-plaintext pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$8d"}}]}]]
+53:["$","p",null,{"children":["That failed because ",["$","code",null,{"children":"posOf"}]," returns a position (a ",["$","code",null,{"children":"Nat"}],"), not a ",["$","code",null,{"children":"Bool"}],". I also got an error about the ",["$","a",null,{"href":"https://github.com/leanprover/lean3/issues/1355","children":"sorry"}]," axiom, which Lean uses to stub out missing proofs."]}]
+54:["",["$","pre",null,{"className":"language-plaintext pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"<table class=\"code-ln-table\"><tbody><tr class=\"code-ln-line\">\n        <td class=\"code-ln-numbers\" data-line-number=\"1\"><div class=\"code-ln-n\" data-line-number=\"1\"></div></td>\n        <td class=\"code-ln-code\" data-line-number=\"1\"><span class=\"line\"><span>theorem my_theorem : 2 + 2 = 4 :=</span></span></td>\n      </tr><tr class=\"code-ln-line\">\n        <td class=\"code-ln-numbers\" data-line-number=\"2\"><div class=\"code-ln-n\" data-line-number=\"2\"></div></td>\n        <td class=\"code-ln-code\" data-line-number=\"2\"><span class=\"line\"><span>sorry</span></span></td>\n      </tr></tbody></table>"}}]}]]
+55:["$","p",null,{"children":["That’s not relevant for finished code, but it’s interesting to see how Lean explicitly requires proofs for certain conditions like termination or safety. In older Lean versions, ",["$","code",null,{"children":"#eval"}]," could run code with unsolved proofs, but that’s no longer allowed by default."]}]
+56:["$","p",null,{"children":["I refactored my approach after more reading. My new idea was: gather all lines containing ",["$","code",null,{"children":"|"}],", split them, convert to ",["$","code",null,{"children":"Nat"}],", and store them in a graph. Something like:"]}]
+8e:T167e,<table class="code-ln-table"><tbody><tr class="code-ln-line">
         <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
         <td class="code-ln-code" data-line-number="1"><span class="line"><span>def parsePageRules (lines : List String) (graph : HashMap Nat (List Nat)) : (List String × HashMap Nat (List Nat)) :=</span></span></td>
       </tr><tr class="code-ln-line">
@@ -538,9 +545,9 @@ d:[["children",{"s":"en","h":96,"d":{"r":["$","$1","c",{"children":[null,["$","$
       </tr><tr class="code-ln-line">
         <td class="code-ln-numbers" data-line-number="20"><div class="code-ln-n" data-line-number="20"></div></td>
         <td class="code-ln-code" data-line-number="20"><span class="line"><span>        | _ => (rest, graph)</span></span></td>
-      </tr></tbody></table>55:["",["$","pre",null,{"className":"language-plaintext pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$8c"}}]}]]
-56:["$","p",null,{"children":["But to simplify, I ended up deciding to fold over all lines and skip those without ",["$","code",null,{"children":"|"}],". For example:"]}]
-8d:T1b4a,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+      </tr></tbody></table>57:["",["$","pre",null,{"className":"language-plaintext pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$8e"}}]}]]
+58:["$","p",null,{"children":["But to simplify, I ended up deciding to fold over all lines and skip those without ",["$","code",null,{"children":"|"}],". For example:"]}]
+8f:T1b4a,<table class="code-ln-table"><tbody><tr class="code-ln-line">
         <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
         <td class="code-ln-code" data-line-number="1"><span class="line"><span>def skipToPageRules (lines : List String) :=</span></span></td>
       </tr><tr class="code-ln-line">
@@ -615,9 +622,9 @@ d:[["children",{"s":"en","h":96,"d":{"r":["$","$1","c",{"children":[null,["$","$
       </tr><tr class="code-ln-line">
         <td class="code-ln-numbers" data-line-number="25"><div class="code-ln-n" data-line-number="25"></div></td>
         <td class="code-ln-code" data-line-number="25"><span class="line"><span>    | _ => g) (HashMap.empty)</span></span></td>
-      </tr></tbody></table>57:["",["$","pre",null,{"className":"language-plaintext pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$8d"}}]}]]
-58:["$","p",null,{"children":["Having built the graph, the next step was to check if a page sequence is ",["$","em",null,{"children":"correctly ordered"}]," -- i.e., does each page appear before all of its successors? One straightforward way is to transform your list of pages into an index map (page -> its position), and then verify the condition index(page) < index(successor):"]}]
-8e:Te7f,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+      </tr></tbody></table>59:["",["$","pre",null,{"className":"language-plaintext pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$8f"}}]}]]
+5a:["$","p",null,{"children":["Having built the graph, the next step was to check if a page sequence is ",["$","em",null,{"children":"correctly ordered"}]," -- i.e., does each page appear before all of its successors? One straightforward way is to transform your list of pages into an index map (page -> its position), and then verify the condition index(page) < index(successor):"]}]
+90:Te7f,<table class="code-ln-table"><tbody><tr class="code-ln-line">
         <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
         <td class="code-ln-code" data-line-number="1"><span class="line"><span>def ordered? (pages : List Nat) (rules : HashMap Nat (List Nat)) :=</span></span></td>
       </tr><tr class="code-ln-line">
@@ -656,11 +663,11 @@ d:[["children",{"s":"en","h":96,"d":{"r":["$","$1","c",{"children":[null,["$","$
       </tr><tr class="code-ln-line">
         <td class="code-ln-numbers" data-line-number="13"><div class="code-ln-n" data-line-number="13"></div></td>
         <td class="code-ln-code" data-line-number="13"><span class="line"><span>   )</span></span></td>
-      </tr></tbody></table>59:["",["$","pre",null,{"className":"language-plaintext pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$8e"}}]}]]
-5a:["$","p",null,{"children":"Testing that with:"}]
-5b:["",["$","pre",null,{"className":"language-fish pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"<table class=\"code-ln-table\"><tbody><tr class=\"code-ln-line\">\n        <td class=\"code-ln-numbers\" data-line-number=\"1\"><div class=\"code-ln-n\" data-line-number=\"1\"></div></td>\n        <td class=\"code-ln-code\" data-line-number=\"1\"><span class=\"line\"><span style=\"color:#24292E;--shiki-dark:#E1E4E8\">❯ lean --run day05.lean example.txt</span></span></td>\n      </tr><tr class=\"code-ln-line\">\n        <td class=\"code-ln-numbers\" data-line-number=\"2\"><div class=\"code-ln-n\" data-line-number=\"2\"></div></td>\n        <td class=\"code-ln-code\" data-line-number=\"2\"><span class=\"line\"><span style=\"color:#005CC5;--shiki-dark:#79B8FF\">Part</span><span style=\"color:#24292E;--shiki-dark:#E1E4E8\"> 1 Result: 143</span></span></td>\n      </tr></tbody></table>"}}]}]]
-5c:["$","p",null,{"children":"That worked great. Then for part two, we want a topological sort of the pages:"}]
-8f:Tbd7,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+      </tr></tbody></table>5b:["",["$","pre",null,{"className":"language-plaintext pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$90"}}]}]]
+5c:["$","p",null,{"children":"Testing that with:"}]
+5d:["",["$","pre",null,{"className":"language-fish pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"<table class=\"code-ln-table\"><tbody><tr class=\"code-ln-line\">\n        <td class=\"code-ln-numbers\" data-line-number=\"1\"><div class=\"code-ln-n\" data-line-number=\"1\"></div></td>\n        <td class=\"code-ln-code\" data-line-number=\"1\"><span class=\"line\"><span style=\"color:#24292E;--shiki-dark:#E1E4E8\">❯ lean --run day05.lean example.txt</span></span></td>\n      </tr><tr class=\"code-ln-line\">\n        <td class=\"code-ln-numbers\" data-line-number=\"2\"><div class=\"code-ln-n\" data-line-number=\"2\"></div></td>\n        <td class=\"code-ln-code\" data-line-number=\"2\"><span class=\"line\"><span style=\"color:#005CC5;--shiki-dark:#79B8FF\">Part</span><span style=\"color:#24292E;--shiki-dark:#E1E4E8\"> 1 Result: 143</span></span></td>\n      </tr></tbody></table>"}}]}]]
+5e:["$","p",null,{"children":"That worked great. Then for part two, we want a topological sort of the pages:"}]
+91:Tbd7,<table class="code-ln-table"><tbody><tr class="code-ln-line">
         <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
         <td class="code-ln-code" data-line-number="1"><span class="line"><span>def processPages (inDegree : HashMap Nat Nat) (localRulesMap : HashMap Nat (List Nat)) (queue : List Nat) (pages : List Nat)  (sorted : List Nat) :=</span></span></td>
       </tr><tr class="code-ln-line">
@@ -690,9 +697,9 @@ d:[["children",{"s":"en","h":96,"d":{"r":["$","$1","c",{"children":[null,["$","$
       </tr><tr class="code-ln-line">
         <td class="code-ln-numbers" data-line-number="10"><div class="code-ln-n" data-line-number="10"></div></td>
         <td class="code-ln-code" data-line-number="10"><span class="line"><span>    processPages inDegree' localRulesMap queue' pages' sorted'</span></span></td>
-      </tr></tbody></table>5d:["",["$","pre",null,{"className":"language-plaintext pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$8f"}}]}]]
-5e:["$","p",null,{"children":"At first, Lean refused to compile, complaining about not being able to prove termination."}]
-90:T1f72,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+      </tr></tbody></table>5f:["",["$","pre",null,{"className":"language-plaintext pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$91"}}]}]]
+60:["$","p",null,{"children":"At first, Lean refused to compile, complaining about not being able to prove termination."}]
+92:T1f72,<table class="code-ln-table"><tbody><tr class="code-ln-line">
         <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
         <td class="code-ln-code" data-line-number="1"><span class="line"><span>fail to show termination for</span></span></td>
       </tr><tr class="code-ln-line">
@@ -776,10 +783,10 @@ d:[["children",{"s":"en","h":96,"d":{"r":["$","$1","c",{"children":[null,["$","$
       </tr><tr class="code-ln-line">
         <td class="code-ln-numbers" data-line-number="28"><div class="code-ln-n" data-line-number="28"></div></td>
         <td class="code-ln-code" data-line-number="28"><span class="line"><span>Please use `termination_by` to specify a decreasing measure.</span></span></td>
-      </tr></tbody></table>5f:["",["$","pre",null,{"className":"language-plaintext pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$90"}}]}]]
-60:["$","p",null,{"children":["When Lean compiles a recursive function, it requires a proof that the recursion terminates (unless you mark it partial). My recursion doesn’t obviously shrink just from the function arguments, because I’m mutating a ",["$","code",null,{"children":"HashMap"}]," and scanning a ",["$","code",null,{"children":"queue"}]," in each step. Also, ",["$","code",null,{"children":"HashMap"}]," doesn’t provide a built-in structural measure for the compiler."]}]
-61:["$","p",null,{"children":["I tried messing with ",["$","code",null,{"children":"termination_by"}]," and ",["$","code",null,{"children":"decreasing_by"}]," but got stuck. Then I realized Lean was actually helping me find a logical bug. I used ",["$","code",null,{"children":"partial def"}]," to bypass the termination check and inserted ",["$","code",null,{"children":"dbg_trace"}]," debugging:"]}]
-91:Tf42,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+      </tr></tbody></table>61:["",["$","pre",null,{"className":"language-plaintext pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$92"}}]}]]
+62:["$","p",null,{"children":["When Lean compiles a recursive function, it requires a proof that the recursion terminates (unless you mark it partial). My recursion doesn’t obviously shrink just from the function arguments, because I’m mutating a ",["$","code",null,{"children":"HashMap"}]," and scanning a ",["$","code",null,{"children":"queue"}]," in each step. Also, ",["$","code",null,{"children":"HashMap"}]," doesn’t provide a built-in structural measure for the compiler."]}]
+63:["$","p",null,{"children":["I tried messing with ",["$","code",null,{"children":"termination_by"}]," and ",["$","code",null,{"children":"decreasing_by"}]," but got stuck. Then I realized Lean was actually helping me find a logical bug. I used ",["$","code",null,{"children":"partial def"}]," to bypass the termination check and inserted ",["$","code",null,{"children":"dbg_trace"}]," debugging:"]}]
+93:Tf42,<table class="code-ln-table"><tbody><tr class="code-ln-line">
         <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
         <td class="code-ln-code" data-line-number="1"><span class="line"><span>set_option diagnostics true</span></span></td>
       </tr><tr class="code-ln-line">
@@ -818,11 +825,11 @@ d:[["children",{"s":"en","h":96,"d":{"r":["$","$1","c",{"children":[null,["$","$
       </tr><tr class="code-ln-line">
         <td class="code-ln-numbers" data-line-number="13"><div class="code-ln-n" data-line-number="13"></div></td>
         <td class="code-ln-code" data-line-number="13"><span class="line"><span>    processPages inDegree' localRulesMap queue' pages' sorted'</span></span></td>
-      </tr></tbody></table>62:["",["$","pre",null,{"className":"language-plaintext pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$91"}}]}]]
-63:["$","p",null,{"children":["It turned out I was filtering the queue with the old ",["$","code",null,{"children":"inDegree"}]," instead of ",["$","code",null,{"children":"inDegree'"}],". Correcting that:"]}]
-64:["",["$","pre",null,{"className":"language-plaintext pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"<table class=\"code-ln-table\"><tbody><tr class=\"code-ln-line\">\n        <td class=\"code-ln-numbers\" data-line-number=\"1\"><div class=\"code-ln-n\" data-line-number=\"1\"></div></td>\n        <td class=\"code-ln-code\" data-line-number=\"1\"><span class=\"line\"><span>let queue' := pages'.filter (fun p => inDegree'.getD p 0 = 0)</span></span></td>\n      </tr></tbody></table>"}}]}]]
-65:["$","p",null,{"children":"solved my logical error. And indeed:"}]
-92:T457,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+      </tr></tbody></table>64:["",["$","pre",null,{"className":"language-plaintext pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$93"}}]}]]
+65:["$","p",null,{"children":["It turned out I was filtering the queue with the old ",["$","code",null,{"children":"inDegree"}]," instead of ",["$","code",null,{"children":"inDegree'"}],". Correcting that:"]}]
+66:["",["$","pre",null,{"className":"language-plaintext pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"<table class=\"code-ln-table\"><tbody><tr class=\"code-ln-line\">\n        <td class=\"code-ln-numbers\" data-line-number=\"1\"><div class=\"code-ln-n\" data-line-number=\"1\"></div></td>\n        <td class=\"code-ln-code\" data-line-number=\"1\"><span class=\"line\"><span>let queue' := pages'.filter (fun p => inDegree'.getD p 0 = 0)</span></span></td>\n      </tr></tbody></table>"}}]}]]
+67:["$","p",null,{"children":"solved my logical error. And indeed:"}]
+94:T457,<table class="code-ln-table"><tbody><tr class="code-ln-line">
         <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
         <td class="code-ln-code" data-line-number="1"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">❯ lean --run day05.lean input.txt</span></span></td>
       </tr><tr class="code-ln-line">
@@ -831,23 +838,23 @@ d:[["children",{"s":"en","h":96,"d":{"r":["$","$1","c",{"children":[null,["$","$
       </tr><tr class="code-ln-line">
         <td class="code-ln-numbers" data-line-number="3"><div class="code-ln-n" data-line-number="3"></div></td>
         <td class="code-ln-code" data-line-number="3"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">Part</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> 2 Result: 123</span></span></td>
-      </tr></tbody></table>66:["",["$","pre",null,{"className":"language-fish pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$92"}}]}]]
-67:["$","p",null,{"children":"Victory! Lean’s termination system was right to be suspicious. After I fixed the bug, I could have tried again to provide a proper termination metric, but partial was enough for my immediate puzzle solution."}]
-68:["$","p",null,{"children":["With that, I cleaned up and pushed everything to ",["$","a",null,{"href":"http://codeberg.org/unjello/babel-of-code/src/branch/main/2025/05","children":"Codeberg"}],"."]}]
-69:["$","p",null,{"children":["Next week, I’m solving another Advent of Code puzzle in ",["$","a",null,{"href":"https://fishshell.com","children":"fish"}]," to learn how it differs from Bash. See you later!"]}]
-6a:["$","div",null,{"children":[" \\__                    --> ",["$","a",null,{"href":"http://andrzej.lichnerowicz.pl","target":"_blank","rel":"noopener noreferrer","title":"andrzej.lichnerowicz.pl","className":"link","style":{"cursor":"pointer"},"children":"andrzej.lichnerowicz.pl"}]," <--                    __/\n   //                                                                     \\\\\n  // ------------------------                     ------------------------ \\\\\n '~~~~~~~~~~~~~~~~~~~~~~~~~// ------       ------ \\\\~~~~~~~~~~~~~~~~~~~~~~~~~`\n                          '~~~~~~~//       \\\\~~~~~~~`\n                                 // ------- \\\\\n                                '~~~~~~~~~~~~~`\n      "]}]
-6b:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/3ert6xgjkvepg.css","precedence":"next"}]
-6c:["$","script","script-0",{"src":"/_next/static/chunks/0jybh4guong1_.js","async":true}]
-6d:["$","script","script-1",{"src":"/_next/static/chunks/1pfxd-dkulr8v.js","async":true}]
-6e:["$","$L93",null,{"children":["$","$74",null,{"name":"Next.MetadataOutlet","children":"$@94"}]}]
+      </tr></tbody></table>68:["",["$","pre",null,{"className":"language-fish pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$94"}}]}]]
+69:["$","p",null,{"children":"Victory! Lean’s termination system was right to be suspicious. After I fixed the bug, I could have tried again to provide a proper termination metric, but partial was enough for my immediate puzzle solution."}]
+6a:["$","p",null,{"children":["With that, I cleaned up and pushed everything to ",["$","a",null,{"href":"http://codeberg.org/unjello/babel-of-code/src/branch/main/2025/05","children":"Codeberg"}],"."]}]
+6b:["$","p",null,{"children":["Next week, I’m solving another Advent of Code puzzle in ",["$","a",null,{"href":"https://fishshell.com","children":"fish"}]," to learn how it differs from Bash. See you later!"]}]
+6c:["$","div",null,{"children":[" \\__                    --> ",["$","a",null,{"href":"http://andrzej.lichnerowicz.pl","target":"_blank","rel":"noopener noreferrer","title":"andrzej.lichnerowicz.pl","className":"link","style":{"cursor":"pointer"},"children":"andrzej.lichnerowicz.pl"}]," <--                    __/\n   //                                                                     \\\\\n  // ------------------------                     ------------------------ \\\\\n '~~~~~~~~~~~~~~~~~~~~~~~~~// ------       ------ \\\\~~~~~~~~~~~~~~~~~~~~~~~~~`\n                          '~~~~~~~//       \\\\~~~~~~~`\n                                 // ------- \\\\\n                                '~~~~~~~~~~~~~`\n      "]}]
+6d:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/1nym5xdou5nal.css","precedence":"next"}]
+6e:["$","script","script-0",{"src":"/_next/static/chunks/0jybh4guong1_.js","async":true}]
+6f:["$","script","script-1",{"src":"/_next/static/chunks/1n020gr3ll-6x.js","async":true}]
+70:["$","$L95",null,{"children":["$","$76",null,{"name":"Next.MetadataOutlet","children":"$@96"}]}]
 c:300
-94:null
-78:true
+96:null
+7a:true
 c:C
-77:0
+79:0
 13:"$undefined"
 11:"$undefined"
 e:"$undefined"
 b:"$undefined"
-76:"$undefined"
-6f:"$undefined"
+78:"$undefined"
+71:"$undefined"
