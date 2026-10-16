@@ -8,33 +8,37 @@
 8:I[97478,["$2"],"default"]
 9:"/_next/static/chunks/3kcn8wz7h7dvj.js"
 a:I[29306,["$2","$9"],"default"]
-16:"/_next/static/chunks/0jybh4guong1_.js"
+16:"/_next/static/chunks/0pqujj4ltlc38.js"
 17:"/_next/static/chunks/1n020gr3ll-6x.js"
-18:I[21864,["$2","$16","$17"],""]
-2d:"ViewportBoundary"
-2e:I[44259,["$2"],"$2d"]
-2f:"MetadataBoundary"
-30:I[44259,["$2"],"$2f"]
-31:"$Sreact.suspense"
-32:I[19565,["$2"],"IconMark"]
+18:I[93781,["$2","$16","$17"],"TitlePopover"]
+19:I[21864,["$2","$16","$17"],""]
+31:"ViewportBoundary"
+32:I[44259,["$2"],"$31"]
+33:"MetadataBoundary"
+34:I[44259,["$2"],"$33"]
+35:"$Sreact.suspense"
+36:I[19565,["$2"],"IconMark"]
 :HL["/_next/static/chunks/30-je2wmn_k88.css","style"]
 c:X
 f:X
 f:C
-15:T545,                              _______._ _
+15:Tab3,                              _______._ _
                       _ _.___/       |
                          |           |
                          |           |
-             -----+-----                          ___     ___
-                  |              ______   ___    /  /____    \
-            __________ _-+-_____/ .(  .\_(xhb)__|  |(     \   |
-           /.   |..   \..  ___/.\ . ) ..\ . ____\  |  o  / |  |
-          |..    ).    |.  \    .|.(  ...|.(.   :  (____|  |  |
-         (______/..    |.   \___.|______ . ______|..       | 9|
-          )..          |.      |    ..   |..     \ .       | 9[
-         ( .    o      |.      |     .\  |.       |. ___/ (|  ]
-          \___________/..      |\_______/________/\_________\ [
-               |_______________|  ____________________________]
+                                                         cry"
+              ▄▄▄▄▓▀▀▀█▄▄▄▓▀▀▀█▄▄▄█▀▀▀▓▄▄▄█▀▀▀▀▀▀▀▀▀▀▀▀█▄▄▄▄▄
+            ▐█▀▐▌▀▀ ░▄▄▄▄▄▄▄▓  ▐▌ ▀ ░▄▄▄▄▄▄▄▓ ▐███████▄▄▄▄▄ ▀▀▀▀▓▄▄
+            ▓▌░▄▄████▀▀▀▀███▓ ░▄▄████▀▀▀▀███▓ ▐███▀ ▄ ▀▀▀▀▀████▄▄ ▀█▄
+      ░▄▄▄█▀▀ ▀▀         ███▌ ████▌ ▄▄█▓ ███▌ ░███ ██▐▐░▌▌░▄▄▄ ▓█▓ █▌
+     ░▓▀ ▄▄▄████████▄▄▄░▐███▌▌▓████ ███▀▐███▌ ░███▌▓██████▀▀▀ ▄▄██▌▐▌
+     █▀ ▓███▀▀ ▄ ▀▀▀████████ ▌▐████▌▐█▌░███▓ ▓ ▓███▄▄ ▀ ▄▄▄████████ ▓
+     ▐▌░███▌▓██████▄▄▄ ▀▀██▌▐█ ████▓ ■ ▐███▌▄█▄ ▀▀▀████████▀▀▀░▐███▌▐▌
+     ▐▌░███ ██▐▐░▌▌░▀▀▀ ▓█▓ ▓▐▌▐████ ▄ ▓███ █ ▀▀▀█▄▄ ▄▄         ███▌▐█
+     ▐▌▐███▄ ▀ ▄▄▄▄▄████▀▀ ▄█▐▌░████ ▄ ███▌▄▓      █ ░▀▀████▄▄▄▄███▓ █
+     ▓▌▐███████▀▀▀▀▀ ▄▄▄▄█▀▀ ▐▌▄▄▄▄▄▄█▄▄▄▄▄█       ▓▄▄▐ ▄▄ ░▀▀▀▀▀▀▀▓ █
+    ▀██▄▄▄▄▄▄▄▄▄██▀▀▀▀░       ▀▀                     ▀▀▀▀█▄▄▄█▀▀▀▓▄▄▄█░
+                                                                     ░▀
                          :           |
     - -----andrzej-_ ____\_____|----_|_____________'-lichnerowicz-------- -
                          :           |
@@ -42,40 +46,43 @@ f:C
  . _         - --------- |  - -- -   | ------- -                         _  .
 -:-\-\-------------------|- -     - -|-----------------------------------\-\-:
  |                      _|___________|_                                      |
- |                       :           :                                       |14:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$1","c",{"children":[["$","div",null,{"className":"flex justify-center","children":["$","div",null,{"className":"ascii-art nfo-pre","children":[["$","div",null,{"className":"header-component","children":"$15"}],[" |//_)-> b l o g <--------------------------------------------------------(_\\|",["$","div",null,{"className":"whitespace-pre font-mono","children":[" |                                                                           |\n"," | I've been writing about my experiences and thoughts on software           |\n"," | engineering:                                                              |\n"," |                                                                           |\n",[["$","div","2026/10/demoscene-x-unesco",{"children":[" | ",["$","$L18",null,{"href":"/en/blog/2026/10/demoscene-x-unesco","children":"How Does a Grassroots Digital Community Become-/ ............. 2026.10.16"}]," |"]}],["$","div","2025/02/babel-of-code-w06",{"children":[" | ",["$","$L18",null,{"href":"/en/blog/2025/02/babel-of-code-w06","children":"Solving AoC in Fish .......................................... 2025.02.16"}]," |"]}],["$","div","2025/02/babel-of-code-w05",{"children":[" | ",["$","$L18",null,{"href":"/en/blog/2025/02/babel-of-code-w05","children":"Solving AoC in LEAN .......................................... 2025.02.11"}]," |"]}],["$","div","2025/02/rust-mixins",{"children":[" | ",["$","$L18",null,{"href":"/en/blog/2025/02/rust-mixins","children":"Rust Inherited ............................................... 2025.02.04"}]," |"]}],"$L19","$L1a","$L1b","$L1c","$L1d","$L1e","$L1f","$L20","$L21","$L22","$L23","$L24","$L25","$L26"]," |                                                                           |"]}]],"$L27"]}]}],["$L28","$L29","$L2a"],"$L2b"]}],"p":"$@2c","v":null,"s":"$c"}}]]
+ |                       :           :                                       |14:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$1","c",{"children":[["$","div",null,{"className":"flex justify-center","children":["$","div",null,{"className":"ascii-art nfo-pre","children":[["$","div",null,{"className":"header-component","children":"$15"}],[" |//_)-> b l o g <--------------------------------------------------------(_\\|",["$","div",null,{"className":"whitespace-pre font-mono","children":[" |                                                                           |\n"," | I've been writing about my experiences and thoughts on software           |\n"," | engineering:                                                              |\n"," |                                                                           |\n",[["$","div","2026/10/demoscene-x-unesco",{"children":[" | ",[["$","$L18",null,{"fullTitle":"How Does a Grassroots Digital Community Become Cultural Heritage? (2026.10.16)","displayTitle":"How Does a Grassroots Digital Community Become-/","url":"/en/blog/2026/10/demoscene-x-unesco","internal":true}]," ",["$","$L19",null,{"href":"/en/blog/2026/10/demoscene-x-unesco","className":"link","aria-label":"How Does a Grassroots Digital Community Become Cultural Heritage? (2026.10.16)","children":"............. 2026.10.16"}]]," |"]}],"$L1a","$L1b","$L1c","$L1d","$L1e","$L1f","$L20","$L21","$L22","$L23","$L24","$L25","$L26","$L27","$L28","$L29","$L2a"]," |                                                                           |"]}]],"$L2b"]}]}],["$L2c","$L2d","$L2e"],"$L2f"]}],"p":"$@30","v":null,"s":"$c"}}]]
 12:[["children",{"s":{"n":"slug","t":"oc","k":"","s":[]},"h":96,"d":{"r":["$","$1","c",{"children":[null,["$","$L7",null,{"parallelRouterKey":"children","template":["$","$L8",null,{}]}]]}],"p":"$@13","v":"$f","s":"$c"},"c":"$Q14"}]]
 10:[["children",{"s":"blog","h":96,"d":{"r":["$","$1","c",{"children":[null,["$","$L7",null,{"parallelRouterKey":"children","template":["$","$L8",null,{}]}]]}],"p":"$@11","v":"$f","s":"$c"},"c":"$Q12"}]]
 d:[["children",{"s":"en","h":96,"d":{"r":["$","$1","c",{"children":[null,["$","$L7",null,{"parallelRouterKey":"children","template":["$","$L8",null,{}]}]]}],"p":"$@e","v":"$f","s":"$c"},"c":"$Q10"}]]
-0:{"t":{"t":{"s":"","h":80,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/30-je2wmn_k88.css","precedence":"next"}],["$","script","script-0",{"src":"/_next/static/chunks/3y26xv8sa1dt0.js","async":true}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","link",null,{"rel":"icon","href":"/favicon.ico","sizes":"any"}],["$","link",null,{"rel":"apple-touch-icon","href":"/apple-touch-icon.png"}]]}],["$","body",null,{"children":[["$","$L3",null,{}],["$","$L4",null,{"children":[["$","$L5",null,{}],["$","$L6",null,{"children":["$","$L7",null,{"parallelRouterKey":"children","template":["$","$L8",null,{}],"notFound":[["$","$La",null,{}],[]]}]}]]}]]}]]}]]}],"p":"$@b","v":null,"s":"$c"},"c":"$Qd"},"h":{"r":["$","$1","h",{"children":[null,["$","$L2e",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","$L30",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$31",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Blog | @unjello"}],["$","meta","1",{"name":"description","content":"Personal website of Andrzej Lichnerowicz featuring blog, publications, talks, art, and projects"}],["$","link","2",{"rel":"shortcut icon","href":"/favicon.ico"}],["$","link","3",{"rel":"icon","href":"/favicon.ico","sizes":"any"}],["$","link","4",{"rel":"apple-touch-icon","href":"/apple-touch-icon.png"}],["$","$L32","5",{}]]}]}],null]}],null]}],"p":"$@33","v":null,"s":"$c"}},"a":"$@34","u":"$@35","b":"Wsy0fUdk2aevXMuxrwYRQ"}
-36:I[44259,["$2"],"OutletBoundary"]
-:HL["/_next/static/chunks/0b500hzajck1a.css","style"]
-19:["$","div","2025/02/babel-of-code-w04",{"children":[" | ",["$","$L18",null,{"href":"/en/blog/2025/02/babel-of-code-w04","children":"Solving AoC in Prolog ........................................ 2025.02.02"}]," |"]}]
-1a:["$","div","2025/01/babel-of-code-w03",{"children":[" | ",["$","$L18",null,{"href":"/en/blog/2025/01/babel-of-code-w03","children":"Solving AoC in Uxntal ........................................ 2025.01.26"}]," |"]}]
-1b:["$","div","2025/01/babel-of-code-w02",{"children":[" | ",["$","$L18",null,{"href":"/en/blog/2025/01/babel-of-code-w02","children":"Solving AoC in Watcom C/C++ .................................. 2025.01.12"}]," |"]}]
-1c:["$","div","2025/01/babel-of-code-w01",{"children":[" | ",["$","$L18",null,{"href":"/en/blog/2025/01/babel-of-code-w01","children":"Solving AoC in Microsoft Macro Assembler ..................... 2025.01.03"}]," |"]}]
-1d:["$","div","2025/babel-of-code",{"children":[" | ",["$","$L18",null,{"href":"/en/blog/2025/babel-of-code","children":"Babel of Code 2024 ........................................... 2025.01.01"}]," |"]}]
-1e:["$","div","2024/december-adventure",{"children":[" | ",["$","$L18",null,{"href":"/en/blog/2024/december-adventure","children":"December Adventure 2024 ...................................... 2024.12.31"}]," |"]}]
-1f:["$","div","2024/rust-macros-cautionary-tale",{"children":[" | ",["$","$L18",null,{"href":"/en/blog/2024/rust-macros-cautionary-tale","children":"Rust Macros: A Cautionary Tale ............................... 2024.11.09"}]," |"]}]
-20:["$","div","2024/notebook-multiprocessing",{"children":[" | ",["$","$L18",null,{"href":"/en/blog/2024/notebook-multiprocessing","children":"Multiprocessing in Jupyter Notebooks ......................... 2024.10.13"}]," |"]}]
-21:["$","div","2024/polish-flag-size-coding-compo",{"children":[" | ",["$","$L18",null,{"href":"/en/blog/2024/polish-flag-size-coding-compo","children":"Polish Flag Size Coding Compo ................................ 2024.02.27"}]," |"]}]
-22:["$","div","2024/deploying-go-microservices-in-k8s",{"children":[" | ",["$","$L18",null,{"href":"/en/blog/2024/deploying-go-microservices-in-k8s","children":"Deploying a Go Microservice in Kubernetes .................... 2024.01.23"}]," |"]}]
-23:["$","div","2023/rust-github-2023",{"children":[" | ",["$","$L18",null,{"href":"/en/blog/2023/rust-github-2023","children":"Rocking Rust, Git, and GitHub in 2023 Like a Pro ............. 2023.02.26"}]," |"]}]
-24:["$","div","2023/same-old-story",{"children":[" | ",["$","$L18",null,{"href":"/en/blog/2023/same-old-story","children":"It's still the same old story ................................ 2023.02.07"}]," |"]}]
-25:["$","div","2021/reboot",{"children":[" | ",["$","$L18",null,{"href":"/en/blog/2021/reboot","children":"One more time? ............................................... 2021.06.26"}]," |"]}]
-26:["$","div","2017/hello-world",{"children":[" | ",["$","$L18",null,{"href":"/en/blog/2017/hello-world","children":"Initial Revision ............................................. 2017.11.05"}]," |"]}]
-27:["$","div",null,{"children":[" \\__                    --> ",["$","a",null,{"href":"http://andrzej.lichnerowicz.pl","target":"_blank","rel":"noopener noreferrer","title":"andrzej.lichnerowicz.pl","className":"link","style":{"cursor":"pointer"},"children":"andrzej.lichnerowicz.pl"}]," <--                    __/\n   //                                                                     \\\\\n  // ------------------------                     ------------------------ \\\\\n '~~~~~~~~~~~~~~~~~~~~~~~~~// ------       ------ \\\\~~~~~~~~~~~~~~~~~~~~~~~~~`\n                          '~~~~~~~//       \\\\~~~~~~~`\n                                 // ------- \\\\\n                                '~~~~~~~~~~~~~`\n      "]}]
-28:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0b500hzajck1a.css","precedence":"next"}]
-29:["$","script","script-0",{"src":"/_next/static/chunks/0jybh4guong1_.js","async":true}]
-2a:["$","script","script-1",{"src":"/_next/static/chunks/1n020gr3ll-6x.js","async":true}]
-2b:["$","$L36",null,{"children":["$","$31",null,{"name":"Next.MetadataOutlet","children":"$@37"}]}]
+0:{"t":{"t":{"s":"","h":80,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/30-je2wmn_k88.css","precedence":"next"}],["$","script","script-0",{"src":"/_next/static/chunks/3y26xv8sa1dt0.js","async":true}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","link",null,{"rel":"icon","href":"/favicon.ico","sizes":"any"}],["$","link",null,{"rel":"apple-touch-icon","href":"/apple-touch-icon.png"}]]}],["$","body",null,{"children":[["$","$L3",null,{}],["$","$L4",null,{"children":[["$","$L5",null,{}],["$","$L6",null,{"children":["$","$L7",null,{"parallelRouterKey":"children","template":["$","$L8",null,{}],"notFound":[["$","$La",null,{}],[]]}]}]]}]]}]]}]]}],"p":"$@b","v":null,"s":"$c"},"c":"$Qd"},"h":{"r":["$","$1","h",{"children":[null,["$","$L32",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","$L34",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$35",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Blog | @unjello"}],["$","meta","1",{"name":"description","content":"Personal website of Andrzej Lichnerowicz featuring blog, publications, talks, art, and projects"}],["$","link","2",{"rel":"shortcut icon","href":"/favicon.ico"}],["$","link","3",{"rel":"icon","href":"/favicon.ico","sizes":"any"}],["$","link","4",{"rel":"apple-touch-icon","href":"/apple-touch-icon.png"}],["$","$L36","5",{}]]}]}],null]}],null]}],"p":"$@37","v":null,"s":"$c"}},"a":"$@38","u":"$@39","b":"hyC5Z8LqxA1Yd97cKuRPO"}
+3a:I[44259,["$2"],"OutletBoundary"]
+:HL["/_next/static/chunks/0d84t4ckot3wh.css","style"]
+1a:["$","div","2025/02/babel-of-code-w06",{"children":[" | ",["$","$L19",null,{"href":"/en/blog/2025/02/babel-of-code-w06","title":"Solving AoC in Fish (2025.02.16)","children":"Solving AoC in Fish .......................................... 2025.02.16"}]," |"]}]
+1b:["$","div","2025/02/babel-of-code-w05",{"children":[" | ",["$","$L19",null,{"href":"/en/blog/2025/02/babel-of-code-w05","title":"Solving AoC in LEAN (2025.02.11)","children":"Solving AoC in LEAN .......................................... 2025.02.11"}]," |"]}]
+1c:["$","div","2025/02/rust-mixins",{"children":[" | ",["$","$L19",null,{"href":"/en/blog/2025/02/rust-mixins","title":"Rust Inherited (2025.02.04)","children":"Rust Inherited ............................................... 2025.02.04"}]," |"]}]
+1d:["$","div","2025/02/babel-of-code-w04",{"children":[" | ",["$","$L19",null,{"href":"/en/blog/2025/02/babel-of-code-w04","title":"Solving AoC in Prolog (2025.02.02)","children":"Solving AoC in Prolog ........................................ 2025.02.02"}]," |"]}]
+1e:["$","div","2025/01/babel-of-code-w03",{"children":[" | ",["$","$L19",null,{"href":"/en/blog/2025/01/babel-of-code-w03","title":"Solving AoC in Uxntal (2025.01.26)","children":"Solving AoC in Uxntal ........................................ 2025.01.26"}]," |"]}]
+1f:["$","div","2025/01/babel-of-code-w02",{"children":[" | ",["$","$L19",null,{"href":"/en/blog/2025/01/babel-of-code-w02","title":"Solving AoC in Watcom C/C++ (2025.01.12)","children":"Solving AoC in Watcom C/C++ .................................. 2025.01.12"}]," |"]}]
+20:["$","div","2025/01/babel-of-code-w01",{"children":[" | ",["$","$L19",null,{"href":"/en/blog/2025/01/babel-of-code-w01","title":"Solving AoC in Microsoft Macro Assembler (2025.01.03)","children":"Solving AoC in Microsoft Macro Assembler ..................... 2025.01.03"}]," |"]}]
+21:["$","div","2025/babel-of-code",{"children":[" | ",["$","$L19",null,{"href":"/en/blog/2025/babel-of-code","title":"Babel of Code 2024 (2025.01.01)","children":"Babel of Code 2024 ........................................... 2025.01.01"}]," |"]}]
+22:["$","div","2024/december-adventure",{"children":[" | ",["$","$L19",null,{"href":"/en/blog/2024/december-adventure","title":"December Adventure 2024 (2024.12.31)","children":"December Adventure 2024 ...................................... 2024.12.31"}]," |"]}]
+23:["$","div","2024/rust-macros-cautionary-tale",{"children":[" | ",["$","$L19",null,{"href":"/en/blog/2024/rust-macros-cautionary-tale","title":"Rust Macros: A Cautionary Tale (2024.11.09)","children":"Rust Macros: A Cautionary Tale ............................... 2024.11.09"}]," |"]}]
+24:["$","div","2024/notebook-multiprocessing",{"children":[" | ",["$","$L19",null,{"href":"/en/blog/2024/notebook-multiprocessing","title":"Multiprocessing in Jupyter Notebooks (2024.10.13)","children":"Multiprocessing in Jupyter Notebooks ......................... 2024.10.13"}]," |"]}]
+25:["$","div","2024/polish-flag-size-coding-compo",{"children":[" | ",["$","$L19",null,{"href":"/en/blog/2024/polish-flag-size-coding-compo","title":"Polish Flag Size Coding Compo (2024.02.27)","children":"Polish Flag Size Coding Compo ................................ 2024.02.27"}]," |"]}]
+26:["$","div","2024/deploying-go-microservices-in-k8s",{"children":[" | ",["$","$L19",null,{"href":"/en/blog/2024/deploying-go-microservices-in-k8s","title":"Deploying a Go Microservice in Kubernetes (2024.01.23)","children":"Deploying a Go Microservice in Kubernetes .................... 2024.01.23"}]," |"]}]
+27:["$","div","2023/rust-github-2023",{"children":[" | ",["$","$L19",null,{"href":"/en/blog/2023/rust-github-2023","title":"Rocking Rust, Git, and GitHub in 2023 Like a Pro (2023.02.26)","children":"Rocking Rust, Git, and GitHub in 2023 Like a Pro ............. 2023.02.26"}]," |"]}]
+28:["$","div","2023/same-old-story",{"children":[" | ",["$","$L19",null,{"href":"/en/blog/2023/same-old-story","title":"It's still the same old story (2023.02.07)","children":"It's still the same old story ................................ 2023.02.07"}]," |"]}]
+29:["$","div","2021/reboot",{"children":[" | ",["$","$L19",null,{"href":"/en/blog/2021/reboot","title":"One more time? (2021.06.26)","children":"One more time? ............................................... 2021.06.26"}]," |"]}]
+2a:["$","div","2017/hello-world",{"children":[" | ",["$","$L19",null,{"href":"/en/blog/2017/hello-world","title":"Initial Revision (2017.11.05)","children":"Initial Revision ............................................. 2017.11.05"}]," |"]}]
+2b:["$","div",null,{"children":[" \\__                    --> ",["$","a",null,{"href":"http://andrzej.lichnerowicz.pl","target":"_blank","rel":"noopener noreferrer","title":"andrzej.lichnerowicz.pl","className":"link","style":{"cursor":"pointer"},"children":"andrzej.lichnerowicz.pl"}]," <--                    __/\n   //                                                                     \\\\\n  // ------------------------                     ------------------------ \\\\\n '~~~~~~~~~~~~~~~~~~~~~~~~~// ------       ------ \\\\~~~~~~~~~~~~~~~~~~~~~~~~~`\n                          '~~~~~~~//       \\\\~~~~~~~`\n                                 // ------- \\\\\n                                '~~~~~~~~~~~~~`\n      "]}]
+2c:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0d84t4ckot3wh.css","precedence":"next"}]
+2d:["$","script","script-0",{"src":"/_next/static/chunks/0pqujj4ltlc38.js","async":true}]
+2e:["$","script","script-1",{"src":"/_next/static/chunks/1n020gr3ll-6x.js","async":true}]
+2f:["$","$L3a",null,{"children":["$","$35",null,{"name":"Next.MetadataOutlet","children":"$@3b"}]}]
 c:300
-37:null
-35:true
+3b:null
+39:true
 c:C
-34:0
+38:0
 13:"$undefined"
 11:"$undefined"
 e:"$undefined"
 b:"$undefined"
-33:"$undefined"
-2c:"$undefined"
+37:"$undefined"
+30:"$undefined"

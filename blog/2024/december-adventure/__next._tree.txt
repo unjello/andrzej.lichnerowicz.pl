@@ -1,7 +1,7 @@
 :HL["/_next/static/chunks/30-je2wmn_k88.css","style"]
 :HC["/",""]
-:HL["/_next/static/chunks/0b500hzajck1a.css","style"]
+:HL["/_next/static/chunks/0d84t4ckot3wh.css","style"]
 3:[["children",{"s":"__PAGE__","h":160}]]
 2:[["children",{"s":{"n":"slug","t":"c","k":"2024/december-adventure","s":[]},"h":96,"c":"$Q3"}]]
 1:[["children",{"s":"blog","h":96,"c":"$Q2"}]]
-0:{"b":"Wsy0fUdk2aevXMuxrwYRQ","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
+0:{"b":"hyC5Z8LqxA1Yd97cKuRPO","t":{"t":{"s":"","h":80,"c":"$Q1"}}}

@@ -8,7 +8,7 @@
 8:I[97478,["$2"],"default"]
 9:"/_next/static/chunks/3kcn8wz7h7dvj.js"
 a:I[29306,["$2","$9"],"default"]
-16:"/_next/static/chunks/0jybh4guong1_.js"
+16:"/_next/static/chunks/0pqujj4ltlc38.js"
 17:"/_next/static/chunks/1n020gr3ll-6x.js"
 18:I[21864,["$2","$16","$17"],""]
 19:"AsciiBorderedMdx"
@@ -23,20 +23,20 @@ a:I[29306,["$2","$9"],"default"]
 c:X
 f:X
 f:C
-15:T545,                              _______._ _
+15:T548,                              _______._ _
                       _ _.___/       |
                          |           |
                          |           |
-             -----+-----                          ___     ___
-                  |              ______   ___    /  /____    \
-            __________ _-+-_____/ .(  .\_(xhb)__|  |(     \   |
-           /.   |..   \..  ___/.\ . ) ..\ . ____\  |  o  / |  |
-          |..    ).    |.  \    .|.(  ...|.(.   :  (____|  |  |
-         (______/..    |.   \___.|______ . ______|..       | 9|
-          )..          |.      |    ..   |..     \ .       | 9[
-         ( .    o      |.      |     .\  |.       |. ___/ (|  ]
-          \___________/..      |\_______/________/\_________\ [
-               |_______________|  ____________________________]
+                                                 ∙
+                         .                       :
+             ____________¡ >>>  _______   _ __ _ ¡  __    _______
+          __|⌐           |  ___|  ⌐____|_ ______ |       |       |
+        . |     [        | |                   _ |  :  __l.|  ┌  | .
+     ÷¼¼¼ |     |         \|    _____|       _ __|  |_|   |      | ¼¼¼÷
+          |_____l  _ l         |     |___|        ________|------!
+          ! ___ _         \____| ___ !  _________|.sti      __ _ :
+          ∙                          :             < <<<<        ∙
+                                     ∙
                          :           |
     - -----andrzej-_ ____\_____|----_|_____________'-lichnerowicz-------- -
                          :           |
@@ -48,10 +48,10 @@ f:C
 12:[["children",{"s":{"n":"slug","t":"oc","k":"2026/10/demoscene-x-unesco","s":[]},"h":96,"d":{"r":["$","$1","c",{"children":[null,["$","$L7",null,{"parallelRouterKey":"children","template":["$","$L8",null,{}]}]]}],"p":"$@13","v":"$f","s":"$c"},"c":"$Q14"}]]
 10:[["children",{"s":"blog","h":96,"d":{"r":["$","$1","c",{"children":[null,["$","$L7",null,{"parallelRouterKey":"children","template":["$","$L8",null,{}]}]]}],"p":"$@11","v":"$f","s":"$c"},"c":"$Q12"}]]
 d:[["children",{"s":"en","h":96,"d":{"r":["$","$1","c",{"children":[null,["$","$L7",null,{"parallelRouterKey":"children","template":["$","$L8",null,{}]}]]}],"p":"$@e","v":"$f","s":"$c"},"c":"$Q10"}]]
-0:{"t":{"t":{"s":"","h":80,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/30-je2wmn_k88.css","precedence":"next"}],["$","script","script-0",{"src":"/_next/static/chunks/3y26xv8sa1dt0.js","async":true}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","link",null,{"rel":"icon","href":"/favicon.ico","sizes":"any"}],["$","link",null,{"rel":"apple-touch-icon","href":"/apple-touch-icon.png"}]]}],["$","body",null,{"children":[["$","$L3",null,{}],["$","$L4",null,{"children":[["$","$L5",null,{}],["$","$L6",null,{"children":["$","$L7",null,{"parallelRouterKey":"children","template":["$","$L8",null,{}],"notFound":[["$","$La",null,{}],[]]}]}]]}]]}]]}]]}],"p":"$@b","v":null,"s":"$c"},"c":"$Qd"},"h":{"r":["$","$1","h",{"children":[null,["$","$L130",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","$L132",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$133",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"How Does a Grassroots Digital Community Become Cultural Heritage? | @unjello blog"}],["$","meta","1",{"name":"description","content":"Let's implement 2024/day/6 Advent of Code puzzle in Fish. BabelOfCode is low key. The goal is to solve each Advent of Code puzzle in a different language."}],["$","meta","2",{"property":"og:title","content":"How Does a Grassroots Digital Community Become Cultural Heritage? | @unjello blog"}],["$","meta","3",{"property":"og:description","content":"Let's implement 2024/day/6 Advent of Code puzzle in Fish. BabelOfCode is low key. The goal is to solve each Advent of Code puzzle in a different language."}],["$","meta","4",{"property":"og:url","content":"https://andrzej.lichnerowicz.pl/en/blog/2026/10/demoscene-x-unesco/"}],["$","meta","5",{"property":"og:image","content":"https://andrzej.lichnerowicz.pl/images/2026/10/demoscene-x-unesco/slide.002.png"}],["$","meta","6",{"property":"og:image:width","content":"1200"}],["$","meta","7",{"property":"og:image:height","content":"630"}],["$","meta","8",{"property":"og:image:alt","content":"How Does a Grassroots Digital Community Become Cultural Heritage? | @unjello blog"}],["$","meta","9",{"property":"og:type","content":"article"}],["$","meta","10",{"property":"article:published_time","content":"2026-10-16T17:41:06+02:00"}],["$","meta","11",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","12",{"name":"twitter:title","content":"How Does a Grassroots Digital Community Become Cultural Heritage? | @unjello blog"}],["$","meta","13",{"name":"twitter:description","content":"Let's implement 2024/day/6 Advent of Code puzzle in Fish. BabelOfCode is low key. The goal is to solve each Advent of Code puzzle in a different language."}],["$","meta","14",{"name":"twitter:image","content":"https://andrzej.lichnerowicz.pl/images/2026/10/demoscene-x-unesco/slide.002.png"}],["$","link","15",{"rel":"shortcut icon","href":"/favicon.ico"}],["$","link","16",{"rel":"icon","href":"/favicon.ico","sizes":"any"}],["$","link","17",{"rel":"apple-touch-icon","href":"/apple-touch-icon.png"}],["$","$L134","18",{}]]}]}],null]}],null]}],"p":"$@135","v":null,"s":"$c"}},"a":"$@136","u":"$@137","b":"Wsy0fUdk2aevXMuxrwYRQ"}
+0:{"t":{"t":{"s":"","h":80,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/30-je2wmn_k88.css","precedence":"next"}],["$","script","script-0",{"src":"/_next/static/chunks/3y26xv8sa1dt0.js","async":true}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","link",null,{"rel":"icon","href":"/favicon.ico","sizes":"any"}],["$","link",null,{"rel":"apple-touch-icon","href":"/apple-touch-icon.png"}]]}],["$","body",null,{"children":[["$","$L3",null,{}],["$","$L4",null,{"children":[["$","$L5",null,{}],["$","$L6",null,{"children":["$","$L7",null,{"parallelRouterKey":"children","template":["$","$L8",null,{}],"notFound":[["$","$La",null,{}],[]]}]}]]}]]}]]}]]}],"p":"$@b","v":null,"s":"$c"},"c":"$Qd"},"h":{"r":["$","$1","h",{"children":[null,["$","$L130",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","$L132",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$133",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"How Does a Grassroots Digital Community Become Cultural Heritage? | @unjello blog"}],["$","meta","1",{"name":"description","content":"Lessons from the Polish demoscene’s path to cultural heritage — about community, practice, identity, transmission, and what it really means to keep a culture alive."}],["$","meta","2",{"property":"og:title","content":"How Does a Grassroots Digital Community Become Cultural Heritage? | @unjello blog"}],["$","meta","3",{"property":"og:description","content":"Lessons from the Polish demoscene’s path to cultural heritage — about community, practice, identity, transmission, and what it really means to keep a culture alive."}],["$","meta","4",{"property":"og:url","content":"https://andrzej.lichnerowicz.pl/en/blog/2026/10/demoscene-x-unesco/"}],["$","meta","5",{"property":"og:image","content":"https://andrzej.lichnerowicz.pl/images/2026/10/demoscene-x-unesco/slide.002.png"}],["$","meta","6",{"property":"og:image:width","content":"1200"}],["$","meta","7",{"property":"og:image:height","content":"630"}],["$","meta","8",{"property":"og:image:alt","content":"How Does a Grassroots Digital Community Become Cultural Heritage? | @unjello blog"}],["$","meta","9",{"property":"og:type","content":"article"}],["$","meta","10",{"property":"article:published_time","content":"2026-10-16T17:41:06+02:00"}],["$","meta","11",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","12",{"name":"twitter:title","content":"How Does a Grassroots Digital Community Become Cultural Heritage? | @unjello blog"}],["$","meta","13",{"name":"twitter:description","content":"Lessons from the Polish demoscene’s path to cultural heritage — about community, practice, identity, transmission, and what it really means to keep a culture alive."}],["$","meta","14",{"name":"twitter:image","content":"https://andrzej.lichnerowicz.pl/images/2026/10/demoscene-x-unesco/slide.002.png"}],["$","link","15",{"rel":"shortcut icon","href":"/favicon.ico"}],["$","link","16",{"rel":"icon","href":"/favicon.ico","sizes":"any"}],["$","link","17",{"rel":"apple-touch-icon","href":"/apple-touch-icon.png"}],["$","$L134","18",{}]]}]}],null]}],null]}],"p":"$@135","v":null,"s":"$c"}},"a":"$@136","u":"$@137","b":"hyC5Z8LqxA1Yd97cKuRPO"}
 138:I[65255,["$2","$16","$17"],"Figure"]
 139:I[44259,["$2"],"OutletBoundary"]
-:HL["/_next/static/chunks/0b500hzajck1a.css","style"]
+:HL["/_next/static/chunks/0d84t4ckot3wh.css","style"]
 1b:["$","p",null,{"children":"In the final talk of the afternoon Presentation Panel I had spoken about the Polish demoscene’s path to intangible cultural heritage before, but usually from the perspective of the demoscene itself. This time, given the GRADE audience -- researchers studying grassroots digital culture as well as people directly involved in grassroots communities -- I wanted to take a broader view."}]
 1c:["$","p",null,{"children":"Other communities are already beginning to ask similar questions about their own practices, identity and heritage. So rather than retelling our story, I tried to look back at the process and ask what we had actually learned from it. What would I tell another grassroots community considering a similar path? What should they look for in their own community, and what questions should they ask themselves before they even start thinking about an application?"}]
 1d:["$","p",null,{"children":"The talk became less about how the demoscene became cultural heritage and more about how a community might recognize itself as cultural heritage in the first place."}]
@@ -323,8 +323,8 @@ ff:["$","p",null,{"children":"And this brings us to safeguarding."}]
 127:["$","p",null,{"children":"Safeguarding does not mean keeping it unchanged."}]
 128:["$","p",null,{"children":"It means keeping it alive."}]
 129:["$","div",null,{"children":[" \\__                    --> ",["$","a",null,{"href":"http://andrzej.lichnerowicz.pl","target":"_blank","rel":"noopener noreferrer","title":"andrzej.lichnerowicz.pl","className":"link","style":{"cursor":"pointer"},"children":"andrzej.lichnerowicz.pl"}]," <--                    __/\n   //                                                                     \\\\\n  // ------------------------                     ------------------------ \\\\\n '~~~~~~~~~~~~~~~~~~~~~~~~~// ------       ------ \\\\~~~~~~~~~~~~~~~~~~~~~~~~~`\n                          '~~~~~~~//       \\\\~~~~~~~`\n                                 // ------- \\\\\n                                '~~~~~~~~~~~~~`\n      "]}]
-12a:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0b500hzajck1a.css","precedence":"next"}]
-12b:["$","script","script-0",{"src":"/_next/static/chunks/0jybh4guong1_.js","async":true}]
+12a:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0d84t4ckot3wh.css","precedence":"next"}]
+12b:["$","script","script-0",{"src":"/_next/static/chunks/0pqujj4ltlc38.js","async":true}]
 12c:["$","script","script-1",{"src":"/_next/static/chunks/1n020gr3ll-6x.js","async":true}]
 12d:["$","$L139",null,{"children":["$","$133",null,{"name":"Next.MetadataOutlet","children":"$@13a"}]}]
 c:300
