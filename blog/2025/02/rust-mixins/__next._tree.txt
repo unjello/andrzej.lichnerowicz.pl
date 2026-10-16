@@ -4,4 +4,4 @@
 3:[["children",{"s":"__PAGE__","h":160}]]
 2:[["children",{"s":{"n":"slug","t":"c","k":"2025/02/rust-mixins","s":[]},"h":96,"c":"$Q3"}]]
 1:[["children",{"s":"blog","h":96,"c":"$Q2"}]]
-0:{"b":"hyC5Z8LqxA1Yd97cKuRPO","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
+0:{"b":"AzSR_0SEzOukZyRQCquS2","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
