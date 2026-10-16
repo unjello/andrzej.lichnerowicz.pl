@@ -1,8 +1,9 @@
-:HL["/_next/static/chunks/30-je2wmn_k88.css","style"]
+:HL["/_next/static/chunks/3yxxley_sjh68.css","style"]
 :HC["/",""]
-:HL["/_next/static/chunks/0d84t4ckot3wh.css","style"]
+:HL["/_next/static/chunks/24myzy9y0j4ea.css","style"]
+:HL["/_next/static/chunks/3dujkr-clwhbi.css","style"]
 4:[["children",{"s":"__PAGE__","h":160}]]
 3:[["children",{"s":{"n":"slug","t":"oc","k":"2025/babel-of-code","s":[]},"h":96,"c":"$Q4"}]]
 2:[["children",{"s":"blog","h":96,"c":"$Q3"}]]
 1:[["children",{"s":"en","h":96,"c":"$Q2"}]]
-0:{"b":"AzSR_0SEzOukZyRQCquS2","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
+0:{"b":"xwgyV5U68Nz2XIbEOzfJK","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
