@@ -15,11 +15,11 @@ e:"$Sreact.suspense"
 13:"MetadataBoundary"
 14:I[44259,["$2"],"$13"]
 16:I[45497,["$2"],"default",1]
-:HL["/_next/static/chunks/3yxxley_sjh68.css","style"]
+:HL["/_next/static/chunks/3ccdv9z467hwb.css","style"]
 :HC["/",""]
 :HL["/_next/static/chunks/3dujkr-clwhbi.css","style"]
 b:[["children",{"s":"__PAGE__","h":512,"d":{"r":["$","$1","c",{"children":["$Lc",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/3dujkr-clwhbi.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/13wdwdgcyhmw4.js","async":true,"nonce":"$undefined"}]],["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]]}],"p":false,"v":null}}]]
-0:{"P":null,"c":["",""],"q":"","i":false,"t":{"t":{"s":"","h":528,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/3yxxley_sjh68.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/3y26xv8sa1dt0.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","link",null,{"rel":"icon","href":"/favicon.ico","sizes":"any"}],["$","link",null,{"rel":"apple-touch-icon","href":"/apple-touch-icon.png"}]]}],["$","body",null,{"children":[["$","$L3",null,{}],["$","$L4",null,{"children":[["$","$L5",null,{}],["$","$L6",null,{"children":["$","$L7",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","$La",null,{}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]]}]]}]]}]]}],"p":false,"v":null},"c":"$Qb"},"h":{"r":["$","$1","h",{"children":[null,["$","$L11",null,{"children":"$L12"}],["$","$L14",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$e",null,{"name":"Next.Metadata","children":"$L15"}]}],null]}],null]}],"p":false,"v":null}},"m":"$undefined","G":["$16",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/3yxxley_sjh68.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]]],"S":true,"r":"$undefined","s":"$undefined","a":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"xwgyV5U68Nz2XIbEOzfJK"}
+0:{"P":null,"c":["",""],"q":"","i":false,"t":{"t":{"s":"","h":528,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/3ccdv9z467hwb.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/3y26xv8sa1dt0.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","link",null,{"rel":"icon","href":"/favicon.ico","sizes":"any"}],["$","link",null,{"rel":"apple-touch-icon","href":"/apple-touch-icon.png"}]]}],["$","body",null,{"children":[["$","$L3",null,{}],["$","$L4",null,{"children":[["$","$L5",null,{}],["$","$L6",null,{"children":["$","$L7",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","$La",null,{}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]]}]]}]]}]]}],"p":false,"v":null},"c":"$Qb"},"h":{"r":["$","$1","h",{"children":[null,["$","$L11",null,{"children":"$L12"}],["$","$L14",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$e",null,{"name":"Next.Metadata","children":"$L15"}]}],null]}],null]}],"p":false,"v":null}},"m":"$undefined","G":["$16",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/3ccdv9z467hwb.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]]],"S":true,"r":"$undefined","s":"$undefined","a":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"2RX65B8BItTX5M423M2AN"}
 18:"/_next/static/chunks/13wdwdgcyhmw4.js"
 19:I[93781,["$2","$18"],"TitlePopover"]
 1a:I[21864,["$2","$18"],""]
@@ -72,20 +72,23 @@ c:["$","div",null,{"className":"flex justify-center","children":["$","div",null,
 47:I[19565,["$2"],"IconMark"]
 f:null
 15:[["$","title","0",{"children":"@unjello | personal website"}],["$","meta","1",{"name":"description","content":"Personal website of Andrzej Lichnerowicz featuring blog, publications, talks, art, and projects"}],["$","meta","2",{"property":"og:title","content":"@unjello | personal website"}],["$","meta","3",{"property":"og:description","content":"Personal website of Andrzej Lichnerowicz featuring blog, publications, talks, art, and projects"}],["$","meta","4",{"property":"og:url","content":"https://andrzej.lichnerowicz.pl/"}],["$","meta","5",{"property":"og:image","content":"https://andrzej.lichnerowicz.pl/avatar.png"}],["$","meta","6",{"property":"og:image:width","content":"1200"}],["$","meta","7",{"property":"og:image:height","content":"630"}],["$","meta","8",{"property":"og:image:alt","content":"avatar"}],["$","meta","9",{"property":"og:type","content":"website"}],["$","meta","10",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","11",{"name":"twitter:title","content":"@unjello | personal website"}],["$","meta","12",{"name":"twitter:description","content":"Personal website of Andrzej Lichnerowicz featuring blog, publications, talks, art, and projects"}],["$","meta","13",{"name":"twitter:image","content":"https://andrzej.lichnerowicz.pl/avatar.png"}],["$","link","14",{"rel":"shortcut icon","href":"/favicon.ico"}],["$","link","15",{"rel":"icon","href":"/favicon.ico","sizes":"any"}],["$","link","16",{"rel":"apple-touch-icon","href":"/apple-touch-icon.png"}],["$","$L47","17",{}]]
-48:T545,                              _______._ _
+48:Tab3,                              _______._ _
                       _ _.___/       |
                          |           |
                          |           |
-             -----+-----                          ___     ___
-                  |              ______   ___    /  /____    \
-            __________ _-+-_____/ .(  .\_(xhb)__|  |(     \   |
-           /.   |..   \..  ___/.\ . ) ..\ . ____\  |  o  / |  |
-          |..    ).    |.  \    .|.(  ...|.(.   :  (____|  |  |
-         (______/..    |.   \___.|______ . ______|..       | 9|
-          )..          |.      |    ..   |..     \ .       | 9[
-         ( .    o      |.      |     .\  |.       |. ___/ (|  ]
-          \___________/..      |\_______/________/\_________\ [
-               |_______________|  ____________________________]
+                                                         cry"
+              ▄▄▄▄▓▀▀▀█▄▄▄▓▀▀▀█▄▄▄█▀▀▀▓▄▄▄█▀▀▀▀▀▀▀▀▀▀▀▀█▄▄▄▄▄
+            ▐█▀▐▌▀▀ ░▄▄▄▄▄▄▄▓  ▐▌ ▀ ░▄▄▄▄▄▄▄▓ ▐███████▄▄▄▄▄ ▀▀▀▀▓▄▄
+            ▓▌░▄▄████▀▀▀▀███▓ ░▄▄████▀▀▀▀███▓ ▐███▀ ▄ ▀▀▀▀▀████▄▄ ▀█▄
+      ░▄▄▄█▀▀ ▀▀         ███▌ ████▌ ▄▄█▓ ███▌ ░███ ██▐▐░▌▌░▄▄▄ ▓█▓ █▌
+     ░▓▀ ▄▄▄████████▄▄▄░▐███▌▌▓████ ███▀▐███▌ ░███▌▓██████▀▀▀ ▄▄██▌▐▌
+     █▀ ▓███▀▀ ▄ ▀▀▀████████ ▌▐████▌▐█▌░███▓ ▓ ▓███▄▄ ▀ ▄▄▄████████ ▓
+     ▐▌░███▌▓██████▄▄▄ ▀▀██▌▐█ ████▓ ■ ▐███▌▄█▄ ▀▀▀████████▀▀▀░▐███▌▐▌
+     ▐▌░███ ██▐▐░▌▌░▀▀▀ ▓█▓ ▓▐▌▐████ ▄ ▓███ █ ▀▀▀█▄▄ ▄▄         ███▌▐█
+     ▐▌▐███▄ ▀ ▄▄▄▄▄████▀▀ ▄█▐▌░████ ▄ ███▌▄▓      █ ░▀▀████▄▄▄▄███▓ █
+     ▓▌▐███████▀▀▀▀▀ ▄▄▄▄█▀▀ ▐▌▄▄▄▄▄▄█▄▄▄▄▄█       ▓▄▄▐ ▄▄ ░▀▀▀▀▀▀▀▓ █
+    ▀██▄▄▄▄▄▄▄▄▄██▀▀▀▀░       ▀▀                     ▀▀▀▀█▄▄▄█▀▀▀▓▄▄▄█░
+                                                                     ░▀
                          :           |
     - -----andrzej-_ ____\_____|----_|_____________'-lichnerowicz-------- -
                          :           |

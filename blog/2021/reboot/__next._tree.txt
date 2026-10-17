@@ -1,7 +1,7 @@
-:HL["/_next/static/chunks/3yxxley_sjh68.css","style"]
+:HL["/_next/static/chunks/3ccdv9z467hwb.css","style"]
 :HC["/",""]
-:HL["/_next/static/chunks/24myzy9y0j4ea.css","style"]
+:HL["/_next/static/chunks/3hqdw85846zcr.css","style"]
 3:[["children",{"s":"__PAGE__","h":160}]]
 2:[["children",{"s":{"n":"slug","t":"c","k":"2021/reboot","s":[]},"h":96,"c":"$Q3"}]]
 1:[["children",{"s":"blog","h":96,"c":"$Q2"}]]
-0:{"b":"xwgyV5U68Nz2XIbEOzfJK","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
+0:{"b":"2RX65B8BItTX5M423M2AN","t":{"t":{"s":"","h":80,"c":"$Q1"}}}

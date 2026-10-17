@@ -9,34 +9,37 @@
 9:"/_next/static/chunks/3kcn8wz7h7dvj.js"
 a:I[29306,["$2","$9"],"default"]
 14:"/_next/static/chunks/3rlo5wixwx6pw.js"
-15:"/_next/static/chunks/0ne2ozghjoxxj.js"
+15:"/_next/static/chunks/2fhly0c5xf2pq.js"
 16:I[21864,["$2","$14","$15"],""]
 17:"AsciiBorderedMdx"
 18:I[9655,["$2","$14","$15"],"$17"]
-4e:"ViewportBoundary"
-4f:I[44259,["$2"],"$4e"]
-50:"MetadataBoundary"
+50:"ViewportBoundary"
 51:I[44259,["$2"],"$50"]
-52:"$Sreact.suspense"
-53:I[19565,["$2"],"IconMark"]
-:HL["/_next/static/chunks/3yxxley_sjh68.css","style"]
+52:"MetadataBoundary"
+53:I[44259,["$2"],"$52"]
+54:"$Sreact.suspense"
+55:I[19565,["$2"],"IconMark"]
+:HL["/_next/static/chunks/3ccdv9z467hwb.css","style"]
 c:X
 f:X
 f:C
-13:T548,                              _______._ _
+13:Tab3,                              _______._ _
                       _ _.___/       |
                          |           |
                          |           |
-                                                 ∙
-                         .                       :
-             ____________¡ >>>  _______   _ __ _ ¡  __    _______
-          __|⌐           |  ___|  ⌐____|_ ______ |       |       |
-        . |     [        | |                   _ |  :  __l.|  ┌  | .
-     ÷¼¼¼ |     |         \|    _____|       _ __|  |_|   |      | ¼¼¼÷
-          |_____l  _ l         |     |___|        ________|------!
-          ! ___ _         \____| ___ !  _________|.sti      __ _ :
-          ∙                          :             < <<<<        ∙
-                                     ∙
+                                                         cry"
+              ▄▄▄▄▓▀▀▀█▄▄▄▓▀▀▀█▄▄▄█▀▀▀▓▄▄▄█▀▀▀▀▀▀▀▀▀▀▀▀█▄▄▄▄▄
+            ▐█▀▐▌▀▀ ░▄▄▄▄▄▄▄▓  ▐▌ ▀ ░▄▄▄▄▄▄▄▓ ▐███████▄▄▄▄▄ ▀▀▀▀▓▄▄
+            ▓▌░▄▄████▀▀▀▀███▓ ░▄▄████▀▀▀▀███▓ ▐███▀ ▄ ▀▀▀▀▀████▄▄ ▀█▄
+      ░▄▄▄█▀▀ ▀▀         ███▌ ████▌ ▄▄█▓ ███▌ ░███ ██▐▐░▌▌░▄▄▄ ▓█▓ █▌
+     ░▓▀ ▄▄▄████████▄▄▄░▐███▌▌▓████ ███▀▐███▌ ░███▌▓██████▀▀▀ ▄▄██▌▐▌
+     █▀ ▓███▀▀ ▄ ▀▀▀████████ ▌▐████▌▐█▌░███▓ ▓ ▓███▄▄ ▀ ▄▄▄████████ ▓
+     ▐▌░███▌▓██████▄▄▄ ▀▀██▌▐█ ████▓ ■ ▐███▌▄█▄ ▀▀▀████████▀▀▀░▐███▌▐▌
+     ▐▌░███ ██▐▐░▌▌░▀▀▀ ▓█▓ ▓▐▌▐████ ▄ ▓███ █ ▀▀▀█▄▄ ▄▄         ███▌▐█
+     ▐▌▐███▄ ▀ ▄▄▄▄▄████▀▀ ▄█▐▌░████ ▄ ███▌▄▓      █ ░▀▀████▄▄▄▄███▓ █
+     ▓▌▐███████▀▀▀▀▀ ▄▄▄▄█▀▀ ▐▌▄▄▄▄▄▄█▄▄▄▄▄█       ▓▄▄▐ ▄▄ ░▀▀▀▀▀▀▀▓ █
+    ▀██▄▄▄▄▄▄▄▄▄██▀▀▀▀░       ▀▀                     ▀▀▀▀█▄▄▄█▀▀▀▓▄▄▄█░
+                                                                     ░▀
                          :           |
     - -----andrzej-_ ____\_____|----_|_____________'-lichnerowicz-------- -
                          :           |
@@ -44,29 +47,31 @@ f:C
  . _         - --------- |  - -- -   | ------- -                         _  .
 -:-\-\-------------------|- -     - -|-----------------------------------\-\-:
  |                      _|___________|_                                      |
- |                       :           :                                       |12:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$1","c",{"children":[["$","div",null,{"className":"flex justify-center","children":["$","div",null,{"className":"ascii-art nfo-pre","children":[["$","div",null,{"className":"header-component","children":"$13"}],[["$","div",null,{"className":"whitespace-pre font-mono","children":" |                                                                           |"}],["$","div",null,{"className":"post-back-link","children":[" | ",["$","$L16",null,{"href":"/","className":"hover:underline","prefetch":false,"style":{"flex":1,"minWidth":0,"textDecoration":"none","color":"inherit"},"children":"<< back"}]," |"]}],["$","div",null,{"className":"whitespace-pre font-mono","children":" |                                                                           |"}]],["$","$L18",null,{"children":[["$","header",null,{"className":"post-header","children":[["$","h1",null,{"className":"post-title","children":["# ","Solving AoC in Prolog"]}],["$","time",null,{"className":"post-date","dateTime":"2025-02-02T16:45:11+02:00","children":["[ ","2025.02.02"," ]"]}]]}],[["$","div",null,{"className":"JaoSHW_markdown-heading","children":[["$","span",null,{"className":"JaoSHW_markdown-hash","children":["##"," "]}],["$","span",null,{"children":"Prerequisites"}]]}],"\n",["$","ul",null,{"children":["\n",["$","li",null,{"children":["$","a",null,{"href":"https://www.swi-prolog.org/pldoc/doc_for?object=manual","children":"SWI Prolog"}]}],"\n",["$","li",null,{"children":["Latest ",["$","a",null,{"href":"https://marketplace.visualstudio.com/items?itemName=AmauryRabouan.new-vsc-prolog","children":"VScode Extention"}]," for Prolog"]}],"\n",["$","li",null,{"children":[["$","a",null,{"href":"https://github.com/mthom/scryer-prolog","children":"Scryer"}]," - A Prolog rewritten in Rust :)"]}],"\n"]}],"\n","$L19","\n","$L1a","\n","$L1b","\n","$L1c","\n","$L1d","\n",["","$L1e"],"\n","$L1f","\n","$L20","\n","$L21","\n",["","$L22"],"\n","$L23","\n",["","$L24"],"\n","$L25","\n",["","$L26"],"\n","$L27","\n","$L28","\n",["","$L29"],"\n","$L2a","\n","$L2b","\n","$L2c","\n",["","$L2d"],"\n","$L2e","\n",["","$L2f"],"\n","$L30","\n","$L31","\n","$L32","\n","$L33","\n","$L34","\n","$L35","\n","$L36","\n","$L37","\n","$L38","\n","$L39","\n","$L3a","\n","$L3b","\n","$L3c","\n","$L3d","\n","$L3e","\n","$L3f","\n","$L40","\n","$L41","\n","$L42","\n","$L43","\n","$L44","\n","$L45","\n","$L46","\n","$L47"]]}],"$12:0:1:d:r:props:children:0:props:children:props:children:1","$L48"]}]}],["$L49","$L4a","$L4b"],"$L4c"]}],"p":"$@4d","v":null,"s":"$c"}}]]
+ |                       :           :                                       |12:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$1","c",{"children":[["$","div",null,{"className":"flex justify-center","children":["$","div",null,{"className":"ascii-art nfo-pre","children":[["$","div",null,{"className":"header-component","children":"$13"}],[["$","div",null,{"className":"whitespace-pre font-mono","children":" |                                                                           |"}],["$","div",null,{"className":"post-back-link","children":[" | ",["$","$L16",null,{"href":"/","className":"hover:underline","prefetch":false,"style":{"flex":1,"minWidth":0,"textDecoration":"none","color":"inherit"},"children":"<< back"}]," |"]}],["$","div",null,{"className":"whitespace-pre font-mono","children":" |                                                                           |"}]],["$","$L18",null,{"children":[["$","header",null,{"className":"post-header","children":[["$","h1",null,{"className":"post-title","children":["# ","Solving AoC in Prolog"]}],["$","time",null,{"className":"post-date","dateTime":"2025-02-02T16:45:11+02:00","children":["[ ","2025.02.02"," ]"]}]]}],[["$","div",null,{"className":"JaoSHW_markdown-heading","children":[["$","span",null,{"className":"JaoSHW_markdown-hash","children":["##"," "]}],["$","span",null,{"children":"Prerequisites"}]]}],"\n",["$","ul",null,{"children":["\n",["$","li",null,{"children":["$","a",null,{"href":"https://www.swi-prolog.org/pldoc/doc_for?object=manual","children":"SWI Prolog"}]}],"\n","$L19","\n","$L1a","\n"]}],"\n","$L1b","\n","$L1c","\n","$L1d","\n","$L1e","\n","$L1f","\n",["","$L20"],"\n","$L21","\n","$L22","\n","$L23","\n",["","$L24"],"\n","$L25","\n",["","$L26"],"\n","$L27","\n",["","$L28"],"\n","$L29","\n","$L2a","\n",["","$L2b"],"\n","$L2c","\n","$L2d","\n","$L2e","\n",["","$L2f"],"\n","$L30","\n",["","$L31"],"\n","$L32","\n","$L33","\n","$L34","\n","$L35","\n","$L36","\n","$L37","\n","$L38","\n","$L39","\n","$L3a","\n","$L3b","\n","$L3c","\n","$L3d","\n","$L3e","\n","$L3f","\n","$L40","\n","$L41","\n","$L42","\n","$L43","\n","$L44","\n","$L45","\n","$L46","\n","$L47","\n","$L48","\n","$L49"]]}],"$12:0:1:d:r:props:children:0:props:children:props:children:1","$L4a"]}]}],["$L4b","$L4c","$L4d"],"$L4e"]}],"p":"$@4f","v":null,"s":"$c"}}]]
 10:[["children",{"s":{"n":"slug","t":"c","k":"2025/02/babel-of-code-w04","s":[]},"h":96,"d":{"r":["$","$1","c",{"children":[null,["$","$L7",null,{"parallelRouterKey":"children","template":["$","$L8",null,{}]}]]}],"p":"$@11","v":"$f","s":"$c"},"c":"$Q12"}]]
 d:[["children",{"s":"blog","h":96,"d":{"r":["$","$1","c",{"children":[null,["$","$L7",null,{"parallelRouterKey":"children","template":["$","$L8",null,{}]}]]}],"p":"$@e","v":"$f","s":"$c"},"c":"$Q10"}]]
-0:{"t":{"t":{"s":"","h":80,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/3yxxley_sjh68.css","precedence":"next"}],["$","script","script-0",{"src":"/_next/static/chunks/3y26xv8sa1dt0.js","async":true}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","link",null,{"rel":"icon","href":"/favicon.ico","sizes":"any"}],["$","link",null,{"rel":"apple-touch-icon","href":"/apple-touch-icon.png"}]]}],["$","body",null,{"children":[["$","$L3",null,{}],["$","$L4",null,{"children":[["$","$L5",null,{}],["$","$L6",null,{"children":["$","$L7",null,{"parallelRouterKey":"children","template":["$","$L8",null,{}],"notFound":[["$","$La",null,{}],[]]}]}]]}]]}]]}]]}],"p":"$@b","v":null,"s":"$c"},"c":"$Qd"},"h":{"r":["$","$1","h",{"children":[null,["$","$L4f",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","$L51",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$52",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Solving AoC in Prolog | @unjello blog"}],["$","meta","1",{"name":"description","content":"Let's implement 2024/day/4 Advent of Code puzzle in Prolog. BabelOfCode is low key. The goal is to solve each Advent of Code puzzle in a different language."}],["$","meta","2",{"property":"og:title","content":"Solving AoC in Prolog | @unjello blog"}],["$","meta","3",{"property":"og:description","content":"Let's implement 2024/day/4 Advent of Code puzzle in Prolog. BabelOfCode is low key. The goal is to solve each Advent of Code puzzle in a different language."}],["$","meta","4",{"property":"og:url","content":"https://andrzej.lichnerowicz.pl/en/blog/2025/02/babel-of-code-w04/"}],["$","meta","5",{"property":"og:image","content":"https://andrzej.lichnerowicz.pl/images/2025/02/babel-of-code-w04/swish.png"}],["$","meta","6",{"property":"og:image:width","content":"1200"}],["$","meta","7",{"property":"og:image:height","content":"630"}],["$","meta","8",{"property":"og:image:alt","content":"Solving AoC in Prolog | @unjello blog"}],["$","meta","9",{"property":"og:type","content":"article"}],["$","meta","10",{"property":"article:published_time","content":"2025-02-02T16:45:11+02:00"}],["$","meta","11",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","12",{"name":"twitter:title","content":"Solving AoC in Prolog | @unjello blog"}],["$","meta","13",{"name":"twitter:description","content":"Let's implement 2024/day/4 Advent of Code puzzle in Prolog. BabelOfCode is low key. The goal is to solve each Advent of Code puzzle in a different language."}],["$","meta","14",{"name":"twitter:image","content":"https://andrzej.lichnerowicz.pl/images/2025/02/babel-of-code-w04/swish.png"}],["$","link","15",{"rel":"shortcut icon","href":"/favicon.ico"}],["$","link","16",{"rel":"icon","href":"/favicon.ico","sizes":"any"}],["$","link","17",{"rel":"apple-touch-icon","href":"/apple-touch-icon.png"}],["$","$L53","18",{}]]}]}],null]}],null]}],"p":"$@54","v":null,"s":"$c"}},"a":"$@55","u":"$@56","b":"xwgyV5U68Nz2XIbEOzfJK"}
-58:I[90891,["$2","$14","$15"],"Admonition"]
-66:I[44259,["$2"],"OutletBoundary"]
-:HL["/_next/static/chunks/24myzy9y0j4ea.css","style"]
-19:["$","div",null,{"className":"JaoSHW_markdown-heading","children":[["$","span",null,{"className":"JaoSHW_markdown-hash","children":["##"," "]}],["$","span",null,{"children":"Installation"}]]}]
-1a:["$","p",null,{"children":"I installed both SWI Prolog and Scryer Prolog. They’re not the only implementations out there, but they seemed the most useful for my purposes. SWI Prolog appears to be the standard: for example, the VS Code extension only supports debugging when using SWI."}]
-1b:["$","p",null,{"children":["Scryer was appealing because it’s written in Rust. Unfortunately, it quickly became obvious that it lacks many of the convenient libraries that SWI has (such as reading a file into a string) or even built-ins like ",["$","code",null,{"children":"length"}],"."]}]
-1c:["$","div",null,{"className":"JaoSHW_markdown-heading","children":[["$","span",null,{"className":"JaoSHW_markdown-hash","children":["##"," "]}],["$","span",null,{"children":"Prolog Basics"}]]}]
-1d:["$","p",null,{"children":"Prolog works a bit differently from most languages: it’s all about facts and rules. The rules try to infer outcomes based on the facts. Let’s take a quick look at a simple example:"}]
-57:T54d,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+0:{"t":{"t":{"s":"","h":80,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/3ccdv9z467hwb.css","precedence":"next"}],["$","script","script-0",{"src":"/_next/static/chunks/3y26xv8sa1dt0.js","async":true}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","link",null,{"rel":"icon","href":"/favicon.ico","sizes":"any"}],["$","link",null,{"rel":"apple-touch-icon","href":"/apple-touch-icon.png"}]]}],["$","body",null,{"children":[["$","$L3",null,{}],["$","$L4",null,{"children":[["$","$L5",null,{}],["$","$L6",null,{"children":["$","$L7",null,{"parallelRouterKey":"children","template":["$","$L8",null,{}],"notFound":[["$","$La",null,{}],[]]}]}]]}]]}]]}]]}],"p":"$@b","v":null,"s":"$c"},"c":"$Qd"},"h":{"r":["$","$1","h",{"children":[null,["$","$L51",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","$L53",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$54",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Solving AoC in Prolog | @unjello blog"}],["$","meta","1",{"name":"description","content":"Let's implement 2024/day/4 Advent of Code puzzle in Prolog. BabelOfCode is low key. The goal is to solve each Advent of Code puzzle in a different language."}],["$","meta","2",{"property":"og:title","content":"Solving AoC in Prolog | @unjello blog"}],["$","meta","3",{"property":"og:description","content":"Let's implement 2024/day/4 Advent of Code puzzle in Prolog. BabelOfCode is low key. The goal is to solve each Advent of Code puzzle in a different language."}],["$","meta","4",{"property":"og:url","content":"https://andrzej.lichnerowicz.pl/en/blog/2025/02/babel-of-code-w04/"}],["$","meta","5",{"property":"og:image","content":"https://andrzej.lichnerowicz.pl/images/2025/02/babel-of-code-w04/swish.png"}],["$","meta","6",{"property":"og:image:width","content":"1200"}],["$","meta","7",{"property":"og:image:height","content":"630"}],["$","meta","8",{"property":"og:image:alt","content":"Solving AoC in Prolog | @unjello blog"}],["$","meta","9",{"property":"og:type","content":"article"}],["$","meta","10",{"property":"article:published_time","content":"2025-02-02T16:45:11+02:00"}],["$","meta","11",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","12",{"name":"twitter:title","content":"Solving AoC in Prolog | @unjello blog"}],["$","meta","13",{"name":"twitter:description","content":"Let's implement 2024/day/4 Advent of Code puzzle in Prolog. BabelOfCode is low key. The goal is to solve each Advent of Code puzzle in a different language."}],["$","meta","14",{"name":"twitter:image","content":"https://andrzej.lichnerowicz.pl/images/2025/02/babel-of-code-w04/swish.png"}],["$","link","15",{"rel":"shortcut icon","href":"/favicon.ico"}],["$","link","16",{"rel":"icon","href":"/favicon.ico","sizes":"any"}],["$","link","17",{"rel":"apple-touch-icon","href":"/apple-touch-icon.png"}],["$","$L55","18",{}]]}]}],null]}],null]}],"p":"$@56","v":null,"s":"$c"}},"a":"$@57","u":"$@58","b":"2RX65B8BItTX5M423M2AN"}
+5a:I[90891,["$2","$14","$15"],"Admonition"]
+68:I[44259,["$2"],"OutletBoundary"]
+:HL["/_next/static/chunks/3hqdw85846zcr.css","style"]
+19:["$","li",null,{"children":["Latest ",["$","a",null,{"href":"https://marketplace.visualstudio.com/items?itemName=AmauryRabouan.new-vsc-prolog","children":"VScode Extention"}]," for Prolog"]}]
+1a:["$","li",null,{"children":[["$","a",null,{"href":"https://github.com/mthom/scryer-prolog","children":"Scryer"}]," - A Prolog rewritten in Rust :)"]}]
+1b:["$","div",null,{"className":"JaoSHW_markdown-heading","children":[["$","span",null,{"className":"JaoSHW_markdown-hash","children":["##"," "]}],["$","span",null,{"children":"Installation"}]]}]
+1c:["$","p",null,{"children":"I installed both SWI Prolog and Scryer Prolog. They’re not the only implementations out there, but they seemed the most useful for my purposes. SWI Prolog appears to be the standard: for example, the VS Code extension only supports debugging when using SWI."}]
+1d:["$","p",null,{"children":["Scryer was appealing because it’s written in Rust. Unfortunately, it quickly became obvious that it lacks many of the convenient libraries that SWI has (such as reading a file into a string) or even built-ins like ",["$","code",null,{"children":"length"}],"."]}]
+1e:["$","div",null,{"className":"JaoSHW_markdown-heading","children":[["$","span",null,{"className":"JaoSHW_markdown-hash","children":["##"," "]}],["$","span",null,{"children":"Prolog Basics"}]]}]
+1f:["$","p",null,{"children":"Prolog works a bit differently from most languages: it’s all about facts and rules. The rules try to infer outcomes based on the facts. Let’s take a quick look at a simple example:"}]
+59:T54d,<table class="code-ln-table"><tbody><tr class="code-ln-line">
         <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
         <td class="code-ln-code" data-line-number="1"><span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">capital</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#005CC5;--shiki-dark:#79B8FF">poland</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#005CC5;--shiki-dark:#79B8FF">warsaw</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)</span><span style="color:#D73A49;--shiki-dark:#F97583">.</span></span></td>
       </tr><tr class="code-ln-line">
         <td class="code-ln-numbers" data-line-number="2"><div class="code-ln-n" data-line-number="2"></div></td>
         <td class="code-ln-code" data-line-number="2"><span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">capital</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#005CC5;--shiki-dark:#79B8FF">germany</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#005CC5;--shiki-dark:#79B8FF">berlin</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)</span><span style="color:#D73A49;--shiki-dark:#F97583">.</span></span></td>
-      </tr></tbody></table>1e:["$","pre",null,{"className":"language-prolog pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$57"}}]}]
-1f:["$","p",null,{"children":["Save this in ",["$","code",null,{"children":"test.pro"}],"."]}]
-20:["$","$L58",null,{"type":"note","children":["$","p",null,{"children":["There doesn’t seem to be an official Prolog extension recommendation, but many folks use ",["$","code",null,{"children":".pl"}],". I prefer using ",["$","code",null,{"children":".pro"}]," so it won’t collide with Perl’s ",["$","code",null,{"children":".pl"}],"."]}]}]
-21:["$","p",null,{"children":"When Prolog loads the script we can test the facts we've declared:"}]
-59:T1155,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+      </tr></tbody></table>20:["$","pre",null,{"className":"language-prolog pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$59"}}]}]
+21:["$","p",null,{"children":["Save this in ",["$","code",null,{"children":"test.pro"}],"."]}]
+22:["$","$L5a",null,{"type":"note","children":["$","p",null,{"children":["There doesn’t seem to be an official Prolog extension recommendation, but many folks use ",["$","code",null,{"children":".pl"}],". I prefer using ",["$","code",null,{"children":".pro"}]," so it won’t collide with Perl’s ",["$","code",null,{"children":".pl"}],"."]}]}]
+23:["$","p",null,{"children":"When Prolog loads the script we can test the facts we've declared:"}]
+5b:T1155,<table class="code-ln-table"><tbody><tr class="code-ln-line">
         <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
         <td class="code-ln-code" data-line-number="1"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">❯ swipl -s day04.pro</span></span></td>
       </tr><tr class="code-ln-line">
@@ -96,11 +101,11 @@ d:[["children",{"s":"blog","h":96,"d":{"r":["$","$1","c",{"children":[null,["$",
       </tr><tr class="code-ln-line">
         <td class="code-ln-numbers" data-line-number="10"><div class="code-ln-n" data-line-number="10"></div></td>
         <td class="code-ln-code" data-line-number="10"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">true.</span></span></td>
-      </tr></tbody></table>22:["$","pre",null,{"className":"language-fish pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$59"}}]}]
-23:["$","p",null,{"children":"We can also run inference, for example:"}]
-24:["$","pre",null,{"className":"language-prolog pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"<table class=\"code-ln-table\"><tbody><tr class=\"code-ln-line\">\n        <td class=\"code-ln-numbers\" data-line-number=\"1\"><div class=\"code-ln-n\" data-line-number=\"1\"></div></td>\n        <td class=\"code-ln-code\" data-line-number=\"1\"><span class=\"line\"><span style=\"color:#24292E;--shiki-dark:#E1E4E8\">?- capital(warsaw, X).</span></span></td>\n      </tr><tr class=\"code-ln-line\">\n        <td class=\"code-ln-numbers\" data-line-number=\"2\"><div class=\"code-ln-n\" data-line-number=\"2\"></div></td>\n        <td class=\"code-ln-code\" data-line-number=\"2\"><span class=\"line\"><span style=\"color:#6F42C1;--shiki-dark:#B392F0\">X</span><span style=\"color:#24292E;--shiki-dark:#E1E4E8\"> = </span><span style=\"color:#005CC5;--shiki-dark:#79B8FF\">poland</span></span></td>\n      </tr></tbody></table>"}}]}]
-25:["$","p",null,{"children":["Here, we’re asking Prolog for which values of ",["$","code",null,{"children":"X"}]," the fact ",["$","code",null,{"children":"capital(warsaw, X)"}]," holds. We can even ask for all possible pairs without supplying a known variable:"]}]
-5a:T88e,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+      </tr></tbody></table>24:["$","pre",null,{"className":"language-fish pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$5b"}}]}]
+25:["$","p",null,{"children":"We can also run inference, for example:"}]
+26:["$","pre",null,{"className":"language-prolog pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"<table class=\"code-ln-table\"><tbody><tr class=\"code-ln-line\">\n        <td class=\"code-ln-numbers\" data-line-number=\"1\"><div class=\"code-ln-n\" data-line-number=\"1\"></div></td>\n        <td class=\"code-ln-code\" data-line-number=\"1\"><span class=\"line\"><span style=\"color:#24292E;--shiki-dark:#E1E4E8\">?- capital(warsaw, X).</span></span></td>\n      </tr><tr class=\"code-ln-line\">\n        <td class=\"code-ln-numbers\" data-line-number=\"2\"><div class=\"code-ln-n\" data-line-number=\"2\"></div></td>\n        <td class=\"code-ln-code\" data-line-number=\"2\"><span class=\"line\"><span style=\"color:#6F42C1;--shiki-dark:#B392F0\">X</span><span style=\"color:#24292E;--shiki-dark:#E1E4E8\"> = </span><span style=\"color:#005CC5;--shiki-dark:#79B8FF\">poland</span></span></td>\n      </tr></tbody></table>"}}]}]
+27:["$","p",null,{"children":["Here, we’re asking Prolog for which values of ",["$","code",null,{"children":"X"}]," the fact ",["$","code",null,{"children":"capital(warsaw, X)"}]," holds. We can even ask for all possible pairs without supplying a known variable:"]}]
+5c:T88e,<table class="code-ln-table"><tbody><tr class="code-ln-line">
         <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
         <td class="code-ln-code" data-line-number="1"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">?- capital(X, Y).</span></span></td>
       </tr><tr class="code-ln-line">
@@ -115,10 +120,10 @@ d:[["children",{"s":"blog","h":96,"d":{"r":["$","$1","c",{"children":[null,["$",
       </tr><tr class="code-ln-line">
         <td class="code-ln-numbers" data-line-number="5"><div class="code-ln-n" data-line-number="5"></div></td>
         <td class="code-ln-code" data-line-number="5"><span class="line"><span style="color:#E36209;--shiki-dark:#FFAB70">Y</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> = </span><span style="color:#005CC5;--shiki-dark:#79B8FF">berlin</span><span style="color:#D73A49;--shiki-dark:#F97583">.</span></span></td>
-      </tr></tbody></table>26:["$","pre",null,{"className":"language-prolog pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$5a"}}]}]
-27:["$","p",null,{"children":"Prolog shows you the first result, then waits for a semicolon (;) to give you the next. Under the hood, it essentially brute-forces checks of each fact, but Prolog engines use clever optimizations to make it surprisingly fast."}]
-28:["$","p",null,{"children":"Usually, Prolog encourages defining facts and rules in a file, but we can also do this in a REPL. To define facts on the fly:"}]
-5b:T7bb,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+      </tr></tbody></table>28:["$","pre",null,{"className":"language-prolog pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$5c"}}]}]
+29:["$","p",null,{"children":"Prolog shows you the first result, then waits for a semicolon (;) to give you the next. Under the hood, it essentially brute-forces checks of each fact, but Prolog engines use clever optimizations to make it surprisingly fast."}]
+2a:["$","p",null,{"children":"Usually, Prolog encourages defining facts and rules in a file, but we can also do this in a REPL. To define facts on the fly:"}]
+5d:T7bb,<table class="code-ln-table"><tbody><tr class="code-ln-line">
         <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
         <td class="code-ln-code" data-line-number="1"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">?- [user].</span></span></td>
       </tr><tr class="code-ln-line">
@@ -133,11 +138,11 @@ d:[["children",{"s":"blog","h":96,"d":{"r":["$","$1","c",{"children":[null,["$",
       </tr><tr class="code-ln-line">
         <td class="code-ln-numbers" data-line-number="5"><div class="code-ln-n" data-line-number="5"></div></td>
         <td class="code-ln-code" data-line-number="5"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">|: ^D</span><span style="color:#6A737D;--shiki-dark:#6A737D">% user://1 compiled 0.00s, 2 clauses</span></span></td>
-      </tr></tbody></table>29:["$","pre",null,{"className":"language-prolog pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$5b"}}]}]
-2a:["$","p",null,{"children":["Press ",["$","code",null,{"children":"Ctrl+D"}]," to finish, and Prolog compiles these facts for you."]}]
-2b:["$","div",null,{"className":"JaoSHW_markdown-heading","children":[["$","span",null,{"className":"JaoSHW_markdown-hash","children":["##"," "]}],["$","span",null,{"children":"A Fun Easter Egg"}]]}]
-2c:["$","p",null,{"children":"I discovered a neat difference between Scryer and SWI. If you query Scryer with a variable it can’t bind, it just fails:"}]
-5c:T523,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+      </tr></tbody></table>2b:["$","pre",null,{"className":"language-prolog pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$5d"}}]}]
+2c:["$","p",null,{"children":["Press ",["$","code",null,{"children":"Ctrl+D"}]," to finish, and Prolog compiles these facts for you."]}]
+2d:["$","div",null,{"className":"JaoSHW_markdown-heading","children":[["$","span",null,{"className":"JaoSHW_markdown-hash","children":["##"," "]}],["$","span",null,{"children":"A Fun Easter Egg"}]]}]
+2e:["$","p",null,{"children":"I discovered a neat difference between Scryer and SWI. If you query Scryer with a variable it can’t bind, it just fails:"}]
+5e:T523,<table class="code-ln-table"><tbody><tr class="code-ln-line">
         <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
         <td class="code-ln-code" data-line-number="1"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">?- Something.</span></span></td>
       </tr><tr class="code-ln-line">
@@ -146,9 +151,9 @@ d:[["children",{"s":"blog","h":96,"d":{"r":["$","$1","c",{"children":[null,["$",
       </tr><tr class="code-ln-line">
         <td class="code-ln-numbers" data-line-number="3"><div class="code-ln-n" data-line-number="3"></div></td>
         <td class="code-ln-code" data-line-number="3"><span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">   error</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#005CC5;--shiki-dark:#79B8FF">instantiation_error</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span><span style="color:#005CC5;--shiki-dark:#79B8FF">repl</span><span style="color:#24292E;--shiki-dark:#E1E4E8">/0)</span><span style="color:#D73A49;--shiki-dark:#F97583">.</span></span></td>
-      </tr></tbody></table>2d:["$","pre",null,{"className":"language-prolog pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$5c"}}]}]
-2e:["$","p",null,{"children":"But if you do the same in SWI:"}]
-5d:T541,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+      </tr></tbody></table>2f:["$","pre",null,{"className":"language-prolog pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$5e"}}]}]
+30:["$","p",null,{"children":"But if you do the same in SWI:"}]
+5f:T541,<table class="code-ln-table"><tbody><tr class="code-ln-line">
         <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
         <td class="code-ln-code" data-line-number="1"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">?- Something.</span></span></td>
       </tr><tr class="code-ln-line">
@@ -160,11 +165,11 @@ d:[["children",{"s":"blog","h":96,"d":{"r":["$","$1","c",{"children":[null,["$",
       </tr><tr class="code-ln-line">
         <td class="code-ln-numbers" data-line-number="4"><div class="code-ln-n" data-line-number="4"></div></td>
         <td class="code-ln-code" data-line-number="4"><span class="line"><span style="color:#6A737D;--shiki-dark:#6A737D">%       >> 42 &#x3C;&#x3C; (last release gives the question)</span></span></td>
-      </tr></tbody></table>2f:["$","pre",null,{"className":"language-prolog pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$5d"}}]}]
-30:["$","p",null,{"children":"It’s one of those small, amusing things :)"}]
-31:["$","div",null,{"className":"JaoSHW_markdown-heading","children":[["$","span",null,{"className":"JaoSHW_markdown-hash","children":["##"," "]}],["$","span",null,{"children":"Reading Files"}]]}]
-32:["$","p",null,{"children":["Initially, to load a file in SWI Prolog, I used the ",["$","code",null,{"children":"readutil"}]," library:"]}]
-5e:T14bf,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+      </tr></tbody></table>31:["$","pre",null,{"className":"language-prolog pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$5f"}}]}]
+32:["$","p",null,{"children":"It’s one of those small, amusing things :)"}]
+33:["$","div",null,{"className":"JaoSHW_markdown-heading","children":[["$","span",null,{"className":"JaoSHW_markdown-hash","children":["##"," "]}],["$","span",null,{"children":"Reading Files"}]]}]
+34:["$","p",null,{"children":["Initially, to load a file in SWI Prolog, I used the ",["$","code",null,{"children":"readutil"}]," library:"]}]
+60:T14bf,<table class="code-ln-table"><tbody><tr class="code-ln-line">
         <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
         <td class="code-ln-code" data-line-number="1"><span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">use_module</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(library(</span><span style="color:#005CC5;--shiki-dark:#79B8FF">readutil</span><span style="color:#24292E;--shiki-dark:#E1E4E8">))</span><span style="color:#D73A49;--shiki-dark:#F97583">.</span></span></td>
       </tr><tr class="code-ln-line">
@@ -197,9 +202,9 @@ d:[["children",{"s":"blog","h":96,"d":{"r":["$","$1","c",{"children":[null,["$",
       </tr><tr class="code-ln-line">
         <td class="code-ln-numbers" data-line-number="11"><div class="code-ln-n" data-line-number="11"></div></td>
         <td class="code-ln-code" data-line-number="11"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">	true</span><span style="color:#D73A49;--shiki-dark:#F97583">.</span></span></td>
-      </tr></tbody></table>33:["",["$","pre",null,{"className":"language-prolog pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$5e"}}]}]]
-34:["$","p",null,{"children":"This prints the file’s contents:"}]
-5f:Tea5,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+      </tr></tbody></table>35:["",["$","pre",null,{"className":"language-prolog pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$60"}}]}]]
+36:["$","p",null,{"children":"This prints the file’s contents:"}]
+61:Tea5,<table class="code-ln-table"><tbody><tr class="code-ln-line">
         <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
         <td class="code-ln-code" data-line-number="1"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">?- main('example.txt').</span></span></td>
       </tr><tr class="code-ln-line">
@@ -235,9 +240,9 @@ d:[["children",{"s":"blog","h":96,"d":{"r":["$","$1","c",{"children":[null,["$",
       </tr><tr class="code-ln-line">
         <td class="code-ln-numbers" data-line-number="12"><div class="code-ln-n" data-line-number="12"></div></td>
         <td class="code-ln-code" data-line-number="12"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">true</span><span style="color:#D73A49;--shiki-dark:#F97583">.</span></span></td>
-      </tr></tbody></table>35:["",["$","pre",null,{"className":"language-prolog pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$5f"}}]}]]
-36:["$","p",null,{"children":"But to make it work in Scryer, I wrote a pure Prolog version:"}]
-60:T2b10,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+      </tr></tbody></table>37:["",["$","pre",null,{"className":"language-prolog pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$61"}}]}]]
+38:["$","p",null,{"children":"But to make it work in Scryer, I wrote a pure Prolog version:"}]
+62:T2b10,<table class="code-ln-table"><tbody><tr class="code-ln-line">
         <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
         <td class="code-ln-code" data-line-number="1"><span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">read_file</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#E36209;--shiki-dark:#FFAB70">Filename</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">Lines</span><span style="color:#24292E;--shiki-dark:#E1E4E8">) </span><span style="color:#D73A49;--shiki-dark:#F97583">:-</span></span></td>
       </tr><tr class="code-ln-line">
@@ -294,13 +299,13 @@ d:[["children",{"s":"blog","h":96,"d":{"r":["$","$1","c",{"children":[null,["$",
       </tr><tr class="code-ln-line">
         <td class="code-ln-numbers" data-line-number="19"><div class="code-ln-n" data-line-number="19"></div></td>
         <td class="code-ln-code" data-line-number="19"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">        )</span><span style="color:#D73A49;--shiki-dark:#F97583">.</span></span></td>
-      </tr></tbody></table>37:["",["$","pre",null,{"className":"language-prolog pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$60"}}]}]]
-38:["$","p",null,{"children":"Here are a few interesting bits:"}]
-39:["$","ol",null,{"children":["\n",["$","li",null,{"children":[["$","strong",null,{"children":"Variable Binding"}],"\nWe call ",["$","code",null,{"children":"read_file('example.txt', Lines)"}]," with Lines unbound, and Prolog binds it to the file’s contents."]}],"\n",["$","li",null,{"children":[["$","strong",null,{"children":"Negation"}],"\nThe ",["$","code",null,{"children":"\\+ at_end_of_stream(Stream)"}]," checks if we’re ",["$","strong",null,{"children":"NOT"}]," at the end of the stream. If that succeeds, we read a line and recurse."]}],"\n",["$","li",null,{"children":[["$","strong",null,{"children":"If-Then-Else Syntax"}],"\nProlog uses ",["$","code",null,{"children":"(Condition -> Then; Else)"}],". Due to operator precedence, we typically wrap it in parentheses. For the line reader, if the character is end_of_file or a newline, we return an empty list. Otherwise, we accumulate characters recursively."]}],"\n"]}]
-3a:["$","div",null,{"className":"JaoSHW_markdown-heading","children":[["$","span",null,{"className":"JaoSHW_markdown-hash","children":["##"," "]}],["$","span",null,{"children":"The Puzzle"}]]}]
-3b:["$","p",null,{"children":["I was working on ",["$","a",null,{"href":"https://adventofcode.com/2024/day/4","children":"Advent of Code 2024 Day 4"}],". The goal is to find occurrences of the word XMAS spelled forward or backward, in all directions (horizontal, vertical, diagonal) within a grid of characters."]}]
-3c:["$","p",null,{"children":["Let’s start by finding the first letter, ",["$","code",null,{"children":"X"}],", in every possible cell:"]}]
-61:T25c3,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+      </tr></tbody></table>39:["",["$","pre",null,{"className":"language-prolog pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$62"}}]}]]
+3a:["$","p",null,{"children":"Here are a few interesting bits:"}]
+3b:["$","ol",null,{"children":["\n",["$","li",null,{"children":[["$","strong",null,{"children":"Variable Binding"}],"\nWe call ",["$","code",null,{"children":"read_file('example.txt', Lines)"}]," with Lines unbound, and Prolog binds it to the file’s contents."]}],"\n",["$","li",null,{"children":[["$","strong",null,{"children":"Negation"}],"\nThe ",["$","code",null,{"children":"\\+ at_end_of_stream(Stream)"}]," checks if we’re ",["$","strong",null,{"children":"NOT"}]," at the end of the stream. If that succeeds, we read a line and recurse."]}],"\n",["$","li",null,{"children":[["$","strong",null,{"children":"If-Then-Else Syntax"}],"\nProlog uses ",["$","code",null,{"children":"(Condition -> Then; Else)"}],". Due to operator precedence, we typically wrap it in parentheses. For the line reader, if the character is end_of_file or a newline, we return an empty list. Otherwise, we accumulate characters recursively."]}],"\n"]}]
+3c:["$","div",null,{"className":"JaoSHW_markdown-heading","children":[["$","span",null,{"className":"JaoSHW_markdown-hash","children":["##"," "]}],["$","span",null,{"children":"The Puzzle"}]]}]
+3d:["$","p",null,{"children":["I was working on ",["$","a",null,{"href":"https://adventofcode.com/2024/day/4","children":"Advent of Code 2024 Day 4"}],". The goal is to find occurrences of the word XMAS spelled forward or backward, in all directions (horizontal, vertical, diagonal) within a grid of characters."]}]
+3e:["$","p",null,{"children":["Let’s start by finding the first letter, ",["$","code",null,{"children":"X"}],", in every possible cell:"]}]
+63:T25c3,<table class="code-ln-table"><tbody><tr class="code-ln-line">
         <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
         <td class="code-ln-code" data-line-number="1"><span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">check_letter</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#E36209;--shiki-dark:#FFAB70">Grid</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">Y</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">X</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">Letter</span><span style="color:#24292E;--shiki-dark:#E1E4E8">) </span><span style="color:#D73A49;--shiki-dark:#F97583">:-</span></span></td>
       </tr><tr class="code-ln-line">
@@ -339,9 +344,9 @@ d:[["children",{"s":"blog","h":96,"d":{"r":["$","$1","c",{"children":[null,["$",
       </tr><tr class="code-ln-line">
         <td class="code-ln-numbers" data-line-number="13"><div class="code-ln-n" data-line-number="13"></div></td>
         <td class="code-ln-code" data-line-number="13"><span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">Occurences</span><span style="color:#24292E;--shiki-dark:#E1E4E8"> = [(</span><span style="color:#005CC5;--shiki-dark:#79B8FF">5</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#005CC5;--shiki-dark:#79B8FF">1</span><span style="color:#24292E;--shiki-dark:#E1E4E8">), (</span><span style="color:#005CC5;--shiki-dark:#79B8FF">6</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#005CC5;--shiki-dark:#79B8FF">1</span><span style="color:#24292E;--shiki-dark:#E1E4E8">), (</span><span style="color:#005CC5;--shiki-dark:#79B8FF">5</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#005CC5;--shiki-dark:#79B8FF">2</span><span style="color:#24292E;--shiki-dark:#E1E4E8">), (</span><span style="color:#005CC5;--shiki-dark:#79B8FF">3</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#005CC5;--shiki-dark:#79B8FF">3</span><span style="color:#24292E;--shiki-dark:#E1E4E8">), (</span><span style="color:#005CC5;--shiki-dark:#79B8FF">5</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#005CC5;--shiki-dark:#79B8FF">3</span><span style="color:#24292E;--shiki-dark:#E1E4E8">), (</span><span style="color:#005CC5;--shiki-dark:#79B8FF">10</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#005CC5;--shiki-dark:#79B8FF">4</span><span style="color:#24292E;--shiki-dark:#E1E4E8">), (</span><span style="color:#005CC5;--shiki-dark:#79B8FF">1</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#005CC5;--shiki-dark:#79B8FF">5</span><span style="color:#24292E;--shiki-dark:#E1E4E8">), (</span><span style="color:#005CC5;--shiki-dark:#79B8FF">7</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#005CC5;--shiki-dark:#79B8FF">5</span><span style="color:#24292E;--shiki-dark:#E1E4E8">), (</span><span style="color:#D73A49;--shiki-dark:#F97583">.</span><span style="color:#24292E;--shiki-dark:#E1E4E8">.., ...)|...]</span></span></td>
-      </tr></tbody></table>3d:["",["$","pre",null,{"className":"language-prolog pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$61"}}]}]]
-3e:["$","p",null,{"children":["Prolog’s ",["$","code",null,{"children":"findall/3"}]," collects all ",["$","code",null,{"children":"(X,Y)"}]," pairs where the letter is ",["$","code",null,{"children":"X"}],". Behind the scenes, ",["$","code",null,{"children":"between(1, Width, X)"}]," generates possible ",["$","code",null,{"children":"X"}]," values, and similarly for ",["$","code",null,{"children":"Y"}],", then check_letter checks if the cell matches."]}]
-62:T1524,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+      </tr></tbody></table>3f:["",["$","pre",null,{"className":"language-prolog pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$63"}}]}]]
+40:["$","p",null,{"children":["Prolog’s ",["$","code",null,{"children":"findall/3"}]," collects all ",["$","code",null,{"children":"(X,Y)"}]," pairs where the letter is ",["$","code",null,{"children":"X"}],". Behind the scenes, ",["$","code",null,{"children":"between(1, Width, X)"}]," generates possible ",["$","code",null,{"children":"X"}]," values, and similarly for ",["$","code",null,{"children":"Y"}],", then check_letter checks if the cell matches."]}]
+64:T1524,<table class="code-ln-table"><tbody><tr class="code-ln-line">
         <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
         <td class="code-ln-code" data-line-number="1"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">?- between(1, 10, X).</span></span></td>
       </tr><tr class="code-ln-line">
@@ -377,9 +382,9 @@ d:[["children",{"s":"blog","h":96,"d":{"r":["$","$1","c",{"children":[null,["$",
       </tr><tr class="code-ln-line">
         <td class="code-ln-numbers" data-line-number="12"><div class="code-ln-n" data-line-number="12"></div></td>
         <td class="code-ln-code" data-line-number="12"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">;  </span><span style="color:#005CC5;--shiki-dark:#79B8FF">false</span><span style="color:#D73A49;--shiki-dark:#F97583">.</span></span></td>
-      </tr></tbody></table>3f:["",["$","pre",null,{"className":"language-prolog pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$62"}}]}]]
-40:["$","p",null,{"children":["For the full solution, I used a recursive ",["$","code",null,{"children":"check_word"}]," predicate. It checks each subsequent letter in the grid while moving in the specified direction:"]}]
-63:T3ce4,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+      </tr></tbody></table>41:["",["$","pre",null,{"className":"language-prolog pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$64"}}]}]]
+42:["$","p",null,{"children":["For the full solution, I used a recursive ",["$","code",null,{"children":"check_word"}]," predicate. It checks each subsequent letter in the grid while moving in the specified direction:"]}]
+65:T3ce4,<table class="code-ln-table"><tbody><tr class="code-ln-line">
         <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
         <td class="code-ln-code" data-line-number="1"><span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">directions</span><span style="color:#24292E;--shiki-dark:#E1E4E8">([ (-</span><span style="color:#005CC5;--shiki-dark:#79B8FF">1</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,-</span><span style="color:#005CC5;--shiki-dark:#79B8FF">1</span><span style="color:#24292E;--shiki-dark:#E1E4E8">), (-</span><span style="color:#005CC5;--shiki-dark:#79B8FF">1</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span><span style="color:#005CC5;--shiki-dark:#79B8FF">0</span><span style="color:#24292E;--shiki-dark:#E1E4E8">), (-</span><span style="color:#005CC5;--shiki-dark:#79B8FF">1</span><span style="color:#24292E;--shiki-dark:#E1E4E8">,</span><span style="color:#005CC5;--shiki-dark:#79B8FF">1</span><span style="color:#24292E;--shiki-dark:#E1E4E8">),</span></span></td>
       </tr><tr class="code-ln-line">
@@ -442,9 +447,9 @@ d:[["children",{"s":"blog","h":96,"d":{"r":["$","$1","c",{"children":[null,["$",
       </tr><tr class="code-ln-line">
         <td class="code-ln-numbers" data-line-number="21"><div class="code-ln-n" data-line-number="21"></div></td>
         <td class="code-ln-code" data-line-number="21"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">    length</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#E36209;--shiki-dark:#FFAB70">Occurrences</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">Count</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)</span><span style="color:#D73A49;--shiki-dark:#F97583">.</span></span></td>
-      </tr></tbody></table>41:["",["$","pre",null,{"className":"language-prolog pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$63"}}]}]]
-42:["$","p",null,{"children":["For part 2, I just needed to find diagonal placements of smaller substrings (",["$","code",null,{"children":"MAS"}]," and ",["$","code",null,{"children":"SAM"}],"):"]}]
-64:T4937,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+      </tr></tbody></table>43:["",["$","pre",null,{"className":"language-prolog pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$65"}}]}]]
+44:["$","p",null,{"children":["For part 2, I just needed to find diagonal placements of smaller substrings (",["$","code",null,{"children":"MAS"}]," and ",["$","code",null,{"children":"SAM"}],"):"]}]
+66:T4937,<table class="code-ln-table"><tbody><tr class="code-ln-line">
         <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
         <td class="code-ln-code" data-line-number="1"><span class="line"><span style="color:#6F42C1;--shiki-dark:#B392F0">valid_diagonal</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#005CC5;--shiki-dark:#79B8FF">'M'</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#005CC5;--shiki-dark:#79B8FF">'A'</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#005CC5;--shiki-dark:#79B8FF">'S'</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)</span><span style="color:#D73A49;--shiki-dark:#F97583">.</span></span></td>
       </tr><tr class="code-ln-line">
@@ -531,9 +536,9 @@ d:[["children",{"s":"blog","h":96,"d":{"r":["$","$1","c",{"children":[null,["$",
       </tr><tr class="code-ln-line">
         <td class="code-ln-numbers" data-line-number="29"><div class="code-ln-n" data-line-number="29"></div></td>
         <td class="code-ln-code" data-line-number="29"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">    length</span><span style="color:#24292E;--shiki-dark:#E1E4E8">(</span><span style="color:#E36209;--shiki-dark:#FFAB70">Occurrences</span><span style="color:#24292E;--shiki-dark:#E1E4E8">, </span><span style="color:#E36209;--shiki-dark:#FFAB70">Count</span><span style="color:#24292E;--shiki-dark:#E1E4E8">)</span><span style="color:#D73A49;--shiki-dark:#F97583">.</span></span></td>
-      </tr></tbody></table>43:["",["$","pre",null,{"className":"language-prolog pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$64"}}]}]]
-44:["$","p",null,{"children":"And that’s it! When I run:"}]
-65:T642,<table class="code-ln-table"><tbody><tr class="code-ln-line">
+      </tr></tbody></table>45:["",["$","pre",null,{"className":"language-prolog pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$66"}}]}]]
+46:["$","p",null,{"children":"And that’s it! When I run:"}]
+67:T642,<table class="code-ln-table"><tbody><tr class="code-ln-line">
         <td class="code-ln-numbers" data-line-number="1"><div class="code-ln-n" data-line-number="1"></div></td>
         <td class="code-ln-code" data-line-number="1"><span class="line"><span style="color:#24292E;--shiki-dark:#E1E4E8">?- main('example.txt').</span></span></td>
       </tr><tr class="code-ln-line">
@@ -545,21 +550,21 @@ d:[["children",{"s":"blog","h":96,"d":{"r":["$","$1","c",{"children":[null,["$",
       </tr><tr class="code-ln-line">
         <td class="code-ln-numbers" data-line-number="4"><div class="code-ln-n" data-line-number="4"></div></td>
         <td class="code-ln-code" data-line-number="4"><span class="line"><span style="color:#005CC5;--shiki-dark:#79B8FF">true</span></span></td>
-      </tr></tbody></table>45:["",["$","pre",null,{"className":"language-prolog pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$65"}}]}]]
-46:["$","p",null,{"children":["I get the final answers. This detour into Prolog felt like a breath of fresh air—very different from C, Rust, or even Lisp. If you’re curious, you can find the full code on my ",["$","a",null,{"href":"https://codeberg.org/unjello/babel-of-code/src/branch/main/2025/04","children":"Codeberg"}]," repo."]}]
-47:["$","p",null,{"children":"Hope this helps if you’re exploring Prolog or working through Advent of Code with logic programming. Happy hacking!"}]
-48:["$","div",null,{"children":[" \\__                    --> ",["$","a",null,{"href":"http://andrzej.lichnerowicz.pl","target":"_blank","rel":"noopener noreferrer","title":"andrzej.lichnerowicz.pl","className":"link","style":{"cursor":"pointer"},"children":"andrzej.lichnerowicz.pl"}]," <--                    __/\n   //                                                                     \\\\\n  // ------------------------                     ------------------------ \\\\\n '~~~~~~~~~~~~~~~~~~~~~~~~~// ------       ------ \\\\~~~~~~~~~~~~~~~~~~~~~~~~~`\n                          '~~~~~~~//       \\\\~~~~~~~`\n                                 // ------- \\\\\n                                '~~~~~~~~~~~~~`\n      "]}]
-49:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/24myzy9y0j4ea.css","precedence":"next"}]
-4a:["$","script","script-0",{"src":"/_next/static/chunks/3rlo5wixwx6pw.js","async":true}]
-4b:["$","script","script-1",{"src":"/_next/static/chunks/0ne2ozghjoxxj.js","async":true}]
-4c:["$","$L66",null,{"children":["$","$52",null,{"name":"Next.MetadataOutlet","children":"$@67"}]}]
+      </tr></tbody></table>47:["",["$","pre",null,{"className":"language-prolog pre-code-block shiki github-light github-dark","children":["$","code",null,{"dangerouslySetInnerHTML":{"__html":"$67"}}]}]]
+48:["$","p",null,{"children":["I get the final answers. This detour into Prolog felt like a breath of fresh air—very different from C, Rust, or even Lisp. If you’re curious, you can find the full code on my ",["$","a",null,{"href":"https://codeberg.org/unjello/babel-of-code/src/branch/main/2025/04","children":"Codeberg"}]," repo."]}]
+49:["$","p",null,{"children":"Hope this helps if you’re exploring Prolog or working through Advent of Code with logic programming. Happy hacking!"}]
+4a:["$","div",null,{"children":[" \\__                    --> ",["$","a",null,{"href":"http://andrzej.lichnerowicz.pl","target":"_blank","rel":"noopener noreferrer","title":"andrzej.lichnerowicz.pl","className":"link","style":{"cursor":"pointer"},"children":"andrzej.lichnerowicz.pl"}]," <--                    __/\n   //                                                                     \\\\\n  // ------------------------                     ------------------------ \\\\\n '~~~~~~~~~~~~~~~~~~~~~~~~~// ------       ------ \\\\~~~~~~~~~~~~~~~~~~~~~~~~~`\n                          '~~~~~~~//       \\\\~~~~~~~`\n                                 // ------- \\\\\n                                '~~~~~~~~~~~~~`\n      "]}]
+4b:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/3hqdw85846zcr.css","precedence":"next"}]
+4c:["$","script","script-0",{"src":"/_next/static/chunks/3rlo5wixwx6pw.js","async":true}]
+4d:["$","script","script-1",{"src":"/_next/static/chunks/2fhly0c5xf2pq.js","async":true}]
+4e:["$","$L68",null,{"children":["$","$54",null,{"name":"Next.MetadataOutlet","children":"$@69"}]}]
 c:300
-67:null
-56:true
+69:null
+58:true
 c:C
-55:0
+57:0
 11:"$undefined"
 e:"$undefined"
 b:"$undefined"
-54:"$undefined"
-4d:"$undefined"
+56:"$undefined"
+4f:"$undefined"
