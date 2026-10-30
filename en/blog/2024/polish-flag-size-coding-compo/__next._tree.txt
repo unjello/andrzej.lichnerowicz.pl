@@ -1,9 +1,9 @@
 :HL["/_next/static/chunks/05n272b19w13i.css","style"]
 :HC["/",""]
 :HL["/_next/static/chunks/0kit2nn_6d9ja.css","style"]
-:HL["/_next/static/chunks/3dujkr-clwhbi.css","style"]
+:HL["/_next/static/chunks/03exzvmjug589.css","style"]
 4:[["children",{"s":"__PAGE__","h":160}]]
 3:[["children",{"s":{"n":"slug","t":"oc","k":"2024/polish-flag-size-coding-compo","s":[]},"h":96,"c":"$Q4"}]]
 2:[["children",{"s":"blog","h":96,"c":"$Q3"}]]
 1:[["children",{"s":"en","h":96,"c":"$Q2"}]]
-0:{"b":"F7nbBY0aphon7Ht_LzvnP","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
+0:{"b":"IGm1_Vh3cYq2xH-az1p70","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
